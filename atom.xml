@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>DeepCreator</title>
   
-  
+  <subtitle>Scarcity, Value, Truth</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2018-04-09T10:53:13.640Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://deepcreator.com/"/>
+  <updated>2018-04-09T11:58:06.117Z</updated>
+  <id>http://deepcreator.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>IPCreator</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/04/09/hello-world/"/>
-    <id>http://yoursite.com/2018/04/09/hello-world/</id>
-    <published>2018-04-09T10:53:13.640Z</published>
-    <updated>2018-04-09T10:53:13.640Z</updated>
+    <title>Welcome!</title>
+    <link href="http://deepcreator.com/2018/04/09/Person/Welcome/"/>
+    <id>http://deepcreator.com/2018/04/09/Person/Welcome/</id>
+    <published>2018-04-09T12:00:08.000Z</published>
+    <updated>2018-04-09T11:58:06.117Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="http://omj173lhw.bkt.clouddn.com/20170322_165448.jpg" alt=""></p><p>IPCreator = IP + Creator <a href="http://blog.163.com/zhuxuanlv@126/" target="_blank" rel="noopener">网易中文博客</a></p><p>Do yourself.<br>Live your life.<br>Fight for your dream.</p><blockquote><p>创新不难、专利有趣<br>学以致用、知行合一<br>自知者明、自胜者强<br>不忘初心、方得始终</p></blockquote><a id="more"></a><p><img src="http://opb37u589.bkt.clouddn.com/20170817_104440.jpg?imageMogr2/thumbnail/!75p" alt=""></p><blockquote><p>这个世界在残酷惩罚不改变的人<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Those people who aren&apos;t changed will be punished cruelly by the world.</span><br></pre></td></tr></table></figure></p></blockquote><p><img src="http://opb37u589.bkt.clouddn.com/20170817_104454.jpg?imageMogr2/thumbnail/!75p" alt=""></p><blockquote><p>每个时代都悄悄犒赏会学习的人<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Those people who learn will be rewarded stealthily in every era.</span><br></pre></td></tr></table></figure></p></blockquote>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;p&gt;&lt;img src=&quot;http://omj173lhw.bkt.clouddn.com/20170322_165448.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;IPCreator = IP + Creator &lt;a href=&quot;http://blog.163.com/zhuxuanlv@126/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;网易中文博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Do yourself.&lt;br&gt;Live your life.&lt;br&gt;Fight for your dream.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;创新不难、专利有趣&lt;br&gt;学以致用、知行合一&lt;br&gt;自知者明、自胜者强&lt;br&gt;不忘初心、方得始终&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
+      <category term="Person" scheme="http://deepcreator.com/categories/Person/"/>
+    
+    
+      <category term="Welcome" scheme="http://deepcreator.com/tags/Welcome/"/>
+    
+      <category term="DeepCreator" scheme="http://deepcreator.com/tags/DeepCreator/"/>
+    
+      <category term="Blog" scheme="http://deepcreator.com/tags/Blog/"/>
     
   </entry>
   

@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2018/04/09/hello-world/</loc>
+    <loc>http://deepcreator.com/about/index.html</loc>
     
-    <lastmod>2018-04-09T10:53:13.640Z</lastmod>
+    <lastmod>2018-04-09T12:10:51.737Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2018/04/09/Person/Welcome/</loc>
+    
+    <lastmod>2018-04-09T11:58:06.117Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/404.html</loc>
+    
+    <lastmod>2017-06-08T10:21:25.476Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/tags/index.html</loc>
+    
+    <lastmod>2017-03-23T04:38:17.161Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/categories/index.html</loc>
+    
+    <lastmod>2017-03-23T04:35:47.815Z</lastmod>
     
   </url>
   
