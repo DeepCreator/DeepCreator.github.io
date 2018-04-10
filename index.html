@@ -193,7 +193,14 @@
       <div class="header-inner"> 
 
 <div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="/img/headonhill.jpg"
+               alt="DeepCreator"/>
+        </a>
+      </div>
     
 
     <div class="custom-logo-site-title">
@@ -239,7 +246,8 @@
   
   <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />archives</a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />archives<span class="badge">1</span>
+      </a>
 </li>
 
       
@@ -249,7 +257,8 @@
   
   <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />categories</a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />categories<span class="badge">1</span>
+      </a>
 </li>
 
       
@@ -259,7 +268,8 @@
   
   <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />tags</a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />tags<span class="badge">3</span>
+      </a>
 </li>
 
       
@@ -448,32 +458,20 @@
 
           
             
-            <!--noindex-->
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/04/09/Person/Welcome/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">post.comments_countsymbol.colon</span> <span class="post-comments-count hc-comment-count" data-xid="2018/04/09/Person/Welcome/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/04/09/Person/Welcome/" itemprop="commentCount"></span>
                 </a>
               </span>
-              <!--/noindex-->
             
           
 
           
-          
-             <span id="/2018/04/09/Person/Welcome/" class="leancloud_visitors" data-flag-title="Welcome!">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">post.viewssymbol.colon</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
           
 
           
@@ -701,6 +699,24 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="footer.total_visitors">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="footer.total_views">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -796,6 +812,14 @@
 
   
 
+  
+    <script id="dsq-count-scr" src="https://ipcreator.disqus.com/count.js" async></script>
+  
+
+  
+
+
+
 
 
 	
@@ -830,6 +854,30 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz',
+        appKey: 'PXNkGhS05PxL7rV3N8gDlAQe',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1162,117 +1210,25 @@
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz", "PXNkGhS05PxL7rV3N8gDlAQe");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
     }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            
-            counter.save(null, {
-              success: function(counter) {
-                
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
-                
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            
-              var $element = $(document.getElementById(url));
-              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
-              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
-            
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
     }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
 
   
-
-  
-
-  
-  
-
-  
-  
-    
-      
-    
-  
-
-  
-
 
   
   
@@ -1293,6 +1249,15 @@
   
 
   
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.loadBookmark();
+  
+  </script>
+
 
 </body>
 </html>
