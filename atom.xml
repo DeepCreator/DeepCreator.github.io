@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>DeepCreator</title>
   
-  <subtitle>Scarcity, Value, Truth</subtitle>
+  <subtitle>少有，正确，价值</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://deepcreator.com/"/>
@@ -10,7 +10,7 @@
   <id>http://deepcreator.com/</id>
   
   <author>
-    <name>IPCreator</name>
+    <name>DeepCreator</name>
     
   </author>
   
