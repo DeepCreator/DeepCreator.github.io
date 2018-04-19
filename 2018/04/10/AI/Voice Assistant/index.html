@@ -1,4 +1,1300 @@
-<!DOCTYPE html><html class="theme-next muse use-motion" lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet"><style>.pace .pace-progress{background:#1e92fb;height:3px}.pace .pace-progress-inner{box-shadow:0 0 10px #1e92fb,0 0 5px #1e92fb}.pace .pace-activity{border-top-color:#1e92fb;border-left-color:#1e92fb}</style><meta name="theme-color" content="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.2.0"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.2.0"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.2.0"><link rel="mask-icon" href="/images/logo.svg?v=6.2.0" color="#222"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Muse",version:"6.2.0",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!1,onmobile:!1},fancybox:!1,fastclick:!1,lazyload:!1,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="”移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏"><meta name="keywords" content="Voice,Assistant"><meta property="og:type" content="article"><meta property="og:title" content="Voice Assistant"><meta property="og:url" content="http://deepcreator.com/2018/04/10/AI/Voice Assistant/index.html"><meta property="og:site_name" content="DeepCreator&#39;s Lab"><meta property="og:description" content="”移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/baiduvoiceassistant20180410.jpg?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/mittechnologyreview20180410.jpg?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://p3.ifengimg.com/a/2017_07/7a67f085dea03d6_size81_w800_h533.jpg"><meta property="og:updated_time" content="2018-04-18T08:22:39.829Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Voice Assistant"><meta name="twitter:description" content="”移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏"><meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/baiduvoiceassistant20180410.jpg?imageMogr2/thumbnail/!75p"><link rel="alternate" href="/atom.xml" title="DeepCreator's Lab" type="application/atom+xml"><link rel="canonical" href="http://deepcreator.com/2018/04/10/AI/Voice Assistant/"><script type="text/javascript" id="page.configurations">CONFIG.page={sidebar:""}</script><title>Voice Assistant | DeepCreator's Lab</title><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}()</script><noscript><style type="text/css">.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.logo-line-after i{right:initial}</style></noscript></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">DeepCreator's Lab</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">少有，正确，价值</p></div><div class="site-nav-toggle"> <button aria-label="切换导航栏"><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i><br>关于</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://deepcreator.com/2018/04/10/AI/Voice Assistant/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="DeepCreator"><meta itemprop="description" content=""><meta itemprop="image" content="/img/headonhill.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="DeepCreator's Lab"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Voice Assistant</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time title="创建时间：2018-04-10 09:58:08" itemprop="dateCreated datePublished" datetime="2018-04-10T09:58:08+08:00">2018-04-10</time> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i></span> <span class="post-meta-item-text">更新于</span> <time title="修改时间：2018-04-18 16:22:39" itemprop="dateModified" datetime="2018-04-18T16:22:39+08:00">2018-04-18</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span><a href="/2018/04/10/AI/Voice Assistant/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/04/10/AI/Voice Assistant/" itemprop="commentCount"></span></a></span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i> 阅读次数：<span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="http://p53s4d2qk.bkt.clouddn.com/baiduvoiceassistant20180410.jpg?imageMogr2/thumbnail/!75p" alt="baiduvoiceassistant20180410.jpg"></p><blockquote><p>”移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏</p></blockquote><a id="more"></a><h2 id="百度"><a href="#百度" class="headerlink" title="百度"></a>百度</h2><p><a href="https://www.leiphone.com/news/201702/6Tyd4svPB82HElKx.html" target="_blank" rel="noopener">陆奇领衔成立度秘事业部 开启人机交互大幕</a></p><blockquote><p>凭借语音与对话技术的优势，百度在引领新一代人机交互平台上拥有巨大的机会，自然语言和其他智能交互方式有可能出现在从手机到家居的每一个设备中。为抓住这一机遇，百度决定成立度秘事业部，以加速百度人工智能战略布局及人工智能产品化和市场化进程。</p></blockquote><p>百度高级总监景鲲和首席架构师朱凯华将担任事业部的核心管理层。景鲲担任事业部总经理，朱凯华担任事业部首席技术官。度秘业务直接向百度集团总裁和首席运营官陆奇汇报。</p><p>目前度秘已经具备7大类目、70+功能，并可广泛适用于手机、智能家居、智能穿戴和车载等场景下，通过语音交互的方式，满足用户所需。</p><p>百度首席科学家吴恩达表示<strong>2017年将是“对话机器”元年</strong>。通过自然语言进行语音对话的DuerOS，可以广泛支持智能硬件，并通过云端大脑时刻进化，是目前全球最“聪明”的对话式人工智能系统之一，也将成为百度在语音交互领域发力的有力抓手。</p><p>2016年，百度将人工智能提升为公司战略。</p><p>“移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏</p><p><a href="http://www.360doc.com/content/16/0301/18/11548039_538601899.shtml" target="_blank" rel="noopener">百度深度语音识别系统│2016年十大突破技术</a></p><p><img src="http://p53s4d2qk.bkt.clouddn.com/mittechnologyreview20180410.jpg?imageMogr2/thumbnail/!75p" alt="mittechnologyreview20180410.jpg"></p><p>2015年11月是百度语音技术发展过程中的一个重要里程碑，它宣布其硅谷实验室已经开发出了一个强大的新型语音识别引擎，被称为<strong>深度语音识别系统（Deep Speech 2）</strong> 。它包含了一个非常大的、 “深”的神经网络，它学习了单词和短语的关联声音，引入了数以百万计的转录语音。Deep Speech 2在口语识别的准确度方面十分惊人。事实上，研究人员发现，有时它在识别汉语语音片段方面，要比人为识别更加准确。</p><p>百度的进步令人感到惊喜，因为普通话在发音方面十分复杂，并且音调不同，词和词意就不同。Deep Speech 2另一个引人注目的原因是，在加利福尼亚实验室研究这项技术的人员中，几乎没有人讲普通话、粤语、或其他任何中国方言。</p><blockquote><p>该引擎基本上是一个通用的语音系统，如果输入足够多的示例，它同样可以进行英语的语音识别。</p></blockquote><p>目前，百度搜索引擎听到的大部分声音命令都是比较简单的查询 – 例如，关于明天的天气或污染程度。对于这些问题的语音识别，该系统通常是非常准确的。然而，越来越多的用户开始问更加复杂的问题。面对这些情况，该公司在去年推出了自己的语音助手，作为其主要的移动应用程序的一部分，被称为<strong>度秘（DuEr）</strong> 。度秘可以帮助用户查询电影放映时间、或者是帮助用户在一家餐厅订位。</p><blockquote><p>百度的最大挑战是使其人工智能系统，更为智能地理解和回应更加复杂的口语短语。最终，百度希望度秘可以进行有意义的来回对话，将变化的信息加入到讨论内容中。</p></blockquote><p>为了实现这个目标，百度北京公司的一个研究小组正在努力提升口译用户进行查询所使用的系统。包括使用百度已应用于语音识别的神经网络技术，但也需要其他的技巧。百度已经聘请了一个团队来分析发送至度秘的查询内容，并纠正相关错误，从而不断提升该系统，使其越来越好用。</p><h2 id="华为"><a href="#华为" class="headerlink" title="华为"></a>华为</h2><p><a href="http://tech.ifeng.com/a/20170216/44543783_0.shtml?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="noopener">华为开发自主语音助手服务 挑战苹果Siri</a></p><p><img src="http://p3.ifengimg.com/a/2017_07/7a67f085dea03d6_size81_w800_h533.jpg" alt=""></p><blockquote><p>由逾100名工程师组成的一个团队，在深圳开发语音助手服务，开发工作还处于早期阶段。华为语音助手项目目标宏大，瞄准苹果Siri、亚马逊Alexa和Alphabet谷歌助手，而非其他小角色。</p></blockquote></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Voice/" rel="tag"><i class="fa fa-tag"></i> Voice</a><a href="/tags/Assistant/" rel="tag"><i class="fa fa-tag"></i> Assistant</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2018/04/02/IPR/Law/" rel="next" title="Law"><i class="fa fa-chevron-left"></i> Law</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/2018/04/13/Business/Product/" rel="prev" title="Product">Product<i class="fa fa-chevron-right"></i></a></div></div></footer></div></article><div class="post-spread"><div class="addthis_inline_share_toolbox"><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d373f67eacfaa6" async="async"></script></div></div></div></div><div class="comments" id="comments"><div id="disqus_thread"><noscript> Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> 站点概览</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/img/headonhill.jpg" alt="DeepCreator"><p class="site-author-name" itemprop="name">DeepCreator</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">68</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">7</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">143</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#百度"><span class="nav-number">1.</span> <span class="nav-text">百度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#华为"><span class="nav-number">2.</span> <span class="nav-text">华为</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2018</span><span class="with-love" id="animate"><div id="bottomheart" style="cursor:pointer"><i class="fa fa-"></i></div></span> <span class="author" itemprop="copyrightHolder">DeepCreator</span></div><div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.0</div> <span class="post-meta-divider">|</span><div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.2.0</div><div class="theme-info"><div class="powered-by"></div> <span class="post-count">博客全站共435.7k字</span></div><div class="busuanzi-count"><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv" title="总访客量"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span><span class="site-pv" title="总访问量"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script><script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script><script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script><script id="dsq-count-scr" src="https://ipcreator.disqus.com/count.js" async></script><script type="text/javascript">var disqus_config=function(){this.page.url="http://deepcreator.com/2018/04/10/AI/Voice Assistant/",this.page.identifier="2018/04/10/AI/Voice Assistant/",this.page.title="Voice Assistant"};function loadComments(){var t=document,e=t.createElement("script");e.src="https://ipcreator.disqus.com/embed.js",e.setAttribute("data-timestamp",""+ +new Date),(t.head||t.body).appendChild(e)}loadComments()</script><script type="text/javascript">_hcwp=window._hcwp||[],_hcwp.push({widget:"Bloggerstream",widget_id:96030,selector:".hc-comment-count",label:"{%COUNT%}"}),_hcwp.push({widget:"Stream",widget_id:96030,xid:"2018/04/10/AI/Voice Assistant/"}),function(){if(!("HC_LOAD_INIT"in window)){HC_LOAD_INIT=!0;var t=(navigator.language||navigator.systemLanguage||navigator.userLanguage||"en").substr(0,2).toLowerCase(),e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https":"http")+"://w.hypercomments.com/widget/hc/96030/"+t+"/widget.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a.nextSibling)}}()</script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script type="text/javascript">var GUEST=["nick","mail","link"],guest="nick,mail,link";guest=guest.split(",").filter(function(e){return-1<GUEST.indexOf(e)}),new Valine({el:"#comments",verify:!1,notify:!1,appId:"TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz",appKey:"PXNkGhS05PxL7rV3N8gDlAQe",placeholder:"Just go go",avatar:"mm",guest_info:guest,pageSize:"10"})</script><script type="text/javascript">
+<!DOCTYPE html>
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.2.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="”移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏">
+<meta name="keywords" content="Voice,Assistant">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Voice Assistant">
+<meta property="og:url" content="http://deepcreator.com/2018/04/10/AI/Voice Assistant/index.html">
+<meta property="og:site_name" content="DeepCreator&#39;s Lab">
+<meta property="og:description" content="”移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/baiduvoiceassistant20180410.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/mittechnologyreview20180410.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p3.ifengimg.com/a/2017_07/7a67f085dea03d6_size81_w800_h533.jpg">
+<meta property="og:updated_time" content="2018-04-18T08:22:39.829Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Voice Assistant">
+<meta name="twitter:description" content="”移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏">
+<meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/baiduvoiceassistant20180410.jpg?imageMogr2/thumbnail/!75p">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="DeepCreator's Lab" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://deepcreator.com/2018/04/10/AI/Voice Assistant/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Voice Assistant | DeepCreator's Lab</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DeepCreator's Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">少有，正确，价值</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://deepcreator.com/2018/04/10/AI/Voice Assistant/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DeepCreator">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/headonhill.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DeepCreator's Lab">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Voice Assistant
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-04-10 09:58:08" itemprop="dateCreated datePublished" datetime="2018-04-10T09:58:08+08:00">2018-04-10</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-04-18 16:22:39" itemprop="dateModified" datetime="2018-04-18T16:22:39+08:00">2018-04-18</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/10/AI/Voice Assistant/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/04/10/AI/Voice Assistant/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://p53s4d2qk.bkt.clouddn.com/baiduvoiceassistant20180410.jpg?imageMogr2/thumbnail/!75p" alt="baiduvoiceassistant20180410.jpg"></p>
+<blockquote>
+<p>”移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="百度"><a href="#百度" class="headerlink" title="百度"></a>百度</h2><p><a href="https://www.leiphone.com/news/201702/6Tyd4svPB82HElKx.html" target="_blank" rel="noopener">陆奇领衔成立度秘事业部 开启人机交互大幕</a></p>
+<blockquote>
+<p>凭借语音与对话技术的优势，百度在引领新一代人机交互平台上拥有巨大的机会，自然语言和其他智能交互方式有可能出现在从手机到家居的每一个设备中。为抓住这一机遇，百度决定成立度秘事业部，以加速百度人工智能战略布局及人工智能产品化和市场化进程。</p>
+</blockquote>
+<p>百度高级总监景鲲和首席架构师朱凯华将担任事业部的核心管理层。景鲲担任事业部总经理，朱凯华担任事业部首席技术官。度秘业务直接向百度集团总裁和首席运营官陆奇汇报。</p>
+<p>目前度秘已经具备7大类目、70+功能，并可广泛适用于手机、智能家居、智能穿戴和车载等场景下，通过语音交互的方式，满足用户所需。</p>
+<p>百度首席科学家吴恩达表示<strong>2017年将是“对话机器”元年</strong>。通过自然语言进行语音对话的DuerOS，可以广泛支持智能硬件，并通过云端大脑时刻进化，是目前全球最“聪明”的对话式人工智能系统之一，也将成为百度在语音交互领域发力的有力抓手。</p>
+<p>2016年，百度将人工智能提升为公司战略。</p>
+<p>“移动互联网时代已经结束了，2016年到2017年是从移动互联网时代转向人工智能时代的转型阶段。PC互联网是人与计算机的交互，移动互联网是人与触摸屏的交互，到了人工智能时代，人机交互的方式会变成自然语言，带来很大变化。”——李彦宏</p>
+<p><a href="http://www.360doc.com/content/16/0301/18/11548039_538601899.shtml" target="_blank" rel="noopener">百度深度语音识别系统│2016年十大突破技术</a></p>
+<p><img src="http://p53s4d2qk.bkt.clouddn.com/mittechnologyreview20180410.jpg?imageMogr2/thumbnail/!75p" alt="mittechnologyreview20180410.jpg"></p>
+<p>2015年11月是百度语音技术发展过程中的一个重要里程碑，它宣布其硅谷实验室已经开发出了一个强大的新型语音识别引擎，被称为<strong>深度语音识别系统（Deep Speech 2）</strong> 。它包含了一个非常大的、 “深”的神经网络，它学习了单词和短语的关联声音，引入了数以百万计的转录语音。Deep Speech 2在口语识别的准确度方面十分惊人。事实上，研究人员发现，有时它在识别汉语语音片段方面，要比人为识别更加准确。</p>
+<p>百度的进步令人感到惊喜，因为普通话在发音方面十分复杂，并且音调不同，词和词意就不同。Deep Speech 2另一个引人注目的原因是，在加利福尼亚实验室研究这项技术的人员中，几乎没有人讲普通话、粤语、或其他任何中国方言。</p>
+<blockquote>
+<p>该引擎基本上是一个通用的语音系统，如果输入足够多的示例，它同样可以进行英语的语音识别。</p>
+</blockquote>
+<p>目前，百度搜索引擎听到的大部分声音命令都是比较简单的查询 – 例如，关于明天的天气或污染程度。对于这些问题的语音识别，该系统通常是非常准确的。然而，越来越多的用户开始问更加复杂的问题。面对这些情况，该公司在去年推出了自己的语音助手，作为其主要的移动应用程序的一部分，被称为<strong>度秘（DuEr）</strong> 。度秘可以帮助用户查询电影放映时间、或者是帮助用户在一家餐厅订位。</p>
+<blockquote>
+<p>百度的最大挑战是使其人工智能系统，更为智能地理解和回应更加复杂的口语短语。最终，百度希望度秘可以进行有意义的来回对话，将变化的信息加入到讨论内容中。</p>
+</blockquote>
+<p>为了实现这个目标，百度北京公司的一个研究小组正在努力提升口译用户进行查询所使用的系统。包括使用百度已应用于语音识别的神经网络技术，但也需要其他的技巧。百度已经聘请了一个团队来分析发送至度秘的查询内容，并纠正相关错误，从而不断提升该系统，使其越来越好用。</p>
+<h2 id="华为"><a href="#华为" class="headerlink" title="华为"></a>华为</h2><p><a href="http://tech.ifeng.com/a/20170216/44543783_0.shtml?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="noopener">华为开发自主语音助手服务 挑战苹果Siri</a></p>
+<p><img src="http://p3.ifengimg.com/a/2017_07/7a67f085dea03d6_size81_w800_h533.jpg" alt=""></p>
+<blockquote>
+<p>由逾100名工程师组成的一个团队，在深圳开发语音助手服务，开发工作还处于早期阶段。华为语音助手项目目标宏大，瞄准苹果Siri、亚马逊Alexa和Alphabet谷歌助手，而非其他小角色。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Voice/" rel="tag"><i class="fa fa-tag"></i> Voice</a>
+          
+            <a href="/tags/Assistant/" rel="tag"><i class="fa fa-tag"></i> Assistant</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/02/IPR/Law/" rel="next" title="Law">
+                <i class="fa fa-chevron-left"></i> Law
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/13/Business/Product/" rel="prev" title="Product">
+                Product <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d373f67eacfaa6" async = "async" ></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img/headonhill.jpg"
+                alt="DeepCreator" />
+            
+              <p class="site-author-name" itemprop="name">DeepCreator</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">68</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">143</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#百度"><span class="nav-number">1.</span> <span class="nav-text">百度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#华为"><span class="nav-number">2.</span> <span class="nav-text">华为</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <div id="bottomheart" style="cursor:pointer;"><i class="fa fa-"></i></div>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DeepCreator</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.2.0</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共435.7k字</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script>
+
+
+
+  
+
+  
+    <script id="dsq-count-scr" src="https://ipcreator.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://deepcreator.com/2018/04/10/AI/Voice Assistant/';
+        this.page.identifier = '2018/04/10/AI/Voice Assistant/';
+        this.page.title = 'Voice Assistant';
+      };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://ipcreator.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
+  
+
+
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 96030, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 96030, xid: "2018/04/10/AI/Voice Assistant/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/96030/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz',
+        appKey: 'PXNkGhS05PxL7rV3N8gDlAQe',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -316,4 +1612,107 @@
         onPopupClose();
       }
     });
-  </script><script src="/lib/bookmark/bookmark.min.js?v=1.0"></script><script type="text/javascript">bookmark.scrollToMark("auto","#更多")</script><style>.copy-btn{display:inline-block;padding:6px 12px;font-size:13px;font-weight:700;line-height:20px;color:#333;white-space:nowrap;vertical-align:middle;cursor:pointer;background-color:#eee;background-image:linear-gradient(#fcfcfc,#eee);border:1px solid #d5d5d5;border-radius:3px;user-select:none}.highlight-wrap .copy-btn{transition:opacity .3s ease-in-out;opacity:0;padding:2px 6px;position:fixed;right:4px;top:8px}.highlight-wrap .copy-btn:focus,.highlight-wrap:hover .copy-btn{opacity:1}.highlight-wrap{transform:translateZ(0)}</style><script>$(".highlight").each(function(e,t){var n=$("<div>").addClass("highlight-wrap");$(t).after(n),n.append($("<button>").addClass("copy-btn").append("复制").on("click",function(e){var t=$(e.target).parent().find(".code").find(".line").map(function(e,t){return $(t).text()}).toArray().join("\n"),n=document.createElement("textarea");document.body.appendChild(n),n.style.position="fixed",n.style.top=0,n.style.left=0,n.value=t,n.select(),n.focus(),document.execCommand("copy"),document.body.removeChild(n)})).append(t)})</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({pluginRootPath:"live2dw/",pluginJsPath:"lib/",pluginModelPath:"assets/"})</script></body></html>
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
+
+  
+  <style>
+      .copy-btn {
+          display: inline-block;
+          padding: 6px 12px;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          color: #333;
+          white-space: nowrap;
+          vertical-align: middle;
+          cursor: pointer;
+          background-color: #eee;
+          background-image: linear-gradient(#fcfcfc, #eee);
+          border: 1px solid #d5d5d5;
+          border-radius: 3px;
+          user-select: none;
+      }
+
+      .highlight-wrap .copy-btn {
+          transition: opacity .3s ease-in-out;
+          opacity: 0;
+          padding: 2px 6px;
+          position: fixed;
+          right: 4px;
+          top: 8px;
+      }
+
+      .highlight-wrap:hover .copy-btn,
+      .highlight-wrap .copy-btn:focus {
+          opacity: 1
+      }
+
+      .highlight-wrap {
+          transform: translateZ(0);
+      }
+  </style>
+  <script>
+      $('.highlight').each(function(i, e) {
+          var $wrap = $('<div>').addClass('highlight-wrap')
+          $(e).after($wrap)
+          $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+              var code = $(e.target).parent().find('.code').find('.line').map(function(i, e) {
+                  return $(e).text()
+              }).toArray().join('\n')
+              var ta = document.createElement('textarea')
+              document.body.appendChild(ta)
+              ta.style.position = 'fixed'
+              ta.style.top = 0
+              ta.style.left = 0
+              ta.value = code
+              ta.select()
+              ta.focus()
+              document.execCommand('copy')
+              document.body.removeChild(ta)
+          })).append(e)
+      })
+  </script>
+
+
+
+  <!-- <script type="text/javascript" src="/js/src/hexo-next-bottomheart.js"></script>-->
+  
+  <!-- 页面点击小红心 -->
+  <!-- <script type="text/javascript" src="/js/src/love.js"></script>-->
+
+  <!--  -->
+
+</body>
+</html>
