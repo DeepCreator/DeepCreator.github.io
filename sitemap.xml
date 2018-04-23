@@ -2,6 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/2008/08/09/Person/Diary/</loc>
+    
+    <lastmod>2018-04-23T13:10:05.463Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/about/index.html</loc>
+    
+    <lastmod>2018-04-23T13:07:49.166Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2018/04/13/Person/Communication/</loc>
+    
+    <lastmod>2018-04-23T13:03:22.205Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2018/04/23/Concept/Thinking/</loc>
+    
+    <lastmod>2018-04-23T12:56:01.669Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2018/04/23/IPR/Litigation/</loc>
+    
+    <lastmod>2018-04-23T12:46:45.207Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2017/09/03/Concept/Management/</loc>
+    
+    <lastmod>2018-04-23T12:45:16.556Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2018/04/02/IPR/Law/</loc>
+    
+    <lastmod>2018-04-23T12:29:45.170Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2018/04/13/AI/AI/</loc>
+    
+    <lastmod>2018-04-23T12:15:52.132Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2018/02/20/AI/Big%20Data/</loc>
+    
+    <lastmod>2018-04-23T12:05:36.763Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2017/01/18/IPR/IPer/</loc>
+    
+    <lastmod>2018-04-23T11:48:25.428Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2017/10/21/AI/Block%20Chain/</loc>
+    
+    <lastmod>2018-04-23T11:31:08.366Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/2018/04/17/Business/Business/</loc>
     
     <lastmod>2018-04-23T09:48:25.247Z</lastmod>
@@ -16,27 +93,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/2017/09/03/Concept/Management/</loc>
-    
-    <lastmod>2018-04-23T09:39:00.944Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/2018/04/02/IPR/Law/</loc>
-    
-    <lastmod>2018-04-23T09:34:02.859Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/2008/08/09/Person/Diary/</loc>
-    
-    <lastmod>2018-04-23T09:32:16.868Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/2018/04/13/Concept/Why/</loc>
     
     <lastmod>2018-04-23T09:30:31.834Z</lastmod>
@@ -44,23 +100,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/2018/04/13/Person/Communication/</loc>
-    
-    <lastmod>2018-04-23T09:25:22.151Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/2018/04/16/Person/Borderline/</loc>
     
     <lastmod>2018-04-23T09:23:28.287Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/2017/01/18/IPR/IPer/</loc>
-    
-    <lastmod>2018-04-23T09:20:14.140Z</lastmod>
     
   </url>
   
@@ -75,13 +117,6 @@
     <loc>http://deepcreator.com/2018/04/23/IPR/FRAND/</loc>
     
     <lastmod>2018-04-23T09:11:54.300Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/2018/04/13/AI/AI/</loc>
-    
-    <lastmod>2018-04-23T08:36:36.633Z</lastmod>
     
   </url>
   
@@ -135,14 +170,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/2018/04/18/AI/Tensor%20Flow/</loc>
+    <loc>http://deepcreator.com/2018/03/22/Company/Qualcomm/</loc>
     
     <lastmod>2018-04-21T03:48:17.578Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/2018/03/22/Company/Qualcomm/</loc>
+    <loc>http://deepcreator.com/2018/04/18/AI/Tensor%20Flow/</loc>
     
     <lastmod>2018-04-21T03:48:17.578Z</lastmod>
     
@@ -159,13 +194,6 @@
     <loc>http://deepcreator.com/2018/04/13/Person/Experience/</loc>
     
     <lastmod>2018-04-19T10:08:30.549Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/about/index.html</loc>
-    
-    <lastmod>2018-04-19T09:36:29.689Z</lastmod>
     
   </url>
   
@@ -205,14 +233,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/2018/04/13/Business/Product/</loc>
+    <loc>http://deepcreator.com/2017/10/23/Concept/Fragmentation/</loc>
     
     <lastmod>2018-04-19T02:56:44.556Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/2017/10/23/Concept/Fragmentation/</loc>
+    <loc>http://deepcreator.com/2018/04/13/Business/Product/</loc>
     
     <lastmod>2018-04-19T02:56:44.556Z</lastmod>
     
@@ -383,13 +411,6 @@
     <loc>http://deepcreator.com/2018/04/16/Concept/Emotion/</loc>
     
     <lastmod>2018-04-17T03:00:53.763Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/2017/10/21/AI/Block%20Chain/</loc>
-    
-    <lastmod>2018-04-17T02:46:53.927Z</lastmod>
     
   </url>
   
