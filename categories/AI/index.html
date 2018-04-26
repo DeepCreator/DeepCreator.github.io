@@ -121,7 +121,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.2.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -417,6 +417,34 @@
 
       <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/04/26/AI/Python/" itemprop="url">
+              
+                <span itemprop="name">Python</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-04-26T15:16:06+08:00"
+              content="2018-04-26" >
+          04-26
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
             <a class="post-title-link" href="/2018/04/23/AI/IC/" itemprop="url">
               
                 <span itemprop="name">Integrated Chip</span>
@@ -662,34 +690,6 @@
 
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/21/AI/Block Chain/" itemprop="url">
-              
-                <span itemprop="name">Block Chain</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-21T07:42:06+08:00"
-              content="2017-10-21" >
-          10-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
     </div>
 
   </div>
@@ -698,6 +698,10 @@
   
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/categories/AI/page/2/">2</a><a class="extend next" rel="next" href="/categories/AI/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
 
 
 
@@ -717,6 +721,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -774,9 +780,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1260,6 +1264,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -1824,7 +1830,7 @@
 
 
 
-  <!-- <script type="text/javascript" src="/js/src/hexo-next-bottomheart.js"></script>-->
+  <script type="text/javascript" src="/js/src/hexo-next-bottomheart.js"></script>
   
   <!-- 页面点击小红心 -->
   <!-- <script type="text/javascript" src="/js/src/love.js"></script>-->

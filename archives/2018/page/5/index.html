@@ -121,7 +121,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.2.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -473,9 +473,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/04/16/Concept/Career/" itemprop="url">
+            <a class="post-title-link" href="/2018/04/16/Concept/Relation/" itemprop="url">
               
-                <span itemprop="name">Career</span>
+                <span itemprop="name">Relation</span>
               
             </a>
         
@@ -510,9 +510,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/04/16/Concept/Relation/" itemprop="url">
+            <a class="post-title-link" href="/2018/04/16/Concept/Career/" itemprop="url">
               
-                <span itemprop="name">Relation</span>
+                <span itemprop="name">Career</span>
               
             </a>
         
@@ -658,9 +658,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/04/16/Concept/Cognition/" itemprop="url">
+            <a class="post-title-link" href="/2018/04/16/Concept/Value/" itemprop="url">
               
-                <span itemprop="name">Cognition</span>
+                <span itemprop="name">Value</span>
               
             </a>
         
@@ -695,9 +695,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/04/16/Concept/Value/" itemprop="url">
+            <a class="post-title-link" href="/2018/04/16/Concept/Cognition/" itemprop="url">
               
-                <span itemprop="name">Value</span>
+                <span itemprop="name">Cognition</span>
               
             </a>
         
@@ -823,6 +823,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -879,9 +881,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1365,6 +1365,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -1929,7 +1931,7 @@
 
 
 
-  <!-- <script type="text/javascript" src="/js/src/hexo-next-bottomheart.js"></script>-->
+  <script type="text/javascript" src="/js/src/hexo-next-bottomheart.js"></script>
   
   <!-- 页面点击小红心 -->
   <!-- <script type="text/javascript" src="/js/src/love.js"></script>-->

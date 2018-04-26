@@ -121,7 +121,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.2.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -152,6 +152,8 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="深度实验室" type="application/atom+xml" />
@@ -464,14 +466,10 @@
                     
                   
                 
-                  
-                    
-                  
-                
-                目前共计 10 个分类
+                目前共计 9 个分类
             </div>
             <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/">AI</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Business/">Business</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Company/">Company</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Concept/">Concept</a><span class="category-list-count">33</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/IPR/">IPR</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Journey/">Journey</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/People/">People</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Person/">Person</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program/">Program</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/User/">User</a><span class="category-list-count">1</span></li></ul>
+              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/">AI</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Business/">Business</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Company/">Company</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Concept/">Concept</a><span class="category-list-count">33</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/IPR/">IPR</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Journey/">Journey</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/People/">People</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Person/">Person</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/User/">User</a><span class="category-list-count">1</span></li></ul>
             </div>
           </div>
         
@@ -506,6 +504,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -563,9 +563,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1049,6 +1047,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -1617,7 +1617,7 @@
 
 
 
-  <!-- <script type="text/javascript" src="/js/src/hexo-next-bottomheart.js"></script>-->
+  <script type="text/javascript" src="/js/src/hexo-next-bottomheart.js"></script>
   
   <!-- 页面点击小红心 -->
   <!-- <script type="text/javascript" src="/js/src/love.js"></script>-->

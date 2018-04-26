@@ -121,7 +121,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.2.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -411,6 +411,7 @@
       <meta itemprop="name" content="深度实验室">
     </span>
 
+
     
       <header class="post-header">
 
@@ -500,6 +501,30 @@
 
           
           
+
+
+<!-- #���²���Ϊ������ͳ�ơ��Ķ�ʱ���������  -->
+         <span class="post-time">
+	   &nbsp; | &nbsp;
+           <span class="post-meta-item-icon">
+             <i class="fa fa-calendar-o"></i>
+           </span>
+           <span class="post-meta-item-text">Number: </span>
+           <span class="post-count">9,002(Words)</span>
+           
+         </span>
+	  
+      <span class="post-time">
+	   &nbsp; | &nbsp;
+           <span class="post-meta-item-icon">
+             <i class="fa fa-calendar-o"></i>
+           </span>
+           <span class="post-meta-item-text">Time: </span>
+           <span class="post-count">30(Min)</span>
+           
+         </span>
+<!-- #���ϲ���Ϊ������ͳ�ơ��Ķ�ʱ���������  -->
+
 
           
             <span class="post-meta-divider">|</span>
@@ -688,6 +713,27 @@
       
     </footer>
   </div>
+
+
+<!-- ����ͳ�� �Ķ�ʱ��Ԥ�� ������ͳ�� https://www.jianshu.com/p/d23d67d318c7  -->
+<!-- <span class="post-count">9,002</span>  -->
+<!-- <span class="post-count">30</span>  -->
+<!-- <span class="post-count">738.0k</span>  -->
+
+
+<!-- ÿƪ����ĩβͳһ��ӡ����Ľ�������� https://www.jianshu.com/p/d23d67d318c7  -->
+<div>
+    
+    <!-- ÿƪ����ĩβͳһ��ӡ����Ľ�������� https://www.jianshu.com/p/d23d67d318c7  -->
+<div>
+    
+        <span id="inline-yellow" style="text-align:center;font-size:14px;"> ------ End ------ </span>
+        <!-- <div style="text-align:center;color: #ccc;font-size:14px;">------ End ------</div>-->
+    
+</div>
+    
+ </div>
+
   
   
   
@@ -737,6 +783,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -803,9 +851,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1305,6 +1351,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -1892,7 +1940,7 @@
 
 
 
-  <!-- <script type="text/javascript" src="/js/src/hexo-next-bottomheart.js"></script>-->
+  <script type="text/javascript" src="/js/src/hexo-next-bottomheart.js"></script>
   
   <!-- 页面点击小红心 -->
   <!-- <script type="text/javascript" src="/js/src/love.js"></script>-->
