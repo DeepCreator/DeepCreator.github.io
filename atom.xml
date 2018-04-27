@@ -116,9 +116,9 @@
       <category term="User" scheme="http://deepcreator.com/categories/User/"/>
     
     
-      <category term="Experience" scheme="http://deepcreator.com/tags/Experience/"/>
-    
       <category term="User" scheme="http://deepcreator.com/tags/User/"/>
+    
+      <category term="Experience" scheme="http://deepcreator.com/tags/Experience/"/>
     
   </entry>
   
@@ -326,9 +326,9 @@
       <category term="IPR" scheme="http://deepcreator.com/categories/IPR/"/>
     
     
-      <category term="Operation" scheme="http://deepcreator.com/tags/Operation/"/>
-    
       <category term="Management" scheme="http://deepcreator.com/tags/Management/"/>
+    
+      <category term="Operation" scheme="http://deepcreator.com/tags/Operation/"/>
     
   </entry>
   
