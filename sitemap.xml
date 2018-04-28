@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/about/index.html</loc>
+    
+    <lastmod>2018-04-28T01:53:28.335Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2018/04/28/Person/Alisa/</loc>
+    
+    <lastmod>2018-04-28T01:49:53.428Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/2018/04/13/Concept/Evolution/</loc>
+    
+    <lastmod>2018-04-28T01:46:06.416Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/2018/04/26/Concept/Coffee/</loc>
     
     <lastmod>2018-04-27T08:41:33.922Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>http://deepcreator.com/2018/04/16/Concept/Energy/</loc>
     
     <lastmod>2018-04-27T08:36:51.950Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/about/index.html</loc>
-    
-    <lastmod>2018-04-27T08:34:42.364Z</lastmod>
     
   </url>
   
@@ -114,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/2018/04/16/Person/Resource/</loc>
+    <loc>http://deepcreator.com/sentence/index.html</loc>
     
     <lastmod>2018-04-27T07:07:33.940Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/sentence/index.html</loc>
+    <loc>http://deepcreator.com/2018/04/16/Person/Resource/</loc>
     
     <lastmod>2018-04-27T07:07:33.940Z</lastmod>
     
@@ -257,13 +271,6 @@
     <loc>http://deepcreator.com/2018/04/17/Concept/Expert/</loc>
     
     <lastmod>2018-04-26T02:16:38.754Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/2018/04/13/Concept/Evolution/</loc>
-    
-    <lastmod>2018-04-26T02:16:38.753Z</lastmod>
     
   </url>
   
