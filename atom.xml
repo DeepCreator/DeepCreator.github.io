@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://deepcreator.com/"/>
-  <updated>2018-05-01T05:56:35.641Z</updated>
+  <updated>2018-05-01T06:54:59.995Z</updated>
   <id>http://deepcreator.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Algorithm</title>
+    <link href="http://deepcreator.com/2018/05/01/AI/Algorithm/"/>
+    <id>http://deepcreator.com/2018/05/01/AI/Algorithm/</id>
+    <published>2018-05-01T06:48:08.000Z</published>
+    <updated>2018-05-01T06:54:59.995Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="http://p53s4d2qk.bkt.clouddn.com/algorithm20180501.jpg?imageMogr2/thumbnail/!75p" alt="algorithm20180501.jpg"></p><blockquote><p>计算的方法步骤——DeepCreator。</p></blockquote><a id="more"></a><h2 id="Ton-10-Algorithms-Used-by-Data-Scientists"><a href="#Ton-10-Algorithms-Used-by-Data-Scientists" class="headerlink" title="Ton 10 Algorithms Used by Data Scientists"></a><a href="http://dy.163.com/v2/article/detail/CCBLQGO50511CUKV.html" target="_blank" rel="noopener">Ton 10 Algorithms Used by Data Scientists</a></h2><p>在“数据为王”的今天，越来越多的人对数据科学产生了兴趣。数据科学家离不开算法的使用，那么，数据科学家最常用的算法，都是哪些呢？</p><p> 　　最近，著名的资料探勘信息网站KDnuggets策划了十大算法调查，这次调查对数据科学家常用的算法进行排名，并发现最“产业”和最“学术”的算法，还对这些算法在过去5年间（2011~2016）的变化，做了一番详细的介绍。</p><p> 　　这次调查结果，是基于844名受访者投票整理出来。</p><p> 　　KDnuggets总结出十大算法及其投票份额如下：</p><p> <div align="center"><br><img src="http://dingyue.nosdn.127.net/XxbMqsswitgYGAfXTPRKrIW4J7xo9xrldOfRmWTK4cRxm1486093692046.jpg" width="483" height="379"><br> </div><br> 　　图1：数据科学家使用的十大算法和方法。</p><p>  从调查中得知，受访者平均使用8.1个算法，与2011年的一项类似调查相比大幅提高。</p><p>　　与用于数据分析/数据挖掘的2011年投票算法相比，我们注意到流行的算法仍然是 <strong>回归算法、聚类算法、决策树和可视化</strong>。相对来说最大的增长是以(pct2016/pct2011-1)测定的以下算法：</p><p>　　Boosting，从2011年的23.5％至2016年的32.8％，同比增长40％</p><p>　　文本挖掘，从2011年的从27.7％至2016年的35.9％，同比增长30％</p><p>　　可视化，从2011年的从38.3％至2016年的48.7％，同比增长27％</p><p>　　时间序列分析，从2011年的从29.6％至2016年的37.0％，同比增长25％</p><p>　　异常/偏差检测，从2011年的从16.4％至2016年的19.5％，同比增长19％</p><p>　　集合方法，从2011年的从28.3％至2016年的33.6％，同比增长19％</p><p>　　支持向量机，从2011年的从28.6%至2016年的33.6%，同比增长18%</p><p>　　回归算法，从2011年的从57.9%至2016年的67.1%，同比增长16%</p><p>　　在2016年最受欢迎的新算法是：</p><p>　　K-近邻算法（K-nearest neighbors，KNN），46%份额</p><p>　　主成分分析（Principal Commponent Analysis，PCA），43%</p><p>　　随机森林算法（Random Forests，RF），38%</p><p>　　最优化算法（Optimization），24%</p><p>　　神经网络-深度学习（Neural networks-Deep Learning），19%</p><p>　　奇异值矩阵分解（Singular Value Decomposition，SVD）， 16%</p><p>　　跌幅最大的算法分别为：</p><p>　　关联规则（Association rules），从2011年的28.6%至2016年的15.3%，同比下降47%</p><p>　　增量建模（Uplift modeling），从2011年的4.8%至2016年的3.1%，同比下降36%</p><p>　　因子分析（Factor Analysis），从2011年的18.6%至2016年的14.2%，同比下降24%</p><p>　　生存分析（Survival Analysis），从2011年的9.3%至2016年的7.9%，同比下降15%</p><p>　　下表显示了不同算法类型的用途：监督学习、无监督学习、元分析和其他算法类型。我们排除了NA（4.5%）和其他（3%）的算法。</p><p>　　表1：按行业类型的算法使用</p><p><img src="http://dingyue.nosdn.127.net/ntwXZpw4Bb3WyNEhTyj=uuYBbfm33CuG7xN39p8gl0jBi1486093692046.png" alt=""></p><p>　　我们注意到，<strong>几乎所有人都在使用监督学习算法。</strong></p><p>　　政府和产业的数据科学家们比学生或学术界使用了更多的不同类型的算法，产业数据科学家更倾向使用元算法。</p><p>　　接下来，我们分析深度学习的十大算法按行业类型的使用。</p><p>　　表2：深度学习的十大算法按就业类型的使用</p><p>　　Table 2: Top 10 Algorithms + Deep Learning usage by Employment Type</p><p><img src="http://dingyue.nosdn.127.net/jKPaTvdZef=C9pjg2oJMqtjCL4r=yPtcbAuwC1wu2enku1486093692047.png" alt=""></p><p>　　为了使差异更为醒目，我们计算特定行业类型相关的平均算法使用量设计算法为Bias(Alg,Type)=Usage(Alg,Type)/Usage(Alg,All)-1。</p><p><img src="http://dingyue.nosdn.127.net/kIMsTkLRjPKcCrbJUvn3l9xYXId6FU6AH7vq0uDkrbpkE1486093692047.jpg" alt=""></p><p>　　图2：按行业的算法使用偏差</p><p>　　我们注意到产业界数据科学家更倾向使用回归算法、可视化、统计算法、随机森林算法和时间序列。政府/非盈利组织更倾向使用可视化、主成分分析和时间序列。学术研究人员更倾向使用主成分分析和深度学习。学生通常使用算法较少，但他们用的更多的是文本挖掘和深度学习。</p><p>　　接下来，我们看看代表整体KDnuggets访客的地区参与情况。</p><p>　　参与投票者的地区分布如下：</p><p>　　北美，40%</p><p>　　欧洲，32%</p><p>　　亚洲8%</p><p>　　拉美，5.0%</p><p>　　非洲/中东，3.4%</p><p>　　澳洲/新西兰，2.2%</p><p>　　与2011年的调查一样，我们将产业/政府合并为同一个组，将学术研究人员/学生合并为第二组，并计算算法对产业/ 政府的“亲切度”：</p><p><img src="http://dingyue.nosdn.127.net/FfcG4w9Bk4rRwETEVJTT6mwiYrbfLB9sVSKlkqD7rYRIh1486093692047.jpg" alt=""></p><p>　　N(Alg,Ind_Gov) / N(Alg,Aca_Stu)<br>　　——————————- - 1<br>　　N(Ind_Gov) / N(Aca_Stu)<br>　　<br>　　亲切度为0的算法在产业/政府和学术研究人员/学生的使用情况相同。IG亲切度约稿表示该算法越“产业”，越低则表示越“学术”。</p><p>　　其中最“产业”的算法”是：</p><p>　　增量建模（Uplift modeling），2.01</p><p>　　异常检测（Anomaly Detection），1.61</p><p>　　生存分析（Survival Analysis），1.39</p><p>　　因子分析（Factor Analysis），0.83</p><p>　　时间序列（Time series/Sequences），0.69</p><p>　　关联规则（Association Rules），0.5</p><p>　　虽然增量建模又一次成为最“产业”的算法，但出乎意料的是它的使用率如此低：区区3.1%，在这次调查中，是使用率最低的算法。</p><p>　　最“学术”的算法是：</p><p>　　神经网络（Neural networks - regular），-0.35</p><p>　　朴素贝叶斯（Naive Bayes），-0.35</p><p>　　支持向量机（SVM），-0.24</p><p>　　深度学习（Deep Learning），-0.19</p><p>　　最大期望算法（EM），-0.17</p><p>　　下图显示了所有算法以及它们在产业界/学术界的亲切度：</p><p><img src="http://dingyue.nosdn.127.net/zq9JX56Yi4FQSr5aAOuc2RYQhfvcTwzd5E=deUDVsOGAF1486093692048compressflag.png" alt=""></p><p>　　图3：Kdnugets调查：数据科学家使用的流行算法：产业界vs学术界</p><p>　　下表包含了算法的详细信息，在2016年和2011年使用它们的受访者百分比调查，变化（％2016 /％2011 - 1）和行业亲切度如上所述。</p><p>　　表3：KDnuggets2016调查：数据科学家使用的算法</p><p>　　下表包含各个算法的详细信息：</p><p>　　N: 根据使用度排名</p><p>　　Algorithm: 算法名称</p><p>　　Type：类型。S - 监督，U - 无监督，M - 元，Z - 其他，</p><p>　　2016 % used：2016年调查中使用该算法的受访者比例</p><p>　　2011 % used：2011年调查中使用该算法的受访者比例</p><p>　　%Change：变动 (%2016 / %2011 - 1)</p><p>　　Industry Affinity：产业亲切度（上文已提到）</p><h2 id="k-近邻算法"><a href="#k-近邻算法" class="headerlink" title="k-近邻算法"></a><a href="https://asdfv1929.github.io/2018/01/28/MLA-kNN/" target="_blank" rel="noopener">k-近邻算法</a></h2><blockquote><p>k-近邻算法</p></blockquote><p>简单地说，k-近邻算法采用测量不同特征值之间的距离方法来进行分类。</p><blockquote><p>优缺点</p></blockquote><p>优点：精度高、对异常值不敏感、无数据输入假定<br>缺点：计算复杂度高、空间复杂度高<br>适用数据范围：数值型和标称型</p><blockquote><p>工作原理</p></blockquote><p>存在一个样本数据集合，也称作训练样本集，并且样本集中每个数据都存在标签，即我们知道样本集中每一数据与所属分类的对应关系。输入没有标签的新数据后，将新数据的每个特征与样本集中数据对应的特征进行比较，然后算法提取样本集中特征最相似数据（最近邻）的分类标签。一般说来，我们只选择样本数据集中前k个最相似的数据，这就k-近邻算法中k的出处，通常k是不大于20的整数。最后选择k个最相似数据中出现次数最多的分类（投票规则），作为新数据的分类。</p><blockquote><p>一般流程</p></blockquote><p>收集数据：可使用任何方法<br>准备数据：数据格式结构化处理<br>分析数据：任意选择方法<br>训练算法：此步骤不适用于k-近邻算法<br>测试算法：计算错误率<br>使用算法：首先输入样本数据和结构化的输出结果，然后运行k-近邻算法判定输入数据分别属于哪个分类，最后应用对计算出的分类执行后续的处理</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://p53s4d2qk.bkt.clouddn.com/algorithm20180501.jpg?imageMogr2/thumbnail/!75p&quot; alt=&quot;algorithm20180501.jpg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;计算的方法步骤——DeepCreator。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="http://deepcreator.com/categories/AI/"/>
+    
+    
+      <category term="AI" scheme="http://deepcreator.com/tags/AI/"/>
+    
+      <category term="Algorithm" scheme="http://deepcreator.com/tags/Algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>Nextfix</title>
@@ -306,9 +333,9 @@
       <category term="User" scheme="http://deepcreator.com/categories/User/"/>
     
     
-      <category term="User" scheme="http://deepcreator.com/tags/User/"/>
-    
       <category term="Experience" scheme="http://deepcreator.com/tags/Experience/"/>
+    
+      <category term="User" scheme="http://deepcreator.com/tags/User/"/>
     
   </entry>
   
@@ -519,33 +546,6 @@
       <category term="Management" scheme="http://deepcreator.com/tags/Management/"/>
     
       <category term="Operation" scheme="http://deepcreator.com/tags/Operation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Well-being</title>
-    <link href="http://deepcreator.com/2018/04/25/Concept/Well-being/"/>
-    <id>http://deepcreator.com/2018/04/25/Concept/Well-being/</id>
-    <published>2018-04-25T08:18:08.000Z</published>
-    <updated>2018-04-25T09:59:29.492Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="http://p53s4d2qk.bkt.clouddn.com/Well-being20180425.png?imageMogr2/thumbnail/!75p" alt="Well-being20180425.png"></p><blockquote><p>知足常乐，感恩长存。——DeepCreator</p></blockquote><a id="more"></a><h2 id="方法论"><a href="#方法论" class="headerlink" title="方法论"></a>方法论</h2><h3 id="建议：获得成功和幸福的5个路径"><a href="#建议：获得成功和幸福的5个路径" class="headerlink" title="建议：获得成功和幸福的5个路径"></a><a href="http://www.luojiji.com/thread-11351-1-1.html" target="_blank" rel="noopener">建议：获得成功和幸福的5个路径</a></h3><p>在竞争激烈的当下，如果想要获得圆满的事业和体面生活，你可能需要超过很多竞争对手，“做到这一点的唯一办法是找到适合自己的独特路径”，这是咨询公司Invisor管理合伙人史蒂夫•托鲍克（Steve Tobak）的观点。他在《哈佛商业评论》的一篇文章中，分享了5个路径。</p><p>第一，<strong>建立真实的人际关系</strong>。托鲍克建议，当他人把时间花在开发个人品牌和组建在线交际网络的时候，你应该走出家门，进行一对一的实时会面。只有在这种场合，你才会找到真正的机遇和友谊。</p><p>第二，<strong>培养自己</strong>。大公司培养人才时，通常会物色并招募有发展潜力的职员，让他们熟悉不同的领域和状况。通过这种方法，这些人不仅学到了门类广泛的技能，同时也积累了丰富经验、接触现实世界、尝试了不同事情。</p><p>第三，<strong>有所不为</strong>。托鲍克建议，在信息爆炸时代，“假如你需要获得某种看法，请抗拒那种想获得更多信息的冲动，切断信息源，隔绝所有让你分心的噪声，保持安静，聆听自己内心的想法”。</p><p>第四，<strong>为伟大的企业工作</strong>。大多数人都想成为企业家，托鲍克建议，你可以去为一个伟大的企业工作；</p><blockquote><p>向那些比你更聪明、更有成就、更有经验的人学习；<br>向专业人员学习；<br>找到导师，学习现实世界中的企业是如何运作的。</p></blockquote><p>“弄清楚你怎样才能让那家公司更上一层楼。真正重要的是<strong>你自己能给集体带来什么。</strong> ”</p><p>第五，<strong>善待自己</strong>。托鲍克说：“那些想从生活中索取很多东西的人，大多都是自己最凶恶的敌人。他们对自己过于较真，过于苛刻，对自己和他人都抱有过高的期望。”如果你能够放弃一些期望，不强求自己达到某个目标，那么就会明白，真正重要的其实是做你自己，活在当下。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://p53s4d2qk.bkt.clouddn.com/Well-being20180425.png?imageMogr2/thumbnail/!75p&quot; alt=&quot;Well-being20180425.png&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;知足常乐，感恩长存。——DeepCreator&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Concept" scheme="http://deepcreator.com/categories/Concept/"/>
-    
-    
-      <category term="Well-being" scheme="http://deepcreator.com/tags/Well-being/"/>
-    
-      <category term="Happiness" scheme="http://deepcreator.com/tags/Happiness/"/>
     
   </entry>
   
