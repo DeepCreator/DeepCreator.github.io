@@ -410,9 +410,9 @@
       <category term="AI" scheme="http://deepcreator.com/categories/AI/"/>
     
     
-      <category term="AI" scheme="http://deepcreator.com/tags/AI/"/>
-    
       <category term="Education" scheme="http://deepcreator.com/tags/Education/"/>
+    
+      <category term="AI" scheme="http://deepcreator.com/tags/AI/"/>
     
   </entry>
   
@@ -437,9 +437,9 @@
       <category term="User" scheme="http://deepcreator.com/categories/User/"/>
     
     
-      <category term="User" scheme="http://deepcreator.com/tags/User/"/>
-    
       <category term="Experience" scheme="http://deepcreator.com/tags/Experience/"/>
+    
+      <category term="User" scheme="http://deepcreator.com/tags/User/"/>
     
   </entry>
   
