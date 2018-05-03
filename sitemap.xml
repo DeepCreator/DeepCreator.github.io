@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/slides.html</loc>
+    
+    <lastmod>2018-05-03T02:44:25.695Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/sentence/index.html</loc>
     
     <lastmod>2018-05-03T02:17:19.186Z</lastmod>
@@ -9,7 +16,7 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/pic/index.html</loc>
+    <loc>http://deepcreator.com/demo/index.html</loc>
     
     <lastmod>2018-05-03T02:09:07.447Z</lastmod>
     
@@ -23,7 +30,7 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/demo/index.html</loc>
+    <loc>http://deepcreator.com/pic/index.html</loc>
     
     <lastmod>2018-05-03T02:09:07.447Z</lastmod>
     
@@ -100,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Fact.html</loc>
+    <loc>http://deepcreator.com/Concept/Story.html</loc>
     
     <lastmod>2018-05-02T07:49:59.146Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Story.html</loc>
+    <loc>http://deepcreator.com/Concept/Fact.html</loc>
     
     <lastmod>2018-05-02T07:49:59.146Z</lastmod>
     
@@ -667,14 +674,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/Qualcomm.html</loc>
+    <loc>http://deepcreator.com/AI/Tensor%20Flow.html</loc>
     
     <lastmod>2018-04-21T03:48:17.578Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/AI/Tensor%20Flow.html</loc>
+    <loc>http://deepcreator.com/Company/Qualcomm.html</loc>
     
     <lastmod>2018-04-21T03:48:17.578Z</lastmod>
     
