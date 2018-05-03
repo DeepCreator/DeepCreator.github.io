@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/AI/JavaScript.html</loc>
+    
+    <lastmod>2018-05-03T09:05:38.801Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Markdown.html</loc>
+    
+    <lastmod>2018-05-03T07:20:02.362Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Block%20Chain.html</loc>
+    
+    <lastmod>2018-05-03T07:06:50.705Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/HTML5.html</loc>
+    
+    <lastmod>2018-05-03T06:19:24.701Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/slides.html</loc>
     
     <lastmod>2018-05-03T02:44:25.695Z</lastmod>
@@ -16,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Person/Diary.html</loc>
-    
-    <lastmod>2018-05-03T02:09:07.447Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/pic/index.html</loc>
     
     <lastmod>2018-05-03T02:09:07.447Z</lastmod>
@@ -31,6 +52,13 @@
   
   <url>
     <loc>http://deepcreator.com/demo/index.html</loc>
+    
+    <lastmod>2018-05-03T02:09:07.447Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Person/Diary.html</loc>
     
     <lastmod>2018-05-03T02:09:07.447Z</lastmod>
     
@@ -107,14 +135,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Fact.html</loc>
+    <loc>http://deepcreator.com/Concept/Story.html</loc>
     
     <lastmod>2018-05-02T07:49:59.146Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Story.html</loc>
+    <loc>http://deepcreator.com/Concept/Fact.html</loc>
     
     <lastmod>2018-05-02T07:49:59.146Z</lastmod>
     
@@ -306,13 +334,6 @@
     <loc>http://deepcreator.com/Concept/Health.html</loc>
     
     <lastmod>2018-05-01T06:34:58.700Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/Block%20Chain.html</loc>
-    
-    <lastmod>2018-05-01T06:24:53.723Z</lastmod>
     
   </url>
   
