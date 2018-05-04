@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/AI/HTML5.html</loc>
+    
+    <lastmod>2018-05-04T02:07:51.533Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Person/Diary.html</loc>
+    
+    <lastmod>2018-05-04T02:02:13.391Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/AI/JavaScript.html</loc>
     
-    <lastmod>2018-05-03T09:05:38.801Z</lastmod>
+    <lastmod>2018-05-04T01:43:16.951Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/sentence/index.html</loc>
+    
+    <lastmod>2018-05-04T01:38:44.334Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Chrome.html</loc>
+    
+    <lastmod>2018-05-04T01:36:49.683Z</lastmod>
     
   </url>
   
@@ -23,44 +51,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/AI/HTML5.html</loc>
-    
-    <lastmod>2018-05-03T06:19:24.701Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/slides.html</loc>
     
     <lastmod>2018-05-03T02:44:25.695Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/sentence/index.html</loc>
-    
-    <lastmod>2018-05-03T02:17:19.186Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/pic/index.html</loc>
-    
-    <lastmod>2018-05-03T02:09:07.447Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/demo/index.html</loc>
-    
-    <lastmod>2018-05-03T02:09:07.447Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Person/Diary.html</loc>
-    
-    <lastmod>2018-05-03T02:09:07.447Z</lastmod>
     
   </url>
   
@@ -135,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Story.html</loc>
+    <loc>http://deepcreator.com/Concept/Fact.html</loc>
     
     <lastmod>2018-05-02T07:49:59.146Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Fact.html</loc>
+    <loc>http://deepcreator.com/Concept/Story.html</loc>
     
     <lastmod>2018-05-02T07:49:59.146Z</lastmod>
     
@@ -429,14 +422,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Tea.html</loc>
+    <loc>http://deepcreator.com/Person/Original.html</loc>
     
     <lastmod>2018-05-01T02:19:31.572Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Person/Original.html</loc>
+    <loc>http://deepcreator.com/Concept/Tea.html</loc>
     
     <lastmod>2018-05-01T02:19:31.572Z</lastmod>
     
