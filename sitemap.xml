@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/Person/Diary.html</loc>
+    
+    <lastmod>2018-05-05T11:44:18.836Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Web/Internet.html</loc>
+    
+    <lastmod>2018-05-05T11:42:36.978Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Web/Web.html</loc>
+    
+    <lastmod>2018-05-05T11:36:41.729Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Web/Markdown.html</loc>
+    
+    <lastmod>2018-05-05T11:36:41.726Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Web/HTML5.html</loc>
+    
+    <lastmod>2018-05-05T11:36:41.725Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Web/JavaScript.html</loc>
+    
+    <lastmod>2018-05-05T11:36:41.724Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Web/CSS.html</loc>
+    
+    <lastmod>2018-05-05T11:36:41.723Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Web/Chrome.html</loc>
+    
+    <lastmod>2018-05-05T11:36:41.721Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/AI/Deep%20Learning.html</loc>
     
     <lastmod>2018-05-04T13:44:59.103Z</lastmod>
@@ -9,37 +65,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/AI/HTML5.html</loc>
-    
-    <lastmod>2018-05-04T13:38:58.724Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/JavaScript.html</loc>
-    
-    <lastmod>2018-05-04T13:00:52.450Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/Markdown.html</loc>
-    
-    <lastmod>2018-05-04T11:58:46.782Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/Domain%20Name.html</loc>
     
     <lastmod>2018-05-04T11:22:01.393Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/CSS.html</loc>
-    
-    <lastmod>2018-05-04T09:50:50.214Z</lastmod>
     
   </url>
   
@@ -135,23 +163,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Person/Diary.html</loc>
-    
-    <lastmod>2018-05-04T02:56:35.121Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/sentence/index.html</loc>
     
     <lastmod>2018-05-04T01:38:44.334Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/Chrome.html</loc>
-    
-    <lastmod>2018-05-04T01:36:49.683Z</lastmod>
     
   </url>
   
@@ -187,13 +201,6 @@
     <loc>http://deepcreator.com/Concept/Walk.html</loc>
     
     <lastmod>2018-05-03T01:03:34.925Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/Web.html</loc>
-    
-    <lastmod>2018-05-02T08:47:02.136Z</lastmod>
     
   </url>
   
