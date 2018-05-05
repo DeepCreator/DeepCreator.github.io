@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/AI/Deep%20Learning.html</loc>
+    
+    <lastmod>2018-05-04T13:44:59.103Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/AI/HTML5.html</loc>
     
-    <lastmod>2018-05-04T09:52:44.818Z</lastmod>
+    <lastmod>2018-05-04T13:38:58.724Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/JavaScript.html</loc>
+    
+    <lastmod>2018-05-04T13:00:52.450Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Markdown.html</loc>
+    
+    <lastmod>2018-05-04T11:58:46.782Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Domain%20Name.html</loc>
+    
+    <lastmod>2018-05-04T11:22:01.393Z</lastmod>
     
   </url>
   
@@ -19,13 +47,6 @@
     <loc>http://deepcreator.com/pic/index.html</loc>
     
     <lastmod>2018-05-04T09:36:28.933Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/JavaScript.html</loc>
-    
-    <lastmod>2018-05-04T09:00:00.533Z</lastmod>
     
   </url>
   
@@ -131,13 +152,6 @@
     <loc>http://deepcreator.com/AI/Chrome.html</loc>
     
     <lastmod>2018-05-04T01:36:49.683Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/Markdown.html</loc>
-    
-    <lastmod>2018-05-03T07:20:02.362Z</lastmod>
     
   </url>
   
@@ -450,13 +464,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/Domain%20Name.html</loc>
-    
-    <lastmod>2018-05-01T02:44:51.673Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Concept/Opportunity.html</loc>
     
     <lastmod>2018-05-01T02:20:14.802Z</lastmod>
@@ -716,14 +723,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/Qualcomm.html</loc>
+    <loc>http://deepcreator.com/AI/Tensor%20Flow.html</loc>
     
     <lastmod>2018-04-21T03:48:17.578Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/AI/Tensor%20Flow.html</loc>
+    <loc>http://deepcreator.com/Company/Qualcomm.html</loc>
     
     <lastmod>2018-04-21T03:48:17.578Z</lastmod>
     
