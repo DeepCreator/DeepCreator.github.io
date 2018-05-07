@@ -2,9 +2,135 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/Web/Web.html</loc>
+    
+    <lastmod>2018-05-07T08:16:51.951Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Web/JavaScript.html</loc>
+    
+    <lastmod>2018-05-07T08:04:10.936Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Matrix.html</loc>
+    
+    <lastmod>2018-05-07T07:28:46.792Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Machine%20Learning.html</loc>
+    
+    <lastmod>2018-05-07T07:18:13.754Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Synaptic.html</loc>
+    
+    <lastmod>2018-05-07T07:18:11.414Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Person/Diary.html</loc>
+    
+    <lastmod>2018-05-07T05:54:30.201Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Deep%20Learning.html</loc>
+    
+    <lastmod>2018-05-07T03:03:33.951Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/Web/Internet.html</loc>
     
-    <lastmod>2018-05-05T12:58:38.581Z</lastmod>
+    <lastmod>2018-05-07T02:26:52.694Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Tensorflowjs.html</loc>
+    
+    <lastmod>2018-05-07T02:26:52.642Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Tensor%20Flow.html</loc>
+    
+    <lastmod>2018-05-07T02:25:52.798Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Web/jQuery.html</loc>
+    
+    <lastmod>2018-05-07T02:00:48.031Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/People/Bear%20Grylls.html</loc>
+    
+    <lastmod>2018-05-07T01:46:37.811Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Management.html</loc>
+    
+    <lastmod>2018-05-07T01:45:52.937Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/Math.html</loc>
+    
+    <lastmod>2018-05-07T01:44:38.616Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/People/Yong-Le%20Li.html</loc>
+    
+    <lastmod>2018-05-07T01:44:38.615Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Domain%20Name.html</loc>
+    
+    <lastmod>2018-05-07T01:35:23.218Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Business/Investment.html</loc>
+    
+    <lastmod>2018-05-07T01:11:13.531Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Education.html</loc>
+    
+    <lastmod>2018-05-07T01:05:53.084Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Brain.html</loc>
+    
+    <lastmod>2018-05-07T01:02:05.819Z</lastmod>
     
   </url>
   
@@ -86,20 +212,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Person/Diary.html</loc>
-    
-    <lastmod>2018-05-05T12:12:59.742Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Web/Web.html</loc>
-    
-    <lastmod>2018-05-05T11:36:41.729Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Web/Markdown.html</loc>
     
     <lastmod>2018-05-05T11:36:41.726Z</lastmod>
@@ -114,13 +226,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Web/JavaScript.html</loc>
-    
-    <lastmod>2018-05-05T11:36:41.724Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Web/CSS.html</loc>
     
     <lastmod>2018-05-05T11:36:41.723Z</lastmod>
@@ -131,20 +236,6 @@
     <loc>http://deepcreator.com/Web/Chrome.html</loc>
     
     <lastmod>2018-05-05T11:36:41.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/Deep%20Learning.html</loc>
-    
-    <lastmod>2018-05-04T13:44:59.103Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/IPR/Domain%20Name.html</loc>
-    
-    <lastmod>2018-05-04T11:22:01.393Z</lastmod>
     
   </url>
   
@@ -208,13 +299,6 @@
     <loc>http://deepcreator.com/Company/XiaoMi.html</loc>
     
     <lastmod>2018-05-04T03:42:07.861Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Concept/Management.html</loc>
-    
-    <lastmod>2018-05-04T03:40:24.890Z</lastmod>
     
   </url>
   
@@ -338,13 +422,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Business/Investment.html</loc>
-    
-    <lastmod>2018-05-02T06:49:54.173Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Business/Humanity.html</loc>
     
     <lastmod>2018-05-02T06:35:16.556Z</lastmod>
@@ -376,13 +453,6 @@
     <loc>http://deepcreator.com/IPR/Innovation.html</loc>
     
     <lastmod>2018-05-02T03:07:48.461Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Concept/Brain.html</loc>
-    
-    <lastmod>2018-05-02T02:48:08.246Z</lastmod>
     
   </url>
   
@@ -446,13 +516,6 @@
     <loc>http://deepcreator.com/Company/Microsoft.html</loc>
     
     <lastmod>2018-05-01T05:48:07.007Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Concept/Education.html</loc>
-    
-    <lastmod>2018-05-01T05:36:49.944Z</lastmod>
     
   </url>
   
@@ -702,13 +765,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/AI/Math.html</loc>
-    
-    <lastmod>2018-04-24T09:07:53.526Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/FRAND.html</loc>
     
     <lastmod>2018-04-23T09:11:54.300Z</lastmod>
@@ -731,13 +787,6 @@
   
   <url>
     <loc>http://deepcreator.com/Company/Qualcomm.html</loc>
-    
-    <lastmod>2018-04-21T03:48:17.578Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/Tensor%20Flow.html</loc>
     
     <lastmod>2018-04-21T03:48:17.578Z</lastmod>
     

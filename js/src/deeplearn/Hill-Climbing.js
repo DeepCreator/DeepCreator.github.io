@@ -1,0 +1,1 @@
+for(var costf=function(o){for(var c=0,i=0;i<14;i++)c+=.5*i*o[i]*Math.exp(-o[i]+o[i+1])/o[i+1];return c+=3*o[14]/o[0]},domain=[],i=0;i<15;i++)domain.push([1,70]);var vec=ml.optimize.hillclimb({domain:domain,costf:costf});console.log("vec : ",vec),console.log("cost : ",costf(vec));

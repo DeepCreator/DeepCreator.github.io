@@ -1,4 +1,1757 @@
-<!DOCTYPE html><html class="theme-next muse use-motion" lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet"><style>.pace .pace-progress{background:#1e92fb;height:3px}.pace .pace-progress-inner{box-shadow:0 0 10px #1e92fb,0 0 5px #1e92fb}.pace .pace-activity{border-top-color:#1e92fb;border-left-color:#1e92fb}</style><meta name="theme-color" content="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"><link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.2.0"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.2.0"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.2.0"><link rel="mask-icon" href="/images/logo.svg?v=6.2.0" color="#222"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Muse",version:"6.2.0",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!0,onmobile:!0},fancybox:!1,fastclick:!1,lazyload:!0,tabs:!0,motion:{enable:!0,async:!0,transition:{post_block:"perspectiveLeftIn",post_header:"fadeIn",post_body:"fadeIn",coll_header:"perspectiveLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="Tensor + Flow"><meta name="keywords" content="Tensor,Flow"><meta property="og:type" content="article"><meta property="og:title" content="Tensorflow"><meta property="og:url" content="http://deepcreator.com/AI/Tensor Flow.html"><meta property="og:site_name" content="Ai Lab"><meta property="og:description" content="Tensor + Flow"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/tensorflow20180418.jpg?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://omj173lhw.bkt.clouddn.com/tensorflow.jpg"><meta property="og:updated_time" content="2018-04-21T03:48:17.578Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Tensorflow"><meta name="twitter:description" content="Tensor + Flow"><meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/tensorflow20180418.jpg?imageMogr2/thumbnail/!75p"><link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml"><link rel="canonical" href="http://deepcreator.com/AI/Tensor Flow.html"><script type="text/javascript" id="page.configurations">CONFIG.page={sidebar:""}</script><title>Tensorflow | Ai Lab</title><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}()</script><noscript><style type="text/css">.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.logo-line-after i{right:initial}</style></noscript></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta custom-logo"><div class="site-meta-headline"> <a><img class="custom-logo-image" src="/img/deepcreator.jpg" alt="Ai Lab"></a></div><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Ai Lab</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Minority, Truth, Value</p></div><div class="site-nav-toggle"> <button aria-label="切换导航栏"><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-info-circle"></i><br>关于</a></li><li class="menu-item menu-item-day"><a href="/sentence/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i><br>语录</a></li><li class="menu-item menu-item-pic"><a href="/pic/" rel="section"><i class="menu-item-icon fa fa-fw fa-image"></i><br>画廊</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://deepcreator.com/AI/Tensor Flow.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="DeepCreator"><meta itemprop="description" content=""><meta itemprop="image" content="/img/headonhill.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Ai Lab"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Tensorflow</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time title="创建时间：2018-04-18 16:14:08" itemprop="dateCreated datePublished" datetime="2018-04-18T16:14:08+08:00">2018-04-18</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span> <a href="/AI/Tensor Flow.html#comments" itemprop="discussionUrl"><span class="post-meta-item-text">评论数：</span><span class="post-comments-count hc-comment-count" data-xid="AI/Tensor Flow.html" itemprop="commentsCount"></span></a></span>  <span class="post-time">&nbsp; | &nbsp;<span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">Words</span> <span class="post-count">1,315</span></span> <span class="post-time">&nbsp; | &nbsp;<span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">Time</span> <span class="post-count">5 Min</span></span>  <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i> 阅读次数：<span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="http://p53s4d2qk.bkt.clouddn.com/tensorflow20180418.jpg?imageMogr2/thumbnail/!75p" alt="tensorflow20180418.jpg"></p><blockquote><p>Tensor + Flow</p></blockquote><a id="more"></a><p><img src="http://omj173lhw.bkt.clouddn.com/tensorflow.jpg" alt=""><br><a href="http://geek.csdn.net/news/detail/139455" target="_blank" rel="noopener">TensorFlow 贡献者唐源：掌握 Google 深度学习框架的正确姿势</a></p><blockquote><p>餐具和素材已免费提供，炒不出好菜不要怪工具</p></blockquote><p>TensorFlow 提供的不仅仅只是现有的一些比较热门的模型实现，深度学习和机器学习这个领域的发展是非常快的，很多问题往往不是简单的现有模型能够解决的，最重要的是一个框架的灵活性和可拓展性一定是不能丢的，Spark 的 MLlib 很优秀地实现了一些工业界需求比较大的一些算法，但是 TensorFlow 能提供的不仅仅是这些，它提供了很多建立机器学习和深度学习必有的元素，比如，TensorFlow 有着自己的 metrics、losses、optimizers、layers 等模块来帮助<strong>建立各种各样的深度学习模型</strong>，它也提供了许多<strong>高阶的 Estimator API 来帮助用户更好地搭建和定义自己的分布式的模型</strong>，FeatureColumn 模块来帮助数据科学工作中很重要的特征工程，DataFrame 和 QueueRunner 等模块来更好地实现数据的预处理，提取批量队列，等等。另外，TensorFlow 省去了在各种不同的设备（比如 CPU、GPU、TPU）上的实现，<strong>用户只需要集中精力调用已经实现好的 API 就可以在各种设备上进行自动优化以及资源分配</strong>，这些都是 Spark 目前还不能或者是很难做到的。最近雅虎开源的 <strong>TensorFlowOnSpark</strong> 也挺有意思，可以在现有的 Spark/Hadoop 分布式集群的基础上部署 TensorFlow 的程序，这样可以避免数据在已有 Spark/Hadoop 集群和深度学习集群间移动，HDFS 里面的数据能够更好地输入进 TensorFlow 的程序当中。</p><h2 id="TensorFlow1-8-0正式发布，Bug修复和改进内容都在这里了"><a href="#TensorFlow1-8-0正式发布，Bug修复和改进内容都在这里了" class="headerlink" title="TensorFlow1.8.0正式发布，Bug修复和改进内容都在这里了"></a><a href="https://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/79979257" target="_blank" rel="noopener">TensorFlow1.8.0正式发布，Bug修复和改进内容都在这里了</a></h2><p>TensorFlow 1.8.0 近日正式发布，新版本主要有以下改进内容，AI科技大本营对其编译如下。</p><p>▌主要特点及改进</p><p>可以将 tf.contrib.distribute.MirroredStrategy() 传递给 tf.estimator.RunConfig() ，能够在一台有多个 GPU 的机器上运行评估器 （Estimator） 模型。</p><p>添加 tf.contrib.data.prefetch_to_device() ，支持预取 GPU 内存。</p><p>添加梯度提升树作为预先制作的评估器（Estimator）：BoostedTreesClassifier，BoostedTreesRegressor。</p><p>为云端 TPU 添加第三代管道配置，提高其性能和可用性。</p><p>tf.contrib.bayesflow 转向自己的 repo。</p><p>添加了 tf.contrib.{proto，rpc} ，允许通用的原型解析和 RPC 通信。</p><p>▌Bug 修复和其他修改<br>tf.data:</p><p>添加 tf.contrib.data.prefetch_to_device ，可以将数据集元素预取到 GPU 内存。</p><p>添加 tf.contrib.data.AUTOTUNE ，在 tf.data 运行时，根据系统和环境自动调整预取缓冲区大小。</p><p>添加 tf.contrib.data.make_csv_dataset ，构建 CSV 文件数据集。</p><p>Eager Execution:</p><p>Eager Execution 数据集可以作为标准的 Python 迭代器使用（for batch in dataset:)。当 Eager Execution 启动时，可以使用 Dataset .iter () 和 Dataset.make_one_shot_iterator() 创建迭代器。</p><p>已启用自动装置配置（即如果 GPU 是自动接入的，则不需要使用 tf.device(“/gpu:0”)）（修复 #14133）</p><p>已经将 contrib 的 tf.GradientTape 移出。</p><p>tf.keras:</p><p>添加了 fashion mnist 数据集。</p><p>新的数据预处理功能：image/random_brightness，sequence/TimeseriesGenerator 和 text/hashing_trick。</p><p>加速线性代数 (XLA):</p><p>选择并分散参考实用程序和评估程序，使用字典顺序来打破关系。<br>TensorFlow Debugger (tfdbg) CLI:</p><p>在 tensor-filter 操作中，允许使用正则表达式排除节点。</p><p>修复某些文本终端的虚假背景色。</p><p>tf.contrib:</p><p>添加重构批量维度的元分发 BatchReshape 。</p><p>tf.contrib.layers.recompute_grad 用于 TPU 上的显式梯度检查点。</p><p>添 加 tf.contrib.framework.argsort 。</p><p>允许 DNNBoostedTreeCombinedEstimator 处理特征列和损失的核心版本。</p><p>添加非线性图像变形操作： tf.contrib.image.sparse_image_warp，tf.contrib.image.dense_image_warp 和 tf.contrib.image.interpolate_spline 。</p><p>修复 tensor 类型不匹配的 tf.contrib.opt.MultitaskOptimizerWrapper 中的错误。</p><p>▌Other<br>低级图形构造现在被称为 TensorFlow C API 。对于大多数用户而言，这种更改不可见，但在这个版本中可以设置环境变量 TF_C_API_GRAPH_CONSTRUCTION = 0 来禁用此更改。未来的版本将删除禁用此更改的功能。</p><p>在 tf.distributions.Distribution 中添加形状描述和指向 tutorial notebook 的指针。</p><p>更新 scatter 操作：</p><p>添加 tf.scatter_min 和 tf.scatter_max；<br>扩展 scatter 操作以使用标量更新参数。</p><p>仅仅将 cuDNN RNN操作移至内核，用于 TensorFlow 代码库。</p><p>为 Conv2d ， Conv2dBackpropInput 和 Conv2dBackpropFilter 添加 float64 支持。</p><p>为 AvgPool / AvgPoolGrad 添加 float64 支持。</p><p>图名称作用域线程为本地，以便在多线程环境中正常工作。</p><p>更新 nsync 同步库，避免 Linux 上速度较慢的原语。</p><p>在构建自定义操作时，删除了需要在 C include 路径中放置 nsync / public</p><p>添加 tf.image.psnr ， tf.image.ssim ， tf.image.ssim_multiscale ， tf.image.image_gradients ， tf.image.sobel_edges</p><p>将链接添加到 <a href="https://js.tensorflow.org" target="_blank" rel="noopener">https://js.tensorflow.org</a></p><p>修复正交矩阵的不均匀性。</p><p>修复了多图像评估器（Estimator）评估摘要显示不正确的问题。</p><p>资源：</p><p>源代码（zip）</p><p><a href="https://github.com/tensorflow/tensorflow/archive/v1.8.0-rc0.zip" target="_blank" rel="noopener">https://github.com/tensorflow/tensorflow/archive/v1.8.0-rc0.zip</a></p><p>源代码（tar.gz）</p><p><a href="https://github.com/tensorflow/tensorflow/archive/v1.8.0-rc0.tar.gz" target="_blank" rel="noopener">https://github.com/tensorflow/tensorflow/archive/v1.8.0-rc0.tar.gz</a></p><p>作者 | annarev<br>原文链接:<a href="https://github.com/tensorflow/tensorflow/releases/" target="_blank" rel="noopener">https://github.com/tensorflow/tensorflow/releases/</a></p></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Tensor/" rel="tag"><i class="fa fa-tag"></i> Tensor</a><a href="/tags/Flow/" rel="tag"><i class="fa fa-tag"></i> Flow</a></div><div class="post-widgets"><div class="wp_rating"><div style="color:rgba(0,0,0,.75);font-size:13px;letter-spacing:3px">After reading, Five stars :)</div><div id="wpac-rating"></div></div></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/Concept/Memory.html" rel="next" title="Memory"><i class="fa fa-chevron-left"></i> Memory</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/Business/5G.html" rel="prev" title="5G">5G<i class="fa fa-chevron-right"></i></a></div></div></footer></div></article><div class="post-spread"><div class="addthis_inline_share_toolbox"><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d373f67eacfaa6" async="async"></script></div></div></div></div><div class="comments" id="comments"><div id="hypercomments_widget"></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div id="sidebar-dimmer"></div><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> 站点概览</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/img/headonhill.jpg" alt="DeepCreator"><p class="site-author-name" itemprop="name">DeepCreator</p><p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">118</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">9</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">216</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div id="days"></div><script language="javascript">function show_date_time(){window.setTimeout("show_date_time()",1e3),BirthDay=new Date("01/04/2018 16:01:00"),today=new Date,timeold=today.getTime()-BirthDay.getTime(),sectimeold=timeold/1e3,secondsold=Math.floor(sectimeold),msPerDay=864e5,e_daysold=timeold/msPerDay,daysold=Math.floor(e_daysold),e_hrsold=24*(e_daysold-daysold),hrsold=setzero(Math.floor(e_hrsold)),e_minsold=60*(e_hrsold-hrsold),minsold=setzero(Math.floor(60*(e_hrsold-hrsold))),seconds=setzero(Math.floor(60*(e_minsold-minsold))),document.getElementById("days").innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second "}function setzero(e){return e<10&&(e="0"+e),e}show_date_time()</script></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorFlow1-8-0正式发布，Bug修复和改进内容都在这里了"><span class="nav-number">1.</span> <span class="nav-text">TensorFlow1.8.0正式发布，Bug修复和改进内容都在这里了</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2018</span> <span class="with-love" id="heart"><span class="author" itemprop="copyrightHolder">DeepCreator</span></span></div><div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.2.0</div><div class="theme-info"><div class="powered-by"></div> <span class="post-count">博客全站共1.1m字</span></div><div class="busuanzi-count"><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv" title="总访客量"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span><span class="site-pv" title="总访问量"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js"></script><script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script><script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script><script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script><script type="text/javascript">_hcwp=window._hcwp||[],_hcwp.push({widget:"Bloggerstream",widget_id:96030,selector:".hc-comment-count",label:"{%COUNT%}"}),_hcwp.push({widget:"Stream",widget_id:96030,xid:"AI/Tensor Flow.html"}),function(){if(!("HC_LOAD_INIT"in window)){HC_LOAD_INIT=!0;var t=(navigator.language||navigator.systemLanguage||navigator.userLanguage||"en").substr(0,2).toLowerCase(),e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https":"http")+"://w.hypercomments.com/widget/hc/96030/"+t+"/widget.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n.nextSibling)}}()</script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script type="text/javascript">var GUEST=["nick","mail","link"],guest="nick,mail,link";guest=guest.split(",").filter(function(e){return-1<GUEST.indexOf(e)}),new Valine({el:"#comments",verify:!1,notify:!1,appId:"TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz",appKey:"PXNkGhS05PxL7rV3N8gDlAQe",placeholder:"Just go go",avatar:"mm",guest_info:guest,pageSize:"10"})</script><script type="text/javascript">
+<!DOCTYPE html>
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.2.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"perspectiveLeftIn","post_header":"fadeIn","post_body":"fadeIn","coll_header":"perspectiveLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Tensor + Flow">
+<meta name="keywords" content="Tensor,Flow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tensorflow">
+<meta property="og:url" content="http://deepcreator.com/AI/Tensor Flow.html">
+<meta property="og:site_name" content="Ai Lab">
+<meta property="og:description" content="Tensor + Flow">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/tensorflow20180418.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://omj173lhw.bkt.clouddn.com/tensorflow.jpg">
+<meta property="og:image" content="https://t11.baidu.com/it/u=2139826840,2289900095&fm=173&app=25&f=JPEG?w=640&h=249&s=2280F50012C5CD198EB460D20100C0B2">
+<meta property="og:image" content="https://t12.baidu.com/it/u=3210206204,2403049521&fm=173&app=25&f=JPEG?w=640&h=230&s=88A67D32957844285455ECDE0000C0B1">
+<meta property="og:image" content="https://t11.baidu.com/it/u=62212300,1447968920&fm=173&app=25&f=JPEG?w=640&h=229&s=790C34724B63452408DD74CA0000E0B0">
+<meta property="og:image" content="https://t12.baidu.com/it/u=701849807,811240959&fm=173&app=25&f=JPEG?w=638&h=158&s=87F665364B276D2258CDE1DB0000C0B1">
+<meta property="og:image" content="https://t12.baidu.com/it/u=859725536,1147034083&fm=173&app=25&f=JPEG?w=639&h=147&s=0CA07832C56BD1201CD591DE000070B2">
+<meta property="og:image" content="https://t10.baidu.com/it/u=3816234012,3203872160&fm=173&app=25&f=JPEG?w=640&h=241&s=0776E1364B676D245ED9B4DA0200C0B2">
+<meta property="og:image" content="https://t12.baidu.com/it/u=2129467253,454406140&fm=173&app=25&f=JPEG?w=640&h=379&s=5EAA3C634F42444B4EDD5DCA0200F0B0">
+<meta property="og:image" content="http://t11.baidu.com/it/u=3142545367,1590477182&fm=173&app=25&f=JPEG?w=640&h=398&s=B4167E36073A66287865B4EB0200C033">
+<meta property="og:image" content="http://t12.baidu.com/it/u=3624752159,4219420022&fm=173&app=25&f=JPEG?w=640&h=351&s=1412673776B846231E763D6703007060">
+<meta property="og:updated_time" content="2018-05-07T02:25:52.798Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tensorflow">
+<meta name="twitter:description" content="Tensor + Flow">
+<meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/tensorflow20180418.jpg?imageMogr2/thumbnail/!75p">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://deepcreator.com/AI/Tensor Flow.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Tensorflow | Ai Lab</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="/img/deepcreator.jpg"
+               alt="Ai Lab"/>
+        </a>
+      </div>
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ai Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Minority, Truth, Value</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-info-circle"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-day">
+    <a href="/sentence/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-book"></i> <br />语录</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-pic">
+    <a href="/pic/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-image"></i> <br />画廊</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://deepcreator.com/AI/Tensor Flow.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DeepCreator">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/headonhill.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ai Lab">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Tensorflow
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-04-18 16:14:08" itemprop="dateCreated datePublished" datetime="2018-04-18T16:14:08+08:00">2018-04-18</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/AI/Tensor Flow.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count hc-comment-count" data-xid="AI/Tensor Flow.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+
+<!-- #���²���Ϊ������ͳ�ơ��Ķ�ʱ���������  -->
+         <span class="post-time">
+	   &nbsp; | &nbsp;
+           <span class="post-meta-item-icon">
+             <i class="fa fa-calendar-o"></i>
+           </span>
+           <span class="post-meta-item-text">Words </span>
+           <span class="post-count">7,633 </span>
+           
+         </span>
+	  
+      <span class="post-time">
+	   &nbsp; | &nbsp;
+           <span class="post-meta-item-icon">
+             <i class="fa fa-calendar-o"></i>
+           </span>
+           <span class="post-meta-item-text">Time </span>
+           <span class="post-count">30 Min </span>
+           
+         </span>
+<!-- #���ϲ���Ϊ������ͳ�ơ��Ķ�ʱ���������  -->
+
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://p53s4d2qk.bkt.clouddn.com/tensorflow20180418.jpg?imageMogr2/thumbnail/!75p" alt="tensorflow20180418.jpg"></p>
+<blockquote>
+<p>Tensor + Flow</p>
+</blockquote>
+<a id="more"></a>
+<p><img src="http://omj173lhw.bkt.clouddn.com/tensorflow.jpg" alt=""><br><a href="http://geek.csdn.net/news/detail/139455" target="_blank" rel="noopener">TensorFlow 贡献者唐源：掌握 Google 深度学习框架的正确姿势</a></p>
+<blockquote>
+<p>餐具和素材已免费提供，炒不出好菜不要怪工具</p>
+</blockquote>
+<p>TensorFlow 提供的不仅仅只是现有的一些比较热门的模型实现，深度学习和机器学习这个领域的发展是非常快的，很多问题往往不是简单的现有模型能够解决的，最重要的是一个框架的灵活性和可拓展性一定是不能丢的，Spark 的 MLlib 很优秀地实现了一些工业界需求比较大的一些算法，但是 TensorFlow 能提供的不仅仅是这些，它提供了很多建立机器学习和深度学习必有的元素，比如，TensorFlow 有着自己的 metrics、losses、optimizers、layers 等模块来帮助<strong>建立各种各样的深度学习模型</strong>，它也提供了许多<strong>高阶的 Estimator API 来帮助用户更好地搭建和定义自己的分布式的模型</strong>，FeatureColumn 模块来帮助数据科学工作中很重要的特征工程，DataFrame 和 QueueRunner 等模块来更好地实现数据的预处理，提取批量队列，等等。另外，TensorFlow 省去了在各种不同的设备（比如 CPU、GPU、TPU）上的实现，<strong>用户只需要集中精力调用已经实现好的 API 就可以在各种设备上进行自动优化以及资源分配</strong>，这些都是 Spark 目前还不能或者是很难做到的。最近雅虎开源的 <strong>TensorFlowOnSpark</strong> 也挺有意思，可以在现有的 Spark/Hadoop 分布式集群的基础上部署 TensorFlow 的程序，这样可以避免数据在已有 Spark/Hadoop 集群和深度学习集群间移动，HDFS 里面的数据能够更好地输入进 TensorFlow 的程序当中。</p>
+<h2 id="入门｜极致的优化：智能手机是如何处理大型神经网络的"><a href="#入门｜极致的优化：智能手机是如何处理大型神经网络的" class="headerlink" title="入门｜极致的优化：智能手机是如何处理大型神经网络的"></a><a href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9480825325914903745%22%7D&amp;n_type=1&amp;p_from=3" target="_blank" rel="noopener">入门｜极致的优化：智能手机是如何处理大型神经网络的</a></h2><p>运行深度神经网络对计算能力、能耗及磁盘空间要求甚高，智能手机的计算资源十分有限，需要多种优化才能高效运行深度学习应用。本文介绍了如何在移动设备的各种指标之间取得平衡，在避免大幅度降低准确性的前提下构造更加轻便的神经网络，使得在移动设备上快速、准确地运行神经网络成为可能。</p>
+<p>电脑拥有大容量硬盘和强大的 CPU 与 GPU，但智能手机没有。为了弥补这些硬件上的不足，智能手机需要一些特殊手段才能高效地运行深度学习应用。</p>
+<p><img src="https://t11.baidu.com/it/u=2139826840,2289900095&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=249&amp;s=2280F50012C5CD198EB460D20100C0B2" alt=""></p>
+<p>智能手机有办法与这些强大的服务器集群竞争吗？还是完全没有希望？</p>
+<p>引言</p>
+<p>深度学习是一种功能十分多样和强大的技术，但是运行神经网络对计算能力、能耗及磁盘空间要求甚高。这对于在具有大型硬盘和多个 GPU 的服务器上运行的云应用来说一般不是问题。</p>
+<p>不幸的是，在移动设备上运行神经网络并非易事。事实上，尽管智能手机的功能越来越强大，它们的计算能力、电池寿命及可用的磁盘空间依然十分有限，特别是那些非常依赖轻便性的应用。把应用做得轻便可以加快下载速度，减少更新，并且延长电池寿命，而这些都是用户迫切需要的。</p>
+<p>为了执行图像分类、人像模式摄影、文本预测以及其他几十项任务，智能手机需要使用特殊方法来快速、准确地运行神经网络，且不占用过多内存空间。</p>
+<p>在这篇文章中，我们将会了解一些最有效的、能让神经网络在手机上实时运行的技术。</p>
+<p>能使神经网络更小更快的技术</p>
+<p>基本上来讲，我们只对三个指标感兴趣：模型的准确率、速度、在手机中占用的内存。天下没有免费的午餐，因此我们不得不在这些指标之间作出一些权衡。</p>
+<p>对于大部分技术来说，我们一边要关注指标，一边还要寻找一个叫做「饱和点」（saturation point）的东西。达到这个点之后，利用其他指标的损失实现某个指标的增益将不再可行。在到达饱和点前保持优化值，可以在两个指标上取得最佳结果。</p>
+<p><img src="https://t12.baidu.com/it/u=3210206204,2403049521&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=230&amp;s=88A67D32957844285455ECDE0000C0B1" alt=""></p>
+<p>在这个例子中，我们可以在不增加误差的情况下显著减少代价昂贵的运算。但是，在超过饱和点之后，误差的严重程度高到不可接受。</p>
+<p>记住这个方法，让我们开始吧！</p>
+<ol>
+<li>避免全连接层</li>
+</ol>
+<p>全连接层是神经网络中最常见的部分，它们通常能发挥很大作用。然而，由于每一个神经元都和前一层的所有神经元相连接，因此它们需要存储和更新大量参数，这对速度和磁盘空间都很不利。</p>
+<p>卷积层是利用输入（通常是图像）中局部一致性的层。每一个神经元不再与前一层的所有神经元相连。这有助于网络在保持高度准确性的同时减少连接/权重的数量。</p>
+<p><img src="https://t11.baidu.com/it/u=62212300,1447968920&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=229&amp;s=790C34724B63452408DD74CA0000E0B0" alt=""><br>全连接层的连接/权重数量要远远多于卷积层。</p>
+<p>使用少连接或非全连接的层能缩小模型的体积，同时保持其高准确性。这种方法可以提高速度，同时减少磁盘使用量。</p>
+<p>在上面提到的构造中，一个拥有 1024 个输入、 512 个输出的全连接层大约有 500k 个参数。而一个拥有相同特征以及 32 个特征图的卷积层只需要大约 50k 个参数。这是一个 10 倍的提升。</p>
+<ol>
+<li>减少通道数量与卷积核大小</li>
+</ol>
+<p>这一步展现了在模型复杂度与速度之间作出的一个非常直接的权衡。拥有大量通道的卷积层能使网络提取相关信息，但也要付出相应的代价。剔除一些特征图是一个节约空间、加速模型的简单方法。</p>
+<p>我们可以运用卷积运算的感受野来做同样的事情。通过缩小卷积核大小，卷积对局部模式的感知减少，但涉及的参数也减少了。</p>
+<p><img src="https://t12.baidu.com/it/u=701849807,811240959&amp;fm=173&amp;app=25&amp;f=JPEG?w=638&amp;h=158&amp;s=87F665364B276D2258CDE1DB0000C0B1" alt=""><br>缩小感受野/卷积核大小可以降低计算成本，但是传递的信息会变少。</p>
+<p>在这两种情况下，我们通过找到饱和点来选择特征图的数量/卷积核大小，以保证准确性不会下降太多。</p>
+<ol>
+<li>优化降采样</li>
+</ol>
+<p>对于固定数量的层和固定数量的池化操作，神经网络可能会表现得天差地别。这是由于数据的表征以及计算量大小取决于这些池化操作于何处完成。</p>
+<p>如果池化操作较早完成，数据的维数会减少。维数越少，网络的处理速度越快，但信息量会减少，准确性也会降低。<br>如果网络中的池化操作完成较晚，那么大部分信息会被保留下来，因此准确度高。然而这也意味着计算是在多维对象上完成的，这会导致计算成本的增加。<br>于神经网络中均匀布置降采样是一种行之有效的结构（<a href="https://arxiv.org/pdf/1710.02759.pdf），而且能在准确性与速度之间保持良好的平衡。这也是一种饱和点。" target="_blank" rel="noopener">https://arxiv.org/pdf/1710.02759.pdf），而且能在准确性与速度之间保持良好的平衡。这也是一种饱和点。</a></p>
+<p>较早的池化速度快，延后的池化精确性高，均匀布置池化能兼具二者的一些优点。</p>
+<ol>
+<li>权重修剪</li>
+</ol>
+<p>在一个经过训练的神经网络中，有些权重对于某个神经元单元的激活值至关重要，而其他的权重基本不影响结果。尽管如此，我们仍要对这些不那么重要的权重做一些计算。</p>
+<p>修剪（pruning）是一个完全删除最小强度连接的过程，这样我们就可以跳过这些计算。这会降低准确性但是能让网络更快更精简。我们需要找出饱和点，然后在尽量不影响准确性的情况下删去尽可能多的连接。</p>
+<p><img src="https://t12.baidu.com/it/u=859725536,1147034083&amp;fm=173&amp;app=25&amp;f=JPEG?w=639&amp;h=147&amp;s=0CA07832C56BD1201CD591DE000070B2" alt=""><br>删去最弱的连接来节省计算时间与空间。</p>
+<ol>
+<li>离散化权重</li>
+</ol>
+<p>为了在磁盘中保存神经网络，我们需要记录网络中每一个权重的值。这意味着我们需要为每一个参数保存一个浮点数，同时也意味着大量磁盘空间的消耗。举例说明，在 C 中一个浮点数占据 4 个字节，即 32 位。一个有着上亿参数的网络（如 Google-Net 或 VGG-16）会轻易占据上百兆字节的空间，而这样的消耗在移动设备中是不可接受的。</p>
+<p>为了尽量减小网络存储的量，一种方法是通过离散化权重来降低权重的精度。在这个过程当中，我们更改数字的表示使其不再表示具体值，而是限制其为数值的子集。这样我们只需要存储一次经过离散化的值，然后将它们映射到网络的权重上。</p>
+<p><img src="https://t10.baidu.com/it/u=3816234012,3203872160&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=241&amp;s=0776E1364B676D245ED9B4DA0200C0B2" alt=""><br>离散化权重存储索引而非浮点值。</p>
+<p>我们再次需要通过找到饱和点来决定到底使用多少个值。使用更多数值意味着准确性的提高，但也意味着更大的表征空间。举个例子：如果使用 256 个经过离散化的值，每一个权重只需要使用 1 个字节（即 8 位）就能表示。相比之前（32 位），我们将其大小缩减了四倍！</p>
+<ol>
+<li>模型表征的编码</li>
+</ol>
+<p>我们已经对权重作了许多处理，但是还能进一步改进网络！这个特殊技巧源于权重分布不均的事实。一旦权重被离散化，我们就会失去相同数量的对应每一个离散化值的权重。这意味着在我们的模型表征中，某些索引的出现频率相对更高，我们可以利用这一点！</p>
+<p>哈夫曼编码（Huffman coding）能完美地解决这个问题。它通过给最常用的值分配最小索引以及给最不常用的值分配最大索引来解决这些问题。这有助于减小设备上模型的体积，最关键的是不会降低准确性。</p>
+<p><img src="https://t12.baidu.com/it/u=2129467253,454406140&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=379&amp;s=5EAA3C634F42444B4EDD5DCA0200F0B0" alt=""><br>访问次数最多的符号只使用 1 位的空间，而访问次数最少的符号使用 3 位的空间。这是因为后者在数据表示中出现的次数很少，并由此可以达到一种空间上的平衡。</p>
+<p>这个简单的技巧使我们能够进一步缩小神经网络占用的空间，通常能减少 30％ 左右。</p>
+<p>注意：每一层的离散化和编码可以是不同的，从而提供更大的灵活性。</p>
+<p>修正准确率损失</p>
+<p>通过我们使用的方法，神经网络已经十分精简了。我们删去了弱连接（修剪），甚至改变了一些权重（离散化）。在网络变得十分轻巧快速的同时，其准确率也不如以前了。</p>
+<p>为了修正这一点，我们需要迭代地重新训练网络的每一步。这代表我们需要在修剪和离散化操作之后，再次训练网络使其可以拟合相应的变化，然后重复这一过程直到权重不再大幅变化为止。</p>
+<p>结论</p>
+<p>尽管智能手机没有优秀的台式机那样的磁盘空间、计算能力或者电池寿命，它们仍是深度学习应用程序的优秀实验对象。通过一系列方法，我们现在可以在这些多功能手持设备上运行强大的神经网络，准确性只是略有下降。这为数千个优秀的应用打开了大门。</p>
+<p>如果有兴趣，你也可以了解一些面向移动设备的优秀神经网络，如 SqueezeNet（<a href="https://arxiv.org/abs/1602.07360）或" target="_blank" rel="noopener">https://arxiv.org/abs/1602.07360）或</a> MobileNets（<a href="https://arxiv.org/abs/1704.04861）。" target="_blank" rel="noopener">https://arxiv.org/abs/1704.04861）。</a></p>
+<h2 id="TensorFlow发布JavaScript开发者的机器学习框架TensorFlow-js"><a href="#TensorFlow发布JavaScript开发者的机器学习框架TensorFlow-js" class="headerlink" title="TensorFlow发布JavaScript开发者的机器学习框架TensorFlow.js"></a><a href="http://baijiahao.baidu.com/s?id=1596520710871490430&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">TensorFlow发布JavaScript开发者的机器学习框架TensorFlow.js</a></h2><p>当时时间 3 月 30 日，谷歌 TenosrFlow 开发者峰会 2018 在美国加州石景山开幕，来自全球的机器学习用户围绕 TensorFlow 展开技术演讲与演示。去年的 TensorFlow 开发者大会上，该框架正式升级到了 1.0 版本，逐渐成为最流行的深度学习框架。今年，TensorFlow 发布了面向 JavaScript 开发者的全新机器学习框架 TensorFlow.js。</p>
+<p>在大会上午的 Keynote 中，谷歌大脑负责人 Jeff Dean、TensorFlow 总监 Rajat Monga 等人围绕 TensorFlow 做了表现、流行度等方面的介绍。</p>
+<p>据介绍，在过去的两年中，TensorFlow 不断更新，不断改善，逐渐成为社区内最为流行的深度学习框架。下图是从开源以来，TensorFlow 的重大更新，例如 TensorBoard、tfdata、tfkeras、Eager Execution 等。</p>
+<p><img src="http://t11.baidu.com/it/u=3142545367,1590477182&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=398&amp;s=B4167E36073A66287865B4EB0200C033" alt=""></p>
+<p>而且据统计，两年内，TensorFlow 已经有一千一百万下载，超过三万的 commits，6900 以上的 pull requests，1400 多位 contributors。</p>
+<p>今年，围绕 TensorFlow，谷歌同样做出了几项重大宣布：</p>
+<ol>
+<li><p>发布新的 TensorFlow 官方博客（<a href="http://blog.tensorflow.org/）与" target="_blank" rel="noopener">http://blog.tensorflow.org/）与</a> TensorFlow YouTube 频道；</p>
+</li>
+<li><p>面向 JavaScript 开发者的全新机器学习框架 TensorFlow.js;</p>
+</li>
+<li><p>发布一系列新的库与工具：例如 TensorFlowHub、TensorFlow Probability API、Nucleus、DeepVariant 等。</p>
+</li>
+</ol>
+<p>在今天的几项重大宣布中，比较有趣的是面向 JavaScript 开发者的全新机器学习框架 TensorFlow.js。在下文中，机器之心对 TensorFlow.js 做了细致介绍：</p>
+<p>在大会的 Keynote 中，TensorFlow 团队表示基于网页的 JavaScript 库 TensorFlow.js 现在已经能训练并部署机器学习模型。我们可以使用神经网络的层级 API 构建模型，并在浏览器中使用 WebGL 创建复杂的数据可视化应用。此外 Node.js 很快就会发布，它能为网站模型提供 GPU、TPU 等快速训练与推断的方法。</p>
+<p><img src="http://t12.baidu.com/it/u=3624752159,4219420022&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=351&amp;s=1412673776B846231E763D6703007060" alt=""></p>
+<p>在 TensorFlow.js 中，我们可以使用最底层的 JavaScript 线性代数库或最高级的 API 在浏览器上开发模型，也能基于浏览器运行已训练的模型。因此，它可以充分利用浏览器和计算机的计算资源实现非常多机器学习应用。例如在网页端训练一个模型来识别图片或语音，训练一个模型以新颖的方式玩游戏或构建一个能创造钢琴音乐的神经网络等。这些新颖的模型作为案例在 TensorFlow.js 中都提供了实现代码，读者也可以跟随教程实现基于浏览器的模型。</p>
+<p>TensorFlow.js 项目主页：<a href="https://js.tensorflow.org/" target="_blank" rel="noopener">https://js.tensorflow.org/</a></p>
+<p>TensorFlow.js 的核心概念</p>
+<p>TensorFlow.js 是一个开源的用于开发机器学习项目的 WebGL-accelerated JavaScript 库。TensorFlow.js 可以为你提供高性能的、易于使用的机器学习构建模块，允许你在浏览器上训练模型，或以推断模式运行预训练的模型。TensorFlow.js 不仅可以提供低级的机器学习构建模块，还可以提供高级的类似 Keras 的 API 来构建神经网络。</p>
+<p>TensorFlow.js 的安装非常简单，我们可以直接使用 NMP 或脚本完成构建。它的使用也有非常多的文档与教程，我们只需要掌握一些基本的核心概念就能快速入手这一 JS 库。接下来，我们介绍这个库的一些核心概念。</p>
+<p>Tensor</p>
+<p>TensorFlow.js 中的中心数据单元是张量（tensor）：一维或多维数组。一个 Tensor 实例的 shape 属性定义了其数组形状（即，数组的每个维度上有多少个值）。</p>
+<p>Tensor 主要构造函数是 tf.tensor 函数：</p>
+<p>// 2x3 Tensorconst shape = [2, 3]; // 2 rows, 3 columnsconst a = tf.tensor([1.0, 2.0, 3.0, 10.0, 20.0, 30.0], shape);a.print(); // print Tensor values// Output: [[1 , 2 , 3 ],// [10, 20, 30]]// The shape can also be inferred:const b = tf.tensor([[1.0, 2.0, 3.0], [10.0, 20.0, 30.0]]);b.print();// Output: [[1 , 2 , 3 ],// [10, 20, 30]]</p>
+<p>Variable</p>
+<p>Variable 使用一个张量值来初始化。然而，和 Tensor 不一样，它们的值是可变的。你可以用 assign 方法分配一个新的张量到一个已有的变量（variable）：</p>
+<p>const initialValues = tf.zeros([5]);const biases = tf.variable(initialValues); // initialize biasesbiases.print(); // output: [0, 0, 0, 0, 0]const updatedValues = tf.tensor1d([0, 1, 0, 1, 0]);biases.assign(updatedValues); // update values of biasesbiases.print(); // output: [0, 1, 0, 1, 0]</p>
+<p>Variable 主要用于在模型训练过程中保存和更新值。</p>
+<p>Operations (Ops)</p>
+<p>Tensor 可以用于保存数据，而 Operation（Op）则可用于操作数据。TensorFlow.js 提供了多种适用于张量的线性代数和机器学习运算的 Op。由于 Tensor 是不可改变的，这些 Op 不会改变它们的值，而会返回新的 Tensor。这些运算不仅包含 add、sub 和 mul 等二元运算，同时还包括 square 等一元运算：</p>
+<p>const e = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]]);const f = tf.tensor2d([[5.0, 6.0], [7.0, 8.0]]);const e_plus_f = e.add(f);e_plus_f.print();// Output: [[6 , 8 ],// [10, 12]]const d = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]]);const d_squared = d.square();d_squared.print();// Output: [[1, 4 ],// [9, 16]]</p>
+<p>模型和层</p>
+<p>从概念上说，一个模型就是一个函数，给定输入之后生成所需要的输出。</p>
+<p>在 Tensorflow.js 有两种创建模型的方式：直接使用 Op 表示模型的运算。或者使用高级 API tf.model 来构建以层定义的模型，这在深度学习中是很常用的抽象形式。其实除了以上的特征，Tensorflow.js 还有一些很重要的核心概念，例如内存管理、神经网络基本运算和训练过程等。但我们了解以上概念就能轻松在浏览器中构建出简单的机器学习模型，如下展示了简单线性回归的定义方法：</p>
+<p>import * as tf from ‘@tensorflow/tfjs’; // Define a model for linear regression. const model = tf.sequential(); model.add(tf.layers.dense({units: 1, inputShape: [1]})); // Prepare the model for training: Specify the loss and the optimizer. model.compile({loss: ‘meanSquaredError’, optimizer: ‘sgd’}); // Generate some synthetic data for training. const xs = tf.tensor2d([1, 2, 3, 4], [4, 1]); const ys = tf.tensor2d([1, 3, 5, 7], [4, 1]); // Train the model using the data. model.fit(xs, ys).then(() =&gt; { // Use the model to do inference on a data point the model hasn’t seen before: model.predict(tf.tensor2d([5], [1, 1])).print(); });</p>
+<p>目前该项目还是非常新颖的应用，我们非常容易将机器学习模型部署在网页端并在用户的浏览器与硬件实现简单的推断。虽然我们还不清楚实现的效果，但这个 JS 库真正能训练并部署机器学习模型，因此机器之心也将持续关注并尝试构建有意思的应用。</p>
+<h2 id="数十种TensorFlow实现案例汇集：代码-笔记"><a href="#数十种TensorFlow实现案例汇集：代码-笔记" class="headerlink" title="数十种TensorFlow实现案例汇集：代码+笔记"></a><a href="https://blog.csdn.net/dj0379/article/details/52851027" target="_blank" rel="noopener">数十种TensorFlow实现案例汇集：代码+笔记</a></h2><p>2016年10月18日 17:48:03</p>
+<p>这是使用 TensorFlow 实现流行的机器学习算法的教程汇集。本汇集的目标是让读者可以轻松通过案例深入 TensorFlow。</p>
+<p>这些案例适合那些想要清晰简明的 TensorFlow 实现案例的初学者。本教程还包含了笔记和带有注解的代码。</p>
+<p>项目地址：<a href="https://github.com/aymericdamien/TensorFlow-Examples" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples</a></p>
+<p>教程索引</p>
+<p>0 - 先决条件</p>
+<p>机器学习入门：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/0_Prerequisite/ml_introduction.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/0_Prerequisite/ml_introduction.ipynb</a></p>
+<p>MNIST 数据集入门</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/0_Prerequisite/mnist_dataset_intro.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/0_Prerequisite/mnist_dataset_intro.ipynb</a></p>
+<p>1 - 入门</p>
+<p>Hello World：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/1_Introduction/helloworld.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/1_Introduction/helloworld.ipynb</a></p>
+<p>代码<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/1_Introduction/helloworld.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/1_Introduction/helloworld.py</a></p>
+<p>基本操作：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/1_Introduction/basic_operations.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/1_Introduction/basic_operations.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/1_Introduction/basic_operations.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/1_Introduction/basic_operations.py</a></p>
+<p>2 - 基本模型</p>
+<p>最近邻：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/2_BasicModels/nearest_neighbor.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/2_BasicModels/nearest_neighbor.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/nearest_neighbor.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/nearest_neighbor.py</a></p>
+<p>线性回归：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/2_BasicModels/linear_regression.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/2_BasicModels/linear_regression.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/linear_regression.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/linear_regression.py</a></p>
+<p>Logistic 回归：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/2_BasicModels/logistic_regression.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/2_BasicModels/logistic_regression.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/logistic_regression.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/logistic_regression.py</a></p>
+<p>3 - 神经网络</p>
+<p>多层感知器：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/multilayer_perceptron.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/multilayer_perceptron.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/multilayer_perceptron.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/multilayer_perceptron.py</a></p>
+<p>卷积神经网络：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/convolutional_network.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/convolutional_network.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/convolutional_network.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/convolutional_network.py</a></p>
+<p>循环神经网络（LSTM）：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/recurrent_network.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/recurrent_network.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/recurrent_network.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/recurrent_network.py</a></p>
+<p>双向循环神经网络（LSTM）：</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/bidirectional_rnn.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/bidirectional_rnn.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/bidirectional_rnn.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/bidirectional_rnn.py</a></p>
+<p>动态循环神经网络（LSTM）</p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/dynamic_rnn.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/dynamic_rnn.py</a></p>
+<p>自编码器</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/autoencoder.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/autoencoder.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/autoencoder.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/autoencoder.py</a></p>
+<p>4 - 实用技术</p>
+<p>保存和恢复模型</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/4_Utils/save_restore_model.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/4_Utils/save_restore_model.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/4_Utils/save_restore_model.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/4_Utils/save_restore_model.py</a></p>
+<p>图和损失可视化</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/4_Utils/tensorboard_basic.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/4_Utils/tensorboard_basic.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/4_Utils/tensorboard_basic.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/4_Utils/tensorboard_basic.py</a></p>
+<p>Tensorboard——高级可视化</p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/4_Utils/tensorboard_advanced.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/4_Utils/tensorboard_advanced.py</a></p>
+<p>5 - 多 GPU</p>
+<p>多 GPU 上的基本操作</p>
+<p>笔记：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/5_MultiGPU/multigpu_basics.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/5_MultiGPU/multigpu_basics.ipynb</a></p>
+<p>代码：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/5_MultiGPU/multigpu_basics.py" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/5_MultiGPU/multigpu_basics.py</a></p>
+<p>数据集</p>
+<p>一些案例需要 MNIST 数据集进行训练和测试。不要担心，运行这些案例时，该数据集会被自动下载下来（使用 input_data.py）。MNIST 是一个手写数字的数据库，查看这个笔记了解关于该数据集的描述：<a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/0_Prerequisite/mnist_dataset_intro.ipynb" target="_blank" rel="noopener">https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/0_Prerequisite/mnist_dataset_intro.ipynb</a></p>
+<p>官方网站：<a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener">http://yann.lecun.com/exdb/mnist/</a></p>
+<p>更多案例<br>接下来的示例来自 TFLearn，这是一个为 TensorFlow 提供了简化的接口的库。你可以看看，这里有很多示例和预构建的运算和层。</p>
+<p>示例：<a href="https://github.com/tflearn/tflearn/tree/master/examples" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/tree/master/examples</a></p>
+<p>预构建的运算和层：<a href="http://tflearn.org/doc_index/#api" target="_blank" rel="noopener">http://tflearn.org/doc_index/#api</a></p>
+<p>教程<br>TFLearn 快速入门。通过一个具体的机器学习任务学习 TFLearn 基础。开发和训练一个深度神经网络分类器。</p>
+<p>笔记：<a href="https://github.com/tflearn/tflearn/blob/master/tutorials/intro/quickstart.md" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/tutorials/intro/quickstart.md</a></p>
+<p>基础<br>线性回归，使用 TFLearn 实现线性回归：<a href="https://github.com/tflearn/tflearn/blob/master/examples/basics/linear_regression.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/basics/linear_regression.py</a></p>
+<p>逻辑运算符。使用 TFLearn 实现逻辑运算符：<a href="https://github.com/tflearn/tflearn/blob/master/examples/basics/logical.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/basics/logical.py</a></p>
+<p>权重保持。保存和还原一个模型：<a href="https://github.com/tflearn/tflearn/blob/master/examples/basics/weights_persistence.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/basics/weights_persistence.py</a></p>
+<p>微调。在一个新任务上微调一个预训练的模型：<a href="https://github.com/tflearn/tflearn/blob/master/examples/basics/finetuning.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/basics/finetuning.py</a></p>
+<p>使用 HDF5。使用 HDF5 处理大型数据集：<a href="https://github.com/tflearn/tflearn/blob/master/examples/basics/use_hdf5.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/basics/use_hdf5.py</a></p>
+<p>使用 DASK。使用 DASK 处理大型数据集：<a href="https://github.com/tflearn/tflearn/blob/master/examples/basics/use_dask.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/basics/use_dask.py</a></p>
+<p>计算机视觉<br>多层感知器。一种用于 MNIST 分类任务的多层感知实现：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/dnn.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/dnn.py</a></p>
+<p>卷积网络（MNIST）。用于分类 MNIST 数据集的一种卷积神经网络实现：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/convnet_mnist.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/convnet_mnist.py</a></p>
+<p>卷积网络（CIFAR-10）。用于分类 CIFAR-10 数据集的一种卷积神经网络实现：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/convnet_cifar10.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/convnet_cifar10.py</a></p>
+<p>网络中的网络。用于分类 CIFAR-10 数据集的 Network in Network 实现：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/network_in_network.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/network_in_network.py</a></p>
+<p>Alexnet。将 Alexnet 应用于 Oxford Flowers 17 分类任务：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/alexnet.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/alexnet.py</a></p>
+<p>VGGNet。将 VGGNet 应用于 Oxford Flowers 17 分类任务：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/vgg_network.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/vgg_network.py</a></p>
+<p>VGGNet Finetuning (Fast Training)。使用一个预训练的 VGG 网络并将其约束到你自己的数据上，以便实现快速训练：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/vgg_network_finetuning.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/vgg_network_finetuning.py</a></p>
+<p>RNN Pixels。使用 RNN（在像素的序列上）分类图像：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/rnn_pixels.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/rnn_pixels.py</a></p>
+<p>Highway Network。用于分类 MNIST 数据集的 Highway Network 实现：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/highway_dnn.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/highway_dnn.py</a></p>
+<p>Highway Convolutional Network。用于分类 MNIST 数据集的 Highway Convolutional Network 实现：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/convnet_highway_mnist.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/convnet_highway_mnist.py</a></p>
+<p>Residual Network (MNIST) (<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/residual_network_mnist.py).。应用于" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/residual_network_mnist.py).。应用于</a> MNIST 分类任务的一种瓶颈残差网络（bottleneck residual network）：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/residual_network_mnist.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/residual_network_mnist.py</a></p>
+<p>Residual Network (CIFAR-10)。应用于 CIFAR-10 分类任务的一种残差网络：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/residual_network_cifar10.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/residual_network_cifar10.py</a></p>
+<p>Google Inception（v3）。应用于 Oxford Flowers 17 分类任务的谷歌 Inception v3 网络：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/googlenet.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/googlenet.py</a></p>
+<p>自编码器。用于 MNIST 手写数字的自编码器：<a href="https://github.com/tflearn/tflearn/blob/master/examples/images/autoencoder.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/images/autoencoder.py</a></p>
+<p>自然语言处理<br>循环神经网络（LSTM），应用 LSTM 到 IMDB 情感数据集分类任务：<a href="https://github.com/tflearn/tflearn/blob/master/examples/nlp/lstm.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/nlp/lstm.py</a></p>
+<p>双向 RNN（LSTM），将一个双向 LSTM 应用到 IMDB 情感数据集分类任务：<a href="https://github.com/tflearn/tflearn/blob/master/examples/nlp/bidirectional_lstm.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/nlp/bidirectional_lstm.py</a></p>
+<p>动态 RNN（LSTM），利用动态 LSTM 从 IMDB 数据集分类可变长度文本：<a href="https://github.com/tflearn/tflearn/blob/master/examples/nlp/dynamic_lstm.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/nlp/dynamic_lstm.py</a></p>
+<p>城市名称生成，使用 LSTM 网络生成新的美国城市名：<a href="https://github.com/tflearn/tflearn/blob/master/examples/nlp/lstm_generator_cityname.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/nlp/lstm_generator_cityname.py</a></p>
+<p>莎士比亚手稿生成，使用 LSTM 网络生成新的莎士比亚手稿：<a href="https://github.com/tflearn/tflearn/blob/master/examples/nlp/lstm_generator_shakespeare.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/nlp/lstm_generator_shakespeare.py</a></p>
+<p>Seq2seq，seq2seq 循环网络的教学示例：<a href="https://github.com/tflearn/tflearn/blob/master/examples/nlp/seq2seq_example.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/nlp/seq2seq_example.py</a></p>
+<p>CNN Seq，应用一个 1-D 卷积网络从 IMDB 情感数据集中分类词序列：<a href="https://github.com/tflearn/tflearn/blob/master/examples/nlp/cnn_sentence_classification.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/nlp/cnn_sentence_classification.py</a></p>
+<p>强化学习<br>Atari Pacman 1-step Q-Learning，使用 1-step Q-learning 教一台机器玩 Atari 游戏：<a href="https://github.com/tflearn/tflearn/blob/master/examples/reinforcement_learning/atari_1step_qlearning.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/reinforcement_learning/atari_1step_qlearning.py</a></p>
+<p>其他</p>
+<p>Recommender-Wide&amp;Deep Network，推荐系统中 wide &amp; deep 网络的教学示例：<a href="https://github.com/tflearn/tflearn/blob/master/examples/others/recommender_wide_and_deep.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/others/recommender_wide_and_deep.py</a></p>
+<p>Notebooks</p>
+<p>Spiral Classification Problem，对斯坦福 CS231n spiral 分类难题的 TFLearn 实现：<a href="https://github.com/tflearn/tflearn/blob/master/examples/notebooks/spiral.ipynb" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/notebooks/spiral.ipynb</a></p>
+<p>可延展的 TensorFlow<br>层，与 TensorFlow 一起使用  TFLearn 层：<a href="https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/layers.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/layers.py</a></p>
+<p>训练器，使用 TFLearn 训练器类训练任何 TensorFlow 图：<a href="https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/layers.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/layers.py</a></p>
+<p>Bulit-in Ops，连同 TensorFlow 使用 TFLearn built-in 操作：<a href="https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/builtin_ops.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/builtin_ops.py</a></p>
+<p>Summaries，连同 TensorFlow 使用 TFLearn summarizers：<a href="https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/summaries.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/summaries.py</a></p>
+<p>Variables，连同 TensorFlow 使用 TFLearn Variables：<a href="https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/variables.py" target="_blank" rel="noopener">https://github.com/tflearn/tflearn/blob/master/examples/extending_tensorflow/variables.py</a></p>
+<h2 id="TensorFlow1-8-0正式发布，Bug修复和改进内容都在这里了"><a href="#TensorFlow1-8-0正式发布，Bug修复和改进内容都在这里了" class="headerlink" title="TensorFlow1.8.0正式发布，Bug修复和改进内容都在这里了"></a><a href="https://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/79979257" target="_blank" rel="noopener">TensorFlow1.8.0正式发布，Bug修复和改进内容都在这里了</a></h2><p>TensorFlow 1.8.0 近日正式发布，新版本主要有以下改进内容，AI科技大本营对其编译如下。</p>
+<p>▌主要特点及改进</p>
+<p>可以将 tf.contrib.distribute.MirroredStrategy() 传递给 tf.estimator.RunConfig() ，能够在一台有多个 GPU 的机器上运行评估器 （Estimator） 模型。</p>
+<p>添加 tf.contrib.data.prefetch_to_device() ，支持预取 GPU 内存。</p>
+<p>添加梯度提升树作为预先制作的评估器（Estimator）：BoostedTreesClassifier，BoostedTreesRegressor。</p>
+<p>为云端 TPU 添加第三代管道配置，提高其性能和可用性。</p>
+<p>tf.contrib.bayesflow 转向自己的 repo。</p>
+<p>添加了 tf.contrib.{proto，rpc} ，允许通用的原型解析和 RPC 通信。</p>
+<p>▌Bug 修复和其他修改<br>tf.data:</p>
+<p>添加 tf.contrib.data.prefetch_to_device ，可以将数据集元素预取到 GPU 内存。</p>
+<p>添加 tf.contrib.data.AUTOTUNE ，在 tf.data 运行时，根据系统和环境自动调整预取缓冲区大小。</p>
+<p>添加 tf.contrib.data.make_csv_dataset ，构建 CSV 文件数据集。</p>
+<p>Eager Execution:</p>
+<p>Eager Execution 数据集可以作为标准的 Python 迭代器使用（for batch in dataset:)。当 Eager Execution 启动时，可以使用 Dataset .iter () 和 Dataset.make_one_shot_iterator() 创建迭代器。</p>
+<p>已启用自动装置配置（即如果 GPU 是自动接入的，则不需要使用 tf.device(“/gpu:0”)）（修复 #14133）</p>
+<p>已经将 contrib 的 tf.GradientTape 移出。</p>
+<p>tf.keras:</p>
+<p>添加了 fashion mnist 数据集。</p>
+<p>新的数据预处理功能：image/random_brightness，sequence/TimeseriesGenerator 和 text/hashing_trick。</p>
+<p>加速线性代数 (XLA):</p>
+<p>选择并分散参考实用程序和评估程序，使用字典顺序来打破关系。<br>TensorFlow Debugger (tfdbg) CLI:</p>
+<p>在 tensor-filter 操作中，允许使用正则表达式排除节点。</p>
+<p>修复某些文本终端的虚假背景色。</p>
+<p>tf.contrib:</p>
+<p>添加重构批量维度的元分发 BatchReshape 。</p>
+<p>tf.contrib.layers.recompute_grad 用于 TPU 上的显式梯度检查点。</p>
+<p>添 加 tf.contrib.framework.argsort 。</p>
+<p>允许 DNNBoostedTreeCombinedEstimator 处理特征列和损失的核心版本。</p>
+<p>添加非线性图像变形操作： tf.contrib.image.sparse_image_warp，tf.contrib.image.dense_image_warp 和 tf.contrib.image.interpolate_spline 。</p>
+<p>修复 tensor 类型不匹配的 tf.contrib.opt.MultitaskOptimizerWrapper 中的错误。</p>
+<p>▌Other<br>低级图形构造现在被称为 TensorFlow C API 。对于大多数用户而言，这种更改不可见，但在这个版本中可以设置环境变量 TF_C_API_GRAPH_CONSTRUCTION = 0 来禁用此更改。未来的版本将删除禁用此更改的功能。</p>
+<p>在 tf.distributions.Distribution 中添加形状描述和指向 tutorial notebook 的指针。</p>
+<p>更新 scatter 操作：</p>
+<p>添加 tf.scatter_min 和 tf.scatter_max；<br>扩展 scatter 操作以使用标量更新参数。</p>
+<p>仅仅将 cuDNN RNN操作移至内核，用于 TensorFlow 代码库。</p>
+<p>为 Conv2d ， Conv2dBackpropInput 和 Conv2dBackpropFilter 添加 float64 支持。</p>
+<p>为 AvgPool / AvgPoolGrad 添加 float64 支持。</p>
+<p>图名称作用域线程为本地，以便在多线程环境中正常工作。</p>
+<p>更新 nsync 同步库，避免 Linux 上速度较慢的原语。</p>
+<p>在构建自定义操作时，删除了需要在 C include 路径中放置 nsync / public</p>
+<p>添加 tf.image.psnr ， tf.image.ssim ， tf.image.ssim_multiscale ， tf.image.image_gradients ， tf.image.sobel_edges</p>
+<p>将链接添加到 <a href="https://js.tensorflow.org" target="_blank" rel="noopener">https://js.tensorflow.org</a></p>
+<p>修复正交矩阵的不均匀性。</p>
+<p>修复了多图像评估器（Estimator）评估摘要显示不正确的问题。</p>
+<p>资源：</p>
+<p>源代码（zip）</p>
+<p><a href="https://github.com/tensorflow/tensorflow/archive/v1.8.0-rc0.zip" target="_blank" rel="noopener">https://github.com/tensorflow/tensorflow/archive/v1.8.0-rc0.zip</a></p>
+<p>源代码（tar.gz）</p>
+<p><a href="https://github.com/tensorflow/tensorflow/archive/v1.8.0-rc0.tar.gz" target="_blank" rel="noopener">https://github.com/tensorflow/tensorflow/archive/v1.8.0-rc0.tar.gz</a></p>
+<p>作者 | annarev<br>原文链接:<a href="https://github.com/tensorflow/tensorflow/releases/" target="_blank" rel="noopener">https://github.com/tensorflow/tensorflow/releases/</a></p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><a href="">参考资料</a></h2><h3 id="TensorFlow-Examples"><a href="#TensorFlow-Examples" class="headerlink" title="TensorFlow-Examples"></a><a href="https://github.com/aymericdamien/TensorFlow-Examples" target="_blank" rel="noopener">TensorFlow-Examples</a></h3><h3 id="什么是TensorFlow？"><a href="#什么是TensorFlow？" class="headerlink" title="什么是TensorFlow？"></a><a href="https://www.cnblogs.com/lvpengbo/p/8708466.html" target="_blank" rel="noopener">什么是TensorFlow？</a></h3>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Tensor/" rel="tag"><i class="fa fa-tag"></i> Tensor</a>
+          
+            <a href="/tags/Flow/" rel="tag"><i class="fa fa-tag"></i> Flow</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+			<div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">After reading, Five stars :)</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Concept/Memory.html" rel="next" title="Memory">
+                <i class="fa fa-chevron-left"></i> Memory
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Business/5G.html" rel="prev" title="5G">
+                5G <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d373f67eacfaa6" async = "async" ></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="hypercomments_widget"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img/headonhill.jpg"
+                alt="DeepCreator" />
+            
+              <p class="site-author-name" itemprop="name">DeepCreator</p>
+              <p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">125</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">225</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("01/04/2018 16:01:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second ";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#入门｜极致的优化：智能手机是如何处理大型神经网络的"><span class="nav-number">1.</span> <span class="nav-text">入门｜极致的优化：智能手机是如何处理大型神经网络的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorFlow发布JavaScript开发者的机器学习框架TensorFlow-js"><span class="nav-number">2.</span> <span class="nav-text">TensorFlow发布JavaScript开发者的机器学习框架TensorFlow.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数十种TensorFlow实现案例汇集：代码-笔记"><span class="nav-number">3.</span> <span class="nav-text">数十种TensorFlow实现案例汇集：代码+笔记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorFlow1-8-0正式发布，Bug修复和改进内容都在这里了"><span class="nav-number">4.</span> <span class="nav-text">TensorFlow1.8.0正式发布，Bug修复和改进内容都在这里了</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TensorFlow-Examples"><span class="nav-number">5.1.</span> <span class="nav-text">TensorFlow-Examples</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是TensorFlow？"><span class="nav-number">5.2.</span> <span class="nav-text">什么是TensorFlow？</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="heart">
+  <span class="author" itemprop="copyrightHolder">DeepCreator</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.2.0</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共1.1m字</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script>
+
+
+
+  
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 96030, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 96030, xid: "AI/Tensor Flow.html"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/96030/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz',
+        appKey: 'PXNkGhS05PxL7rV3N8gDlAQe',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -316,13 +2069,157 @@
         onPopupClose();
       }
     });
-  </script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script type="text/javascript">wpac_init=window.wpac_init||[],wpac_init.push({widget:"Rating",id:11184,el:"wpac-rating",color:"fc6423"}),function(){if(!("WIDGETPACK_LOADED"in window)){WIDGETPACK_LOADED=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//embed.widgetpack.com/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t.nextSibling)}}()</script><script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script><script type="text/javascript">bookmark.scrollToMark("auto","#更多")</script><style>.copy-btn{display:inline-block;padding:6px 12px;font-size:13px;font-weight:700;line-height:20px;color:#333;white-space:nowrap;vertical-align:middle;cursor:pointer;background-color:#eee;background-image:linear-gradient(#fcfcfc,#eee);border:1px solid #d5d5d5;border-radius:3px;user-select:none}.highlight-wrap .copy-btn{transition:opacity .3s ease-in-out;opacity:0;padding:2px 6px;position:absolute;right:4px;top:8px}.highlight-wrap .copy-btn:focus,.highlight-wrap:hover .copy-btn{opacity:1}.highlight-wrap{position:relative}</style><script>$(".highlight").each(function(e,t){var n=$("<div>").addClass("highlight-wrap");$(t).after(n),n.append($("<button>").addClass("copy-btn").append("复制").on("click",function(e){var t=$(e.target).parent().find(".code").find(".line").map(function(e,t){return $(t).text()}).toArray().join("\n"),n=document.createElement("textarea");document.body.appendChild(n),n.style.position="fixed",n.style.top=0,n.style.left=0,n.value=t,n.select(),n.focus(),document.execCommand("copy"),document.body.removeChild(n)})).append(t)})</script><script type="text/x-mathjax-config">
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 11184,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+    
+  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
+
+  
+  <style>
+      .copy-btn {
+          display: inline-block;
+          padding: 6px 12px;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          color: #333;
+          white-space: nowrap;
+          vertical-align: middle;
+          cursor: pointer;
+          background-color: #eee;
+          background-image: linear-gradient(#fcfcfc, #eee);
+          border: 1px solid #d5d5d5;
+          border-radius: 3px;
+          user-select: none;
+      }
+
+      .highlight-wrap .copy-btn {
+          transition: opacity .3s ease-in-out;
+          opacity: 0;
+          padding: 2px 6px;
+          position: absolute;
+          right: 4px;
+          top: 8px;
+      }
+
+      .highlight-wrap:hover .copy-btn,
+      .highlight-wrap .copy-btn:focus {
+          opacity: 1
+      }
+
+      .highlight-wrap {
+          position: relative;
+      }
+  </style>
+  <script>
+      $('.highlight').each(function(i, e) {
+          var $wrap = $('<div>').addClass('highlight-wrap')
+          $(e).after($wrap)
+          $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+              var code = $(e.target).parent().find('.code').find('.line').map(function(i, e) {
+                  return $(e).text()
+              }).toArray().join('\n')
+              var ta = document.createElement('textarea')
+              document.body.appendChild(ta)
+              ta.style.position = 'fixed'
+              ta.style.top = 0
+              ta.style.left = 0
+              ta.value = code
+              ta.select()
+              ta.focus()
+              document.execCommand('copy')
+              document.body.removeChild(ta)
+          })).append(e)
+      })
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script><script type="text/x-mathjax-config">
+</script>
+
+<script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
     var all = MathJax.Hub.getAllJax(), i;
     for(i=0; i < all.length; i += 1) {
       all[i].SourceElement().parentNode.className += ' has-jax';
     }
   });
-</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script></body></html>
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+</body>
+</html>

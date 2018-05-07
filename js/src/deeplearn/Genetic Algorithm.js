@@ -1,0 +1,1 @@
+for(var costf=function(o){for(var c=0,e=0;e<14;e++)c+=.5*e*o[e]*Math.exp(-o[e]+o[e+1])/o[e+1];return c+=3*o[14]/o[0]},domain=[],i=0;i<15;i++)domain.push([1,70]);var vec=ml.optimize.genetic({domain:domain,costf:costf,population:50,elite:2,epochs:300,q:.3});console.log("vec : ",vec),console.log("cost : ",costf(vec));
