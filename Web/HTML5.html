@@ -130,7 +130,7 @@
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/html520180503.jpg?imageMogr2/thumbnail/!75p">
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/html5-cheat-sheet.png?imageMogr2/thumbnail/!75p">
 <meta property="og:image" content="http://www.catswhocode.com/blog/wp-content/uploads/2011/08/html5canvas.png">
-<meta property="og:updated_time" content="2018-05-05T11:36:41.725Z">
+<meta property="og:updated_time" content="2018-05-07T09:01:17.629Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML5">
 <meta name="twitter:description" content="万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式">
@@ -486,7 +486,7 @@
              <i class="fa fa-calendar-o"></i>
            </span>
            <span class="post-meta-item-text">Words </span>
-           <span class="post-count">746 </span>
+           <span class="post-count">1,085 </span>
            
          </span>
 	  
@@ -496,7 +496,7 @@
              <i class="fa fa-calendar-o"></i>
            </span>
            <span class="post-meta-item-text">Time </span>
-           <span class="post-count">3 Min </span>
+           <span class="post-count">4 Min </span>
            
          </span>
 <!-- #���ϲ���Ϊ������ͳ�ơ��Ķ�ʱ���������  -->
@@ -553,7 +553,8 @@
 <p>n latest</p>
 <h2 id="揭秘谷歌AMP项目：它是如何提高网页加载速度的？"><a href="#揭秘谷歌AMP项目：它是如何提高网页加载速度的？" class="headerlink" title="揭秘谷歌AMP项目：它是如何提高网页加载速度的？"></a><a href="https://news.cnblogs.com/n/532096/" target="_blank" rel="noopener">揭秘谷歌AMP项目：它是如何提高网页加载速度的？</a></h2><blockquote class="blockquote-center"><p>在线演示平台——致敬Apple</p>
 </blockquote>
-<p><a id="more">&lt;/a&gt;<h2 id="playlist"><a href="#playlist" class="headerlink" title="playlist"></a>playlist&lt;/h2&gt;</h2></a></p>
+<h2 id="playlist"><a href="#playlist" class="headerlink" title="playlist"></a>playlist</h2>
+
 <div id="aplayer-nJVxGDtU" class="aplayer aplayer-tag-marker" style="margin-bottom:20px"></div>
 
 <script>var options={
@@ -635,7 +636,13 @@ Your browser does not support the video tag.
 
 <p><span id="inline-toc">1.</span></p>
 <p>NexT theme本来就支持Mathjax，简直又惊又喜。<br>写Markdown的时候，需要用$$把公式括起来。</p>
-<script type="math/tex; mode=display">\sum_{i=1}^n a_i=0</script><script type="math/tex; mode=display">d (x_a, x_b) = \sqrt{\sum_{p} \left( x^p_a - x^p_b \right)^2}</script><script type="math/tex; mode=display">f(x_1,x_2,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2</script>
+<script type="math/tex; mode=display">\sum_{i=1}^n a_i=0</script><script type="math/tex; mode=display">d (x_a, x_b) = \sqrt{\sum_{p} \left( x^p_a - x^p_b \right)^2}</script><script type="math/tex; mode=display">f(x_1,x_2,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2</script><h3 id="作为一个前端，可以如何机智地弄坏一台电脑？"><a href="#作为一个前端，可以如何机智地弄坏一台电脑？" class="headerlink" title="作为一个前端，可以如何机智地弄坏一台电脑？"></a><a href="http://litten.me/2015/07/06/hack-in-localstorage/" target="_blank" rel="noopener">作为一个前端，可以如何机智地弄坏一台电脑？</a></h3><p>html5的本地存储，相信大家都不陌生。将数据以二进制文件形式存储到本地，在当前应用得非常广泛。<br>windows下的chrome，localStorage存储于C:\Users\xxx\AppData\Local\Google\Chrome\User Data\Default\Local Storage文件夹中。但如果任由网页无限写文件，对用户硬盘的伤害可想而知，因而浏览器对其做了大小限制。</p>
+<p>对于一个域名+端口，PC侧的上限是5M-10M之间，移动侧是则不大于2.5M。</p>
+<p>那么问题就变成：这样的限制足够保护用户硬盘了吗？</p>
+<p>关键<br>关键的问题在于，这一限制，针对的是一个域名+端口。<br>也就是说，你访问同一个域名的不同端口，它们的localStorage并无关联，是分开存储的。</p>
+<p>我用node简单地开启了服务器，这时，用户访问<a href="http://127.0.0.1:1000到http://127.0.0.1:1099这100个端口，会请求到同一个页面：index.html：" target="_blank" rel="noopener">http://127.0.0.1:1000到http://127.0.0.1:1099这100个端口，会请求到同一个页面：index.html：</a></p>
+<h3 id="前端安全冷门知识杂谈"><a href="#前端安全冷门知识杂谈" class="headerlink" title="前端安全冷门知识杂谈"></a><a href="http://litten.me/2014/05/27/safety-point-of-view-from-front-end/" target="_blank" rel="noopener">前端安全冷门知识杂谈</a></h3><p>盗取无法用js读写的Cookie<br>删不掉的本地存储<br>函数覆写监听上报<br>内存Cookie与硬盘Cookie<br>CSS带来的点击量泄露<br>JSONP回调函数与UTF-7编码<br>过滤与代码混淆<br>心理学与社会工程学</p>
+
       
     </div>
 
@@ -784,7 +791,7 @@ Your browser does not support the video tag.
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">125</span>
+                    <span class="site-state-item-count">126</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1278,7 +1285,9 @@ Your browser does not support the video tag.
                     
                       
                     
-                    <span class="site-state-item-count">225</span>
+                      
+                    
+                    <span class="site-state-item-count">226</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1347,7 +1356,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#揭秘谷歌AMP项目：它是如何提高网页加载速度的？"><span class="nav-number">1.</span> <span class="nav-text">揭秘谷歌AMP项目：它是如何提高网页加载速度的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#playlist"><span class="nav-number">2.</span> <span class="nav-text">playlist&lt;/h2&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#music"><span class="nav-number">3.</span> <span class="nav-text">music</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#video"><span class="nav-number">4.</span> <span class="nav-text">video</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#让人爱不释手的13套精美-Web-应用程序图标素材"><span class="nav-number">5.1.</span> <span class="nav-text">让人爱不释手的13套精美 Web 应用程序图标素材</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐10款非常优秀的-HTML5-开发工具"><span class="nav-number">5.2.</span> <span class="nav-text">推荐10款非常优秀的 HTML5 开发工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐35款精致的-CSS3-和-HTML5-网页模板"><span class="nav-number">5.3.</span> <span class="nav-text">推荐35款精致的 CSS3 和 HTML5 网页模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站项目必备——12款经典的白富美型-jQuery-图片轮播插件"><span class="nav-number">5.4.</span> <span class="nav-text">网站项目必备——12款经典的白富美型 jQuery 图片轮播插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#how-well-does-your-browser-support-html5"><span class="nav-number">5.5.</span> <span class="nav-text">how well does your browser support html5?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo教程系列——hexo安装教程"><span class="nav-number">5.6.</span> <span class="nav-text">hexo教程系列——hexo安装教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建一个免费的，无限流量的Blog——github-Pages和Jekyll入门"><span class="nav-number">5.7.</span> <span class="nav-text">搭建一个免费的，无限流量的Blog——github Pages和Jekyll入门</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Minimum-Viable-Product"><span class="nav-number">5.8.</span> <span class="nav-text">Minimum Viable Product</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写日记有哪些好处？"><span class="nav-number">5.9.</span> <span class="nav-text">写日记有哪些好处？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#APlayer"><span class="nav-number">5.10.</span> <span class="nav-text">APlayer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DPlayer"><span class="nav-number">5.11.</span> <span class="nav-text">DPlayer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打造个性超赞博客Hexo-NexT-GithubPages的超深度优化"><span class="nav-number">5.12.</span> <span class="nav-text">打造个性超赞博客Hexo+NexT+GithubPages的超深度优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo摸爬滚打之进阶教程"><span class="nav-number">5.13.</span> <span class="nav-text">hexo摸爬滚打之进阶教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？"><span class="nav-number">5.14.</span> <span class="nav-text">hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-NexT-主题SEO优化指南"><span class="nav-number">5.15.</span> <span class="nav-text">Hexo NexT 主题SEO优化指南</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【搜索优化】Hexo-next百度和谷歌搜索优化"><span class="nav-number">5.16.</span> <span class="nav-text">【搜索优化】Hexo-next百度和谷歌搜索优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在Hexo中渲染MathJax数学公式"><span class="nav-number">5.17.</span> <span class="nav-text">在Hexo中渲染MathJax数学公式</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#揭秘谷歌AMP项目：它是如何提高网页加载速度的？"><span class="nav-number">1.</span> <span class="nav-text">揭秘谷歌AMP项目：它是如何提高网页加载速度的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#playlist"><span class="nav-number">2.</span> <span class="nav-text">playlist</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#music"><span class="nav-number">3.</span> <span class="nav-text">music</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#video"><span class="nav-number">4.</span> <span class="nav-text">video</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#让人爱不释手的13套精美-Web-应用程序图标素材"><span class="nav-number">5.1.</span> <span class="nav-text">让人爱不释手的13套精美 Web 应用程序图标素材</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐10款非常优秀的-HTML5-开发工具"><span class="nav-number">5.2.</span> <span class="nav-text">推荐10款非常优秀的 HTML5 开发工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐35款精致的-CSS3-和-HTML5-网页模板"><span class="nav-number">5.3.</span> <span class="nav-text">推荐35款精致的 CSS3 和 HTML5 网页模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站项目必备——12款经典的白富美型-jQuery-图片轮播插件"><span class="nav-number">5.4.</span> <span class="nav-text">网站项目必备——12款经典的白富美型 jQuery 图片轮播插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#how-well-does-your-browser-support-html5"><span class="nav-number">5.5.</span> <span class="nav-text">how well does your browser support html5?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo教程系列——hexo安装教程"><span class="nav-number">5.6.</span> <span class="nav-text">hexo教程系列——hexo安装教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建一个免费的，无限流量的Blog——github-Pages和Jekyll入门"><span class="nav-number">5.7.</span> <span class="nav-text">搭建一个免费的，无限流量的Blog——github Pages和Jekyll入门</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Minimum-Viable-Product"><span class="nav-number">5.8.</span> <span class="nav-text">Minimum Viable Product</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写日记有哪些好处？"><span class="nav-number">5.9.</span> <span class="nav-text">写日记有哪些好处？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#APlayer"><span class="nav-number">5.10.</span> <span class="nav-text">APlayer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DPlayer"><span class="nav-number">5.11.</span> <span class="nav-text">DPlayer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打造个性超赞博客Hexo-NexT-GithubPages的超深度优化"><span class="nav-number">5.12.</span> <span class="nav-text">打造个性超赞博客Hexo+NexT+GithubPages的超深度优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo摸爬滚打之进阶教程"><span class="nav-number">5.13.</span> <span class="nav-text">hexo摸爬滚打之进阶教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？"><span class="nav-number">5.14.</span> <span class="nav-text">hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-NexT-主题SEO优化指南"><span class="nav-number">5.15.</span> <span class="nav-text">Hexo NexT 主题SEO优化指南</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【搜索优化】Hexo-next百度和谷歌搜索优化"><span class="nav-number">5.16.</span> <span class="nav-text">【搜索优化】Hexo-next百度和谷歌搜索优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在Hexo中渲染MathJax数学公式"><span class="nav-number">5.17.</span> <span class="nav-text">在Hexo中渲染MathJax数学公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作为一个前端，可以如何机智地弄坏一台电脑？"><span class="nav-number">5.18.</span> <span class="nav-text">作为一个前端，可以如何机智地弄坏一台电脑？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前端安全冷门知识杂谈"><span class="nav-number">5.19.</span> <span class="nav-text">前端安全冷门知识杂谈</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -128,7 +128,7 @@
 <meta property="og:description" content="Google Chrome是一款由Google公司开发的网页浏览器，该浏览器基于其他开源软件撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/googlechrome20180504.jpg?imageMogr2/thumbnail/!75p">
-<meta property="og:updated_time" content="2018-05-05T11:36:41.721Z">
+<meta property="og:updated_time" content="2018-05-07T09:05:35.975Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chrome">
 <meta name="twitter:description" content="Google Chrome是一款由Google公司开发的网页浏览器，该浏览器基于其他开源软件撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。">
@@ -482,7 +482,7 @@
              <i class="fa fa-calendar-o"></i>
            </span>
            <span class="post-meta-item-text">Words </span>
-           <span class="post-count">80 </span>
+           <span class="post-count">662 </span>
            
          </span>
 	  
@@ -492,7 +492,7 @@
              <i class="fa fa-calendar-o"></i>
            </span>
            <span class="post-meta-item-text">Time </span>
-           <span class="post-count">1 Min </span>
+           <span class="post-count">3 Min </span>
            
          </span>
 <!-- #���ϲ���Ϊ������ͳ�ơ��Ķ�ʱ���������  -->
@@ -530,7 +530,15 @@
 <p> <a href="https://baike.baidu.com/item/Google%20Chrome/5638378?fr=aladdin" target="_blank" rel="noopener">Google Chrome</a>是一款由Google公司开发的网页浏览器，该浏览器基于其他开源软件撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。</p>
 </blockquote>
 <a id="more"></a>
-<h2 id="Web前端性能优化——如何提高页面加载速度"><a href="#Web前端性能优化——如何提高页面加载速度" class="headerlink" title="Web前端性能优化——如何提高页面加载速度"></a><a href="https://www.cnblogs.com/MarcoHan/p/5295398.html" target="_blank" rel="noopener">Web前端性能优化——如何提高页面加载速度</a></h2>
+<h2 id="Web前端性能优化——如何提高页面加载速度"><a href="#Web前端性能优化——如何提高页面加载速度" class="headerlink" title="Web前端性能优化——如何提高页面加载速度"></a><a href="https://www.cnblogs.com/MarcoHan/p/5295398.html" target="_blank" rel="noopener">Web前端性能优化——如何提高页面加载速度</a></h2><h2 id="浏览器野史-UserAgent列传（上）"><a href="#浏览器野史-UserAgent列传（上）" class="headerlink" title="浏览器野史 UserAgent列传（上）"></a><a href="http://litten.me/2014/09/26/history-of-browser-useragent/" target="_blank" rel="noopener">浏览器野史 UserAgent列传（上）</a></h2><p>1990年: Nexus(WorldWideWeb)诞生<br>1993年1月23日：Mosaic诞生<br>1994年12月：Netscape(Mozilla)诞生<br>1995年4月：Opera诞生<br>1995年8月16日：Internet Explorer诞生<br>2002年9月23日：Firefox诞生<br>2003年1月7日：Safari诞生<br>2008年9月2日：Chrome诞生</p>
+<h2 id="浏览器野史-UserAgent列传（下）"><a href="#浏览器野史-UserAgent列传（下）" class="headerlink" title="浏览器野史 UserAgent列传（下）"></a><a href="http://litten.me/2014/10/05/history-of-browser-useragent2/" target="_blank" rel="noopener">浏览器野史 UserAgent列传（下）</a></h2><p>利用Trident（IE的内核），包装一下皮肤，美化一下，就可以说：完美兼容<br>利用Webkit，包装一下皮肤，美化一下，就可以说：极速浏览<br>把两个内核都包起来，就可以说：智能双核</p>
+<p>使用Trident内核的，在IE已有UserAgent后添加自己的名称；使用Webkit内核的，就在Chrome的UserAgent后面添加。</p>
+<p>前者像QQ浏览器：Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.7.26717.400)。<br>后者像猎豹：Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36 LBBROWSER。<br>当然双核浏览器诚然就是墙头草，切换内核时UserAgent也需要跟着变化。</p>
+<p>彩蛋</p>
+<p>那么，我们的故事接近尾声。还有一些有趣的小彩蛋。</p>
+<p>Chome 28开始，与苹果正式分道扬镳，采用Blink内核，但它的UserAgent并不改变。<br>淘宝封杀微信打开淘宝页面，靠的就是微信内置浏览器UserAgent里的MicroMessenger字样。其实微信也可以像当初360一样把UserAgent去掉，但微信并不这样做。<br>360出招之时留有后招。也许，它一开始就想到了腾讯会告他们对于UserAgent的欺瞒，因而它其实提供了设置项。默认设置是“保持跟IE一样的UserAgent”，但用户也可以不勾选。只是这选项比较隐蔽，而且你重启浏览器后…又会变回默认设置。如果没有这个小小的设置，结果大家可以自行想象。<br>微软又玩新花样了，在泄露版IE 11中，去掉了以往的MSIE字样。初步猜测此举是为了使现有的 CSS hack 失效，避免过去网页设计师对IE差别对待的情况再度发生。但又会引发其他问题啊亲。</p>
+<p><a href="https://www.w3.org/TR/UAAG/" target="_blank" rel="noopener">User Agent Accessibility Guidelines 1.0</a></p>
+<h2 id="兔子，胡萝卜与OAuth的故事"><a href="#兔子，胡萝卜与OAuth的故事" class="headerlink" title="兔子，胡萝卜与OAuth的故事"></a><a href="http://litten.me/2013/08/20/oauth-rabbit/" target="_blank" rel="noopener">兔子，胡萝卜与OAuth的故事</a></h2><h2 id="谈谈OAuth1-OAuth2异同"><a href="#谈谈OAuth1-OAuth2异同" class="headerlink" title="谈谈OAuth1,OAuth2异同"></a><a href="http://litten.me/2013/08/11/brief-oauth/" target="_blank" rel="noopener">谈谈OAuth1,OAuth2异同</a></h2>
       
     </div>
 
@@ -679,7 +687,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">125</span>
+                    <span class="site-state-item-count">126</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1173,7 +1181,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">225</span>
+                      
+                    
+                    <span class="site-state-item-count">226</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1242,7 +1252,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Web前端性能优化——如何提高页面加载速度"><span class="nav-number">1.</span> <span class="nav-text">Web前端性能优化——如何提高页面加载速度</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Web前端性能优化——如何提高页面加载速度"><span class="nav-number">1.</span> <span class="nav-text">Web前端性能优化——如何提高页面加载速度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器野史-UserAgent列传（上）"><span class="nav-number">2.</span> <span class="nav-text">浏览器野史 UserAgent列传（上）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器野史-UserAgent列传（下）"><span class="nav-number">3.</span> <span class="nav-text">浏览器野史 UserAgent列传（下）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#兔子，胡萝卜与OAuth的故事"><span class="nav-number">4.</span> <span class="nav-text">兔子，胡萝卜与OAuth的故事</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#谈谈OAuth1-OAuth2异同"><span class="nav-number">5.</span> <span class="nav-text">谈谈OAuth1,OAuth2异同</span></a></li></ol></div>
             
 
           </div>
