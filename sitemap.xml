@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/Concept/Story.html</loc>
+    
+    <lastmod>2018-05-08T10:00:28.774Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/Person/Diary.html</loc>
     
-    <lastmod>2018-05-08T09:00:22.165Z</lastmod>
+    <lastmod>2018-05-08T09:23:25.384Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://deepcreator.com/Business/Brand.html</loc>
     
     <lastmod>2018-05-08T08:55:23.815Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Concept/Story.html</loc>
-    
-    <lastmod>2018-05-08T08:54:39.295Z</lastmod>
     
   </url>
   
