@@ -5,6 +5,12 @@
 
 
 
+
+
+
+
+
+
   
 
 
@@ -65,9 +71,7 @@
 
 
 
-  
-
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css" />
 
@@ -102,7 +106,7 @@
     fastclick: false,
     lazyload: true,
     tabs: true,
-    motion: {"enable":true,"async":true,"transition":{"post_block":"perspectiveLeftIn","post_header":"fadeIn","post_body":"fadeIn","coll_header":"perspectiveLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"perspectiveLeftIn","post_header":"fadeIn","post_body":"fadeIn","coll_header":"perspectiveLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -230,9 +234,11 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">Minority, Truth, Value</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
@@ -390,8 +396,8 @@
     <link itemprop="mainEntityOfPage" href="http://deepcreator.com/Concept/Value.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="DeepCreator">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="Chief IPR Officer in AI Age">
       <meta itemprop="image" content="/img/headonhill.jpg">
     </span>
 
@@ -670,9 +676,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/img/headonhill.jpg"
-                alt="DeepCreator" />
+                alt="Author" />
             
-              <p class="site-author-name" itemprop="name">DeepCreator</p>
+              <p class="site-author-name" itemprop="name">Author</p>
               <p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p>
           </div>
 
@@ -1271,8 +1277,10 @@ show_date_time();
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love" id="heart">
-  <span class="author" itemprop="copyrightHolder">DeepCreator</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Author</span>
 
   
 
@@ -1290,11 +1298,6 @@ show_date_time();
 
 
 
-
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.0m字</span>
-</div>
 
         
 <div class="busuanzi-count">
@@ -1377,22 +1380,22 @@ show_date_time();
 
   
   
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
   
 
   
   
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js"></script>
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
@@ -1869,75 +1872,75 @@ show_date_time();
   
 
   
-  
-  
-    
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script>
-  <script type="text/javascript">
-  
-    bookmark.scrollToMark('auto', "#更多");
-  
-  </script>
-
 
   
   <style>
-      .copy-btn {
-          display: inline-block;
-          padding: 6px 12px;
-          font-size: 13px;
-          font-weight: 700;
-          line-height: 20px;
-          color: #333;
-          white-space: nowrap;
-          vertical-align: middle;
-          cursor: pointer;
-          background-color: #eee;
-          background-image: linear-gradient(#fcfcfc, #eee);
-          border: 1px solid #d5d5d5;
-          border-radius: 3px;
-          user-select: none;
-      }
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
 
-      .highlight-wrap .copy-btn {
-          transition: opacity .3s ease-in-out;
-          opacity: 0;
-          padding: 2px 6px;
-          position: absolute;
-          right: 4px;
-          top: 8px;
-      }
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
 
-      .highlight-wrap:hover .copy-btn,
-      .highlight-wrap .copy-btn:focus {
-          opacity: 1
-      }
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
 
-      .highlight-wrap {
-          position: relative;
-      }
+    .highlight-wrap {
+      position: relative;
+    }
   </style>
   <script>
-      $('.highlight').each(function(i, e) {
-          var $wrap = $('<div>').addClass('highlight-wrap')
-          $(e).after($wrap)
-          $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
-              var code = $(e.target).parent().find('.code').find('.line').map(function(i, e) {
-                  return $(e).text()
-              }).toArray().join('\n')
-              var ta = document.createElement('textarea')
-              document.body.appendChild(ta)
-              ta.style.position = 'fixed'
-              ta.style.top = 0
-              ta.style.left = 0
-              ta.value = code
-              ta.select()
-              ta.focus()
-              document.execCommand('copy')
-              document.body.removeChild(ta)
-          })).append(e)
-      })
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
   </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
