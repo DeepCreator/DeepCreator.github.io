@@ -73,19 +73,19 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.2.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.2.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.2.0" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
 
 
 
@@ -100,13 +100,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '6.2.0',
+    version: '6.3.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
-    lazyload: true,
+    lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"perspectiveLeftIn","post_header":"fadeIn","post_body":"fadeIn","coll_header":"perspectiveLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -194,7 +194,7 @@
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2017/bg2017071618.jpg">
 <meta property="og:image" content="http://ossimg.xinli001.com/20171022/f6e38b467d8b1433a21ad1a2badc511e.jpeg">
 <meta property="og:image" content="http://opb37u589.bkt.clouddn.com/15eb43f97a610d533feb4a48.jpeg?imageMogr2/thumbnail/!75p">
-<meta property="og:updated_time" content="2018-05-01T02:19:31.572Z">
+<meta property="og:updated_time" content="2018-05-28T05:47:23.983Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Original">
 <meta name="twitter:description" content="原创。——DeepCreator">
@@ -314,7 +314,6 @@
 
 
 
-
 <nav class="site-nav">
   
     <ul id="menu" class="menu">
@@ -366,14 +365,6 @@
           <li class="menu-item menu-item-day">
     <a href="/sentence/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-book"></i> <br />语录</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-pic">
-    <a href="/pic/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-image"></i> <br />画廊</a>
   </li>
 
       
@@ -541,30 +532,6 @@
 
           
           
-
-
-<!-- #���²���Ϊ������ͳ�ơ��Ķ�ʱ���������  -->
-         <span class="post-time">
-	   &nbsp; | &nbsp;
-           <span class="post-meta-item-icon">
-             <i class="fa fa-calendar-o"></i>
-           </span>
-           <span class="post-meta-item-text">Words </span>
-           <span class="post-count">47,885 </span>
-           
-         </span>
-	  
-      <span class="post-time">
-	   &nbsp; | &nbsp;
-           <span class="post-meta-item-icon">
-             <i class="fa fa-calendar-o"></i>
-           </span>
-           <span class="post-meta-item-text">Time </span>
-           <span class="post-count">161 Min </span>
-           
-         </span>
-<!-- #���ϲ���Ϊ������ͳ�ơ��Ķ�ʱ���������  -->
-
 
           
             <span class="post-meta-divider">|</span>
@@ -857,8 +824,8 @@
 <p>因为郑也夫先生这堂大课共有五讲，时间关系，我选取了其中部分内容。接下来，我当好传声筒，为你转述也夫老师的精彩大课。</p>
 <p>《心流》这本书，英文版是1990年出的。而我要先告诉你一句话：这是一本极富原创性，而我们又可以读懂的心理学名著。特别是这本书不仅能带给我们相应的知识，还能带给我们真实的个人体验。</p>
 <p>这本书的作者是米哈里·契克森米哈赖。我与契克森米哈赖先生早已是精神上的密友，也为了你听的方便，我就直接叫他米哈里吧。</p>
-<p>米哈里在《心流》中一共有十章的讨论，就是在证明<strong><a href="http://deepcreator.com/2017/09/29/Concept/Happiness/">幸福</a>不是人生目的，而是人生目标的副产品。真正的幸福，是你全身心地投入一桩事物，达到忘我状态，并因此得到内心秩序和安宁的时刻。</strong></p>
-<p>米哈里在书中引用了一个物理学的绝妙比拟——熵。熵表达的是一种<a href="http://localhost:4000/2017/06/23/Book/Thinking%20in%20Systems-%20a%20Primer/" target="_blank" rel="noopener">系统</a>的混乱程度。熵的增加表示系统从比较有规则、有秩序的状态向更无规则，更无秩序的状态演变。负熵，就是从无序走向有序的趋势。</p>
+<p>米哈里在《心流》中一共有十章的讨论，就是在证明<strong><a href="http://deepcreator.com/Concept/Happiness/">幸福</a>不是人生目的，而是人生目标的副产品。真正的幸福，是你全身心地投入一桩事物，达到忘我状态，并因此得到内心秩序和安宁的时刻。</strong></p>
+<p>米哈里在书中引用了一个物理学的绝妙比拟——熵。熵表达的是一种<a href="http://deepcreator.com/2017/06/23/Book/Thinking%20in%20Systems-%20a%20Primer/">系统</a>的混乱程度。熵的增加表示系统从比较有规则、有秩序的状态向更无规则，更无秩序的状态演变。负熵，就是从无序走向有序的趋势。</p>
 <p>米哈里借鉴了物理的熵，提出了“精神熵”的概念。他说：“每当资讯对意识的目标构成威胁，就会发生内在失序的现象，也可称之为‘精神熵’，它会导致自我解体，使效率大打折扣。这种状况若持续过久，对自我将造成严重的损害，使自我再也不能集中注意力实现任何目标”。</p>
 <p>资讯，也就是我们常说的信息，能导致我们内心失去秩序，这个你以前想过吗？体会过吗？</p>
 <p>就这样，米哈里利用精神熵，提出了它的反面概念，“最优体验”，他还用了一个生动的词，称这种体验为“心流”。</p>
@@ -1698,7 +1665,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">131</span>
+                    <span class="site-state-item-count">134</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2200,7 +2167,19 @@
                     
                       
                     
-                    <span class="site-state-item-count">229</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">235</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -2233,7 +2212,7 @@
 <script language="javascript">
 function show_date_time(){
 window.setTimeout("show_date_time()", 1000);
-BirthDay=new Date("01/04/2018 16:01:00");
+BirthDay=new Date("04/01/2018 16:01:00");
 today=new Date();
 timeold=(today.getTime()-BirthDay.getTime());
 sectimeold=timeold/1000
@@ -2291,7 +2270,7 @@ show_date_time();
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Author</span>
 
@@ -2307,7 +2286,7 @@ show_date_time();
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.2.0</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
 
 
 
@@ -2370,8 +2349,6 @@ show_date_time();
 
 
 
-  
-
 
 
 
@@ -2398,11 +2375,6 @@ show_date_time();
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -2415,25 +2387,25 @@ show_date_time();
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
 
 
 
   
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script>
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
 
 
 
