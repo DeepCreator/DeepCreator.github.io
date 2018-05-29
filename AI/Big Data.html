@@ -1,4 +1,1578 @@
-<!DOCTYPE html><html class="theme-next muse use-motion" lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet"><style>.pace .pace-progress{background:#1e92fb;height:3px}.pace .pace-progress-inner{box-shadow:0 0 10px #1e92fb,0 0 5px #1e92fb}.pace .pace-activity{border-top-color:#1e92fb;border-left-color:#1e92fb}</style><meta name="theme-color" content="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0"><link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Muse",version:"6.3.0",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!0,onmobile:!0},fancybox:!1,fastclick:!1,lazyload:!1,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="未来将不是信息技术的时代，而是数据技术的时代——马云"><meta name="keywords" content="AI,Big,Data"><meta property="og:type" content="article"><meta property="og:title" content="Big Data"><meta property="og:url" content="http://deepcreator.com/AI/Big Data.html"><meta property="og:site_name" content="Ai Lab"><meta property="og:description" content="未来将不是信息技术的时代，而是数据技术的时代——马云"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/102030761.png?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://www.199it.com/wp-content/uploads/2018/04/2018%E5%B9%B4%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%99%BD%E7%9A%AE%E4%B9%A6_000007.png"><meta property="og:image" content="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fi.ftimg.net%2Fpicture%2F5%2F000073705_piclink.jpg?source=ftchinese&width=1340&height=754&fit=cover&from=next001"><meta property="og:image" content="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fi.ftimg.net%2Fpicture%2F2%2F000069042_piclink.jpg?source=ftchinese&width=1340&height=754&fit=cover&from=next001"><meta property="og:updated_time" content="2018-05-02T08:18:55.971Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Big Data"><meta name="twitter:description" content="未来将不是信息技术的时代，而是数据技术的时代——马云"><meta name="twitter:image" content="http://opb37u589.bkt.clouddn.com/102030761.png?imageMogr2/thumbnail/!75p"><link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml"><link rel="canonical" href="http://deepcreator.com/AI/Big Data.html"><script type="text/javascript" id="page.configurations">CONFIG.page={sidebar:""}</script><title>Big Data | Ai Lab</title><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}()</script><noscript><style type="text/css">.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.logo-line-after i{right:initial}</style></noscript></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta custom-logo"><div class="site-meta-headline"> <a><img class="custom-logo-image" src="/img/deepcreator.jpg" alt="Ai Lab"></a></div><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Ai Lab</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Minority, Truth, Value</p></div><div class="site-nav-toggle"> <button aria-label="切换导航栏"><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-info-circle"></i><br>关于</a></li><li class="menu-item menu-item-day"><a href="/sentence/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i><br>语录</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://deepcreator.com/AI/Big Data.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Author"><meta itemprop="description" content="Chief IPR Officer in AI Age"><meta itemprop="image" content="/img/headonhill.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Ai Lab"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Big Data</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time title="创建时间：2018-02-20 08:32:06" itemprop="dateCreated datePublished" datetime="2018-02-20T08:32:06+08:00">2018-02-20</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span> <a href="/AI/Big Data.html#comments" itemprop="discussionUrl"><span class="post-meta-item-text">评论数：</span><span class="post-comments-count hc-comment-count" data-xid="AI/Big Data.html" itemprop="commentsCount"></span></a></span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i> 阅读次数：<span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="http://opb37u589.bkt.clouddn.com/102030761.png?imageMogr2/thumbnail/!75p" alt="102030761.png"></p><blockquote><p>未来将不是信息技术的时代，而是数据技术的时代——马云</p></blockquote><a id="more"></a><p><a href="https://book.douban.com/review/8293440/" target="_blank" rel="noopener">大数据 big data的特征</a>：<br>（1）体量巨大。量大到足以消除不确定性。<br>（2）3V特性：Vast 大量、Variety 多维度、Velocity 及时性。互信息，交叉验证。<br>（3）全面性、完备性。两个数据源一致，交叉熵为零。即设置模型和用模型的是一个数据源。<br>（4）Big，not Large or Vast. 相对小的大，抽象意义的大。</p><h2 id="中国信通院：2018年大数据白皮书"><a href="#中国信通院：2018年大数据白皮书" class="headerlink" title="中国信通院：2018年大数据白皮书"></a><a href="http://www.199it.com/archives/713932.html" target="_blank" rel="noopener">中国信通院：2018年大数据白皮书</a></h2><p><img src="http://www.199it.com/wp-content/uploads/2018/04/2018%E5%B9%B4%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%99%BD%E7%9A%AE%E4%B9%A6_000007.png" alt=""></p><p>白皮书三大聚焦之一：技术创新趋势</p><p>在技术发展方面，白皮书指出，<strong>数据分析、事务处理、数据流通</strong> 三类技术成为大数据技术的热点。</p><p>随着社交网络的流行导致大量非结构化数据出现，传统处理方法难以应对，数据处理系统和分析技术开始不断发展。事务处理技术呈现新的趋势，事务型业务的实时性、一致性、并发量、可靠性的强要求成为集中式向分布式转型的难点。但是，事务型业务的增长使这种转型成为强需求。</p><p>数据流通技术方面，今年亟待突破。数据流通技术是通过技术手段保证数据共享流通过程中的安全、可控与个人信息保护。以安全多方计算和区块链为代表的技术体系有望在数据流通中发挥重要作用。</p><p>白皮书三大聚焦之一：数据资产管理</p><p>魏凯表示，数据资产管理是大数据时代的必修课。数据资产管理对上支持以价值挖掘为导向的数据应用开发，对下依托大数据平台实现数据全生命周期的管理，是大数据与实体经济深度融合的必经之路。因此，除了企业内部的数据资产管理之外，还应高度重视全行业乃至国际数据治理。</p><p>白皮书指出，个人层面的数据资产管理应促进信息保护，重在隐私保护；企业层面的数据资产管理强调数据价值，注重技术安全；社会层面的数据资产管理期待数据应用，丰富产业链条；国家层面的数据资产管理聚焦运营流通，关注安全规范；国际层面的数据资产管理贵在标准共识，难在跨境流动。</p><p>白皮书三大聚焦之三：应用渗透路径</p><p>值得一提的是，大数据与实体经济的融合正不断加速，但不均衡现象日益突出。白皮书指出，这种不均衡体现在行业分布不均衡、业务类型不均衡、地域分布不均衡三个方面。</p><p>针对以上大数据发展面临的种种问题，白皮书提出了四点建议。</p><p>第一，制度与技术双管齐下，打破数据孤岛。近年来，推动数据开放共享的政策举措在一直在加强，然而效果与预期还有差距，未来，技术如能进一步取得突破，数据共享和流通将有望再前进一大步。</p><p>第二，内部与外部多重并举推动数据治理。未来，随着每个企业都将成为数据驱动的企业，企业内部数据资产需要尽早完成。同时，全行业的数据治理也应提上日程。</p><p>第三，业务与数据加速融合，深化数据应用。当前，需要鼓励企业不断融合生产系统与业务系统。这需要大数据技术企业不断提升大数据平台和应用的可用性和操作便捷程度。</p><p>最后，监管与自律同时推进，保障数据安全。一方面需要强化数据法律的建设，加强重要基础设施和关键领域的法律监管，另一方面需要强调行业自律。</p><h2 id="张首晟：“少数派”的数据更有价值"><a href="#张首晟：“少数派”的数据更有价值" class="headerlink" title="张首晟：“少数派”的数据更有价值"></a><a href="http://www.luojiji.com/thread-11527-1-1.html" target="_blank" rel="noopener">张首晟：“少数派”的数据更有价值</a></h2><p><strong>是未来每个人都掌握自己所有的数据，这是完全去中心化的储存</strong></p><p><strong>机器学习最需要的是那些“少数派”拥有的数据</strong>。</p><h2 id="商业：滴滴的壁垒是什么"><a href="#商业：滴滴的壁垒是什么" class="headerlink" title="商业：滴滴的壁垒是什么"></a><a href="http://www.luojiji.com/thread-11581-1-1.html" target="_blank" rel="noopener">商业：滴滴的壁垒是什么</a></h2><p>首先是<strong>资本</strong>。<br>其次是<strong>牌照</strong>。<br>最核心的壁垒一定是大家都在谈的“<strong>大数据和人工智能</strong>”。</p><p>比如滴滴会把北京画成一个一个的六边形小格子。然后积累这些小格子里的出行数据，下雨天、晴天、高峰期、平峰期、工作日、周末，以及这些人出来之后去哪里。然后根据这些数据，<strong>滴滴依靠算法来做预判，每一个地方大概有多少人有出行需求</strong>。按照柳青的说法，滴滴的技术已经可以做到，提前15分钟预判，并且达到85%~90%的准确率。</p><blockquote><p>除此之外，还有拼车的算法。系统必须能够告诉司机，是不是有人要上车、在哪里上车，这会决定司机的路线选择。</p></blockquote><h2 id="AI时代的数据之争与公共领域界定"><a href="#AI时代的数据之争与公共领域界定" class="headerlink" title="AI时代的数据之争与公共领域界定"></a><a href="http://www.ftchinese.com/story/001075507?full=y" target="_blank" rel="noopener">AI时代的数据之争与公共领域界定</a></h2><p>田小军：数据是AI时代的新石油，谁掌控了数据，谁就掌控了竞争格局，其重要性不言而喻。<br><img src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fi.ftimg.net%2Fpicture%2F5%2F000073705_piclink.jpg?source=ftchinese&amp;width=1340&amp;height=754&amp;fit=cover&amp;from=next001" alt=""></p><p>“兵无常势，水无常形”，今年11月4日，中国《反不正当竞争法》历时24年后首次修订，专设“互联网专条”用以规制互联网行业竞争生态，但此时，互联网行业的竞争形态已由产品服务竞争、平台生态竞争发展到数据竞争阶段。</p><p>时间倒回2003年，在3712与百度搜霸案中，周鸿祎与李彦宏赤膊交锋中文搜索市场。再到2013年开始的3Q、3百与3狗大战，以及优酷系列广告屏蔽案，不同的产品服务跨界进行平台竞争，此时，这些争议可以利用新反法专设的“互联网专条”进行有效规制。然而，互联网江湖风云乍起，AI新贵今日头条未获平台授权批量抓取、同步新浪微博用户数据，硬件巨头华为在Magic手机中利用微信用户聊天记录进行AI服务推荐，凡此种种，创新的产业与稳定的法律反差强烈，“互联网专条”稍显力不从心。</p><blockquote><p>未来是AI云端的数据竞争时代</p></blockquote><p>进入“互联网+”与“人工智能”时代，随着<strong>算力</strong>与<strong>算法</strong>的突破，人工智能在多次往复突破后，终于迎来新机，我们看到，微软小冰可以写诗，腾讯的DreamWriter在奥运会期间写了800篇新闻报道，今日头条的AI算法实现了<strong>千人千面</strong>的推荐，AlphaGo、腾讯绝艺等实现了人工智能在单一领域的人类超越，人工智能已经能写诗、作画、创作小说、剪辑电影、制作创意海报。而这一切，都依赖于海量数据的喂养训练，特别是，算力、算法的突破为互联网上流动的海量数据提供了最完美的商业可能。</p><p>未来的竞争，将是在云端之上，依赖大数据的AI竞争。</p><p>数据竞争问题在全球引发争议</p><p>在美国加州的Computer History Museum陈列着世界上第一台采用了人工智能学的移动机器人Shakey，意为摇摇晃晃的机器人，其在1966年到1972年间由Stanford Research Institute研制，体积庞大，但运算速度缓慢，需要数小时的时间来分析环境并规划行动路径。但是，未来或许，机器人总动员中的Wall•E，《西部世界》中的“高科技成人乐园”会在不远的将来出现。借用当今流行的一句话，“我们只知未来将至，却不知未来已来”，以数据为生产资料的新经济形态也被多国认可，并且写进了《G20数字经济发展与合作倡议》。</p><p>当前，BAT与华为、京东、今日头条、搜狗等国内企业以及Alphabet、微软、Facebook等全球科技巨头均倾全力押注人工智能技术，甚至百度提出了“All in AI”的战略，</p><blockquote><p>数据作为AI时代的新石油，谁掌控了数据，谁就掌控了竞争格局，其重要性不言而喻。自新世纪以来，在全球范围内，有关数据的争议与案件频发，遍及民事、行政与刑事各个领域，甚至从反不正当竞争领域到延伸到了反垄断领域。</p></blockquote><p>在国内，从2008年开始，大众点评诉爱帮网系列案件最早涉及“数据竞争”的问题，大众点评指责爱帮网大量复制其网站内容，主要是商户介绍与用户点评内容信息。大众点评不惜先后在京沪两地以著作权侵权、不正当竞争等为诉由起诉，其代理人于国富律师在其博客中写到，“爱帮网如此长时间大范围的恶性侵权如果不被判令承担高限赔偿，法律难容”，可见当时争议的激烈程度。</p><p>继大众点评案之后，有关“数据竞争”的争议不断出现。诸如，2013年百度诉360违反robots协议案、2015年新浪诉脉脉非法抓取微博用户数据案、2016年大众点评诉百度地图抓取用户点评信息案、2017年运满满诉货车帮盗取用户信息案，以及淘宝屏蔽百度搜索，顺丰与菜鸟有关物流数据接口的争议，新浪与今日头条有关微博内容爬取的争议，华为在Magic手机中利用微信用户聊天记录进行AI服务推荐等，这些争议无一例外，均与平台的海量数据有关。</p><p>而在国外，有关数据竞争的争议已经延伸至反垄断领域。2017年6月，数据分析公司hiQ向加州北部法院提起诉讼，主张Linkedin拥有市场支配地位，推动法院于8月份发出临时禁令，要求Linkedin在24小时内容移除引人妨碍hiQ获取其公开数据的技术障碍，目前此案并未审结。在此之前，2016年在评估批准微软公司收以260亿美元收购LinkedIn的交易时，欧盟委员会重点关注领英的数据价值以及对手网站是否可以复制这些数据等问题。</p><p>数据保护与数据流动存在先天冲突</p><p>数据本身是一个复杂、模糊与开放的概念，本文无意对其进行清晰界定，其实，数据大体与作为知识产权客体的知识产品具有相似特性。物理上的无形性与可传输性，经济学上的非竞争性与非排他性，这些特性使得数据同多数知识产品一样，可以进行法律拟制的财产权保护与无损的数据流动。</p><p>事实上，基于商业竞争的考虑，具有数据优势的平台倾向于将“数据”资源作为竞争优势在自有体系与合作伙伴之间流动，有学者认为这可能会产生数据拒绝交易和歧视对待的问题，但于竞争政策的视角去讨论可能更加复杂。不管是因为，基于既有的若干判例，如新浪诉脉脉案与大众点评诉百度案，法院明确承认，数据平台对于平台内的信息具有一定的控制权，即使在现阶段是否赋予其“劳动成果权”还存有一些争议。还是因为，互联网与数据反垄断问题本身就是一个在现阶段很难明确，并需要谨慎对待与慎言的问题。</p><p>分析既有的争议，我们发现，数据竞争不仅仅是一个上游之治的问题，除了诸如华为magic读取用户微信聊天信息的争议外，顺丰与菜鸟关于物流数据API接口的争议则发生在同阶平台之间，而新浪微博与脉脉、新浪微博与今日头条的争议则反映了后进入市场者对既有平台海量数据的垂涎。“罗马不是一日建成的”，数据平台方的数据优势建立需要长期的成本投入，其他市场竞争者在未获数据平台方授权的情况下，非法抓取平台数据，直接触及对方核心商业资源，显然不妥。</p><p>北京知识产权法院张玲玲法官在新浪诉脉脉案提出了数据流动与使用的三重授权原则，也即平台之间的数据流动（Open API模式）需通过“用户同意+平台同意+用户同意”的模式，较为周延的平衡了用户与平台利益保护以及数据流动的关系。事实上，因为平台数据多涉及用户隐私、数据安全、消费者利益以及平台利益等问题，数据平台方可以通过平台协议、robots协议、API限制以及技术保护措施等手段控制、限制数据合作与数据保护的范围与方式。数据抓取方如未获授权，则必然动辄得咎，除了行政与民事风险，甚至面临刑事风险。</p><p>竞争关键在于公共领域的研究</p><p>当前数据争议的核心在于，我们是否要为数据赋权？以及，我们需要什么样的“数据权”？在此问题讨论前，我们借用Jessica litman教授在在论述版权法制度的经典表述，私以为，“公共领域才真正是“数据权”法的前提和基础，离开了公共领域，人类根本无法容忍“数据权”制度的存在。”那么，我们讨论数据赋权以及“数据权”范畴设定的关键就变为，“数据权”的公共领域是什么？我们反其道而行之，可以打开通往“数据权”制度的一扇“后窗”，借此窥探“数据权”的边界，以有效平衡用户、数据平台、数据使用方以及其他参与方与社会利益的关系，并基于用户权利、公共利益与竞争政策的协调为数据定章立规。</p><p>当前，欧美等国家与地区均在探索建立数据产权与流动规则。基于用户权利考虑，隐私权利、用户遗忘权、数据可携权、数据安全等在国内外立法实践中均有讨论，并已分别在<strong>GDPR（General Data Protection Regulation，欧盟通用数据保护条例）、《网络安全法》《民法总则》</strong>等国内外立法中有所体现。基于公共利益考虑，我们认为政府公共数据、自然气象数据、医疗数据等关系国计民生福利的数据在产权设定与流动使用应更多考虑社会福利与公民福祉。而基于竞争政策考虑，为了防范市场失灵，除了在反不正当竞争领域的司法探索外，我国应重点研究建立“数据权”的限制与例外制度，当然，我们首先要考虑数据是否可以成为市场力量的来源？不同数据类型、不同产业领域，以及不同竞争主体间的特定行为是否在竞争减损方面有所区别，以及此类竞争减损与效率促进之间如何平衡，以及如何救济。至于在数据经济驱动下的网络效应评估、相关市场界定、市场支配力衡量，甚至于反垄断理论更新等问题，研究工作任重而道远。</p><p>此外，近期关注两个问题，其实与“数据权”公共领域问题的研究关系密切。</p><p>其一，“数据权”设定的有效路径是什么？我国《民法总则》征求意见稿的最初文本将“数据信息”一体纳入“知识产权”进行保护，后遭多数专家反对，最终全国人大将数据信息与虚拟财产单列进行财产概括性保护，这是我国立法在“数据权”设定方面的谨慎尝试，也反应了数据与知识产权的复杂关系。其实，知识产权在诸多学术著作中被表述为“信息产权”。而从域外经验来看，早在1992年，欧盟委员会通过《数据库指令草案（Commission Proposal for a Council Directive on the Legal）》确立了数据库权（database right）。数据库权衍生于版权体系，以保护实质投资为目的，赋予数据库控制者对抗它人对数据库内容提取的排他权利，并存在着若干平衡性安排，如对合法利用人的非实质性部分的提取或再利用行为进行限制性排除，并规定了若干“法定许可”，虽存争议，但仍可为借鉴之有益经验。私以为，借鉴“数据库权”模式可以解决多数的与“数据权”相关的财产性权益争议。</p><p>其二，用户同意与平台协议的关系，也即在未经数据平台方同意，甚至是平台协议反对的情况下，第三方仅获用户授权，能否大批量、自动化抓取用户已在数据平台方发布的数据内容。今年8月9日，今日头条突然开始通过用户授权直接把新浪微博的内容自动搬家到今日头条。面对大量用户与数据溢出的情况，新浪坚决切断了与今日头条的内容接口，并在海淀区法院立案起诉，此案尚未审结。私以为，即使搜索引擎与抓取技术中立，但从技术伦理与商业伦理角度，此类行为的规制应在技术创新与数据平台方激励之间寻求平衡。新浪在微博用户数据的整个生命周期中持续投入，如新浪法律专家王磊所言，“数据的集体涌现性使得“大数据”出现了系统组成前单个要素所不具有的性质”，平台为数据赋能，法律保护应有所倾斜。</p><p>此问题的讨论并未结束，才是刚刚开始。</p><h2 id="数据垄断真的存在吗？"><a href="#数据垄断真的存在吗？" class="headerlink" title="数据垄断真的存在吗？"></a><a href="http://www.ftchinese.com/story/001075626?full=y" target="_blank" rel="noopener">数据垄断真的存在吗？</a></h2><p>许可：“数据是新时代石油”的说法是一句成功的口号，但它只说对了一半，数据有价，但它本质上并非石油。<br><img src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fi.ftimg.net%2Fpicture%2F2%2F000069042_piclink.jpg?source=ftchinese&amp;width=1340&amp;height=754&amp;fit=cover&amp;from=next001" alt=""><br>更新于2017年12月26日 07:15 许可 为FT中文网撰稿</p><p>我们每一个人都不喜欢垄断，除了垄断者。因为对普罗大众来说，垄断往往意味着更高的价格、更差的商品和不太好的服务。难怪曾为鲍勃•迪伦做过巡演经纪人的乔纳森•塔普林（Jonathan Taplin）在《迅捷行动，打破传统：Facebook、谷歌和亚马逊何以垄断文化、削弱民主》一书中对数字时代的垄断忧心忡忡，并倡议审查亚马逊、Facebook和谷歌对大数据的控制权。无独有偶，被称为“科技巨头克星”的欧盟委员会竞争专员玛格丽特•维斯塔格（Margrethe Vestager）亦表示：“数据可能成为并购中如何影响竞争这一问题中的重要因素。我们正在探索是否介入那些涉及重大价值数据的并购，即使拥有数据的公司并没有高昂的营业额。”这种学术和监管的新观点都着眼在“数据垄断”上，但究竟什么是“数据垄断”，它真的存在吗？</p><p>“新时代的石油”：一个误读？</p><blockquote><p>自从《经济学人》将数据类比为21世纪的石油以来，数据的重要性已家喻户晓。</p></blockquote><p>但是，这一比喻令人误解，因为它不但容易让人联想到洛克菲勒的标准石油公司或美孚石油公司，还会误认为现在的数据就像一百年前的石油那样，成为市场上奇货可居、盈利丰厚的商品。然而，真实的情景是：正规的数据交易市场根本没有形成，更不用说在数据市场里呼风唤雨的数据大鳄了。其中的道理简单明了：数据并非真正的石油。</p><p>数据并不稀缺。总量有限的石油牢牢把控在欧佩克和俄罗斯等少数产油大国的手中。与之相反，数据无处不在且源源不绝。随着互联网、物联网和智能终端的发展，新的数据每分每秒都在产生，并且，只要网络用户在线，纷繁芜杂的“电子足迹”就会被记录和收集。正如IDC报告所显示的，在过去数年，全球的数据量均以每年58%的速度增长，到2020年，全球数据总量将超过40ZB(相当于4万亿GB)，达到2011年数据总量的22倍。不仅于此，由于数据可以零边际成本地生产和分配，企业从自己或第三方等不同来源那里获取数据并没有实质的障碍。</p><p>数据并不排他。石油只能被特定的企业占有和消费，而数据不同，它被一家企业收集、使用并不以排斥他人为代价。作为网络用户，我们能够接受不同企业提供的不同网络服务，甚至是同一类服务，比如百度知道和知乎。这一被称为“多重归属”的网络经济特性，将我们的数据分散到各个网络平台上，以至于没有企业可以独占所有数据。非排他性还意味着，即便一家企业拥有了特定数据，它也不能阻止他人通过别的途径获得同一数据。正因如此，在新浪微博诉脉脉反不正当纠纷中，脉脉便抗辩说相关数据是其利用“协同过滤算法”而得，并非从微博处获取，以证明自己数据的合法性。</p><p>数据价值并不永久。石油固然不是“恒久远和永留传”的钻石，但其并无有效期限，价值难以消减乃不争事实。与石油要储藏够久才有价值迥异，数据是典型的时效品，老数据不如新数据值钱，而且随着时间推移，前者越来越没有价值。恰如王坚先生的《在线》一书所洞见的，大数据与其说是“大”的数据，毋宁是实时在线的“活”的数据。所以，因数据累积而形成的优势会迅速消逝，因为数据的寿命有限，一旦它们“死去”，便一文不值。</p><p>数据没有法律上的所有者。数百年来，围绕石油已经建立起一套权属清晰、边界清晰的规则体系，而数据产权目前还是一笔糊涂账。最近，围绕欧盟委员会《关于构建欧洲数据经济征求意见书》，欧洲学界就数据财产权是否设立、以及如何设立论战不休。美国则基于实用主义的考虑，立法仅仅规范数据的收集、利用和流转，根本不谈数据归属问题。我国在今年生效的《民法总则》中首次将数据纳入其中，但由于缺乏细则，只有宣示“数据受法律保护”的指向意义。更重要的是，数据与个人信息、隐私等有关人格的权利夹杂不清，进一步影响了数据产权的确立。“清楚界定的产权是市场交易的前提”（科斯），数据的“无法”状态自然让数据市场的发展困难重重。</p><p>总之，“数据是新时代石油”的说法是一句成功的口号，但它只说对了一半，数据有价，但它本质上并非石油。</p><p>数据能决定企业竞争力吗？</p><p>如果说数据不是企业的产出品（output），那么我们换一个视角，数据能否作为投入品（input），从而构成左右企业竞争力的源泉？当前，“构建以数据为关键要素的数字经济”已经在世界范围内获得广泛共识，可我们如何理解数据在企业竞争中的作用呢？</p><p>首先必须承认数据是企业发展的重要因素。数字经济的技术革新彻底改变了数据运用的传统方式。现在，企业能够通过数据的学习效应（learning effect），来改进产品和服务。例如，Youtube可以收集每个用户的点击信息，来修正和完善算法，从而吸引更多用户。<strong>企业还能基于大数据的“用户画像”，提供订制化的产品，并根据其消费者能力和价格敏感度设定个性化的价格</strong>。此外，企业还能对数据进行二次利用，开发出新的商机。最近，电子商务网站美团开辟“美团打车”业务，便是一个鲜明的例子。</p><p>然而，数据的作用也不可高估。纵观历史，拥有海量数据而失败的企业比比皆是。这首先是因为，数据的优势很容易被削弱。一方面，数据是可分的和高度差异化的。基于长尾理论的观察，不同的消费者在网络购物、在线约会、社交网络、在线旅游等场景下，往往导向更精确、更符合其需求的网络服务提供者。所以，成功的企业必须挖掘属于自己的利基市场，而不能盲目跟随领先者。差异化的竞争使得自己富有价值的数据，对其他企业可能用处寥寥。另一方面，数据本身可被替代。一家将传感器嵌入公路以收集交通拥堵数据的企业，很快就会发现，随着自动视频分析、手机导航等技术运用，其数据已沦为第二选择。</p><p>其次，数据不能独立带来优势。根据胡凌先生的分析，网络平台的竞争在“资源、数据、算法、基础服务”等四个维度展开。具体来说，经由信息技术降低交易成本而带来生产性资源的不断增长，伴随着前者的活动产生大量数据，然后企业使用算法对数据进行动态分析预测，最终据此改进基础服务。显然，数据只是一个中间环节而已，它不是也不可能是决定性的。这也说明了，为什么数据巨头会失败：从时代华纳收购美国在线，到微软收购网络广告公司aQuantive，这些数据驱动型并购都降低了、而非增强了它们的竞争优势。相反，在那些看似需要大量数据才能生存的数字产业里，初创者也能脱颖而出。当Tinder在2012年9月登陆在线约会战场时，它没有任何用户数据，但凭借着简单的用户界面和对消费者需求的精准关注，Tinder很快成为市场的领导者，迄今为止，Tinder 已经见证了200 亿成功配对，成为全球最受欢迎的交友应用。</p><p>最后，数据带来的力量十分脆弱。数字经济是高度创新的行业，更有甚者，在“颠覆性创新”（Disruptive Innovation）与“维持性创新”（Sustaining Innovation）二分架构下，其创新更偏向前者而不是后者。这意味着在不断变化和迅速迭代的竞争环境中，数据巨头的竞争优势将因完全意料不到的竞争对手和商业模式化为乌有，甚至会逆转为劣势。更惨烈的是，这种变化的彻底性与网络倾覆效应（Tipping Effects）相结合，往往让基于历史数据的决策错得离谱。MySpace与Facebook擦肩而过，AltaVista和Lycos输给了谷歌，诺基亚给iPhone让位，Google+遭遇滑铁卢，雅虎更名“Altaba”，这样的事件不胜枚举。</p><p>在最近的一篇文章中，经济学家Anja Lambrecht和Catherine E. Tucker细致检讨了数据是企业核心竞争力的观点，他们认为：“在变动不居的数字经济中，几乎没有任何证据表明，仅仅拥有数据就能充分排斥更优的产品或服务的供给。要想建立可持续的竞争优势，数字战略的重点应当放在如何使用数字技术，以前所未有的方式给用户带来价值上。”就此而言，“数据是新时代石油”还有一层隐含的意义，那就是占有数据远没有开发数据有价值，正如石油大国往往不是经济强国，而这未尝不是“资源诅咒”的另类运用。</p><p>正是出于以上种种理由，尽管美国和欧洲的监管者都对数据垄断表示了关注，但在Google收购DoubleClick、TomTom收购TeleAtlas、Facebook收购WhatsApp、Nielsen收购Arbitron等一系列并购案中，他们并没有针对数据采取激进的反垄断审查措施，而把是否破坏行业竞争和侵害消费者权益作为监管目标。当然，不用讳言，数据巨头对数据的收集和利用将给普罗大众的个人信息权利和隐私权带来了挑战，可这已经是反垄断法之外的故事了。</p><h2 id="公司怎么做好一个大数据项目？"><a href="#公司怎么做好一个大数据项目？" class="headerlink" title="公司怎么做好一个大数据项目？"></a><a href="">公司怎么做好一个大数据项目？</a></h2><p>众所周知，伴随着云时代的到来，大数据已经成了现在科技界最热门的话题。最近，公众号“依米研习社”发了篇文章，以一个福特公司的大数据项目为例，讨论了企业该如何做一款成功的大数据项目。讲得有理有据，我来说给您听听。</p><p>这篇文章指出，要想做好大数据项目，需要遵从以下几个原则。</p><blockquote><p>第一，这个项目的目标要特别清晰。公司从上到下、各个部门，都得明白用这个大数据要做什么。</p></blockquote><p>举例来说，福特公司的第一步是确定项目的目标，也就是让销售部门能用大数据来提升福特汽车的销售业绩。一般汽车销售商的做法是投放广告，这样随随便便就得花好几百万美金，而且还很难弄清楚，消费者买汽车到底是不是因为受了广告的影响。但大数据技术就不一样了。它可以通过对所有相关数据进行收集和分析，来确定哪些因素会影响个人购买汽车的意愿。这个目标不仅福特的营销部门清楚，财务主管部门和技术研发部门也都很清楚，这样才能上下一心地把这个项目做好。</p><blockquote><p>第二，项目要用快速迭代试错的方法来稳步推进。也就是说，做项目规划的时候，要争取每星期都能推出一个功能，然后立刻对其进行测试。要是测试成功，下星期就再推出下一个功能；要是测试不成功，就立刻对其进行改正。</p></blockquote><p>举例来说，福特公司的第二步是找一个大约200人的大数据分析团队，让他们全面收集与汽车销售相关的各种数据，比如第三方合同数据、区域经济数据、就业数据等等。那如何从这些海量的数据里，筛选出那些能影响汽车购买意愿的核心数据呢？他们就用快速迭代的方法，对这些数据分门别类地进行测试，看其是否能够影响到汽车的销售，从而把最核心的数据筛选了出来。</p><blockquote><p>第三，所选技术要符合大数据项目的功能要求。一般做一个大数据项目都需要用一些特殊的数据分析技术，但重要的不是专门选一些特别高大上的技术，而是让你选的技术符合你设计的业务功能。</p></blockquote><p>举例来说，福特公司的第三步是对筛选出来的数据进行建模分析，从而为销售和决策部门提供精准可靠的效果分析。特别地，对于所选方法可能获得什么样的营销效果，他们做了大概几十种的可能性分析。正是这样深入全面的分析，保证了他们可以从数据中挖掘出最有价值的结果。</p><blockquote><p>第四，项目团队要拥有各方面的专业知识技能。公司做大数据项目就像做任何一款创新产品，都需要形成一个拥有各种专业知识的团队，上面有领导的支持，中间有大家的共识，下面的一线执行人员也都清楚自己要干什么。</p></blockquote><p>举例来说，福特公司的第四步是根据这些建模分析的结果，让营销部门和运营部门来策划和实施有针对性的促销计划。比如说，在某些汽车需求特别旺盛的地方，他们会根据一些个体的特点来量身订做专门的促销方案。与传统的广告投放策略相比，这些专门的促销方案非常精准，只需要花五、六十万美金，就能知道谁对福特汽车感兴趣。相应的广告就投放到潜在客户的电子邮箱或他们所在地区的报纸上了。</p><blockquote><p>第五，做出来的项目成果要达到期望的结果。一般来说，能达到80%的预期，那就已经很好了；能达到50%的预期，那也很不错了。</p></blockquote><p>举例来说，福特公司的最后一步，是衡量大数据营销的效果。跟传统的广告投放相比，福特公司只花了十分之一的钱，就大幅度地提高了福特汽车的销售业绩。通过做这个项目，福特公司不光在汽车销售方面获得了成功，还在汽车的整车质量、保险费用、运输状况和驾驶模式方面积累了非常丰富的数据。他们希望用这些数据来帮助汽车驾驶员降低保险成本，从而促进消费者对福特品牌的认可，扩大市场占有率。</p><p>马云曾经在一次演讲中说过，未来将不是信息技术的时代，而是数据技术的时代。通过福特公司的例子，我们看到，大数据技术确实能显著提升一个公司的运营效率。所以做好大数据项目，将对一个企业的发展大有裨益。</p><p>本文源自：公众号“依米研习社”（企业如何做一个成功的大数据项目）</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><a href="">参考资料</a></h2><h3 id="D3数据可视化系列教程"><a href="#D3数据可视化系列教程" class="headerlink" title="D3数据可视化系列教程"></a><a href="https://blog.csdn.net/column/details/zhangtianxu.html?" target="_blank" rel="noopener">D3数据可视化系列教程</a></h3></div><footer class="post-footer"><div class="post-tags"><a href="/tags/AI/" rel="tag"><i class="fa fa-tag"></i> AI</a><a href="/tags/Big/" rel="tag"><i class="fa fa-tag"></i> Big</a><a href="/tags/Data/" rel="tag"><i class="fa fa-tag"></i> Data</a></div><div class="post-widgets"><div class="wp_rating"><div style="color:rgba(0,0,0,.75);font-size:13px;letter-spacing:3px">After reading, Five stars :)</div><div id="wpac-rating"></div></div></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/User/User Thinking.html" rel="next" title="User Thinking"><i class="fa fa-chevron-left"></i> User Thinking</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/Company/BYD.html" rel="prev" title="BYD">BYD<i class="fa fa-chevron-right"></i></a></div></div></footer></div></article><div class="post-spread"><div class="addthis_inline_share_toolbox"><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d373f67eacfaa6" async="async"></script></div></div></div></div><div class="comments" id="comments"><div id="hypercomments_widget"></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div id="sidebar-dimmer"></div><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> 站点概览</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/img/headonhill.jpg" alt="Author"><p class="site-author-name" itemprop="name">Author</p><p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">134</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">9</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">235</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div id="days"></div><script language="javascript">function show_date_time(){window.setTimeout("show_date_time()",1e3),BirthDay=new Date("04/01/2018 16:01:00"),today=new Date,timeold=today.getTime()-BirthDay.getTime(),sectimeold=timeold/1e3,secondsold=Math.floor(sectimeold),msPerDay=864e5,e_daysold=timeold/msPerDay,daysold=Math.floor(e_daysold),e_hrsold=24*(e_daysold-daysold),hrsold=setzero(Math.floor(e_hrsold)),e_minsold=60*(e_hrsold-hrsold),minsold=setzero(Math.floor(60*(e_hrsold-hrsold))),seconds=setzero(Math.floor(60*(e_minsold-minsold))),document.getElementById("days").innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second "}function setzero(e){return e<10&&(e="0"+e),e}show_date_time()</script></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#中国信通院：2018年大数据白皮书"><span class="nav-number">1.</span> <span class="nav-text">中国信通院：2018年大数据白皮书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张首晟：“少数派”的数据更有价值"><span class="nav-number">2.</span> <span class="nav-text">张首晟：“少数派”的数据更有价值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#商业：滴滴的壁垒是什么"><span class="nav-number">3.</span> <span class="nav-text">商业：滴滴的壁垒是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI时代的数据之争与公共领域界定"><span class="nav-number">4.</span> <span class="nav-text">AI时代的数据之争与公共领域界定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据垄断真的存在吗？"><span class="nav-number">5.</span> <span class="nav-text">数据垄断真的存在吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公司怎么做好一个大数据项目？"><span class="nav-number">6.</span> <span class="nav-text">公司怎么做好一个大数据项目？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">7.</span> <span class="nav-text">参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#D3数据可视化系列教程"><span class="nav-number">7.1.</span> <span class="nav-text">D3数据可视化系列教程</span></a></li></ol></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2018</span><span class="with-love" id="animate"><i class="fa fa-user"></i></span> <span class="author" itemprop="copyrightHolder">Author</span></div><div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div><div class="busuanzi-count"><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv" title="总访客量"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span><span class="site-pv" title="总访问量"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script><script type="text/javascript">_hcwp=window._hcwp||[],_hcwp.push({widget:"Bloggerstream",widget_id:96030,selector:".hc-comment-count",label:"{%COUNT%}"}),_hcwp.push({widget:"Stream",widget_id:96030,xid:"AI/Big Data.html"}),function(){if(!("HC_LOAD_INIT"in window)){HC_LOAD_INIT=!0;var t=(navigator.language||navigator.systemLanguage||navigator.userLanguage||"en").substr(0,2).toLowerCase(),e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https":"http")+"://w.hypercomments.com/widget/hc/96030/"+t+"/widget.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a.nextSibling)}}()</script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script type="text/javascript">var GUEST=["nick","mail","link"],guest="nick,mail,link";guest=guest.split(",").filter(function(e){return-1<GUEST.indexOf(e)}),new Valine({el:"#comments",verify:!1,notify:!1,appId:"TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz",appKey:"PXNkGhS05PxL7rV3N8gDlAQe",placeholder:"Just go go",avatar:"mm",guest_info:guest,pageSize:"10"})</script><script type="text/javascript">
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="未来将不是信息技术的时代，而是数据技术的时代——马云">
+<meta name="keywords" content="AI,Big,Data">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Big Data">
+<meta property="og:url" content="http://deepcreator.com/AI/Big Data.html">
+<meta property="og:site_name" content="Ai Lab">
+<meta property="og:description" content="未来将不是信息技术的时代，而是数据技术的时代——马云">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/102030761.png?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://www.199it.com/wp-content/uploads/2018/04/2018%E5%B9%B4%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%99%BD%E7%9A%AE%E4%B9%A6_000007.png">
+<meta property="og:image" content="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fi.ftimg.net%2Fpicture%2F5%2F000073705_piclink.jpg?source=ftchinese&width=1340&height=754&fit=cover&from=next001">
+<meta property="og:image" content="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fi.ftimg.net%2Fpicture%2F2%2F000069042_piclink.jpg?source=ftchinese&width=1340&height=754&fit=cover&from=next001">
+<meta property="og:updated_time" content="2018-05-02T08:18:55.971Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Big Data">
+<meta name="twitter:description" content="未来将不是信息技术的时代，而是数据技术的时代——马云">
+<meta name="twitter:image" content="http://opb37u589.bkt.clouddn.com/102030761.png?imageMogr2/thumbnail/!75p">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://deepcreator.com/AI/Big Data.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Big Data | Ai Lab</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="/img/deepcreator.jpg"
+               alt="Ai Lab"/>
+        </a>
+      </div>
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ai Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Minority, Truth, Value</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-info-circle"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-day">
+    <a href="/sentence/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-book"></i> <br />语录</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://deepcreator.com/AI/Big Data.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="Chief IPR Officer in AI Age">
+      <meta itemprop="image" content="/img/headonhill.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ai Lab">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Big Data
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-02-20 08:32:06" itemprop="dateCreated datePublished" datetime="2018-02-20T08:32:06+08:00">2018-02-20</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/AI/Big Data.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count hc-comment-count" data-xid="AI/Big Data.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://opb37u589.bkt.clouddn.com/102030761.png?imageMogr2/thumbnail/!75p" alt="102030761.png"></p>
+<blockquote>
+<p>未来将不是信息技术的时代，而是数据技术的时代——马云</p>
+</blockquote>
+<a id="more"></a>
+<p><a href="https://book.douban.com/review/8293440/" target="_blank" rel="noopener">大数据 big data的特征</a>：<br>（1）体量巨大。量大到足以消除不确定性。<br>（2）3V特性：Vast 大量、Variety 多维度、Velocity 及时性。互信息，交叉验证。<br>（3）全面性、完备性。两个数据源一致，交叉熵为零。即设置模型和用模型的是一个数据源。<br>（4）Big，not  Large or Vast. 相对小的大，抽象意义的大。</p>
+<h2 id="中国信通院：2018年大数据白皮书"><a href="#中国信通院：2018年大数据白皮书" class="headerlink" title="中国信通院：2018年大数据白皮书"></a><a href="http://www.199it.com/archives/713932.html" target="_blank" rel="noopener">中国信通院：2018年大数据白皮书</a></h2><p><img src="http://www.199it.com/wp-content/uploads/2018/04/2018%E5%B9%B4%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%99%BD%E7%9A%AE%E4%B9%A6_000007.png" alt=""></p>
+<p>白皮书三大聚焦之一：技术创新趋势</p>
+<p>在技术发展方面，白皮书指出，<strong>数据分析、事务处理、数据流通</strong> 三类技术成为大数据技术的热点。</p>
+<p>随着社交网络的流行导致大量非结构化数据出现，传统处理方法难以应对，数据处理系统和分析技术开始不断发展。事务处理技术呈现新的趋势，事务型业务的实时性、一致性、并发量、可靠性的强要求成为集中式向分布式转型的难点。但是，事务型业务的增长使这种转型成为强需求。</p>
+<p>数据流通技术方面，今年亟待突破。数据流通技术是通过技术手段保证数据共享流通过程中的安全、可控与个人信息保护。以安全多方计算和区块链为代表的技术体系有望在数据流通中发挥重要作用。</p>
+<p>白皮书三大聚焦之一：数据资产管理</p>
+<p>魏凯表示，数据资产管理是大数据时代的必修课。数据资产管理对上支持以价值挖掘为导向的数据应用开发，对下依托大数据平台实现数据全生命周期的管理，是大数据与实体经济深度融合的必经之路。因此，除了企业内部的数据资产管理之外，还应高度重视全行业乃至国际数据治理。</p>
+<p>白皮书指出，个人层面的数据资产管理应促进信息保护，重在隐私保护；企业层面的数据资产管理强调数据价值，注重技术安全；社会层面的数据资产管理期待数据应用，丰富产业链条；国家层面的数据资产管理聚焦运营流通，关注安全规范；国际层面的数据资产管理贵在标准共识，难在跨境流动。</p>
+<p>白皮书三大聚焦之三：应用渗透路径</p>
+<p>值得一提的是，大数据与实体经济的融合正不断加速，但不均衡现象日益突出。白皮书指出，这种不均衡体现在行业分布不均衡、业务类型不均衡、地域分布不均衡三个方面。</p>
+<p>针对以上大数据发展面临的种种问题，白皮书提出了四点建议。</p>
+<p>第一，制度与技术双管齐下，打破数据孤岛。近年来，推动数据开放共享的政策举措在一直在加强，然而效果与预期还有差距，未来，技术如能进一步取得突破，数据共享和流通将有望再前进一大步。</p>
+<p>第二，内部与外部多重并举推动数据治理。未来，随着每个企业都将成为数据驱动的企业，企业内部数据资产需要尽早完成。同时，全行业的数据治理也应提上日程。</p>
+<p>第三，业务与数据加速融合，深化数据应用。当前，需要鼓励企业不断融合生产系统与业务系统。这需要大数据技术企业不断提升大数据平台和应用的可用性和操作便捷程度。</p>
+<p>最后，监管与自律同时推进，保障数据安全。一方面需要强化数据法律的建设，加强重要基础设施和关键领域的法律监管，另一方面需要强调行业自律。</p>
+<h2 id="张首晟：“少数派”的数据更有价值"><a href="#张首晟：“少数派”的数据更有价值" class="headerlink" title="张首晟：“少数派”的数据更有价值"></a><a href="http://www.luojiji.com/thread-11527-1-1.html" target="_blank" rel="noopener">张首晟：“少数派”的数据更有价值</a></h2><p><strong>是未来每个人都掌握自己所有的数据，这是完全去中心化的储存</strong></p>
+<p><strong>机器学习最需要的是那些“少数派”拥有的数据</strong>。</p>
+<h2 id="商业：滴滴的壁垒是什么"><a href="#商业：滴滴的壁垒是什么" class="headerlink" title="商业：滴滴的壁垒是什么"></a><a href="http://www.luojiji.com/thread-11581-1-1.html" target="_blank" rel="noopener">商业：滴滴的壁垒是什么</a></h2><p>首先是<strong>资本</strong>。<br>其次是<strong>牌照</strong>。<br>最核心的壁垒一定是大家都在谈的“<strong>大数据和人工智能</strong>”。</p>
+<p>比如滴滴会把北京画成一个一个的六边形小格子。然后积累这些小格子里的出行数据，下雨天、晴天、高峰期、平峰期、工作日、周末，以及这些人出来之后去哪里。然后根据这些数据，<strong>滴滴依靠算法来做预判，每一个地方大概有多少人有出行需求</strong>。按照柳青的说法，滴滴的技术已经可以做到，提前15分钟预判，并且达到85%~90%的准确率。</p>
+<blockquote>
+<p>除此之外，还有拼车的算法。系统必须能够告诉司机，是不是有人要上车、在哪里上车，这会决定司机的路线选择。</p>
+</blockquote>
+<h2 id="AI时代的数据之争与公共领域界定"><a href="#AI时代的数据之争与公共领域界定" class="headerlink" title="AI时代的数据之争与公共领域界定"></a><a href="http://www.ftchinese.com/story/001075507?full=y" target="_blank" rel="noopener">AI时代的数据之争与公共领域界定</a></h2><p>田小军：数据是AI时代的新石油，谁掌控了数据，谁就掌控了竞争格局，其重要性不言而喻。<br><img src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fi.ftimg.net%2Fpicture%2F5%2F000073705_piclink.jpg?source=ftchinese&amp;width=1340&amp;height=754&amp;fit=cover&amp;from=next001" alt=""></p>
+<p>“兵无常势，水无常形”，今年11月4日，中国《反不正当竞争法》历时24年后首次修订，专设“互联网专条”用以规制互联网行业竞争生态，但此时，互联网行业的竞争形态已由产品服务竞争、平台生态竞争发展到数据竞争阶段。</p>
+<p>时间倒回2003年，在3712与百度搜霸案中，周鸿祎与李彦宏赤膊交锋中文搜索市场。再到2013年开始的3Q、3百与3狗大战，以及优酷系列广告屏蔽案，不同的产品服务跨界进行平台竞争，此时，这些争议可以利用新反法专设的“互联网专条”进行有效规制。然而，互联网江湖风云乍起，AI新贵今日头条未获平台授权批量抓取、同步新浪微博用户数据，硬件巨头华为在Magic手机中利用微信用户聊天记录进行AI服务推荐，凡此种种，创新的产业与稳定的法律反差强烈，“互联网专条”稍显力不从心。</p>
+<blockquote>
+<p>未来是AI云端的数据竞争时代</p>
+</blockquote>
+<p>进入“互联网+”与“人工智能”时代，随着<strong>算力</strong>与<strong>算法</strong>的突破，人工智能在多次往复突破后，终于迎来新机，我们看到，微软小冰可以写诗，腾讯的DreamWriter在奥运会期间写了800篇新闻报道，今日头条的AI算法实现了<strong>千人千面</strong>的推荐，AlphaGo、腾讯绝艺等实现了人工智能在单一领域的人类超越，人工智能已经能写诗、作画、创作小说、剪辑电影、制作创意海报。而这一切，都依赖于海量数据的喂养训练，特别是，算力、算法的突破为互联网上流动的海量数据提供了最完美的商业可能。</p>
+<p>未来的竞争，将是在云端之上，依赖大数据的AI竞争。</p>
+<p>数据竞争问题在全球引发争议</p>
+<p>在美国加州的Computer History Museum陈列着世界上第一台采用了人工智能学的移动机器人Shakey，意为摇摇晃晃的机器人，其在1966年到1972年间由Stanford Research Institute研制，体积庞大，但运算速度缓慢，需要数小时的时间来分析环境并规划行动路径。但是，未来或许，机器人总动员中的Wall•E，《西部世界》中的“高科技成人乐园”会在不远的将来出现。借用当今流行的一句话，“我们只知未来将至，却不知未来已来”，以数据为生产资料的新经济形态也被多国认可，并且写进了《G20数字经济发展与合作倡议》。</p>
+<p>当前，BAT与华为、京东、今日头条、搜狗等国内企业以及Alphabet、微软、Facebook等全球科技巨头均倾全力押注人工智能技术，甚至百度提出了“All in AI”的战略，</p>
+<blockquote>
+<p>数据作为AI时代的新石油，谁掌控了数据，谁就掌控了竞争格局，其重要性不言而喻。自新世纪以来，在全球范围内，有关数据的争议与案件频发，遍及民事、行政与刑事各个领域，甚至从反不正当竞争领域到延伸到了反垄断领域。</p>
+</blockquote>
+<p>在国内，从2008年开始，大众点评诉爱帮网系列案件最早涉及“数据竞争”的问题，大众点评指责爱帮网大量复制其网站内容，主要是商户介绍与用户点评内容信息。大众点评不惜先后在京沪两地以著作权侵权、不正当竞争等为诉由起诉，其代理人于国富律师在其博客中写到，“爱帮网如此长时间大范围的恶性侵权如果不被判令承担高限赔偿，法律难容”，可见当时争议的激烈程度。</p>
+<p>继大众点评案之后，有关“数据竞争”的争议不断出现。诸如，2013年百度诉360违反robots协议案、2015年新浪诉脉脉非法抓取微博用户数据案、2016年大众点评诉百度地图抓取用户点评信息案、2017年运满满诉货车帮盗取用户信息案，以及淘宝屏蔽百度搜索，顺丰与菜鸟有关物流数据接口的争议，新浪与今日头条有关微博内容爬取的争议，华为在Magic手机中利用微信用户聊天记录进行AI服务推荐等，这些争议无一例外，均与平台的海量数据有关。</p>
+<p>而在国外，有关数据竞争的争议已经延伸至反垄断领域。2017年6月，数据分析公司hiQ向加州北部法院提起诉讼，主张Linkedin拥有市场支配地位，推动法院于8月份发出临时禁令，要求Linkedin在24小时内容移除引人妨碍hiQ获取其公开数据的技术障碍，目前此案并未审结。在此之前，2016年在评估批准微软公司收以260亿美元收购LinkedIn的交易时，欧盟委员会重点关注领英的数据价值以及对手网站是否可以复制这些数据等问题。</p>
+<p>数据保护与数据流动存在先天冲突</p>
+<p>数据本身是一个复杂、模糊与开放的概念，本文无意对其进行清晰界定，其实，数据大体与作为知识产权客体的知识产品具有相似特性。物理上的无形性与可传输性，经济学上的非竞争性与非排他性，这些特性使得数据同多数知识产品一样，可以进行法律拟制的财产权保护与无损的数据流动。</p>
+<p>事实上，基于商业竞争的考虑，具有数据优势的平台倾向于将“数据”资源作为竞争优势在自有体系与合作伙伴之间流动，有学者认为这可能会产生数据拒绝交易和歧视对待的问题，但于竞争政策的视角去讨论可能更加复杂。不管是因为，基于既有的若干判例，如新浪诉脉脉案与大众点评诉百度案，法院明确承认，数据平台对于平台内的信息具有一定的控制权，即使在现阶段是否赋予其“劳动成果权”还存有一些争议。还是因为，互联网与数据反垄断问题本身就是一个在现阶段很难明确，并需要谨慎对待与慎言的问题。</p>
+<p>分析既有的争议，我们发现，数据竞争不仅仅是一个上游之治的问题，除了诸如华为magic读取用户微信聊天信息的争议外，顺丰与菜鸟关于物流数据API接口的争议则发生在同阶平台之间，而新浪微博与脉脉、新浪微博与今日头条的争议则反映了后进入市场者对既有平台海量数据的垂涎。“罗马不是一日建成的”，数据平台方的数据优势建立需要长期的成本投入，其他市场竞争者在未获数据平台方授权的情况下，非法抓取平台数据，直接触及对方核心商业资源，显然不妥。</p>
+<p>北京知识产权法院张玲玲法官在新浪诉脉脉案提出了数据流动与使用的三重授权原则，也即平台之间的数据流动（Open API模式）需通过“用户同意+平台同意+用户同意”的模式，较为周延的平衡了用户与平台利益保护以及数据流动的关系。事实上，因为平台数据多涉及用户隐私、数据安全、消费者利益以及平台利益等问题，数据平台方可以通过平台协议、robots协议、API限制以及技术保护措施等手段控制、限制数据合作与数据保护的范围与方式。数据抓取方如未获授权，则必然动辄得咎，除了行政与民事风险，甚至面临刑事风险。</p>
+<p>竞争关键在于公共领域的研究</p>
+<p>当前数据争议的核心在于，我们是否要为数据赋权？以及，我们需要什么样的“数据权”？在此问题讨论前，我们借用Jessica litman教授在在论述版权法制度的经典表述，私以为，“公共领域才真正是“数据权”法的前提和基础，离开了公共领域，人类根本无法容忍“数据权”制度的存在。”那么，我们讨论数据赋权以及“数据权”范畴设定的关键就变为，“数据权”的公共领域是什么？我们反其道而行之，可以打开通往“数据权”制度的一扇“后窗”，借此窥探“数据权”的边界，以有效平衡用户、数据平台、数据使用方以及其他参与方与社会利益的关系，并基于用户权利、公共利益与竞争政策的协调为数据定章立规。</p>
+<p>当前，欧美等国家与地区均在探索建立数据产权与流动规则。基于用户权利考虑，隐私权利、用户遗忘权、数据可携权、数据安全等在国内外立法实践中均有讨论，并已分别在<strong>GDPR（General Data Protection Regulation，欧盟通用数据保护条例）、《网络安全法》《民法总则》</strong>等国内外立法中有所体现。基于公共利益考虑，我们认为政府公共数据、自然气象数据、医疗数据等关系国计民生福利的数据在产权设定与流动使用应更多考虑社会福利与公民福祉。而基于竞争政策考虑，为了防范市场失灵，除了在反不正当竞争领域的司法探索外，我国应重点研究建立“数据权”的限制与例外制度，当然，我们首先要考虑数据是否可以成为市场力量的来源？不同数据类型、不同产业领域，以及不同竞争主体间的特定行为是否在竞争减损方面有所区别，以及此类竞争减损与效率促进之间如何平衡，以及如何救济。至于在数据经济驱动下的网络效应评估、相关市场界定、市场支配力衡量，甚至于反垄断理论更新等问题，研究工作任重而道远。</p>
+<p>此外，近期关注两个问题，其实与“数据权”公共领域问题的研究关系密切。</p>
+<p>其一，“数据权”设定的有效路径是什么？我国《民法总则》征求意见稿的最初文本将“数据信息”一体纳入“知识产权”进行保护，后遭多数专家反对，最终全国人大将数据信息与虚拟财产单列进行财产概括性保护，这是我国立法在“数据权”设定方面的谨慎尝试，也反应了数据与知识产权的复杂关系。其实，知识产权在诸多学术著作中被表述为“信息产权”。而从域外经验来看，早在1992年，欧盟委员会通过《数据库指令草案（Commission Proposal for a Council Directive on the Legal）》确立了数据库权（database right）。数据库权衍生于版权体系，以保护实质投资为目的，赋予数据库控制者对抗它人对数据库内容提取的排他权利，并存在着若干平衡性安排，如对合法利用人的非实质性部分的提取或再利用行为进行限制性排除，并规定了若干“法定许可”，虽存争议，但仍可为借鉴之有益经验。私以为，借鉴“数据库权”模式可以解决多数的与“数据权”相关的财产性权益争议。</p>
+<p>其二，用户同意与平台协议的关系，也即在未经数据平台方同意，甚至是平台协议反对的情况下，第三方仅获用户授权，能否大批量、自动化抓取用户已在数据平台方发布的数据内容。今年8月9日，今日头条突然开始通过用户授权直接把新浪微博的内容自动搬家到今日头条。面对大量用户与数据溢出的情况，新浪坚决切断了与今日头条的内容接口，并在海淀区法院立案起诉，此案尚未审结。私以为，即使搜索引擎与抓取技术中立，但从技术伦理与商业伦理角度，此类行为的规制应在技术创新与数据平台方激励之间寻求平衡。新浪在微博用户数据的整个生命周期中持续投入，如新浪法律专家王磊所言，“数据的集体涌现性使得“大数据”出现了系统组成前单个要素所不具有的性质”，平台为数据赋能，法律保护应有所倾斜。</p>
+<p>此问题的讨论并未结束，才是刚刚开始。</p>
+<h2 id="数据垄断真的存在吗？"><a href="#数据垄断真的存在吗？" class="headerlink" title="数据垄断真的存在吗？"></a><a href="http://www.ftchinese.com/story/001075626?full=y" target="_blank" rel="noopener">数据垄断真的存在吗？</a></h2><p>许可：“数据是新时代石油”的说法是一句成功的口号，但它只说对了一半，数据有价，但它本质上并非石油。<br><img src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fi.ftimg.net%2Fpicture%2F2%2F000069042_piclink.jpg?source=ftchinese&amp;width=1340&amp;height=754&amp;fit=cover&amp;from=next001" alt=""><br>更新于2017年12月26日 07:15 许可 为FT中文网撰稿</p>
+<p>我们每一个人都不喜欢垄断，除了垄断者。因为对普罗大众来说，垄断往往意味着更高的价格、更差的商品和不太好的服务。难怪曾为鲍勃•迪伦做过巡演经纪人的乔纳森•塔普林（Jonathan Taplin）在《迅捷行动，打破传统：Facebook、谷歌和亚马逊何以垄断文化、削弱民主》一书中对数字时代的垄断忧心忡忡，并倡议审查亚马逊、Facebook和谷歌对大数据的控制权。无独有偶，被称为“科技巨头克星”的欧盟委员会竞争专员玛格丽特•维斯塔格（Margrethe Vestager）亦表示：“数据可能成为并购中如何影响竞争这一问题中的重要因素。我们正在探索是否介入那些涉及重大价值数据的并购，即使拥有数据的公司并没有高昂的营业额。”这种学术和监管的新观点都着眼在“数据垄断”上，但究竟什么是“数据垄断”，它真的存在吗？</p>
+<p>“新时代的石油”：一个误读？</p>
+<blockquote>
+<p>自从《经济学人》将数据类比为21世纪的石油以来，数据的重要性已家喻户晓。</p>
+</blockquote>
+<p>但是，这一比喻令人误解，因为它不但容易让人联想到洛克菲勒的标准石油公司或美孚石油公司，还会误认为现在的数据就像一百年前的石油那样，成为市场上奇货可居、盈利丰厚的商品。然而，真实的情景是：正规的数据交易市场根本没有形成，更不用说在数据市场里呼风唤雨的数据大鳄了。其中的道理简单明了：数据并非真正的石油。</p>
+<p>数据并不稀缺。总量有限的石油牢牢把控在欧佩克和俄罗斯等少数产油大国的手中。与之相反，数据无处不在且源源不绝。随着互联网、物联网和智能终端的发展，新的数据每分每秒都在产生，并且，只要网络用户在线，纷繁芜杂的“电子足迹”就会被记录和收集。正如IDC报告所显示的，在过去数年，全球的数据量均以每年58%的速度增长，到2020年，全球数据总量将超过40ZB(相当于4万亿GB)，达到2011年数据总量的22倍。不仅于此，由于数据可以零边际成本地生产和分配，企业从自己或第三方等不同来源那里获取数据并没有实质的障碍。</p>
+<p>数据并不排他。石油只能被特定的企业占有和消费，而数据不同，它被一家企业收集、使用并不以排斥他人为代价。作为网络用户，我们能够接受不同企业提供的不同网络服务，甚至是同一类服务，比如百度知道和知乎。这一被称为“多重归属”的网络经济特性，将我们的数据分散到各个网络平台上，以至于没有企业可以独占所有数据。非排他性还意味着，即便一家企业拥有了特定数据，它也不能阻止他人通过别的途径获得同一数据。正因如此，在新浪微博诉脉脉反不正当纠纷中，脉脉便抗辩说相关数据是其利用“协同过滤算法”而得，并非从微博处获取，以证明自己数据的合法性。</p>
+<p>数据价值并不永久。石油固然不是“恒久远和永留传”的钻石，但其并无有效期限，价值难以消减乃不争事实。与石油要储藏够久才有价值迥异，数据是典型的时效品，老数据不如新数据值钱，而且随着时间推移，前者越来越没有价值。恰如王坚先生的《在线》一书所洞见的，大数据与其说是“大”的数据，毋宁是实时在线的“活”的数据。所以，因数据累积而形成的优势会迅速消逝，因为数据的寿命有限，一旦它们“死去”，便一文不值。</p>
+<p>数据没有法律上的所有者。数百年来，围绕石油已经建立起一套权属清晰、边界清晰的规则体系，而数据产权目前还是一笔糊涂账。最近，围绕欧盟委员会《关于构建欧洲数据经济征求意见书》，欧洲学界就数据财产权是否设立、以及如何设立论战不休。美国则基于实用主义的考虑，立法仅仅规范数据的收集、利用和流转，根本不谈数据归属问题。我国在今年生效的《民法总则》中首次将数据纳入其中，但由于缺乏细则，只有宣示“数据受法律保护”的指向意义。更重要的是，数据与个人信息、隐私等有关人格的权利夹杂不清，进一步影响了数据产权的确立。“清楚界定的产权是市场交易的前提”（科斯），数据的“无法”状态自然让数据市场的发展困难重重。</p>
+<p>总之，“数据是新时代石油”的说法是一句成功的口号，但它只说对了一半，数据有价，但它本质上并非石油。</p>
+<p>数据能决定企业竞争力吗？</p>
+<p>如果说数据不是企业的产出品（output），那么我们换一个视角，数据能否作为投入品（input），从而构成左右企业竞争力的源泉？当前，“构建以数据为关键要素的数字经济”已经在世界范围内获得广泛共识，可我们如何理解数据在企业竞争中的作用呢？</p>
+<p>首先必须承认数据是企业发展的重要因素。数字经济的技术革新彻底改变了数据运用的传统方式。现在，企业能够通过数据的学习效应（learning effect），来改进产品和服务。例如，Youtube可以收集每个用户的点击信息，来修正和完善算法，从而吸引更多用户。<strong>企业还能基于大数据的“用户画像”，提供订制化的产品，并根据其消费者能力和价格敏感度设定个性化的价格</strong>。此外，企业还能对数据进行二次利用，开发出新的商机。最近，电子商务网站美团开辟“美团打车”业务，便是一个鲜明的例子。</p>
+<p>然而，数据的作用也不可高估。纵观历史，拥有海量数据而失败的企业比比皆是。这首先是因为，数据的优势很容易被削弱。一方面，数据是可分的和高度差异化的。基于长尾理论的观察，不同的消费者在网络购物、在线约会、社交网络、在线旅游等场景下，往往导向更精确、更符合其需求的网络服务提供者。所以，成功的企业必须挖掘属于自己的利基市场，而不能盲目跟随领先者。差异化的竞争使得自己富有价值的数据，对其他企业可能用处寥寥。另一方面，数据本身可被替代。一家将传感器嵌入公路以收集交通拥堵数据的企业，很快就会发现，随着自动视频分析、手机导航等技术运用，其数据已沦为第二选择。</p>
+<p>其次，数据不能独立带来优势。根据胡凌先生的分析，网络平台的竞争在“资源、数据、算法、基础服务”等四个维度展开。具体来说，经由信息技术降低交易成本而带来生产性资源的不断增长，伴随着前者的活动产生大量数据，然后企业使用算法对数据进行动态分析预测，最终据此改进基础服务。显然，数据只是一个中间环节而已，它不是也不可能是决定性的。这也说明了，为什么数据巨头会失败：从时代华纳收购美国在线，到微软收购网络广告公司aQuantive，这些数据驱动型并购都降低了、而非增强了它们的竞争优势。相反，在那些看似需要大量数据才能生存的数字产业里，初创者也能脱颖而出。当Tinder在2012年9月登陆在线约会战场时，它没有任何用户数据，但凭借着简单的用户界面和对消费者需求的精准关注，Tinder很快成为市场的领导者，迄今为止，Tinder 已经见证了200 亿成功配对，成为全球最受欢迎的交友应用。</p>
+<p>最后，数据带来的力量十分脆弱。数字经济是高度创新的行业，更有甚者，在“颠覆性创新”（Disruptive Innovation）与“维持性创新”（Sustaining Innovation）二分架构下，其创新更偏向前者而不是后者。这意味着在不断变化和迅速迭代的竞争环境中，数据巨头的竞争优势将因完全意料不到的竞争对手和商业模式化为乌有，甚至会逆转为劣势。更惨烈的是，这种变化的彻底性与网络倾覆效应（Tipping Effects）相结合，往往让基于历史数据的决策错得离谱。MySpace与Facebook擦肩而过，AltaVista和Lycos输给了谷歌，诺基亚给iPhone让位，Google+遭遇滑铁卢，雅虎更名“Altaba”，这样的事件不胜枚举。</p>
+<p>在最近的一篇文章中，经济学家Anja Lambrecht和Catherine E. Tucker细致检讨了数据是企业核心竞争力的观点，他们认为：“在变动不居的数字经济中，几乎没有任何证据表明，仅仅拥有数据就能充分排斥更优的产品或服务的供给。要想建立可持续的竞争优势，数字战略的重点应当放在如何使用数字技术，以前所未有的方式给用户带来价值上。”就此而言，“数据是新时代石油”还有一层隐含的意义，那就是占有数据远没有开发数据有价值，正如石油大国往往不是经济强国，而这未尝不是“资源诅咒”的另类运用。</p>
+<p>正是出于以上种种理由，尽管美国和欧洲的监管者都对数据垄断表示了关注，但在Google收购DoubleClick、TomTom收购TeleAtlas、Facebook收购WhatsApp、Nielsen收购Arbitron等一系列并购案中，他们并没有针对数据采取激进的反垄断审查措施，而把是否破坏行业竞争和侵害消费者权益作为监管目标。当然，不用讳言，数据巨头对数据的收集和利用将给普罗大众的个人信息权利和隐私权带来了挑战，可这已经是反垄断法之外的故事了。</p>
+<h2 id="公司怎么做好一个大数据项目？"><a href="#公司怎么做好一个大数据项目？" class="headerlink" title="公司怎么做好一个大数据项目？"></a><a href="">公司怎么做好一个大数据项目？</a></h2><p>众所周知，伴随着云时代的到来，大数据已经成了现在科技界最热门的话题。最近，公众号“依米研习社”发了篇文章，以一个福特公司的大数据项目为例，讨论了企业该如何做一款成功的大数据项目。讲得有理有据，我来说给您听听。</p>
+<p>这篇文章指出，要想做好大数据项目，需要遵从以下几个原则。</p>
+<blockquote>
+<p>第一，这个项目的目标要特别清晰。公司从上到下、各个部门，都得明白用这个大数据要做什么。</p>
+</blockquote>
+<p>举例来说，福特公司的第一步是确定项目的目标，也就是让销售部门能用大数据来提升福特汽车的销售业绩。一般汽车销售商的做法是投放广告，这样随随便便就得花好几百万美金，而且还很难弄清楚，消费者买汽车到底是不是因为受了广告的影响。但大数据技术就不一样了。它可以通过对所有相关数据进行收集和分析，来确定哪些因素会影响个人购买汽车的意愿。这个目标不仅福特的营销部门清楚，财务主管部门和技术研发部门也都很清楚，这样才能上下一心地把这个项目做好。</p>
+<blockquote>
+<p>第二，项目要用快速迭代试错的方法来稳步推进。也就是说，做项目规划的时候，要争取每星期都能推出一个功能，然后立刻对其进行测试。要是测试成功，下星期就再推出下一个功能；要是测试不成功，就立刻对其进行改正。</p>
+</blockquote>
+<p>举例来说，福特公司的第二步是找一个大约200人的大数据分析团队，让他们全面收集与汽车销售相关的各种数据，比如第三方合同数据、区域经济数据、就业数据等等。那如何从这些海量的数据里，筛选出那些能影响汽车购买意愿的核心数据呢？他们就用快速迭代的方法，对这些数据分门别类地进行测试，看其是否能够影响到汽车的销售，从而把最核心的数据筛选了出来。</p>
+<blockquote>
+<p>第三，所选技术要符合大数据项目的功能要求。一般做一个大数据项目都需要用一些特殊的数据分析技术，但重要的不是专门选一些特别高大上的技术，而是让你选的技术符合你设计的业务功能。</p>
+</blockquote>
+<p>举例来说，福特公司的第三步是对筛选出来的数据进行建模分析，从而为销售和决策部门提供精准可靠的效果分析。特别地，对于所选方法可能获得什么样的营销效果，他们做了大概几十种的可能性分析。正是这样深入全面的分析，保证了他们可以从数据中挖掘出最有价值的结果。</p>
+<blockquote>
+<p>第四，项目团队要拥有各方面的专业知识技能。公司做大数据项目就像做任何一款创新产品，都需要形成一个拥有各种专业知识的团队，上面有领导的支持，中间有大家的共识，下面的一线执行人员也都清楚自己要干什么。</p>
+</blockquote>
+<p>举例来说，福特公司的第四步是根据这些建模分析的结果，让营销部门和运营部门来策划和实施有针对性的促销计划。比如说，在某些汽车需求特别旺盛的地方，他们会根据一些个体的特点来量身订做专门的促销方案。与传统的广告投放策略相比，这些专门的促销方案非常精准，只需要花五、六十万美金，就能知道谁对福特汽车感兴趣。相应的广告就投放到潜在客户的电子邮箱或他们所在地区的报纸上了。</p>
+<blockquote>
+<p>第五，做出来的项目成果要达到期望的结果。一般来说，能达到80%的预期，那就已经很好了；能达到50%的预期，那也很不错了。</p>
+</blockquote>
+<p>举例来说，福特公司的最后一步，是衡量大数据营销的效果。跟传统的广告投放相比，福特公司只花了十分之一的钱，就大幅度地提高了福特汽车的销售业绩。通过做这个项目，福特公司不光在汽车销售方面获得了成功，还在汽车的整车质量、保险费用、运输状况和驾驶模式方面积累了非常丰富的数据。他们希望用这些数据来帮助汽车驾驶员降低保险成本，从而促进消费者对福特品牌的认可，扩大市场占有率。</p>
+<p>马云曾经在一次演讲中说过，未来将不是信息技术的时代，而是数据技术的时代。通过福特公司的例子，我们看到，大数据技术确实能显著提升一个公司的运营效率。所以做好大数据项目，将对一个企业的发展大有裨益。</p>
+<p>本文源自：公众号“依米研习社”（企业如何做一个成功的大数据项目）</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><a href="">参考资料</a></h2><h3 id="D3数据可视化系列教程"><a href="#D3数据可视化系列教程" class="headerlink" title="D3数据可视化系列教程"></a><a href="https://blog.csdn.net/column/details/zhangtianxu.html?" target="_blank" rel="noopener">D3数据可视化系列教程</a></h3>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/AI/" rel="tag"><i class="fa fa-tag"></i> AI</a>
+          
+            <a href="/tags/Big/" rel="tag"><i class="fa fa-tag"></i> Big</a>
+          
+            <a href="/tags/Data/" rel="tag"><i class="fa fa-tag"></i> Data</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+			<div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">After reading, Five stars :)</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/User/User Thinking.html" rel="next" title="User Thinking">
+                <i class="fa fa-chevron-left"></i> User Thinking
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Company/BYD.html" rel="prev" title="BYD">
+                BYD <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d373f67eacfaa6" async = "async" ></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="hypercomments_widget"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img/headonhill.jpg"
+                alt="Author" />
+            
+              <p class="site-author-name" itemprop="name">Author</p>
+              <p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">135</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">238</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("04/01/2018 16:01:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second ";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#中国信通院：2018年大数据白皮书"><span class="nav-number">1.</span> <span class="nav-text">中国信通院：2018年大数据白皮书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张首晟：“少数派”的数据更有价值"><span class="nav-number">2.</span> <span class="nav-text">张首晟：“少数派”的数据更有价值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#商业：滴滴的壁垒是什么"><span class="nav-number">3.</span> <span class="nav-text">商业：滴滴的壁垒是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI时代的数据之争与公共领域界定"><span class="nav-number">4.</span> <span class="nav-text">AI时代的数据之争与公共领域界定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据垄断真的存在吗？"><span class="nav-number">5.</span> <span class="nav-text">数据垄断真的存在吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公司怎么做好一个大数据项目？"><span class="nav-number">6.</span> <span class="nav-text">公司怎么做好一个大数据项目？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">7.</span> <span class="nav-text">参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#D3数据可视化系列教程"><span class="nav-number">7.1.</span> <span class="nav-text">D3数据可视化系列教程</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Author</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 96030, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 96030, xid: "AI/Big Data.html"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/96030/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz',
+        appKey: 'PXNkGhS05PxL7rV3N8gDlAQe',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -316,13 +1890,157 @@
         onPopupClose();
       }
     });
-  </script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script type="text/javascript">wpac_init=window.wpac_init||[],wpac_init.push({widget:"Rating",id:11184,el:"wpac-rating",color:"fc6423"}),function(){if(!("WIDGETPACK_LOADED"in window)){WIDGETPACK_LOADED=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//embed.widgetpack.com/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t.nextSibling)}}()</script><style>.copy-btn{display:inline-block;padding:6px 12px;font-size:13px;font-weight:700;line-height:20px;color:#333;white-space:nowrap;vertical-align:middle;cursor:pointer;background-color:#eee;background-image:linear-gradient(#fcfcfc,#eee);border:1px solid #d5d5d5;border-radius:3px;user-select:none;outline:0}.highlight-wrap .copy-btn{transition:opacity .3s ease-in-out;opacity:0;padding:2px 6px;position:absolute;right:4px;top:8px}.highlight-wrap .copy-btn:focus,.highlight-wrap:hover .copy-btn{opacity:1}.highlight-wrap{position:relative}</style><script>$(".highlight").each(function(t,e){var n=$("<div>").addClass("highlight-wrap");$(e).after(n),n.append($("<button>").addClass("copy-btn").append("复制").on("click",function(t){var e=$(this).parent().find(".code").find(".line").map(function(t,e){return $(e).text()}).toArray().join("\n"),n=document.createElement("textarea");document.body.appendChild(n),n.style.position="absolute",n.style.top="0px",n.style.left="0px",n.value=e,n.select(),n.focus();var o=document.execCommand("copy");document.body.removeChild(n),o?$(this).text("复制成功"):$(this).text("复制失败"),$(this).blur()})).on("mouseleave",function(t){var e=$(this).find(".copy-btn");setTimeout(function(){e.text("复制")},300)}).append(e)})</script><script type="text/x-mathjax-config">
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 11184,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script><script type="text/x-mathjax-config">
+</script>
+
+<script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
     var all = MathJax.Hub.getAllJax(), i;
     for(i=0; i < all.length; i += 1) {
       all[i].SourceElement().parentNode.className += ' has-jax';
     }
   });
-</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script></body></html>
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+</body>
+</html>

@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/IPR/SEP.html</loc>
+    
+    <lastmod>2018-05-29T03:43:22.202Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/IPR/India.html</loc>
     
-    <lastmod>2018-05-28T10:09:29.598Z</lastmod>
+    <lastmod>2018-05-29T03:29:31.780Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://deepcreator.com/IPR/PCT.html</loc>
     
-    <lastmod>2018-05-28T09:52:51.968Z</lastmod>
+    <lastmod>2018-05-29T02:43:13.582Z</lastmod>
     
   </url>
   
@@ -156,13 +163,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Business/Consumption.html</loc>
-    
-    <lastmod>2018-05-28T05:47:23.983Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Concept/Management.html</loc>
     
     <lastmod>2018-05-28T05:47:23.983Z</lastmod>
@@ -171,6 +171,13 @@
   
   <url>
     <loc>http://deepcreator.com/Person/Original.html</loc>
+    
+    <lastmod>2018-05-28T05:47:23.983Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Business/Consumption.html</loc>
     
     <lastmod>2018-05-28T05:47:23.983Z</lastmod>
     
