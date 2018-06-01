@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Android（读音：英：[‘ændrɔɪd]，美：[ˈænˌdrɔɪd]），常见的非官方中文名称为安卓，是一个基于Linux内核的开放源代码移动操作系统，由Google成立的Open Handset Alliance（OHA，开放手持设备联盟）持续领导与开发，主要设计用于触屏移动设备如智能手机和平板电脑与其他便携式设备。">
+<meta name="keywords" content="Google,IPR,Android">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android">
+<meta property="og:url" content="http://deepcreator.com/IPR/Android.html">
+<meta property="og:site_name" content="Ai Lab">
+<meta property="og:description" content="Android（读音：英：[‘ændrɔɪd]，美：[ˈænˌdrɔɪd]），常见的非官方中文名称为安卓，是一个基于Linux内核的开放源代码移动操作系统，由Google成立的Open Handset Alliance（OHA，开放手持设备联盟）持续领导与开发，主要设计用于触屏移动设备如智能手机和平板电脑与其他便携式设备。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/Android_robot_2014.png?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/Android-System-Architecture.png?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/Wear_OS_logo.png?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/androidversion20180601.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/androidversiontimeline20180601.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/2/26/Android_Cupcake_home_screen.jpg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/e/e2/Android-2.0.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5f/Android_2.2_Froyo_home.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/b/b2/Android-2.3.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Android3.0.png/330px-Android3.0.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/a/a4/Android-4.0.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Android_4.0.png/330px-Android_4.0.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Android_4.1_on_the_Galaxy_Nexus.jpeg/330px-Android_4.1_on_the_Galaxy_Nexus.jpeg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Android_4.2_bug.jpg/330px-Android_4.2_bug.jpg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nexus_5_%28Android_4.4.2%29_Screenshot.jpg/330px-Nexus_5_%28Android_4.4.2%29_Screenshot.jpg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Android_4.4_bug.jpg/330px-Android_4.4_bug.jpg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Android_L_Develpment_Preview.png/330px-Android_L_Develpment_Preview.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Android_5.0_bug.jpg/330px-Android_5.0_bug.jpg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Android_5.0-en.png/330px-Android_5.0-en.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Android_6.0-en.png/330px-Android_6.0-en.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Android_M_Easter_egg.jpg/330px-Android_M_Easter_egg.jpg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Android_7.0-en.png/330px-Android_7.0-en.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Android_Oreo_8.1_screenshot.png/330px-Android_Oreo_8.1_screenshot.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Android_P.JPG/330px-Android_P.JPG">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Android_9.0.jpg/330px-Android_9.0.jpg">
+<meta property="og:updated_time" content="2018-06-01T02:15:43.865Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android">
+<meta name="twitter:description" content="Android（读音：英：[‘ændrɔɪd]，美：[ˈænˌdrɔɪd]），常见的非官方中文名称为安卓，是一个基于Linux内核的开放源代码移动操作系统，由Google成立的Open Handset Alliance（OHA，开放手持设备联盟）持续领导与开发，主要设计用于触屏移动设备如智能手机和平板电脑与其他便携式设备。">
+<meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/Android_robot_2014.png?imageMogr2/thumbnail/!75p">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://deepcreator.com/IPR/Android.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Android | Ai Lab</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="/img/deepcreator.jpg"
+               alt="Ai Lab"/>
+        </a>
+      </div>
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ai Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Minority, Truth, Value</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-info-circle"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-day">
+    <a href="/sentence/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-book"></i> <br />语录</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://deepcreator.com/IPR/Android.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="Chief IPR Officer in AI Age">
+      <meta itemprop="image" content="/img/headonhill.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ai Lab">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Android
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-01 09:10:08" itemprop="dateCreated datePublished" datetime="2018-06-01T09:10:08+08:00">2018-06-01</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IPR/" itemprop="url" rel="index"><span itemprop="name">IPR</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/IPR/Android.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/IPR/Android.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://p53s4d2qk.bkt.clouddn.com/Android_robot_2014.png?imageMogr2/thumbnail/!75p" alt="Android_robot_2014.png"></p>
+<blockquote>
+<p>Android（读音：英：[‘ændrɔɪd]，美：[ˈænˌdrɔɪd]），常见的非官方中文名称为<a href="https://zh.wikipedia.org/wiki/Android" target="_blank" rel="noopener">安卓</a>，是一个基于Linux内核的开放源代码移动操作系统，由Google成立的Open Handset Alliance（OHA，开放手持设备联盟）持续领导与开发，主要设计用于触屏移动设备如智能手机和平板电脑与其他便携式设备。</p>
+</blockquote>
+<a id="more"></a>
+<p><img src="http://p53s4d2qk.bkt.clouddn.com/Android-System-Architecture.png?imageMogr2/thumbnail/!75p" alt="Android-System-Architecture.png"></p>
+<p>编程语言</p>
+<p>Android是执行于Linux kernel之上，但并不是GNU/Linux。因为在一般GNU/Linux里支持的功能，Android大都没有支持，包括Cairo、X11、Alsa、FFmpeg、GTK、Pango及Glibc等都被移除掉了。Android又以bionic取代Glibc、以Skia取代Cairo、再以opencore取代FFmpeg等等。Android为了达到商业应用，必须移除被GNU GPL授权证所约束的部分，Android并没有用户层驱动（user space driver）这种东西。所有的驱动还是在内核空间中，并以HAL隔开版权问题。bionic/libc/kernel/ 并非标准的内核头文件（kernel header files）。Android的内核头文件是利用工具由Linux内核的头文件所产生的，这样做是为了保留常数、资料结构与宏。</p>
+<p>Android的核心基于Linux，除了核心之外，则是中介层、数据库元和用C/C++编写的API以及应用程序框架。Android的应用程序通常以Java数据库元为基础编写，运行程序时，应用程序的代码会被即时转变为Dalvik dex-code（Dalvik Executable），然后Android操作系统通过使用即时编译的Dalvik虚拟机来将其运行。</p>
+<p>目前Android的Linux kernel控制包括安全、存储器管理、进程管理、网络堆叠、驱动程序模型等。下载Android源码之前，先要安装其构建工具Repo来初始化源码。Repo是Android用来辅助Git工作的一个工具。</p>
+<p>Android操作系统大多搭载在使用了ARM架构的硬件设备上。但是同样也有支持X86架构的Android操作系统，比如Google的Google TV就是使用一个特别定制的X86架构版本的Android操作系统。</p>
+<p>同样，苹果公司的iOS设备，比如iPhone、iPod Touch以及iPad产品(iOS 4以前，需越狱) 都可以安装Android操作系统，并且可以通过双系统启动工具OpeniBoot或者iDroid来运行Android操作系统。微软的Windows Mobile、Windows Phone产品也一样可以。另外Android亦已成功移植到搭载WebOS系统HP TouchPad以及搭载Meego系统的Nokia N9等设备。</p>
+<p>世界上第一部真正意义上使用Android操作系统的设备是2008年10月22日发布的HTC Dream。</p>
+<h2 id="分支平台"><a href="#分支平台" class="headerlink" title="分支平台"></a>分支平台</h2><h3 id="Wear-OS"><a href="#Wear-OS" class="headerlink" title="Wear OS"></a>Wear OS</h3><p><img src="http://p53s4d2qk.bkt.clouddn.com/Wear_OS_logo.png?imageMogr2/thumbnail/!75p" alt="Wear_OS_logo.png"></p>
+<p>Wear OS是专为智能手表等可穿戴式设备所设计的一个Android系统分支。</p>
+<h3 id="Android-TV"><a href="#Android-TV" class="headerlink" title="Android TV"></a>Android TV</h3><p>Android TV是专为家用电视所设计的一个Android系统分支。</p>
+<h3 id="Android-Auto"><a href="#Android-Auto" class="headerlink" title="Android Auto"></a>Android Auto</h3><p>Android Auto是专为汽车所设计的一个Android系统功能。</p>
+<h2 id="版本历史"><a href="#版本历史" class="headerlink" title="版本历史"></a><a href="https://zh.wikipedia.org/wiki/Android%E6%AD%B7%E5%8F%B2%E7%89%88%E6%9C%AC" target="_blank" rel="noopener">版本历史</a></h2><p><img src="http://p53s4d2qk.bkt.clouddn.com/androidversion20180601.JPG?imageMogr2/thumbnail/!75p" alt="androidversion20180601.JPG"></p>
+<p><img src="http://p53s4d2qk.bkt.clouddn.com/androidversiontimeline20180601.JPG?imageMogr2/thumbnail/!75p" alt="androidversiontimeline20180601.JPG"></p>
+<h3 id="Alpha-Beta"><a href="#Alpha-Beta" class="headerlink" title="Alpha, Beta"></a><a href="">Alpha, Beta</a></h3><p>初期还未完成的版本以里程碑（Milestone）的M来作编号（如m3, m5）后面接rc号码（如m3-rc37a），再细分为每星期的结果WB或测试序号TC。至2009年团队认为这些编号太难分辨和记忆，所以改成CRA29，而这也某程度上决定了后来使用英文本母排序的方式来命名代号。在这其中无数的里程碑中，曾经打算过使用虚构作品中的机器人（Android）作为代号，例如Astro Boy“铁臂阿童木”和Bender“班德·班亭·罗德里盖茨”。</p>
+<h3 id="Android-1-0"><a href="#Android-1-0" class="headerlink" title="Android 1.0"></a><a href="">Android 1.0</a></h3><p>2008年9月23日，发布Android操作系统中的第一个正式版本：Android 1.0，当时并未有特别名称[21]。全球第一台Android设备HTC Dream（G1）就是搭载Android 1.0操作系统[22]，以下Android 1.0所拥有的特性功能：<br>Android Market：下载应用程序和获得更新；<br>网页浏览器：可以完全还原并且显示HTML和XHTML的网页–并且可以通过多点触控对网页进行放大缩小[23][24]。<br>照相机：支持照相机和摄像头，但是这个版本没有选项来改变相机的分辨率、白平衡、质量等等[25]。<br>允许将应用程序图标放置到文件夹中，并且可以在主界面显示插件等东西[26]。<br>支持E-mail传输：支持POP3、IMAP4以及SMTP[24]。<br>Gmail：进行Gmail同步。<br>Google联系人：通过People应用程序同步联系人。<br>Google日历：通过日历程序同步日历和日程。<br>Google地图、Google纵横以及Google街景可以帮助用户查看地图和地理信息，并且可以通过GPS服务确定地理位置[25]。<br>Google同步：一个管理Android设备中谷歌服务的应用。<br>Google搜索：允许用户在手机和网络上进行统一的搜索，包括联系人、电话、日历和信息等。<br>Google Talk：一个聊天工具。<br>即时消息、语音频息和短信<br>多媒体播放器：负责管理、导入、拷贝和播放多媒体文件，但是不支持蓝牙耳机[24][25]。<br>通知的信息可以在状态栏显示，并且可以对提示的方式进行设置，包括振动、声音、LED或警告等提示方式[23][24][27]。<br>声音识别器：允许用户通过说话来输入文本、拨打电话，能更好的帮助残疾人士[24]。<br>壁纸功能允许用户设置自己的照片和其他网络图片作为自己的手机主界面的背景。<br>YouTube：内置YouTube应用程序[28]。<br>其他应用程序：闹钟，计算器，电话，主界面，图库以及设置。<br>支持Wi-Fi和蓝牙</p>
+<h3 id="Android-1-1-Petit-Four"><a href="#Android-1-1-Petit-Four" class="headerlink" title="Android 1.1(Petit Four)"></a>Android 1.1(Petit Four)</h3><p>2009年2月2日，Android 1.1（花色小蛋糕, Petit Four，正式以甜点为代号[20]）发布，该版本只被预装在T-Mobile G1上。该版本处理了前一版本遗留的许多应用程序和系统的Bug，改进了API接口和添加了新的特性：<br>用户搜索企业和其他服务时，下方会显示出其他用户搜索时对该搜索信息的评价和留言。<br>加强了电话功能，改进了免提功能。<br>支持对邮件附件的保存和预览功能。<br>增加了长按任意界面弹出多选框的功能。</p>
+<h3 id="Android-1-5-Cupcake"><a href="#Android-1-5-Cupcake" class="headerlink" title="Android 1.5(Cupcake)"></a>Android 1.5(Cupcake)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Android_Cupcake_home_screen.jpg" alt=""></p>
+<p>基于Linux Kernel 2.6.27</p>
+<p>2009年4月30日，Google发布Android 1.5（Cupcake 纸杯蛋糕）。主要更新如下：[29][30]</p>
+<p>Android 1.5 界面<br>Android 1.5相比之前的Android 1.1版本增加了对虚拟键盘的支持度。此版系统可以像iPhone那样直接在屏幕上的虚拟键盘中输入。这也是为没有内置QWERTY键盘的Android手机作出的重大改进。<br>之前的版本仅支持拍照，此版增加了视频录制功能，同时也将拍照时的启动速度做了优化，还可以将拍摄的内容发布到Youtube。<br>支持Widget功能，用户可以自行加入音乐播放器和文件夹快捷方式等。<br>改进了GPS功能，定位库使用了A-GPS技术，搜索速度大幅提高。<br>增加了Voice Search的语音识别功能，但是仅限于英文。<br>支持A2DP蓝牙立体声，同时改善自动配对性能，但仍然不能传输文件。<br>内置的重力加速感应器增加了自动探测方向的功能。<br>内置的Google Chrome Lite浏览器更新了Webkit核心，升级了Squirellfish及更快的JavaScript处理，浏览网页更为迅捷。<br>用户界面细节大幅改进改善，在Gmail、Calendar、Message等组件的外观都有改进。另外在程序菜单的背景出现花纹。<br>中文显示和中文输入的支持；Android 1.1除了英语以外，只能支持德语，而Android 1.5的国际化有了更进一步的发展，支持包括中文在内的十几种语言。<br>支持来电照片显示[31]</p>
+<h3 id="Android-1-6-Donut"><a href="#Android-1-6-Donut" class="headerlink" title="Android 1.6(Donut)"></a>Android 1.6(Donut)</h3><p>基于Linux Kernel 2.6.29</p>
+<p>2009年9月15日，Google发布Android 1.6（Donut甜甜圈，正式决定以英文本母作代号排序[20]）。主要更新如下：[32][33]<br>重新设计的Android Market。<br>手势操控支持。<br>支持CDMA网络。<br>文本转语音系统（Text-to-Speech）。<br>快速搜索框。<br>全新的拍照界面。<br>可查看应用程序耗电量。<br>支持虚拟私人网络（VPN）。<br>更高的屏幕分辨率。<br>支持OpenCore2媒体引擎。<br>新增对视觉及听觉困难人士的服务[34]</p>
+<h3 id="Android-2-0-2-0-1-2-1-Eclair"><a href="#Android-2-0-2-0-1-2-1-Eclair" class="headerlink" title="Android 2.0/2.0.1/2.1(Eclair)"></a>Android 2.0/2.0.1/2.1(Eclair)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Android-2.0.png" alt=""></p>
+<p>基于Linux Kernel 2.6.29</p>
+<p>2009年10月26日，Google发布Android 2.0（Eclair松饼）。主要更新如下:[35][36]</p>
+<p>Android 2.0 界面<br>优化硬件速度。<br>“Car Home”程序。<br>支持更高的屏幕分辨率。<br>改良的用户界面。<br>新的浏览器的用户界面，并支持HTML5。<br>新的联络人名单。<br>更好的白色/黑色背景比率。<br>改进Google Maps 3.1.2。<br>支持Microsoft Exchange。<br>支持内置相机闪光灯。<br>支持数位变焦。<br>改良的虚拟键盘。<br>支持蓝牙2.1。<br>支持动态桌面。<br>Android 2.0.1<br>Android 2.0.1于2009年12月3日正式发布[37]。该版本针对Android 2.0进行了轻微的改进，只针对前一个版本中的部分API进行修改变化，并且对存在的已知的Bug进行修复，其他并无变化[37]。</p>
+<p>Android 2.1<br>Android 2.1于2010年1月12日正式发布[38]。该版本针对Android 2.0.1进行了轻微的改进，只针对前一个版本中的部分API进行修改变化，并且对存在的已知的Bug进行修复，其他并无变化[38]。</p>
+<h3 id="Android-2-2-2-2-1-2-2-2-2-2-3-Froyo"><a href="#Android-2-2-2-2-1-2-2-2-2-2-3-Froyo" class="headerlink" title="Android 2.2/2.2.1/2.2.2/2.2.3(Froyo)"></a>Android 2.2/2.2.1/2.2.2/2.2.3(Froyo)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Android_2.2_Froyo_home.png" alt=""></p>
+<p>基于Linux Kernel 2.6.32</p>
+<p>2010年5月20日，Google发布Android 2.2（Froyo冻酸奶）。主要更新如下:[39]</p>
+<p>Android 2.2 界面<br>支持将软件安装至存储卡[40]<br>支持Adobe Flash 10.1[41]<br>加强软件即时编译的速度[42]<br>支持快速启动功能至电话和浏览器[43]<br>USB分享器和WiFi热点功能[44]<br>支持浏览器上传档案[45]<br>更新Market中的批量及自动更新[46]<br>增加对Microsoft Exchange的支持（安全政策, auto-discovery, GAL look-up）<br>集成Chrome的V8 JavaScript引擎<br>加强了快速搜索小工具。<br>更多软件能透过Market更新，类似2.0/2.1中的Map更新。<br>速度和性能最优化[46]<br>注：部分标称为2.2的固件仍然在使用2.6.29的核心。这种固件虽然可以实现大部分2.2的功能（比如flash），但性能上与2.6.32有一定差距。</p>
+<p>Android 2.2.1<br>Android 2.2.1更新包于2011年1月18日正式发布，进行了Bug修复，安全性的提高，性能提升以及流畅性提升[47]。</p>
+<p>Android 2.2.2<br>Android 2.2.2更新包于2011年1月22日正式发布，进行了Bug修复，修复了Nexus One中的短信问题[48]。</p>
+<p>Android 2.2.3<br>Android 2.2.3更新包于2011年11月21日正式发布，修复了两个安全性问题。</p>
+<h3 id="Android-2-3-Gingerbread"><a href="#Android-2-3-Gingerbread" class="headerlink" title="Android 2.3(Gingerbread)"></a>Android 2.3(Gingerbread)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Android-2.3.png" alt=""></p>
+<p>基于Linux Kernel 2.6.35</p>
+<p>2010年12月7日，Google发布Android 2.3（Gingerbread姜饼）。主要更新如下：[49]</p>
+<p>Android 2.3 界面<br>修补UI[50]<br>支持更大的屏幕尺寸和分辨率（WXGA及更高）。<br>重新设计的多点触控屏幕键盘。<br>支持多镜头（用于视频通话等）和更多感应器（陀螺仪、气压计等）。<br>电话集成Internet Call功能。<br>支持近场通信（NFC）。<br>强化电源、应用程序管理功能。<br>新增下载管理员。<br>最优化游戏开发支持。<br>多媒体音效强化。<br>从YAFFS转换到ext4文件系统。<br>支持屏幕截图功能。<br>对黑色及白色的还原更加真实。<br>支持Google Talk视讯功能。<br>2010年12月及2011年1月分别发放2.3.1和2.3.2更新包，修复Nexus S的Bug。</p>
+<p>Android 2.3.3<br>Android 2.3.3更新包于2011年2月9日正式发布，仅针对上一个版本进行了API改进，其他无变化[51]。</p>
+<p>Android 2.3.4<br>Android 2.3.4更新包增加了在Google Talk中使用语音通话和视频聊天的支持[52]。</p>
+<p>屏幕截图功能（电源键+Home）在2.3.4才有实现出来（2011 Xperia:长按Power键，再点击“截图”）</p>
+<p>Android 2.3.5<br>Android 2.3.5更新包于2011年7月25日正式发布，该更新包进行如下改进[53]：</p>
+<p>提升了Nexus S 4G的性能，包括其他性能的提升。<br>修复了存在于三星Galaxy S中存在的蓝牙Bug。<br>升级了内置的Gmail应用程序<br>增强了滚动列表时产生的阴影动画<br>增强了内置的相机功能<br>改善了电池耗电量，增加续航时间。<br>Android 2.3.6<br>Android 2.3.6更新包于2011年9月2日正式发布，修复了语音搜索存在的Bug。该更新包改进了加拿大版本Nexus S存在的使用WiFi时可能导致增加辐射的问题[54][55]。</p>
+<p>Android 2.3.7<br>加入Google Wallet，具备NFC功能的手机实现支付功能</p>
+<h3 id="Android-3-0-1-3-1-3-2-Honeycomb"><a href="#Android-3-0-1-3-1-3-2-Honeycomb" class="headerlink" title="Android 3.0.1/3.1/3.2(Honeycomb)"></a>Android 3.0.1/3.1/3.2(Honeycomb)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Android3.0.png/330px-Android3.0.png" alt=""></p>
+<p>基于Linux Kernel 2.6.36</p>
+<p>2011年2月2日，Google发布Android 3.0（Honeycomb蜂巢）发布。是第一个Android平板操作系统[56][57][58][59]。全球第一个使用该版本操作系统的设备是摩托罗拉公司于2011年2月24日发布的Motorola Xoom平板电脑[60]。主要更新如下[56]：</p>
+<p>Android 3.0 界面<br>专为平板电脑设计。<br>支持Google eBooks。<br>支持平板电脑大萤幕、高分辨率。<br>改良的Gmail外观。<br>支持3D加速处理。<br>新的通知功能。<br>专为平板电脑设计的用户界面（重新设计的通知列与系统列）。<br>加强多任务处理的界面。<br>重新设计适用大屏幕的键盘及复制粘贴功能。<br>多个标签的浏览器以及私密浏览模式。<br>快速切换各种功能的相机。<br>增强的图库与快速滚动的联系人界面。<br>更有效率的Email界面。<br>支持多核心处理器。<br>3.2最优化7吋平板显示。<br>部分3.0版本的应用程序以2.3版本的方式呈现（如Market），为其缺点。<br>Android 3.1<br>Android 3.1软件开发包于2011年5月10日正式发布[61]。主要更新如下：</p>
+<p>用户界面的改进<br>连接USB配件<br>扩大最近的应用程序列表<br>可调整大小的主屏幕小部件<br>支持外部键盘和鼠标等设备<br>支持操纵杆和游戏控制器<br>FLAC音频播放支持[62][63]<br>高性能的WiFi锁，设备屏幕关闭时维持高性能的WiFi连接。<br>为每个WiFi接入点设置HTTP代理<br>Android 3.2<br>Android 3.2软件开发包于2011年7月15日正式发布[64]。全球第一台使用该版本操作系统的设备是华为公司制造生产的MediaPad平板电脑[65]。主要更新如下：</p>
+<p>改进的硬件支持，包括为更广泛的芯片，并且进行优化。<br>增强应用程序访问SD卡上文件的能力，提供同步功能。<br>增加应用程序兼容性功能，用户可以通过使用兼容性功能适配更多应用程序。<br>新的显示支持功能，为开发人员提供更多的显示外观在不同的Android设备的控制。<br>Android 3.2.1<br>Android 3.2.1更新包于2011年9月20日正式发布，包含以下更新：</p>
+<p>修复存在的Bug和安全性问题，增强系统稳定性和WiFi的性能<br>升级自带的Android Market<br>升级自带的Google Books<br>提升浏览器对Adobe Flash的支持<br>增强对简体中文、繁体中文的手写功能<br>Android 3.2.2<br>Android 3.2.2更新包于2011年8月30日正式发布，该版本修复了在摩托罗拉Xoom 4G上存在的Bug和性能方面的提升。</p>
+<h3 id="Android-4-0-Ice-Cream-Sandwich"><a href="#Android-4-0-Ice-Cream-Sandwich" class="headerlink" title="Android 4.0(Ice Cream Sandwich)"></a>Android 4.0(Ice Cream Sandwich)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Android-4.0.png" alt=""></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Android_4.0.png/330px-Android_4.0.png" alt=""></p>
+<p>基于Linux Kernel 3.0.1</p>
+<p>Android 4.0（Ice Cream Sandwich冰淇淋三明治）于2011年4月在Google I/O大会上首次被宣布[66]，并且于2011年10月19日正式发布Android 4.0“冰淇淋三明治”操作系统和搭载Android 4.0的Galaxy Nexus智能手机[67]。Android 4.0.1的软件开发包于2011年10月19日正式发布[68]。谷歌公司的发言人加布·科恩（Gabe Cohen）指出，Android 4.0“理论上”与任何一个当前市面上搭载了Android 2.3.x版本的设备兼容[69]。关于Android 4.0的源代码已于2011年11月14日正式公布[70]。</p>
+<p>Android冰淇淋三明治（Ice Cream Sandwich）标志<br>该版本的主要更新内容如下[71][72][73]：<br>统一了手机和平板电脑使用的系统，应用会自动根据设备选择最佳显示方式。<br>提升硬件的性能以及系统的优化，提升系统流畅度。<br>支持在系统中使用虚拟按键，该功能可以取代物理按键。<br>界面以新的标签页形式展示，并且将应用程序和其他内容的图标分类。<br>更方便地在主界面创建文件夹，并且使用“一拖”、“一放”的操作方式。<br>一个定制的启动器<br>改进的可视化语音邮件的能力，加快或减慢语音邮件。<br>在日历中也可以使用多点触控，进行缩放和拖拽操作。<br>Gmail离线搜索，两行预览，和新的任务栏。<br>与其他第三方微博、博客类应用程序的无缝连接，即时更新的内容会被展示在主界面上。<br>Gmail支持缩放操作，支持左拉、右拉进行查看。<br>增加截图功能（可以同时按住电源键和音量向下键进行截图操作）。<br>改进虚拟键盘可能产生的误操作<br>在锁屏状态下对用户设置的某些应用程序进行操作<br>改进的复制、粘贴功能<br>更好的语音集成，实时录音，文本听写等语音功能。<br>通过脸部识别进行解锁屏幕。<br>新标签页模式的网页浏览器，支持最大同时打开16个标签页。<br>自动同步用户手机中的网页书签，可以在桌面版Chrome和其他Android设备中进行同步。</p>
+<p>Android 4.0 界面<br>全新的现代化Roboto字体<br>内置流量监控功能，用户可以对流量进行设置，超出设置流量时，手机会自动关闭上网功能，并且可以随时查看已使用和未使用的流量，并以报表的形式展现出来。<br>随时关闭正在使用的应用程序<br>提升自带的相机功能<br>内置图片处理软件<br>新的图库软件<br>与其他第三方应用程序进行无缝衔接，用户可以在任何界面看到自己需要的消息和图像。<br>新的启动画面，主画面右下角类似Tray的图标，查看正在运行的程序。<br>Google搜索条会固定在启动器最上方<br>应用/小部件页面类似Honeycomb样式<br>增加支持硬件加速的功能[74]<br>Wi-Fi直连功能[75]<br>支持1080p视频播放和录制<br>Android 4.0.1<br>修复Android 4.0中的Bug。</p>
+<p>Android 4.0.2<br>Android 4.0.2更新包于2011年11月28日正式发布，该更新包修复了存在于Verizon版本Galaxy Nexus中的Bug[76][77]。</p>
+<p>Android 4.0.3<br>Android 4.0.3更新包于2011年12月16日发布，包括修复Bug和系统的优化，并且针对图形、数据库、拼写检查、蓝牙功能和其他功能的改进。公布了新的API，包括联系人API，日历增强，新的摄像头应用程序，提高视频稳定和QVGA分辨率和辅助功能的改进，如屏幕的改进等[78]。</p>
+<p>Android 4.0.4<br>Android 4.0.4更新包于2012年2月6日发布，主要更新如下：</p>
+<p>更快的运行性能<br>Android操作系统的漏洞（电池问题）修复<br>3G/4G切换改进<br>信号强度增强<br>新的Power菜单<br>更快速启动<br>自动亮度调节功能改进，有了平滑的过渡。<br>重新调整了相机的Holding down按钮<br>多点触控的问题解决<br>自动旋转更迅速<br>浏览器的性能显著提高<br>最近应用程序列表打开更快速<br>相机UI的变化<br>音量增大<br>键盘问题修复<br>更新新闻及天气应用程序的UI<br>浏览器中的快速控制改进</p>
+<h3 id="Android-4-1-4-2-4-3-Jelly-Bean"><a href="#Android-4-1-4-2-4-3-Jelly-Bean" class="headerlink" title="Android 4.1/4.2/4.3(Jelly Bean)"></a>Android 4.1/4.2/4.3(Jelly Bean)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Android_4.1_on_the_Galaxy_Nexus.jpeg/330px-Android_4.1_on_the_Galaxy_Nexus.jpeg" alt=""></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Android_4.2_bug.jpg/330px-Android_4.2_bug.jpg" alt=""></p>
+<p>基于Linux Kernel 3.4.0</p>
+<p>2012年6月28日，Google发布Android 4.1（JellyBean 果冻豆）在Google I/O大会上随搭载Android 4.1的Nexus 7平板电脑一起发布，。主要更新如下：</p>
+<p>Android 4.1 界面<br>基于Android 4.0改善。<br>“黄油”计划（Project Butter），号称可以让 Jelly Bean 的体验像“黄油般顺滑”（提升用户页面的速度与流畅性，但对低硬件条件的设备效果不大）<br>“Google Now”可在 Google 日历内加入活动举办时间、地点，系统就会在判断当地路况后，提前在适当的出门时间给予通知。<br>离线语音输入。<br>Expandable notifications：通知中心显示更多消息，如支持拉开以查看详细图片（如截屏）。<br>更多平板种类的最优化（主要针对小尺寸平板）。<br>Google Now：集成性助理。类似Apple的Siri、Microsoft的Cortana。<br>Google Play 增加电视视频与电影。<br>Google Play采用智能升级，更新应用只会下载有改变的部分以节约时间、流量、电量，平均只需下载原APK文件的三分之一。<br>提升反应速度。<br>强化默认键盘。<br>大幅改变用户界面设计。<br>更多Google的云集成。<br>恶意软件的保护措施，强化ASLR。<br>取消内置 Flash Player，并且Adobe声明停止开发，但可自行安装APK。。<br>Android 4.1.1<br>Android 4.1.1更新包于2012年7月23日发布，主要是修复Nexus 7的Bug。</p>
+<p>Android 4.1.2<br>Android 4.1.2更新包于2012年10月9日发布，主要更新如下：</p>
+<p>加入主画面的旋转功能<br>一些错误修正<br>提升性能及稳定性<br>单手指开合通知中心消息<br>2012年10月30日，Google 发布 Android 4.2（JellyBean 果冻豆）。Google原本预计于2012年10月29日于纽约发布Android 4.2，但因为飓风桑迪吹袭被取消[79]，而改以新闻稿发布，以“一种新口味的果冻豆”（A new flavor of Jelly Bean）作口号。首款搭载Android 4.2的手机LG Nexus 4及平板电脑Nexus 10于2012年11月23日上市[80][81]。主要更新如下：</p>
+<p>支持多用户登录，一部设备上可有多个帐号（仅适用于平板电脑）。<br>通知中心内新增了设置键。<br>PhotoSphere 360°全景拍摄。<br>Google Now 更新，除了搜索外，也可查看 Gmail 与飞机航班等数据，更提供用户购买票卷，股票涨跌及新闻等信息。<br>Google Now 新增航班追踪功能、酒店、餐厅预订，与音乐和电影推荐功能。<br>Gmail 邮件可缩放显示。<br>支持手势输入。<br>增加为盲人用户设计的语音输出及手势模式导航功能。<br>连点三次可放大整个显示页及两指旋转和缩放。<br>可直接进行操作的状态通知列功能。<br>内置时钟新增世界时钟，秒表和定时器。<br>改进锁屏：支持小部件，可于屏幕锁定界面直接打开相机功能。<br>支持多媒体无线传输 Miracast。<br>屏幕锁定时可显示Widget，唯支持的Widget十分有限（基于开发者有无加入此功能）。<br>增加“Daydream（白日梦）”功能,其功能类似于屏幕保护。</p>
+<p>Android 4.2的彩蛋<br>Android 4.2.1<br>修复Android 4.2中的Bug。</p>
+<p>Android 4.2.2<br>Android 4.2.2更新包于2013年2月11日发布，主要更新如下：</p>
+<p>性能及稳定性的提升<br>一些错误修正<br>改善蓝牙A2DP流问题<br>Google Play在下载内容时会显示剩余的时间<br>在快速设置中长按WiFi和蓝牙图标可切换开关<br>当设备电量低于95%并开始无线充电时会发出提示音<br>在USB调试加入白名单功能<br>优化电池耗电量，增加续航时间。<br>2013年7月25日，Google发布Android 4.3（JellyBean果冻豆）。主要更新如下:</p>
+<p>“蓝牙低功耗”功能（蓝牙4.0），开启蓝牙后，耗电量相比之前大幅降低。<br>支持OpenGL ES 3.0，为Android游戏带来更出色的视觉体验。<br>支持DRM APIs，提供数字版权加密技术支持。<br>支持4K，并加入对640PPI（XXXHDPI）的支持。<br>提高了全景相机的校准和缝合，并优化曝光修正。<br>支持TRIM指令，使得内存不会越用越慢。<br>内含app ops ，可让用户控制app权限的功能，限制装载app时受予过多不必要的隐私权限。(此功能为隐藏，可装PDroid Manager 使用)。<br>支持RTL语言。<br>2013年10月5日，Google发布Android 4.3.1（JellyBean 果冻豆）。主要更新如下：</p>
+<p>改进系统性能和稳定性。</p>
+<h3 id="Android-4-4-4-4-1-4-4-2-4-4-3-4-4-4-KitKat"><a href="#Android-4-4-4-4-1-4-4-2-4-4-3-4-4-4-KitKat" class="headerlink" title="Android 4.4/4.4.1/4.4.2/4.4.3/4.4.4(KitKat)"></a>Android 4.4/4.4.1/4.4.2/4.4.3/4.4.4(KitKat)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nexus_5_%28Android_4.4.2%29_Screenshot.jpg/330px-Nexus_5_%28Android_4.4.2%29_Screenshot.jpg" alt=""></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Android_4.4_bug.jpg/330px-Android_4.4_bug.jpg" alt=""></p>
+<p>基于Linux Kernel 3.4.0</p>
+<p>2013年10月31日，Google发布Android 4.4（奇巧Kitkat）。主要更新如下：</p>
+<p>Android 4.4.2 界面<br>支持语音打开Google Now（在主画面说出“OK,Google”）。<br>在阅读电子书、玩游戏、看电影时支持全屏模式（Immersive Mode）。<br>优化存储器使用，在多任务处理时有更佳的工作表现。<br>新的电话通信功能。<br>旧有的SMS应用程序集成至Hangouts。<br>Emoji Keyboard 集成至 Google 键盘。<br>支持 Google Cloud Print 服务，让用户可以利用户中或办公室中连接至Cloud Print的打印机，印出文件。<br>支持 Office 应用程序直接打开及存储用户在 Google Drive 内的文件，即时同步更新文件。<br>支持低电耗音乐播放。<br>全新的计步器。<br>全新的 NFC 集成。<br>全新的 Java 虚拟机运行环境 ART（Android Runtime）。<br>支持 Message Access Profile（MAP）。<br>支持 Chromecast 及新的 Chrome 功能。<br>支持隐藏式字幕。<br>完全封锁 Adobe Flash player 功能。</p>
+<p>Android 4.4的彩蛋<br>2013年12月5日 Google 发布Android 4.4.1（Kitkat）。主要更新如下：<br>修正 Nexus 5 的对焦、白平衡等相机问题。<br>2013年12月9日 Google 发布 Android 4.4.2（Kitkat）。主要更新如下：</p>
+<p>修正 Android 4.4.1 中的 Bug。<br>2014年6月2日 Google 发布 Android 4.4.3（Kitkat）。主要更新如下：</p>
+<p>重新设计拨号界面。<br>WebView 版本升级至 version 33。<br>2014年6月20日 Google 发布 Android 4.4.4（Kitkat）。主要更新如下：</p>
+<p>修复了此前曝光的OpenSSL漏洞有关，同时对WebView、Chromium做出了相应调整，并修复了些许Bug。</p>
+<h3 id="Android-5-0-5-0-1-5-0-2-Lollipop"><a href="#Android-5-0-5-0-1-5-0-2-Lollipop" class="headerlink" title="Android 5.0/5.0.1/5.0.2(Lollipop)"></a>Android 5.0/5.0.1/5.0.2(Lollipop)</h3><p>基于Linux Kernel 3.4.0</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Android_L_Develpment_Preview.png/330px-Android_L_Develpment_Preview.png" alt=""></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Android_5.0_bug.jpg/330px-Android_5.0_bug.jpg" alt=""></p>
+<p>2014年6月25日，Google于I/O大会上展示Android L的开发者预览版本，并开放下载。</p>
+<p>2014年10月16日，Google发布Android 5.0（棒棒糖Lollipop）。主要更新如下：</p>
+<p>Android 5.0 界面<br>支持64位处理器。<br>支持蓝牙4.1。<br>相机可存扩展名为*.dng的raw档。<br>采用全新Material Design界面。<br>全面由 Dalvik 虚拟机转用 Android RunTime（ART）编译虚拟机。官方宣称新的虚拟机相较于旧虚拟机，性能可提升四倍。<br>改良的通知界面及新增Priority Mode。<br>预载省电及充电预测功能。<br>新增自动内容加密功能。<br>新增多人设备分享功能，可在其他设备登录自己账号，并获取用户的联系人、日历等Google云数据。<br>强化网络及传输连接性，包括Wi-Fi、蓝牙及NFC。<br>强化多媒体功能，例如支持RAW格式拍摄。<br>强化“OK, Google”功能。<br>改善Android TV的支持。<br>提供低视力的设置，以协助色弱人士。<br>改善Google Now功能。</p>
+<p>Android 5.0的彩蛋<br>2014年12月4日Google发布Android 5.0.1（棒棒糖Lollipop）。主要更新如下：<br>修复打开ADB调试后设备无法启动。<br>修复恢复出厂设置后锁屏时触摸输入有偏差。<br>修复访问特定Wi-Fi AP时的握手协议问题。<br>修复重启后代理服务器失效等。<br>2014年12月21日Google发布Android 5.0.2（棒棒糖Lollipop）。主要更新如下：</p>
+<p>修复4处Wi-Fi版本BUG。<br>修复两处GSM版本BUG。<br>更新预编译内核。<br>更新四线程模拟SD卡。<br>改进交互式加载。<br>改进fstrim应用。</p>
+<h3 id="Android-5-1-5-1-1-Lollipop"><a href="#Android-5-1-5-1-1-Lollipop" class="headerlink" title="Android 5.1/5.1.1(Lollipop)"></a>Android 5.1/5.1.1(Lollipop)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Android_5.0-en.png/330px-Android_5.0-en.png" alt=""></p>
+<p>基于Linux Kernel 3.4.0</p>
+<p>2015年3月10日，Google发布Android 5.1（棒棒糖Lollipop）。主要更新如下：</p>
+<p>Android 5.1 界面<br>对多卡和高清语音的支持。<br>快速设置Wi-Fi和蓝牙。<br>通过“设备保护”功能带来更好的安全性。<br>最优化音量调节。<br>2015年4月22日Google发布Android 5.1.1（棒棒糖Lollipop）。主要更新如下：</p>
+<p>修复存储器泄漏(memory leak)的问题。</p>
+<h3 id="Android-6-0-6-0-1-Marshmallow"><a href="#Android-6-0-6-0-1-Marshmallow" class="headerlink" title="Android 6.0/6.0.1(Marshmallow)"></a>Android 6.0/6.0.1(Marshmallow)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Android_6.0-en.png/330px-Android_6.0-en.png" alt=""></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Android_M_Easter_egg.jpg/330px-Android_M_Easter_egg.jpg" alt=""></p>
+<p>基于Linux Kernel 3.14.52</p>
+<p>2015年5月29日，Google于I/O大会上展示Android M的开发者预览版本，并开放下载。 2015年10月5日，Google发布Android 6.0（棉花糖Marshmallow）。</p>
+<p>主要更新如下：</p>
+<p>Android 6.0 界面<br>增加全新的权限机制，针对 Android 6.0 及以上系统版本开发的应用程序在使用敏感权限（如拍照、查阅联系人或短信）时需要先征求用户同意。<br>增加Chrome Custom Tab功能。<br>将Chrome部分功能新增到Webview界面上。<br>增加Android Pay付费功能。<br>原生系统支持指纹识别功能，用于设备解锁及在Play商店代替输入密码。<br>新增Doze功能，可视环境调整设备性能，而减少电源的消耗（Google宣称能比之前的版本的Nexus 5和Nexus 6省电30％）。<br>支持USB Type C，可进行更快速的充电。<br>可将内置存储空间与SD存储卡空间格式化，合并成一个存储空间。<br>简化音量控制的操作。<br>其它细节改善。<br>2015年12月7日，Google发布Android 6.0.1（棉花糖Marshmallow）。</p>
+<p>主要更新如下：</p>
+<p>Android 6.0的彩蛋<br>加入 200 个表情符号。<br>“零打扰”模式中，让“直到下次闹铃响时重新启动”的选项回归。<br>修复系统错误。</p>
+<h3 id="Android-7-0-7-1-1-7-1-2-Android-Nougat"><a href="#Android-7-0-7-1-1-7-1-2-Android-Nougat" class="headerlink" title="Android 7.0/7.1.1/7.1.2(Android Nougat)"></a>Android 7.0/7.1.1/7.1.2(Android Nougat)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Android_7.0-en.png/330px-Android_7.0-en.png" alt=""></p>
+<p>基于Linux Kernel 3.4.0</p>
+<p>2016年3月9日，Google发布Android N的开发者预览版本，并开放下载。 2016年8月22日，Google发布Android 7.0（牛轧糖Nougat）。</p>
+<p>主要更新如下：</p>
+<p>Android 7.0 界面<br>支持多视窗模式<br>加入应用在 Android Wear 上的 RemoteInput notification API<br>强化Doze 的省电功能<br>加入暗色主题<br>强化Smart Lock 功能<br>加入 Tile API ，允许应用程序开发者在“快速设置”中添加瓷块。<br>Recent App 加入全部清除<br>加入新版 Emoji<br>支持 Vulkan<br>更新App Folder<br>2016年12月5日，Google发布Android 7.1.1（牛轧糖Nougat）。 主要更新如下：</p>
+<p>增加了对其“图像键盘”的支持<br>增加了更多emoji表情符号<br>增加了应用程序快捷操作<br>2017年4月4日，Google发布Android 7.1.2（牛轧糖Nougat）。 主要更新如下：</p>
+<p>修复系统错误<br>提升系统性能</p>
+<h3 id="Android-8-0-Android-Oreo"><a href="#Android-8-0-Android-Oreo" class="headerlink" title="Android 8.0(Android Oreo)"></a>Android 8.0(Android Oreo)</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Android_Oreo_8.1_screenshot.png/330px-Android_Oreo_8.1_screenshot.png" alt=""></p>
+<p>2017年3月21日，Google发布Android Oreo的开发者预览版本。</p>
+<p>2017年8月21日，Google发布Android 8.0（奥利奥 Oreo）。</p>
+<p>Android 8.1 界面<br>强化与用户交互之性能<br>提高电池使用寿命<br>通知列表<br>应用图标的通知<br>子母画面<br>支持 Google Assistant 的智能选字工具<br>背景 App 的运行限制<br>自适应图标<br>改进的 MediaRecorder API<br>模块化的系统 Project Treble<br>多种商务功能</p>
+<h3 id="Android-P"><a href="#Android-P" class="headerlink" title="Android P"></a>Android P</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Android_P.JPG/330px-Android_P.JPG" alt=""></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Android_9.0.jpg/330px-Android_9.0.jpg" alt=""></p>
+<p>2018年3月7日，Google发布Android P的开发者预览版本，并开放下载。 2018年5月8日，Google I/O大会公布许多Android P功能。</p>
+<p>(以下为暂时新增功能，并非最终版本功能)</p>
+<p>Android P 标志<br>为快速设置菜单设计的新用户界面[82]<br>时钟移动到通知栏的左侧[83]<br>屏幕下方的dock加入半透明背景[83]<br>取消省电模式的橙色条[82]<br>电源选项中加入截屏按钮[83]<br>锁定（Lockdown）功能，开启后将禁用生物识别<br>图标加入更多圆角<br>在应用之间切换，或在应用内部菜单间切换时，使用新的动画<br>通知更加丰富，能够显示会话的更完整内容，以及类似Google开发的Reply的智能回复<br>经过重新设计的音量滑块<br>可在息屏上显示电量<br>可能重新加入的NFC解锁功能<br>实验性功能（一般情况下隐藏在Feature Flag功能表中），例如重新设计的“关于手机”页面，以及驾驶时自动启用蓝牙功能等。[84]</p>
+<p>Android P的彩蛋<br>DNS over TLS<br>支持高效率图像文件格式<br>（用于具有类似iPhone X的异形屏）全新的手势操作界面，不带返回键和多任务键<br>重新设计的任务管理器界面，具有Google搜索栏<br>令用户可在仪表盘得知自己在应用中已停留多久的“数字健康”功能<br>将设备正面朝下放置可进入请勿打扰模式，只允许紧急通知<br>优化用户最常用的应用以大幅省电的自适应省电功能<br>基于个人偏好设置的自动亮度功能<br>“Wind down”功能：允许用户设定一个休息时间，到时系统界面会变灰以防止夜间进一步长时间使用。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Google/" rel="tag"><i class="fa fa-tag"></i> Google</a>
+          
+            <a href="/tags/IPR/" rel="tag"><i class="fa fa-tag"></i> IPR</a>
+          
+            <a href="/tags/Android/" rel="tag"><i class="fa fa-tag"></i> Android</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+			<div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">After reading, Five stars :)</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/IPR/5G.html" rel="next" title="5G">
+                <i class="fa fa-chevron-left"></i> 5G
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/IPR/iOS.html" rel="prev" title="iOS">
+                iOS <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img/headonhill.jpg"
+                alt="Author" />
+            
+              <p class="site-author-name" itemprop="name">Author</p>
+              <p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">173</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">289</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="http://blog.163.com/zhuxuanlv@126/" target="_blank" title="Blog"><i class="fa fa-fw fa-globe"></i>Blog</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:deepcreator18@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("04/01/2018 16:01:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second ";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#分支平台"><span class="nav-number">1.</span> <span class="nav-text">分支平台</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Wear-OS"><span class="nav-number">1.1.</span> <span class="nav-text">Wear OS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-TV"><span class="nav-number">1.2.</span> <span class="nav-text">Android TV</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-Auto"><span class="nav-number">1.3.</span> <span class="nav-text">Android Auto</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#版本历史"><span class="nav-number">2.</span> <span class="nav-text">版本历史</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Alpha-Beta"><span class="nav-number">2.1.</span> <span class="nav-text">Alpha, Beta</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-1-0"><span class="nav-number">2.2.</span> <span class="nav-text">Android 1.0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-1-1-Petit-Four"><span class="nav-number">2.3.</span> <span class="nav-text">Android 1.1(Petit Four)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-1-5-Cupcake"><span class="nav-number">2.4.</span> <span class="nav-text">Android 1.5(Cupcake)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-1-6-Donut"><span class="nav-number">2.5.</span> <span class="nav-text">Android 1.6(Donut)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-2-0-2-0-1-2-1-Eclair"><span class="nav-number">2.6.</span> <span class="nav-text">Android 2.0/2.0.1/2.1(Eclair)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-2-2-2-2-1-2-2-2-2-2-3-Froyo"><span class="nav-number">2.7.</span> <span class="nav-text">Android 2.2/2.2.1/2.2.2/2.2.3(Froyo)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-2-3-Gingerbread"><span class="nav-number">2.8.</span> <span class="nav-text">Android 2.3(Gingerbread)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-3-0-1-3-1-3-2-Honeycomb"><span class="nav-number">2.9.</span> <span class="nav-text">Android 3.0.1/3.1/3.2(Honeycomb)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-4-0-Ice-Cream-Sandwich"><span class="nav-number">2.10.</span> <span class="nav-text">Android 4.0(Ice Cream Sandwich)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-4-1-4-2-4-3-Jelly-Bean"><span class="nav-number">2.11.</span> <span class="nav-text">Android 4.1/4.2/4.3(Jelly Bean)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-4-4-4-4-1-4-4-2-4-4-3-4-4-4-KitKat"><span class="nav-number">2.12.</span> <span class="nav-text">Android 4.4/4.4.1/4.4.2/4.4.3/4.4.4(KitKat)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-5-0-5-0-1-5-0-2-Lollipop"><span class="nav-number">2.13.</span> <span class="nav-text">Android 5.0/5.0.1/5.0.2(Lollipop)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-5-1-5-1-1-Lollipop"><span class="nav-number">2.14.</span> <span class="nav-text">Android 5.1/5.1.1(Lollipop)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-6-0-6-0-1-Marshmallow"><span class="nav-number">2.15.</span> <span class="nav-text">Android 6.0/6.0.1(Marshmallow)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-7-0-7-1-1-7-1-2-Android-Nougat"><span class="nav-number">2.16.</span> <span class="nav-text">Android 7.0/7.1.1/7.1.2(Android Nougat)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-8-0-Android-Oreo"><span class="nav-number">2.17.</span> <span class="nav-text">Android 8.0(Android Oreo)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-P"><span class="nav-number">2.18.</span> <span class="nav-text">Android P</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Author</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz',
+        appKey: 'PXNkGhS05PxL7rV3N8gDlAQe',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 11184,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+</body>
+</html>
