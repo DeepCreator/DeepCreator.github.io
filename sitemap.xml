@@ -2,23 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://deepcreator.com/IPR/Risk.html</loc>
+    <loc>http://deepcreator.com/Company/HuaWei.html</loc>
     
-    <lastmod>2018-06-04T10:09:43.683Z</lastmod>
+    <lastmod>2018-06-05T03:45:37.510Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/TouTiao.html</loc>
+    <loc>http://deepcreator.com/IPR/Risk.html</loc>
     
-    <lastmod>2018-06-04T10:09:43.682Z</lastmod>
+    <lastmod>2018-06-05T03:41:40.389Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Antitrust.html</loc>
+    
+    <lastmod>2018-06-05T03:41:40.112Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/XiaoMi.html</loc>
+    
+    <lastmod>2018-06-05T03:28:10.309Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Law%20Office.html</loc>
+    
+    <lastmod>2018-06-05T03:16:14.316Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Person/Diary.html</loc>
+    
+    <lastmod>2018-06-05T03:05:29.797Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://deepcreator.com/IPR/Litigation.html</loc>
     
-    <lastmod>2018-06-04T09:50:36.774Z</lastmod>
+    <lastmod>2018-06-05T02:56:44.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Privacy.html</loc>
+    
+    <lastmod>2018-06-05T02:45:15.366Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/TouTiao.html</loc>
+    
+    <lastmod>2018-06-05T02:19:05.592Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Advertising%20Law.html</loc>
+    
+    <lastmod>2018-06-05T02:08:51.869Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Civil%20Law.html</loc>
+    
+    <lastmod>2018-06-05T02:02:47.039Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Law.html</loc>
+    
+    <lastmod>2018-06-05T01:40:26.529Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Unfair%20Competition.html</loc>
+    
+    <lastmod>2018-06-05T01:21:23.386Z</lastmod>
     
   </url>
   
@@ -37,23 +107,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/Law.html</loc>
-    
-    <lastmod>2018-06-04T09:35:32.159Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/IPR.html</loc>
     
     <lastmod>2018-06-04T09:24:21.277Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Company/XiaoMi.html</loc>
-    
-    <lastmod>2018-06-04T09:17:02.455Z</lastmod>
     
   </url>
   
@@ -75,13 +131,6 @@
     <loc>http://deepcreator.com/Company/Lenovo.html</loc>
     
     <lastmod>2018-06-04T08:10:20.521Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Company/HuaWei.html</loc>
-    
-    <lastmod>2018-06-04T07:34:26.818Z</lastmod>
     
   </url>
   
@@ -184,23 +233,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/Antitrust.html</loc>
-    
-    <lastmod>2018-06-04T02:22:00.237Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Company/Samsung.html</loc>
     
     <lastmod>2018-06-04T02:22:00.237Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Person/Diary.html</loc>
-    
-    <lastmod>2018-06-04T02:19:16.971Z</lastmod>
     
   </url>
   
@@ -243,13 +278,6 @@
     <loc>http://deepcreator.com/IPR/301.html</loc>
     
     <lastmod>2018-06-01T09:54:05.938Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/IPR/Privacy.html</loc>
-    
-    <lastmod>2018-06-01T09:42:59.618Z</lastmod>
     
   </url>
   
@@ -779,14 +807,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Business/Consumption.html</loc>
+    <loc>http://deepcreator.com/Person/Original.html</loc>
     
     <lastmod>2018-05-28T05:47:23.983Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Person/Original.html</loc>
+    <loc>http://deepcreator.com/Business/Consumption.html</loc>
     
     <lastmod>2018-05-28T05:47:23.983Z</lastmod>
     
