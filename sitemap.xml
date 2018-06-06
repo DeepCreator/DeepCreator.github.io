@@ -2,9 +2,135 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/IPR/NPE.html</loc>
+    
+    <lastmod>2018-06-06T03:45:01.318Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Litigation.html</loc>
+    
+    <lastmod>2018-06-06T03:44:48.298Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Operation.html</loc>
+    
+    <lastmod>2018-06-06T03:42:19.522Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Lawyer.html</loc>
+    
+    <lastmod>2018-06-06T03:36:55.455Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Google.html</loc>
+    
+    <lastmod>2018-06-06T03:34:26.653Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Samsung.html</loc>
+    
+    <lastmod>2018-06-06T03:31:17.521Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Apple.html</loc>
+    
+    <lastmod>2018-06-06T03:26:54.211Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Person/Diary.html</loc>
+    
+    <lastmod>2018-06-06T03:24:25.888Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Nokia.html</loc>
+    
+    <lastmod>2018-06-06T03:23:00.746Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Deployment.html</loc>
+    
+    <lastmod>2018-06-06T03:20:10.021Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Transsion.html</loc>
+    
+    <lastmod>2018-06-06T03:18:40.088Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/Company/Microsoft.html</loc>
     
-    <lastmod>2018-06-05T10:37:11.392Z</lastmod>
+    <lastmod>2018-06-06T03:11:24.044Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Ericsson.html</loc>
+    
+    <lastmod>2018-06-06T03:02:57.901Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Jury.html</loc>
+    
+    <lastmod>2018-06-06T02:19:09.611Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/IPR.html</loc>
+    
+    <lastmod>2018-06-06T01:55:58.677Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Facebook.html</loc>
+    
+    <lastmod>2018-06-06T01:50:17.805Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Motorola.html</loc>
+    
+    <lastmod>2018-06-06T01:40:10.970Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Risk.html</loc>
+    
+    <lastmod>2018-06-06T01:11:26.277Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/HTC.html</loc>
+    
+    <lastmod>2018-06-06T00:55:20.414Z</lastmod>
     
   </url>
   
@@ -16,20 +142,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/HTC.html</loc>
-    
-    <lastmod>2018-06-05T10:37:11.391Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Company/Apple.html</loc>
-    
-    <lastmod>2018-06-05T10:37:11.366Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Company/Qualcomm.html</loc>
     
     <lastmod>2018-06-05T10:37:11.364Z</lastmod>
@@ -37,51 +149,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/Motorola.html</loc>
-    
-    <lastmod>2018-06-05T10:37:11.362Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Company/Google.html</loc>
-    
-    <lastmod>2018-06-05T10:37:11.362Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Company/Samsung.html</loc>
-    
-    <lastmod>2018-06-05T10:34:26.702Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/IPR/Litigation.html</loc>
-    
-    <lastmod>2018-06-05T10:29:10.612Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/Android.html</loc>
     
     <lastmod>2018-06-05T10:22:20.935Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/IPR/Operation.html</loc>
-    
-    <lastmod>2018-06-05T10:20:26.851Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/IPR/Deployment.html</loc>
-    
-    <lastmod>2018-06-05T10:06:46.657Z</lastmod>
     
   </url>
   
@@ -121,20 +191,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Person/Diary.html</loc>
-    
-    <lastmod>2018-06-05T07:51:41.112Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/IPR/NPE.html</loc>
-    
-    <lastmod>2018-06-05T07:20:05.319Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/Europe.html</loc>
     
     <lastmod>2018-06-05T07:10:02.797Z</lastmod>
@@ -156,23 +212,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/Risk.html</loc>
-    
-    <lastmod>2018-06-05T03:41:40.389Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/Antitrust.html</loc>
     
     <lastmod>2018-06-05T03:41:40.112Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/IPR/Law%20Office.html</loc>
-    
-    <lastmod>2018-06-05T03:16:14.316Z</lastmod>
     
   </url>
   
@@ -233,23 +275,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/IPR.html</loc>
-    
-    <lastmod>2018-06-04T09:24:21.277Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Company/MTK.html</loc>
     
     <lastmod>2018-06-04T08:27:06.517Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Company/Transsion.html</loc>
-    
-    <lastmod>2018-06-04T08:11:03.873Z</lastmod>
     
   </url>
   
@@ -275,13 +303,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/Nokia.html</loc>
-    
-    <lastmod>2018-06-04T06:26:22.709Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Business/Technology.html</loc>
     
     <lastmod>2018-06-04T06:07:18.696Z</lastmod>
@@ -292,13 +313,6 @@
     <loc>http://deepcreator.com/IPR/WTO.html</loc>
     
     <lastmod>2018-06-04T06:03:10.382Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Company/Facebook.html</loc>
-    
-    <lastmod>2018-06-04T05:52:05.370Z</lastmod>
     
   </url>
   
@@ -390,13 +404,6 @@
     <loc>http://deepcreator.com/Company/ZTE.html</loc>
     
     <lastmod>2018-06-01T07:58:38.713Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Company/Ericsson.html</loc>
-    
-    <lastmod>2018-06-01T07:46:55.368Z</lastmod>
     
   </url>
   
@@ -849,14 +856,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Person/Original.html</loc>
+    <loc>http://deepcreator.com/Business/Consumption.html</loc>
     
     <lastmod>2018-05-28T05:47:23.983Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Business/Consumption.html</loc>
+    <loc>http://deepcreator.com/Person/Original.html</loc>
     
     <lastmod>2018-05-28T05:47:23.983Z</lastmod>
     
