@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/Concept/Cognition.html</loc>
+    
+    <lastmod>2018-06-07T07:58:53.339Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/about/index.html</loc>
+    
+    <lastmod>2018-06-07T07:18:21.978Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Person/Diary.html</loc>
+    
+    <lastmod>2018-06-07T05:41:04.072Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/Concept/Health.html</loc>
     
     <lastmod>2018-06-07T03:43:49.131Z</lastmod>
@@ -89,13 +110,6 @@
     <loc>http://deepcreator.com/Business/Finance.html</loc>
     
     <lastmod>2018-06-07T02:49:08.332Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Person/Diary.html</loc>
-    
-    <lastmod>2018-06-07T02:44:41.381Z</lastmod>
     
   </url>
   
@@ -296,14 +310,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/Ericsson.html</loc>
+    <loc>http://deepcreator.com/Company/Tesla.html</loc>
     
     <lastmod>2018-06-06T09:10:23.840Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/Tesla.html</loc>
+    <loc>http://deepcreator.com/Company/Ericsson.html</loc>
     
     <lastmod>2018-06-06T09:10:23.840Z</lastmod>
     
@@ -870,13 +884,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/about/index.html</loc>
-    
-    <lastmod>2018-05-30T08:34:39.462Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Company/Honor.html</loc>
     
     <lastmod>2018-05-30T07:15:08.660Z</lastmod>
@@ -1048,13 +1055,6 @@
     <loc>http://deepcreator.com/Concept/Communication.html</loc>
     
     <lastmod>2018-05-22T09:29:30.003Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Concept/Cognition.html</loc>
-    
-    <lastmod>2018-05-22T01:04:28.744Z</lastmod>
     
   </url>
   
