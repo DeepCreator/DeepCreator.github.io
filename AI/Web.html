@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="WWW是环球信息网的缩写，（亦作“Web”、“WWW”、“’W3’”，英文全称为“World Wide Web”），中文名字为“万维网”，”环球网”等，常简称为Web。 分为Web客户端和Web服务器程序。 WWW可以让Web客户端（常用浏览器）访问浏览Web服务器上的页面。 是一个由许多互相链接的超文本组成的系统，通过互联网访问。在这个系统中，每个有用的事物，称为一样“资源”；并且由一个全局">
+<meta name="keywords" content="Web,Net">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web">
+<meta property="og:url" content="http://deepcreator.com/AI/Web.html">
+<meta property="og:site_name" content="Ai Lab">
+<meta property="og:description" content="WWW是环球信息网的缩写，（亦作“Web”、“WWW”、“’W3’”，英文全称为“World Wide Web”），中文名字为“万维网”，”环球网”等，常简称为Web。 分为Web客户端和Web服务器程序。 WWW可以让Web客户端（常用浏览器）访问浏览Web服务器上的页面。 是一个由许多互相链接的超文本组成的系统，通过互联网访问。在这个系统中，每个有用的事物，称为一样“资源”；并且由一个全局">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/web20180409.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="https://coolshell.cn/wp-content/uploads/2013/05/Render-Process.jpg">
+<meta property="og:image" content="https://coolshell.cn/wp-content/uploads/2013/05/DOM-Tree-01.jpg">
+<meta property="og:image" content="https://coolshell.cn/wp-content/uploads/2013/05/DOM-Tree-02.jpg">
+<meta property="og:image" content="https://coolshell.cn/wp-content/uploads/2013/05/DOM-Tree-Example.jpg">
+<meta property="og:image" content="https://coolshell.cn/wp-content/uploads/2013/05/CSS-Rule-Tree-Example.jpg">
+<meta property="og:image" content="https://coolshell.cn/wp-content/uploads/2013/05/CSS-Content-Tree-Example.jpg">
+<meta property="og:image" content="https://coolshell.cn/wp-content/uploads/2013/05/Firefox-style-context-tree.png">
+<meta property="og:image" content="https://coolshell.cn/wp-content/uploads/2013/05/Render-Process-Skipping-1024x282.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5308475-1edd5a71a8c33fd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5308475-cf58e66c93c1f2ec.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5308475-d45e8967170041f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5308475-3817847173a249ef.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5308475-810853491150d1ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015022201.jpg">
+<meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015022202.png">
+<meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015022204.gif">
+<meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016010302.png">
+<meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016010301.jpg">
+<meta property="og:image" content="https://cdn.liaoxuefeng.com/cdn/files/attachments/0014355670304100cdaa4e7e651474d9672ed73797378bd000/l">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/jquery20180507.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/markdown-syntax-language.png?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="https://images2018.cnblogs.com/blog/36987/201804/36987-20180414212726214-1715743546.gif">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/chrome_wallpaper_by_kazvantipov-d4bt2mz.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:updated_time" content="2018-06-12T09:05:33.566Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Web">
+<meta name="twitter:description" content="WWW是环球信息网的缩写，（亦作“Web”、“WWW”、“’W3’”，英文全称为“World Wide Web”），中文名字为“万维网”，”环球网”等，常简称为Web。 分为Web客户端和Web服务器程序。 WWW可以让Web客户端（常用浏览器）访问浏览Web服务器上的页面。 是一个由许多互相链接的超文本组成的系统，通过互联网访问。在这个系统中，每个有用的事物，称为一样“资源”；并且由一个全局">
+<meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/web20180409.jpg?imageMogr2/thumbnail/!75p">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://deepcreator.com/AI/Web.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Web | Ai Lab</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="http://p53s4d2qk.bkt.clouddn.com/deepcreator220180502.JPG"
+               alt="Ai Lab"/>
+        </a>
+      </div>
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ai Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Minority, Truth, Value</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-info-circle"></i> <br />关于</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://deepcreator.com/AI/Web.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="Chief IPR Officer in AI Age">
+      <meta itemprop="image" content="/img/headonhill.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ai Lab">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Web
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-04-19 20:31:06" itemprop="dateCreated datePublished" datetime="2018-04-19T20:31:06+08:00">2018-04-19</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/AI/Web.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/AI/Web.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://p53s4d2qk.bkt.clouddn.com/web20180409.jpg?imageMogr2/thumbnail/!75p" alt="web20180409.jpg"></p>
+<blockquote>
+<p><a href="https://baike.baidu.com/item/www/109924?fr=aladdin&amp;fromid=215515&amp;fromtitle=%E4%B8%87%E7%BB%B4%E7%BD%91" target="_blank" rel="noopener">WWW是环球信息网的缩写，（亦作“Web”、“WWW”、“’W3’”，英文全称为“World Wide Web”），中文名字为“万维网”，”环球网”等，常简称为Web</a>。 分为Web客户端和Web服务器程序。 WWW可以让Web客户端（常用浏览器）访问浏览Web服务器上的页面。 是一个由许多互相链接的超文本组成的系统，通过互联网访问。在这个系统中，每个有用的事物，称为一样“资源”；并且由一个全局“统一资源标识符”（URI）标识；这些资源通过超文本传输协议（Hypertext Transfer Protocol）传送给用户，而后者通过点击链接来获得资源。</p>
+</blockquote>
+<a id="more"></a>
+<p>亚马逊Alexa前高管、LivePerson首席技术官埃里克斯·斯皮内利本周表示，我们目前通过网站和特定品牌应用所从事的许多活动很快都将通过iMessage、WhatsApp和Alexa等消息和语音平台来完成。万维网已不再是<a href="https://deepcreator.com/Business/Business.html">商业</a>的未来。（BI中文站）</p>
+<h2 id="浏览器的渲染原理简介"><a href="#浏览器的渲染原理简介" class="headerlink" title="浏览器的渲染原理简介"></a><a href="https://coolshell.cn/articles/9666.html" target="_blank" rel="noopener">浏览器的渲染原理简介</a></h2><p>看到这个标题大家一定会想到这篇神文《<a href="https://coolshell.cn/articles/9666.html" target="_blank" rel="noopener">How Browsers Work</a>》，这篇文章把浏览器的很多细节讲得很细，而且也被翻译成了中文。</p>
+<p>浏览器工作大流程，先来看个图：<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/Render-Process.jpg" alt=""></p>
+<p>从上面这个图中，我们可以看到那么几个事：</p>
+<p>1）浏览器会解析三个东西：</p>
+<p>一个是HTML/SVG/XHTML，事实上，Webkit有三个C++的类对应这三类文档。解析这三种文件会产生一个DOM Tree。<br>CSS，解析CSS会产生CSS规则树。<br>Javascript，脚本，主要是通过DOM API和CSSOM API来操作DOM Tree和CSS Rule Tree.</p>
+<p>2）解析完成后，浏览器引擎会通过DOM Tree 和 CSS Rule Tree 来构造 Rendering Tree。注意：</p>
+<p>Rendering Tree 渲染树并不等同于DOM树，因为一些像Header或display:none的东西就没必要放在渲染树中了。<br>CSS 的 Rule Tree主要是为了完成匹配并把CSS Rule附加上Rendering Tree上的每个Element。也就是DOM结点。也就是所谓的Frame。<br>然后，计算每个Frame（也就是每个Element）的位置，这又叫layout和reflow过程。</p>
+<p>3）最后通过调用操作系统Native GUI的API绘制。</p>
+<blockquote>
+<p>DOM解析</p>
+</blockquote>
+<p>HTML的DOM Tree解析如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Web page parsing&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;Web page parsing&lt;/h1&gt;</span><br><span class="line">        &lt;p&gt;This is an example Web page.&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>上面这段HTML会解析成这样：<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/DOM-Tree-01.jpg" alt=""></p>
+<p>下面是另一个有SVG标签的情况。<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/DOM-Tree-02.jpg" alt=""></p>
+<blockquote>
+<p>CSS解析</p>
+</blockquote>
+<p>CSS的解析大概是下面这个样子（下面主要说的是Gecko也就是Firefox的玩法），假设我们有下面的HTML文档：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;doc&gt;</span><br><span class="line">&lt;title&gt;A few quotes&lt;/title&gt;</span><br><span class="line">&lt;para&gt;</span><br><span class="line">  Franklin said that &lt;quote&gt;&quot;A penny saved is a penny earned.&quot;&lt;/quote&gt;</span><br><span class="line">&lt;/para&gt;</span><br><span class="line">&lt;para&gt;</span><br><span class="line">  FDR said &lt;quote&gt;&quot;We have nothing to fear but &lt;span&gt;fear itself.&lt;/span&gt;&quot;&lt;/quote&gt;</span><br><span class="line">&lt;/para&gt;</span><br><span class="line">&lt;/doc&gt;</span><br></pre></td></tr></table></figure>
+<p>于是DOM Tree是这个样子：<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/DOM-Tree-Example.jpg" alt=""></p>
+<p>然后我们的CSS文档是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> /* rule 1 */ doc &#123; display: block; text-indent: 1em; &#125;</span><br><span class="line">/* rule 2 */ title &#123; display: block; font-size: 3em; &#125;</span><br><span class="line">/* rule 3 */ para &#123; display: block; &#125;</span><br><span class="line">/* rule 4 */ [class=&quot;emph&quot;] &#123; font-style: italic; &#125;</span><br></pre></td></tr></table></figure>
+<p>于是我们的CSS Rule Tree会是这个样子：<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/CSS-Rule-Tree-Example.jpg" alt=""></p>
+<p>注意，图中的第4条规则出现了两次，一次是独立的，一次是在规则3的子结点。所以，我们可以知道，建立CSS Rule Tree是需要比照着DOM Tree来的。CSS匹配DOM Tree主要是从右到左解析CSS的Selector，好多人以为这个事会比较快，其实并不一定。关键还看我们的CSS的Selector怎么写了。</p>
+<p>注意：CSS匹配HTML元素是一个相当复杂和有性能问题的事情。所以，你就会在N多地方看到很多人都告诉你，<strong>DOM树要小，CSS尽量用id和class，千万不要过渡层叠下去</strong>，……</p>
+<p>通过这两个树，我们可以得到一个叫Style Context Tree，也就是下面这样（把CSS Rule结点Attach到DOM Tree上）：<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/CSS-Content-Tree-Example.jpg" alt=""></p>
+<p>所以，Firefox基本上来说是通过CSS 解析 生成 CSS Rule Tree，然后，通过比对DOM生成Style Context Tree，然后Firefox通过把Style Context Tree和其Render Tree（Frame Tree）关联上，就完成了。注意：Render Tree会把一些不可见的结点去除掉。而Firefox中所谓的Frame就是一个DOM结点，不要被其名字所迷惑了。</p>
+<p><img src="https://coolshell.cn/wp-content/uploads/2013/05/Firefox-style-context-tree.png" alt=""></p>
+<p>注：Webkit不像Firefox要用两个树来干这个，Webkit也有Style对象，它直接把这个Style对象存在了相应的DOM结点上了。</p>
+<blockquote>
+<p>渲染</p>
+</blockquote>
+<p>渲染的流程基本上如下（黄色的四个步骤）：</p>
+<ol>
+<li>计算CSS样式</li>
+<li>构建Render Tree</li>
+<li>Layout – 定位坐标和大小，是否换行，各种position, overflow, z-index属性 ……</li>
+<li>正式开画<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/Render-Process-Skipping-1024x282.jpg" alt=""></li>
+</ol>
+<p>注意：上图流程中有很多连接线，这表示了Javascript动态修改了DOM属性或是CSS属会导致重新Layout，有些改变不会，就是那些指到天上的箭头，比如，修改后的CSS rule没有被匹配到，等。</p>
+<p>这里重要要说两个概念，一个是Reflow，另一个是Repaint。这两个不是一回事。</p>
+<p>Repaint——屏幕的一部分要重画，比如某个CSS的背景色变了。但是元素的几何尺寸没有变。<br>Reflow——意味着元件的几何尺寸变了，我们需要重新验证并计算Render Tree。是Render Tree的一部分或全部发生了变化。这就是Reflow，或是Layout。（HTML使用的是flow based layout，也就是流式布局，所以，如果某元件的几何尺寸发生了变化，需要重新布局，也就叫reflow）reflow 会从<html>这个root frame开始递归往下，依次计算所有的结点几何尺寸和位置，在reflow过程中，可能会增加一些frame，比如一个文本字符串必需被包装起来。<br>下面是一个打开Wikipedia时的Layout/reflow的视频（注：HTML在初始化的时候也会做一次reflow，叫 intial reflow），你可以感受一下：</html></p>
+<p>Reflow的成本比Repaint的成本高得多的多。DOM Tree里的每个结点都会有reflow方法，一个结点的reflow很有可能导致子结点，甚至父点以及同级结点的reflow。在一些高性能的电脑上也许还没什么，但是如果reflow发生在手机上，那么这个过程是非常痛苦和耗电的。<br>所以，下面这些动作有很大可能会是成本比较高的。</p>
+<p>当你增加、删除、修改DOM结点时，会导致Reflow或Repaint<br>当你移动DOM的位置，或是搞个动画的时候。<br>当你修改CSS样式的时候。<br>当你Resize窗口的时候（移动端没有这个问题），或是滚动的时候。<br>当你修改网页的默认字体时。<br>注：display:none会触发reflow，而visibility:hidden只会触发repaint，因为没有发现位置变化。</p>
+<p>多说两句关于滚屏的事，通常来说，如果在滚屏的时候，我们的页面上的所有的像素都会跟着滚动，那么性能上没什么问题，因为我们的显卡对于这种把全屏像素往上往下移的算法是很快。但是如果你有一个fixed的背景图，或是有些Element不跟着滚动，有些Elment是动画，那么这个滚动的动作对于浏览器来说会是相当相当痛苦的一个过程。你可以看到很多这样的网页在滚动的时候性能有多差。因为滚屏也有可能会造成reflow。</p>
+<p>基本上来说，reflow有如下的几个原因：</p>
+<p>Initial。网页初始化的时候。<br>Incremental。一些Javascript在操作DOM Tree时。<br>Resize。其些元件的尺寸变了。<br>StyleChange。如果CSS的属性发生变化了。<br>Dirty。几个Incremental的reflow发生在同一个frame的子树上。<br>好了，我们来看一个示例吧：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var bstyle = document.body.style; // cache</span><br><span class="line"></span><br><span class="line">bstyle.padding = &quot;20px&quot;; // reflow, repaint</span><br><span class="line">bstyle.border = &quot;10px solid red&quot;; //  再一次的 reflow 和 repaint</span><br><span class="line"></span><br><span class="line">bstyle.color = &quot;blue&quot;; // repaint</span><br><span class="line">bstyle.backgroundColor = &quot;#fad&quot;; // repaint</span><br><span class="line"></span><br><span class="line">bstyle.fontSize = &quot;2em&quot;; // reflow, repaint</span><br><span class="line"></span><br><span class="line">// new DOM element - reflow, repaint</span><br><span class="line">document.body.appendChild(document.createTextNode(&apos;dude!&apos;));</span><br></pre></td></tr></table></figure>
+<p>当然，我们的浏览器是聪明的，它不会像上面那样，你每改一次样式，它就reflow或repaint一次。一般来说，浏览器会把这样的操作积攒一批，然后做一次reflow，这又叫异步reflow或增量异步reflow。但是有些情况浏览器是不会这么做的，比如：resize窗口，改变了页面默认的字体，等。对于这些操作，浏览器会马上进行reflow。</p>
+<p>但是有些时候，我们的脚本会阻止浏览器这么干，比如：如果我们请求下面的一些DOM值：</p>
+<p>offsetTop, offsetLeft, offsetWidth, offsetHeight<br>scrollTop/Left/Width/Height<br>clientTop/Left/Width/Height<br>IE中的 getComputedStyle(), 或 currentStyle</p>
+<p>因为，如果我们的程序需要这些值，那么浏览器需要返回最新的值，而这样一样会flush出去一些样式的改变，从而造成频繁的reflow/repaint。</p>
+<blockquote>
+<p>减少reflow/repaint</p>
+</blockquote>
+<p>下面是一些Best Practices：</p>
+<p>1）不要一条一条地修改DOM的样式。与其这样，还不如预先定义好css的class，然后修改DOM的className。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// bad</span><br><span class="line">var left = 10,</span><br><span class="line">top = 10;</span><br><span class="line">el.style.left = left + &quot;px&quot;;</span><br><span class="line">el.style.top  = top  + &quot;px&quot;;</span><br><span class="line"></span><br><span class="line">// Good</span><br><span class="line">el.className += &quot; theclassname&quot;;</span><br><span class="line"></span><br><span class="line">// Good</span><br><span class="line">el.style.cssText += &quot;; left: &quot; + left + &quot;px; top: &quot; + top + &quot;px;&quot;;</span><br></pre></td></tr></table></figure>
+<p>2）把DOM离线后修改。如：</p>
+<p>使用documentFragment 对象在内存里操作DOM<br>先把DOM给display:none(有一次reflow)，然后你想怎么改就怎么改。比如修改100次，然后再把他显示出来。<br>clone一个DOM结点到内存里，然后想怎么改就怎么改，改完后，和在线的那个的交换一下。</p>
+<p>3）不要把DOM结点的属性值放在一个循环里当成循环里的变量。不然这会导致大量地读写这个结点的属性。</p>
+<p>4）尽可能的修改层级比较低的DOM。当然，改变层级比较底的DOM有可能会造成大面积的reflow，但是也可能影响范围很小。</p>
+<p>5）为动画的HTML元件使用fixed或absoult的position，那么修改他们的CSS是不会reflow的。</p>
+<p>6）千万不要使用table布局。因为可能很小的一个小改动会造成整个table的重新布局。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In this manner, the user agent can begin to lay out the table once the entire first row has been received. Cells in subsequent rows do not affect column widths. Any cell that has content that overflows uses the ‘overflow’ property to determine whether to clip the overflow content.</span><br><span class="line"></span><br><span class="line">Fixed layout, CSS 2.1 Specification</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">This algorithm may be inefficient since it requires the user agent to have access to all the content in the table before determining the final layout and may demand more than one pass.</span><br><span class="line"></span><br><span class="line">Automatic layout, CSS 2.1 Specification</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>几个工具和几篇文章</p>
+</blockquote>
+<p>有时候，你会也许会发现在IE下，你不知道你修改了什么东西，结果CPU一下子就上去了到100%，然后过了好几秒钟repaint/reflow才完成，这种事情以IE的年代时经常发生。所以，我们需要一些工具帮我们看看我们的代码里有没有什么不合适的东西。</p>
+<p>Chrome下，Google的SpeedTracer是个非常强悍的工作让你看看你的浏览渲染的成本有多大。其实Safari和Chrome都可以使用开发者工具里的一个Timeline的东东。<br>Firefox下这个基于Firebug的叫Firebug Paint Events的插件也不错。<br>IE下你可以用一个叫dynaTrace的IE扩展。<br>最后，别忘了下面这几篇提高浏览器性能的文章：</p>
+<p><a href="http://code.google.com/speed/page-speed/docs/rules_intro.html" target="_blank" rel="noopener">Google – Web Performance Best Practices</a><br><a href="http://developer.yahoo.com/performance/rules.html" target="_blank" rel="noopener">Yahoo – Best Practices for Speeding Up Your Web Site</a><br><a href="http://stevesouders.com/hpws/rules.php" target="_blank" rel="noopener">Steve Souders – 14 Rules for Faster-Loading Web Sites</a></p>
+<blockquote>
+<p>参考</p>
+</blockquote>
+<p>David Baron的演讲：Fast CSS: How Browsers Lay Out Web Pages：<a href="http://dbaron.org/talks/2012-03-11-sxsw/slide-1.xhtml" target="_blank" rel="noopener">slideshow</a>, all slides, audio (MP3), Session page, Lanyrd page<br>How Browsers Work: <a href="http://taligarsiel.com/Projects/howbrowserswork1.htm" target="_blank" rel="noopener">http://taligarsiel.com/Projects/howbrowserswork1.htm</a><br>Mozilla 的 Style System Overview：<a href="https://developer.mozilla.org/en-US/docs/Style_System_Overview" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Style_System_Overview</a><br>Mozilla 的 Note of reflow： <a href="http://www-archive.mozilla.org/newlayout/doc/reflow.html" target="_blank" rel="noopener">http://www-archive.mozilla.org/newlayout/doc/reflow.html</a><br>Rendering: repaint, reflow/relayout, restyle：<a href="http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/" target="_blank" rel="noopener">http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/</a><br>Effective Rendering CSS：<a href="http://css-tricks.com/efficiently-rendering-css/" target="_blank" rel="noopener">http://css-tricks.com/efficiently-rendering-css/</a><br>Webkit Rendering文档：<a href="http://trac.webkit.org/wiki/WebCoreRendering" target="_blank" rel="noopener">http://trac.webkit.org/wiki/WebCoreRendering</a></p>
+<h2 id="前端面试题：从url到页面展现，这之中发生了什么？"><a href="#前端面试题：从url到页面展现，这之中发生了什么？" class="headerlink" title="前端面试题：从url到页面展现，这之中发生了什么？"></a><a href="http://shenzekun.cn/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E4%BB%8Eurl%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%8E%B0%EF%BC%8C%E8%BF%99%E4%B9%8B%E4%B8%AD%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88.html" target="_blank" rel="noopener">前端面试题：从url到页面展现，这之中发生了什么？</a></h2><p>大概是这样的流程：</p>
+<blockquote>
+<p>在浏览器的地址栏中敲入了url<br>域名解析<br>服务器处理请求<br>浏览器处理<br>绘制网页</p>
+</blockquote>
+<p>一、在浏览器的地址栏中敲入了url</p>
+<p>首先，我们要知道url是什么？</p>
+<p>URL（Uniform Resource Locator），统一资源定位符，用于定位互联网上的资源，实际上就是网站网址。url的格式一般为：</p>
+<p>协议类型://&lt;主机名&gt;:&lt;端口&gt;/&lt;路径&gt;/文件名</p>
+<p>其中协议类型可以是http（超文本传输协议）、https、ftp（文件传输协议）、telnet（远程登录协议）、file等等。而http是最常见的网络传输协议，https则是进行加密的网络传输。</p>
+<p>例如，我的简书url为<a href="http://www.jianshu.com/u/b473784d730c，其中，“http”表示与web服务器通讯采用http协议，简书web服务器域名为www.jianshu.com，u/b473784d730c表示所访问的文件存在于web服务器上的路径。" target="_blank" rel="noopener">http://www.jianshu.com/u/b473784d730c，其中，“http”表示与web服务器通讯采用http协议，简书web服务器域名为www.jianshu.com，u/b473784d730c表示所访问的文件存在于web服务器上的路径。</a></p>
+<p>url格式中主机名冒号后面的数字是端口编号，因为一台计算机常常会同时作为Web，FTP等服务器，端口编号用来告诉web服务器所在的主机要将请求交给哪个服务。默认情况下http服务的端口为80，不需要在url中输入，如果web服务器采用的不是这一个默认端口，就需要写明服务所用的端口。常见的协议默认端口如下：</p>
+<p>协议类型    默认端口<br>http    80<br>ftp    21<br>https    443<br>telnet    23</p>
+<blockquote>
+<p>IP是什么</p>
+</blockquote>
+<p>IP是因特网中的每台连接到网络的计算机为实现相互通信而遵循的规则协议。每个处于互联网中的设备都有IP 地址，形如 192.168.0.1，而127.0.0.1代表本机的 IP。IP又分为局域网IP和公网IP。而局域网 IP 和公网 IP 是有差别的。每个网站就是靠IP来定位的。</p>
+<p>为了便于记忆或辨识，人们使用域名来登录网站，每个域名背后有对应的IP地址。</p>
+<p>比如对于 <a href="http://www.jianshu.com的URL，浏览器实际上不知道" target="_blank" rel="noopener">http://www.jianshu.com的URL，浏览器实际上不知道</a> www.jianshu.com到底是什么东西，需要查找www.jianshu.com网站所在服务器的IP地址，才能找到目标，这就是下文要说的域名解析。</p>
+<p>二、域名解析</p>
+<p>当用户在浏览器中输入url后,你使用的电脑会发出一个DNS请求到本地DNS服务器。本地DNS服务器一般都是你的网络接入服务器商提供，比如中国电信，中国移动,DNS请求到达本地DNS服务器之后会有以下几个步骤：</p>
+<p>查找浏览器缓存<br>浏览器会检查缓存中有没有这个域名对应的解析过的IP地址，如果缓存中有，这个解析过程就将结束。Chrome浏览器看本身的DNS缓存时间比较方便，在地址栏输入chrome://net-internals/#dns，就可以看到了<br><img src="http://upload-images.jianshu.io/upload_images/5308475-1edd5a71a8c33fd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>查找操作系统缓存<br>如果用户的浏览器缓存中没有，浏览器会从hosts文件查找是否有存储DNS信息，查找是否有目标域名和对应的IP地址</p>
+<p>查找路由器缓存<br>如果系统缓存中也找不到，那么查询请求就会发向路由器，路由器一般会有自己的DNS缓存。</p>
+<p>查找ISP(Internet Service Provider) DNS 缓存<br>如果路由器缓存中也找不到，那么就查询ISP DNS 缓存服务器了。<br>我们都知道在我们的网络配置中都会有”DNS服务器地址”这一项，操作系统会把这个域名发送给这里设置的DNS，比如114.114.114.114,也就是本地区的域名服务器，通常是提供给你接入互联网的应用提供商。而114.114.114.114是国内移动、电信和联通通用的DNS。</p>
+<p>迭代查询<br>如果前面都找不到DNS缓存的话，会有以下几个步骤：</p>
+<p>本地 DNS服务器将该请求转发到互联网上的根域（根域没有名字，在DNS系统中就用一个空字符串来表示。例如www.baidu.com.现在的DNS系统都不会要求域名以.来结束，即www.baidu.com就可以解析了，但是现在很多DNS解析服务商还是会要求在填写DNS记录的时候以.来结尾域名。）<br>根域将所要查询域名中的顶级域（比如要查询www.baidu,com，该域名的顶级域就是com）的服务器IP地址返回到本地DNS。<br>本地DNS根据返回的IP地址，再向顶级域（就是com域）发送请求， com域服务器再将域名中的二级域（即www.baidu.com中的baidu.com）的IP地址返回给本地DNS。<br>本地DNS再向二级域发送请求进行查询。<br>之后不断重复这样的过程，直到本地DNS服务器得到最终的查询结果，并返回到主机。这时候主机才能通过域名访问该网站。<br>下图能很好的说明这个迭代查询:<br><img src="http://upload-images.jianshu.io/upload_images/5308475-cf58e66c93c1f2ec.gif?imageMogr2/auto-orient/strip" alt=""><br>当查找到对应的IP地址之后，通过IP地址查找到对应的服务器，浏览器将用户发起的http请求发送给服务器。例如：GET <a href="http://www.baidu.com/" target="_blank" rel="noopener">http://www.baidu.com/</a> HTTP/1.1</p>
+<p>三、服务器处理请求<br>每台服务器上都会安装处理请求的应用——Web server。常见的web server产品有apache、nginx、IIS、Lighttpd等。</p>
+<p>当web server接收到一个HTTP请求(request)，会返回一个HTTP响应(response)，例如送回一个HTML页面。对于不同用户发送的请求，会结合配置文件，把不同请求委托给服务器上处理对应请求的程序进行处理（例如CGI脚本，JSP脚本，servlets，ASP脚本，服务器端JavaScript，或者一些其它的服务器端技术等）。</p>
+<p>无论它们(脚本)的目的如何，这些服务器端(server-side)的程序通常产生一个HTML的响应(response)来让浏览器可以浏览。</p>
+<p>那么如何处理请求？实际上就是后台处理的工作。后台开发现在有很多框架，但大部分都还是按照MVC设计模式进行搭建的。</p>
+<p>处理的过程如下图：<br><img src="http://upload-images.jianshu.io/upload_images/5308475-d45e8967170041f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>MVC的处理过程是这样的：对于每一个用户输入的请求，首先被控制器接收，控制器决定用哪个模型来进行处理，然后模型用业务逻辑来处理用户的请求并返回数据，最后控制器确定用哪个视图模型，用相应的视图格式化模型返回html字符串给浏览器，并通过显示页面呈现给用户。</p>
+<p>四、浏览器处理<br>接下来就是浏览器进行处理， 通过后台处理返回的HTML字符串被浏览器接受后被一句句读取解析，html页面经历加载、解析、渲染。</p>
+<p>加载<br>浏览器对一个html页面的加载顺序是从上而下的。如果加载过程中遇到外部css文件，浏览器另外发出一个请求，来获取css文件。遇到图片资源，浏览器也会另外发出一个请求，来获取图片资源。但是当文档加载过程中遇到js文件，html文档会挂起渲染（加载解析渲染同步）的线程，不仅要等待文档中js文件加载完毕，还要等待解析执行完毕，才可以恢复html文档的渲染线程。</p>
+<p>解析<br>解析文档是指将文档转化成为有意义的结构，也就是可让代码理解和使用的结构。解析得到的结果通常是代表了文档结构的节点树，它称作解析树或者语法树，也就是DOM树。如下图：<br><img src="http://upload-images.jianshu.io/upload_images/5308475-3817847173a249ef.gif?imageMogr2/auto-orient/strip" alt=""><br>css解析是指将css文件解析为样式表对象。如下图：<br><img src="http://upload-images.jianshu.io/upload_images/5308475-810853491150d1ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>js解析是文件在加载的同时也进行解析<br>如果想深入如何解析的话可以看<a href="https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/#Parsing_general" target="_blank" rel="noopener">浏览器的工作原理：新式网络浏览器幕后揭秘</a>这篇文章</p>
+<p>渲染<br>即为构建渲染树的过程，就是将DOM树进行可视化表示。构建这棵树是为了以正确的顺序绘制文档内容。</p>
+<p>五、绘制网页<br>浏览器根据 HTML 和 CSS 计算得到渲染树，最终绘制到屏幕上</p>
+<p>参考的文章：<br><a href="https://segmentfault.com/a/1190000006879700" target="_blank" rel="noopener">前端经典面试题: 从输入URL到页面加载发生了什么？</a><br><a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" target="_blank" rel="noopener">What really happens when you navigate to a URL</a><br><a href="http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/www/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8-%E4%BB%8E%20URL%E8%BE%93%E5%85%A5%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%8E%B0.html#/" target="_blank" rel="noopener">从URL输入到页面展现</a><br><a href="http://blog.csdn.net/nawuyao/article/details/50386409" target="_blank" rel="noopener">MVC模型结构是什么</a><br><a href="http://weizhifeng.net/talking-about-domain.html" target="_blank" rel="noopener">域名详解</a><br><a href="http://www.jianshu.com/p/e141d1543143" target="_blank" rel="noopener">浏览器~加载，解析，渲染</a></p>
+<h2 id="也许，DOM-不是答案"><a href="#也许，DOM-不是答案" class="headerlink" title="也许，DOM 不是答案"></a><a href="http://www.ruanyifeng.com/blog/2015/02/future-of-dom.html" target="_blank" rel="noopener">也许，DOM 不是答案</a></h2><p>作者： 阮一峰<br>日期： 2015年2月22日</p>
+<p>有一个词”手机网站”（mobile web），指供手机浏览的网站，但它是不存在的。</p>
+<p>人们提到”移动互联网”的时候，其实专指另外一样东西：手机App。</p>
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015022201.jpg" alt=""></p>
+<p>一、Web App vs. Native App<br>比起手机App，网站有一些明显的优点。</p>
+<p>跨平台：所有系统都能运行<br>免安装：打开浏览器，就能使用<br>快速部署：升级只需在服务器更新代码<br>超链接：可以与其他网站互连，可以被搜索引擎检索<br>但是，现实是怎样呢？</p>
+<p>（1）体验差。手机App的操作流畅性，远超网站。<br>（2）业界不支持。所有公司的移动端开发重点，几乎都是原生app。<br>（3）用户不在乎。大多数用户都选择使用手机app，而不是网站。</p>
+<p>如果将来有一天，Web app会成为主流，一定有一个前提，那就是它的性能可以赶上Native app。</p>
+<p>二、为什么Web app有性能瓶颈？</p>
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015022202.png" alt=""></p>
+<p>Web app输给Native app的地方，不是界面（UI），而是操作性能。主要是互动（interaction）和动画（animation）这两方面，会出现卡顿（jank），用户会感觉到明显的时滞，有时简直慢得难以忍受。</p>
+<p>Web app的性能瓶颈，主要有以下原因。</p>
+<p>（1）Web基于DOM，而DOM很慢。浏览器打开网页时，需要解析文档，在内存中生成DOM结构，如果遇到复杂的文档，这个过程是很慢的。可以想象一下，如果网页上有上万个、甚至几十万个形状（不管是图片或CSS），生成DOM需要多久？更不要提与其中某一个形状互动了。</p>
+<p>（2）DOM拖慢JavaScript。所有的DOM操作都是同步的，会堵塞浏览器。JavaScript操作DOM时，必须等前一个操作结束，才能执行后一个操作。只要一个操作有卡顿，整个网页就会短暂失去响应。<strong>浏览器重绘网页的频率是60FPS（即16毫秒/帧），JavaScript做不到在16毫秒内完成DOM操作</strong>，因此产生了跳帧。用户体验上的不流畅、不连贯就源于此。</p>
+<p>（3）<strong>网页是单线程的</strong>。现在的浏览器对于每个网页，只用一个线程处理。所有工作都在这一个线程上完成，包括布局、渲染、JavaScript执行、图像解码等等，怎么可能不慢？</p>
+<p>（4）<strong>网页没有硬件加速。网页都是由CPU处理的，没用GPU进行图形加速。</strong></p>
+<p>上面这些原因，对于PC还不至于造成严重的性能问题，但是手机的硬件资源相对有限，用户互动又相对频繁，结果跟Native app一比，就完全落在了下风。</p>
+<p>三、FlipBoard的解决方案</p>
+<p>FlipBoard原本是一个手机App，最近开始部署Web版本，结果就遇到了上面的问题：Web版的体验不佳。</p>
+<p>上周，他们将解决方案公布在网站上，结果引起了业界轰动，因为这是一个史无前例的解决方案：</p>
+<p>—— 他们没有使用DOM，而是将整个网站用canvas输出！</p>
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015022204.gif" alt=""></p>
+<p>你可以用手机打开flipboard.com，体验一下，看看跟Native app有没有差别。如果你没有帐号，可以直接打开这里或这里。</p>
+<p>这个方案的出发点是这样的：如果将网页变成了一个个canvas，用户就等于在跟图片互动，这样就绕开了DOM，降低了操作时滞。而且，canvas可以被硬件加速，这样就提高了性能。具体的技术细节，可以参考<a href="http://engineering.flipboard.com/2015/02/mobile-web/" target="_blank" rel="noopener">原文</a>。canvas的转化基于React框架实现，FlipBoard 开发了一个专门的库React-canvas，已经开源。</p>
+<p>这个方案引发了很多争议（这里和这里），主要是canvas只是一个位图，本身没有语义，如果要在它上面实现UI，等于HTML语言已有的东西都要再发明一遍，比如如何实现超链接、如何实现CSS效果等等。一些最简单的东西都变得很麻烦，因为canvas不是自适应的（responsive），文字在哪里断行，都要自己计算，而且用户也无法选中文本。另外，怎么让搜索引擎检索网页，解决起来也不是很容易。</p>
+<p>但是不管怎样，这是一个有意义的尝试。</p>
+<p>四、未来的路<br>James Long对FlipBoard的尝试，写了一篇评论《Radical Statements about the Mobile Web》。本文就受到了那篇文章的启发。</p>
+<p>在文中，James Long对未来的Web app提出了几点预测，我认为很值得分享。</p>
+<p>（1）<strong>多线程浏览器</strong>。每个网页应该由多个线程进行处理，主线程只负责布局和渲染，而且应该在16毫秒内完成，JavaScript由worker线程执行，这样就不会发生堵塞了。Mozilla正在开发的Servo就是这样一个项目。</p>
+<p>（2）DOM的异步操作。JavaScript对DOM的操作不再是同步的，而是触发后，交给Event Loop机制进行监听。</p>
+<p>（3）非DOM方案。浏览器不再将网页处理成DOM结构，而是变为其他结构。React的Virtual DOM方案就是这一类的尝试，还有更激进的方案，比如用数据库取代DOM。</p>
+<p>（完）</p>
+<h2 id="网站的肥胖症危机"><a href="#网站的肥胖症危机" class="headerlink" title="网站的肥胖症危机"></a><a href="http://www.ruanyifeng.com/blog/2016/01/website-obesity-crisis.html" target="_blank" rel="noopener">网站的肥胖症危机</a></h2><p>作者： 阮一峰<br>日期： 2016年1月3日</p>
+<p>最近，有一篇文章正在疯传。</p>
+<p>它是上个月，Maciej Ceglowski在澳大利亚的一次演讲，名为《网站的肥胖症危机》（文本，视频），反思了互联网开发的现状。</p>
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016010302.png" alt=""></p>
+<p>该文非常值得一读，Hacker News排行榜高居榜首，得到了1000多人的推荐。</p>
+<p>下面就是我的中文节译版。</p>
+<p>===============================</p>
+<p>网站的肥胖症危机（节译版）<br>作者：Maciej Ceglowski</p>
+<p>译者：阮一峰</p>
+<p>原文网址：The Website Obesity Crisis</p>
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016010301.jpg" alt=""></p>
+<p>1.</p>
+<p>大多数网站的主要内容是文本，更准确地说，是简短的文本。</p>
+<p>文本本身并不大，但是展示它们的网页，正变得越来越大。Twitter展示单条评论（140个字符）的页面，超过900KB。Medium的一篇文章大约400个词，页面大小是1.2MB。</p>
+<p>如果这种趋势持续下去，2020年，网页的体积平均将超过5MB，比一本俄罗斯长篇小说还大。比如，陀思妥耶夫斯基的《罪与罚》，文本压缩后不到800KB。</p>
+<p>TechTimes.com有一篇报道，介绍Google正在为大网页做标记。但是，这篇报道的网页，体积为18MB，外加一个3MB的视频。</p>
+<p>2015年5月，Facebook引入了”Instant Articles”，帮助用户快速浏览新闻。但是，介绍这个功能的页面，体积为6.8MB，外加一个41MB的视频。你想了解这个功能的细节，唯一的方法就是去看这个视频。</p>
+<p>2.</p>
+<p>网页真的有必要这么大吗？明明200KB就足够，为什么要做成2MB？</p>
+<p>因为我们要往里面塞很多不需要的东西：广告、高清图片、视频、用户追踪系统、社交媒体的代码……你不塞，公司就可能解雇你。</p>
+<p>如今的时代，你跟雇主说，想做一张体积只有几百KB的网页，就好像跟SUV车主谈论省油的经济型轿车。</p>
+<p>有人会说，这是免费内容的代价。但是，我想问，谁会从海量的互联网广告获利？广告主，还是消费者？真正获得暴利的是网络服务提供商和互联网广告公司，其他人都付出了巨大的成本。</p>
+<p>3.</p>
+<p>我们都忘了健康的网页，应该是什么样子。</p>
+<p>值得阅读的文本，配上结构良好的标签。<br>适度的图片和视觉设计。<br>一层CSS<br>少量的JavaScript，只在必需时使用<br>但是，2015年真实的网页，却是下面这样。</p>
+<p>一层HTML<br>一大堆垃圾<br>顶部还有一层监控代码<br>4.</p>
+<p>宽带和光纤上网并不解决问题，实际上还鼓励了人们往网页上添加更多的东西。</p>
+<p>为了平衡网页体积，工程师想出了很多方法：首屏快速渲染、压缩文件、异步加载、批量HTTP请求、管道发送等等……</p>
+<p>网站开发越来越依赖代码精简、压缩、缓存、服务器配置这些中间步骤，这使得找出错误越来越困难，成本越来越高。</p>
+<p>5.</p>
+<p>复杂性让聪明人上瘾。</p>
+<p>即使我们知道复杂不是好事，但难以抵抗。复杂的东西总是显得很酷，让人情不自禁想继续干下去。</p>
+<p>大多数网站都过度复杂了。</p>
+<p>我们做的每件事，都使得创造网站或编辑网页变得困难。把一篇文章放上网，正在变得需要一个专家团队才能完成。</p>
+<p>新手越来越难通过源码学习。我们抽走了人们学习互联网的梯子。</p>
+<p>6.</p>
+<p>其实只需要两步，就可以大大缩小网页体积，提高性能。</p>
+<p>第一步，确保最重要的内容，首先下载和渲染；</p>
+<p>第二步，就此结束。</p>
+<p>你不需要那些多余的垃圾，对最简主义保持信心就行。</p>
+<p>7.</p>
+<blockquote>
+<p>让我们保持互联网是一个超链接构成的媒体，不要把它变成另一种东西。</p>
+</blockquote>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h3 id="JavaScript教程"><a href="#JavaScript教程" class="headerlink" title="JavaScript教程"></a><a href="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000" target="_blank" rel="noopener">JavaScript教程</a></h3><p><img src="https://cdn.liaoxuefeng.com/cdn/files/attachments/0014355670304100cdaa4e7e651474d9672ed73797378bd000/l" alt=""></p>
+<h3 id="HTML-5-教程"><a href="#HTML-5-教程" class="headerlink" title="HTML 5 教程"></a><a href="http://www.w3school.com.cn/html5/index.asp" target="_blank" rel="noopener">HTML 5 教程</a></h3><blockquote>
+<p>HTML5 是如何起步的？</p>
+</blockquote>
+<p>HTML5 是 W3C 与 WHATWG 合作的结果。</p>
+<p>编者注：W3C 指 World Wide Web Consortium，万维网联盟。</p>
+<p>编者注：WHATWG 指 Web Hypertext Application Technology Working Group。</p>
+<p>WHATWG 致力于 web 表单和应用程序，而 W3C 专注于 XHTML 2.0。在 2006 年，双方决定进行合作，来创建一个新版本的 HTML。</p>
+<blockquote>
+<p>为 HTML5 建立的一些规则：</p>
+</blockquote>
+<p>新特性应该基于 HTML、CSS、DOM 以及 JavaScript。<br>减少对外部插件的需求（比如 Flash）<br>更优秀的错误处理<br>更多取代脚本的标记<br>HTML5 应该独立于设备<br>开发进程应对公众透明<br>新特性</p>
+<blockquote>
+<p>HTML5 中的一些有趣的新特性：</p>
+</blockquote>
+<p>用于绘画的 canvas 元素<br>用于媒介回放的 video 和 audio 元素<br>对本地离线存储的更好的支持<br>新的特殊内容元素，比如 article、footer、header、nav、section<br>新的表单控件，比如 calendar、date、time、email、url、search</p>
+<div>
+<h2>视频格式</h2>
+
+<p>当前，video 元素支持三种视频格式：</p>
+
+<table class="dataintable">
+<tr>
+<th>格式</th>
+<th style="width:16%">IE</th>
+<th style="width:16%">Firefox</th>
+<th style="width:16%">Opera</th>
+<th style="width:16%">Chrome</th>
+<th style="width:16%">Safari</th>
+</tr>
+
+<tr>
+<td>Ogg</td>
+<td>No</td>
+<td>3.5+</td>
+<td>10.5+</td>
+<td>5.0+</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>MPEG 4</td>
+<td>9.0+</td>
+<td>No</td>
+<td>No</td>
+<td>5.0+</td>
+<td>3.0+</td>
+</tr>
+
+<tr>
+<td>WebM</td>
+<td>No</td>
+<td>4.0+</td>
+<td>10.6+</td>
+<td>6.0+</td>
+<td>No</td>
+</tr>
+</table>
+
+<p>Ogg = 带有 Theora 视频编码和 Vorbis 音频编码的 Ogg 文件</p>
+<p>MPEG4 = 带有 H.264 视频编码和 AAC 音频编码的 MPEG 4 文件</p>
+<p>WebM = 带有 VP8 视频编码和 Vorbis 音频编码的 WebM 文件</p>
+</div>
+
+
+<h3 id="HTML-参考手册"><a href="#HTML-参考手册" class="headerlink" title="HTML 参考手册"></a><a href="http://www.w3school.com.cn/tags/index.asp" target="_blank" rel="noopener">HTML 参考手册</a></h3><h3 id="CSS-教程"><a href="#CSS-教程" class="headerlink" title="CSS 教程"></a><a href="http://www.w3school.com.cn/css/index.asp" target="_blank" rel="noopener">CSS 教程</a></h3><h3 id="WEB设计的速查卡"><a href="#WEB设计的速查卡" class="headerlink" title="WEB设计的速查卡"></a><a href="https://coolshell.cn/articles/870.html" target="_blank" rel="noopener">WEB设计的速查卡</a></h3><p>速查卡不仅仅可能帮助我们记住一些重要的东西，而且可以放在手边，当我们需要的时候，可以很快地查找。</p>
+<p>在本篇文章中，你可以看到28个相当不错的关于Web设计的速查卡，它们分别是关于：Photoshop, Dreamweaver, 颜色, 排版,和 其它Web设计相关的。他们都是一页纸，可以方便你很快地打印出来。</p>
+<h3 id="反击爬虫，前端工程师的脑洞可以有多大？"><a href="#反击爬虫，前端工程师的脑洞可以有多大？" class="headerlink" title="反击爬虫，前端工程师的脑洞可以有多大？"></a><a href="http://litten.me/2017/07/09/prevent-spiders/" target="_blank" rel="noopener">反击爬虫，前端工程师的脑洞可以有多大？</a></h3><h3 id="再议减少HTTP请求"><a href="#再议减少HTTP请求" class="headerlink" title="再议减少HTTP请求"></a><a href="http://litten.me/2014/08/14/reduce-http-requests/" target="_blank" rel="noopener">再议减少HTTP请求</a></h3><p>关于web性能，有两个著名论断：</p>
+<p>0.1-0.2s 用户认为是即时的；1-5s 用户觉得自己能与信息流畅地交互；5-10s 用户开始转移注意力——Robert Miller</p>
+<p>用户所接受的数据，有80~90%的时间都耗在前端上——Steve Souders</p>
+<p>前者说明，loading图（以下简称菊花）是必要的。人处于“开始转移注意力”时，这朵菊花就开始挽留你躁动的心。但web工程师的一个使命，就是通过提升性能，不让用户看到菊花。菊花要有，但不能常有，真是一朵磨人的小妖精…</p>
+<p>后者说明，资源的加载和渲染可以大做文章。因为一个html文件，几乎是所有资源的承载器，哪些优先加载，怎样加载，都是前端工程师可以控制的。</p>
+<p>再议减少HTTP请求：<br>“尽量减少HTTP请求，减少DNS查找”这是Yslow写在最前面的两条规则。而放之实际，可能会遇到挑战。为何？因为我们完成了“降低请求数”的目标，但可能损失了其他方面的指标。</p>
+<p>a. 没有浏览器缓存<br>减少HTTP请求，很常用的做法就是把js和css资源inline到html里。这样的做法，自然没有浏览器缓存，重复加载时连静态资源也必须加载。也许有人又说，我可以把整个html文件都缓存啊！的确可以，但以web开发的更新速度，html文件一般都不设或设置很短时间（5 min?）缓存。另外在web2.0时代里，html缓存会带来不必要的问题。比如登录前后，页面资源展示不一样，那么我们就得慎用html缓存。</p>
+<p>b. 没有cdn缓存<br>这个很好理解，任何的内联资源，由于依赖于html，都必须从源服务器而不是cdn服务器返回。</p>
+<p>c. 不能按需加载<br>为了按需加载，前端工程师可谓想法各异，天马行空。比如图片的lazyload技术，异步加载js脚本，而inline的方式恰恰将一切想法摁回脑中。</p>
+<p>d. 浏览器预解析DNS失效<br>现代浏览器有预解析DNS技术。简单来说，就是页面下载到浏览器时，先扫描一遍，在这时发现域名并预解析DNS。这样的前置解析跟dom渲染等操作同步执行，诚然会使浏览器更快。但如果你的html页面因为内联了太多内容（base64图片），大于5M时，浏览器的预解析DNS将会失效。</p>
+<p>最佳实践<br>因而，我们时常像那只捡芝麻丢西瓜的熊。如此平衡这两者呢，业界给我们两个很好的案例。</p>
+<p>Demo1 必应</p>
+<p>首次内联CSS与JS<br>将资源取出，并保存在localStorage中<br>资源名（版本）保存在cookie中<br>后续请求中，服务器检查对应的cookie<br>根据cookie的值，只嵌入新的脚本<br>加载时，从localStorage里载入资源</p>
+<p>Demo2 百度(移动端)</p>
+<p>首次将静态资源打包，用jsonp统一返回<br>将资源解析并保存在localStorage中<br>再次访问时检查localStorage中资源情况<br>如有缺失再发请求获取资源<br>必应的做法确保了首次的http请求最少，后续充分发挥增量更新（当然粒度还是文件）的优势提高性能，但缺点是cookie并不可靠。百度则是把首次静态资源的http请求降低到一次，非常暴力的把全部css，js打包成字符串，以jsonp返回。宁愿用str转obj的解析时间去换取加载时间。而随V8引擎的强大，这点解析的时间也将越来越不值得提起。总而言之，这两个Demo都把http请求尽可能的降低，而后都利用了本地存储去获得资源。</p>
+<h2 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h2><p><img src="http://p53s4d2qk.bkt.clouddn.com/jquery20180507.jpg?imageMogr2/thumbnail/!75p" alt="jquery20180507.jpg"></p>
+<blockquote>
+<p><a href="http://jquery.com/" target="_blank" rel="noopener">jQuery</a>是一个轻量级、快速简洁的javaScript库。</p>
+</blockquote>
+<head>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><script type="text/javascript" src="/js/src/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("p").click(function(){
+  $(this).hide();
+  });
+});
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><p>If you click on me, I will disappear.</p><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+
+
+
+<h2 id="jQuery参考资料"><a href="#jQuery参考资料" class="headerlink" title="jQuery参考资料"></a>jQuery参考资料</h2><h3 id="jQuery-教程"><a href="#jQuery-教程" class="headerlink" title="jQuery 教程"></a><a href="http://www.w3school.com.cn/jquery/" target="_blank" rel="noopener">jQuery 教程</a></h3><h3 id="jQuery-实例"><a href="#jQuery-实例" class="headerlink" title="jQuery 实例"></a><a href="http://www.w3school.com.cn/jquery/jquery_examples.asp" target="_blank" rel="noopener">jQuery 实例</a></h3><h3 id="jQuery-参考手册"><a href="#jQuery-参考手册" class="headerlink" title="jQuery 参考手册"></a><a href="http://www.w3school.com.cn/jquery/jquery_reference.asp" target="_blank" rel="noopener">jQuery 参考手册</a></h3><h3 id="十分钟玩转-jQuery、实例大全"><a href="#十分钟玩转-jQuery、实例大全" class="headerlink" title="十分钟玩转 jQuery、实例大全"></a><a href="https://www.cnblogs.com/suoning/p/5683047.html" target="_blank" rel="noopener">十分钟玩转 jQuery、实例大全</a></h3><h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><p><img src="http://p53s4d2qk.bkt.clouddn.com/markdown-syntax-language.png?imageMogr2/thumbnail/!75p" alt="markdown-syntax-language.png"></p>
+<blockquote>
+<p><a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank" rel="noopener">Markdown</a>是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+</blockquote>
+<p>Markdown 的理念是，能让文档更容易读、写和随意改。</p>
+<h2 id="Markdown参考资料"><a href="#Markdown参考资料" class="headerlink" title="Markdown参考资料"></a>Markdown参考资料</h2><h3 id="Mark-Text-下一代所见即所得的Markdown编辑器"><a href="#Mark-Text-下一代所见即所得的Markdown编辑器" class="headerlink" title="Mark Text - 下一代所见即所得的Markdown编辑器"></a><a href="http://www.cnblogs.com/lhb25/p/next-generation-markdown-editor.html" target="_blank" rel="noopener">Mark Text - 下一代所见即所得的Markdown编辑器</a></h3><p>　Mark Text 所输及所见，摒弃了众多 markdown 编辑器左边写作右边预览的写作方式，巧妙的将编辑和预览融为一体。snabbdom 作为 Mark Text 的渲染引擎，保证了极速渲染编辑页面，带来流程的书写体验。支持 CommonMark Spec 和 GitHub Flavored Markdown Spec 语法格式，生成的 Markdown 可以复制到任何支持 markdown 格式的社区、网站。段落及行内样式快捷键提升您的编辑效率。</p>
+<p><img src="https://images2018.cnblogs.com/blog/36987/201804/36987-20180414212726214-1715743546.gif" alt=""></p>
+<h3 id="Markdown-语法说明-简体中文版"><a href="#Markdown-语法说明-简体中文版" class="headerlink" title="Markdown 语法说明 (简体中文版)"></a><a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">Markdown 语法说明 (简体中文版)</a></h3><p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">要制约的只有一些 HTML 区块元素――比如 &lt;div&gt;、&lt;table&gt;、&lt;pre&gt;、&lt;p&gt; 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 &lt;p&gt; 标签。</span><br></pre></td></tr></table></figure>
+<p>请注意，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。比如，你在 HTML 区块内使用 Markdown 样式的<em>强调</em>会没有效果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HTML 的区段（行内）标签如 &lt;span&gt;、&lt;cite&gt;、&lt;del&gt; 可以在 Markdown 的段落、列表或是标题里随意使用。依照个人习惯，甚至可以不用 Markdown 格式，而直接采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的 &lt;a&gt; 或 &lt;img&gt; 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。</span><br></pre></td></tr></table></figure>
+<p>和处在 HTML 区块标签间不同，Markdown 语法在 HTML 区段标签间是有效的。</p>
+<blockquote>
+<p>特殊字符自动转换</p>
+</blockquote>
+<p>在 HTML 文件中，有两个字符需要特殊处理： &lt; 和 &amp; 。 &lt; 符号用于起始标签，&amp; 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是 &lt; 和 &amp;。</p>
+<p>列表<br>Markdown 支持有序列表和无序列表。</p>
+<p>无序列表使用星号、加号或是减号作为列表标记：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*   Red</span><br><span class="line">*   Green</span><br><span class="line">*   Blue</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>等同于：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+   Red</span><br><span class="line">+   Green</span><br><span class="line">+   Blue</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>也等同于：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-   Red</span><br><span class="line">-   Green</span><br><span class="line">-   Blue</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>有序列表则使用数字接着一个英文句点：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.  Bird</span><br><span class="line">2.  McHale</span><br><span class="line">3.  Parish</span><br></pre></td></tr></table></figure>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<blockquote>
+<p>分隔线</p>
+</blockquote>
+<p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* * *</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">*****</span><br><span class="line"></span><br><span class="line">- - -</span><br><span class="line"></span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<p>强调</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*test one*</span><br><span class="line">**test two**</span><br><span class="line">***test three***</span><br><span class="line">****test four****</span><br></pre></td></tr></table></figure>
+<p><em>test one</em><br><strong>test two</strong><br><strong><em>test three</em></strong><br><strong><strong>test four</strong></strong></p>
+<p>*literal asterisks*</p>
+<h2 id="Hexo不渲染-md或者-html"><a href="#Hexo不渲染-md或者-html" class="headerlink" title="Hexo不渲染.md或者.html"></a><a href="https://blog.csdn.net/ganzhilin520/article/details/79057774" target="_blank" rel="noopener">Hexo不渲染.md或者.html</a></h2><p>我们知道，在 source 文件夹下的所有 md 文件或者 html 文件都会被渲染，有时候我们不想这些文件被渲染怎么办？比如很多时候我们想要写一个 README.md 或者一些自定义的页面。比如百度或者谷歌在验证站长权限的时候，通常都会要求在主目录下添加一个 html 文件。</p>
+<blockquote>
+<p>不渲染 md 文件</p>
+</blockquote>
+<p>使用上面的办法虽然不会渲染 md 文件，但是还是将 md 文件转化成了 html 文件，如果想保留原 md 文件后缀要怎么做呢？这就需要在 站点配置文件 _config.yml 中配置，找到 skip_render 参数，开始匹配的位置是基于你的 source_dir 的，一般来说，是你的 source 文件夹下。下面我分别列举几种常见的情况进行说明：</p>
+<p>skip_render: test/<em> 单个文件夹下全部文件<br>skip_render: test/</em>.md 单个文件夹下指定类型文件<br>skip_render: test/** 单个文件夹下全部文件以及子目录</p>
+<p>多个文件夹以及各种复杂情况：<br>skip_render: README.md</p>
+<ul>
+<li><code>test1/*.html</code></li>
+<li><code>test2/**</code></li>
+</ul>
+<blockquote>
+<p>不渲染 html 文件</p>
+</blockquote>
+<p>在不想被渲染的 html 文件最上面添加如下代码</p>
+<hr>
+<h2 id="layout-false"><a href="#layout-false" class="headerlink" title="layout: false"></a>layout: false</h2><h2 id="在主目录下添加README-md文件或者html文件"><a href="#在主目录下添加README-md文件或者html文件" class="headerlink" title="在主目录下添加README.md文件或者html文件"></a><a href="http://wp.huangshiyang.com/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">在主目录下添加README.md文件或者html文件</a></h2><p>Hexo3.0以下使用<br>感谢@TimNew提供的思路<br>额，不知道是不是有人跟我一样有一个库没有README.md文件就浑身不舒服的强迫症= =<br>正如大家所知道的，在source文件夹下的所有md文件都会被hexo渲染成html文件，导致README.md文件不能好好的放在里面了，即使是添加了layout: false依然没有用。</p>
+<p>不过现在有一个另外的好办法，那就是利用主题的source目录，也就是themes/themes-name/source。因为这个文件夹里面的所有文件都会被复制到网站的根目录中去，也就是说，如果在里面放上README，就可以正常的存在于网站的主目录了。</p>
+<p>同样的，对于一些需要在网站下添加html文件的需求也可以这样来达成。比如百度或者谷歌在验证站长权限的时候，通常都会要求在主目录下添加一个html文件。同样的，只要把这个文件放在themes/themes-name/source就可以搞定了。</p>
+<p>Hexo3.0以上支持<br>使用_config.yml下的skip_render参数。<br>比如说现在source下有两个文件夹，一个是_post，一个是haha，里面各有一个名为hello-world.md的文档，然后我的skip_render参数为：<br>skip_render: haha/*.md<br>那么，hexo g之后的结果为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">INFO  Files loaded in 503 ms</span><br><span class="line">INFO  Generated: js/script.js</span><br><span class="line">INFO  Generated: fancybox/jquery.fancybox.pack.js</span><br><span class="line">INFO  Generated: fancybox/jquery.fancybox.js</span><br><span class="line">INFO  Generated: fancybox/jquery.fancybox.css</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-thumbs.js</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-thumbs.css</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-media.js</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-buttons.js</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-buttons.css</span><br><span class="line">INFO  Generated: fancybox/helpers/fancybox_buttons.png</span><br><span class="line">INFO  Generated: fancybox/fancybox_sprite@2x.png</span><br><span class="line">INFO  Generated: fancybox/fancybox_sprite.png</span><br><span class="line">INFO  Generated: fancybox/fancybox_overlay.png</span><br><span class="line">INFO  Generated: fancybox/fancybox_loading@2x.gif</span><br><span class="line">INFO  Generated: fancybox/fancybox_loading.gif</span><br><span class="line">INFO  Generated: fancybox/blank.gif</span><br><span class="line">INFO  Generated: css/style.css</span><br><span class="line">INFO  Generated: css/images/banner.jpg</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.woff</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.ttf</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.svg</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.eot</span><br><span class="line">INFO  Generated: css/fonts/FontAwesome.otf</span><br><span class="line">INFO  Generated: haha/hello-world.md    //看这里！看这里！</span><br><span class="line">INFO  Generated: 2015/03/26/hello-world/index.html</span><br><span class="line">INFO  Generated: archives/index.html</span><br><span class="line">INFO  Generated: archives/2015/index.html</span><br><span class="line">INFO  Generated: archives/2015/03/index.html</span><br><span class="line">INFO  Generated: index.html</span><br><span class="line">INFO  29 files generatd in 1.28 s</span><br></pre></td></tr></table></figure>
+<p>也就是说，skip_render参数的使用需要注意两点：</p>
+<p>此处的位置是相对于你的source_dir的位置，一般来说，就是以source为根的位置<br>这里的文件匹配是基于正则的，大致上可以参考这个)，也就是说*.html可以忽略所有html文档，hello-wordl.md的话，就能忽略掉名字为hello-wordl.md的文件。</p>
+<h2 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h2><p><img src="http://p53s4d2qk.bkt.clouddn.com/chrome_wallpaper_by_kazvantipov-d4bt2mz.jpg?imageMogr2/thumbnail/!75p" alt="chrome_wallpaper_by_kazvantipov-d4bt2mz.jpg"></p>
+<blockquote>
+<p> <a href="https://baike.baidu.com/item/Google%20Chrome/5638378?fr=aladdin" target="_blank" rel="noopener">Google Chrome</a>是一款由Google公司开发的网页浏览器，该浏览器基于其他开源软件撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。</p>
+</blockquote>
+<h2 id="Web前端性能优化——如何提高页面加载速度"><a href="#Web前端性能优化——如何提高页面加载速度" class="headerlink" title="Web前端性能优化——如何提高页面加载速度"></a><a href="https://www.cnblogs.com/MarcoHan/p/5295398.html" target="_blank" rel="noopener">Web前端性能优化——如何提高页面加载速度</a></h2><h2 id="浏览器野史-UserAgent列传（上）"><a href="#浏览器野史-UserAgent列传（上）" class="headerlink" title="浏览器野史 UserAgent列传（上）"></a><a href="http://litten.me/2014/09/26/history-of-browser-useragent/" target="_blank" rel="noopener">浏览器野史 UserAgent列传（上）</a></h2><p>1990年: Nexus(WorldWideWeb)诞生<br>1993年1月23日：Mosaic诞生<br>1994年12月：Netscape(Mozilla)诞生<br>1995年4月：Opera诞生<br>1995年8月16日：Internet Explorer诞生<br>2002年9月23日：Firefox诞生<br>2003年1月7日：Safari诞生<br>2008年9月2日：Chrome诞生</p>
+<h2 id="浏览器野史-UserAgent列传（下）"><a href="#浏览器野史-UserAgent列传（下）" class="headerlink" title="浏览器野史 UserAgent列传（下）"></a><a href="http://litten.me/2014/10/05/history-of-browser-useragent2/" target="_blank" rel="noopener">浏览器野史 UserAgent列传（下）</a></h2><p>利用Trident（IE的内核），包装一下皮肤，美化一下，就可以说：完美兼容<br>利用Webkit，包装一下皮肤，美化一下，就可以说：极速浏览<br>把两个内核都包起来，就可以说：智能双核</p>
+<p>使用Trident内核的，在IE已有UserAgent后添加自己的名称；使用Webkit内核的，就在Chrome的UserAgent后面添加。</p>
+<p>前者像QQ浏览器：Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.7.26717.400)。<br>后者像猎豹：Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36 LBBROWSER。<br>当然双核浏览器诚然就是墙头草，切换内核时UserAgent也需要跟着变化。</p>
+<p>彩蛋</p>
+<p>那么，我们的故事接近尾声。还有一些有趣的小彩蛋。</p>
+<p>Chome 28开始，与苹果正式分道扬镳，采用Blink内核，但它的UserAgent并不改变。<br>淘宝封杀微信打开淘宝页面，靠的就是微信内置浏览器UserAgent里的MicroMessenger字样。其实微信也可以像当初360一样把UserAgent去掉，但微信并不这样做。<br>360出招之时留有后招。也许，它一开始就想到了腾讯会告他们对于UserAgent的欺瞒，因而它其实提供了设置项。默认设置是“保持跟IE一样的UserAgent”，但用户也可以不勾选。只是这选项比较隐蔽，而且你重启浏览器后…又会变回默认设置。如果没有这个小小的设置，结果大家可以自行想象。<br>微软又玩新花样了，在泄露版IE 11中，去掉了以往的MSIE字样。初步猜测此举是为了使现有的 CSS hack 失效，避免过去网页设计师对IE差别对待的情况再度发生。但又会引发其他问题啊亲。</p>
+<p><a href="https://www.w3.org/TR/UAAG/" target="_blank" rel="noopener">User Agent Accessibility Guidelines 1.0</a></p>
+<h2 id="兔子，胡萝卜与OAuth的故事"><a href="#兔子，胡萝卜与OAuth的故事" class="headerlink" title="兔子，胡萝卜与OAuth的故事"></a><a href="http://litten.me/2013/08/20/oauth-rabbit/" target="_blank" rel="noopener">兔子，胡萝卜与OAuth的故事</a></h2><h2 id="谈谈OAuth1-OAuth2异同"><a href="#谈谈OAuth1-OAuth2异同" class="headerlink" title="谈谈OAuth1,OAuth2异同"></a><a href="http://litten.me/2013/08/11/brief-oauth/" target="_blank" rel="noopener">谈谈OAuth1,OAuth2异同</a></h2>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Web/" rel="tag"><i class="fa fa-tag"></i> Web</a>
+          
+            <a href="/tags/Net/" rel="tag"><i class="fa fa-tag"></i> Net</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+			<div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">After reading, Five stars :)</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Business/Technology.html" rel="next" title="Technology">
+                <i class="fa fa-chevron-left"></i> Technology
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/IPR/WIPO.html" rel="prev" title="WIPO">
+                WIPO <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img/headonhill.jpg"
+                alt="Author" />
+            
+              <p class="site-author-name" itemprop="name">Author</p>
+              <p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">201</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">317</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="http://blog.163.com/zhuxuanlv@126/" target="_blank" title="Blog"><i class="fa fa-fw fa-globe"></i>Blog</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:deepcreator18@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("04/01/2018 16:01:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second ";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器的渲染原理简介"><span class="nav-number">1.</span> <span class="nav-text">浏览器的渲染原理简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前端面试题：从url到页面展现，这之中发生了什么？"><span class="nav-number">2.</span> <span class="nav-text">前端面试题：从url到页面展现，这之中发生了什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#也许，DOM-不是答案"><span class="nav-number">3.</span> <span class="nav-text">也许，DOM 不是答案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站的肥胖症危机"><span class="nav-number">4.</span> <span class="nav-text">网站的肥胖症危机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript教程"><span class="nav-number">5.1.</span> <span class="nav-text">JavaScript教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-5-教程"><span class="nav-number">5.2.</span> <span class="nav-text">HTML 5 教程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">视频格式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-参考手册"><span class="nav-number">6.1.</span> <span class="nav-text">HTML 参考手册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS-教程"><span class="nav-number">6.2.</span> <span class="nav-text">CSS 教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WEB设计的速查卡"><span class="nav-number">6.3.</span> <span class="nav-text">WEB设计的速查卡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反击爬虫，前端工程师的脑洞可以有多大？"><span class="nav-number">6.4.</span> <span class="nav-text">反击爬虫，前端工程师的脑洞可以有多大？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#再议减少HTTP请求"><span class="nav-number">6.5.</span> <span class="nav-text">再议减少HTTP请求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery"><span class="nav-number">7.</span> <span class="nav-text">jQuery</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery参考资料"><span class="nav-number">8.</span> <span class="nav-text">jQuery参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-教程"><span class="nav-number">8.1.</span> <span class="nav-text">jQuery 教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-实例"><span class="nav-number">8.2.</span> <span class="nav-text">jQuery 实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-参考手册"><span class="nav-number">8.3.</span> <span class="nav-text">jQuery 参考手册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十分钟玩转-jQuery、实例大全"><span class="nav-number">8.4.</span> <span class="nav-text">十分钟玩转 jQuery、实例大全</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown"><span class="nav-number">9.</span> <span class="nav-text">Markdown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown参考资料"><span class="nav-number">10.</span> <span class="nav-text">Markdown参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mark-Text-下一代所见即所得的Markdown编辑器"><span class="nav-number">10.1.</span> <span class="nav-text">Mark Text - 下一代所见即所得的Markdown编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown-语法说明-简体中文版"><span class="nav-number">10.2.</span> <span class="nav-text">Markdown 语法说明 (简体中文版)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo不渲染-md或者-html"><span class="nav-number">11.</span> <span class="nav-text">Hexo不渲染.md或者.html</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#layout-false"><span class="nav-number">12.</span> <span class="nav-text">layout: false</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在主目录下添加README-md文件或者html文件"><span class="nav-number">13.</span> <span class="nav-text">在主目录下添加README.md文件或者html文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chrome"><span class="nav-number">14.</span> <span class="nav-text">Chrome</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web前端性能优化——如何提高页面加载速度"><span class="nav-number">15.</span> <span class="nav-text">Web前端性能优化——如何提高页面加载速度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器野史-UserAgent列传（上）"><span class="nav-number">16.</span> <span class="nav-text">浏览器野史 UserAgent列传（上）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器野史-UserAgent列传（下）"><span class="nav-number">17.</span> <span class="nav-text">浏览器野史 UserAgent列传（下）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#兔子，胡萝卜与OAuth的故事"><span class="nav-number">18.</span> <span class="nav-text">兔子，胡萝卜与OAuth的故事</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#谈谈OAuth1-OAuth2异同"><span class="nav-number">19.</span> <span class="nav-text">谈谈OAuth1,OAuth2异同</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Author</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/reading_progress/reading_progress.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz',
+        appKey: 'PXNkGhS05PxL7rV3N8gDlAQe',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 11184,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+</body>
+</html>
