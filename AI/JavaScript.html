@@ -133,7 +133,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/JavaScriptIntroduction.jpg?imageMogr2/thumbnail/!75p">
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/machinelearning2018050702.jpg?imageMogr2/thumbnail/!75p">
-<meta property="og:updated_time" content="2018-06-12T09:08:19.497Z">
+<meta property="og:updated_time" content="2018-06-19T03:35:44.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript">
 <meta name="twitter:description" content="JavaScript是一种运行在浏览器中的解释型的编程语言。JavaScript是世界上最流行的脚本语言，因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。">
@@ -497,209 +497,209 @@
 </blockquote>
 <a id="more"></a>
 <head>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script src="/js/src/folder2tree.js"></script>
-    <script src="/js/src/head.min.js"></script>
-    <script>
-        head.load("/js/src/Chart.js", "/js/src/three.min.js");
-    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><script src="/js/src/folder2tree.js"></script>
+<script src="/js/src/head.min.js"></script>
+<script>
+    head.load("/js/src/Chart.js", "/js/src/three.min.js");
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 
 
 <body>
 
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- my content-->
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- my content-->
 
-            <div id="ctn"></div>
+        <div id="ctn"></div>
 
-            <script>
-                /**
-                 * 初始化方法
-                 *
-                 * @param {Dom} 父级dom节点
-                 * @param {Array} 描述文件夹层级关系对象
-                 */
+        <script>
+            /**
+             * 初始化方法
+             *
+             * @param {Dom} 父级dom节点
+             * @param {Array} 描述文件夹层级关系对象
+             */
 
-                folder2tree.init(document.getElementById("ctn"), [
-                    {
-                        "img" : [
-                            "sprite.png",
-                            "bg.png"
+            folder2tree.init(document.getElementById("ctn"), [
+                {
+                    "img" : [
+                        "sprite.png",
+                        "bg.png"
+                    ]
+                },{
+                    "js": [{
+                        "common": [
+                            "jquery.js",{
+                                "highcharts": [{
+                                    "modules": ["exporting.js"]
+                                },
+                                "highcharts.js"
+                            ]}
                         ]
                     },{
-                        "js": [{
-                            "common": [
-                                "jquery.js",{
-                                    "highcharts": [{
-                                        "modules": ["exporting.js"]
-                                    },
-                                    "highcharts.js"
-                                ]}
-                            ]
-                        },{
-                            "index": [
-                                "mian.js",{
-                                    "modules": ["mod.video.js"]
-                                }
-                            ]
-                        }]
-                    },{
-                        "css": [
-                            "base.css",
-                            "index-main.css",
-                            "index-video.css"
-                        ]
-                    },
-                    "index.html",
-                    "favicon.ico"
-                ]);
-            </script>
-
-            <canvas id="myChart" width="400" height="400"></canvas>
-            <canvas id="myChart2" width="400" height="400"></canvas>
-            <canvas id="myChart3" width="400" height="400"></canvas>
-
-    <script>
-
-        head.ready(function () {
-
-
-            var ctx1 = document.getElementById("myChart").getContext('2d');
-            var myChart = new Chart(ctx1, {
-                type: 'bar',
-                data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-                    datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5, 2, 3],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
+                        "index": [
+                            "mian.js",{
+                                "modules": ["mod.video.js"]
                             }
-                        }]
-                    }
-                }
-            });
-
-            var ctx2 = document.getElementById("myChart2").getContext('2d');
-            var myChart2 = new Chart(ctx2, {
-                type: 'line',
-                data: {
-                    labels: ['春', '夏', '秋', '冬'],
-                    datasets: [{
-                        fillColor: 'rgba(0,0,0,0)',
-                        strokeColor: 'rgba(220,180,0,1)',
-                        pointColor: 'rgba(220,180,0,1)',
-                        data: [11,37,10,3]
-                    },
-                    {
-                        fillColor: 'rgba(0,0,0,0)',
-                        strokeColor: 'rgba(151,187,205,1)',
-                        pointColor: 'rgba(151,187,205,1)',
-                        data: [9,29,15,1]
+                        ]
                     }]
+                },{
+                    "css": [
+                        "base.css",
+                        "index-main.css",
+                        "index-video.css"
+                    ]
                 },
-                options: {
-                    responsive:true,
-                    pointDotRadius:10,
-                    bezierCurve:false,
-                    scaleShowVerticalLines: false,
-                    scaleGridLineColor: 'black'
-                }
-            });
+                "index.html",
+                "favicon.ico"
+            ]);
+        </script>
 
-            var ctx3 = document.getElementById("myChart3").getContext('2d');
-            var myChart3 = new Chart(ctx3, {
-              type: 'bar',
-              data: {
-                labels: ["China", "India", "United States", "Indonesia", "Brazil", "Pakistan", "Nigeria", "Bangladesh", "Russia", "Japan"],
+        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="myChart2" width="400" height="400"></canvas>
+        <canvas id="myChart3" width="400" height="400"></canvas>
+
+<script>
+
+    head.ready(function () {
+
+
+        var ctx1 = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
                 datasets: [{
-                  label: 'Population',
-                  data: [1379302771, 1281935911, 326625791, 260580739, 207353391, 204924861, 190632261, 157826578, 142257519, 126451398],
-                  backgroundColor: [
-                    'rgba(255, 99, 132, 0.6)',
-                    'rgba(54, 162, 235, 0.6)',
-                    'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)',
-                    'rgba(255, 159, 64, 0.6)',
-                    'rgba(255, 99, 132, 0.6)',
-                    'rgba(54, 162, 235, 0.6)',
-                    'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)'
-                  ]
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
                 }]
-              }
-            });
-
-            var camera, scene, renderer;
-            var geometry, material, mesh;
-
-            function init() {
-
-                camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
-                camera.position.z = 1;
-
-                scene = new THREE.Scene();
-
-                geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
-                material = new THREE.MeshNormalMaterial();
-
-                mesh = new THREE.Mesh( geometry, material );
-                scene.add( mesh );
-
-                renderer = new THREE.WebGLRenderer( { antialias: true } );
-                renderer.setSize( window.innerWidth, window.innerHeight );
-                document.body.appendChild( renderer.domElement );
-
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
             }
-
-            function animate() {
-
-                requestAnimationFrame( animate );
-
-                mesh.rotation.x += 0.01;
-                mesh.rotation.y += 0.02;
-
-                renderer.render( scene, camera );
-
-            }
-
-            init();
-            animate();
-
-
         });
-    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+        var ctx2 = document.getElementById("myChart2").getContext('2d');
+        var myChart2 = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['春', '夏', '秋', '冬'],
+                datasets: [{
+                    fillColor: 'rgba(0,0,0,0)',
+                    strokeColor: 'rgba(220,180,0,1)',
+                    pointColor: 'rgba(220,180,0,1)',
+                    data: [11,37,10,3]
+                },
+                {
+                    fillColor: 'rgba(0,0,0,0)',
+                    strokeColor: 'rgba(151,187,205,1)',
+                    pointColor: 'rgba(151,187,205,1)',
+                    data: [9,29,15,1]
+                }]
+            },
+            options: {
+                responsive:true,
+                pointDotRadius:10,
+                bezierCurve:false,
+                scaleShowVerticalLines: false,
+                scaleGridLineColor: 'black'
+            }
+        });
+
+        var ctx3 = document.getElementById("myChart3").getContext('2d');
+        var myChart3 = new Chart(ctx3, {
+          type: 'bar',
+          data: {
+            labels: ["China", "India", "United States", "Indonesia", "Brazil", "Pakistan", "Nigeria", "Bangladesh", "Russia", "Japan"],
+            datasets: [{
+              label: 'Population',
+              data: [1379302771, 1281935911, 326625791, 260580739, 207353391, 204924861, 190632261, 157826578, 142257519, 126451398],
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(54, 162, 235, 0.6)',
+                'rgba(255, 206, 86, 0.6)',
+                'rgba(75, 192, 192, 0.6)',
+                'rgba(153, 102, 255, 0.6)',
+                'rgba(255, 159, 64, 0.6)',
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(54, 162, 235, 0.6)',
+                'rgba(255, 206, 86, 0.6)',
+                'rgba(75, 192, 192, 0.6)',
+                'rgba(153, 102, 255, 0.6)'
+              ]
+            }]
+          }
+        });
+
+        var camera, scene, renderer;
+        var geometry, material, mesh;
+
+        function init() {
+
+            camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
+            camera.position.z = 1;
+
+            scene = new THREE.Scene();
+
+            geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+            material = new THREE.MeshNormalMaterial();
+
+            mesh = new THREE.Mesh( geometry, material );
+            scene.add( mesh );
+
+            renderer = new THREE.WebGLRenderer( { antialias: true } );
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            document.body.appendChild( renderer.domElement );
+
+        }
+
+        function animate() {
+
+            requestAnimationFrame( animate );
+
+            mesh.rotation.x += 0.01;
+            mesh.rotation.y += 0.02;
+
+            renderer.render( scene, camera );
+
+        }
+
+        init();
+        animate();
+
+
+    });
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 
 
 <h2 id="说到加载图片，我们可以谈些什么"><a href="#说到加载图片，我们可以谈些什么" class="headerlink" title="说到加载图片，我们可以谈些什么"></a><a href="http://litten.me/2015/04/28/img-lazy-load/" target="_blank" rel="noopener">说到加载图片，我们可以谈些什么</a></h2><p>滚屏加载<br>特殊状态处理<br>上报监控<br>居中截取<br>支持webp</p>
 <h2 id="JAVASCRIPT-装载和执行"><a href="#JAVASCRIPT-装载和执行" class="headerlink" title="JAVASCRIPT 装载和执行"></a><a href="https://coolshell.cn/articles/9749.html" target="_blank" rel="noopener">JAVASCRIPT 装载和执行</a></h2><p>通常来说，浏览器对于Javascript的运行有两大特性：1）载入后马上执行，2）执行时会阻塞页面后续的内容（包括页面的渲染、其它资源的下载）。于是，如果有多个js文件被引入，那么对于浏览器来说，这些js文件被被串行地载入，并依次执行。</p>
 <p>因为javascript可能会来操作HTML文档的DOM树，所以，浏览器一般都不会像并行下载css文件并行下载js文件，因为这是js文件的特殊性造成的。所以，如果你的javascript想操作后面的DOM元素，基本上来说，浏览器都会报错说对象找不到。因为Javascript执行时，后面的HTML被阻塞住了，DOM树时还没有后面的DOM结点。所以程序也就报错了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;</span><br><span class="line">        src=&quot;https://coolshell.cn/asyncjs/alert.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;</span><br><span class="line">    src=&quot;https://coolshell.cn/asyncjs/alert.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <p>基本上来说，head里的script标签会阻塞后续资源的载入以及整个页面的生成。我专门做了一个示例你可以看看：<a href="https://coolshell.cn/asyncjs/async_test01.html" target="_blank" rel="noopener">示例一</a>。 注意：我的alert.js中只有一句话：alert(“hello world”) ，这更容易让你看到javascript是怎么阻塞后面的东西的。</p>
 <p>所以，你知道为什么有很多网站把javascript放在网页的最后面了，要么就是动用了window.onload或是docmuemt ready之类的事件。</p>
 <p>另外，因为绝大多数的Javascript代码并不需要等页面，所以，我们异步载入的功能。那么我们怎么异步载入呢？</p>
@@ -707,7 +707,7 @@
 <p>document.write方式</p>
 </blockquote>
 <p>于是，你可能以为document.write()这种方式能够解决不阻塞的方式。你当然会觉得，document.write了的 script标签后就可以执行后面的东西去了，这没错。对于在同一个script标签里的Javascript的代码来说，是这样的，但是对于整个页面来说，这个还是会阻塞。 下面是一段测试代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&gt;</span><br><span class="line">    function loadjs(script_filename) &#123;</span><br><span class="line">        document.write(&apos;&lt;&apos; + &apos;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&apos;);</span><br><span class="line">        document.write(&apos; src=&quot;&apos; + script_filename + &apos;&quot;&gt;&apos;);</span><br><span class="line">        document.write(&apos;&lt;&apos;+&apos;/script&apos;+&apos;&gt;&apos;);</span><br><span class="line">        alert(&quot;loadjs() exit...&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    var script = &apos;https://coolshell.cn/asyncjs/alert.js&apos;;</span><br><span class="line"></span><br><span class="line">    loadjs(script);</span><br><span class="line">    alert(&quot;loadjs() finished!&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&gt;</span><br><span class="line">   alert(&quot;another block&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&gt;</span><br><span class="line">function loadjs(script_filename) &#123;</span><br><span class="line">    document.write(&apos;&lt;&apos; + &apos;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&apos;);</span><br><span class="line">    document.write(&apos; src=&quot;&apos; + script_filename + &apos;&quot;&gt;&apos;);</span><br><span class="line">    document.write(&apos;&lt;&apos;+&apos;/script&apos;+&apos;&gt;&apos;);</span><br><span class="line">    alert(&quot;loadjs() exit...&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var script = &apos;https://coolshell.cn/asyncjs/alert.js&apos;;</span><br><span class="line"></span><br><span class="line">loadjs(script);</span><br><span class="line">alert(&quot;loadjs() finished!&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&gt;</span><br><span class="line">alert(&quot;another block&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <p>你觉得alert的顺序是什么？你可以在不同的浏览器里试一试。这里的想关的测试页面：<a href="https://coolshell.cn/asyncjs/async_test02.html" target="_blank" rel="noopener">示例二</a>。</p>
 <blockquote>
 <p>script的defer和async属性</p>
@@ -721,7 +721,7 @@
 <p>动态创建DOM方式</p>
 </blockquote>
 <p>这种方式可能是用得最多的了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function loadjs(script_filename) &#123;</span><br><span class="line">    var script = document.createElement(&apos;script&apos;);</span><br><span class="line">    script.setAttribute(&apos;type&apos;, &apos;text/javascript&apos;);</span><br><span class="line">    script.setAttribute(&apos;src&apos;, script_filename);</span><br><span class="line">    script.setAttribute(&apos;id&apos;, &apos;coolshell_script_id&apos;);</span><br><span class="line"></span><br><span class="line">    script_id = document.getElementById(&apos;coolshell_script_id&apos;);</span><br><span class="line">    if(script_id)&#123;</span><br><span class="line">        document.getElementsByTagName(&apos;head&apos;)[0].removeChild(script_id);</span><br><span class="line">    &#125;</span><br><span class="line">    document.getElementsByTagName(&apos;head&apos;)[0].appendChild(script);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var script = &apos;https://coolshell.cn/asyncjs/alert.js&apos;;</span><br><span class="line">loadjs(script);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function loadjs(script_filename) &#123;</span><br><span class="line">var script = document.createElement(&apos;script&apos;);</span><br><span class="line">script.setAttribute(&apos;type&apos;, &apos;text/javascript&apos;);</span><br><span class="line">script.setAttribute(&apos;src&apos;, script_filename);</span><br><span class="line">script.setAttribute(&apos;id&apos;, &apos;coolshell_script_id&apos;);</span><br><span class="line"></span><br><span class="line">script_id = document.getElementById(&apos;coolshell_script_id&apos;);</span><br><span class="line">if(script_id)&#123;</span><br><span class="line">    document.getElementsByTagName(&apos;head&apos;)[0].removeChild(script_id);</span><br><span class="line">&#125;</span><br><span class="line">document.getElementsByTagName(&apos;head&apos;)[0].appendChild(script);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var script = &apos;https://coolshell.cn/asyncjs/alert.js&apos;;</span><br><span class="line">loadjs(script);</span><br></pre></td></tr></table></figure>
 <p>这个方式几乎成了标准的异步载入js文件的方式，这个方式的演示请参看：<a href="https://coolshell.cn/asyncjs/async_test03.html" target="_blank" rel="noopener">示例三</a>。这方式还被玩出了JSONP的东东，也就是我可以为script的src指定某个后台的脚本（如PHP），而这个PHP返回一个javascript函数，其参数是一个json的字符串，返回来调用我们的预先定义好的javascript的函数。你可以看一下这个示例：<a href="https://coolshell.cn/t.js" target="_blank" rel="noopener">t.js</a> （这个示例是我之前在微博征集的一个异步ajax调用的小例子）</p>
 <blockquote>
 <p>按需异步载入js</p>
@@ -746,7 +746,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=cache/script src=&quot;./alert.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <p>因为”cache/script”，这个东西根本就不能被浏览器解析，所以浏览器也就不能把alert.js当javascript去执行，但是他又要去下载js文件，所以就可以搞定了。可惜的是，webkit严格符从了HTML的标准——对于这种不认识的东西，直接删除，什么也不干。于是，我们的梦又破了。</p>
 <p>所以，我们需要再hack一下，就像N多年前玩preload图片那样，我们可以动用object标签（也可以动用iframe标签），于是我们有下面这样的代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function cachejs(script_filename)&#123;</span><br><span class="line">    var cache = document.createElement(&apos;object&apos;);</span><br><span class="line">    cache.data = script_filename;</span><br><span class="line">    cache.id = &quot;coolshell_script_cache_id&quot;;</span><br><span class="line">    cache.width = 0;</span><br><span class="line">    cache.height = 0;</span><br><span class="line">    document.body.appendChild(cache);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function cachejs(script_filename)&#123;</span><br><span class="line">var cache = document.createElement(&apos;object&apos;);</span><br><span class="line">cache.data = script_filename;</span><br><span class="line">cache.id = &quot;coolshell_script_cache_id&quot;;</span><br><span class="line">cache.width = 0;</span><br><span class="line">cache.height = 0;</span><br><span class="line">document.body.appendChild(cache);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>然后，我们在的最后调用一下这个函数。请参看一下相关的示例：<a href="https://coolshell.cn/asyncjs/async_test06.html" target="_blank" rel="noopener">示例六</a></p>
 <p>在Chrome下按 Ctrl+Shit+I，切换到network页，你就可以看到下载了alert.js但是没有执行，然后我们再用示例五的方式，因为浏览器端有缓存了，不会再从服务器上下载alert.js了。所以，就能保证执行速度了。</p>
 <p>关于这种preload这种东西你应该不会陌生了。你还可以使用Ajax的方式，如：</p>
@@ -787,219 +787,219 @@
 <script>
 
 /*
- * Expected keys in object:
- * rooms, area, type
- */
+* Expected keys in object:
+* rooms, area, type
+*/
 var Node = function(object) {
-    for (var key in object)
-    {
-        this[key] = object[key];
-    }
+for (var key in object)
+{
+    this[key] = object[key];
+}
 };
 Node.prototype.measureDistances = function(area_range_obj, rooms_range_obj) {
-    var rooms_range = rooms_range_obj.max - rooms_range_obj.min;
-    var area_range  = area_range_obj.max  - area_range_obj.min;
+var rooms_range = rooms_range_obj.max - rooms_range_obj.min;
+var area_range  = area_range_obj.max  - area_range_obj.min;
 
-    for (var i in this.neighbors)
-    {
-        /* Just shortcut syntax */
-        var neighbor = this.neighbors[i];
+for (var i in this.neighbors)
+{
+    /* Just shortcut syntax */
+    var neighbor = this.neighbors[i];
 
-        var delta_rooms = neighbor.rooms - this.rooms;
-        delta_rooms = (delta_rooms ) / rooms_range;
+    var delta_rooms = neighbor.rooms - this.rooms;
+    delta_rooms = (delta_rooms ) / rooms_range;
 
-        var delta_area  = neighbor.area  - this.area;
-        delta_area = (delta_area ) / area_range;
+    var delta_area  = neighbor.area  - this.area;
+    delta_area = (delta_area ) / area_range;
 
-        neighbor.distance = Math.sqrt( delta_rooms*delta_rooms + delta_area*delta_area );
-    }
+    neighbor.distance = Math.sqrt( delta_rooms*delta_rooms + delta_area*delta_area );
+}
 };
 Node.prototype.sortByDistance = function() {
-    this.neighbors.sort(function (a, b) {
-        return a.distance - b.distance;
-    });
+this.neighbors.sort(function (a, b) {
+    return a.distance - b.distance;
+});
 };
 Node.prototype.guessType = function(k) {
-    var types = {};
+var types = {};
 
-    for (var i in this.neighbors.slice(0, k))
+for (var i in this.neighbors.slice(0, k))
+{
+    var neighbor = this.neighbors[i];
+
+    if ( ! types[neighbor.type] )
     {
-        var neighbor = this.neighbors[i];
-
-        if ( ! types[neighbor.type] )
-        {
-            types[neighbor.type] = 0;
-        }
-
-        types[neighbor.type] += 1;
+        types[neighbor.type] = 0;
     }
 
-    var guess = {type: false, count: 0};
-    for (var type in types)
+    types[neighbor.type] += 1;
+}
+
+var guess = {type: false, count: 0};
+for (var type in types)
+{
+    if (types[type] > guess.count)
     {
-        if (types[type] > guess.count)
-        {
-            guess.type = type;
-            guess.count = types[type];
-        }
+        guess.type = type;
+        guess.count = types[type];
     }
+}
 
-    this.guess = guess;
+this.guess = guess;
 
-    return types;
+return types;
 };
 
 
 
 var NodeList = function(k) {
-    this.nodes = [];
-    this.k = k;
+this.nodes = [];
+this.k = k;
 };
 NodeList.prototype.add = function(node) {
-    this.nodes.push(node);
+this.nodes.push(node);
 };
 NodeList.prototype.determineUnknown = function() {
 
-    this.calculateRanges();
+this.calculateRanges();
 
-    /*
-     * Loop through our nodes and look for unknown types.
-     */
-    for (var i in this.nodes)
+/*
+ * Loop through our nodes and look for unknown types.
+ */
+for (var i in this.nodes)
+{
+
+    if ( ! this.nodes[i].type)
     {
+        /*
+         * If the node is an unknown type, clone the nodes list and then measure distances.
+         */
 
-        if ( ! this.nodes[i].type)
+        /* Clone nodes */
+        this.nodes[i].neighbors = [];
+        for (var j in this.nodes)
         {
-            /*
-             * If the node is an unknown type, clone the nodes list and then measure distances.
-             */
-
-            /* Clone nodes */
-            this.nodes[i].neighbors = [];
-            for (var j in this.nodes)
-            {
-                if ( ! this.nodes[j].type)
-                    continue;
-                this.nodes[i].neighbors.push( new Node(this.nodes[j]) );
-            }
-
-            /* Measure distances */
-            this.nodes[i].measureDistances(this.areas, this.rooms);
-
-            /* Sort by distance */
-            this.nodes[i].sortByDistance();
-
-            /* Guess type */
-            console.log(this.nodes[i].guessType(this.k));
-
+            if ( ! this.nodes[j].type)
+                continue;
+            this.nodes[i].neighbors.push( new Node(this.nodes[j]) );
         }
+
+        /* Measure distances */
+        this.nodes[i].measureDistances(this.areas, this.rooms);
+
+        /* Sort by distance */
+        this.nodes[i].sortByDistance();
+
+        /* Guess type */
+        console.log(this.nodes[i].guessType(this.k));
+
     }
+}
 };
 NodeList.prototype.calculateRanges = function() {
-    this.areas = {min: 1000000, max: 0};
-    this.rooms = {min: 1000000, max: 0};
-    for (var i in this.nodes)
+this.areas = {min: 1000000, max: 0};
+this.rooms = {min: 1000000, max: 0};
+for (var i in this.nodes)
+{
+    if (this.nodes[i].rooms < this.rooms.min)
     {
-        if (this.nodes[i].rooms < this.rooms.min)
-        {
-            this.rooms.min = this.nodes[i].rooms;
-        }
-
-        if (this.nodes[i].rooms > this.rooms.max)
-        {
-            this.rooms.max = this.nodes[i].rooms;
-        }
-
-        if (this.nodes[i].area < this.areas.min)
-        {
-            this.areas.min = this.nodes[i].area;
-        }
-
-        if (this.nodes[i].area > this.areas.max)
-        {
-            this.areas.max = this.nodes[i].area;
-        }
+        this.rooms.min = this.nodes[i].rooms;
     }
+
+    if (this.nodes[i].rooms > this.rooms.max)
+    {
+        this.rooms.max = this.nodes[i].rooms;
+    }
+
+    if (this.nodes[i].area < this.areas.min)
+    {
+        this.areas.min = this.nodes[i].area;
+    }
+
+    if (this.nodes[i].area > this.areas.max)
+    {
+        this.areas.max = this.nodes[i].area;
+    }
+}
 
 };
 NodeList.prototype.draw = function(canvas_id) {
-    var rooms_range = this.rooms.max - this.rooms.min;
-    var areas_range = this.areas.max - this.areas.min;
+var rooms_range = this.rooms.max - this.rooms.min;
+var areas_range = this.areas.max - this.areas.min;
 
-    var canvas = document.getElementById(canvas_id);
-    var ctx = canvas.getContext("2d");
-    var width = 400;
-    var height = 400;
-    ctx.clearRect(0,0,width, height);
+var canvas = document.getElementById(canvas_id);
+var ctx = canvas.getContext("2d");
+var width = 400;
+var height = 400;
+ctx.clearRect(0,0,width, height);
 
-    for (var i in this.nodes)
+for (var i in this.nodes)
+{
+    ctx.save();
+
+    switch (this.nodes[i].type)
     {
-        ctx.save();
+        case 'apartment':
+            ctx.fillStyle = 'red';
+            break;
+        case 'house':
+            ctx.fillStyle = 'green';
+            break;
+        case 'flat':
+            ctx.fillStyle = 'blue';
+            break;
+        default:
+            ctx.fillStyle = '#666666';
+    }
 
-        switch (this.nodes[i].type)
+    var padding = 40;
+    var x_shift_pct = (width  - padding) / width;
+    var y_shift_pct = (height - padding) / height;
+
+    var x = (this.nodes[i].rooms - this.rooms.min) * (width  / rooms_range) * x_shift_pct + (padding / 2);
+    var y = (this.nodes[i].area  - this.areas.min) * (height / areas_range) * y_shift_pct + (padding / 2);
+    y = Math.abs(y - height);
+
+
+    ctx.translate(x, y);
+    ctx.beginPath();
+    ctx.arc(0, 0, 5, 0, Math.PI*2, true);
+    ctx.fill();
+    ctx.closePath();
+
+
+    /*
+     * Is this an unknown node? If so, draw the radius of influence
+     */
+
+    if ( ! this.nodes[i].type )
+    {
+        switch (this.nodes[i].guess.type)
         {
             case 'apartment':
-                ctx.fillStyle = 'red';
+                ctx.strokeStyle = 'red';
                 break;
             case 'house':
-                ctx.fillStyle = 'green';
+                ctx.strokeStyle = 'green';
                 break;
             case 'flat':
-                ctx.fillStyle = 'blue';
+                ctx.strokeStyle = 'blue';
                 break;
             default:
-                ctx.fillStyle = '#666666';
+                ctx.strokeStyle = '#666666';
         }
 
-        var padding = 40;
-        var x_shift_pct = (width  - padding) / width;
-        var y_shift_pct = (height - padding) / height;
-
-        var x = (this.nodes[i].rooms - this.rooms.min) * (width  / rooms_range) * x_shift_pct + (padding / 2);
-        var y = (this.nodes[i].area  - this.areas.min) * (height / areas_range) * y_shift_pct + (padding / 2);
-        y = Math.abs(y - height);
-
-
-        ctx.translate(x, y);
+        var radius = this.nodes[i].neighbors[this.k - 1].distance * width;
+        radius *= x_shift_pct;
         ctx.beginPath();
-        ctx.arc(0, 0, 5, 0, Math.PI*2, true);
-        ctx.fill();
+        ctx.arc(0, 0, radius, 0, Math.PI*2, true);
+        ctx.stroke();
         ctx.closePath();
 
-
-        /*
-         * Is this an unknown node? If so, draw the radius of influence
-         */
-
-        if ( ! this.nodes[i].type )
-        {
-            switch (this.nodes[i].guess.type)
-            {
-                case 'apartment':
-                    ctx.strokeStyle = 'red';
-                    break;
-                case 'house':
-                    ctx.strokeStyle = 'green';
-                    break;
-                case 'flat':
-                    ctx.strokeStyle = 'blue';
-                    break;
-                default:
-                    ctx.strokeStyle = '#666666';
-            }
-
-            var radius = this.nodes[i].neighbors[this.k - 1].distance * width;
-            radius *= x_shift_pct;
-            ctx.beginPath();
-            ctx.arc(0, 0, radius, 0, Math.PI*2, true);
-            ctx.stroke();
-            ctx.closePath();
-
-        }
-
-        ctx.restore();
-
     }
+
+    ctx.restore();
+
+}
 
 };
 
@@ -1008,45 +1008,45 @@ NodeList.prototype.draw = function(canvas_id) {
 var nodes;
 
 var data = [
-    {rooms: 1, area: 350, type: 'apartment'},
-    {rooms: 2, area: 300, type: 'apartment'},
-    {rooms: 3, area: 300, type: 'apartment'},
-    {rooms: 4, area: 250, type: 'apartment'},
-    {rooms: 4, area: 500, type: 'apartment'},
-    {rooms: 4, area: 400, type: 'apartment'},
-    {rooms: 5, area: 450, type: 'apartment'},
+{rooms: 1, area: 350, type: 'apartment'},
+{rooms: 2, area: 300, type: 'apartment'},
+{rooms: 3, area: 300, type: 'apartment'},
+{rooms: 4, area: 250, type: 'apartment'},
+{rooms: 4, area: 500, type: 'apartment'},
+{rooms: 4, area: 400, type: 'apartment'},
+{rooms: 5, area: 450, type: 'apartment'},
 
-    {rooms: 7,  area: 850,  type: 'house'},
-    {rooms: 7,  area: 900,  type: 'house'},
-    {rooms: 7,  area: 1200, type: 'house'},
-    {rooms: 8,  area: 1500, type: 'house'},
-    {rooms: 9,  area: 1300, type: 'house'},
-    {rooms: 8,  area: 1240, type: 'house'},
-    {rooms: 10, area: 1700, type: 'house'},
-    {rooms: 9,  area: 1000, type: 'house'},
+{rooms: 7,  area: 850,  type: 'house'},
+{rooms: 7,  area: 900,  type: 'house'},
+{rooms: 7,  area: 1200, type: 'house'},
+{rooms: 8,  area: 1500, type: 'house'},
+{rooms: 9,  area: 1300, type: 'house'},
+{rooms: 8,  area: 1240, type: 'house'},
+{rooms: 10, area: 1700, type: 'house'},
+{rooms: 9,  area: 1000, type: 'house'},
 
-    {rooms: 1, area: 800,  type: 'flat'},
-    {rooms: 3, area: 900,  type: 'flat'},
-    {rooms: 2, area: 700,  type: 'flat'},
-    {rooms: 1, area: 900,  type: 'flat'},
-    {rooms: 2, area: 1150, type: 'flat'},
-    {rooms: 1, area: 1000, type: 'flat'},
-    {rooms: 2, area: 1200, type: 'flat'},
-    {rooms: 1, area: 1300, type: 'flat'},
+{rooms: 1, area: 800,  type: 'flat'},
+{rooms: 3, area: 900,  type: 'flat'},
+{rooms: 2, area: 700,  type: 'flat'},
+{rooms: 1, area: 900,  type: 'flat'},
+{rooms: 2, area: 1150, type: 'flat'},
+{rooms: 1, area: 1000, type: 'flat'},
+{rooms: 2, area: 1200, type: 'flat'},
+{rooms: 1, area: 1300, type: 'flat'},
 ];
 var run = function() {
 
-    nodes = new NodeList(3);
-    for (var i in data)
-    {
-        nodes.add( new Node(data[i]) );
-    }
-    var random_rooms = Math.round( Math.random() * 10 );
-    var random_area = Math.round( Math.random() * 2000 );
-    nodes.add( new Node({rooms: random_rooms, area: random_area, type: false}) );
+nodes = new NodeList(3);
+for (var i in data)
+{
+    nodes.add( new Node(data[i]) );
+}
+var random_rooms = Math.round( Math.random() * 10 );
+var random_area = Math.round( Math.random() * 2000 );
+nodes.add( new Node({rooms: random_rooms, area: random_area, type: false}) );
 
-    nodes.determineUnknown();
-    nodes.draw("canvas");
+nodes.determineUnknown();
+nodes.draw("canvas");
 };
 
 
@@ -1197,7 +1197,7 @@ run();
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">206</span>
+                    <span class="site-state-item-count">207</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1883,7 +1883,9 @@ run();
                     
                       
                     
-                    <span class="site-state-item-count">324</span>
+                      
+                    
+                    <span class="site-state-item-count">325</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

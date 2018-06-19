@@ -132,7 +132,7 @@
 <meta property="og:description" content="architecture-free neural network library for node.js and the browser">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/synaptic20180507.jpg?imageMogr2/thumbnail/!75p">
-<meta property="og:updated_time" content="2018-05-07T07:18:11.414Z">
+<meta property="og:updated_time" content="2018-06-19T03:35:44.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Synaptic">
 <meta name="twitter:description" content="architecture-free neural network library for node.js and the browser">
@@ -495,42 +495,42 @@
 <p> <a href="https://github.com/cazala/synaptic" target="_blank" rel="noopener">architecture-free neural network library for node.js and the browser</a></p>
 </blockquote>
 <a id="more"></a>
-<h2 id="synaptic"><a href="#synaptic" class="headerlink" title="synaptic"></a><a href="https://github.com/cazala/synaptic" target="_blank" rel="noopener">synaptic</a></h2><h2 id="architecture-free-neural-network-library-for-node-js-and-the-browser"><a href="#architecture-free-neural-network-library-for-node-js-and-the-browser" class="headerlink" title="architecture-free neural network library for node.js and the browser"></a><a href="https://github.com/cazala/synaptic" target="_blank" rel="noopener">architecture-free neural network library for node.js and the browser</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line"></span><br><span class="line">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var Neuron = synaptic.Neuron,</span><br><span class="line">	Layer = synaptic.Layer,</span><br><span class="line">	Network = synaptic.Network,</span><br><span class="line">	Trainer = synaptic.Trainer,</span><br><span class="line">	Architect = synaptic.Architect;</span><br><span class="line"></span><br><span class="line">    function Perceptron(input, hidden, output)</span><br><span class="line">    &#123;</span><br><span class="line">    	// create the layers</span><br><span class="line">    	var inputLayer = new Layer(input);</span><br><span class="line">    	var hiddenLayer = new Layer(hidden);</span><br><span class="line">    	var outputLayer = new Layer(output);</span><br><span class="line"></span><br><span class="line">    	// connect the layers</span><br><span class="line">    	inputLayer.project(hiddenLayer);</span><br><span class="line">    	hiddenLayer.project(outputLayer);</span><br><span class="line"></span><br><span class="line">    	// set the layers</span><br><span class="line">    	this.set(&#123;</span><br><span class="line">    		input: inputLayer,</span><br><span class="line">    		hidden: [hiddenLayer],</span><br><span class="line">    		output: outputLayer</span><br><span class="line">    	&#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // extend the prototype chain</span><br><span class="line">    Perceptron.prototype = new Network();</span><br><span class="line">    Perceptron.prototype.constructor = Perceptron;</span><br><span class="line"></span><br><span class="line">    var myPerceptron = new Perceptron(2,3,1);</span><br><span class="line">var myTrainer = new Trainer(myPerceptron);</span><br><span class="line"></span><br><span class="line">myTrainer.XOR(); // &#123; error: 0.004998819355993572, iterations: 21871, time: 356 &#125;</span><br><span class="line"></span><br><span class="line">myPerceptron.activate([0,0]); // 0.0268581547421616</span><br><span class="line">myPerceptron.activate([1,0]); // 0.9829673642853368</span><br><span class="line">myPerceptron.activate([0,1]); // 0.9831714267395621</span><br><span class="line">myPerceptron.activate([1,1]); // 0.02128894618097928</span><br><span class="line"></span><br><span class="line">function LSTM(input, blocks, output)</span><br><span class="line">&#123;</span><br><span class="line">	// create the layers</span><br><span class="line">	var inputLayer = new Layer(input);</span><br><span class="line">	var inputGate = new Layer(blocks);</span><br><span class="line">	var forgetGate = new Layer(blocks);</span><br><span class="line">	var memoryCell = new Layer(blocks);</span><br><span class="line">	var outputGate = new Layer(blocks);</span><br><span class="line">	var outputLayer = new Layer(output);</span><br><span class="line"></span><br><span class="line">	// connections from input layer</span><br><span class="line">	var input = inputLayer.project(memoryCell);</span><br><span class="line">	inputLayer.project(inputGate);</span><br><span class="line">	inputLayer.project(forgetGate);</span><br><span class="line">	inputLayer.project(outputGate);</span><br><span class="line"></span><br><span class="line">	// connections from memory cell</span><br><span class="line">	var output = memoryCell.project(outputLayer);</span><br><span class="line"></span><br><span class="line">	// self-connection</span><br><span class="line">	var self = memoryCell.project(memoryCell);</span><br><span class="line"></span><br><span class="line">	// peepholes</span><br><span class="line">	memoryCell.project(inputGate);</span><br><span class="line">	memoryCell.project(forgetGate);</span><br><span class="line">	memoryCell.project(outputGate);</span><br><span class="line"></span><br><span class="line">	// gates</span><br><span class="line">	inputGate.gate(input, Layer.gateType.INPUT);</span><br><span class="line">	forgetGate.gate(self, Layer.gateType.ONE_TO_ONE);</span><br><span class="line">	outputGate.gate(output, Layer.gateType.OUTPUT);</span><br><span class="line"></span><br><span class="line">	// input to output direct connection</span><br><span class="line">	inputLayer.project(outputLayer);</span><br><span class="line"></span><br><span class="line">	// set the layers of the neural network</span><br><span class="line">	this.set(&#123;</span><br><span class="line">		input: inputLayer,</span><br><span class="line">		hidden: [inputGate, forgetGate, memoryCell, outputGate],</span><br><span class="line">		output: outputLayer</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// extend the prototype chain</span><br><span class="line">LSTM.prototype = new Network();</span><br><span class="line">LSTM.prototype.constructor = LSTM;</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="synaptic"><a href="#synaptic" class="headerlink" title="synaptic"></a><a href="https://github.com/cazala/synaptic" target="_blank" rel="noopener">synaptic</a></h2><h2 id="architecture-free-neural-network-library-for-node-js-and-the-browser"><a href="#architecture-free-neural-network-library-for-node-js-and-the-browser" class="headerlink" title="architecture-free neural network library for node.js and the browser"></a><a href="https://github.com/cazala/synaptic" target="_blank" rel="noopener">architecture-free neural network library for node.js and the browser</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line"></span><br><span class="line">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var Neuron = synaptic.Neuron,</span><br><span class="line">Layer = synaptic.Layer,</span><br><span class="line">Network = synaptic.Network,</span><br><span class="line">Trainer = synaptic.Trainer,</span><br><span class="line">Architect = synaptic.Architect;</span><br><span class="line"></span><br><span class="line">function Perceptron(input, hidden, output)</span><br><span class="line">&#123;</span><br><span class="line">	// create the layers</span><br><span class="line">	var inputLayer = new Layer(input);</span><br><span class="line">	var hiddenLayer = new Layer(hidden);</span><br><span class="line">	var outputLayer = new Layer(output);</span><br><span class="line"></span><br><span class="line">	// connect the layers</span><br><span class="line">	inputLayer.project(hiddenLayer);</span><br><span class="line">	hiddenLayer.project(outputLayer);</span><br><span class="line"></span><br><span class="line">	// set the layers</span><br><span class="line">	this.set(&#123;</span><br><span class="line">		input: inputLayer,</span><br><span class="line">		hidden: [hiddenLayer],</span><br><span class="line">		output: outputLayer</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// extend the prototype chain</span><br><span class="line">Perceptron.prototype = new Network();</span><br><span class="line">Perceptron.prototype.constructor = Perceptron;</span><br><span class="line"></span><br><span class="line">var myPerceptron = new Perceptron(2,3,1);</span><br><span class="line">var myTrainer = new Trainer(myPerceptron);</span><br><span class="line"></span><br><span class="line">myTrainer.XOR(); // &#123; error: 0.004998819355993572, iterations: 21871, time: 356 &#125;</span><br><span class="line"></span><br><span class="line">myPerceptron.activate([0,0]); // 0.0268581547421616</span><br><span class="line">myPerceptron.activate([1,0]); // 0.9829673642853368</span><br><span class="line">myPerceptron.activate([0,1]); // 0.9831714267395621</span><br><span class="line">myPerceptron.activate([1,1]); // 0.02128894618097928</span><br><span class="line"></span><br><span class="line">function LSTM(input, blocks, output)</span><br><span class="line">&#123;</span><br><span class="line">// create the layers</span><br><span class="line">var inputLayer = new Layer(input);</span><br><span class="line">var inputGate = new Layer(blocks);</span><br><span class="line">var forgetGate = new Layer(blocks);</span><br><span class="line">var memoryCell = new Layer(blocks);</span><br><span class="line">var outputGate = new Layer(blocks);</span><br><span class="line">var outputLayer = new Layer(output);</span><br><span class="line"></span><br><span class="line">// connections from input layer</span><br><span class="line">var input = inputLayer.project(memoryCell);</span><br><span class="line">inputLayer.project(inputGate);</span><br><span class="line">inputLayer.project(forgetGate);</span><br><span class="line">inputLayer.project(outputGate);</span><br><span class="line"></span><br><span class="line">// connections from memory cell</span><br><span class="line">var output = memoryCell.project(outputLayer);</span><br><span class="line"></span><br><span class="line">// self-connection</span><br><span class="line">var self = memoryCell.project(memoryCell);</span><br><span class="line"></span><br><span class="line">// peepholes</span><br><span class="line">memoryCell.project(inputGate);</span><br><span class="line">memoryCell.project(forgetGate);</span><br><span class="line">memoryCell.project(outputGate);</span><br><span class="line"></span><br><span class="line">// gates</span><br><span class="line">inputGate.gate(input, Layer.gateType.INPUT);</span><br><span class="line">forgetGate.gate(self, Layer.gateType.ONE_TO_ONE);</span><br><span class="line">outputGate.gate(output, Layer.gateType.OUTPUT);</span><br><span class="line"></span><br><span class="line">// input to output direct connection</span><br><span class="line">inputLayer.project(outputLayer);</span><br><span class="line"></span><br><span class="line">// set the layers of the neural network</span><br><span class="line">this.set(&#123;</span><br><span class="line">	input: inputLayer,</span><br><span class="line">	hidden: [inputGate, forgetGate, memoryCell, outputGate],</span><br><span class="line">	output: outputLayer</span><br><span class="line">&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// extend the prototype chain</span><br><span class="line">LSTM.prototype = new Network();</span><br><span class="line">LSTM.prototype.constructor = LSTM;</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
 <head>
 
 <!-- hexo-inject:begin --><!-- hexo-inject:end --><script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
 
 <script>
 var Neuron = synaptic.Neuron,
-    Layer = synaptic.Layer,
-    Network = synaptic.Network,
-    Trainer = synaptic.Trainer,
-    Architect = synaptic.Architect;
+Layer = synaptic.Layer,
+Network = synaptic.Network,
+Trainer = synaptic.Trainer,
+Architect = synaptic.Architect;
 
-    function Perceptron(input, hidden, output)
-    {
-        // create the layers
-        var inputLayer = new Layer(input);
-        var hiddenLayer = new Layer(hidden);
-        var outputLayer = new Layer(output);
+function Perceptron(input, hidden, output)
+{
+    // create the layers
+    var inputLayer = new Layer(input);
+    var hiddenLayer = new Layer(hidden);
+    var outputLayer = new Layer(output);
 
-        // connect the layers
-        inputLayer.project(hiddenLayer);
-        hiddenLayer.project(outputLayer);
+    // connect the layers
+    inputLayer.project(hiddenLayer);
+    hiddenLayer.project(outputLayer);
 
-        // set the layers
-        this.set({
-            input: inputLayer,
-            hidden: [hiddenLayer],
-            output: outputLayer
-        });
-    }
+    // set the layers
+    this.set({
+        input: inputLayer,
+        hidden: [hiddenLayer],
+        output: outputLayer
+    });
+}
 
-    // extend the prototype chain
-    Perceptron.prototype = new Network();
-    Perceptron.prototype.constructor = Perceptron;
+// extend the prototype chain
+Perceptron.prototype = new Network();
+Perceptron.prototype.constructor = Perceptron;
 
-    var myPerceptron = new Perceptron(2,3,1);
+var myPerceptron = new Perceptron(2,3,1);
 var myTrainer = new Trainer(myPerceptron);
 
 myTrainer.XOR(); // { error: 0.004998819355993572, iterations: 21871, time: 356 }
@@ -542,45 +542,45 @@ myPerceptron.activate([1,1]); // 0.02128894618097928
 
 function LSTM(input, blocks, output)
 {
-    // create the layers
-    var inputLayer = new Layer(input);
-    var inputGate = new Layer(blocks);
-    var forgetGate = new Layer(blocks);
-    var memoryCell = new Layer(blocks);
-    var outputGate = new Layer(blocks);
-    var outputLayer = new Layer(output);
+// create the layers
+var inputLayer = new Layer(input);
+var inputGate = new Layer(blocks);
+var forgetGate = new Layer(blocks);
+var memoryCell = new Layer(blocks);
+var outputGate = new Layer(blocks);
+var outputLayer = new Layer(output);
 
-    // connections from input layer
-    var input = inputLayer.project(memoryCell);
-    inputLayer.project(inputGate);
-    inputLayer.project(forgetGate);
-    inputLayer.project(outputGate);
+// connections from input layer
+var input = inputLayer.project(memoryCell);
+inputLayer.project(inputGate);
+inputLayer.project(forgetGate);
+inputLayer.project(outputGate);
 
-    // connections from memory cell
-    var output = memoryCell.project(outputLayer);
+// connections from memory cell
+var output = memoryCell.project(outputLayer);
 
-    // self-connection
-    var self = memoryCell.project(memoryCell);
+// self-connection
+var self = memoryCell.project(memoryCell);
 
-    // peepholes
-    memoryCell.project(inputGate);
-    memoryCell.project(forgetGate);
-    memoryCell.project(outputGate);
+// peepholes
+memoryCell.project(inputGate);
+memoryCell.project(forgetGate);
+memoryCell.project(outputGate);
 
-    // gates
-    inputGate.gate(input, Layer.gateType.INPUT);
-    forgetGate.gate(self, Layer.gateType.ONE_TO_ONE);
-    outputGate.gate(output, Layer.gateType.OUTPUT);
+// gates
+inputGate.gate(input, Layer.gateType.INPUT);
+forgetGate.gate(self, Layer.gateType.ONE_TO_ONE);
+outputGate.gate(output, Layer.gateType.OUTPUT);
 
-    // input to output direct connection
-    inputLayer.project(outputLayer);
+// input to output direct connection
+inputLayer.project(outputLayer);
 
-    // set the layers of the neural network
-    this.set({
-        input: inputLayer,
-        hidden: [inputGate, forgetGate, memoryCell, outputGate],
-        output: outputLayer
-    });
+// set the layers of the neural network
+this.set({
+    input: inputLayer,
+    hidden: [inputGate, forgetGate, memoryCell, outputGate],
+    output: outputLayer
+});
 }
 
 // extend the prototype chain
@@ -593,113 +593,113 @@ LSTM.prototype.constructor = LSTM;
 
 
 <h2 id="Learn-Image-Filters"><a href="#Learn-Image-Filters" class="headerlink" title="Learn Image Filters"></a><a href="http://caza.la/synaptic/#/image-filters" target="_blank" rel="noopener">Learn Image Filters</a></h2><html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title>Synaptic - The javascript neural network library</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="http://caza.la/synaptic/bower_components/bootstrap/dist/css/bootstrap.css">
-    <!-- endbower -->
-    <link rel="stylesheet" href="http://caza.la/synaptic/bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://caza.la/synaptic/bower_components/bootswatch-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.1/animate.min.css">
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="http://caza.la/synaptic/styles/main.css">
-    <!-- endbuild -->
-    <link rel="icon" type="image/png" href="http://caza.la/synaptic/favicon.png">
-  </head>
-  <body ng-app="gitHubApp">
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Synaptic - The javascript neural network library</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- build:css(.) styles/vendor.css -->
+<!-- bower:css -->
+<link rel="stylesheet" href="http://caza.la/synaptic/bower_components/bootstrap/dist/css/bootstrap.css">
+<!-- endbower -->
+<link rel="stylesheet" href="http://caza.la/synaptic/bower_components/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://caza.la/synaptic/bower_components/bootswatch-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.1/animate.min.css">
+<!-- endbuild -->
+<!-- build:css(.tmp) styles/main.css -->
+<link rel="stylesheet" href="http://caza.la/synaptic/styles/main.css">
+<!-- endbuild -->
+<link rel="icon" type="image/png" href="http://caza.la/synaptic/favicon.png">
+</head>
+<body ng-app="gitHubApp">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <!-- Add your site or application content here -->
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="NavbarCtrl">
-        <div class="container-fluid">
-          <div class="navbar-header">
+<!-- Add your site or application content here -->
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="NavbarCtrl">
+    <div class="container-fluid">
+      <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-            <a class="navbar-brand" href="#/"><strong>synaptic</strong>.js</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li ng-class="{ active: navbarActive == 'home' }"><a href="#/">Home</a></li>
-              <li class="dropdown" ng-class="{ active: navbarActive == 'demos' }">
-                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Demos <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#/xor">Learn XOR</a></li>
-                  <li><a href="#/dsr">Discrete Sequence Recall</a></li>
-                  <li><a href="#/image-filters">Learn Image Filters</a></li>
-                  <li><a href="#/paint-an-image">Paint An Image</a></li>
-                  <li><a href="#/self-organizing-map">Self Organizing Map</a></li>
-                  <li><a href="#/wikipedia">Read From Wikipedia</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="https://github.com/cazala/synaptic/wiki/Neurons" target="_blank">Neurons</a></li>
-                  <li><a href="https://github.com/cazala/synaptic/wiki/Networks" target="_blank">Networks</a></li>
-                  <li><a href="https://github.com/cazala/synaptic/wiki/Layers" target="_blank">Layers</a></li>
-                  <li><a href="https://github.com/cazala/synaptic/wiki/Trainer" target="_blank">Trainer</a></li>
-                  <li><a href="https://github.com/cazala/synaptic/wiki/Architect" target="_blank">Architect</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-form navbar-right hidden-xs hidden-sm">
-              <a href="https://github.com/cazala/synaptic" target="_blank" class="btn btn-default"><i class="fa fa-lg fa-github"></i> Download</a>
-            </ul>
-          </div>
-        </div>
+        <a class="navbar-brand" href="#/"><strong>synaptic</strong>.js</a>
       </div>
 
-    <div style="position: relative">
-    <div class="main-view" ng-view=""></div>
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+        <ul class="nav navbar-nav">
+          <li ng-class="{ active: navbarActive == 'home' }"><a href="#/">Home</a></li>
+          <li class="dropdown" ng-class="{ active: navbarActive == 'demos' }">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#/xor">Learn XOR</a></li>
+              <li><a href="#/dsr">Discrete Sequence Recall</a></li>
+              <li><a href="#/image-filters">Learn Image Filters</a></li>
+              <li><a href="#/paint-an-image">Paint An Image</a></li>
+              <li><a href="#/self-organizing-map">Self Organizing Map</a></li>
+              <li><a href="#/wikipedia">Read From Wikipedia</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="https://github.com/cazala/synaptic/wiki/Neurons" target="_blank">Neurons</a></li>
+              <li><a href="https://github.com/cazala/synaptic/wiki/Networks" target="_blank">Networks</a></li>
+              <li><a href="https://github.com/cazala/synaptic/wiki/Layers" target="_blank">Layers</a></li>
+              <li><a href="https://github.com/cazala/synaptic/wiki/Trainer" target="_blank">Trainer</a></li>
+              <li><a href="https://github.com/cazala/synaptic/wiki/Architect" target="_blank">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-form navbar-right hidden-xs hidden-sm">
+          <a href="https://github.com/cazala/synaptic" target="_blank" class="btn btn-default"><i class="fa fa-lg fa-github"></i> Download</a>
+        </ul>
+      </div>
+    </div>
   </div>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="http://caza.la/synaptic/bower_components/jquery/dist/jquery.js"></script>
-    <script src="http://caza.la/synaptic/bower_components/angular/angular.js"></script>
-    <script src="http://caza.la/synaptic/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="http://caza.la/synaptic/bower_components/angular-animate/angular-animate.js"></script>
-    <script src="http://caza.la/synaptic/bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="http://caza.la/synaptic/bower_components/angular-resource/angular-resource.js"></script>
-    <script src="http://caza.la/synaptic/bower_components/angular-route/angular-route.js"></script>
-    <script src="http://caza.la/synaptic/bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="http://caza.la/synaptic/bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <script src="http://caza.la/synaptic/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
-    <!-- endbuild -->
+<div style="position: relative">
+<div class="main-view" ng-view=""></div>
+</div>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="http://caza.la/synaptic/scripts/homepage/synaptic.js"></script>
-        <script src="http://caza.la/synaptic/scripts/homepage/vector.js"></script>
-        <script src="http://caza.la/synaptic/scripts/homepage/creature.js"></script>
-        <script src="http://caza.la/synaptic/scripts/homepage/world.js"></script>
-        <script src="http://caza.la/synaptic/scripts/app.js"></script>
-        <script src="http://caza.la/synaptic/scripts/controllers/main.js"></script>
-        <script src="http://caza.la/synaptic/scripts/controllers/about.js"></script>
-        <script src="http://caza.la/synaptic/scripts/controllers/wikipedia.js"></script>
-        <script src="http://caza.la/synaptic/scripts/controllers/navbar.js"></script>
-        <script src="http://caza.la/synaptic/scripts/controllers/xor.js"></script>
-        <script src="http://caza.la/synaptic/scripts/controllers/dsr.js"></script>
-        <script src="http://caza.la/synaptic/scripts/controllers/image-filters.js"></script>
-        <script src="http://caza.la/synaptic/scripts/controllers/paint-an-image.js"></script>
-        <script src="http://caza.la/synaptic/scripts/controllers/self-organizing-map.js"></script>
-        <!-- endbuild --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="http://caza.la/synaptic/bower_components/jquery/dist/jquery.js"></script>
+<script src="http://caza.la/synaptic/bower_components/angular/angular.js"></script>
+<script src="http://caza.la/synaptic/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="http://caza.la/synaptic/bower_components/angular-animate/angular-animate.js"></script>
+<script src="http://caza.la/synaptic/bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="http://caza.la/synaptic/bower_components/angular-resource/angular-resource.js"></script>
+<script src="http://caza.la/synaptic/bower_components/angular-route/angular-route.js"></script>
+<script src="http://caza.la/synaptic/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="http://caza.la/synaptic/bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<script src="http://caza.la/synaptic/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="http://caza.la/synaptic/scripts/homepage/synaptic.js"></script>
+    <script src="http://caza.la/synaptic/scripts/homepage/vector.js"></script>
+    <script src="http://caza.la/synaptic/scripts/homepage/creature.js"></script>
+    <script src="http://caza.la/synaptic/scripts/homepage/world.js"></script>
+    <script src="http://caza.la/synaptic/scripts/app.js"></script>
+    <script src="http://caza.la/synaptic/scripts/controllers/main.js"></script>
+    <script src="http://caza.la/synaptic/scripts/controllers/about.js"></script>
+    <script src="http://caza.la/synaptic/scripts/controllers/wikipedia.js"></script>
+    <script src="http://caza.la/synaptic/scripts/controllers/navbar.js"></script>
+    <script src="http://caza.la/synaptic/scripts/controllers/xor.js"></script>
+    <script src="http://caza.la/synaptic/scripts/controllers/dsr.js"></script>
+    <script src="http://caza.la/synaptic/scripts/controllers/image-filters.js"></script>
+    <script src="http://caza.la/synaptic/scripts/controllers/paint-an-image.js"></script>
+    <script src="http://caza.la/synaptic/scripts/controllers/self-organizing-map.js"></script>
+    <!-- endbuild --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
 
@@ -853,7 +853,7 @@ LSTM.prototype.constructor = LSTM;
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">206</span>
+                    <span class="site-state-item-count">207</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1539,7 +1539,9 @@ LSTM.prototype.constructor = LSTM;
                     
                       
                     
-                    <span class="site-state-item-count">324</span>
+                      
+                    
+                    <span class="site-state-item-count">325</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

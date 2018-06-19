@@ -156,7 +156,7 @@
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015092802-1.jpg">
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015092801-1.jpg">
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015092803.png">
-<meta property="og:updated_time" content="2018-05-02T07:08:07.267Z">
+<meta property="og:updated_time" content="2018-06-19T03:35:44.881Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Computer">
 <meta name="twitter:description" content="会计算的机器设备。——DeepCreator">
@@ -679,7 +679,7 @@
 <p>当时，搭配的操作系统是86-DOS。这个操作系统需要的内存最少是32KB。我们知道，内存地址从0x0000开始编号，32KB的内存就是0x0000～0x7FFF。</p>
 <p>8088芯片本身需要占用0x0000～0x03FF，用来保存各种中断处理程序的储存位置。（主引导记录本身就是中断信号INT 19h的处理程序。）所以，内存只剩下0x0400～0x7FFF可以使用。</p>
 <p>为了把尽量多的连续内存留给操作系统，主引导记录就被放到了内存地址的尾部。由于一个扇区是512字节，主引导记录本身也会产生数据，需要另外留出512字节保存。所以，它的预留位置就变成了：</p>
-<p>  0x7FFF - 512 - 512 + 1 = 0x7C00<br>0x7C00就是这样来的。</p>
+<p>0x7FFF - 512 - 512 + 1 = 0x7C00<br>0x7C00就是这样来的。</p>
 <p>计算机启动后，32KB内存的使用情况如下。</p>
 <p>+——————————- 0x0<br>| Interrupts vectors<br>+——————————- 0x400<br>| BIOS data area<br>+——————————- 0x5??<br>| OS load area<br>+——————————- 0x7C00<br>| Boot sector<br>+——————————- 0x7E00<br>| Boot data/stack<br>+——————————- 0x7FFF<br>| (not used)<br>+——————————- (…)<br>（完）</p>
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://coolshell.cn/articles/1023.html" target="_blank" rel="noopener">UNIX 40年：昨天，今天和明天</a><br><a href="https://coolshell.cn/articles/1032.html" target="_blank" rel="noopener">UNIX 40年：UNIX年鉴</a><br>《Unix传奇》<a href="http://blog.csdn.net/haoel/archive/2007/03/27/1542340.aspx" target="_blank" rel="noopener">上篇</a>，<a href="http://blog.csdn.net/haoel/archive/2007/03/27/1542353.aspx" target="_blank" rel="noopener">下篇</a><br><a href="http://blog.csdn.net/haoel/archive/2007/07/13/1688006.aspx" target="_blank" rel="noopener">《Unix的现状与未来》</a></p>
@@ -824,7 +824,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">206</span>
+                    <span class="site-state-item-count">207</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1510,7 +1510,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">324</span>
+                      
+                    
+                    <span class="site-state-item-count">325</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

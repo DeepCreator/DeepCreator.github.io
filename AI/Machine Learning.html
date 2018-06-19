@@ -132,7 +132,7 @@
 <meta property="og:description" content="机器学习(Machine Learning, ML)是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科。专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。它是人工智能的核心，是使计算机具有智能的根本途径，其应用遍及人工智能的各个领域，它主要使用归纳、综合而不是演绎。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/machinelearning20180507.png?imageMogr2/thumbnail/!75p">
-<meta property="og:updated_time" content="2018-05-07T07:18:13.754Z">
+<meta property="og:updated_time" content="2018-06-19T03:35:44.968Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Machine Learning">
 <meta name="twitter:description" content="机器学习(Machine Learning, ML)是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科。专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。它是人工智能的核心，是使计算机具有智能的根本途径，其应用遍及人工智能的各个领域，它主要使用归纳、综合而不是演绎。">
@@ -497,493 +497,493 @@
 <a id="more"></a>
 <h2 id="machine-learning-API-Documentation"><a href="#machine-learning-API-Documentation" class="headerlink" title="machine_learning API Documentation"></a><a href="http://joonku.com/project/machine_learning/apidoc" target="_blank" rel="noopener">machine_learning API Documentation</a></h2><h2 id="Machine-learning-library-for-Node-js-Demo"><a href="#Machine-learning-library-for-Node-js-Demo" class="headerlink" title="Machine learning library for Node.js Demo"></a><a href="http://joonku.com/project/machine_learning" target="_blank" rel="noopener">Machine learning library for Node.js Demo</a></h2><html lang="en">
 <head>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <title>machine_learning library Demo</title>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>machine_learning library Demo</title>
 
-    <!-- Styles -->
-    <link href="http://joonku.com/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://joonku.com/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <!-- HTML5 for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if IE 8]>
-    <link href="/css/ie8.css" rel="stylesheet">
-    <![endif]-->
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="http://joonku.com/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://joonku.com/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://joonku.com/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://joonku.com/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="http://joonku.com/ico/apple-touch-icon-57-precomposed.png">
-    <!-- Javascript placed at the end of the document so the pages load faster -->
-    <style>
-        div[class^="span"] {
-            margin : 0px !important;
-        }
-        .container-fluid {
-            padding : 0 !important;
-        }
-    </style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- Styles -->
+<link href="http://joonku.com/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://joonku.com/css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 8]>
+<link href="/css/ie8.css" rel="stylesheet">
+<![endif]-->
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" href="http://joonku.com/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://joonku.com/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://joonku.com/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://joonku.com/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://joonku.com/ico/apple-touch-icon-57-precomposed.png">
+<!-- Javascript placed at the end of the document so the pages load faster -->
+<style>
+    div[class^="span"] {
+        margin : 0px !important;
+    }
+    .container-fluid {
+        padding : 0 !important;
+    }
+</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 <body>
 <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container-fluid">
-    <div class="row-fluid" style="background-color: #f7f7f7">
-        <div class="span2"></div>
-        <div class="span8" style="padding : 25px 16px 0px 15px; background-color: #fff !important">
+<div class="row-fluid" style="background-color: #f7f7f7">
+    <div class="span2"></div>
+    <div class="span8" style="padding : 25px 16px 0px 15px; background-color: #fff !important">
+        <hr>
+        <h3>Classification Algorithms</h3>
+        <div class="span12">
             <hr>
-            <h3>Classification Algorithms</h3>
-            <div class="span12">
-                <hr>
-                <div class="span8">
-                    <h3 style="display:inline-block;" id="logistic_regression_demo">1. Logistic Regression &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="lr_status"></span>
-                    <canvas id="lr_canvas" width="500" height="400" style="border:1px solid #ccc">
-                        Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
-                    </canvas>
-                </div>
-                <div class="span4">
-                    <h4>Controls</h4>
-                    <hr>
-                    Mouse Click : <span style="color:#00f">Blue Dot</span><br>
-                    <br>
-                    <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777">
-                        <strong>Shift</strong>
-                    </span> + Mouse Click : <span style="color:#f00">Red Dot</span>
-                    <br><br>
-                    <h4>Settings <small>(Just Change Values)</small></h4>
-                    <hr>
-                    <table class="table table-hover table-condensed table-bordered">
-                        <tbody>
-                        <tr>
-                            <td>learning rate</td>
-                            <td><input type="text" class="input-small" id="lr_lr" placeholder="learning rate" value="0.01"></td>
-                        </tr>
-                        <tr>
-                            <td>training epochs</td>
-                            <td><input type="text" class="input-small" id="lr_training_epoch" placeholder="training epochs" value="1000"></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>Result</h4>
-                    <hr>
-                    <table class="table table-hover table-condensed table-bordered">
-                        <thead>
-                        <tr>
-                            <td>Reconstruction Cross Entropy</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td style="text-align: center"><span id="lr_result"> - </span></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <hr>
-
-                    <a class="btn" id="clear_lr_canvas"><strong>Clear Canvas</strong></a>
-                </div>
+            <div class="span8">
+                <h3 style="display:inline-block;" id="logistic_regression_demo">1. Logistic Regression &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="lr_status"></span>
+                <canvas id="lr_canvas" width="500" height="400" style="border:1px solid #ccc">
+                    Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
+                </canvas>
             </div>
+            <div class="span4">
+                <h4>Controls</h4>
+                <hr>
+                Mouse Click : <span style="color:#00f">Blue Dot</span><br>
+                <br>
+                <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777">
+                    <strong>Shift</strong>
+                </span> + Mouse Click : <span style="color:#f00">Red Dot</span>
+                <br><br>
+                <h4>Settings <small>(Just Change Values)</small></h4>
+                <hr>
+                <table class="table table-hover table-condensed table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>learning rate</td>
+                        <td><input type="text" class="input-small" id="lr_lr" placeholder="learning rate" value="0.01"></td>
+                    </tr>
+                    <tr>
+                        <td>training epochs</td>
+                        <td><input type="text" class="input-small" id="lr_training_epoch" placeholder="training epochs" value="1000"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h4>Result</h4>
+                <hr>
+                <table class="table table-hover table-condensed table-bordered">
+                    <thead>
+                    <tr>
+                        <td>Reconstruction Cross Entropy</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="text-align: center"><span id="lr_result"> - </span></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
 
-            <div class="span12">
-                <hr>
-                <div class="span8">
-                    <h3 style="display:inline-block;" id="multi_layer_perceptron_demo">2. MLP (Multi-Layer Perceptron) &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="mlp_status"></span>
-                    <canvas id="mlp_canvas" width="500" height="400" style="border:1px solid #ccc">
-                        Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
-                    </canvas>
-                </div>
-                <div class="span4">
-                    <h4>Controls</h4>
-                    <hr>
-                    Mouse Click : <span style="color:#00f">Blue Dot</span><br>
-                    <br>
-                    <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777">
-                        <strong>Shift</strong>
-                    </span> + Mouse Click : <span style="color:#f00">Red Dot</span>
-                    <br><br>
-                    <h4>Settings <small>(Just Change Values)</small></h4>
-                    <hr>
-                    <table class="table table-hover table-condensed table-bordered">
-                        <tbody>
-                        <tr>
-                            <td>hidden layers<br><small><span style="color:#666">(type javascript array)</span></small></td>
-                            <td><input type="text" class="input-small" id="mlp_hidden_layer" placeholder="hidden layers (array)" value="[10,5]"></td>
-                        </tr>
-                        <tr>
-                            <td>learning rate</td>
-                            <td><input type="text" class="input-small" id="mlp_lr" placeholder="learning rate" value="0.6"></td>
-                        </tr>
-                        <tr>
-                            <td>training epochs</td>
-                            <td><input type="text" class="input-small" id="mlp_training_epoch" placeholder="training epochs" value="20000"></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>Result <br><small>(If this value > 1 : increase training epoch)</small></h4>
-                    <hr>
-                    <table class="table table-hover table-condensed table-bordered">
-                        <thead>
-                        <tr>
-                            <td>Reconstruction Cross Entropy</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td style="text-align: center"><span id="mlp_result"> - </span></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <hr>
-                    <a class="btn" id="clear_mlp_canvas"><strong>Clear Canvas</strong></a>
-                </div>
+                <a class="btn" id="clear_lr_canvas"><strong>Clear Canvas</strong></a>
             </div>
-            <div class="span12">
+        </div>
+
+        <div class="span12">
+            <hr>
+            <div class="span8">
+                <h3 style="display:inline-block;" id="multi_layer_perceptron_demo">2. MLP (Multi-Layer Perceptron) &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="mlp_status"></span>
+                <canvas id="mlp_canvas" width="500" height="400" style="border:1px solid #ccc">
+                    Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
+                </canvas>
+            </div>
+            <div class="span4">
+                <h4>Controls</h4>
                 <hr>
-                <div class="span8">
-                    <h3 style="display:inline-block;" id="support_vector_machine_demo">3. SVM (Support Vector Machine) &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="svm_status"></span>
-                    <canvas id="svm_canvas" width="500" height="400" style="border:1px solid #ccc">
-                        Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
-                    </canvas>
-                </div>
-                <div class="span4">
-                    <h4>Controls</h4>
-                    <hr>
-                    Mouse Click : <span style="color:#00f">Blue Dot</span><br>
-                    <br>
-                    <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777">
-                        <strong>Shift</strong>
-                    </span> + Mouse Click : <span style="color:#f00">Red Dot</span>
-                    <br><br>
-                    <h4>Settings <small>(Just Change Values)</small></h4>
-                    <hr>
-                    <table class="table table-hover table-condensed table-bordered">
-                        <tbody>
-                        <tr>
-                            <td>C</td>
-                            <td><input type="text" class="input-small" id="svm_C" placeholder="C" value="1.0"></td>
-                        </tr>
-                        <tr>
-                            <td>tol</td>
-                            <td><input type="text" class="input-small" id="svm_tol" placeholder="tol" value="1e-5"></td>
-                        </tr>
-                        <tr>
-                            <td>alpha_tol</td>
-                            <td><input type="text" class="input-small" id="svm_alpha_tol" placeholder="alpha tol" value="1e-5"></td>
-                        </tr>
-                        <tr>
-                            <td>max_passes</td>
-                            <td><input type="text" class="input-small" id="svm_max_passes" placeholder="max passes" value="20"></td>
-                        </tr>
-                        <tr class="success">
-                            <td colspan="2" style="text-align: center"><strong>Kernel</strong></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="text-align:center">
-                                linear <input type="radio" name="kernel" value="linear"> &nbsp;&nbsp;
-                                gaussian <input type="radio" name="kernel" value="gaussian" checked> &nbsp;&nbsp;
-                                polynomial <input type="radio" name="kernel" value="polynomial"> &nbsp;&nbsp;<br>
-                                custom function <input type="radio" name="kernel" value="custom">
-                            </td>
-                        </tr>
-                        <tr class="info">
-                            <td colspan="2" style="text-align: center"><strong>Gaussian</strong></td>
-                        </tr>
-                        <tr>
-                            <td>sigma</td>
-                            <td><input type="text" class="input-small" id="gaussian_sigma" placeholder="sigma" value="0.05"></td>
-                        </tr>
-                        <tr class="info">
-                            <td colspan="2" style="text-align: center"><strong>Polynomial (x*y + c)^d</strong></td>
-                        </tr>
-                        <tr>
-                            <td>c</td>
-                            <td><input type="text" class="input-small" id="polynomial_c" placeholder="c" value="1"></td>
-                        </tr>
-                        <tr>
-                            <td>d</td>
-                            <td><input type="text" class="input-small" id="polynomial_d" placeholder="d" value="5"></td>
-                        </tr>
-                        <tr class="info">
-                            <td colspan="2" style="text-align: center"><strong>Custom Function</strong><br> <small>(Type Javascript Function)</small></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="padding:0;">
-                            <div id="custom_function_editor" style="width:100%; min-height:200px;">/* Simple linear kernel */
+                Mouse Click : <span style="color:#00f">Blue Dot</span><br>
+                <br>
+                <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777">
+                    <strong>Shift</strong>
+                </span> + Mouse Click : <span style="color:#f00">Red Dot</span>
+                <br><br>
+                <h4>Settings <small>(Just Change Values)</small></h4>
+                <hr>
+                <table class="table table-hover table-condensed table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>hidden layers<br><small><span style="color:#666">(type javascript array)</span></small></td>
+                        <td><input type="text" class="input-small" id="mlp_hidden_layer" placeholder="hidden layers (array)" value="[10,5]"></td>
+                    </tr>
+                    <tr>
+                        <td>learning rate</td>
+                        <td><input type="text" class="input-small" id="mlp_lr" placeholder="learning rate" value="0.6"></td>
+                    </tr>
+                    <tr>
+                        <td>training epochs</td>
+                        <td><input type="text" class="input-small" id="mlp_training_epoch" placeholder="training epochs" value="20000"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h4>Result <br><small>(If this value > 1 : increase training epoch)</small></h4>
+                <hr>
+                <table class="table table-hover table-condensed table-bordered">
+                    <thead>
+                    <tr>
+                        <td>Reconstruction Cross Entropy</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="text-align: center"><span id="mlp_result"> - </span></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <a class="btn" id="clear_mlp_canvas"><strong>Clear Canvas</strong></a>
+            </div>
+        </div>
+        <div class="span12">
+            <hr>
+            <div class="span8">
+                <h3 style="display:inline-block;" id="support_vector_machine_demo">3. SVM (Support Vector Machine) &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="svm_status"></span>
+                <canvas id="svm_canvas" width="500" height="400" style="border:1px solid #ccc">
+                    Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
+                </canvas>
+            </div>
+            <div class="span4">
+                <h4>Controls</h4>
+                <hr>
+                Mouse Click : <span style="color:#00f">Blue Dot</span><br>
+                <br>
+                <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777">
+                    <strong>Shift</strong>
+                </span> + Mouse Click : <span style="color:#f00">Red Dot</span>
+                <br><br>
+                <h4>Settings <small>(Just Change Values)</small></h4>
+                <hr>
+                <table class="table table-hover table-condensed table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>C</td>
+                        <td><input type="text" class="input-small" id="svm_C" placeholder="C" value="1.0"></td>
+                    </tr>
+                    <tr>
+                        <td>tol</td>
+                        <td><input type="text" class="input-small" id="svm_tol" placeholder="tol" value="1e-5"></td>
+                    </tr>
+                    <tr>
+                        <td>alpha_tol</td>
+                        <td><input type="text" class="input-small" id="svm_alpha_tol" placeholder="alpha tol" value="1e-5"></td>
+                    </tr>
+                    <tr>
+                        <td>max_passes</td>
+                        <td><input type="text" class="input-small" id="svm_max_passes" placeholder="max passes" value="20"></td>
+                    </tr>
+                    <tr class="success">
+                        <td colspan="2" style="text-align: center"><strong>Kernel</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            linear <input type="radio" name="kernel" value="linear"> &nbsp;&nbsp;
+                            gaussian <input type="radio" name="kernel" value="gaussian" checked> &nbsp;&nbsp;
+                            polynomial <input type="radio" name="kernel" value="polynomial"> &nbsp;&nbsp;<br>
+                            custom function <input type="radio" name="kernel" value="custom">
+                        </td>
+                    </tr>
+                    <tr class="info">
+                        <td colspan="2" style="text-align: center"><strong>Gaussian</strong></td>
+                    </tr>
+                    <tr>
+                        <td>sigma</td>
+                        <td><input type="text" class="input-small" id="gaussian_sigma" placeholder="sigma" value="0.05"></td>
+                    </tr>
+                    <tr class="info">
+                        <td colspan="2" style="text-align: center"><strong>Polynomial (x*y + c)^d</strong></td>
+                    </tr>
+                    <tr>
+                        <td>c</td>
+                        <td><input type="text" class="input-small" id="polynomial_c" placeholder="c" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td>d</td>
+                        <td><input type="text" class="input-small" id="polynomial_d" placeholder="d" value="5"></td>
+                    </tr>
+                    <tr class="info">
+                        <td colspan="2" style="text-align: center"><strong>Custom Function</strong><br> <small>(Type Javascript Function)</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding:0;">
+                        <div id="custom_function_editor" style="width:100%; min-height:200px;">/* Simple linear kernel */
 function(vec1, vec2) {
-    var result = 0;
-    for (var i = 0; i < vec1.length; i++) {
-        result += vec1[i] * vec2[i];
-    }
-    return result;
+var result = 0;
+for (var i = 0; i < vec1.length; i++) {
+    result += vec1[i] * vec2[i];
+}
+return result;
+}
+                        </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <a class="btn" id="clear_svm_canvas"><strong>Clear Canvas</strong></a>
+            </div>
+        </div>
+        <div class="span12">
+            <hr>
+            <div class="span8">
+                <h3 style="display:inline-block;" id="k_nearest_neighbors_demo">4. (Weighted) KNN (K-Nearest Neighbors) &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="knn_status"></span>
+                <canvas id="knn_canvas" width="500" height="400" style="border:1px solid #ccc">
+                    Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
+                </canvas>
+            </div>
+            <div class="span4">
+                <h4>Controls</h4>
+                <hr>
+                Mouse Click : <span style="color:#00f">Blue Dot</span><br>
+                <br>
+                <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777">
+                    <strong>Shift</strong>
+                </span> + Mouse Click : <span style="color:#f00">Red Dot</span>
+                <br><br>
+                <h4>Settings <small>(Just Change Values)</small></h4>
+                <hr>
+                <table class="table table-hover table-condensed table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>k</td>
+                        <td><input type="text" class="input-small" id="knn_k" placeholder="k" value="4"></td>
+                    </tr>
+                    <tr class="success">
+                        <td colspan="2" style="text-align: center"><strong>Kernel</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            none <input type="radio" name="knn_kernel" value="none"> &nbsp;&nbsp;
+                            gaussian <input type="radio" name="knn_kernel" value="gaussian" checked> &nbsp;&nbsp;
+                            custom function <input type="radio" name="knn_kernel" value="custom">
+                        </td>
+                    </tr>
+                    <tr class="info">
+                        <td colspan="2" style="text-align: center"><strong>Gaussian</strong></td>
+                    </tr>
+                    <tr>
+                        <td>sigma</td>
+                        <td><input type="text" class="input-small" id="knn_gaussian_sigma" placeholder="sigma" value="0.05"></td>
+                    </tr>
+                    <tr class="info">
+                        <td colspan="2" style="text-align: center"><strong>Custom Kernel</strong><br> <small>(Type Javascript Function)</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding:0;">
+                            <div id="knn_kernel_function_editor" style="width:100%; min-height:200px;">/* Simple Gaussian kernel */
+function(x) {
+var sigma = options['sigma'];
+return Math.exp(-1.*x*x/(2*sigma*sigma));
 }
                             </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <hr>
-                    <a class="btn" id="clear_svm_canvas"><strong>Clear Canvas</strong></a>
-                </div>
-            </div>
-            <div class="span12">
-                <hr>
-                <div class="span8">
-                    <h3 style="display:inline-block;" id="k_nearest_neighbors_demo">4. (Weighted) KNN (K-Nearest Neighbors) &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="knn_status"></span>
-                    <canvas id="knn_canvas" width="500" height="400" style="border:1px solid #ccc">
-                        Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
-                    </canvas>
-                </div>
-                <div class="span4">
-                    <h4>Controls</h4>
-                    <hr>
-                    Mouse Click : <span style="color:#00f">Blue Dot</span><br>
-                    <br>
-                    <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777">
-                        <strong>Shift</strong>
-                    </span> + Mouse Click : <span style="color:#f00">Red Dot</span>
-                    <br><br>
-                    <h4>Settings <small>(Just Change Values)</small></h4>
-                    <hr>
-                    <table class="table table-hover table-condensed table-bordered">
-                        <tbody>
-                        <tr>
-                            <td>k</td>
-                            <td><input type="text" class="input-small" id="knn_k" placeholder="k" value="4"></td>
-                        </tr>
-                        <tr class="success">
-                            <td colspan="2" style="text-align: center"><strong>Kernel</strong></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="text-align:center">
-                                none <input type="radio" name="knn_kernel" value="none"> &nbsp;&nbsp;
-                                gaussian <input type="radio" name="knn_kernel" value="gaussian" checked> &nbsp;&nbsp;
-                                custom function <input type="radio" name="knn_kernel" value="custom">
-                            </td>
-                        </tr>
-                        <tr class="info">
-                            <td colspan="2" style="text-align: center"><strong>Gaussian</strong></td>
-                        </tr>
-                        <tr>
-                            <td>sigma</td>
-                            <td><input type="text" class="input-small" id="knn_gaussian_sigma" placeholder="sigma" value="0.05"></td>
-                        </tr>
-                        <tr class="info">
-                            <td colspan="2" style="text-align: center"><strong>Custom Kernel</strong><br> <small>(Type Javascript Function)</small></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="padding:0;">
-                                <div id="knn_kernel_function_editor" style="width:100%; min-height:200px;">/* Simple Gaussian kernel */
-function(x) {
-    var sigma = options['sigma'];
-    return Math.exp(-1.*x*x/(2*sigma*sigma));
-}
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="success">
-                            <td colspan="2" style="text-align: center"><strong>Distance Function</strong></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="text-align:center">
-                                euclidean <input type="radio" name="distancef" value="none" checked> &nbsp;&nbsp;
-                                custom function <input type="radio" name="distancef" value="custom">
-                            </td>
-                        </tr>
-                        <tr class="info">
-                            <td colspan="2" style="text-align: center"><strong>Custom Distance Function</strong><br> <small>(Type Javascript Function)</small></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="padding:0;">
-                                <div id="knn_distance_function_editor" style="width:100%; min-height:200px;">/* Euclidean Distance Function */
+                        </td>
+                    </tr>
+                    <tr class="success">
+                        <td colspan="2" style="text-align: center"><strong>Distance Function</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            euclidean <input type="radio" name="distancef" value="none" checked> &nbsp;&nbsp;
+                            custom function <input type="radio" name="distancef" value="custom">
+                        </td>
+                    </tr>
+                    <tr class="info">
+                        <td colspan="2" style="text-align: center"><strong>Custom Distance Function</strong><br> <small>(Type Javascript Function)</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding:0;">
+                            <div id="knn_distance_function_editor" style="width:100%; min-height:200px;">/* Euclidean Distance Function */
 function(x1,x2) {
-    var distance = 0;
-        for(var i=0 ; i < x1.length; i++) {
-            var dx = x1[i] - x2[i];
-            distance += dx * dx;
-        }
-    return Math.sqrt(distance);
-};
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <hr>
-                    <a class="btn" id="clear_knn_canvas"><strong>Clear Canvas</strong></a>
-                </div>
-                <hr>
-            </div>
-
-            <h3>Clustering Algorithms</h3>
-            <div class="span12">
-                <hr>
-                <div class="span8">
-                    <h3 style="display:inline-block;" id="k_means_demo">1. K-means clustering &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="kmeans_status"></span>
-                    <canvas id="kmeans_canvas" width="500" height="400" style="border:1px solid #ccc">
-                        Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
-                    </canvas>
-                </div>
-                <div class="span4">
-                    <h4>Controls</h4>
-                    <hr>
-                    Mouse Click : <span style="color:#000">Black Dot</span><br>
-                    <br><br>
-                    <h4>Settings <small>(Just Change Values)</small></h4>
-                    <hr>
-                    <table class="table table-hover table-condensed table-bordered">
-                        <tbody>
-                        <tr>
-                            <td>k</td>
-                            <td><input type="text" class="input-small" id="kmeans_k" placeholder="k" value="3"></td>
-                        </tr>
-                        <tr>
-                            <td>training epochs</td>
-                            <td><input type="text" class="input-small" id="kmeans_training_epoch" placeholder="training epochs" value="3000"></td>
-                        </tr>
-                        <tr class="success">
-                            <td colspan="2" style="text-align: center"><strong>Distance Function</strong></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="text-align:center">
-                                euclidean <input type="radio" name="kmeans_distancef" value="none" checked> &nbsp;&nbsp;
-                                pearson <input type="radio" name="kmeans_distancef" value="pearson"> &nbsp;&nbsp;<br>
-                                custom function <input type="radio" name="kmeans_distancef" value="custom">
-                            </td>
-                        </tr>
-                        <tr class="info">
-                            <td colspan="2" style="text-align: center"><strong>Custom Distance Function</strong><br> <small>(Type Javascript Function)</small></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="padding:0;">
-                                <div id="kmeans_distance_function_editor" style="width:100%; min-height:200px;">/* Euclidean Distance Function */
-function(x1,x2) {
-    var distance = 0;
+var distance = 0;
     for(var i=0 ; i < x1.length; i++) {
         var dx = x1[i] - x2[i];
         distance += dx * dx;
     }
-    return Math.sqrt(distance);
+return Math.sqrt(distance);
 };
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <hr>
-
-                    <a class="btn" id="clear_kmeans_canvas"><strong>Clear Canvas</strong></a>
-                    <hr>
-                </div>
-            </div>
-
-            <h3>Optimization Algorithms</h3>
-            <div class="span12">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
                 <hr>
-                <div class="span8">
-                    <div class="span12">
-                        <h3 style="display:inline-block;" id="simulated_annealing_demo">1. Simulated Annealing &nbsp;&nbsp;&nbsp;&nbsp;</h3>
-                        <strong>(<span style="color:#f00">High Cost</span>, <span style="color:#00e0ff">Low Cost</span>)</strong> <br>
-                        <canvas id="sa_canvas" width="500" height="400" style="border:1px solid #ccc">
-                            Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
-                        </canvas><br>
-                        <span style="display:inline-block;" id="sa_status"></span>
-                    </div>
-                    <div class="span9">
-                        <h4>Result</h4>
-                        <table class="table table-hover table-condensed table-bordered table-striped">
-                            <thead>
-                            <tr>
-                                <th style="text-align:center">-</th>
-                                <th style="text-align:center">x</th>
-                                <th style="text-align:center">y</th>
-                                <th style="text-align:center">cost</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td style="text-align:center">start</td>
-                                <td id="sa_start_x" style="text-align:center">-</td>
-                                <td id="sa_start_y" style="text-align:center">-</td>
-                                <td id="sa_start_cost" style="text-align:center">-</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:center">current</td>
-                                <td id="sa_current_x" style="text-align:center">-</td>
-                                <td id="sa_current_y" style="text-align:center">-</td>
-                                <td id="sa_current_cost" style="text-align:center">-</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:center">end</td>
-                                <td id="sa_end_x" style="text-align:center">-</td>
-                                <td id="sa_end_y" style="text-align:center">-</td>
-                                <td id="sa_end_cost" style="text-align:center">-</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <a class="btn" id="clear_knn_canvas"><strong>Clear Canvas</strong></a>
+            </div>
+            <hr>
+        </div>
 
-                <div class="span4">
-                    <h4>Controls</h4>
-                    <hr>
-                    <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777;color:#f00;">
-                        <strong>Mouse Click</strong>
-                    </span> : <strong><span style="color:#000">Start Point</span></strong><br>
-                    <br><br>
-                    <h4>Settings <small>(Just Change Values)</small></h4>
-                    <hr>
-                    <table class="table table-hover table-condensed table-bordered">
+        <h3>Clustering Algorithms</h3>
+        <div class="span12">
+            <hr>
+            <div class="span8">
+                <h3 style="display:inline-block;" id="k_means_demo">1. K-means clustering &nbsp;&nbsp;&nbsp;&nbsp;</h3><span id="kmeans_status"></span>
+                <canvas id="kmeans_canvas" width="500" height="400" style="border:1px solid #ccc">
+                    Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
+                </canvas>
+            </div>
+            <div class="span4">
+                <h4>Controls</h4>
+                <hr>
+                Mouse Click : <span style="color:#000">Black Dot</span><br>
+                <br><br>
+                <h4>Settings <small>(Just Change Values)</small></h4>
+                <hr>
+                <table class="table table-hover table-condensed table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>k</td>
+                        <td><input type="text" class="input-small" id="kmeans_k" placeholder="k" value="3"></td>
+                    </tr>
+                    <tr>
+                        <td>training epochs</td>
+                        <td><input type="text" class="input-small" id="kmeans_training_epoch" placeholder="training epochs" value="3000"></td>
+                    </tr>
+                    <tr class="success">
+                        <td colspan="2" style="text-align: center"><strong>Distance Function</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            euclidean <input type="radio" name="kmeans_distancef" value="none" checked> &nbsp;&nbsp;
+                            pearson <input type="radio" name="kmeans_distancef" value="pearson"> &nbsp;&nbsp;<br>
+                            custom function <input type="radio" name="kmeans_distancef" value="custom">
+                        </td>
+                    </tr>
+                    <tr class="info">
+                        <td colspan="2" style="text-align: center"><strong>Custom Distance Function</strong><br> <small>(Type Javascript Function)</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding:0;">
+                            <div id="kmeans_distance_function_editor" style="width:100%; min-height:200px;">/* Euclidean Distance Function */
+function(x1,x2) {
+var distance = 0;
+for(var i=0 ; i < x1.length; i++) {
+    var dx = x1[i] - x2[i];
+    distance += dx * dx;
+}
+return Math.sqrt(distance);
+};
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
+
+                <a class="btn" id="clear_kmeans_canvas"><strong>Clear Canvas</strong></a>
+                <hr>
+            </div>
+        </div>
+
+        <h3>Optimization Algorithms</h3>
+        <div class="span12">
+            <hr>
+            <div class="span8">
+                <div class="span12">
+                    <h3 style="display:inline-block;" id="simulated_annealing_demo">1. Simulated Annealing &nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <strong>(<span style="color:#f00">High Cost</span>, <span style="color:#00e0ff">Low Cost</span>)</strong> <br>
+                    <canvas id="sa_canvas" width="500" height="400" style="border:1px solid #ccc">
+                        Canvas를 지원하지 않는 브라우저입니다. Chrome, Firefox, Safari를 사용하세요.
+                    </canvas><br>
+                    <span style="display:inline-block;" id="sa_status"></span>
+                </div>
+                <div class="span9">
+                    <h4>Result</h4>
+                    <table class="table table-hover table-condensed table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th style="text-align:center">-</th>
+                            <th style="text-align:center">x</th>
+                            <th style="text-align:center">y</th>
+                            <th style="text-align:center">cost</th>
+                        </tr>
+                        </thead>
                         <tbody>
                         <tr>
-                            <td>number of variables</td>
-                            <td>2<br>(We can only display this dimension..)</td>
+                            <td style="text-align:center">start</td>
+                            <td id="sa_start_x" style="text-align:center">-</td>
+                            <td id="sa_start_y" style="text-align:center">-</td>
+                            <td id="sa_start_cost" style="text-align:center">-</td>
                         </tr>
                         <tr>
-                            <td>variable domain</td>
-                            <td><input type="text" class="input-small" id="sa_domain" placeholder="[[x_min,x_max],[y_min,y_max]]" value="[[0,100],[0,100]]"></td>
-                        </tr>
-                        <tr class="info">
-                            <td colspan="2" style="text-align: center"><strong>Cost Function</strong><br> <small>(Type Javascript Function)</small></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="padding:0;">
-                                <div id="sa_cost_function_editor" style="width:100%; min-height:200px;">/* Simple Cost Function */
-function(vec) {
-    var cost = 0;
-    cost += Math.pow(vec[0]-50,2);
-    cost += (vec[0]+10)*(vec[1]-10);
-    cost += Math.pow(vec[1]-50,2);
-    return cost;
-};
-                                </div>
-                            </td>
+                            <td style="text-align:center">current</td>
+                            <td id="sa_current_x" style="text-align:center">-</td>
+                            <td id="sa_current_y" style="text-align:center">-</td>
+                            <td id="sa_current_cost" style="text-align:center">-</td>
                         </tr>
                         <tr>
-                            <td>temperature</td>
-                            <td><input type="text" class="input-small" id="sa_temperature" placeholder="temperature" value="10000"></td>
-                        </tr>
-                        <tr>
-                            <td>cool</td>
-                            <td><input type="text" class="input-small" id="sa_cool" placeholder="cool" value="0.99"></td>
-                        </tr>
-                        <tr>
-                            <td>step</td>
-                            <td><input type="text" class="input-small" id="sa_step" placeholder="step" value="1"></td>
-                        </tr>
-                        <tr>
-                            <td>animation speed</td>
-                            <td><input type="text" class="input-small" id="sa_animation_speed" placeholder="1~100" value="40"></td>
+                            <td style="text-align:center">end</td>
+                            <td id="sa_end_x" style="text-align:center">-</td>
+                            <td id="sa_end_y" style="text-align:center">-</td>
+                            <td id="sa_end_cost" style="text-align:center">-</td>
                         </tr>
                         </tbody>
                     </table>
-                    <hr>
-
-                    <a class="btn" id="clear_sa_canvas"><strong>Clear Canvas</strong></a>
-                    <hr>
                 </div>
             </div>
 
-    </div><!--/.row-fluid-->
+            <div class="span4">
+                <h4>Controls</h4>
+                <hr>
+                <span style="display:inline-block;padding: 1px 3px 1px 3px; border:1px solid #777;color:#f00;">
+                    <strong>Mouse Click</strong>
+                </span> : <strong><span style="color:#000">Start Point</span></strong><br>
+                <br><br>
+                <h4>Settings <small>(Just Change Values)</small></h4>
+                <hr>
+                <table class="table table-hover table-condensed table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>number of variables</td>
+                        <td>2<br>(We can only display this dimension..)</td>
+                    </tr>
+                    <tr>
+                        <td>variable domain</td>
+                        <td><input type="text" class="input-small" id="sa_domain" placeholder="[[x_min,x_max],[y_min,y_max]]" value="[[0,100],[0,100]]"></td>
+                    </tr>
+                    <tr class="info">
+                        <td colspan="2" style="text-align: center"><strong>Cost Function</strong><br> <small>(Type Javascript Function)</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding:0;">
+                            <div id="sa_cost_function_editor" style="width:100%; min-height:200px;">/* Simple Cost Function */
+function(vec) {
+var cost = 0;
+cost += Math.pow(vec[0]-50,2);
+cost += (vec[0]+10)*(vec[1]-10);
+cost += Math.pow(vec[1]-50,2);
+return cost;
+};
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>temperature</td>
+                        <td><input type="text" class="input-small" id="sa_temperature" placeholder="temperature" value="10000"></td>
+                    </tr>
+                    <tr>
+                        <td>cool</td>
+                        <td><input type="text" class="input-small" id="sa_cool" placeholder="cool" value="0.99"></td>
+                    </tr>
+                    <tr>
+                        <td>step</td>
+                        <td><input type="text" class="input-small" id="sa_step" placeholder="step" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td>animation speed</td>
+                        <td><input type="text" class="input-small" id="sa_animation_speed" placeholder="1~100" value="40"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
+
+                <a class="btn" id="clear_sa_canvas"><strong>Clear Canvas</strong></a>
+                <hr>
+            </div>
+        </div>
+
+</div><!--/.row-fluid-->
 </div><!--/.container-fluid-->
 
 <!-- Javascript placed at the end of the document so the pages load faster -->
@@ -991,21 +991,21 @@ function(vec) {
 <script src="http://joonku.com/js/smoothscroll.js"></script>
 <script src="http://joonku.com/js/acejs/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
-    var custom_function_editor = ace.edit("custom_function_editor");
-    custom_function_editor.setTheme("ace/theme/chrome");
-    custom_function_editor.getSession().setMode("ace/mode/javascript");
-    var knn_kernel_function_editor = ace.edit("knn_kernel_function_editor");
-    knn_kernel_function_editor.setTheme("ace/theme/chrome");
-    knn_kernel_function_editor.getSession().setMode("ace/mode/javascript");
-    var knn_distance_function_editor = ace.edit("knn_distance_function_editor");
-    knn_distance_function_editor.setTheme("ace/theme/chrome");
-    knn_distance_function_editor.getSession().setMode("ace/mode/javascript");
-    var kmeans_distance_function_editor = ace.edit("kmeans_distance_function_editor");
-    kmeans_distance_function_editor.setTheme("ace/theme/chrome");
-    kmeans_distance_function_editor.getSession().setMode("ace/mode/javascript");
-    var sa_cost_function_editor = ace.edit("sa_cost_function_editor");
-    sa_cost_function_editor.setTheme("ace/theme/chrome");
-    sa_cost_function_editor.getSession().setMode("ace/mode/javascript");
+var custom_function_editor = ace.edit("custom_function_editor");
+custom_function_editor.setTheme("ace/theme/chrome");
+custom_function_editor.getSession().setMode("ace/mode/javascript");
+var knn_kernel_function_editor = ace.edit("knn_kernel_function_editor");
+knn_kernel_function_editor.setTheme("ace/theme/chrome");
+knn_kernel_function_editor.getSession().setMode("ace/mode/javascript");
+var knn_distance_function_editor = ace.edit("knn_distance_function_editor");
+knn_distance_function_editor.setTheme("ace/theme/chrome");
+knn_distance_function_editor.getSession().setMode("ace/mode/javascript");
+var kmeans_distance_function_editor = ace.edit("kmeans_distance_function_editor");
+kmeans_distance_function_editor.setTheme("ace/theme/chrome");
+kmeans_distance_function_editor.getSession().setMode("ace/mode/javascript");
+var sa_cost_function_editor = ace.edit("sa_cost_function_editor");
+sa_cost_function_editor.setTheme("ace/theme/chrome");
+sa_cost_function_editor.getSession().setMode("ace/mode/javascript");
 </script>
 <script src="http://joonku.com/js/machine_learning.min.js"></script>
 <script src="http://joonku.com/js/machine_learning_demo.js"></script>
@@ -1164,7 +1164,7 @@ function(vec) {
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">206</span>
+                    <span class="site-state-item-count">207</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1850,7 +1850,9 @@ function(vec) {
                     
                       
                     
-                    <span class="site-state-item-count">324</span>
+                      
+                    
+                    <span class="site-state-item-count">325</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

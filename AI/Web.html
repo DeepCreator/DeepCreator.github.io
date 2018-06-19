@@ -155,7 +155,7 @@
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/markdown-syntax-language.png?imageMogr2/thumbnail/!75p">
 <meta property="og:image" content="https://images2018.cnblogs.com/blog/36987/201804/36987-20180414212726214-1715743546.gif">
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/chrome_wallpaper_by_kazvantipov-d4bt2mz.jpg?imageMogr2/thumbnail/!75p">
-<meta property="og:updated_time" content="2018-06-12T09:05:33.566Z">
+<meta property="og:updated_time" content="2018-06-19T03:35:44.966Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web">
 <meta name="twitter:description" content="WWW是环球信息网的缩写，（亦作“Web”、“WWW”、“’W3’”，英文全称为“World Wide Web”），中文名字为“万维网”，”环球网”等，常简称为Web。 分为Web客户端和Web服务器程序。 WWW可以让Web客户端（常用浏览器）访问浏览Web服务器上的页面。 是一个由许多互相链接的超文本组成的系统，通过互联网访问。在这个系统中，每个有用的事物，称为一样“资源”；并且由一个全局">
@@ -531,17 +531,17 @@
 <p>DOM解析</p>
 </blockquote>
 <p>HTML的DOM Tree解析如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Web page parsing&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;Web page parsing&lt;/h1&gt;</span><br><span class="line">        &lt;p&gt;This is an example Web page.&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;Web page parsing&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;h1&gt;Web page parsing&lt;/h1&gt;</span><br><span class="line">    &lt;p&gt;This is an example Web page.&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <p>上面这段HTML会解析成这样：<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/DOM-Tree-01.jpg" alt=""></p>
 <p>下面是另一个有SVG标签的情况。<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/DOM-Tree-02.jpg" alt=""></p>
 <blockquote>
 <p>CSS解析</p>
 </blockquote>
 <p>CSS的解析大概是下面这个样子（下面主要说的是Gecko也就是Firefox的玩法），假设我们有下面的HTML文档：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;doc&gt;</span><br><span class="line">&lt;title&gt;A few quotes&lt;/title&gt;</span><br><span class="line">&lt;para&gt;</span><br><span class="line">  Franklin said that &lt;quote&gt;&quot;A penny saved is a penny earned.&quot;&lt;/quote&gt;</span><br><span class="line">&lt;/para&gt;</span><br><span class="line">&lt;para&gt;</span><br><span class="line">  FDR said &lt;quote&gt;&quot;We have nothing to fear but &lt;span&gt;fear itself.&lt;/span&gt;&quot;&lt;/quote&gt;</span><br><span class="line">&lt;/para&gt;</span><br><span class="line">&lt;/doc&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;doc&gt;</span><br><span class="line">&lt;title&gt;A few quotes&lt;/title&gt;</span><br><span class="line">&lt;para&gt;</span><br><span class="line">Franklin said that &lt;quote&gt;&quot;A penny saved is a penny earned.&quot;&lt;/quote&gt;</span><br><span class="line">&lt;/para&gt;</span><br><span class="line">&lt;para&gt;</span><br><span class="line">FDR said &lt;quote&gt;&quot;We have nothing to fear but &lt;span&gt;fear itself.&lt;/span&gt;&quot;&lt;/quote&gt;</span><br><span class="line">&lt;/para&gt;</span><br><span class="line">&lt;/doc&gt;</span><br></pre></td></tr></table></figure>
 <p>于是DOM Tree是这个样子：<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/DOM-Tree-Example.jpg" alt=""></p>
 <p>然后我们的CSS文档是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> /* rule 1 */ doc &#123; display: block; text-indent: 1em; &#125;</span><br><span class="line">/* rule 2 */ title &#123; display: block; font-size: 3em; &#125;</span><br><span class="line">/* rule 3 */ para &#123; display: block; &#125;</span><br><span class="line">/* rule 4 */ [class=&quot;emph&quot;] &#123; font-style: italic; &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/* rule 1 */ doc &#123; display: block; text-indent: 1em; &#125;</span><br><span class="line">/* rule 2 */ title &#123; display: block; font-size: 3em; &#125;</span><br><span class="line">/* rule 3 */ para &#123; display: block; &#125;</span><br><span class="line">/* rule 4 */ [class=&quot;emph&quot;] &#123; font-style: italic; &#125;</span><br></pre></td></tr></table></figure>
 <p>于是我们的CSS Rule Tree会是这个样子：<br><img src="https://coolshell.cn/wp-content/uploads/2013/05/CSS-Rule-Tree-Example.jpg" alt=""></p>
 <p>注意，图中的第4条规则出现了两次，一次是独立的，一次是在规则3的子结点。所以，我们可以知道，建立CSS Rule Tree是需要比照着DOM Tree来的。CSS匹配DOM Tree主要是从右到左解析CSS的Selector，好多人以为这个事会比较快，其实并不一定。关键还看我们的CSS的Selector怎么写了。</p>
 <p>注意：CSS匹配HTML元素是一个相当复杂和有性能问题的事情。所以，你就会在N多地方看到很多人都告诉你，<strong>DOM树要小，CSS尽量用id和class，千万不要过渡层叠下去</strong>，……</p>
@@ -800,9 +800,9 @@
 <!-- hexo-inject:begin --><!-- hexo-inject:end --><script type="text/javascript" src="/js/src/jquery-3.3.1.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-  $("p").click(function(){
-  $(this).hide();
-  });
+$("p").click(function(){
+$(this).hide();
+});
 });
 </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
@@ -1067,7 +1067,7 @@ $(document).ready(function(){
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">206</span>
+                    <span class="site-state-item-count">207</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1753,7 +1753,9 @@ $(document).ready(function(){
                     
                       
                     
-                    <span class="site-state-item-count">324</span>
+                      
+                    
+                    <span class="site-state-item-count">325</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

@@ -146,7 +146,7 @@
 <meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/tensorflowjs20180507.JPG?imageMogr2/thumbnail/!75p">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/1600/1*Fhc-ZFRp1ZRZ2SkSdkYvJA.png">
 <meta property="og:image" content="https://js.tensorflow.org/images/TF_JS_lockup.png">
-<meta property="og:updated_time" content="2018-06-12T09:09:06.678Z">
+<meta property="og:updated_time" content="2018-06-19T03:35:44.969Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tensorflow">
 <meta name="twitter:description" content="Tensor + Flow">
@@ -808,45 +808,45 @@
 <p>使用 tensorFlow.js 可以在 web 页面中引入 tensorFlow.js 类库。</p>
 <head>
 
-   <!-- Load TensorFlow.js -->
-   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0"> </script>
+<!-- Load TensorFlow.js -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0"> </script>
 
-   <!-- Place your code in the script tag below. You can also use an external .js file -->
-   <script>
-     // Notice there is no 'import' statement. 'tf' is available on the index-page
-     // because of the script tag above.
+<!-- Place your code in the script tag below. You can also use an external .js file -->
+<script>
+ // Notice there is no 'import' statement. 'tf' is available on the index-page
+ // because of the script tag above.
 
-     // Define a model for linear regression.
-     const model = tf.sequential();
-     model.add(tf.layers.dense({units: 1, inputShape: [1]}));
+ // Define a model for linear regression.
+ const model = tf.sequential();
+ model.add(tf.layers.dense({units: 1, inputShape: [1]}));
 
-     // Prepare the model for training: Specify the loss and the optimizer.
-     model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
+ // Prepare the model for training: Specify the loss and the optimizer.
+ model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
 
-     // Generate some synthetic data for training.
-     const xs = tf.tensor2d([1, 2, 3, 4], [4, 1]);
-     const ys = tf.tensor2d([1, 3, 5, 7], [4, 1]);
+ // Generate some synthetic data for training.
+ const xs = tf.tensor2d([1, 2, 3, 4], [4, 1]);
+ const ys = tf.tensor2d([1, 3, 5, 7], [4, 1]);
 
-     // Train the model using the data.
-     model.fit(xs, ys).then(() => {
-       // Use the model to do inference on a data point the model hasn't seen before:
-       // Open the browser devtools to see the output
-       model.predict(tf.tensor2d([5], [1, 1])).print();
-     });
+ // Train the model using the data.
+ model.fit(xs, ys).then(() => {
+   // Use the model to do inference on a data point the model hasn't seen before:
+   // Open the browser devtools to see the output
+   model.predict(tf.tensor2d([5], [1, 1])).print();
+ });
 
-   </script>
+</script>
 
- </head>
+</head>
 
 
-<h2 id="Pure-javascript-deeplearnjs-demos"><a href="#Pure-javascript-deeplearnjs-demos" class="headerlink" title="Pure javascript deeplearnjs demos"></a><a href="https://github.com/hma02/deeplearnjs-practice" target="_blank" rel="noopener">Pure javascript deeplearnjs demos</a></h2><h2 id="Trying-to-make-the-largest-repository-of-deeplearnjs-example-code"><a href="#Trying-to-make-the-largest-repository-of-deeplearnjs-example-code" class="headerlink" title="Trying to make the largest repository of deeplearnjs example code"></a><a href="https://github.com/hpssjellis/deeplearnjs-javascript-examples" target="_blank" rel="noopener">Trying to make the largest repository of deeplearnjs example code</a></h2><h2 id="从Brain-js到Mind，一文收录11个移动端Javascript机器学习库"><a href="#从Brain-js到Mind，一文收录11个移动端Javascript机器学习库" class="headerlink" title="从Brain.js到Mind，一文收录11个移动端Javascript机器学习库"></a><a href="https://blog.csdn.net/j2IaYU7Y/article/details/79832334" target="_blank" rel="noopener">从Brain.js到Mind，一文收录11个移动端Javascript机器学习库</a></h2><h2 id="Using-a-Neural-Network-to-recognize-MNIST-digets-in-JavaScript"><a href="#Using-a-Neural-Network-to-recognize-MNIST-digets-in-JavaScript" class="headerlink" title="Using a Neural Network to recognize MNIST digets in JavaScript. "></a><a href="https://github.com/javascript-machine-learning/mnist-neural-network-deeplearnjs" target="_blank" rel="noopener">Using a Neural Network to recognize MNIST digets in JavaScript. </a></h2><h2 id="Machine-Learning-with-JavaScript"><a href="#Machine-Learning-with-JavaScript" class="headerlink" title="Machine Learning with JavaScript "></a><a href="https://hackernoon.com/machine-learning-with-javascript-part-1-9b97f3ed4fe5" target="_blank" rel="noopener">Machine Learning with JavaScript </a></h2><p> <img src="https://cdn-images-1.medium.com/max/1600/1*Fhc-ZFRp1ZRZ2SkSdkYvJA.png" alt=""></p>
-<h2 id="TensorFlow-js"><a href="#TensorFlow-js" class="headerlink" title="TensorFlow.js"></a><a href="https://js.tensorflow.org/" target="_blank" rel="noopener">TensorFlow.js</a></h2><p> <img src="https://js.tensorflow.org/images/TF_JS_lockup.png" alt=""></p>
+<h2 id="Pure-javascript-deeplearnjs-demos"><a href="#Pure-javascript-deeplearnjs-demos" class="headerlink" title="Pure javascript deeplearnjs demos"></a><a href="https://github.com/hma02/deeplearnjs-practice" target="_blank" rel="noopener">Pure javascript deeplearnjs demos</a></h2><h2 id="Trying-to-make-the-largest-repository-of-deeplearnjs-example-code"><a href="#Trying-to-make-the-largest-repository-of-deeplearnjs-example-code" class="headerlink" title="Trying to make the largest repository of deeplearnjs example code"></a><a href="https://github.com/hpssjellis/deeplearnjs-javascript-examples" target="_blank" rel="noopener">Trying to make the largest repository of deeplearnjs example code</a></h2><h2 id="从Brain-js到Mind，一文收录11个移动端Javascript机器学习库"><a href="#从Brain-js到Mind，一文收录11个移动端Javascript机器学习库" class="headerlink" title="从Brain.js到Mind，一文收录11个移动端Javascript机器学习库"></a><a href="https://blog.csdn.net/j2IaYU7Y/article/details/79832334" target="_blank" rel="noopener">从Brain.js到Mind，一文收录11个移动端Javascript机器学习库</a></h2><h2 id="Using-a-Neural-Network-to-recognize-MNIST-digets-in-JavaScript"><a href="#Using-a-Neural-Network-to-recognize-MNIST-digets-in-JavaScript" class="headerlink" title="Using a Neural Network to recognize MNIST digets in JavaScript. "></a><a href="https://github.com/javascript-machine-learning/mnist-neural-network-deeplearnjs" target="_blank" rel="noopener">Using a Neural Network to recognize MNIST digets in JavaScript. </a></h2><h2 id="Machine-Learning-with-JavaScript"><a href="#Machine-Learning-with-JavaScript" class="headerlink" title="Machine Learning with JavaScript "></a><a href="https://hackernoon.com/machine-learning-with-javascript-part-1-9b97f3ed4fe5" target="_blank" rel="noopener">Machine Learning with JavaScript </a></h2><p><img src="https://cdn-images-1.medium.com/max/1600/1*Fhc-ZFRp1ZRZ2SkSdkYvJA.png" alt=""></p>
+<h2 id="TensorFlow-js"><a href="#TensorFlow-js" class="headerlink" title="TensorFlow.js"></a><a href="https://js.tensorflow.org/" target="_blank" rel="noopener">TensorFlow.js</a></h2><p><img src="https://js.tensorflow.org/images/TF_JS_lockup.png" alt=""></p>
 <blockquote>
 <p>A WebGL accelerated, browser based JavaScript library for training and deploying ML models.</p>
 </blockquote>
-<p> <strong>Develop ML in the Browser</strong><br> Use flexible and intuitive APIs to build and train models from scratch using the low-level JavaScript linear algebra library or the high-level layers API</p>
-<p> <strong>Run Existing models</strong><br> Use TensorFlow.js model converters to run pre-existing TensorFlow models right in the browser.</p>
-<p> <strong>Retrain Existing models</strong><br> Retrain pre-existing ML models using sensor data connected to the browser, or other client-side data.</p>
+<p><strong>Develop ML in the Browser</strong><br>Use flexible and intuitive APIs to build and train models from scratch using the low-level JavaScript linear algebra library or the high-level layers API</p>
+<p><strong>Run Existing models</strong><br>Use TensorFlow.js model converters to run pre-existing TensorFlow models right in the browser.</p>
+<p><strong>Retrain Existing models</strong><br>Retrain pre-existing ML models using sensor data connected to the browser, or other client-side data.</p>
 <h2 id="How-to-create-a-Neural-Network-in-JavaScript-in-only-30-lines-of-code"><a href="#How-to-create-a-Neural-Network-in-JavaScript-in-only-30-lines-of-code" class="headerlink" title="How to create a Neural Network in JavaScript in only 30 lines of code"></a><a href="https://medium.freecodecamp.org/how-to-create-a-neural-network-in-javascript-in-only-30-lines-of-code-343dafc50d49" target="_blank" rel="noopener">How to create a Neural Network in JavaScript in only 30 lines of code</a></h2><h2 id="Deep-Learning-with-JavaScript"><a href="#Deep-Learning-with-JavaScript" class="headerlink" title="Deep Learning with JavaScript"></a><a href="https://yusugomori.com/projects/deep-learning/dropout-relu" target="_blank" rel="noopener">Deep Learning with JavaScript</a></h2>
       
     </div>
@@ -990,7 +990,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">206</span>
+                    <span class="site-state-item-count">207</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1676,7 +1676,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">324</span>
+                      
+                    
+                    <span class="site-state-item-count">325</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
