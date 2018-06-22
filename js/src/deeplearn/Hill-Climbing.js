@@ -1,1 +1,20 @@
-for(var costf=function(o){for(var c=0,i=0;i<14;i++)c+=.5*i*o[i]*Math.exp(-o[i]+o[i+1])/o[i+1];return c+=3*o[14]/o[0]},domain=[],i=0;i<15;i++)domain.push([1,70]);var vec=ml.optimize.hillclimb({domain:domain,costf:costf});console.log("vec : ",vec),console.log("cost : ",costf(vec));
+var costf = function(vec) {
+    var cost = 0;
+    for(var i =0; i<14;i++) { // 15-dimensional vector
+        cost += (0.5*i*vec[i]*Math.exp(-vec[i]+vec[i+1])/vec[i+1])
+    }
+    cost += (3.*vec[14]/vec[0]);
+    return cost;
+};
+
+var domain = [];
+for(var i=0;i<15;i++)
+    domain.push([1,70]); // domain[idx][0] : minimum of vec[idx], domain[idx][1] : maximum of vec[idx].
+
+var vec = ml.optimize.hillclimb({
+    domain : domain,
+    costf : costf
+});
+
+console.log("vec : ",vec);
+console.log("cost : ",costf(vec));
