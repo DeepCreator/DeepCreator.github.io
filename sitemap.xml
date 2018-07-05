@@ -2,16 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://deepcreator.com/MVP/Diary.html</loc>
+    <loc>http://deepcreator.com/Business/Economy.html</loc>
     
-    <lastmod>2018-07-04T09:55:40.167Z</lastmod>
+    <lastmod>2018-07-05T03:40:49.319Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Bankruptcy.html</loc>
+    
+    <lastmod>2018-07-05T03:35:40.273Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/MVP/Alisa.html</loc>
+    
+    <lastmod>2018-07-05T03:31:17.011Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Arbitration.html</loc>
+    
+    <lastmod>2018-07-05T03:27:22.208Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Action.html</loc>
+    
+    <lastmod>2018-07-05T01:34:58.129Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://deepcreator.com/Business/User%20Experience.html</loc>
     
-    <lastmod>2018-07-04T09:55:24.931Z</lastmod>
+    <lastmod>2018-07-05T01:34:57.841Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Writing.html</loc>
+    
+    <lastmod>2018-07-05T01:16:09.816Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/MVP/Diary.html</loc>
+    
+    <lastmod>2018-07-05T01:05:14.697Z</lastmod>
     
   </url>
   
@@ -310,23 +352,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/MVP/Alisa.html</loc>
-    
-    <lastmod>2018-06-21T08:52:37.175Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Business/Trend.html</loc>
     
     <lastmod>2018-06-21T08:50:51.630Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Business/Economy.html</loc>
-    
-    <lastmod>2018-06-21T08:45:12.300Z</lastmod>
     
   </url>
   
@@ -453,13 +481,6 @@
     <loc>http://deepcreator.com/Concept/Innovation.html</loc>
     
     <lastmod>2018-06-20T07:50:17.653Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Concept/Writing.html</loc>
-    
-    <lastmod>2018-06-20T07:50:17.652Z</lastmod>
     
   </url>
   
@@ -597,14 +618,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/AI/Internet.html</loc>
+    <loc>http://deepcreator.com/AI/Web.html</loc>
     
     <lastmod>2018-06-19T03:35:44.966Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/AI/Web.html</loc>
+    <loc>http://deepcreator.com/AI/Internet.html</loc>
     
     <lastmod>2018-06-19T03:35:44.966Z</lastmod>
     
@@ -646,13 +667,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/AI/Algorithm.html</loc>
-    
-    <lastmod>2018-06-19T03:35:44.881Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/AI/Computer.html</loc>
     
     <lastmod>2018-06-19T03:35:44.881Z</lastmod>
@@ -660,9 +674,9 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Action.html</loc>
+    <loc>http://deepcreator.com/AI/Algorithm.html</loc>
     
-    <lastmod>2018-06-19T03:33:52.893Z</lastmod>
+    <lastmod>2018-06-19T03:35:44.881Z</lastmod>
     
   </url>
   
@@ -751,14 +765,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/Jury.html</loc>
+    <loc>http://deepcreator.com/IPR/PCT.html</loc>
     
     <lastmod>2018-06-19T03:27:18.074Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/PCT.html</loc>
+    <loc>http://deepcreator.com/IPR/Jury.html</loc>
     
     <lastmod>2018-06-19T03:27:18.074Z</lastmod>
     
@@ -856,14 +870,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Review.html</loc>
+    <loc>http://deepcreator.com/Concept/Viewpoint.html</loc>
     
     <lastmod>2018-06-16T11:12:12.517Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Viewpoint.html</loc>
+    <loc>http://deepcreator.com/Concept/Review.html</loc>
     
     <lastmod>2018-06-16T11:12:12.517Z</lastmod>
     
