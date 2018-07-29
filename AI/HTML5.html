@@ -1,4 +1,1876 @@
-<!DOCTYPE html><html class="theme-next muse use-motion" lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet"><style>.pace .pace-progress{background:#1e92fb;height:3px}.pace .pace-progress-inner{box-shadow:0 0 10px #1e92fb,0 0 5px #1e92fb}.pace .pace-activity{border-top-color:#1e92fb;border-left-color:#1e92fb}</style><meta name="theme-color" content="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0"><link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Muse",version:"6.3.0",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!0,onmobile:!0},fancybox:!1,fastclick:!1,lazyload:!1,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式"><meta name="keywords" content="HTML5"><meta property="og:type" content="article"><meta property="og:title" content="HTML5"><meta property="og:url" content="http://deepcreator.com/AI/HTML5.html"><meta property="og:site_name" content="Ai Lab"><meta property="og:description" content="万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式"><meta property="og:locale" content="en"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/html520180726.jpg?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/html5-cheat-sheet.png?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://www.catswhocode.com/blog/wp-content/uploads/2011/08/html5canvas.png"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/vDoIT_html-css-logo1.jpg?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/css20180504.jpg?imageMogr2/thumbnail/!75p"><meta property="og:updated_time" content="2018-07-26T06:31:14.906Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="HTML5"><meta name="twitter:description" content="万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式"><meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/html520180726.jpg?imageMogr2/thumbnail/!75p"><link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml"><link rel="canonical" href="http://deepcreator.com/AI/HTML5.html"><script type="text/javascript" id="page.configurations">CONFIG.page={sidebar:""}</script><title>HTML5 | Ai Lab</title><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}()</script><noscript><style type="text/css">.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.logo-line-after i{right:initial}</style></noscript><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker"><script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script><link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head><body itemscope itemtype="http://schema.org/WebPage" lang="en"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta custom-logo"><div class="site-meta-headline"> <a><img class="custom-logo-image" src="http://p53s4d2qk.bkt.clouddn.com/deepcreator220180502.JPG" alt="Ai Lab"></a></div><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Ai Lab</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Minority, Right, Value</p></div><div class="site-nav-toggle"> <button aria-label="Toggle navigation bar"><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>Archives</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>Categories</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>Tags</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-info-circle"></i><br>About</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>Search</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://deepcreator.com/AI/HTML5.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Author"><meta itemprop="description" content="Chief IPR Officer in AI Age"><meta itemprop="image" content="/img/headonhill.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Ai Lab"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">HTML5</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">Posted on</span> <time title="Created: 2018-05-03 14:13:06" itemprop="dateCreated datePublished" datetime="2018-05-03T14:13:06+08:00">2018-05-03</time> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i></span> <span class="post-meta-item-text">Edited on</span> <time title="Modified: 2018-07-26 14:31:14" itemprop="dateModified" datetime="2018-07-26T14:31:14+08:00">2018-07-26</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">In</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span> <a href="/AI/HTML5.html#comments" itemprop="discussionUrl"><span class="post-meta-item-text">Comments:</span><span class="post-comments-count valine-comment-count" data-xid="/AI/HTML5.html" itemprop="commentCount"></span></a></span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i> Views:<span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="http://p53s4d2qk.bkt.clouddn.com/html520180726.jpg?imageMogr2/thumbnail/!75p" alt="html520180726.jpg"></p><blockquote><p> <a href="https://baike.baidu.com/item/html5/4234903" target="_blank" rel="noopener">万维网的核心语言</a>、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式</p></blockquote><a id="more"></a><h2 id="HTML5权威指南"><a href="#HTML5权威指南" class="headerlink" title="HTML5权威指南"></a><a href="https://book.douban.com/subject/25786074/" target="_blank" rel="noopener">HTML5权威指南</a></h2><p>The definitive guide to HTML5</p><h3 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h3><p>《HTML5 权威指南》是系统学习网页设计的权威参考图书。本书分为五部分：第一部分介绍学习本书的预备知识和HTML、CSS 和JavaScript 的最新进展；第二部分讨论HTML 元素，并详细说明了HTML5中新增和修改的元素；第三部分阐述CSS，涵盖了所有控制内容样式的CSS 选择器和属性，并辅以大量代码示例和图示；第四部分介绍DOM，剖析如何用JavaScript 操纵HTML 内容；第五部分讲解Ajax、多媒体和canvas 元素等HTML5 高级特性。</p><p>本书面向初学者和中等水平Web 开发人员，是牢固掌握HTML5、CSS3 和JavaScript 的必读之作。</p><h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>第一部分　开篇<br>第1章　HTML5背景知识　　1<br>1.1 　HTML的历史　　2<br>1.1.1 　JavaScript出场　　2<br>1.1.2 　浏览器战争的结束　　3<br>1.1.3 　插件称雄　　3<br>1.1.4 　语义HTML浮出水面　　3<br>1.1.5 　发展态势：HTML标准滞后于其使用　　4<br>1.2 　HTML5简介　　4<br>1.2.1 　新标准　　4<br>1.2.2 　引入原生多媒体支持　　5<br>1.2.3 　引入可编程内容　　5<br>1.2.4 　引入语义Web　　6<br>1.3 　HTML5现况　　6<br>1.3.1 　浏览器对HTML5的支持情况　　6<br>1.3.2 　网站对HTML5的支持情况　　6<br>1.4 　本书结构　　6<br>1.5 　HTML5的更多信息　　7<br>1.6 　小结　　7<br>第2章　准备工作　　8<br>2.1 　挑选浏览器　　8<br>2.2 　挑选HTML编辑器　　9<br>2.3 　挑选Web服务器　　9<br>2.4 　获取Node.js　　9<br>2.5 　获取示例代码　　10<br>2.6 　小结　　10<br>第3章　初探HTML　　11<br>3.1 　使用元素　　12<br>3.1.1 　了解本章用到的元素　　13<br>3.1.2 　使用空元素　　14<br>3.1.3 　使用自闭合标签　　14<br>3.1.4 　使用虚元素　　14<br>3.2 　使用元素属性　　16<br>3.2.1 　一个元素应用多个属性　　16<br>3.2.2 　使用布尔属性　　16<br>3.2.3 　使用自定义属性　　17<br>3.3 　创建HTML文档　　17<br>3.3.1 　外层结构　　18<br>3.3.2 　元数据　　19<br>3.3.3 　内容　　19<br>3.3.4 　父元素、子元素、后代元素和兄弟元素　　20<br>3.3.5 　了解元素类型　　20<br>3.4 　使用HTML实体　　21<br>3.5 　HTML5全局属性　　21<br>3.5.1 　accesskey属性　　21<br>3.5.2 　class属性　　22<br>3.5.3 　contenteditable属性　　25<br>3.5.4 　contextmenu属性　　25<br>3.5.5 　dir属性　　26<br>3.5.6 　draggable属性　　26<br>3.5.7 　dropzone属性　　26<br>3.5.8 　hidden属性　　26<br>3.5.9 　id属性　　28<br>3.5.10 　lang属性　　29<br>3.5.11 　spellcheck属性　　29<br>3.5.12 　style属性　　30<br>3.5.13 　tabindex属性　　30<br>3.5.14 　title属性　　31<br>3.6 　有用的HTML工具　　32<br>3.7 　小结　　32<br>第4章　初探CSS　　33<br>4.1 　定义和应用样式　　33<br>4.1.1 　了解本章所用的CSS属性　　34<br>4.1.2 　使用元素内嵌样式　　34<br>4.1.3 　使用文档内嵌样式　　35<br>4.1.4 　使用外部样式表　　37<br>4.2 　样式的层叠和继承　　40<br>4.2.1 　浏览器样式　　40<br>4.2.2 　用户样式　　41<br>4.2.3 　样式如何层叠　　42<br>4.2.4 　用重要样式调整层叠次序　　42<br>4.2.5 　根据具体程度和定义次序解决同级样式冲突　　43<br>4.2.6 　继承　　46<br>4.3 　CSS中的颜色　　48<br>4.4 　CSS中的长度　　49<br>4.4.1 　绝对长度　　50<br>4.4.2 　相对长度　　51<br>4.5 　其他CSS单位　　56<br>4.5.1 　使用CSS角度　　56<br>4.5.2 　使用CSS时间　　57<br>4.6 　测试CSS特性的支持情况　　57<br>4.7 　有用的CSS工具　　57<br>4.7.1 　浏览器样式报告　　57<br>4.7.2 　用SelectorGadget生成选择器　　58<br>4.7.3 　用LESS改进CSS　　59<br>4.7.4 　使用CSS框架　　59<br>4.8 　小结　　59<br>第5章　初探JavaScript　　60<br>5.1 　准备使用JavaScript　　61<br>5.2 　使用语句　　62<br>5.3 　定义和使用函数　　63<br>5.3.1 　定义带参数的函数　　63<br>5.3.2 　定义会返回结果的函数　　64<br>5.4 　使用变量和类型　　65<br>5.4.1 　使用基本类型　　66<br>5.4.2 　创建对象　　67<br>5.4.3 　使用对象　　69<br>5.5 　使用JavaScript运算符　　73<br>5.5.1 　相等和等同运算符　　73<br>5.5.2 　显式类型转换　　76<br>5.6 　使用数组　　78<br>5.6.1 　使用数组字面量　　79<br>5.6.2 　读取和修改数组内容　　80<br>5.6.3 　枚举数组内容　　80<br>5.6.4 　使用内置的数组方法　　81<br>5.7 　处理错误　　81<br>5.8 　比较undefined和null值　　83<br>5.8.1 　检查变量或属性是否为undefined或null　　85<br>5.8.2 　区分null和undefined　　85<br>5.9 　常用的JavaScript工具　　86<br>5.9.1 　使用JavaScript调试器　　86<br>5.9.2 　使用JavaScript库　　86<br>5.10 　小结　　87<br>第二部分　HTML元素<br>第6章　HTML5元素背景知识　　90<br>6.1 　语义与呈现分离　　90<br>6.2 　元素选用原则　　91<br>6.2.1 　少亦可为多　　91<br>6.2.2 　别误用元素　　91<br>6.2.3 　具体为佳，一以贯之　　91<br>6.2.4 　对用户不要想当然　　92<br>6.3 　元素说明体例　　92<br>6.4 　元素速览　　92<br>6.4.1 　文档和元数据元素　　92<br>6.4.2 　文本元素　　93<br>6.4.3 　对内容分组　　94<br>6.4.4 　划分内容　　95<br>6.4.5 　制表　　95<br>6.4.6 　创建表单　　96<br>6.4.7 　嵌入内容　　96<br>6.5 　未实现的元素　　97<br>6.6 　小结　　97<br>第7章　创建HTML文档　　98<br>7.1 　构筑基本的文档结构　　99<br>7.1.1 　DOCTYPE元素　　99<br>7.1.2 　html元素　　99<br>7.1.3 　head元素　　100<br>7.1.4 　body元素　　101<br>7.2 　用元数据元素说明文档　　102<br>7.2.1 　设置文档标题　　102<br>7.2.2 　设置相对URL的解析基准　　103<br>7.2.3 　用元数据说明文档　　104<br>7.2.4 　定义CSS样式　　108<br>7.2.5 　指定外部资源　　112<br>7.3 　使用脚本元素　　116<br>7.3.1 　script元素　　117<br>7.3.2 　noscript元素　　123<br>7.4 　小结　　125<br>第8章　标记文字　　126<br>8.1 　生成超链接　　127<br>8.1.1 　生成指向外部的超链接　　128<br>8.1.2 　使用相对URL　　129<br>8.1.3 　生成内部超链接　　129<br>8.1.4 　设定浏览环境　　130<br>8.2 　用基本的文字元素标记内容　　131<br>8.2.1 　表示关键词和产品名称　　131<br>8.2.2 　加以强调　　132<br>8.2.3 　表示外文词语或科技术语　　133<br>8.2.4 　表示不准确或校正　　134<br>8.2.5 　表示重要的文字　　135<br>8.2.6 　为文字添加下划线　　136<br>8.2.7 　添加小号字体内容　　137<br>8.2.8 　添加上标和下标　　138<br>8.3 　换行　　139<br>8.3.1 　强制换行　　139<br>8.3.2 　指明可以安全换行的建议位置　　141<br>8.4 　表示输入和输出　　142<br>8.5 　使用标题引用、引文、定义和缩写　　143<br>8.5.1 　表示缩写　　143<br>8.5.2 　定义术语　　144<br>8.5.3 　引用来自他处的内容　　145<br>8.5.4 　引用其他作品的标题　　146<br>8.6 　使用语言元素　　147<br>8.6.1 　ruby、rt和rp元素　　147<br>8.6.2 　bdo元素　　149<br>8.6.3 　bdi元素　　150<br>8.7 　其他文本元素　　152<br>8.7.1 　表示一段一般性的内容　　152<br>8.7.2 　突出显示文本　　153<br>8.7.3 　表示添加和删除的内容　　155<br>8.7.4 　表示时间和日期　　156<br>8.8 　小结　　157<br>第9章　组织内容　　158<br>9.1 　为什么要对内容分组　　158<br>9.2 　建立段落　　159<br>9.3 　使用div元素　　161<br>9.4 　使用预先编排好格式的内容　　163<br>9.5 　引用他处内容　　164<br>9.6 　添加主题分隔　　166<br>9.7 　将内容组织为列表　　169<br>9.7.1 　ol元素　　169<br>9.7.2 　ul元素　　171<br>9.7.3 　li元素　　172<br>9.7.4 　生成说明列表　　173<br>9.7.5 　生成自定义列表　　174<br>9.8 　使用插图　　176<br>9.9 　小结　　178<br>第10章　文档分节　　179<br>10.1 　添加基本的标题　　179<br>10.2 　隐藏子标题　　182<br>10.3 　生成节　　185<br>10.4 　添加首部和尾部　　188<br>10.5 　添加导航区域　　191<br>10.6 　使用article　　194<br>10.7 　生成附注栏　　198<br>10.8 　提供联系信息　　201<br>10.9 　生成详情区域　　202<br>10.10 　小结　　205<br>第11章　表格元素　　206<br>11.1 　生成基本的表格　　206<br>11.2 　添加表头单元格　　209<br>11.3 　为表格添加结构　　211<br>11.3.1 　表示表头和表格主题　　212<br>11.3.2 　添加表脚　　214<br>11.4 　制作不规则表格　　216<br>11.5 　把表头与单元格关联起来　　220<br>11.6 　为表格添加标题　　221<br>11.7 　处理列　　223<br>11.8 　设置表格边框　　228<br>11.9 　小结　　230<br>第12章　表单　　231<br>12.1 　制作基本表单　　232<br>12.1.1 　定义表单　　233<br>12.1.2 　查看表单数据　　234<br>12.2 　配置表单　　236<br>12.2.1 　配置表单的action属性　　236<br>12.2.2 　配置HTTP方法属性　　237<br>12.2.3 　配置数据编码　　237<br>12.2.4 　控制表单的自动完成功能　　239<br>12.2.5 　指定表单反馈信息的目标显示位置　　240<br>12.2.6 　设置表单名称　　242<br>12.3 　在表单中添加说明标签　　242<br>12.4 　自动聚焦到某个input元素　　244<br>12.5 　禁用单个input元素　　245<br>12.6 　对表单元素编组　　246<br>12.6.1 　为fieldset元素添加说明标签　　248<br>12.6.2 　用fieldset禁用整组input元素　　249<br>12.7 　使用button元素　　250<br>12.7.1 　用button元素提交表单　　251<br>12.7.2 　用button元素重置表单　　252<br>12.7.3 　把button作为一般元素使用　　253<br>12.8 　使用表单外的元素　　254<br>12.9 　小结　　254<br>第13章　定制input元素　　255<br>13.1 　用input元素输入文字　　256<br>13.1.1 　设定元素大小　　256<br>13.1.2 　设置初始值和占位式提示　　258<br>13.1.3 　使用数据列表　　259<br>13.1.4 　生成只读或被禁用的文本框　　262<br>13.1.5 　指定文字方向数据的名称　　263<br>13.2 　用input元素输入密码　　263<br>13.3 　用input元素生成按钮　　266<br>13.4 　用input元素为输入数据把关　　267<br>13.4.1 　用input元素获取数值　　268<br>13.4.2 　用input元素获取指定范围内的数值　　270<br>13.4.3 　用input元素获取布尔型输入　　271<br>13.4.4 　用input元素生成一组固定选项　　273<br>13.4.5 　用input元素获取有规定格式的字符串　　275<br>13.4.6 　用input元素获取时间和日期　　277<br>13.4.7 　用input元素获取颜色值　　279<br>13.5 　用input元素获取搜索用词　　281<br>13.6 　用input元素生成隐藏的数据项　　282<br>13.7 　用input元素生成图像按钮和分区响应图　　284<br>13.8 　用input元素上传文件　　286<br>13.9 　小结　　288<br>第14章　其他表单元素及输入验证　　289<br>14.1 　使用其他表单元素　　289<br>14.1.1 　生成选项列表　　289<br>14.1.2 　输入多行文字　　294<br>14.1.3 　表示计算结果　　296<br>14.1.4 　生成公开/私有密钥对　　297<br>14.2 　使用输入验证　　298<br>14.2.1 　确保用户提供了一个值　　299<br>14.2.2 　确保输入值位于某个范围内　　300<br>14.2.3 　确保输入值与指定模式匹配　　301<br>14.2.4 　确保输入值是电子邮箱地址或URL　　303<br>14.3 　禁用输入验证　　304<br>14.4 　小结　　305<br>第15章　嵌入内容　　306<br>15.1 　嵌入图像　　306<br>15.1.1 　在超链接里嵌入图像　　308<br>15.1.2 　创建客户端分区响应图　　310<br>15.2 　嵌入另一张HTML文档　　313<br>15.3 　通过插件嵌入内容　　315<br>15.3.1 　使用embed元素　　315<br>15.3.2 　使用object和param元素　　317<br>15.4 　object元素的其他用途　　319<br>15.4.1 　使用object元素嵌入图像　　319<br>15.4.2 　使用object元素创建分区响应图　　320<br>15.4.3 　将object元素作为浏览上下文环境　　320<br>15.5 　嵌入数字表现形式　　321<br>15.5.1 　显示进度　　321<br>15.5.2 　显示范围里的值　　322<br>15.6 　其他嵌入元素　　324<br>15.6.1 　嵌入音频和视频　　324<br>15.6.2 　嵌入图形　　324<br>15.7 　小结　　324<br>第三部分　CSS<br>第16章　理解CSS　　326<br>16.1 　CSS标准化　　326<br>16.2 　盒模型　　327<br>16.3 　选择器简明参考　　328<br>16.4 　属性简明参考　　329<br>16.4.1 　边框和背景属性　　329<br>16.4.2 　盒模型属性　　331<br>16.4.3 　布局属性　　332<br>16.4.4 　文本属性　　332<br>16.4.5 　过渡、动画和变换属性　　333<br>16.4.6 　其他属性　　334<br>16.5 　小结　　334<br>第17章　使用CSS选择器（第Ⅰ部分）　　335<br>17.1 　使用CSS基本选择器　　335<br>17.1.1 　选择所有元素　　336<br>17.1.2 　根据类型选择元素　　337<br>17.1.3 　根据类选择元素　　338<br>17.1.4 　根据ID选择元素　　340<br>17.1.5 　根据属性选择元素　　341<br>17.2 　复合选择器　　344<br>17.2.1 　并集选择器　　344<br>17.2.2 　后代选择器　　345<br>17.2.3 　选择子元素　　347<br>17.2.4 　选择兄弟元素　　349<br>17.3 　使用伪元素选择器　　351<br>17.3.1 　使用::first-line选择器　　351<br>17.3.2 　使用::first-letter选择器　　352<br>17.3.3 　使用:before和:after选择器　　353<br>17.3.4 　使用CSS计数器　　354<br>17.4 　小结　　356<br>第18章　使用CSS选择器（第Ⅱ部分）　　357<br>18.1 　使用结构性伪类选择器　　357<br>18.1.1 　使用根元素选择器　　358<br>18.1.2 　使用子元素选择器　　359<br>18.1.3 　使用:nth-child选择器　　363<br>18.2 　使用UI伪类选择器　　364<br>18.2.1 　选择启用或禁用元素　　364<br>18.2.2 　选择已勾选的元素　　365<br>18.2.3 　选择默认元素　　366<br>18.2.4 　选择有效和无效的input元素　　367<br>18.2.5 　选择限定范围的input元素　　369<br>18.2.6 　选择必需和可选的input元素　　370<br>18.3 　使用动态伪类选择器　　371<br>18.3.1 　使用:link和:visited选择器　　371<br>18.3.2 　使用:hover选择器　　372<br>18.3.3 　使用:active选择器　　373<br>18.3.4 　使用:focus选择器　　374<br>18.4 　其他伪类选择器　　375<br>18.4.1 　使用否定选择器　　376<br>18.4.2 　使用:empty选择器　　376<br>18.4.3 　使用:lang选择器　　377<br>18.4.4 　使用:target选择器　　377<br>18.5 　小结　　379<br>第19章　使用边框和背景　　380<br>19.1 　应用边框样式　　380<br>19.1.1 　定义边框宽度　　381<br>19.1.2 　定义边框样式　　382<br>19.1.3 　为一条边应用边框样式　　383<br>19.1.4 　使用border简写属性　　384<br>19.1.5 　创建圆角边框　　385<br>19.1.6 　将图像用做边框　　388<br>19.2 　设置元素的背景　　392<br>19.2.1 　设置背景颜色和图像　　392<br>19.2.2 　设置背景图像的尺寸　　394<br>19.2.3 　设置背景图像位置　　395<br>19.2.4 　设置元素的背景附着方式　　396<br>19.2.5 　设置背景图像的开始位置和裁剪样式　　397<br>19.2.6 　使用background简写属性　　399<br>19.3 　创建盒子阴影　　400<br>19.4 　应用轮廓　　403<br>19.5 　小结　　405<br>第20章　使用盒模型　　406<br>20.1 　为元素应用内边距　　407<br>20.2 　为元素应用外边距　　409<br>20.3 　控制元素的尺寸　　410<br>20.3.1 　设置一定尺寸的盒子　　412<br>20.3.2 　设置最小和最大尺寸　　413<br>20.4 　处理溢出内容　　414<br>20.5 　控制元素的可见性　　417<br>20.6 　设置元素的盒类型　　419<br>20.6.1 　认识块级元素　　420<br>20.6.2 　认识行内元素　　421<br>20.6.3 　认识行内?块级元素　　422<br>20.6.4 　认识插入元素　　423<br>20.6.5 　隐藏元素　　426<br>20.7 　创建浮动盒　　427<br>20.8 　小结　　433<br>第21章　创建布局　　434<br>21.1 　定位内容　　434<br>21.1.1 　设置定位类型　　435<br>21.1.2 　设置元素的层叠顺序　　437<br>21.2 　创建多列布局　　439<br>21.3 　创建弹性盒布局　　442<br>21.3.1 　创建简单的弹性盒　　444<br>21.3.2 　伸缩多个元素　　446<br>21.3.3 　处理垂直空间　　447<br>21.3.4 　处理最大尺寸　　448<br>21.4 　创建表格布局　　450<br>21.5 　小结　　453<br>第22章　设置文本样式　　454<br>22.1 　应用基本文本样式　　454<br>22.1.1 　对齐文本　　455<br>22.1.2 　处理空白　　457<br>22.1.3 　指定文本方向　　460<br>22.1.4 　指定单词、字母、行之间的间距　　461<br>22.1.5 　控制断词　　462<br>22.1.6 　首行缩进　　464<br>22.2 　文本装饰与大小写转换　　465<br>22.3 　创建文本阴影　　467<br>22.4 　使用字体　　468<br>22.4.1 　选择字体　　469<br>22.4.2 　设置字体大小　　470<br>22.4.3 　设置字体样式和粗细　　472<br>22.5 　使用Web字体　　473<br>22.6 　小结　　475<br>第23章　过渡、动画和变换　　476<br>23.1 　使用过渡　　477<br>23.1.1 　创建反向过渡　　480<br>23.1.2 　选择中间值的计算方式　　481<br>23.2 　使用动画　　483<br>23.2.1 　使用关键帧　　486<br>23.2.2 　设置重复方向　　488<br>23.2.3 　理解结束状态　　490<br>23.2.4 　初始布局时应用动画　　491<br>23.2.5 　重用关键帧　　492<br>23.2.6 　为多个元素应用多个动画　　493<br>23.2.7 　停止和启动动画　　495<br>23.3 　使用变换　　497<br>23.3.1 　应用变换　　497<br>23.3.2 　指定元素变换的起点　　498<br>23.3.3 　将变换作为动画和过渡处理　　500<br>23.4 　小结　　501<br>第24章　其他CSS属性和特性　　502<br>24.1 　设置元素的颜色和透明度　　502<br>24.1.1 　设置前景色　　502<br>24.1.2 　设置元素的透明度　　504<br>24.2 　设置表格样式　　505<br>24.2.1 　合并表格边框　　505<br>24.2.2 　配置独立边框　　507<br>24.2.3 　处理空单元格　　508<br>24.2.4 　设置标题的位置　　509<br>24.2.5 　指定表格布局　　511<br>24.3 　设置列表样式　　512<br>24.3.1 　设置列表标记类型　　513<br>24.3.2 　使用图像作为列表标记　　514<br>24.3.3 　设置列表标记的位置　　515<br>24.4 　设置光标样式　　517<br>24.5 　小结　　518<br>第四部分　使用DOM<br>第25章　理解DOM　　520<br>25.1 　理解文档对象模型　　520<br>25.2 　理解DOM Level和兼容性　　522<br>25.3 　DOM快速查询　　524<br>25.3.1 　Document的成员　　524<br>25.3.2 　Window的成员　　525<br>25.3.3 　HTMLElement的成员　　527<br>25.3.4 　DOM里的CSS属性　　529<br>25.3.5 　DOM中的事件　　531<br>25.4 　小结　　532<br>第26章　使用Document对象　　533<br>26.1 　使用Document元数据　　536<br>26.1.1 　获取文档信息　　536<br>26.1.2 　使用Location对象　　537<br>26.1.3 　读取和写入cookie　　541<br>26.1.4 　理解就绪状态　　542<br>26.1.5 　获取DOM的实现情况　　543<br>26.2 　获取HTML元素对象　　544<br>26.2.1 　使用属性获取元素对象　　545<br>26.2.2 　使用数组标记获取已命名元素　　546<br>26.2.3 　搜索元素　　548<br>26.2.4 　合并进行链式搜索　　550<br>26.3 　在DOM树里导航　　552<br>26.4 　小结　　554<br>第27章　使用Window对象　　555<br>27.1 　获取Window对象　　555<br>27.2 　获取窗口信息　　556<br>27.3 　与窗口进行交互　　558<br>27.4 　对用户进行提示　　559<br>27.5 　获取基本信息　　561<br>27.6 　使用浏览器历史　　561<br>27.6.1 　在浏览历史中导航　　562<br>27.6.2 　在浏览历史里插入条目　　564<br>27.6.3 　为不同的文档添加条目　　566<br>27.6.4 　在浏览历史中保存复杂状态　　567<br>27.6.5 　替换浏览历史中的条目　　570<br>27.7 　使用跨文档消息传递　　570<br>27.8 　使用计时器　　574<br>27.9 　小结　　576<br>第28章　使用DOM元素　　577<br>28.1 　使用元素对象　　577<br>28.1.1 　使用类　　579<br>28.1.2 　使用元素属性　　582<br>28.2 　使用Text对象　　586<br>28.3 　修改模型　　588<br>28.3.1 　创建和删除元素　　589<br>28.3.2 　复制元素　　591<br>28.3.3 　移动元素　　592<br>28.3.4 　比较元素对象　　593<br>28.3.5 　使用HTML片段　　595<br>28.3.6 　向文本块插入元素　　600<br>28.4 　小结　　601<br>第29章　为DOM元素设置样式　　602<br>29.1 　使用样式表　　602<br>29.1.1 　获得样式表的基本信息　　603<br>29.1.2 　使用媒介限制　　605<br>29.1.3 　禁用样式表　　607<br>29.1.4 　CSSRuleList对象的成员　　608<br>29.2 　使用元素样式　　611<br>29.3 　使用CSSStyleDeclaration对象　　613<br>29.3.1 　使用便捷属性　　613<br>29.3.2 　使用常规属性　　616<br>29.3.3 　使用细粒度的CSS DOM对象　　620<br>29.4 　使用计算样式　　623<br>29.5 　小结　　625<br>第30章　使用事件　　626<br>30.1 　使用简单事件处理器　　627<br>30.1.1 　实现简单的内联事件处理器　　627<br>30.1.2 　实现一个简单的事件处理函数　　629<br>30.2 　使用DOM和事件对象　　630<br>30.2.1 　按类型区分事件　　633<br>30.2.2 　理解事件流　　634<br>30.2.3 　使用可撤销事件　　641<br>30.3 　使用HTML事件　　642<br>30.3.1 　文档和窗口事件　　642<br>30.3.2 　使用鼠标事件　　643<br>30.3.3 　使用键盘焦点事件　　645<br>30.3.4 　使用键盘事件　　647<br>30.3.5 　使用表单事件　　649<br>30.4 　小结　　649<br>第31章　使用元素专属对象　　650<br>31.1 　文档和元数据对象　　650<br>31.1.1 　base元素　　650<br>31.1.2 　body元素　　650<br>31.1.3 　link元素　　651<br>31.1.4 　meta元素　　651<br>31.1.5 　script元素　　651<br>31.1.6 　style元素　　652<br>31.1.7 　title元素　　652<br>31.1.8 　其他文档和元数据元素　　652<br>31.2 　文本元素　　652<br>31.2.1 　a元素　　652<br>31.2.2 　del和ins元素　　653<br>31.2.3 　q元素　　653<br>31.2.4 　time元素　　653<br>31.2.5 　其他文本元素　　654<br>31.3 　分组元素　　654<br>31.3.1 　blockquote元素　　654<br>31.3.2 　li元素　　654<br>31.3.3 　ol元素　　654<br>31.3.4 　其他分组元素　　655<br>31.4 　区块元素　　655<br>31.4.1 　details元素　　655<br>31.4.2 　其他区块元素　　655<br>31.5 　表格元素　　655<br>31.5.1 　col和colgroup元素　　655<br>31.5.2 　table元素　　656<br>31.5.3 　thead、tbody和tfoot元素　　656<br>31.5.4 　th元素　　657<br>31.5.5 　tr元素　　657<br>31.5.6 　其他表格元素　　657<br>31.6 　表单元素　　657<br>31.6.1 　button元素　　657<br>31.6.2 　datalist元素　　658<br>31.6.3 　fieldset元素　　658<br>31.6.4 　form元素　　658<br>31.6.5 　input元素　　659<br>31.6.6 　label元素　　660<br>31.6.7 　legend元素　　661<br>31.6.8 　optgroup元素　　661<br>31.6.9 　option元素　　661<br>31.6.10 　output元素　　661<br>31.6.11 　select元素　　662<br>31.6.12 　textarea元素　　663<br>31.7 　内容元素　　663<br>31.7.1 　area元素　　664<br>31.7.2 　embed元素　　664<br>31.7.3 　iframe元素　　664<br>31.7.4 　img元素　　665<br>31.7.5 　map元素　　665<br>31.7.6 　meter元素　　665<br>31.7.7 　object元素　　666<br>31.7.8 　param元素　　666<br>31.7.9 　progress元素　　667<br>31.8 　小结　　667<br>第五部分　高级功能<br>第32章　使用Ajax（第Ⅰ部分）　　670<br>32.1 　Ajax起步　　671<br>32.1.1 　处理响应　　674<br>32.1.2 　主流中的异类：应对Opera　　675<br>32.2 　使用Ajax事件　　677<br>32.3 　处理错误　　679<br>32.3.1 　处理设置错误　　681<br>32.3.2 　处理请求错误　　682<br>32.3.3 　处理应用程序错误　　682<br>32.4 　获取和设置标头　　683<br>32.4.1 　覆盖请求的HTTP方法　　683<br>32.4.2 　禁用内容缓存　　685<br>32.4.3 　读取响应标头　　685<br>32.5 　生成跨源Ajax请求　　687<br>32.5.1 　使用Origin请求标头　　690<br>32.5.2 　高级CORS功能　　691<br>32.6 　中止请求　　691<br>32.7 　小结　　693<br>第33章　使用Ajax（第Ⅱ部分）　　694<br>33.1 　准备向服务器发送数据　　694<br>33.1.1 　定义服务器　　695<br>33.1.2 　理解问题所在　　697<br>33.2 　发送表单数据　　698<br>33.3 　使用FormData对象发送表单数据　　701<br>33.3.1 　创建FormData对象　　701<br>33.3.2 　修改FormData对象　　702<br>33.4 　发送JSON数据　　703<br>33.5 　发送文件　　705<br>33.6 　追踪上传进度　　707<br>33.7 　请求并处理不同内容类型　　709<br>33.7.1 　接收HTML片段　　709<br>33.7.2 　接收XML数据　　712<br>33.7.3 　接收JSON数据　　714<br>33.8 　小结　　715<br>第34章　使用多媒体　　716<br>34.1 　使用video元素　　717<br>34.1.1 　预先加载视频　　718<br>34.1.2 　显示占位图像　　720<br>34.1.3 　设置视频尺寸　　720<br>34.1.4 　指定视频来源（和格式）　　721<br>34.1.5 　track元素　　724<br>34.2 　使用audio元素　　724<br>34.3 　通过DOM操作嵌入式媒体　　726<br>34.3.1 　获得媒体信息　　726<br>34.3.2 　评估回放能力　　728<br>34.3.3 　控制媒体回放　　730<br>34.4 　小结　　733<br>第35章　使用canvas元素（第Ⅰ部分）　　734<br>35.1 　开始使用canvas元素　　735<br>35.2 　获取画布的上下文　　736<br>35.3 　绘制矩形　　737<br>35.4 　设置画布绘制状态　　739<br>35.4.1 　设置线条连接样式　　741<br>35.4.2 　设置填充和笔触样式　　742<br>35.4.3 　使用渐变　　743<br>35.4.4 　使用径向渐变　　748<br>35.4.5 　使用图案　　751<br>35.5 　保存和恢复绘制状态　　753<br>35.6 　绘制图像　　755<br>35.6.1 　使用视频图像　　756<br>35.6.2 　使用画布图像　　759<br>35.7 　小结　　761<br>第36章　使用canvas元素（第Ⅱ部分）　　762<br>36.1 　用路径绘图　　762<br>36.1.1 　用线条绘制路径　　763<br>36.1.2 　绘制矩形　　766<br>36.2 　绘制圆弧　　768<br>36.2.1 　使用arcTo方法　　768<br>36.2.2 　使用arc方法　　772<br>36.3 　绘制贝塞尔曲线　　773<br>36.3.1 　绘制三次贝塞尔曲线　　773<br>36.3.2 　绘制二次贝塞尔曲线　　775<br>36.4 　创建剪辑区域　　777<br>36.5 　绘制文本　　778<br>36.6 　使用特效和变换　　780<br>36.6.1 　使用阴影　　780<br>36.6.2 　使用透明度　　781<br>36.6.3 　使用合成　　782<br>36.6.4 　使用变换　　784<br>36.7 　小结　　786<br>第37章　使用拖放　　787<br>37.1 　创建来源项目　　787<br>37.2 　创建释放区　　791<br>37.3 　使用DataTransfer对象　　794<br>37.3.1 　根据数据过滤被拖动项目　　796<br>37.3.2 　拖放文件　　797<br>37.4 　小结　　801<br>第38章　使用地理定位　　802<br>38.1 　使用地理定位　　802<br>38.2 　处理地理定位错误　　805<br>38.3 　指定地理定位选项　　807<br>38.4 　监控位置　　809<br>38.5 　小结　　810<br>第39章　使用Web存储　　811<br>39.1 　使用本地存储　　811<br>39.2 　使用会话存储　　815<br>39.3 　小结　　819<br>第40章　创建离线Web应用程序　　820<br>40.1 　定义问题　　820<br>40.2 　定义清单　　822<br>40.3 　检测浏览器状态　　827<br>40.4 　使用离线缓存　　828<br>40.4.1 　制作更新　　832<br>40.4.2 　获取更新　　832<br>40.4.3 　应用更新　　833<br>40.5 　小结　　834</p><p><img src="http://p53s4d2qk.bkt.clouddn.com/html5-cheat-sheet.png?imageMogr2/thumbnail/!75p" alt=""></p><blockquote><p><a href="https://websitesetup.org/html5-cheat-sheet/" target="_blank" rel="noopener">html5-cheat-sheet</a></p></blockquote><p><a href="https://blog.csdn.net/taotao6039/article/details/33320277" target="_blank" rel="noopener">HTML5-Cheatsheet（文字版）</a></p><p><img src="http://www.catswhocode.com/blog/wp-content/uploads/2011/08/html5canvas.png" alt=""></p><blockquote><p><a href="http://www.yyyweb.com/demo/html5-tools/html5-canvas.html" target="_blank" rel="noopener">HTML5 Canvas Cheat Sheet</a></p></blockquote><p>为什么要部署到 Github Pages 上？ 首先免费，其次省心，最后可以学习使用 Github。</p><p>Github Pages 有容量限制吗？ 有，由 What is GitHub Pages? 可知：大小限制为 1 GB，一个月 100 GB 流量。</p><p>更新会有不确定因素，即讨厌又麻烦，但是不更新又怎么能享受新功能呢</p><p>npm 更新全局安装的包：<br>npm update -g</p><p>npm 更新站点文件夹根目录下安装的依赖包：<br>所在目录：~/blog/<br>npm update</p><p>更新 npm 它自己：<br>npm install npm -g</p><p>更新 Node.js 到最新版：<br>npm install n -g</p><p>n latest</p><h2 id="揭秘谷歌AMP项目：它是如何提高网页加载速度的？"><a href="#揭秘谷歌AMP项目：它是如何提高网页加载速度的？" class="headerlink" title="揭秘谷歌AMP项目：它是如何提高网页加载速度的？"></a><a href="https://news.cnblogs.com/n/532096/" target="_blank" rel="noopener">揭秘谷歌AMP项目：它是如何提高网页加载速度的？</a></h2><blockquote class="blockquote-center"><p>在线演示平台——致敬Apple</p></blockquote><h2 id="playlist"><a href="#playlist" class="headerlink" title="playlist"></a>playlist</h2><div id="aplayer-nJVxGDtU" class="aplayer aplayer-tag-marker" style="margin-bottom:20px"></div><script>var options={narrow:!1,autoplay:!1,showlrc:3,mutex:!0,music:[{title:"Paradise",author:"Coldplay",url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music/Coldplay%20-%20Paradise%20%281%29.mp3",pic:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music-cover/coldplay-paradise.jpg",lrc:"https://reuixiy.github.io/uploads/lyrics/coldplay-paradise.lrc"},{title:"Fix You",author:"Coldplay",url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music/Coldplay%20-%20Fix%20You.mp3",pic:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music-cover/coldplay-fix-you.png",lrc:"https://reuixiy.github.io/uploads/lyrics/coldplay-fix-you.lrc"},{title:"Live Forever",author:"Oasis",url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music/Oasis%20-%20Live%20Forever.mp3",pic:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music-cover/oasis-live-forever.jpg",lrc:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/lyrics/oasis-live-forever.lrc"}]};options.element=document.getElementById("aplayer-nJVxGDtU");var ap=new APlayer(options);window.aplayers||(window.aplayers=[]),window.aplayers.push(ap)</script><p></p><h2 id="music"><a href="#music" class="headerlink" title="music"></a>music</h2><div id="aplayer-jAxGJCEo" class="aplayer aplayer-tag-marker" style="margin-bottom:20px"><pre class="aplayer-lrc-content"></pre></div><p></p><script>var ap=new APlayer({element:document.getElementById("aplayer-jAxGJCEo"),narrow:!1,autoplay:!1,showlrc:3,music:{title:"Live Forever",author:"Oasis",url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music/Oasis%20-%20Live%20Forever.mp3",pic:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music-cover/oasis-live-forever.jpg",lrc:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/lyrics/oasis-live-forever.lrc"}});window.aplayers||(window.aplayers=[]),window.aplayers.push(ap)</script><p></p><h2 id="video"><a href="#video" class="headerlink" title="video"></a>video</h2><div id="dplayer6" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom:20px"></div><p></p><p><link rel="stylesheet" href="DPlayer.min.css"></p><script src="DPlayer.min.js"></script><script>!function(){var e=new DPlayer({container:document.getElementById("dplayer6"),video:{url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/Video/404bg.mp4"}});window.dplayers||(window.dplayers=[]),window.dplayers.push(e)}()</script><div id="dplayer8" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom:20px"></div><p><link rel="stylesheet" href="DPlayer.min.css"></p><script src="DPlayer.min.js"></script><script>!function(){var E=new DPlayer({container:document.getElementById("dplayer8"),video:{url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/Video/%E3%80%8A%E7%9C%8B%E8%A7%81%E6%9C%AA%E6%9D%A5%E5%B7%B2%E5%88%B0%E6%9D%A5%E3%80%8B%E7%BA%A2%E6%9D%89-%E7%9C%9F%E6%A0%BC%20AI%E5%8F%8C%E5%9F%8E%E8%AE%B0.mp4"}});window.dplayers||(window.dplayers=[]),window.dplayers.push(E)}()</script><div id="dplayer10" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom:20px"></div><p><link rel="stylesheet" href="DPlayer.min.css"></p><script src="DPlayer.min.js"></script><script>!function(){var e=new DPlayer({container:document.getElementById("dplayer10"),video:{url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/Video/Coldplay%20-%20Lost%2B%20ft.%20Jay-Z.mp4"}});window.dplayers||(window.dplayers=[]),window.dplayers.push(e)}()</script><video width="320" height="240" controls="controls"><source src="https://yixiuer.oss-cn-shanghai.aliyuncs.com/Video/Coldplay%20-%20Lost%2B%20ft.%20Jay-Z.mp4" type="video/mp4"> Your browser does not support the video tag.</video><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h3 id="让人爱不释手的13套精美-Web-应用程序图标素材"><a href="#让人爱不释手的13套精美-Web-应用程序图标素材" class="headerlink" title="让人爱不释手的13套精美 Web 应用程序图标素材"></a><a href="http://www.cnblogs.com/lhb25/archive/2012/08/31/free-application-icon-sets.html" target="_blank" rel="noopener">让人爱不释手的13套精美 Web 应用程序图标素材</a></h3><h3 id="推荐10款非常优秀的-HTML5-开发工具"><a href="#推荐10款非常优秀的-HTML5-开发工具" class="headerlink" title="推荐10款非常优秀的 HTML5 开发工具"></a><a href="https://www.cnblogs.com/lhb25/archive/2011/10/09/10-online-tools-to-simplify-html5-coding.html" target="_blank" rel="noopener">推荐10款非常优秀的 HTML5 开发工具</a></h3><h3 id="推荐35款精致的-CSS3-和-HTML5-网页模板"><a href="#推荐35款精致的-CSS3-和-HTML5-网页模板" class="headerlink" title="推荐35款精致的 CSS3 和 HTML5 网页模板"></a><a href="http://www.cnblogs.com/lhb25/archive/2012/08/03/5-creative-html5-and-css3-templates.html" target="_blank" rel="noopener">推荐35款精致的 CSS3 和 HTML5 网页模板</a></h3><h3 id="网站项目必备——12款经典的白富美型-jQuery-图片轮播插件"><a href="#网站项目必备——12款经典的白富美型-jQuery-图片轮播插件" class="headerlink" title="网站项目必备——12款经典的白富美型 jQuery 图片轮播插件"></a><a href="http://www.cnblogs.com/lhb25/archive/2013/01/06/jquery-image-carousel-effect.html" target="_blank" rel="noopener">网站项目必备——12款经典的白富美型 jQuery 图片轮播插件</a></h3><h3 id="how-well-does-your-browser-support-html5"><a href="#how-well-does-your-browser-support-html5" class="headerlink" title="how well does your browser support html5?"></a><a href="http://html5test.com/" target="_blank" rel="noopener">how well does your browser support html5?</a></h3><h3 id="hexo教程系列——hexo安装教程"><a href="#hexo教程系列——hexo安装教程" class="headerlink" title="hexo教程系列——hexo安装教程"></a><a href="https://blog.csdn.net/xuezhisdc/article/details/53130328" target="_blank" rel="noopener">hexo教程系列——hexo安装教程</a></h3><h3 id="搭建一个免费的，无限流量的Blog——github-Pages和Jekyll入门"><a href="#搭建一个免费的，无限流量的Blog——github-Pages和Jekyll入门" class="headerlink" title="搭建一个免费的，无限流量的Blog——github Pages和Jekyll入门"></a><a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html" target="_blank" rel="noopener">搭建一个免费的，无限流量的Blog——github Pages和Jekyll入门</a></h3><h3 id="Minimum-Viable-Product"><a href="#Minimum-Viable-Product" class="headerlink" title="Minimum Viable Product"></a><a href="http://growupdaily.com/2018/12/25/MVP/Minimum%20Viable%20Product/" target="_blank" rel="noopener">Minimum Viable Product</a></h3><h3 id="写日记有哪些好处？"><a href="#写日记有哪些好处？" class="headerlink" title="写日记有哪些好处？"></a><a href="https://jingyan.baidu.com/article/90bc8fc8783fe6f653640c21.html" target="_blank" rel="noopener">写日记有哪些好处？</a></h3><h3 id="APlayer"><a href="#APlayer" class="headerlink" title="APlayer"></a><a href="https://aplayer.js.org/#/zh-Hans/" target="_blank" rel="noopener">APlayer</a></h3><h3 id="DPlayer"><a href="#DPlayer" class="headerlink" title="DPlayer"></a><a href="http://dplayer.js.org/#/home" target="_blank" rel="noopener">DPlayer</a></h3><h3 id="打造个性超赞博客Hexo-NexT-GithubPages的超深度优化"><a href="#打造个性超赞博客Hexo-NexT-GithubPages的超深度优化" class="headerlink" title="打造个性超赞博客Hexo+NexT+GithubPages的超深度优化"></a><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">打造个性超赞博客Hexo+NexT+GithubPages的超深度优化</a></h3><h3 id="hexo摸爬滚打之进阶教程"><a href="#hexo摸爬滚打之进阶教程" class="headerlink" title="hexo摸爬滚打之进阶教程"></a><a href="https://cloud.tencent.com/developer/article/1114053" target="_blank" rel="noopener">hexo摸爬滚打之进阶教程</a></h3><h3 id="hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？"><a href="#hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？" class="headerlink" title="hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？"></a><a href="https://blog.csdn.net/sunshine940326/article/details/70936988" target="_blank" rel="noopener">hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？</a></h3><h3 id="Hexo-NexT-主题SEO优化指南"><a href="#Hexo-NexT-主题SEO优化指南" class="headerlink" title="Hexo NexT 主题SEO优化指南"></a><a href="https://blog.csdn.net/Lancelot_Lewis/article/details/52218086" target="_blank" rel="noopener">Hexo NexT 主题SEO优化指南</a></h3><h3 id="【搜索优化】Hexo-next百度和谷歌搜索优化"><a href="#【搜索优化】Hexo-next百度和谷歌搜索优化" class="headerlink" title="【搜索优化】Hexo-next百度和谷歌搜索优化"></a><a href="http://www.ehcoo.com/seo.html" target="_blank" rel="noopener">【搜索优化】Hexo-next百度和谷歌搜索优化</a></h3><h3 id="在Hexo中渲染MathJax数学公式"><a href="#在Hexo中渲染MathJax数学公式" class="headerlink" title="在Hexo中渲染MathJax数学公式"></a><a href="https://www.jianshu.com/p/7ab21c7f0674" target="_blank" rel="noopener">在Hexo中渲染MathJax数学公式</a></h3><p> <span id="inline-blue">站点配置文件</span><br> <span id="inline-purple">主题配置文件</span><br> <span id="inline-yellow">站点配置文件</span><br> <span id="inline-green">主题配置文件</span><br><a id="download" href="https://git-scm.com/download/win" target="_blank" rel="noopener"><i class="fa fa-download"></i> <span>Download Now</span></a><br><i class="fa fa-pencil"></i>支持Markdown</p><ol><li><i class="fa fa-pencil">&lt;/i&gt; 支持 Markdown<br><i>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</i></i></li><li><i class="fa fa-cloud-upload">&lt;/i&gt; 一件部署<br><i>只需一条指令即可部署到 Github Pages，或其他网站。</i></i></li><li><i class="fa fa-cog">&lt;/i&gt; 丰富的插件<br><i>Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade，CoffeeScript。</i></i></li></ol><ul><li><i class="fa fa-pencil"></i> 铅笔</li><li><i class="fa fa-cloud-upload"></i> 上传</li><li><p><i class="fa fa-download"></i> 下载</p></li><li><p><i class="fa fa-download"></i> 下载</p></li><li><i class="fa fa-download fa-lg"></i> 下载变大 33%</li><li><i class="fa fa-download fa-2x"></i> 下载两倍大</li></ul><blockquote class="blockquote-center"><p>人生乃是一面镜子，<br>从镜子里认识自己，<br>我要称之为头等大事，<br>也只是我们追求的目的！</p></blockquote><a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download fa-lg fa-fw"></i> 点击下载百度</a><blockquote class="question">内容</blockquote><p><span id="inline-toc">1.</span></p><p>NexT theme本来就支持Mathjax，简直又惊又喜。<br>写Markdown的时候，需要用$$把公式括起来。</p><script type="math/tex;mode=display">\sum_{i=1}^n a_i=0</script><script type="math/tex;mode=display">d (x_a, x_b) = \sqrt{\sum_{p} \left( x^p_a - x^p_b \right)^2}</script><script type="math/tex;mode=display">f(x_1,x_2,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2</script><h3 id="作为一个前端，可以如何机智地弄坏一台电脑？"><a href="#作为一个前端，可以如何机智地弄坏一台电脑？" class="headerlink" title="作为一个前端，可以如何机智地弄坏一台电脑？"></a><a href="http://litten.me/2015/07/06/hack-in-localstorage/" target="_blank" rel="noopener">作为一个前端，可以如何机智地弄坏一台电脑？</a></h3><p>html5的本地存储，相信大家都不陌生。将数据以二进制文件形式存储到本地，在当前应用得非常广泛。<br>windows下的chrome，localStorage存储于C:\Users\xxx\AppData\Local\Google\Chrome\User Data\Default\Local Storage文件夹中。但如果任由网页无限写文件，对用户硬盘的伤害可想而知，因而浏览器对其做了大小限制。</p><p>对于一个域名+端口，PC侧的上限是5M-10M之间，移动侧是则不大于2.5M。</p><p>那么问题就变成：这样的限制足够保护用户硬盘了吗？</p><p>关键<br>关键的问题在于，这一限制，针对的是一个域名+端口。<br>也就是说，你访问同一个域名的不同端口，它们的localStorage并无关联，是分开存储的。</p><p>我用node简单地开启了服务器，这时，用户访问<a href="http://127.0.0.1:1000到http://127.0.0.1:1099这100个端口，会请求到同一个页面：index.html：" target="_blank" rel="noopener">http://127.0.0.1:1000到http://127.0.0.1:1099这100个端口，会请求到同一个页面：index.html：</a></p><h3 id="前端安全冷门知识杂谈"><a href="#前端安全冷门知识杂谈" class="headerlink" title="前端安全冷门知识杂谈"></a><a href="http://litten.me/2014/05/27/safety-point-of-view-from-front-end/" target="_blank" rel="noopener">前端安全冷门知识杂谈</a></h3><p>盗取无法用js读写的Cookie<br>删不掉的本地存储<br>函数覆写监听上报<br>内存Cookie与硬盘Cookie<br>CSS带来的点击量泄露<br>JSONP回调函数与UTF-7编码<br>过滤与代码混淆<br>心理学与社会工程学</p><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p><img src="http://p53s4d2qk.bkt.clouddn.com/vDoIT_html-css-logo1.jpg?imageMogr2/thumbnail/!75p" alt="vDoIT_html-css-logo1.jpg"></p><blockquote><p> 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。名称CSS中的“层叠（cascading）”表示样式单规则应用于HTML文档元素的方式。具体地说，CSS样式单中的样式形成一个层次结构，更具体的样式覆盖通用样式。样式规则的优先级由CSS根据这个层次结构决定，从而实现级联效果。</p></blockquote><p><img src="http://p53s4d2qk.bkt.clouddn.com/css20180504.jpg?imageMogr2/thumbnail/!75p" alt="css20180504.jpg"></p><h2 id="Hexo博客主题NexT使用自定义的CSS样式"><a href="#Hexo博客主题NexT使用自定义的CSS样式" class="headerlink" title="Hexo博客主题NexT使用自定义的CSS样式 "></a><a href="https://segmentfault.com/a/1190000003846777" target="_blank" rel="noopener">Hexo博客主题NexT使用自定义的CSS样式</a></h2><p><a href="#" class="myCssButton">MyButton</a></p><h2 id="有关HTML常被问到的知识点"><a href="#有关HTML常被问到的知识点" class="headerlink" title="有关HTML常被问到的知识点"></a><a href="http://shenzekun.cn/%E6%9C%89%E5%85%B3HTML%E5%B8%B8%E8%A2%AB%E9%97%AE%E5%88%B0%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9.html" target="_blank" rel="noopener">有关HTML常被问到的知识点</a></h2><h2 id="html5调用摄像头功能"><a href="#html5调用摄像头功能" class="headerlink" title="html5调用摄像头功能"></a><a href="http://shenzekun.cn/html5%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%8A%9F%E8%83%BD.html" target="_blank" rel="noopener">html5调用摄像头功能</a></h2></div><footer class="post-footer"><div class="post-tags"><a href="/tags/HTML5/" rel="tag"><i class="fa fa-tag"></i> HTML5</a></div><div class="post-widgets"><div class="wp_rating"><div id="wpac-rating"></div></div></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/AI/JavaScript.html" rel="next" title="JavaScript"><i class="fa fa-chevron-left"></i> JavaScript</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/Company/XiaoMi.html" rel="prev" title="Xiao Mi">Xiao Mi<i class="fa fa-chevron-right"></i></a></div></div></footer></div></article></div></div><div class="comments" id="comments"></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div id="sidebar-dimmer"></div><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> Table of Contents</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> Overview</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/img/headonhill.jpg" alt="Author"><p class="site-author-name" itemprop="name">Author</p><p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">243</span> <span class="site-state-item-name">posts</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">7</span> <span class="site-state-item-name">categories</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">381</span> <span class="site-state-item-name">tags</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="http://blog.163.com/zhuxuanlv@126/" target="_blank" title="Blog"><i class="fa fa-fw fa-globe"></i> Blog</a></span><span class="links-of-author-item"><a href="mailto:deepcreator18@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i> E-Mail</a></span></div><div id="days"></div><script language="javascript">function show_date_time(){window.setTimeout("show_date_time()",1e3),BirthDay=new Date("04/01/2018 16:01:00"),today=new Date,timeold=today.getTime()-BirthDay.getTime(),sectimeold=timeold/1e3,secondsold=Math.floor(sectimeold),msPerDay=864e5,e_daysold=timeold/msPerDay,daysold=Math.floor(e_daysold),e_hrsold=24*(e_daysold-daysold),hrsold=setzero(Math.floor(e_hrsold)),e_minsold=60*(e_hrsold-hrsold),minsold=setzero(Math.floor(60*(e_hrsold-hrsold))),seconds=setzero(Math.floor(60*(e_minsold-minsold))),document.getElementById("days").innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second "}function setzero(e){return e<10&&(e="0"+e),e}show_date_time()</script></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML5权威指南"><span class="nav-number">1.</span> <span class="nav-text">HTML5权威指南</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内容简介"><span class="nav-number">1.1.</span> <span class="nav-text">内容简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">1.2.</span> <span class="nav-text">目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#揭秘谷歌AMP项目：它是如何提高网页加载速度的？"><span class="nav-number">2.</span> <span class="nav-text">揭秘谷歌AMP项目：它是如何提高网页加载速度的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#playlist"><span class="nav-number">3.</span> <span class="nav-text">playlist</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#music"><span class="nav-number">4.</span> <span class="nav-text">music</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#video"><span class="nav-number">5.</span> <span class="nav-text">video</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">6.</span> <span class="nav-text">参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#让人爱不释手的13套精美-Web-应用程序图标素材"><span class="nav-number">6.1.</span> <span class="nav-text">让人爱不释手的13套精美 Web 应用程序图标素材</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐10款非常优秀的-HTML5-开发工具"><span class="nav-number">6.2.</span> <span class="nav-text">推荐10款非常优秀的 HTML5 开发工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐35款精致的-CSS3-和-HTML5-网页模板"><span class="nav-number">6.3.</span> <span class="nav-text">推荐35款精致的 CSS3 和 HTML5 网页模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站项目必备——12款经典的白富美型-jQuery-图片轮播插件"><span class="nav-number">6.4.</span> <span class="nav-text">网站项目必备——12款经典的白富美型 jQuery 图片轮播插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#how-well-does-your-browser-support-html5"><span class="nav-number">6.5.</span> <span class="nav-text">how well does your browser support html5?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo教程系列——hexo安装教程"><span class="nav-number">6.6.</span> <span class="nav-text">hexo教程系列——hexo安装教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建一个免费的，无限流量的Blog——github-Pages和Jekyll入门"><span class="nav-number">6.7.</span> <span class="nav-text">搭建一个免费的，无限流量的Blog——github Pages和Jekyll入门</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Minimum-Viable-Product"><span class="nav-number">6.8.</span> <span class="nav-text">Minimum Viable Product</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写日记有哪些好处？"><span class="nav-number">6.9.</span> <span class="nav-text">写日记有哪些好处？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#APlayer"><span class="nav-number">6.10.</span> <span class="nav-text">APlayer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DPlayer"><span class="nav-number">6.11.</span> <span class="nav-text">DPlayer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打造个性超赞博客Hexo-NexT-GithubPages的超深度优化"><span class="nav-number">6.12.</span> <span class="nav-text">打造个性超赞博客Hexo+NexT+GithubPages的超深度优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo摸爬滚打之进阶教程"><span class="nav-number">6.13.</span> <span class="nav-text">hexo摸爬滚打之进阶教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？"><span class="nav-number">6.14.</span> <span class="nav-text">hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-NexT-主题SEO优化指南"><span class="nav-number">6.15.</span> <span class="nav-text">Hexo NexT 主题SEO优化指南</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【搜索优化】Hexo-next百度和谷歌搜索优化"><span class="nav-number">6.16.</span> <span class="nav-text">【搜索优化】Hexo-next百度和谷歌搜索优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在Hexo中渲染MathJax数学公式"><span class="nav-number">6.17.</span> <span class="nav-text">在Hexo中渲染MathJax数学公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作为一个前端，可以如何机智地弄坏一台电脑？"><span class="nav-number">6.18.</span> <span class="nav-text">作为一个前端，可以如何机智地弄坏一台电脑？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前端安全冷门知识杂谈"><span class="nav-number">6.19.</span> <span class="nav-text">前端安全冷门知识杂谈</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS"><span class="nav-number">7.</span> <span class="nav-text">CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo博客主题NexT使用自定义的CSS样式"><span class="nav-number">8.</span> <span class="nav-text">Hexo博客主题NexT使用自定义的CSS样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有关HTML常被问到的知识点"><span class="nav-number">9.</span> <span class="nav-text">有关HTML常被问到的知识点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html5调用摄像头功能"><span class="nav-number">10.</span> <span class="nav-text">html5调用摄像头功能</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2018</span><span class="with-love" id="animate"><i class="fa fa-user"></i></span> <span class="author" itemprop="copyrightHolder">Author</span></div><div class="busuanzi-count"><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv" title="Total Visitors"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span><span class="site-pv" title="Total Views"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script type="text/javascript">var GUEST=["nick","mail","link"],guest="nick,mail,link";guest=guest.split(",").filter(function(e){return-1<GUEST.indexOf(e)}),new Valine({el:"#comments",verify:!1,notify:!1,appId:"TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz",appKey:"PXNkGhS05PxL7rV3N8gDlAQe",placeholder:"Just go go",avatar:"mm",meta:guest,pageSize:"10",visitor:!1})</script><script type="text/javascript">
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式">
+<meta name="keywords" content="HTML5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5">
+<meta property="og:url" content="http://deepcreator.com/AI/HTML5.html">
+<meta property="og:site_name" content="Ai Lab">
+<meta property="og:description" content="万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/html520180726.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/html5-cheat-sheet.png?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://www.catswhocode.com/blog/wp-content/uploads/2011/08/html5canvas.png">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/vDoIT_html-css-logo1.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/css20180504.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:updated_time" content="2018-07-26T06:31:14.906Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML5">
+<meta name="twitter:description" content="万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式">
+<meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/html520180726.jpg?imageMogr2/thumbnail/!75p">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://deepcreator.com/AI/HTML5.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>HTML5 | Ai Lab</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="http://p53s4d2qk.bkt.clouddn.com/deepcreator220180502.JPG"
+               alt="Ai Lab"/>
+        </a>
+      </div>
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ai Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Minority, Right, Value</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-info-circle"></i> <br />About</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://deepcreator.com/AI/HTML5.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="Chief IPR Officer in AI Age">
+      <meta itemprop="image" content="/img/headonhill.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ai Lab">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML5
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-03 14:13:06" itemprop="dateCreated datePublished" datetime="2018-05-03T14:13:06+08:00">2018-05-03</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-26 14:31:14" itemprop="dateModified" datetime="2018-07-26T14:31:14+08:00">2018-07-26</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/AI/HTML5.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count valine-comment-count" data-xid="/AI/HTML5.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://p53s4d2qk.bkt.clouddn.com/html520180726.jpg?imageMogr2/thumbnail/!75p" alt="html520180726.jpg"></p>
+<blockquote>
+<p>  <a href="https://baike.baidu.com/item/html5/4234903" target="_blank" rel="noopener">万维网的核心语言</a>、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="HTML5权威指南"><a href="#HTML5权威指南" class="headerlink" title="HTML5权威指南"></a><a href="https://book.douban.com/subject/25786074/" target="_blank" rel="noopener">HTML5权威指南</a></h2><p>The definitive guide to HTML5</p>
+<h3 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h3><p>《HTML5 权威指南》是系统学习网页设计的权威参考图书。本书分为五部分：第一部分介绍学习本书的预备知识和HTML、CSS 和JavaScript 的最新进展；第二部分讨论HTML 元素，并详细说明了HTML5中新增和修改的元素；第三部分阐述CSS，涵盖了所有控制内容样式的CSS 选择器和属性，并辅以大量代码示例和图示；第四部分介绍DOM，剖析如何用JavaScript 操纵HTML 内容；第五部分讲解Ajax、多媒体和canvas 元素等HTML5 高级特性。</p>
+<p>本书面向初学者和中等水平Web 开发人员，是牢固掌握HTML5、CSS3 和JavaScript 的必读之作。</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>第一部分　开篇<br>第1章　HTML5背景知识　　1<br>1.1 　HTML的历史　　2<br>1.1.1 　JavaScript出场　　2<br>1.1.2 　浏览器战争的结束　　3<br>1.1.3 　插件称雄　　3<br>1.1.4 　语义HTML浮出水面　　3<br>1.1.5 　发展态势：HTML标准滞后于其使用　　4<br>1.2 　HTML5简介　　4<br>1.2.1 　新标准　　4<br>1.2.2 　引入原生多媒体支持　　5<br>1.2.3 　引入可编程内容　　5<br>1.2.4 　引入语义Web　　6<br>1.3 　HTML5现况　　6<br>1.3.1 　浏览器对HTML5的支持情况　　6<br>1.3.2 　网站对HTML5的支持情况　　6<br>1.4 　本书结构　　6<br>1.5 　HTML5的更多信息　　7<br>1.6 　小结　　7<br>第2章　准备工作　　8<br>2.1 　挑选浏览器　　8<br>2.2 　挑选HTML编辑器　　9<br>2.3 　挑选Web服务器　　9<br>2.4 　获取Node.js　　9<br>2.5 　获取示例代码　　10<br>2.6 　小结　　10<br>第3章　初探HTML　　11<br>3.1 　使用元素　　12<br>3.1.1 　了解本章用到的元素　　13<br>3.1.2 　使用空元素　　14<br>3.1.3 　使用自闭合标签　　14<br>3.1.4 　使用虚元素　　14<br>3.2 　使用元素属性　　16<br>3.2.1 　一个元素应用多个属性　　16<br>3.2.2 　使用布尔属性　　16<br>3.2.3 　使用自定义属性　　17<br>3.3 　创建HTML文档　　17<br>3.3.1 　外层结构　　18<br>3.3.2 　元数据　　19<br>3.3.3 　内容　　19<br>3.3.4 　父元素、子元素、后代元素和兄弟元素　　20<br>3.3.5 　了解元素类型　　20<br>3.4 　使用HTML实体　　21<br>3.5 　HTML5全局属性　　21<br>3.5.1 　accesskey属性　　21<br>3.5.2 　class属性　　22<br>3.5.3 　contenteditable属性　　25<br>3.5.4 　contextmenu属性　　25<br>3.5.5 　dir属性　　26<br>3.5.6 　draggable属性　　26<br>3.5.7 　dropzone属性　　26<br>3.5.8 　hidden属性　　26<br>3.5.9 　id属性　　28<br>3.5.10 　lang属性　　29<br>3.5.11 　spellcheck属性　　29<br>3.5.12 　style属性　　30<br>3.5.13 　tabindex属性　　30<br>3.5.14 　title属性　　31<br>3.6 　有用的HTML工具　　32<br>3.7 　小结　　32<br>第4章　初探CSS　　33<br>4.1 　定义和应用样式　　33<br>4.1.1 　了解本章所用的CSS属性　　34<br>4.1.2 　使用元素内嵌样式　　34<br>4.1.3 　使用文档内嵌样式　　35<br>4.1.4 　使用外部样式表　　37<br>4.2 　样式的层叠和继承　　40<br>4.2.1 　浏览器样式　　40<br>4.2.2 　用户样式　　41<br>4.2.3 　样式如何层叠　　42<br>4.2.4 　用重要样式调整层叠次序　　42<br>4.2.5 　根据具体程度和定义次序解决同级样式冲突　　43<br>4.2.6 　继承　　46<br>4.3 　CSS中的颜色　　48<br>4.4 　CSS中的长度　　49<br>4.4.1 　绝对长度　　50<br>4.4.2 　相对长度　　51<br>4.5 　其他CSS单位　　56<br>4.5.1 　使用CSS角度　　56<br>4.5.2 　使用CSS时间　　57<br>4.6 　测试CSS特性的支持情况　　57<br>4.7 　有用的CSS工具　　57<br>4.7.1 　浏览器样式报告　　57<br>4.7.2 　用SelectorGadget生成选择器　　58<br>4.7.3 　用LESS改进CSS　　59<br>4.7.4 　使用CSS框架　　59<br>4.8 　小结　　59<br>第5章　初探JavaScript　　60<br>5.1 　准备使用JavaScript　　61<br>5.2 　使用语句　　62<br>5.3 　定义和使用函数　　63<br>5.3.1 　定义带参数的函数　　63<br>5.3.2 　定义会返回结果的函数　　64<br>5.4 　使用变量和类型　　65<br>5.4.1 　使用基本类型　　66<br>5.4.2 　创建对象　　67<br>5.4.3 　使用对象　　69<br>5.5 　使用JavaScript运算符　　73<br>5.5.1 　相等和等同运算符　　73<br>5.5.2 　显式类型转换　　76<br>5.6 　使用数组　　78<br>5.6.1 　使用数组字面量　　79<br>5.6.2 　读取和修改数组内容　　80<br>5.6.3 　枚举数组内容　　80<br>5.6.4 　使用内置的数组方法　　81<br>5.7 　处理错误　　81<br>5.8 　比较undefined和null值　　83<br>5.8.1 　检查变量或属性是否为undefined或null　　85<br>5.8.2 　区分null和undefined　　85<br>5.9 　常用的JavaScript工具　　86<br>5.9.1 　使用JavaScript调试器　　86<br>5.9.2 　使用JavaScript库　　86<br>5.10 　小结　　87<br>第二部分　HTML元素<br>第6章　HTML5元素背景知识　　90<br>6.1 　语义与呈现分离　　90<br>6.2 　元素选用原则　　91<br>6.2.1 　少亦可为多　　91<br>6.2.2 　别误用元素　　91<br>6.2.3 　具体为佳，一以贯之　　91<br>6.2.4 　对用户不要想当然　　92<br>6.3 　元素说明体例　　92<br>6.4 　元素速览　　92<br>6.4.1 　文档和元数据元素　　92<br>6.4.2 　文本元素　　93<br>6.4.3 　对内容分组　　94<br>6.4.4 　划分内容　　95<br>6.4.5 　制表　　95<br>6.4.6 　创建表单　　96<br>6.4.7 　嵌入内容　　96<br>6.5 　未实现的元素　　97<br>6.6 　小结　　97<br>第7章　创建HTML文档　　98<br>7.1 　构筑基本的文档结构　　99<br>7.1.1 　DOCTYPE元素　　99<br>7.1.2 　html元素　　99<br>7.1.3 　head元素　　100<br>7.1.4 　body元素　　101<br>7.2 　用元数据元素说明文档　　102<br>7.2.1 　设置文档标题　　102<br>7.2.2 　设置相对URL的解析基准　　103<br>7.2.3 　用元数据说明文档　　104<br>7.2.4 　定义CSS样式　　108<br>7.2.5 　指定外部资源　　112<br>7.3 　使用脚本元素　　116<br>7.3.1 　script元素　　117<br>7.3.2 　noscript元素　　123<br>7.4 　小结　　125<br>第8章　标记文字　　126<br>8.1 　生成超链接　　127<br>8.1.1 　生成指向外部的超链接　　128<br>8.1.2 　使用相对URL　　129<br>8.1.3 　生成内部超链接　　129<br>8.1.4 　设定浏览环境　　130<br>8.2 　用基本的文字元素标记内容　　131<br>8.2.1 　表示关键词和产品名称　　131<br>8.2.2 　加以强调　　132<br>8.2.3 　表示外文词语或科技术语　　133<br>8.2.4 　表示不准确或校正　　134<br>8.2.5 　表示重要的文字　　135<br>8.2.6 　为文字添加下划线　　136<br>8.2.7 　添加小号字体内容　　137<br>8.2.8 　添加上标和下标　　138<br>8.3 　换行　　139<br>8.3.1 　强制换行　　139<br>8.3.2 　指明可以安全换行的建议位置　　141<br>8.4 　表示输入和输出　　142<br>8.5 　使用标题引用、引文、定义和缩写　　143<br>8.5.1 　表示缩写　　143<br>8.5.2 　定义术语　　144<br>8.5.3 　引用来自他处的内容　　145<br>8.5.4 　引用其他作品的标题　　146<br>8.6 　使用语言元素　　147<br>8.6.1 　ruby、rt和rp元素　　147<br>8.6.2 　bdo元素　　149<br>8.6.3 　bdi元素　　150<br>8.7 　其他文本元素　　152<br>8.7.1 　表示一段一般性的内容　　152<br>8.7.2 　突出显示文本　　153<br>8.7.3 　表示添加和删除的内容　　155<br>8.7.4 　表示时间和日期　　156<br>8.8 　小结　　157<br>第9章　组织内容　　158<br>9.1 　为什么要对内容分组　　158<br>9.2 　建立段落　　159<br>9.3 　使用div元素　　161<br>9.4 　使用预先编排好格式的内容　　163<br>9.5 　引用他处内容　　164<br>9.6 　添加主题分隔　　166<br>9.7 　将内容组织为列表　　169<br>9.7.1 　ol元素　　169<br>9.7.2 　ul元素　　171<br>9.7.3 　li元素　　172<br>9.7.4 　生成说明列表　　173<br>9.7.5 　生成自定义列表　　174<br>9.8 　使用插图　　176<br>9.9 　小结　　178<br>第10章　文档分节　　179<br>10.1 　添加基本的标题　　179<br>10.2 　隐藏子标题　　182<br>10.3 　生成节　　185<br>10.4 　添加首部和尾部　　188<br>10.5 　添加导航区域　　191<br>10.6 　使用article　　194<br>10.7 　生成附注栏　　198<br>10.8 　提供联系信息　　201<br>10.9 　生成详情区域　　202<br>10.10 　小结　　205<br>第11章　表格元素　　206<br>11.1 　生成基本的表格　　206<br>11.2 　添加表头单元格　　209<br>11.3 　为表格添加结构　　211<br>11.3.1 　表示表头和表格主题　　212<br>11.3.2 　添加表脚　　214<br>11.4 　制作不规则表格　　216<br>11.5 　把表头与单元格关联起来　　220<br>11.6 　为表格添加标题　　221<br>11.7 　处理列　　223<br>11.8 　设置表格边框　　228<br>11.9 　小结　　230<br>第12章　表单　　231<br>12.1 　制作基本表单　　232<br>12.1.1 　定义表单　　233<br>12.1.2 　查看表单数据　　234<br>12.2 　配置表单　　236<br>12.2.1 　配置表单的action属性　　236<br>12.2.2 　配置HTTP方法属性　　237<br>12.2.3 　配置数据编码　　237<br>12.2.4 　控制表单的自动完成功能　　239<br>12.2.5 　指定表单反馈信息的目标显示位置　　240<br>12.2.6 　设置表单名称　　242<br>12.3 　在表单中添加说明标签　　242<br>12.4 　自动聚焦到某个input元素　　244<br>12.5 　禁用单个input元素　　245<br>12.6 　对表单元素编组　　246<br>12.6.1 　为fieldset元素添加说明标签　　248<br>12.6.2 　用fieldset禁用整组input元素　　249<br>12.7 　使用button元素　　250<br>12.7.1 　用button元素提交表单　　251<br>12.7.2 　用button元素重置表单　　252<br>12.7.3 　把button作为一般元素使用　　253<br>12.8 　使用表单外的元素　　254<br>12.9 　小结　　254<br>第13章　定制input元素　　255<br>13.1 　用input元素输入文字　　256<br>13.1.1 　设定元素大小　　256<br>13.1.2 　设置初始值和占位式提示　　258<br>13.1.3 　使用数据列表　　259<br>13.1.4 　生成只读或被禁用的文本框　　262<br>13.1.5 　指定文字方向数据的名称　　263<br>13.2 　用input元素输入密码　　263<br>13.3 　用input元素生成按钮　　266<br>13.4 　用input元素为输入数据把关　　267<br>13.4.1 　用input元素获取数值　　268<br>13.4.2 　用input元素获取指定范围内的数值　　270<br>13.4.3 　用input元素获取布尔型输入　　271<br>13.4.4 　用input元素生成一组固定选项　　273<br>13.4.5 　用input元素获取有规定格式的字符串　　275<br>13.4.6 　用input元素获取时间和日期　　277<br>13.4.7 　用input元素获取颜色值　　279<br>13.5 　用input元素获取搜索用词　　281<br>13.6 　用input元素生成隐藏的数据项　　282<br>13.7 　用input元素生成图像按钮和分区响应图　　284<br>13.8 　用input元素上传文件　　286<br>13.9 　小结　　288<br>第14章　其他表单元素及输入验证　　289<br>14.1 　使用其他表单元素　　289<br>14.1.1 　生成选项列表　　289<br>14.1.2 　输入多行文字　　294<br>14.1.3 　表示计算结果　　296<br>14.1.4 　生成公开/私有密钥对　　297<br>14.2 　使用输入验证　　298<br>14.2.1 　确保用户提供了一个值　　299<br>14.2.2 　确保输入值位于某个范围内　　300<br>14.2.3 　确保输入值与指定模式匹配　　301<br>14.2.4 　确保输入值是电子邮箱地址或URL　　303<br>14.3 　禁用输入验证　　304<br>14.4 　小结　　305<br>第15章　嵌入内容　　306<br>15.1 　嵌入图像　　306<br>15.1.1 　在超链接里嵌入图像　　308<br>15.1.2 　创建客户端分区响应图　　310<br>15.2 　嵌入另一张HTML文档　　313<br>15.3 　通过插件嵌入内容　　315<br>15.3.1 　使用embed元素　　315<br>15.3.2 　使用object和param元素　　317<br>15.4 　object元素的其他用途　　319<br>15.4.1 　使用object元素嵌入图像　　319<br>15.4.2 　使用object元素创建分区响应图　　320<br>15.4.3 　将object元素作为浏览上下文环境　　320<br>15.5 　嵌入数字表现形式　　321<br>15.5.1 　显示进度　　321<br>15.5.2 　显示范围里的值　　322<br>15.6 　其他嵌入元素　　324<br>15.6.1 　嵌入音频和视频　　324<br>15.6.2 　嵌入图形　　324<br>15.7 　小结　　324<br>第三部分　CSS<br>第16章　理解CSS　　326<br>16.1 　CSS标准化　　326<br>16.2 　盒模型　　327<br>16.3 　选择器简明参考　　328<br>16.4 　属性简明参考　　329<br>16.4.1 　边框和背景属性　　329<br>16.4.2 　盒模型属性　　331<br>16.4.3 　布局属性　　332<br>16.4.4 　文本属性　　332<br>16.4.5 　过渡、动画和变换属性　　333<br>16.4.6 　其他属性　　334<br>16.5 　小结　　334<br>第17章　使用CSS选择器（第Ⅰ部分）　　335<br>17.1 　使用CSS基本选择器　　335<br>17.1.1 　选择所有元素　　336<br>17.1.2 　根据类型选择元素　　337<br>17.1.3 　根据类选择元素　　338<br>17.1.4 　根据ID选择元素　　340<br>17.1.5 　根据属性选择元素　　341<br>17.2 　复合选择器　　344<br>17.2.1 　并集选择器　　344<br>17.2.2 　后代选择器　　345<br>17.2.3 　选择子元素　　347<br>17.2.4 　选择兄弟元素　　349<br>17.3 　使用伪元素选择器　　351<br>17.3.1 　使用::first-line选择器　　351<br>17.3.2 　使用::first-letter选择器　　352<br>17.3.3 　使用:before和:after选择器　　353<br>17.3.4 　使用CSS计数器　　354<br>17.4 　小结　　356<br>第18章　使用CSS选择器（第Ⅱ部分）　　357<br>18.1 　使用结构性伪类选择器　　357<br>18.1.1 　使用根元素选择器　　358<br>18.1.2 　使用子元素选择器　　359<br>18.1.3 　使用:nth-child选择器　　363<br>18.2 　使用UI伪类选择器　　364<br>18.2.1 　选择启用或禁用元素　　364<br>18.2.2 　选择已勾选的元素　　365<br>18.2.3 　选择默认元素　　366<br>18.2.4 　选择有效和无效的input元素　　367<br>18.2.5 　选择限定范围的input元素　　369<br>18.2.6 　选择必需和可选的input元素　　370<br>18.3 　使用动态伪类选择器　　371<br>18.3.1 　使用:link和:visited选择器　　371<br>18.3.2 　使用:hover选择器　　372<br>18.3.3 　使用:active选择器　　373<br>18.3.4 　使用:focus选择器　　374<br>18.4 　其他伪类选择器　　375<br>18.4.1 　使用否定选择器　　376<br>18.4.2 　使用:empty选择器　　376<br>18.4.3 　使用:lang选择器　　377<br>18.4.4 　使用:target选择器　　377<br>18.5 　小结　　379<br>第19章　使用边框和背景　　380<br>19.1 　应用边框样式　　380<br>19.1.1 　定义边框宽度　　381<br>19.1.2 　定义边框样式　　382<br>19.1.3 　为一条边应用边框样式　　383<br>19.1.4 　使用border简写属性　　384<br>19.1.5 　创建圆角边框　　385<br>19.1.6 　将图像用做边框　　388<br>19.2 　设置元素的背景　　392<br>19.2.1 　设置背景颜色和图像　　392<br>19.2.2 　设置背景图像的尺寸　　394<br>19.2.3 　设置背景图像位置　　395<br>19.2.4 　设置元素的背景附着方式　　396<br>19.2.5 　设置背景图像的开始位置和裁剪样式　　397<br>19.2.6 　使用background简写属性　　399<br>19.3 　创建盒子阴影　　400<br>19.4 　应用轮廓　　403<br>19.5 　小结　　405<br>第20章　使用盒模型　　406<br>20.1 　为元素应用内边距　　407<br>20.2 　为元素应用外边距　　409<br>20.3 　控制元素的尺寸　　410<br>20.3.1 　设置一定尺寸的盒子　　412<br>20.3.2 　设置最小和最大尺寸　　413<br>20.4 　处理溢出内容　　414<br>20.5 　控制元素的可见性　　417<br>20.6 　设置元素的盒类型　　419<br>20.6.1 　认识块级元素　　420<br>20.6.2 　认识行内元素　　421<br>20.6.3 　认识行内?块级元素　　422<br>20.6.4 　认识插入元素　　423<br>20.6.5 　隐藏元素　　426<br>20.7 　创建浮动盒　　427<br>20.8 　小结　　433<br>第21章　创建布局　　434<br>21.1 　定位内容　　434<br>21.1.1 　设置定位类型　　435<br>21.1.2 　设置元素的层叠顺序　　437<br>21.2 　创建多列布局　　439<br>21.3 　创建弹性盒布局　　442<br>21.3.1 　创建简单的弹性盒　　444<br>21.3.2 　伸缩多个元素　　446<br>21.3.3 　处理垂直空间　　447<br>21.3.4 　处理最大尺寸　　448<br>21.4 　创建表格布局　　450<br>21.5 　小结　　453<br>第22章　设置文本样式　　454<br>22.1 　应用基本文本样式　　454<br>22.1.1 　对齐文本　　455<br>22.1.2 　处理空白　　457<br>22.1.3 　指定文本方向　　460<br>22.1.4 　指定单词、字母、行之间的间距　　461<br>22.1.5 　控制断词　　462<br>22.1.6 　首行缩进　　464<br>22.2 　文本装饰与大小写转换　　465<br>22.3 　创建文本阴影　　467<br>22.4 　使用字体　　468<br>22.4.1 　选择字体　　469<br>22.4.2 　设置字体大小　　470<br>22.4.3 　设置字体样式和粗细　　472<br>22.5 　使用Web字体　　473<br>22.6 　小结　　475<br>第23章　过渡、动画和变换　　476<br>23.1 　使用过渡　　477<br>23.1.1 　创建反向过渡　　480<br>23.1.2 　选择中间值的计算方式　　481<br>23.2 　使用动画　　483<br>23.2.1 　使用关键帧　　486<br>23.2.2 　设置重复方向　　488<br>23.2.3 　理解结束状态　　490<br>23.2.4 　初始布局时应用动画　　491<br>23.2.5 　重用关键帧　　492<br>23.2.6 　为多个元素应用多个动画　　493<br>23.2.7 　停止和启动动画　　495<br>23.3 　使用变换　　497<br>23.3.1 　应用变换　　497<br>23.3.2 　指定元素变换的起点　　498<br>23.3.3 　将变换作为动画和过渡处理　　500<br>23.4 　小结　　501<br>第24章　其他CSS属性和特性　　502<br>24.1 　设置元素的颜色和透明度　　502<br>24.1.1 　设置前景色　　502<br>24.1.2 　设置元素的透明度　　504<br>24.2 　设置表格样式　　505<br>24.2.1 　合并表格边框　　505<br>24.2.2 　配置独立边框　　507<br>24.2.3 　处理空单元格　　508<br>24.2.4 　设置标题的位置　　509<br>24.2.5 　指定表格布局　　511<br>24.3 　设置列表样式　　512<br>24.3.1 　设置列表标记类型　　513<br>24.3.2 　使用图像作为列表标记　　514<br>24.3.3 　设置列表标记的位置　　515<br>24.4 　设置光标样式　　517<br>24.5 　小结　　518<br>第四部分　使用DOM<br>第25章　理解DOM　　520<br>25.1 　理解文档对象模型　　520<br>25.2 　理解DOM Level和兼容性　　522<br>25.3 　DOM快速查询　　524<br>25.3.1 　Document的成员　　524<br>25.3.2 　Window的成员　　525<br>25.3.3 　HTMLElement的成员　　527<br>25.3.4 　DOM里的CSS属性　　529<br>25.3.5 　DOM中的事件　　531<br>25.4 　小结　　532<br>第26章　使用Document对象　　533<br>26.1 　使用Document元数据　　536<br>26.1.1 　获取文档信息　　536<br>26.1.2 　使用Location对象　　537<br>26.1.3 　读取和写入cookie　　541<br>26.1.4 　理解就绪状态　　542<br>26.1.5 　获取DOM的实现情况　　543<br>26.2 　获取HTML元素对象　　544<br>26.2.1 　使用属性获取元素对象　　545<br>26.2.2 　使用数组标记获取已命名元素　　546<br>26.2.3 　搜索元素　　548<br>26.2.4 　合并进行链式搜索　　550<br>26.3 　在DOM树里导航　　552<br>26.4 　小结　　554<br>第27章　使用Window对象　　555<br>27.1 　获取Window对象　　555<br>27.2 　获取窗口信息　　556<br>27.3 　与窗口进行交互　　558<br>27.4 　对用户进行提示　　559<br>27.5 　获取基本信息　　561<br>27.6 　使用浏览器历史　　561<br>27.6.1 　在浏览历史中导航　　562<br>27.6.2 　在浏览历史里插入条目　　564<br>27.6.3 　为不同的文档添加条目　　566<br>27.6.4 　在浏览历史中保存复杂状态　　567<br>27.6.5 　替换浏览历史中的条目　　570<br>27.7 　使用跨文档消息传递　　570<br>27.8 　使用计时器　　574<br>27.9 　小结　　576<br>第28章　使用DOM元素　　577<br>28.1 　使用元素对象　　577<br>28.1.1 　使用类　　579<br>28.1.2 　使用元素属性　　582<br>28.2 　使用Text对象　　586<br>28.3 　修改模型　　588<br>28.3.1 　创建和删除元素　　589<br>28.3.2 　复制元素　　591<br>28.3.3 　移动元素　　592<br>28.3.4 　比较元素对象　　593<br>28.3.5 　使用HTML片段　　595<br>28.3.6 　向文本块插入元素　　600<br>28.4 　小结　　601<br>第29章　为DOM元素设置样式　　602<br>29.1 　使用样式表　　602<br>29.1.1 　获得样式表的基本信息　　603<br>29.1.2 　使用媒介限制　　605<br>29.1.3 　禁用样式表　　607<br>29.1.4 　CSSRuleList对象的成员　　608<br>29.2 　使用元素样式　　611<br>29.3 　使用CSSStyleDeclaration对象　　613<br>29.3.1 　使用便捷属性　　613<br>29.3.2 　使用常规属性　　616<br>29.3.3 　使用细粒度的CSS DOM对象　　620<br>29.4 　使用计算样式　　623<br>29.5 　小结　　625<br>第30章　使用事件　　626<br>30.1 　使用简单事件处理器　　627<br>30.1.1 　实现简单的内联事件处理器　　627<br>30.1.2 　实现一个简单的事件处理函数　　629<br>30.2 　使用DOM和事件对象　　630<br>30.2.1 　按类型区分事件　　633<br>30.2.2 　理解事件流　　634<br>30.2.3 　使用可撤销事件　　641<br>30.3 　使用HTML事件　　642<br>30.3.1 　文档和窗口事件　　642<br>30.3.2 　使用鼠标事件　　643<br>30.3.3 　使用键盘焦点事件　　645<br>30.3.4 　使用键盘事件　　647<br>30.3.5 　使用表单事件　　649<br>30.4 　小结　　649<br>第31章　使用元素专属对象　　650<br>31.1 　文档和元数据对象　　650<br>31.1.1 　base元素　　650<br>31.1.2 　body元素　　650<br>31.1.3 　link元素　　651<br>31.1.4 　meta元素　　651<br>31.1.5 　script元素　　651<br>31.1.6 　style元素　　652<br>31.1.7 　title元素　　652<br>31.1.8 　其他文档和元数据元素　　652<br>31.2 　文本元素　　652<br>31.2.1 　a元素　　652<br>31.2.2 　del和ins元素　　653<br>31.2.3 　q元素　　653<br>31.2.4 　time元素　　653<br>31.2.5 　其他文本元素　　654<br>31.3 　分组元素　　654<br>31.3.1 　blockquote元素　　654<br>31.3.2 　li元素　　654<br>31.3.3 　ol元素　　654<br>31.3.4 　其他分组元素　　655<br>31.4 　区块元素　　655<br>31.4.1 　details元素　　655<br>31.4.2 　其他区块元素　　655<br>31.5 　表格元素　　655<br>31.5.1 　col和colgroup元素　　655<br>31.5.2 　table元素　　656<br>31.5.3 　thead、tbody和tfoot元素　　656<br>31.5.4 　th元素　　657<br>31.5.5 　tr元素　　657<br>31.5.6 　其他表格元素　　657<br>31.6 　表单元素　　657<br>31.6.1 　button元素　　657<br>31.6.2 　datalist元素　　658<br>31.6.3 　fieldset元素　　658<br>31.6.4 　form元素　　658<br>31.6.5 　input元素　　659<br>31.6.6 　label元素　　660<br>31.6.7 　legend元素　　661<br>31.6.8 　optgroup元素　　661<br>31.6.9 　option元素　　661<br>31.6.10 　output元素　　661<br>31.6.11 　select元素　　662<br>31.6.12 　textarea元素　　663<br>31.7 　内容元素　　663<br>31.7.1 　area元素　　664<br>31.7.2 　embed元素　　664<br>31.7.3 　iframe元素　　664<br>31.7.4 　img元素　　665<br>31.7.5 　map元素　　665<br>31.7.6 　meter元素　　665<br>31.7.7 　object元素　　666<br>31.7.8 　param元素　　666<br>31.7.9 　progress元素　　667<br>31.8 　小结　　667<br>第五部分　高级功能<br>第32章　使用Ajax（第Ⅰ部分）　　670<br>32.1 　Ajax起步　　671<br>32.1.1 　处理响应　　674<br>32.1.2 　主流中的异类：应对Opera　　675<br>32.2 　使用Ajax事件　　677<br>32.3 　处理错误　　679<br>32.3.1 　处理设置错误　　681<br>32.3.2 　处理请求错误　　682<br>32.3.3 　处理应用程序错误　　682<br>32.4 　获取和设置标头　　683<br>32.4.1 　覆盖请求的HTTP方法　　683<br>32.4.2 　禁用内容缓存　　685<br>32.4.3 　读取响应标头　　685<br>32.5 　生成跨源Ajax请求　　687<br>32.5.1 　使用Origin请求标头　　690<br>32.5.2 　高级CORS功能　　691<br>32.6 　中止请求　　691<br>32.7 　小结　　693<br>第33章　使用Ajax（第Ⅱ部分）　　694<br>33.1 　准备向服务器发送数据　　694<br>33.1.1 　定义服务器　　695<br>33.1.2 　理解问题所在　　697<br>33.2 　发送表单数据　　698<br>33.3 　使用FormData对象发送表单数据　　701<br>33.3.1 　创建FormData对象　　701<br>33.3.2 　修改FormData对象　　702<br>33.4 　发送JSON数据　　703<br>33.5 　发送文件　　705<br>33.6 　追踪上传进度　　707<br>33.7 　请求并处理不同内容类型　　709<br>33.7.1 　接收HTML片段　　709<br>33.7.2 　接收XML数据　　712<br>33.7.3 　接收JSON数据　　714<br>33.8 　小结　　715<br>第34章　使用多媒体　　716<br>34.1 　使用video元素　　717<br>34.1.1 　预先加载视频　　718<br>34.1.2 　显示占位图像　　720<br>34.1.3 　设置视频尺寸　　720<br>34.1.4 　指定视频来源（和格式）　　721<br>34.1.5 　track元素　　724<br>34.2 　使用audio元素　　724<br>34.3 　通过DOM操作嵌入式媒体　　726<br>34.3.1 　获得媒体信息　　726<br>34.3.2 　评估回放能力　　728<br>34.3.3 　控制媒体回放　　730<br>34.4 　小结　　733<br>第35章　使用canvas元素（第Ⅰ部分）　　734<br>35.1 　开始使用canvas元素　　735<br>35.2 　获取画布的上下文　　736<br>35.3 　绘制矩形　　737<br>35.4 　设置画布绘制状态　　739<br>35.4.1 　设置线条连接样式　　741<br>35.4.2 　设置填充和笔触样式　　742<br>35.4.3 　使用渐变　　743<br>35.4.4 　使用径向渐变　　748<br>35.4.5 　使用图案　　751<br>35.5 　保存和恢复绘制状态　　753<br>35.6 　绘制图像　　755<br>35.6.1 　使用视频图像　　756<br>35.6.2 　使用画布图像　　759<br>35.7 　小结　　761<br>第36章　使用canvas元素（第Ⅱ部分）　　762<br>36.1 　用路径绘图　　762<br>36.1.1 　用线条绘制路径　　763<br>36.1.2 　绘制矩形　　766<br>36.2 　绘制圆弧　　768<br>36.2.1 　使用arcTo方法　　768<br>36.2.2 　使用arc方法　　772<br>36.3 　绘制贝塞尔曲线　　773<br>36.3.1 　绘制三次贝塞尔曲线　　773<br>36.3.2 　绘制二次贝塞尔曲线　　775<br>36.4 　创建剪辑区域　　777<br>36.5 　绘制文本　　778<br>36.6 　使用特效和变换　　780<br>36.6.1 　使用阴影　　780<br>36.6.2 　使用透明度　　781<br>36.6.3 　使用合成　　782<br>36.6.4 　使用变换　　784<br>36.7 　小结　　786<br>第37章　使用拖放　　787<br>37.1 　创建来源项目　　787<br>37.2 　创建释放区　　791<br>37.3 　使用DataTransfer对象　　794<br>37.3.1 　根据数据过滤被拖动项目　　796<br>37.3.2 　拖放文件　　797<br>37.4 　小结　　801<br>第38章　使用地理定位　　802<br>38.1 　使用地理定位　　802<br>38.2 　处理地理定位错误　　805<br>38.3 　指定地理定位选项　　807<br>38.4 　监控位置　　809<br>38.5 　小结　　810<br>第39章　使用Web存储　　811<br>39.1 　使用本地存储　　811<br>39.2 　使用会话存储　　815<br>39.3 　小结　　819<br>第40章　创建离线Web应用程序　　820<br>40.1 　定义问题　　820<br>40.2 　定义清单　　822<br>40.3 　检测浏览器状态　　827<br>40.4 　使用离线缓存　　828<br>40.4.1 　制作更新　　832<br>40.4.2 　获取更新　　832<br>40.4.3 　应用更新　　833<br>40.5 　小结　　834</p>
+<p><img src="http://p53s4d2qk.bkt.clouddn.com/html5-cheat-sheet.png?imageMogr2/thumbnail/!75p" alt=""></p>
+<blockquote>
+<p><a href="https://websitesetup.org/html5-cheat-sheet/" target="_blank" rel="noopener">html5-cheat-sheet</a></p>
+</blockquote>
+<p><a href="https://blog.csdn.net/taotao6039/article/details/33320277" target="_blank" rel="noopener">HTML5-Cheatsheet（文字版）</a></p>
+<p><img src="http://www.catswhocode.com/blog/wp-content/uploads/2011/08/html5canvas.png" alt=""></p>
+<blockquote>
+<p><a href="http://www.yyyweb.com/demo/html5-tools/html5-canvas.html" target="_blank" rel="noopener">HTML5 Canvas Cheat Sheet</a></p>
+</blockquote>
+<p>为什么要部署到 Github Pages 上？    首先免费，其次省心，最后可以学习使用 Github。</p>
+<p>Github Pages 有容量限制吗？    有，由 What is GitHub Pages? 可知：大小限制为 1 GB，一个月 100 GB 流量。</p>
+<p>更新会有不确定因素，即讨厌又麻烦，但是不更新又怎么能享受新功能呢</p>
+<p>npm 更新全局安装的包：<br>npm update -g</p>
+<p>npm 更新站点文件夹根目录下安装的依赖包：<br>所在目录：~/blog/<br>npm update</p>
+<p>更新 npm 它自己：<br>npm install npm -g</p>
+<p>更新 Node.js 到最新版：<br>npm install n -g</p>
+<p>n latest</p>
+<h2 id="揭秘谷歌AMP项目：它是如何提高网页加载速度的？"><a href="#揭秘谷歌AMP项目：它是如何提高网页加载速度的？" class="headerlink" title="揭秘谷歌AMP项目：它是如何提高网页加载速度的？"></a><a href="https://news.cnblogs.com/n/532096/" target="_blank" rel="noopener">揭秘谷歌AMP项目：它是如何提高网页加载速度的？</a></h2><blockquote class="blockquote-center"><p>在线演示平台——致敬Apple</p>
+</blockquote>
+<h2 id="playlist"><a href="#playlist" class="headerlink" title="playlist"></a>playlist</h2>
+
+<div id="aplayer-nJVxGDtU" class="aplayer aplayer-tag-marker" style="margin-bottom:20px"></div>
+
+<script>var options={
+narrow:!1,
+autoplay:!1,
+showlrc:3,
+mutex:!0,
+music:[
+    {title:"Paradise",
+    author:"Coldplay",
+    url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music/Coldplay%20-%20Paradise%20%281%29.mp3",
+    pic:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music-cover/coldplay-paradise.jpg",
+    lrc:"https://reuixiy.github.io/uploads/lyrics/coldplay-paradise.lrc"},
+
+    {title:"Fix You",
+    author:"Coldplay",
+    url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music/Coldplay%20-%20Fix%20You.mp3",
+    pic:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music-cover/coldplay-fix-you.png",
+    lrc:"https://reuixiy.github.io/uploads/lyrics/coldplay-fix-you.lrc"},
+
+    {title:"Live Forever",
+    author:"Oasis",
+    url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music/Oasis%20-%20Live%20Forever.mp3",
+    pic:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music-cover/oasis-live-forever.jpg",
+    lrc:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/lyrics/oasis-live-forever.lrc"},
+
+    ]};
+
+options.element=document.getElementById("aplayer-nJVxGDtU");
+var ap=new APlayer(options);window.aplayers||(window.aplayers=[]),window.aplayers.push(ap)</script>
+
+<p></p><h2 id="music"><a href="#music" class="headerlink" title="music"></a>music</h2><div id="aplayer-jAxGJCEo" class="aplayer aplayer-tag-marker" style="margin-bottom:20px"><pre class="aplayer-lrc-content"></pre></div><p></p>
+<script>var ap=new APlayer({element:document.getElementById("aplayer-jAxGJCEo"),narrow:!1,autoplay:!1,showlrc:3,music:{title:"Live Forever",author:"Oasis",url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music/Oasis%20-%20Live%20Forever.mp3",pic:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/music-cover/oasis-live-forever.jpg",lrc:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/lyrics/oasis-live-forever.lrc"}});window.aplayers||(window.aplayers=[]),window.aplayers.push(ap)</script>
+
+
+<p></p><h2 id="video"><a href="#video" class="headerlink" title="video"></a>video</h2><div id="dplayer6" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom:20px"></div><p></p>
+<p><link rel="stylesheet" href="DPlayer.min.css"></p>
+<script src="DPlayer.min.js"></script>
+<script>!function(){var f=new DPlayer({container:document.getElementById("dplayer6"),video:{url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/Video/404bg.mp4"}});window.dplayers||(window.dplayers=[]),window.dplayers.push(f)}()</script>
+
+
+<div id="dplayer8" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom:20px"></div>
+
+<p><link rel="stylesheet" href="DPlayer.min.css"></p>
+<script src="DPlayer.min.js"></script>
+<script>!function(){var f=new DPlayer({container:document.getElementById("dplayer8"),video:{url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/Video/%E3%80%8A%E7%9C%8B%E8%A7%81%E6%9C%AA%E6%9D%A5%E5%B7%B2%E5%88%B0%E6%9D%A5%E3%80%8B%E7%BA%A2%E6%9D%89-%E7%9C%9F%E6%A0%BC%20AI%E5%8F%8C%E5%9F%8E%E8%AE%B0.mp4"}});window.dplayers||(window.dplayers=[]),window.dplayers.push(f)}()</script>
+
+<div id="dplayer10" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom:20px"></div>
+
+<p><link rel="stylesheet" href="DPlayer.min.css"></p>
+<script src="DPlayer.min.js"></script>
+<script>!function(){var f=new DPlayer({container:document.getElementById("dplayer10"),video:{url:"https://yixiuer.oss-cn-shanghai.aliyuncs.com/Video/Coldplay%20-%20Lost%2B%20ft.%20Jay-Z.mp4"}});window.dplayers||(window.dplayers=[]),window.dplayers.push(f)}()</script>
+
+<video width="320" height="240" controls="controls">
+<source src="https://yixiuer.oss-cn-shanghai.aliyuncs.com/Video/Coldplay%20-%20Lost%2B%20ft.%20Jay-Z.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h3 id="让人爱不释手的13套精美-Web-应用程序图标素材"><a href="#让人爱不释手的13套精美-Web-应用程序图标素材" class="headerlink" title="让人爱不释手的13套精美 Web 应用程序图标素材"></a><a href="http://www.cnblogs.com/lhb25/archive/2012/08/31/free-application-icon-sets.html" target="_blank" rel="noopener">让人爱不释手的13套精美 Web 应用程序图标素材</a></h3><h3 id="推荐10款非常优秀的-HTML5-开发工具"><a href="#推荐10款非常优秀的-HTML5-开发工具" class="headerlink" title="推荐10款非常优秀的 HTML5 开发工具"></a><a href="https://www.cnblogs.com/lhb25/archive/2011/10/09/10-online-tools-to-simplify-html5-coding.html" target="_blank" rel="noopener">推荐10款非常优秀的 HTML5 开发工具</a></h3><h3 id="推荐35款精致的-CSS3-和-HTML5-网页模板"><a href="#推荐35款精致的-CSS3-和-HTML5-网页模板" class="headerlink" title="推荐35款精致的 CSS3 和 HTML5 网页模板"></a><a href="http://www.cnblogs.com/lhb25/archive/2012/08/03/5-creative-html5-and-css3-templates.html" target="_blank" rel="noopener">推荐35款精致的 CSS3 和 HTML5 网页模板</a></h3><h3 id="网站项目必备——12款经典的白富美型-jQuery-图片轮播插件"><a href="#网站项目必备——12款经典的白富美型-jQuery-图片轮播插件" class="headerlink" title="网站项目必备——12款经典的白富美型 jQuery 图片轮播插件"></a><a href="http://www.cnblogs.com/lhb25/archive/2013/01/06/jquery-image-carousel-effect.html" target="_blank" rel="noopener">网站项目必备——12款经典的白富美型 jQuery 图片轮播插件</a></h3><h3 id="how-well-does-your-browser-support-html5"><a href="#how-well-does-your-browser-support-html5" class="headerlink" title="how well does your browser support html5?"></a><a href="http://html5test.com/" target="_blank" rel="noopener">how well does your browser support html5?</a></h3><h3 id="hexo教程系列——hexo安装教程"><a href="#hexo教程系列——hexo安装教程" class="headerlink" title="hexo教程系列——hexo安装教程"></a><a href="https://blog.csdn.net/xuezhisdc/article/details/53130328" target="_blank" rel="noopener">hexo教程系列——hexo安装教程</a></h3><h3 id="搭建一个免费的，无限流量的Blog——github-Pages和Jekyll入门"><a href="#搭建一个免费的，无限流量的Blog——github-Pages和Jekyll入门" class="headerlink" title="搭建一个免费的，无限流量的Blog——github Pages和Jekyll入门"></a><a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html" target="_blank" rel="noopener">搭建一个免费的，无限流量的Blog——github Pages和Jekyll入门</a></h3><h3 id="Minimum-Viable-Product"><a href="#Minimum-Viable-Product" class="headerlink" title="Minimum Viable Product"></a><a href="http://growupdaily.com/2018/12/25/MVP/Minimum%20Viable%20Product/" target="_blank" rel="noopener">Minimum Viable Product</a></h3><h3 id="写日记有哪些好处？"><a href="#写日记有哪些好处？" class="headerlink" title="写日记有哪些好处？"></a><a href="https://jingyan.baidu.com/article/90bc8fc8783fe6f653640c21.html" target="_blank" rel="noopener">写日记有哪些好处？</a></h3><h3 id="APlayer"><a href="#APlayer" class="headerlink" title="APlayer"></a><a href="https://aplayer.js.org/#/zh-Hans/" target="_blank" rel="noopener">APlayer</a></h3><h3 id="DPlayer"><a href="#DPlayer" class="headerlink" title="DPlayer"></a><a href="http://dplayer.js.org/#/home" target="_blank" rel="noopener">DPlayer</a></h3><h3 id="打造个性超赞博客Hexo-NexT-GithubPages的超深度优化"><a href="#打造个性超赞博客Hexo-NexT-GithubPages的超深度优化" class="headerlink" title="打造个性超赞博客Hexo+NexT+GithubPages的超深度优化"></a><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">打造个性超赞博客Hexo+NexT+GithubPages的超深度优化</a></h3><h3 id="hexo摸爬滚打之进阶教程"><a href="#hexo摸爬滚打之进阶教程" class="headerlink" title="hexo摸爬滚打之进阶教程"></a><a href="https://cloud.tencent.com/developer/article/1114053" target="_blank" rel="noopener">hexo摸爬滚打之进阶教程</a></h3><h3 id="hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？"><a href="#hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？" class="headerlink" title="hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？"></a><a href="https://blog.csdn.net/sunshine940326/article/details/70936988" target="_blank" rel="noopener">hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？</a></h3><h3 id="Hexo-NexT-主题SEO优化指南"><a href="#Hexo-NexT-主题SEO优化指南" class="headerlink" title="Hexo NexT 主题SEO优化指南"></a><a href="https://blog.csdn.net/Lancelot_Lewis/article/details/52218086" target="_blank" rel="noopener">Hexo NexT 主题SEO优化指南</a></h3><h3 id="【搜索优化】Hexo-next百度和谷歌搜索优化"><a href="#【搜索优化】Hexo-next百度和谷歌搜索优化" class="headerlink" title="【搜索优化】Hexo-next百度和谷歌搜索优化"></a><a href="http://www.ehcoo.com/seo.html" target="_blank" rel="noopener">【搜索优化】Hexo-next百度和谷歌搜索优化</a></h3><h3 id="在Hexo中渲染MathJax数学公式"><a href="#在Hexo中渲染MathJax数学公式" class="headerlink" title="在Hexo中渲染MathJax数学公式"></a><a href="https://www.jianshu.com/p/7ab21c7f0674" target="_blank" rel="noopener">在Hexo中渲染MathJax数学公式</a></h3><p><span id="inline-blue"> 站点配置文件 </span><br><span id="inline-purple"> 主题配置文件 </span><br><span id="inline-yellow"> 站点配置文件 </span><br><span id="inline-green"> 主题配置文件 </span><br><a id="download" href="https://git-scm.com/download/win" target="_blank" rel="noopener"><i class="fa fa-download"></i><span> Download Now</span> </a><br><i class="fa fa-pencil"></i>支持Markdown</p>
+<ol>
+<li><i class="fa fa-pencil">&lt;/i&gt; 支持 Markdown<br><i>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</i></i></li>
+<li><i class="fa fa-cloud-upload">&lt;/i&gt; 一件部署<br><i>只需一条指令即可部署到 Github Pages，或其他网站。</i></i></li>
+<li><i class="fa fa-cog">&lt;/i&gt; 丰富的插件<br><i>Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade，CoffeeScript。</i></i></li>
+</ol>
+<ul>
+<li><i class="fa fa-pencil"></i> 铅笔</li>
+<li><i class="fa fa-cloud-upload"></i> 上传</li>
+<li><p><i class="fa fa-download"></i> 下载</p>
+</li>
+<li><p><i class="fa fa-download"></i> 下载</p>
+</li>
+<li><i class="fa fa-download fa-lg"></i> 下载变大 33%</li>
+<li><i class="fa fa-download fa-2x"></i> 下载两倍大</li>
+</ul>
+<blockquote class="blockquote-center"><p>人生乃是一面镜子，<br>从镜子里认识自己，<br>我要称之为头等大事，<br>也只是我们追求的目的！</p>
+</blockquote>
+<a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download fa-lg fa-fw"></i>点击下载百度</a>
+<blockquote class="question">内容</blockquote>
+
+<p><span id="inline-toc">1.</span></p>
+<p>NexT theme本来就支持Mathjax，简直又惊又喜。<br>写Markdown的时候，需要用$$把公式括起来。</p>
+<script type="math/tex; mode=display">\sum_{i=1}^n a_i=0</script><script type="math/tex; mode=display">d (x_a, x_b) = \sqrt{\sum_{p} \left( x^p_a - x^p_b \right)^2}</script><script type="math/tex; mode=display">f(x_1,x_2,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2</script><h3 id="作为一个前端，可以如何机智地弄坏一台电脑？"><a href="#作为一个前端，可以如何机智地弄坏一台电脑？" class="headerlink" title="作为一个前端，可以如何机智地弄坏一台电脑？"></a><a href="http://litten.me/2015/07/06/hack-in-localstorage/" target="_blank" rel="noopener">作为一个前端，可以如何机智地弄坏一台电脑？</a></h3><p>html5的本地存储，相信大家都不陌生。将数据以二进制文件形式存储到本地，在当前应用得非常广泛。<br>windows下的chrome，localStorage存储于C:\Users\xxx\AppData\Local\Google\Chrome\User Data\Default\Local Storage文件夹中。但如果任由网页无限写文件，对用户硬盘的伤害可想而知，因而浏览器对其做了大小限制。</p>
+<p>对于一个域名+端口，PC侧的上限是5M-10M之间，移动侧是则不大于2.5M。</p>
+<p>那么问题就变成：这样的限制足够保护用户硬盘了吗？</p>
+<p>关键<br>关键的问题在于，这一限制，针对的是一个域名+端口。<br>也就是说，你访问同一个域名的不同端口，它们的localStorage并无关联，是分开存储的。</p>
+<p>我用node简单地开启了服务器，这时，用户访问<a href="http://127.0.0.1:1000到http://127.0.0.1:1099这100个端口，会请求到同一个页面：index.html：" target="_blank" rel="noopener">http://127.0.0.1:1000到http://127.0.0.1:1099这100个端口，会请求到同一个页面：index.html：</a></p>
+<h3 id="前端安全冷门知识杂谈"><a href="#前端安全冷门知识杂谈" class="headerlink" title="前端安全冷门知识杂谈"></a><a href="http://litten.me/2014/05/27/safety-point-of-view-from-front-end/" target="_blank" rel="noopener">前端安全冷门知识杂谈</a></h3><p>盗取无法用js读写的Cookie<br>删不掉的本地存储<br>函数覆写监听上报<br>内存Cookie与硬盘Cookie<br>CSS带来的点击量泄露<br>JSONP回调函数与UTF-7编码<br>过滤与代码混淆<br>心理学与社会工程学</p>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p><img src="http://p53s4d2qk.bkt.clouddn.com/vDoIT_html-css-logo1.jpg?imageMogr2/thumbnail/!75p" alt="vDoIT_html-css-logo1.jpg"></p>
+<blockquote>
+<p>  层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。名称CSS中的“层叠（cascading）”表示样式单规则应用于HTML文档元素的方式。具体地说，CSS样式单中的样式形成一个层次结构，更具体的样式覆盖通用样式。样式规则的优先级由CSS根据这个层次结构决定，从而实现级联效果。</p>
+</blockquote>
+<p><img src="http://p53s4d2qk.bkt.clouddn.com/css20180504.jpg?imageMogr2/thumbnail/!75p" alt="css20180504.jpg"></p>
+<h2 id="Hexo博客主题NexT使用自定义的CSS样式"><a href="#Hexo博客主题NexT使用自定义的CSS样式" class="headerlink" title="Hexo博客主题NexT使用自定义的CSS样式 "></a><a href="https://segmentfault.com/a/1190000003846777" target="_blank" rel="noopener">Hexo博客主题NexT使用自定义的CSS样式 </a></h2><p><a href="#" class="myCssButton">MyButton</a></p>
+<h2 id="有关HTML常被问到的知识点"><a href="#有关HTML常被问到的知识点" class="headerlink" title="有关HTML常被问到的知识点"></a><a href="http://shenzekun.cn/%E6%9C%89%E5%85%B3HTML%E5%B8%B8%E8%A2%AB%E9%97%AE%E5%88%B0%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9.html" target="_blank" rel="noopener">有关HTML常被问到的知识点</a></h2><h2 id="html5调用摄像头功能"><a href="#html5调用摄像头功能" class="headerlink" title="html5调用摄像头功能"></a><a href="http://shenzekun.cn/html5%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%8A%9F%E8%83%BD.html" target="_blank" rel="noopener">html5调用摄像头功能</a></h2>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML5/" rel="tag"><i class="fa fa-tag"></i> HTML5</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/AI/JavaScript.html" rel="next" title="JavaScript">
+                <i class="fa fa-chevron-left"></i> JavaScript
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Company/XiaoMi.html" rel="prev" title="Xiao Mi">
+                Xiao Mi <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img/headonhill.jpg"
+                alt="Author" />
+            
+              <p class="site-author-name" itemprop="name">Author</p>
+              <p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">245</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">384</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="http://blog.163.com/zhuxuanlv@126/" target="_blank" title="Blog"><i class="fa fa-fw fa-globe"></i>Blog</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:deepcreator18@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("04/01/2018 16:01:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second ";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML5权威指南"><span class="nav-number">1.</span> <span class="nav-text">HTML5权威指南</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内容简介"><span class="nav-number">1.1.</span> <span class="nav-text">内容简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">1.2.</span> <span class="nav-text">目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#揭秘谷歌AMP项目：它是如何提高网页加载速度的？"><span class="nav-number">2.</span> <span class="nav-text">揭秘谷歌AMP项目：它是如何提高网页加载速度的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#playlist"><span class="nav-number">3.</span> <span class="nav-text">playlist</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#music"><span class="nav-number">4.</span> <span class="nav-text">music</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#video"><span class="nav-number">5.</span> <span class="nav-text">video</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">6.</span> <span class="nav-text">参考资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#让人爱不释手的13套精美-Web-应用程序图标素材"><span class="nav-number">6.1.</span> <span class="nav-text">让人爱不释手的13套精美 Web 应用程序图标素材</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐10款非常优秀的-HTML5-开发工具"><span class="nav-number">6.2.</span> <span class="nav-text">推荐10款非常优秀的 HTML5 开发工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐35款精致的-CSS3-和-HTML5-网页模板"><span class="nav-number">6.3.</span> <span class="nav-text">推荐35款精致的 CSS3 和 HTML5 网页模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站项目必备——12款经典的白富美型-jQuery-图片轮播插件"><span class="nav-number">6.4.</span> <span class="nav-text">网站项目必备——12款经典的白富美型 jQuery 图片轮播插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#how-well-does-your-browser-support-html5"><span class="nav-number">6.5.</span> <span class="nav-text">how well does your browser support html5?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo教程系列——hexo安装教程"><span class="nav-number">6.6.</span> <span class="nav-text">hexo教程系列——hexo安装教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建一个免费的，无限流量的Blog——github-Pages和Jekyll入门"><span class="nav-number">6.7.</span> <span class="nav-text">搭建一个免费的，无限流量的Blog——github Pages和Jekyll入门</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Minimum-Viable-Product"><span class="nav-number">6.8.</span> <span class="nav-text">Minimum Viable Product</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写日记有哪些好处？"><span class="nav-number">6.9.</span> <span class="nav-text">写日记有哪些好处？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#APlayer"><span class="nav-number">6.10.</span> <span class="nav-text">APlayer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DPlayer"><span class="nav-number">6.11.</span> <span class="nav-text">DPlayer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打造个性超赞博客Hexo-NexT-GithubPages的超深度优化"><span class="nav-number">6.12.</span> <span class="nav-text">打造个性超赞博客Hexo+NexT+GithubPages的超深度优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo摸爬滚打之进阶教程"><span class="nav-number">6.13.</span> <span class="nav-text">hexo摸爬滚打之进阶教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？"><span class="nav-number">6.14.</span> <span class="nav-text">hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-NexT-主题SEO优化指南"><span class="nav-number">6.15.</span> <span class="nav-text">Hexo NexT 主题SEO优化指南</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【搜索优化】Hexo-next百度和谷歌搜索优化"><span class="nav-number">6.16.</span> <span class="nav-text">【搜索优化】Hexo-next百度和谷歌搜索优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在Hexo中渲染MathJax数学公式"><span class="nav-number">6.17.</span> <span class="nav-text">在Hexo中渲染MathJax数学公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作为一个前端，可以如何机智地弄坏一台电脑？"><span class="nav-number">6.18.</span> <span class="nav-text">作为一个前端，可以如何机智地弄坏一台电脑？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前端安全冷门知识杂谈"><span class="nav-number">6.19.</span> <span class="nav-text">前端安全冷门知识杂谈</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS"><span class="nav-number">7.</span> <span class="nav-text">CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo博客主题NexT使用自定义的CSS样式"><span class="nav-number">8.</span> <span class="nav-text">Hexo博客主题NexT使用自定义的CSS样式 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有关HTML常被问到的知识点"><span class="nav-number">9.</span> <span class="nav-text">有关HTML常被问到的知识点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html5调用摄像头功能"><span class="nav-number">10.</span> <span class="nav-text">html5调用摄像头功能</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Author</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="Total Visitors">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="Total Views">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz',
+        appKey: 'PXNkGhS05PxL7rV3N8gDlAQe',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -316,7 +2188,42 @@
         onPopupClose();
       }
     });
-  </script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script type="text/x-mathjax-config">
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
@@ -325,20 +2232,137 @@
       },
       TeX: {equationNumbers: { autoNumber: "AMS" }}
     });
-</script><script type="text/x-mathjax-config">
+</script>
+
+<script type="text/x-mathjax-config">
     MathJax.Hub.Queue(function() {
       var all = MathJax.Hub.getAllJax(), i;
         for (i=0; i < all.length; i += 1) {
           all[i].SourceElement().parentNode.className += ' has-jax';
         }
     });
-</script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/javascript">wpac_init=window.wpac_init||[],wpac_init.push({widget:"Rating",id:11184,el:"wpac-rating",color:"fc6423"}),function(){if(!("WIDGETPACK_LOADED"in window)){WIDGETPACK_LOADED=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//embed.widgetpack.com/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t.nextSibling)}}()</script><style>.copy-btn{display:inline-block;padding:6px 12px;font-size:13px;font-weight:700;line-height:20px;color:#333;white-space:nowrap;vertical-align:middle;cursor:pointer;background-color:#eee;background-image:linear-gradient(#fcfcfc,#eee);border:1px solid #d5d5d5;border-radius:3px;user-select:none;outline:0}.highlight-wrap .copy-btn{transition:opacity .3s ease-in-out;opacity:0;padding:2px 6px;position:absolute;right:4px;top:8px}.highlight-wrap .copy-btn:focus,.highlight-wrap:hover .copy-btn{opacity:1}.highlight-wrap{position:relative}</style><script>$(".highlight").each(function(t,e){var n=$("<div>").addClass("highlight-wrap");$(e).after(n),n.append($("<button>").addClass("copy-btn").append("Copy").on("click",function(t){var e=$(this).parent().find(".code").find(".line").map(function(t,e){return $(e).text()}).toArray().join("\n"),n=document.createElement("textarea");document.body.appendChild(n),n.style.position="absolute",n.style.top="0px",n.style.left="0px",n.value=e,n.select(),n.focus();var o=document.execCommand("copy");document.body.removeChild(n),o?$(this).text("Copied"):$(this).text("Copy failed"),$(this).blur()})).on("mouseleave",function(t){var e=$(this).find(".copy-btn");setTimeout(function(){e.text("Copy")},300)}).append(e)})</script><script type="text/x-mathjax-config">
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 11184,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('Copied')
+          else $(this).text('Copy failed')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('Copy')
+        }, 300)
+      }).append(e)
+    })
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script><script type="text/x-mathjax-config">
+</script>
+
+<script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
     var all = MathJax.Hub.getAllJax(), i;
     for(i=0; i < all.length; i += 1) {
       all[i].SourceElement().parentNode.className += ' has-jax';
     }
   });
-</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script></body></html>
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+</body>
+</html>
