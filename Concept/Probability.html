@@ -1,4 +1,2268 @@
-<!DOCTYPE html><html class="theme-next muse use-motion" lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet"><style>.pace .pace-progress{background:#1e92fb;height:3px}.pace .pace-progress-inner{box-shadow:0 0 10px #1e92fb,0 0 5px #1e92fb}.pace .pace-activity{border-top-color:#1e92fb;border-left-color:#1e92fb}</style><meta name="theme-color" content="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0"><link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Muse",version:"6.3.0",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!0,onmobile:!0},fancybox:!1,fastclick:!1,lazyload:!1,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="为了增加达成目标的概率，需要持续自我成长和进化。——DeepCreator"><meta name="keywords" content="Probability"><meta property="og:type" content="article"><meta property="og:title" content="Probability"><meta property="og:url" content="http://deepcreator.com/Concept/Probability.html"><meta property="og:site_name" content="Ai Lab"><meta property="og:description" content="为了增加达成目标的概率，需要持续自我成长和进化。——DeepCreator"><meta property="og:locale" content="en"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/Probability2.png?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/randomness20180621.jpg?imageMogr2/thumbnail/!75p"><meta property="og:image" content="https://img3.doubanio.com/view/subject/l/public/s1407781.jpg"><meta property="og:image" content="https://pic4.zhimg.com/v2-c0a0d854d1b8ac65ecea2d02ca7050f7_b.jpg"><meta property="og:image" content="https://pic1.zhimg.com/v2-b7dc1b094a609dae26e3ca1ba011d1c0_b.jpg"><meta property="og:image" content="https://pic3.zhimg.com/v2-cdb7808a1911c58d5d020420901ee582_b.jpg"><meta property="og:image" content="https://pic2.zhimg.com/v2-4064812aac8f042f00dc6d54e9a7620d_b.png"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/cover_1080x600.jpg?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/probability01.JPG?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/event01.JPG?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/collection01.JPG?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/traditionalprobability.JPG?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/statistics.JPG?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/modelprobability.JPG?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://opb37u589.bkt.clouddn.com/bayestheory.JPG?imageMogr2/thumbnail/!75p"><meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/HistPropOfHeads.png/450px-HistPropOfHeads.png"><meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Binomial_Distribution.svg/450px-Binomial_Distribution.svg.png"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1312.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/170.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1414.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/239.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/326.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/427.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/525.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/617.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/715.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/813.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/910.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1012.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1117.jpg"><meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1214.jpg"><meta property="og:image" content="http://www.luojiji.com/data/attachment/forum/201512/29/162218syyj0uu30qu6oogf.jpg"><meta property="og:image" content="http://www.luojiji.com/data/attachment/forum/201703/30/154157fwrznxfw0on0kf6r.jpg"><meta property="og:image" content="http://www.luojiji.com/data/attachment/forum/201703/30/154304wadpkwnfnebzp5e5.jpg"><meta property="og:image" content="http://www.luojiji.com/data/attachment/forum/201512/15/171743nnbh5nbnh783xns8.jpg"><meta property="og:updated_time" content="2018-08-01T13:22:16.467Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Probability"><meta name="twitter:description" content="为了增加达成目标的概率，需要持续自我成长和进化。——DeepCreator"><meta name="twitter:image" content="http://opb37u589.bkt.clouddn.com/Probability2.png?imageMogr2/thumbnail/!75p"><link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml"><link rel="canonical" href="http://deepcreator.com/Concept/Probability.html"><script type="text/javascript" id="page.configurations">CONFIG.page={sidebar:""}</script><title>Probability | Ai Lab</title><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}()</script><noscript><style type="text/css">.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.logo-line-after i{right:initial}</style></noscript></head><body itemscope itemtype="http://schema.org/WebPage" lang="en"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta custom-logo"><div class="site-meta-headline"> <a><img class="custom-logo-image" src="http://p53s4d2qk.bkt.clouddn.com/deepcreator220180502.JPG" alt="Ai Lab"></a></div><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Ai Lab</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Minority, Right, Value</p></div><div class="site-nav-toggle"> <button aria-label="Toggle navigation bar"><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>Archives</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>Categories</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>Tags</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-info-circle"></i><br>About</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>Search</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://deepcreator.com/Concept/Probability.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Author"><meta itemprop="description" content="Chief IPR Officer in AI Age"><meta itemprop="image" content="/img/headonhill.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Ai Lab"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Probability</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">Posted on</span> <time title="Created: 2018-06-07 11:00:06" itemprop="dateCreated datePublished" datetime="2018-06-07T11:00:06+08:00">2018-06-07</time> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i></span> <span class="post-meta-item-text">Edited on</span> <time title="Modified: 2018-08-01 21:22:16" itemprop="dateModified" datetime="2018-08-01T21:22:16+08:00">2018-08-01</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">In</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Concept/" itemprop="url" rel="index"><span itemprop="name">Concept</span></a></span></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span> <a href="/Concept/Probability.html#comments" itemprop="discussionUrl"><span class="post-meta-item-text">Comments:</span><span class="post-comments-count valine-comment-count" data-xid="/Concept/Probability.html" itemprop="commentCount"></span></a></span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i> Views:<span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="http://opb37u589.bkt.clouddn.com/Probability2.png?imageMogr2/thumbnail/!75p" alt="Probability2.png"></p><blockquote><p>为了增加达成目标的概率，需要持续自我成长和<a href="https://deepcreator.com/Concept/Evolution.html">进化</a>。——DeepCreator</p></blockquote><a id="more"></a><p>概率是对随机事件发生的可能性的度量，一般以一个在0到1之间的实数表示一个事件发生的可能性大小。</p><h2 id="随机漫步的傻瓜"><a href="#随机漫步的傻瓜" class="headerlink" title="随机漫步的傻瓜"></a><a href="https://book.douban.com/subject/10773362/" target="_blank" rel="noopener">随机漫步的傻瓜</a></h2><p><img src="http://p53s4d2qk.bkt.clouddn.com/randomness20180621.jpg?imageMogr2/thumbnail/!75p" alt="randomness20180621.jpg"></p><p>《随机漫步的傻瓜》内容简介：塔勒布在《随机漫步的傻瓜》中指出：<strong>你的<a href="https://deepcreator.com/Concept/Success.html">成功</a>不见得是因为比其他人高明，而很可能是运气的结果。</strong></p><p>开劳斯莱斯的摇滚乐手、把印象派画作抬到天价的投机客，拥有私人飞机的企业家和牙医相比，哪一个更富有？答案可能让你吃惊：牙医。因为他的职业生涯几乎没有什么<a href="https://deepcreator.com/IPR/Risk.html">风险</a>，可能出现的灾难少之又少，也不会像投机客和企业家那样垮台，所以，牙医其实相当富有。</p><p>塔勒布生活的最大特点是<strong>不确定性</strong>，随机现象比比皆是，大起大落常常发生在须臾之间。当随机性的黑天鹅出现时，你可能一夜暴富，也可能在一次失误中回到原点。但我们天生倾向于忽视低<a href="https://deepcreator.com/Concept/Probability.html">概率</a>事件的可能性，无论这些事件会引发多大的灾难。《随机漫步的傻瓜》以深刻独到的<a href="https://deepcreator.com/Concept/Viewpoint.html">视角</a>，告诉你这个随机世界的规律和运行方式。随机性虽然无法避免，但我们可以学着接受它。就像在<a href="https://deepcreator.com/Business/Investment.html">投资</a>市场上，如果一个小概率事件可以带来巨额回报，为什么不在这个事件上持续下注呢？换一种<a href="https://deepcreator.com/Concept/Thinking.html">思维</a>方式，做“随机漫步的傻瓜”，我们对<a href="https://deepcreator.com/Concept/Life.html">人生</a>的了解无疑将大为增进。</p><h2 id="机会的数学原理——明知其输而博赢的概率分析"><a href="#机会的数学原理——明知其输而博赢的概率分析" class="headerlink" title="机会的数学原理——明知其输而博赢的概率分析"></a><a href="https://book.douban.com/subject/1281171/" target="_blank" rel="noopener">机会的数学原理——明知其输而博赢的概率分析</a></h2><p>Taking Chances: Winning with Probability</p><p><img src="https://img3.doubanio.com/view/subject/l/public/s1407781.jpg" alt=""></p><h2 id="一句话明白：什么是统计？什么是概率？"><a href="#一句话明白：什么是统计？什么是概率？" class="headerlink" title="一句话明白：什么是统计？什么是概率？"></a><a href="https://zhuanlan.zhihu.com/p/28105785" target="_blank" rel="noopener">一句话明白：什么是统计？什么是概率？</a></h2><p>有一次我“老婆”听我在讲课，讲的是《学习统计对你人生的重要意义是什么？》。讲完课后，我给她说，统计概率真的很重要，然后balaba。</p><p>她只淡淡的回了我一句，我竟无言对：</p><p>虽然我知道你说的很对，但是什么是统计概率呢？对我有什么帮助呢？<br>当我长篇大论的解释给她听时，她已经不耐烦了：我不是要听你这些晦涩难懂的名称，你应该用生活中的例子讲我听，毕竟我是小白。如果你跟我讲化妆品什么牌子好，我倒是能立马明白。（女人啊）</p><p>这句话彻底击中了我的痛点，想让没学过，没有任何基础的人明白什么是统计，什么是概率，确实不容易。难道没有办法了吗？</p><p>直到我反复查资料，然后根据我的生活经历，有一天这么跟她聊的时候，她立马明白了什么是统计，什么是概率。还说要好好学习这个“最赚钱的思维”工具呢。我是怎么和她聊的呢？</p><p>猴子：老婆，我给你讲个笑话吧。</p><p>老婆：如果不好笑，小心我的无影脚。</p><p>猴子：某次生物课考试，有一道题是看动物的脚，猜该动物的名称，一考生实在是不会做，愤怒的把试卷撕掉就往外走，老师看见了，抓住他大声说道：“你哪个班的，这么嚣张”。学生把裤腿一提，说道：“你猜啊，你猜啊！”</p><p>这个笑话虽然你很早听过，但是很多人却没看懂这个学生绝对是个统计高手。（忽悠，接着忽悠）。</p><p>统计就是给你黑盒子里面装着猫和狗，只让你看到他们的腿，然后让你猜哪个腿是猫的。</p><p><img src="https://pic4.zhimg.com/v2-c0a0d854d1b8ac65ecea2d02ca7050f7_b.jpg" alt=""></p><p>你可能会问，这怎么猜？</p><p>在统计里会总结过去的数据，然后对这些数据进行总结归纳。就像刚才的例子，我们要判断出哪个腿属于猫。需要收集所有猫的腿（也就是过去的数据），然后总结这些腿的特征（总结归纳）。当图片里的腿出现时，你可以根据之前的总结归纳来判断出这腿是不是猫的腿。</p><p>当然，你也不会无聊到判断哪只腿是猫，哪只腿是狗的（更多时候我还是喜欢看美女的腿，，窃喜）。举个更加实际的例子，在医院会对过去有糖尿病的所有病人进行归纳总结（建立模型），当有一个新的病人入院时，就可以用之前的归纳总结来判断该病人是否患糖尿病，然后就可以对症下药了。<strong>统计里常说的“分类”就是这个过程。</strong></p><p>所以，<strong>统计是对过去数据进行“总结归纳”</strong>。可以用下图表示：</p><p><img src="https://pic1.zhimg.com/v2-b7dc1b094a609dae26e3ca1ba011d1c0_b.jpg" alt=""></p><p>那什么是概率呢？</p><p>概率是用数值来表示事情发生的可能性大小。举个例子小马去创业了去找投资人王思聪要钱。王思聪可不是傻X。然后就派猴子我去调查小马过去的经历（看他有什么创业的条件），然后预测他可能成功的概率是多大。经过深入调查我发现小马他爸是马云（给定条件），得出小马创业概率成功率是99%（预测未来）。</p><p>如果我们用猫和狗这个例子来举例，就是给了你猫和狗的行为特征（给定条件），然后预测猫和狗明天撕逼的可能性多大。</p><p><img src="https://pic3.zhimg.com/v2-cdb7808a1911c58d5d020420901ee582_b.jpg" alt=""></p><p>所以，<strong>概率是给定条件，对“数据”进行预测</strong>，可以用下图来表示：</p><p>用简单的话来总结：</p><blockquote><p>统计＝回顾过去，进行归纳总结<br>概率＝给定条件，对未来进行预测</p></blockquote><p>用稍微专业一点的话来总结：<br>统计＝样本(回顾过去的数据)归纳出总体(总结)<br>概率率＝总体(给定条件)对样本进行预测</p><p>用“专家”的话来解释，就是：</p><p>Lary Wasserman 在 《All of Statistics》 的序言里有说过概率论和统计推断的区别：</p><p>1）The basic problem of statistical inference is the inverse of probability:Given the outcomes, what can we say about the process that generated the data?</p><p>2）The basic problem that we study in probability is: Given a data generating process, what are the properities of the outcomes?</p><p>有很多人，给出了这个图，其实理解起来还是比较费劲的。在有前面的理解基础上，再看这个图，你就更容易理解了。</p><p>下图翻译：</p><p>统计学：根据手中信息，猜猜桶里有啥？(样本归纳总结出总体)</p><p>概率论：根据桶中信息，猜猜手里有啥？(总体对样本进行预测)</p><p><img src="https://pic2.zhimg.com/v2-4064812aac8f042f00dc6d54e9a7620d_b.png" alt=""></p><p>参考资料：</p><p>1）<a href="https://betterexplained.com/articles/a-brief-introduction-to-probability-statistics/" target="_blank" rel="noopener">https://betterexplained.com/articles/a-brief-introduction-to-probability-statistics/</a></p><p>2）《学习统计概率的重要意义是什么》音频课程无法上传，可以在我的微信公众号：猴子聊知识，中回复“意义”获取。</p><h2 id="Probability-Theory"><a href="#Probability-Theory" class="headerlink" title="Probability Theory"></a>Probability Theory</h2><p><img src="http://opb37u589.bkt.clouddn.com/cover_1080x600.jpg?imageMogr2/thumbnail/!75p" alt="cover_1080x600.jpg"></p><blockquote><p><a href="https://zh.wikipedia.org/wiki/%E6%A6%82%E7%8E%87%E8%AE%BA" target="_blank" rel="noopener">研究随机性或不确定性等现象的数学。</a></p></blockquote><h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a><a href="https://zh.wikipedia.org/wiki/%E6%A6%82%E7%8E%87%E8%AE%BA" target="_blank" rel="noopener">概率论</a></h2><p>概率论（英语：Probability theory）是集中研究概率及随机现象的数学分支，是研究随机性或不确定性等现象的数学。概率论主要研究对象为随机事件、随机变量以及随机过程。对于随机事件是不可能准确预测其结果的[1]，然而对于<strong>一系列的独立随机事件——例如掷骰子、扔硬币、抽扑克牌以及轮盘等，会呈现出一定的、可以被用于研究及预测的规律</strong>[2]，两个用来描述这些规律的最具代表性的数学结论分别是<strong>大数定律</strong>和<strong>中心极限定理</strong>。</p><p>作为统计学的数学基础，概率论对诸多涉及大量数据定量分析的人类活动极为重要[3]，概率论的方法同样适用于其他方面，例如是对只知道系统部分状态的复杂系统的描述——统计力学，而二十世纪物理学的重大发现是以量子力学所描述的原子尺度上物理现象的概率本质[4]。</p><p><img src="http://opb37u589.bkt.clouddn.com/probability01.JPG?imageMogr2/thumbnail/!75p" alt="probability01.JPG"></p><h3 id="生活例子"><a href="#生活例子" class="headerlink" title="生活例子"></a>生活例子</h3><p>人们对概率总是有一点触摸不清的感觉，而事实上也有很多看似奇异的结果：</p><p>1; 六合彩：在六合彩（49选6）中，一共有13,983,816种可能性（参阅组合数学），</p><p>如果每周都买一组不相同的号，一年有52周，则在实验越多次（一直买直到中奖算一次）之后，平均中奖所花的时间会越接近 {\displaystyle {\frac {13983816}{52}}=268919} {\frac {13983816}{52}}=268919。 <strong>事实上，即使每周买相同的号，获得头奖的概率也是相同的。</strong> 但假设每周实际中奖的组合都不重复，268919年的算术推论是正确的，这说明概率和其他数学理论可能导出不同的结论。</p><p>2; 六合彩：仍然是六合彩。买5, 17, 19, 24, 33, 49中奖概率高还是买1,2,3,4,5,6的中奖概率高?</p><p>古典概率论说：一样。<br>但实际上机械或彩球制造上都有些微小的差异，所以每组概率不一定完全相同，但必须累积多期开奖结果后才看得出来。</p><p>3; 生日悖论：在一个足球场上有23个人（2×11个运动员和1个裁判员），</p><p>不可思议的是，在这23人当中至少有两个人的生日是在同一天的概率要大于50％。 如果这23人都没有相同的生日也不违反概率，只是小于50％。</p><p>4; 轮盘游戏：在游戏中玩家可能认为，在连续出现多次红色后，出现黑色的概率会越来越大。</p><p>这种判断也是错误的，即出现黑色的概率每次是相等的，因为球本身并没有“记忆”， 它不会意识到以前都发生了什么，其概率始终是 {\displaystyle {\frac {18}{37}}} {\frac {18}{37}}。<br>但轮盘的前后期开奖数字形成时间序列（可能存在自回归模型）。</p><p>5; 赢取电视节目里的名车：在参赛者面前有三扇关闭的门，其中只有一扇后面有名车，而其余的后面是山羊。</p><p>游戏规则是，参赛者先选取一扇门，但在他打开之前，主持人在其余两扇门中打开了一扇有山羊的门， 并询问参赛者是否改变主意选择另一扇门，以使赢得名车的概率变大。</p><p>正确的分析结果是，假如不管开始哪一扇门被选，主持人都打开其余两扇门中有山羊的那一扇并询问参赛者是否改变主意， 则改变主意会使赢得汽车的概率增加一倍；（“标准”的三门问题情况。）</p><p>假如主持人只在有名车那扇门被选中时劝诱参赛者打开其它门，则改变主意必输。(资讯不对称)</p><h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><p>作为数学统计基础的概率论的创始人分别是法国数学家帕斯卡和费马，其可追溯到公元17世纪。当时的法国宫廷贵族里盛行着掷骰子游戏，游戏规则是玩家连续掷4次骰子，如果其中没有6点出现，玩家赢，如果出现一次6点，则庄家（相当于现在的赌场）赢。按照这一游戏规则，从长期来看，庄家扮演赢家的角色，而玩家大部分时间是输家，因为庄家总是要靠此维生的，而当时人们也接受了这种现象。</p><p>后来为了使游戏更刺激，游戏规则发生了些许变化，玩家这回用2个骰子连续掷24次，不同时出现2个6点，玩家赢，否则庄家赢。当时人们普遍认为，2次出现6点的概率是一次出现6点的概率的1 / 6，因此6倍于前一种规则的次数，也既是24次赢或输的概率与以前是相等的。然而事实却并非如此，从长期来看，这回庄家处于输家的状态，于是他们去请教当时的数学家帕斯卡，求助其对这种现象作出解释。</p><p>其他对概率论的发展作出重要贡献的人还有荷兰物理、数学家惠更斯，瑞士物理、数学家伯努利，法国数学家棣莫弗，法国数学、天文学家拉普拉斯，德国数学家高斯，法国物理、数学家泊松，意大利数学、医学家卡尔达诺以及苏联数学家柯尔莫哥洛夫。</p><h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><p>单位事件、事件空间、随机事件</p><p><img src="http://opb37u589.bkt.clouddn.com/event01.JPG?imageMogr2/thumbnail/!75p" alt="event01.JPG"></p><p><img src="http://opb37u589.bkt.clouddn.com/collection01.JPG?imageMogr2/thumbnail/!75p" alt="collection01.JPG"></p><p><img src="http://opb37u589.bkt.clouddn.com/traditionalprobability.JPG?imageMogr2/thumbnail/!75p" alt="traditionalprobability.JPG"></p><p><img src="http://opb37u589.bkt.clouddn.com/statistics.JPG?imageMogr2/thumbnail/!75p" alt="statistics.JPG"></p><p><img src="http://opb37u589.bkt.clouddn.com/modelprobability.JPG?imageMogr2/thumbnail/!75p" alt="modelprobability.JPG"></p><p><img src="http://opb37u589.bkt.clouddn.com/bayestheory.JPG?imageMogr2/thumbnail/!75p" alt="bayestheory.JPG"></p><h2 id="大数定律"><a href="#大数定律" class="headerlink" title="大数定律"></a><a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B" target="_blank" rel="noopener">大数定律</a></h2><p>在数学与统计学中，大数定律又称大数法则、大数律，是描述相当多次数重复实验的结果的定律。根据这个定律知道，样本数量越多，则其平均就越趋近期望值。</p><p>大数定律很重要，因为它“保证”了一些随机事件的均值的长期稳定性。人们发现，在重复试验中，随着试验次数的增加，事件发生的频率趋于一个稳定值；人们同时也发现，在对物理量的测量实践中，测定值的算术平均也具有稳定性。比如，我们向上抛一枚硬币，硬币落下后哪一面朝上本来是偶然的，但当我们上抛硬币的次数足够多后，达到上万次甚至几十万几百万次以后，我们就会发现，硬币每一面向上的次数约占总次数的二分之一。<strong>偶然之中包含着必然。</strong></p><p>如果统计数据很少，就很容易出现特别不均匀的情况。这个现象被诺奖得主丹尼尔·卡尼曼戏称为“小数定律”。卡尼曼说，如果我们不理解小数定律，就不能真正理解大数定律。</p><p>大数定律是我们从统计数字中推测真相的理论基础。大数定律说<strong>如果统计样本足够大，那么事物出现的频率就能无限接近他的理论概率——也就是他的“本性”</strong>。而小数定律说如果样本不够大，那么他就表现为各种极端情况，而这些情况可以跟他的本性一点关系都没有。</p><p>· 一个只有二十人的乡村中学某年突然有两人考上清华，跟一个有两千人的中学每年都有两百人考上清华，完全没有可比性。</p><blockquote><p>如果统计样本不够大，就什么也说明不了。</p></blockquote><p>正因为如此，我们才不能只凭自己的经验，哪怕加上家人和朋友的经验，去对事物做出判断。我们的经验非常有限。别看个例，看大规模统计。有的人听说两三个负面新闻就敢写文章把社会批得一文不值，这样的人非常无知。</p><h2 id="中心极限定理"><a href="#中心极限定理" class="headerlink" title="中心极限定理"></a><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86" target="_blank" rel="noopener">中心极限定理</a></h2><p>中心极限定理是概率论中的一组定理。中心极限定理说明，<strong>大量相互独立的随机变量，其均值的分布以正态分布为极限</strong>。这组定理是数理统计学和误差分析的理论基础，指出了大量随机变量之和近似服从正态分布的条件。</p><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/HistPropOfHeads.png/450px-HistPropOfHeads.png" alt=""><br>本图描绘了多次抛掷硬币实验中出现正面的平均比率，每次实验均抛掷了大量硬币。</p><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Binomial_Distribution.svg/450px-Binomial_Distribution.svg.png" alt=""></p><h2 id="基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析"><a href="#基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析" class="headerlink" title="基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析"></a><a href="http://www.36dsj.com/archives/30704" target="_blank" rel="noopener">基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析</a></h2><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1312.jpg" alt=""></p><p>《冰与火之歌》书迷遍布全球。该小说凭借其丰富的人物设置受到广大书迷青睐。然而，在马丁( Martin )笔下，无论好人、坏人，主角、配角都难逃命运的捉弄。除不计其数的无名小卒外，马丁的世界里有916位有名字的角色，其中三分之一都已以各种方式结束了自己在小说中的生命。本文中，我们将进一步探究小说人物的死亡模式，建立贝叶斯生存模型来预测各角色的死亡概率。</p><p>本文数据来自冰与火之歌维基( A Wiki of Ice and Fire )。依据该数据我们创建了截至目前书中出现的916名角色的数据集。用人物首次出现的章节，性别，是否为贵族，所属势力，死亡的章节(若已故)作为解释变量来预测这些角色在未来两本书中的存活情况。</p><p>方法论</p><p>采用Weibull 分布外推在7本书中的各个角色的生存概率。Weibull分布提供了一种建立危险函数( hazard function )模型的方法。而危险函数主要测量人物在特定“书龄”上的死亡概率。Weibull分布主要依赖与两个参数，k和lambda，这两个参数决定了Weibull分布的形状。</p><p>在参数估计之前我们选取均匀分布作为先验概率。对于尚存角色，分析k和lambda如何描述人物的存活状况；对于已故人物，分析参数如何预测人物死亡时间。</p><p>对守夜人( Night’s Watch )，生存概率的后验分布如图1。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/170.jpg" alt=""><br>图1：lambda的分布比较紧密(在0.27附近)，K的分布比较宽松。</p><p>接下来，本文通过生存曲线分析人物的生存情况。为与生存曲线相联系，计算k和lambda的均值以及90%的置信区间。进一步，绘制原始数据和基于后验均值的生存曲线以及置信区间。</p><p>个人分析：雪诺( Jon Snow )</p><p>采用贝叶斯生存分析方法可以预测个性化人物(例如雪诺)的生存情况。在卷五：魔龙的狂舞( A Dancewith Dragons )结尾，守夜人生存的置信区间为0.36到0.56。Jon能活下来的估计并不乐观。即使Jon可以顺利活过第5本书，他在接下来的两本书中存活的概率将降到0.3到0.51。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1414.jpg" alt=""></p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/239.jpg" alt=""></p><p>图2：置信区间紧紧围绕在真实数据周围，均值为合理预测。</p><p>值得注意的的是Jon并非守夜人的普通一员。他受过良好的教育，拥有精良的武器和战斗技能。接下来，将样本选为守夜人中家族地位显赫，教育良好的贵族。守夜人中只有11人为贵族。所以置信区间(如图3所示)非常分散，最优近似( Best Estimate )显示贵族背景并不能提高守夜人的生存率。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/326.jpg" alt=""></p><p>图3：当只有贵族角色时，生存曲线的置信区间显著加宽，概率置信区间下限非常接近0。</p><p>家族因素</p><p>接下来，我们分家族研究人物的生存情况。这里包括9个主要家族，守夜人，野人( the Wildlings )，和其他( a “None” category，指无法归入某类势力的人物)。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/427.jpg" alt=""></p><p>图4 ：Arryn (蓝)，Lannister (金)，None (绿)及Stark (灰)的生存概率。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/525.jpg" alt=""></p><p>图5：Tyrell (绿)，Tully (蓝)，Baratheon (橘)及Night’sWatch (灰)生存概率。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/617.jpg" alt=""></p><p>图6：Martell (橘)，Targaryen (栗色)，Greyjoy (黄)及Wildling (紫色)生存概率。</p><p>图4、5、6的置信区间表明艾琳家族( Houses Arryn )、提利尔家族( Houses Tyrell )以及马泰尔家族( Houses Martell )有较高的生存率。主要原因是其远离书中主要冲突，不过这也意味着这些家族信息较少，我们只有至多5个死亡成员样本，所以生存曲线并没有包含足够的样本点。信息量的稀疏体现为较宽的置信区间。相反，北境诸侯( in the north )、史塔克家族( the Starks )、守夜人和野人这些家族(或势力)有较低的生存曲线和较窄的置信区间。他们在情节主线中占据主要篇幅，许多重要人物都是他们的一员。</p><p>男女(性别因素)</p><p>书中塑造了丰富的女性角色，但依旧以男性人物为主(男女比例为769:157)。女性生存概率的置信区间较宽，但是其生存状态显著好于男性。如图7。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/715.jpg" alt=""></p><p>图7：维斯特洛(Westeros)中女性存活概率高于男性。</p><p>地位(阶层)</p><p>小说中贵族和贫民人数差距很大，其生存曲线也展现出不同态势。如图8所示，平民倾向于在出场阶段迅速死亡，若能安全度过“介绍期”则将存活较长时间，甚至生存概率会高于部分贵族。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/813.jpg" alt=""></p><p>图8：贵族在介绍期存活的概率较大，但生存概率的下降速度要大于平民。</p><p>个性角色分析</p><p>利用本文提及的方法，可以结合性别，家族，地位等复合因素提供针对个体角色的粗糙预测模型。在书中给一个非常受欢迎的角色是艾莉亚( Arya )，许多读者关心她在书中的命运。史塔克家族的贵族女性中还包括一些值得注意的角色如珊莎( Sansa )和布雷妮( Brienne，宣誓效忠于史塔克家族，虽然她后来才被介绍)。另外，皇后瑟曦( Cersei )和可怜的弥赛拉( Myrcella )也十分令人着迷。为了得到生存曲线的准确区间估计，我们将贵族女子和平民女子的数据加以综合。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/910.jpg" alt=""></p><p>图9：各组置信区间都比较宽松。与史塔克家族相比，兰尼斯特( Lannister )家族的贵族女性死亡可能性更高。虽然信息不明确，但艾莉亚会比瑟曦活得久一些。</p><p>此外我们还关心两个小角色，野人公主瓦迩（ Val ）和神秘的魁蜥( Quaithe )。她们并不是故事一开始就出现，所以分析相对比较复杂。瓦迩在章节2.1中被引入，她在整个时序中存活的概率在0.1到0.53之间。魁蜥在章节1.2中首次出现，她的生存概率为0.58到0.85，明显高于瓦迩。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1012.jpg" alt=""></p><p>图10：代表一些小角色的生存曲线，魁蜥和瓦迩有不同的生存曲线。</p><p>有足够的数据能够区分大多数男性角色的家族、性别和地位，以绘制他们的生存曲线。图11显示，兰尼斯特兄弟的生存曲线居中，在第七本书的生存概率为0.35到0.79。达里奥( Daario )生存曲线的置信区间较宽，但考虑到他是在章节2.5中才出现，所以存活概率较大。曼斯( Mance )的存活概率最不容乐观。曼斯在章节2.2故事中登场，他的存活概率为0.19到0.56。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1117.jpg" alt=""></p><p>图11：不同地位、<a href="https://deepcreator.com/2017/11/06/Concept/Alliance/">联盟</a>的男性角色的生存曲线。</p><p>有一些角色，我们期望看到他们一命呜呼，但是图12显示他们还要活很久。希恩( Theon)似乎会痛苦的活着直到到结局。瓦尔德·弗雷( Walder Frey )在章节0.4中初次登场，存活的可能性为0.44到0.72之间。目前为止，霍斯特·徒利( Hoster Tully )可能是唯一一个死于衰老的人，所以弗雷将有可能活到结局。</p><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1214.jpg" alt=""></p><p>图12：不同地位、联盟的男性的生存曲线。</p><p>总结</p><p>孰生孰死在故事中充满变数，但从现有数据中，我们可以观察到不同组别下人物生死的模式。对于一些特定角色，尤其是男性角色，我们可以对他们在未来的故事中的遭遇做简单预测。但对于数据较少的、非主要家族的女性来说，预测的准确性则有待商榷。</p><p>本文内容翻译并编辑自 Bayesian Survival Analysis in A Song of Ice and Fire，by Erin Pierce and Ben Kahle. 原文链接：<a href="http://www.reddit.com/r/statistics/comments/31oz8n/bayesian_survival_analysis_in_a_song_of_ice_and/.compact翻译：新妍" target="_blank" rel="noopener">http://www.reddit.com/r/statistics/comments/31oz8n/bayesian_survival_analysis_in_a_song_of_ice_and/.compact翻译：新妍</a> 校对：Jude via：数据工匠</p><h2 id="为什么明星富商都迷信大师"><a href="#为什么明星富商都迷信大师" class="headerlink" title="为什么明星富商都迷信大师"></a><a href="http://www.luojiji.com/thread-3065-1-203.html" target="_blank" rel="noopener">为什么明星富商都迷信大师</a></h2><p>为什么明星富商都迷信大师呢？最近大象公会解释了这个问题，它说，<strong>迷信程度和不确定程度相关，不确定性越高，就越容易迷信。</strong></p><p>体育界是迷信重灾区，很多顶尖体育明星都有自己的怪癖。C罗比赛前先穿右脚的袜子，并坚持用右脚先迈入球场；费德勒遇上重大比赛必须穿红T恤、戴黑头箍，因为竞技体育有很大的不确定性嘛，想要赢，除了实力之外，还要一点运气。演艺明星和商人热衷看风水，拜大师，也是这个道理。</p><p>再比如，龙王是中国农民普遍的崇拜对象，但黄土高原和华北平原的农民更崇拜龙王，而沿海地区龙王庙就少得多。因为西北地区下雨没准儿，所以才更需要拜一拜。</p><p>经常看香港电影的朋友会发现，香港人很迷信，为什么呢？香港前身是渔村，渔民恰恰是高风险职业啊。后来商人变成香港的主要阶层，这也是个高风险的职业。再加上香港独特的地理位置，之前一直是中英两国暗中较劲儿的地方，政治环境摇摆不定，当你越觉得无法掌控命运，就越需要能带来确定感的东西，迷信恰好填补了这个心理缺口。</p><p>你看，<strong>迷信其实是确定感的精神寄托。</strong></p><h2 id="最简单概率论的五个智慧"><a href="#最简单概率论的五个智慧" class="headerlink" title="最简单概率论的五个智慧"></a><a href="http://www.luojiji.com/thread-3005-1-1.html" target="_blank" rel="noopener">最简单概率论的五个智慧</a></h2><p><img src="http://www.luojiji.com/data/attachment/forum/201512/29/162218syyj0uu30qu6oogf.jpg" alt=""></p><p>2015-12-05万维钢</p><p>我认为人人都应该学一些概率知识，它现在是公民必备知识。</p><p>现在的世界比过去复杂得多，其中有大量不确定性，是否理解概率，直接决定一个人的开化程度。</p><p>1.<strong>随机：有些事情是无缘无故地发生的</strong></p><p>这个思想对我们的世界观有颠覆的意义。</p><p>古人没有这个思想，认为一切事物都是有因果的，甚至可能都是有目的的。人们曾经认为世界像一个钟表一样精确地运行。但真实世界不是钟表，它充满不可控的偶然。</p><p>更严格地说，有些事情的发生，跟他之前发生的任何事情，都可以没有因果关系。不论我们做什么都不能让它一定发生，也不能让它一定不发生。</p><p>一个人考了好大学，人们会说这是他努力的结果；一个人事业成功，人们会说这是他努力工作的结果。可是如果一个人买彩票中了大奖，这又是为什么呢？</p><p>答案是没有任何原因，这完全是一个随机事件。总会有人买彩票中奖，而这一期彩票中奖，跟他是不是好人，他在之前各期买过多少彩票，他是否关注中奖号码的走势，没有任何关系。</p><p>若一个人总是买彩票，他中奖的概率会比别人大点吧？的确，他一生之中中一次奖的概率比那些只是偶然买一次彩票的人大。但是当他跟上千万个人一起面对一次开奖的时候，他不具备任何优势。他之前所有的努力，对他在这次开奖中的运气没有任何帮助。一个此前没有买过任何彩票的人，完全有可能，而且有同样大的可能，在某一次开奖中把最高奖金拿走。</p><p>中奖，既不是他个人努力的结果，也不是“上天”对他有所“垂青”；不中，也不等于任何人与他做对。这就是“随机”，你没有任何办法左右结果。</p><p>理解随机性，我们就知道很多事情发生就发生了，没有太大可供解读的意义。我们不能从这件事获得什么教训，不值得较真，甚至不值得采取行动。</p><p>· 再完美的交通工具也不可能百分百安全，我们会因为极小的事故概率不坐飞机吗？我们只需要确定事故概率比其他旅行方式小就可以了。甚至连这都不需要，只需要确定这个小概率事件我们能够容忍就可以了。</p><p>2.赌徒谬误</p><p>假如你在赌场玩老虎机，一上来运气不太好，连输好几把。这时候你是否有种强烈的感觉，你很快该赢了？</p><p>买股票、期货、彩票都是一样。连续好几把上来就亏损的情况下，是不是觉得下一把挣钱的概率很大？</p><p>这完全是一种错觉。赌博完全是独立的随机事件，这意味着下一把的结果和以前所有的结果都没有任何联系，已经发生了的事情不会影响将来。</p><p>“大数定律”说，如果进行足够多的抽奖，那么各种不同结果出现的频率就会等于他们的概率。</p><p>人们常常错误地理解为，随机就意味着均匀。如果过去一段时间内发生的事情不均匀，人们就错误的以为未来的事情会尽量往“抹平”的方向走。如果连输几把，那么下一把就应该会赢。</p><p>但大数定律的工作机制不是和过去搞平衡，它的真实意思是说如果未来进行非常多次的抽奖，你输非常多次、赢非常多次，以至于他们此前的一点点差异就会变得微不足道。</p><p>· 有个笑话说一个人乘坐飞机时总带着一颗炸弹，他认为这样就不会被恐怖分子炸飞机了，因为一架飞机上有两颗炸弹的可能性非常小。</p><p>· 战场上士兵有个说法，如果战斗中炸弹在你身边爆炸，你应该迅速跳进那个弹坑，因为两颗炸弹不大可能打到同一个地方。</p><p>这都是不理解<strong>独立随机事件</strong>导致的。</p><p>3.在没有规律的地方发现规律</p><p>理解了随机性和独立随机事件，我们可以得到一个结论：独立随机事件的发生是没有规律和不可预测的，这是一个非常重要的智慧。</p><p>彩票分析师，相信中奖号码存在走势，相信其中的规律，所以近期多次出现的组合可能会继续出现，或者按照这个趋势可以预测下一个号码。</p><p>但这里根本没有规律，是完全随机的现象，即便存在缺陷，也需要大量的开奖后才能发现，而且缺陷的结果也很简单，无非是某个特定号码出现的可能性略大一些，完全谈不上什么复杂规律。</p><p>明明没有规律，这些彩票分析师是怎么看出规律来的呢？也许他们不是故意骗人，而很可能他们真的相信自己找到了彩票的规律。</p><p>发现规律是人的本能。</p><p>春天过后是夏天，乌云压顶常下雨，大自然中很多事情的确是有规律的。我们的本能工作得如此之好，以至于我们在明明没有规律的地方也能找出规律来。人脑很擅长理解规律，但是很不擅长理解随机性。</p><p>在没有规律的地方发现规律是很容易的事情，只要你愿意忽略所有不符合你这个规律的数据。而且如果数据够多，我们可以找到任何我们想要的规律。</p><p>· 有人拿圣经做字符串游戏，声称这是圣经对后世的预言。问题是，这些预言可以完美的解释已经发生的事情，但在预测未发生的事情时就不好使了。关键是圣经中有很多很多字符，如果仔细寻找，尤其是借助计算机的话，总能找到任何想要的东西。</p><p>· 把圣经换成毛选也一样，你会发现毛选也早就预言了中国后世发生的所有大事。</p><p>未来是不可被精确预测的，这个世界也并不像钟表那样运行。</p><p>4.小数定律</p><p>现在我们知道，数据足够多的话，人们可以找到任何自己想要的重要规律，只要他不在乎这些规律的严格性和自洽性。那么在数据足够少的情况下又会如何？</p><p>如果数据足够少，有些规律会自己跳出来，你甚至不相信都不行。</p><p>人们抱着游戏或者认真的态度总结了世界杯足球赛的各种“定律”。比如——</p><p>· “巴西队的礼物”：只要巴西夺冠，下一届的冠军就将是主办大赛的东道主，除非巴西队自己将礼物收回。这一定律在2006年被破解。<br>· “1982轴心定律”：世界杯夺冠球队以1982年世界杯为中心呈对称分布，这个定律在2006年被破解。</p><p>还有一些未被破解的定律，比如——</p><p>· 凡是获得联合会杯或美洲杯，就别想在下一届世界杯夺冠。<br>· 中国队的“王治郅定律”：只要王治郅参加季后赛，八一队必然得总冠军，以及“0:2”落后无人翻盘定律。</p><p>如果仔细研究这些定律，会发现不易破解的定律其实都有一定的道理。王治郅和八一队都很强，0:2落后的确很难翻盘，而获得世界杯冠军是个非常不容易的事情，更别说同时获得联合会杯、美洲杯和世界杯。但不容易不等于不会发生，他们终究会被破解。</p><p>那些看似没有道理的神奇定律（正因为没道理，所以显得神奇），则大多数已经被破解。之所以神奇，是因为纯属巧合。世界杯总共才进行了80多年，20多届。只要数据足够少，我们总能发现一些没有破解的规律。</p><p>如果数据少，随机现象可以看上去很不随机。甚至非常整齐，感觉好像真有规律一样。</p><p>问题的关键是，随机分布不等于均匀分布。要想均匀分布，必须要样本总数非常大的时候才有效。一旦不均匀，人们就认为其中必有缘故（阴谋论），而事实却是这可能只是偶然事件。</p><p>· iPod最早推出“随机播放”功能的时候，用户发现有些歌曲会被重复播放，他们据此认为播放根本不随机。苹果公司只好放弃真正的随机算法，用乔布斯本人的话说，就是改进以后的算法使播放“更不随机以至于让人感觉更随机”。</p><p>如果统计数据很少，就很容易出现特别不均匀的情况。这个现象被诺奖得主丹尼尔·卡尼曼戏称为“小数定律”。卡尼曼说，如果我们不理解小数定律，就不能真正理解大数定律。</p><p>大数定律是我们从统计数字中推测真相的理论基础。大数定律说如果统计样本足够大，那么事物出现的频率就能无限接近他的理论概率——也就是他的“本性”。而小数定律说如果样本不够大，那么他就表现为各种极端情况，而这些情况可以跟他的本性一点关系都没有。</p><p>· 一个只有二十人的乡村中学某年突然有两人考上清华，跟一个有两千人的中学每年都有两百人考上清华，完全没有可比性。</p><p>如果统计样本不够大，就什么也说明不了。</p><p>正因为如此，我们才不能只凭自己的经验，哪怕加上家人和朋友的经验，去对事物做出判断。我们的经验非常有限。别看个例，看大规模统计。有的人听说两三个负面新闻就敢写文章把社会批得一文不值，这样的人非常无知。</p><p>本文由作者 万维钢 授权罗辑思维发布，选自《万万没想到——用理工科思维理解世界》，电子工业出版社出版。</p><p>罗胖日：<br>有的时候，样本量大也说明不了问题。<br>比如，中国的污染很重，犯罪率很高，槽点很多，能说明这个国家没前途吗？<br>也许恰恰是因为这个国家蒸蒸日上。<br><strong>认知没有什么终极正确，只有逐步升级。<br>认知的升级，本质上来源于认知尺度的扩展。<br>1.时间尺度——多读历史。<br>2.空间尺度——多观世界。<br>3.观念尺度——聆听高人。<br>认知没有正误之别。但确实有高下之分。<br>因为所在尺度层次有异。</strong></p><h2 id="比黑天鹅更险：破解大概率危机"><a href="#比黑天鹅更险：破解大概率危机" class="headerlink" title="比黑天鹅更险：破解大概率危机"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=8441&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">比黑天鹅更险：破解大概率危机</a></h2><p>这条音频的内容是，面对危机的时候，如何避免疏忽大意，用更好的方法来应对和解决问题。</p><p>我们生活在一个非常不确定的时代，有关这种不确定，有两种理解方法：一种就是人们常说的黑天鹅，也就是那些突然爆发的危机和灾难，或者是急剧发生的变化；还有一种不确定性是说，表面上看起来是很突然的，实际上却是可以追根溯源的。前不久，在“中信大咖读书会”上，“秦朔朋友圈”的发起人秦朔，分享了一本新书，叫做《灰犀牛：如何应对大概率危机》。书里用“灰犀牛”来比喻那些大概率而且影响巨大的潜在危机，并且提供了一些解决问题的指南。</p><p>这本书的作者米歇尔·渥克有媒体背景，对公共事件很敏锐，她从两次危机里得到了启发，写了这本书。一次是2001年的阿根廷的债务危机，米歇尔·渥克发现，阿根廷当时发生危机的时候，很早就有专家指出，很多企业的债务问题必须及时处理。比如可能企业要损失30%，才有可能保住整个经济体的太平。但是，这个问题没人当回事儿，一直被拖着，等到危机爆发的时候，企业的损失就不是30%了，而是70%。到了2010年，希腊也发生了危机，但是希腊在危机爆发以后，跟很多非官方债权人更早地达成了一些一致性看法，保证能够比较好的解决这样的问题。</p><p>所以这本书的一个重要的思想，就是所有灾难的发生，不是因为发生之前的征兆太隐蔽，而是因为人们的疏忽大意，以及应对措施不利。简单来说，就是没有很好的避让系统，一旦这个问题不加以解决，重大的危机最终一定会到来。</p><p>在书里，作者给这样的危机进行了一个分类。</p><p>第一种类型，就是不愿意面对真相，主要特点就是，很多人都意识到了问题，但阻力很大。同时人们往往倾向于否认这个问题的存在，因为解决的成本太高了。比如气候变化、一个国家的预算赤字，都属于这种危机。那怎么去应对呢？作者说，要把危险看成是机遇，同时要建立一个很好的成本和利润的分摊机制。</p><p>第二种类型是已经到来的危机，一般非常迅速，危机来得很快，也是很多积蓄已久的问题的爆发。作者举的例子有叙利亚问题、自然灾害等等，当年的非典也属于这一类的问题。对于这种已经到来的危机，作者认为应对策略应该是利用问题的紧迫，激发人们采取行动。</p><p>第三种类型是反复出现的危机，比如金融危机、流行病、地震、网络威胁等等。这种危机的特征就是你很熟悉，但是你没想到这种很熟悉的东西，会变成一个很有冲击性的巨型危机。这时候就要运用核查表和事前的演练，包括沙盘，形成一个习惯性的机制和自动报警系统。</p><p>第四种危机叫做“元一犀牛式危机”，重点指的是一些结构性问题导致的危机，像性别歧视、社会不平等，都属于这类问题。要解决这些问题，方法是优先处理，或者把它们和其他的危机联合在一起来进行处理。</p><p>第五种危机往往是一个影响其他问题的危机，如果再加上其他的因素，就会变成一个多头怪兽。比如饮用水资源的问题、物价过高。这种危机怎么解决呢？书里说，对于多种问题交叉存在的危机，一定要优先处理其中的关键性的东西，同时要进行一些系统性的处置。</p><p>第六种危机的特点是，很难找到一个解决方案，一般都有根深蒂固的障碍，阻碍人们的判断，比如以色列和巴勒斯坦的冲突。想要解决这样的危机，就要重新定义问题的类别，解决表象的问题。</p><p>第七种是革新的颠覆力量带来的危机。比如数码时代让柯达遇到了颠覆性的危机。这种危机往往是不可避免的一种衰退，如果想解决这样的问题，成本远远大于收益。像这样的危机，我们就要坦然地接受现实，接受代表未来的一些新鲜的事物，新鲜的方向。</p><p>第八种就是无法定义类别的危机了，这种危机的危险以及解决方案都非常不确定。比如人工智能、数字化。解决这种危机，要先检验已有的情况，找到最类似的危机是怎么出现的，然后保持灵活的态度和警惕性。</p><p>了解了这些之后，对于不同的危机，要用不同的方法去处理。而且你要学会正确定义危机的类型，因为不同的类型对于不同的人、不同的公司，含义可能是不一样的。有些危机对一些人是灾难，但是对另外一些人可能是机遇。如果你有能力改变，但一直不采取行动，那么这个危机就跟你有密切的关系。</p><p>此外，作者也告诉我们，我们很难一次就找到解决的方法，我们犯的每一个错误，都有可能对解决问题有帮助。也就是说，我们要珍惜很多的错误和危机，把它变成一种正面的机遇。</p><p>以上观点，供你参考。</p><p>本文源自：公众号“中信奇点课堂”（秦朔教你如何应对大概率危机）、《灰犀牛：如何应对大概率危机》</p><h2 id="概率权：“算”出来的富人思维"><a href="#概率权：“算”出来的富人思维" class="headerlink" title="概率权：“算”出来的富人思维"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=8174&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">概率权：“算”出来的富人思维</a></h2><p><img src="http://www.luojiji.com/data/attachment/forum/201703/30/154157fwrznxfw0on0kf6r.jpg" alt=""></p><p>2017-03-30 罗振宇 罗辑思维</p><p>这篇文章是《罗辑思维》第五季第11期的内容。</p><p>改变的是节目的形式，不变的是对知识的分享和认知的升级。&gt;&gt;&gt;戳此和罗胖一起终身学习</p><p>最近我看到一篇很有趣的文章——《被抛弃的概率权》，作者叫老喻，是一位加拿大华人，他在文中提出了一个叫“概率权”的概念，很有意思。</p><p>1</p><p>我们先来看一道选择题。<br>┏</p><p> 假设你现在面对两个按钮：</p><p> 如果你按下第一个按钮，直接给你一百万美元；</p><p> 如果按下第二个按钮，你有一半的机会拿到一亿美元，当然还有一半机会什么都没有。</p><p> 这两个按钮只能选一个，你选哪个？<br>┛</p><p>我拿这道题在办公室里同事当中测试了一下，大部分人都选择直接拿一百万美元走人。因为这本来就是飞来横财，拿了入袋为安。</p><p>而另一个选项一亿美元，万一按下去，什么都拿不到呢？我的小心脏啊，根本承受不了这个损失。</p><p>这么选的人，风险偏好比较小。</p><p>当然，也有人选择按第二个按钮的，这种人风险偏好比较大。他们的理由也很简单，反正是飞来横财，那不如赌一把。</p><p>那我就继续追问：你这么选的话，如果正好落在那不幸的50%上，什么都拿不到，你会特别懊悔和心疼吗？</p><p>他们想想说，好像也有点，连一百万美元那只煮熟的鸭子也飞了啊。</p><p>2</p><p>那正确答案是什么呢？</p><p>当然是选有50%的机会拿到一亿美元。但是，我给出的理由不一样。</p><p>一个熟知现代社会规则的人，会这么处理：</p><p>第二个按钮，如果按下去有50%的机会拿到一亿美元，那么按照概率，这个按钮的选择权价值就是5000万美元。</p><p>我承受不了这个损失，那好，我把这价值5000万的机会卖给一个有能力去赌的人，比如说用2000万美元跟他成交。那对于买的人来说，用2000万美元买一个价值5000万美元的概率权，在账面上是非常划算的。</p><p>而你现在有2000万美元了，是不是比选第一个100万美元强得多？</p><p>▽</p><p>好，你可能会说，我找不到愿意赌那么大的人。</p><p>那我们优化一下上面的方案——找一个比你有钱的人，你说：“我把这个选择权卖给你，但是首付100万美元，如果你中了一个亿，我要求再分成一半，你觉得怎么样？”</p><p>对你来说，100万美元他作为首付给你，已经落袋为安了，剩下就让他去赌个运气，反正也比第一个选择强。</p><p><strong>而对买家来说呢，他是拿100万美元的成本去赌5000万美元的一半概率，这个买卖他也非常划算，他会干的。</strong></p><p>▽</p><p>接着往下想，这个方案还有没有更近一步优化的空间呢？</p><p>还有，当然那就更复杂了。</p><p>比如，把这个选择权切碎了发行彩票，这样就更是稳赚不赔，当然这个普通人就干不了了，得有政府授权。</p><p>3</p><p>听到这里，你可能会觉得有点奇怪：</p><p>开始的时候，我面对的选择，明明一个是确定的，一个是不确定的。可是这不确定的最后怎么就变得确定了呢？而且收益要高得多呢？</p><p>对啊，这个例子里面，藏了这个世界一个绝大的秘密，就是——穷人思维和富人思维的区别。请注意，我这里说的是穷人思维和富人思维，而不是指穷人和富人。</p><p>我们人生在世，时时刻刻都面对各种各样的选择。每一个选择背后，都有成和败的概率。</p><p>穷人思维，就倾向于拿到确定的东西，他不要概率权。</p><p><strong>而富人思维正好相反，每次选择的时候都愿意根据成功的概率来下注，不管每一次的成败、输赢，他一直都坚持这么下注。</strong></p><p>请注意，珍视概率权，不是让你去赌，而是跳出自己的直觉本能，用概率的思维去思考自己的每一个选择。</p><p>如果概率权算得过账来，那就勇敢去下注，比如说用100万美元的价格去试试50%的机会拿到一亿美元的概率权。</p><p>从直觉上来看，虽然有风险，但是在概率思维看来，这已经是划算得不能再划算的买卖了。</p><p>4</p><p>穷人不珍视概率权，不是不去赌，他们反而更容易去赌一些极小概率的事情。比如花钱买彩票，两块钱两块钱地买，想博一个发财梦。</p><p>但是明白彩票原理的人都知道，这成功的可能性几乎为零。</p><p>而组织销售彩票的人，他是按照概率思维来设计这个机制和游戏的，他们反而是稳赚不赔的。所以你看，就彩票这件事来说，是穷人在补贴富人。</p><p>▽</p><p>举个例子，你看富人是怎么想的。</p><p>扎克伯格，Facebook的老板，他当年刚创立Facebook公司4个月，就有人出价1000万美元要收购他的公司，两年后，雅虎公司出价10亿美元收购。</p><p>其间当然还有很多次机会，谷歌、新闻集团等等都曾经有过收购意向，每次出价对于当时的扎克伯格来说，都是一次大发横财、从此可以花天酒地的机会，但是每一次扎克伯格都拒绝了。</p><p>你是马上就拿到10个亿，还是以百分之几的可能性，也就是概率，在数年之后拿到1000个亿？这是一个选择，你看，扎克伯格面对的这个选择，跟我们今天刚开始举的那两个按钮的例子是不是很像？</p><p>几年之后，另一家创业公司Snapchat用类似的方式拒绝了扎克伯格的30亿美元收购的邀请。</p><blockquote><p>这就是硅谷的精神之一，它可不仅仅是发财梦，它是一种财富观，是一种雄心壮志，是一种对概率权的把握。</p></blockquote><p>5</p><p>我创业几年，说实话刚开始也是不太理解那些风险投资人的逻辑。</p><p>一个创业项目，看起来不是很靠谱，没有任何确定性，投资人居然就敢成百万、上千万、上亿的钱白给创业者花，而且还只占很少的股份。按照直觉思维来看，这些投资人不是疯了吗？</p><p>但其实，这是因为人家风险投资人看世界，和我们普通人的角度不一样——</p><p>他们是看概率权的。</p><p>一个创业公司，刚开始可能没有盈利，但是投资人已经把这个行业的前途，这个创业者、创业团队的素质和未来的市场风险等等都用概率思维给算过了，给出了一个估值。</p><p>这个估值虽然是纸面财富，但是它包含了一系列概率的算计，它是真实的市场定价。风险投资人他就这么一直下注，一直下注，下了很多次之后，只要有一次大赚，就全部回来了。</p><p>所以，风险投资不是外面看起来的那样，是赌博，是猜钢镚，它是有一个精密算法的财富游戏。</p><p>6</p><p>那怎么摆脱穷人思维，把握概率权呢？</p><p>我刚才提到的那篇文章中就说到，我们普通人最缺乏的，其实不是钱，而是有一个老爸随时随地告诉我，你很牛。</p><p>那为什么书香门第或者财富世家会出一大串的牛人，除了基因、资源这方面的原因，可能还有以下几个原因：</p><p>（1）你从小就有足够高的参照点，不会被小利益勾走，更能承受风险（其实是低概率的），从而捕获高回报。</p><p>就像最开始的例子，如果你家里已经有了1000万美元，你对那白来的100万美元就没有那么饥渴，你受到的诱惑就没有那么大。</p><p>（2）身边一群人的示范效应，你老爸、叔叔、伯伯会不断告诉你要往前看，你行的，你是很牛的，你的出息绝不仅仅是现在这些。</p><p>（3）在这样的环境里长大，你内心的理想、激情有更大的机会被点燃。</p><p>▽</p><p>可惜，我们绝大多数人不会出生在书香门第或者是财富世家，那怎么办？</p><p>对，这就是这个世界留给每一个人的一道后门。</p><blockquote><p>你可以通过学习，通过认知升级，通过改变自己的大脑，通过克服自己与生俱来的本能，认识概率权，掌握概率权。</p></blockquote><p>要知道，这是我们脑子里发生的事情，虽然它千难万难，但是毕竟我们不需要任何额外的资源，没有任何人能够阻止它发生。<br><img src="http://www.luojiji.com/data/attachment/forum/201703/30/154304wadpkwnfnebzp5e5.jpg" alt=""></p><h2 id="临界知识：复利效应和概率论"><a href="#临界知识：复利效应和概率论" class="headerlink" title="临界知识：复利效应和概率论"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=7959&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">临界知识：复利效应和概率论</a></h2><p>这条音频说的是两个重要的临界知识，复利效应和概率论。</p><p>临界知识，是知识管理达人、得到说书人成甲在他的新书《好好学习》里提出来的概念，指的是更广泛、更普遍地指导我们行动的基本规律。掌握并且应用临界知识，能让我们做事和学习的效果事半功倍。这本书里列出了好多具体的临界知识，我们精选了两个转述给你。</p><p>第一个临界知识是复利效应。复利效应被爱因斯坦称为世界第八大奇迹。很多人都听过这个故事，国王要奖赏国际象棋的发明人，问他想要什么，他对国王说：陛下，请您在棋盘的第一个格里赏我一粒麦子，第二个格两粒，第三个格四粒，以后每一个格比前一个格加一倍。国王觉得这个要求很容易满足，一算才知道，这一棋盘的麦子，数量是1844亿亿粒，就是把全印度的甚至全世界的麦粒都拿来也满足不了这个要求。</p><p>这就是复利的神奇之处，刚开始的时候，复利效应是很微小的，但是发展到一定阶段就会产生惊人的效果。但是复利只是一个数学模型吗？没那么简单。书里说，<strong>复利的本质是：做事情A会导致结果B，而结果B又会加强事情A，不断循环。</strong>凡是符合这个规律的事情，都可以看做复利效应。比如说网站的访问量越多，在搜索引擎排名就越靠前，然后访问量就更多。同时，复利还会导致二八法则，比如做网页，会有20%的网站经常被人浏览，剩下的80%几乎没有人用。</p><p>那怎么才能进入前20%呢？我们先分析一下影响复利效果的因素，一个是利率，一个是执行次数。<strong>利率就是做了事情A导致结果B之后，B对A有多大的强化作用。执行次数比较好理解，就是重复这个行为的次数。</strong>理解了这两个因素，想充分利用复利效应的话，首先要找到“A导致B，B加强A”的事情，然后提高这件事情的利率，最后不断重复。只有这样做，才能进入复利模型带来的加速成长。</p><p>比如，做微信公众号这件事就符合复利模型。每推送一篇文章，就会有一部分读者分享出去，这样就能带来更多阅读量，而分享的根本原因是文章写得好。所以如果你想把公众号做好，关键就在于保持文章质量和推送频率。</p><p>需要注意的是，复利效应在前期是不明显的，所以刚开始的时候，可能你花了很多精力写出来的文章跟别人随便写出来的文章，阅读量差别不大。但是你坚持下去，保证文章质量和推送次数，那么一定会达到临界点。</p><p><strong>说完了复利效应，我们再来说说第二个临界知识，概率论。概率论的思考方式是这样的：过去每一件事情的结果，只是众多可能的结果之一，我们不能仅仅用结果来判断之前决策的好坏。所以，那些成功人士的成功经验，也没有办法完全复制。</strong></p><p>虽然不能精准地预测未来，但我们还是有方法判断大概率事件的。这就需要用到一个决策工具：决策树。画决策树有三步：第一步，写出你想要实现的目标。第二步，在目标的右侧写出实现这个目标的所有方案。第三步，评估每个方案的结果，以及这些结果实现的概率。</p><p>举个例子，假设你想提高收入，这是一个目标。接下来，你想到了三个提高收入的办法：一个是创业，一个是兼职，第三个是在原公司努力工作，等待升职加薪。该选哪一个呢？接下来就要评估这三个方案实现的可能性。具体的评估过程就不细说了，因为每个人的状况不一样，要结合实际评估，最后选择最合适的方案。</p><p>当然，在评估可能性的时候，一定要想办法减少主观判断的偏差，一个重要的方法就是外部视角。比如在评估自己创业成功率的时候，不要先从自己的优势入手开始评估，这样很容易高估自己。如果从外部视角入手，把社会整体的创业成功率作为基础概率，然后进行调整，这样得出的结论更可靠。</p><p>概率论对我们还有一点启发，就是“<strong>为大概率坚持，为小概率备份</strong>”。只要我们选择有利的大概率事件，持续投入，结果一定比东一榔头西一棒槌地做事情要好。就拿找工作举例子，如果你做了充足的准备，应聘的成功概率也只有64%，可你坚持两次，找到工作的概率就是87%；如果坚持三次，这个概率就高达95%了。另外，要为小概率事件做好备份，避免小概率事件对我们造成无法挽回的损失，比如重要文件要多备份，以免丢失。</p><p>总结一下，这条音频介绍了两个临界知识，一个是复利效应，另一个是概率论。想了解更多的话，可以去读一读这本书《好好学习》。</p><p>本文源自：《好好学习：个人知识管理精进指南》</p><h2 id="查理芒格：相信概率不相信运气"><a href="#查理芒格：相信概率不相信运气" class="headerlink" title="查理芒格：相信概率不相信运气"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=7837&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">查理芒格：相信概率不相信运气</a></h2><p>这条音频给你说说，查理·芒格针对投资需不需要多元化、如何选择人生目标等话题，发表的最新观点。</p><p>前几天，美国著名投资家、沃伦·巴菲特的合伙人查理·芒格主持了每日期刊公司的2017年年会。查理·芒格是这家报刊杂志出版公司的董事会主席。和往年一样，芒格在年会上的很多回答都很精彩，下面给你说说。</p><p>首先，如何选择人生目标是很多人都关心的问题，对于这个问题，芒格给的建议是：以他的人生经验来看，只有做自己感兴趣的事情才能成功。要是自己不喜欢的事情还要做到很好，那对人性的要求也未免太高了。除了兴趣外，还要注意选择自己有过人之处的领域，比如身高不高就别非得打篮球了，也不要觉得世界会按照你认为的方式去运转。</p><p>另外，大多数人都希望自己成为一个博学的人，但芒格说，像他这样同时跨多个学科的做法其实对很多人并不适用。对大多数人来说，正确的方式应该是专注，找到社会认可的领域，然后做出彩。当然，不能生活在山洞里，要突破自己的局限性，拿出一些时间来关注专业之外的big ideas。所谓big ideas，其实就是说别在小问题上浪费时间。你眼前的问题，只要放宽视野，很可能就能得到解决。</p><p>会上有人问芒格，有过被自己否定掉的想法吗？芒格的回答是“有” ，自己总在产生想法，所以也总在忙着否定掉愚蠢的想法。其实很多人最主要的问题都在于：总是用陈旧的想法取代更新和更好的想法。德国有句话叫：“总是老得太快，聪明得太晚”。如果能养成接受新观点的习惯，会是人生非常大的优势。年轻人明明有很多东西要去学，不要被一些见解固化了思维。如果成功摆脱了不好的想法，那就给自己一点鼓励，毕竟，接受新生事物都会付出代价。</p><p>既然是提问芒格，投资一定是一个避不开的话题。这次会上，芒格针对投资给了这么两个值得思考的回答。</p><p>一个是：会上有人问芒格，年龄和阅历有没有让自己的合伙人巴菲特成为更好的投资者？芒格并不是直接回答的有或者没有，他给的回答是：如果你所在的领域可以通过不断学习来磨练技能，那么你当然会越做越好。巴菲特也是不断地在学习中改变一些旧观念。比如之前他坚持不投资或极少投资科技公司。但他的公司——伯克希尔·哈撒韦2月公布的2016年第四季度财报显示，公司大幅增持了航空股和苹果股票。芒格解释投资航空股的原因是：“以前，我们说「铁路不好，公司太多，还有卡车竞争」。我们曾经说对了。铁路在近80年里，都不是一门好生意，结果最后，铁路公司合并到只有四家，然后就变成了一门相对好的生意。类似的事情，将会在航空行业中发生。”</p><p>第二个投资问题是：投资需不需要多元化？芒格认为，投资多元化是教给什么都不懂的人的，而且这种投资方式只能得到平均收益。那对于懂行的人来说就没有必要。比如他自己的帐户里主要就是三只股票，而这三只股票里面有一个失败的可能性都几乎为零，就更别说三个同时失败了。</p><p>另外，芒格说了他对中国的看法。他说自己家里有两个人的塑像，就是富兰克林和李光耀。李光耀在当时的各种不利条件下创造了现代的新加坡，而邓小平当年也在学习新加坡模式，所以李光耀对现代中国也有贡献。现在，中国有一些公司已经做强，产品的销售价格也不高，员工也都很能干。中国能解决十几亿人口的生存是个伟大的成就，而且不是通过向欧美借钱，是靠自己攒钱，延迟享受。当然，芒格也指出了他眼中中国人问题，那就是中国人相信运气。他认为应该相信概率而不是运气，好赌其实是一种缺陷。</p><p>最后，芒格对刚进入美国的中国投资者说：如果我是中国人，就会投资中国而不是美国，因为中国的果实挂得更低，有些公司已经站稳脚跟了。怀里明明有个大馅饼，还盯着天上的那个，这就不对了。而且以目前的价位来讲，他们投资中国也比投资美国更好。</p><p>以上就是查理·芒格这次分享的主要内容，供你参考。</p><p>本文源自：公众号“笔记侠”（巴菲特合伙人芒格：别老得太快，聪明得太晚）</p><h2 id="为什么说概率有时不靠谱"><a href="#为什么说概率有时不靠谱" class="headerlink" title="为什么说概率有时不靠谱"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=5993&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">为什么说概率有时不靠谱</a></h2><p>说起概率我们都不陌生，但它的真正含义你却未必搞得懂。比如说，天气预报说，明天降雨的概率是30%，这是什么意思呢？难不成我们可以把生活倒带重来，反复地把明天过上100次，其中大约有30次会下雨吗？又比如，体检结果表明，某人换上肝癌的可能性是70%，这又是什么意思呢？得了就得了，没得就没得，70%的可能性患病，这到底是得了还是没得呢？</p><p>你可能会说：这大概是气象局和医生在描述对事情发生的信心吧。比如气象局想说的是，对于明天会下雨这件事，数据带给我们的信心不足；而医生想说的是，根据体检结果，我们对这人得了肝癌还是挺有把握的。</p><p>但再想想你就会觉得不对，作为权威的气象局或者医生，既然都已经给出一个具体的数字了，肯定是有原因的呀？没错，对于个人的健康啊或者具体某一天的天气啊这类的，只能通过过去有限的测量来推测它们发生的概率，这种分析概率的方法叫做贝叶斯分析。</p><p>最近，科普达人卓老板卓克，在“卓老板聊科技”专栏里，就跟大家详细介绍了这种方法，它不仅对预测生活中的各种事情有重要的意义，有时还十分出人意料，我来给您讲讲。</p><p>什么叫做通过过去的测量来推测事情发生的概率呢？比如，如果人得了肝癌，在一些身体指标上就会有异常。而贝叶斯分析，就会通过各种测量本身的概率，比如如果这人指标有异常了，仪器测出来的概率是多少，测不出来的概率又是多少，仪器误测出异常的概率又是多少，等等这些间接的知识，来综合分析一个人患病的概率。</p><p>这种称为贝叶斯分析的方法，数学形式非常复杂，但我给您举个例子，会有助于您的理解。比如如果人得了肝癌，有一项指标会呈阳性，通过测量这项指标，就知道这人是不是有肝癌了。但是即使是正常人，医学上也有0.1%的可能性被误测成阳性，而真的肝癌患者，这项指标也有1%的可能性误测成阴性。那么，如果现在有一个人做筛查的结果是阳性，你觉得他患有肝癌的可能性是多少？</p><p>你可能会觉得，这测量准确率都99.9%了，误测几乎可以忽略不计了吧？所以你觉得这人肯定有肝癌了对不对？但我们用贝叶斯分析算一下，实际上，肝癌在人群中的发病率大约是每10000个人中有4个，如果这10000人全都去做筛查，那么其中的9996个正常人会有9到10个人因为误测而体现出阳性，咱们就算10个吧；而那4个真的有肝癌的人，由于人数太少，误测忽略不计，就算4人全测出阳性吧。所以在10000个人中，总共还会有14个人会被查出阳性，而其中10个人是因为误测导致的。这么算下来，一个查出是阳性的人，真正是肝癌患者的可能性是4除以14，还不到30%。</p><p>你看，这筛查的正确性都到了99%以上了，通过体检判断有没有得病的概率却还不到三成。同样的例子还有艾滋病，如果一个人的艾滋病检测结果呈阳性，考虑到仪器误测和艾滋病的人群发病率，那么通过贝叶斯分析，这人真正患有艾滋病的可能性大约是50%，可能有也可能没有。</p><p>你可能会说，再也不相信那些吹的天花乱坠的技术了，说好了筛查准确率那么高，结果筛查的结果对于确诊疾病一点用都没有，这还要医学技术干什么？没错，这就是贝叶斯分析告诉我们的。再拿肝癌做例子吧，由于发生肝癌实在是小概率事件，所以当我们对一大群人做肝癌筛查时，虽说准确率有99%，但仍然会有相当一部分人因为误测而被诊断为肝癌，这一部分人在人群中的数目甚至比真正肝癌患者的数目还要高。</p><p>你肯定要问了，那该怎样纠正测量带来的这么高的误诊呢？刚刚我们也说了，造成这么不靠谱的误诊的原因，是我们无差别地给一大群人做筛查，而不论测量准确率有多高，因为正常人的数目远大于实际的患者，所以误测造成的干扰就非常大了。</p><p>解决的办法也很简单，就是是锁定可疑的样本，比如10000人中检查出现问题的那14个人，再独立重复检测一次，因为正常人连续两次体检都出现误测的概率极低，这时筛选出真正患者的准确率就很高了，这也是为什么许多疾病的检测，往往还要送交独立机构多次检查的原因。</p><p>你看，我们平时都觉得很奇怪，说很多像医院这样的权威机构，按理说它们给出的数据肯定没问题，不会错，为什么还总是出现偏差呢？知道了贝叶斯分析这种方法后，你就会发现，概率有时候是不靠谱的，或者说，概率是有局限性的。只有利用更科学的统计分析方法，才能最大程度地避免误判带来的影响。</p><p>本文源自：“得到”App订阅专栏“卓老板聊科技”</p><h2 id="人的一切都是偶然"><a href="#人的一切都是偶然" class="headerlink" title="人的一切都是偶然"></a><a href="http://www.luojiji.com/thread-1223-1-1.html" target="_blank" rel="noopener">人的一切都是偶然</a></h2><p><img src="http://www.luojiji.com/data/attachment/forum/201512/15/171743nnbh5nbnh783xns8.jpg" alt=""></p><p>作者：葛优</p><p>我一直到十八九岁都不知道自己将来会是什么样。我爸演戏的时候，我经常躲在一边看。那时，我觉得自己可能是一辈子的忠实观众吧。</p><p>“文革”结束了，艺术院校招生，我忽然好像知道自己想干什么了。考艺术院校时，主考官让我演一个动作：从后面捂女孩的眼睛，我太紧张了，捂住她的眼睛，手就下不来了。那女孩只好把情人见面的戏变成了抓流氓的戏。</p><p>我最大的特点是两个字，一是蔫，一是缩。我不像我爸，他脾气火暴，敢当着一千多人的面上台指挥。我打死也不敢。只要有什么活动让我出席，我就本能地往后缩。如果出席的人有十几个，我就本能地坐在最边上。我要是紧张了，就容易出汗，手心脑门出汗。出席活动，快到大厅门口时，我最紧张，好像一开门就有机枪扫射似的。</p><p>老那么惯着自己，也不行。都老大不小了，有人叫老师了，还那么羞答答的，不行。我也假装放松过，就想象自己在拍戏，效果似乎也不错，可总觉得太假了。我告诉别人，其实我不紧张。有人说：“谁都能看出来，你满脑门子汗，说话磕磕绊绊，不叫紧张叫什么？”我索性老老实实说自己紧张，也不想老装个大尾巴狼。这么一想，我反倒踏实下来。</p><p>我从小在北影大院长大，从小看过太多著名的演员，比如于洋、赵子岳、张平等。街坊邻居都是全国闻名的大演员，有时我刚看完他们主演的电影，回家就看见他们骑着自行车，筐里装着刚抢购回来的大白菜，好像刚从银幕上下来。</p><p>如果时光倒流，我愿意回到刚成名的那个阶段。李敖写了一本书叫《上山下山》，我很喜欢这个书名。人生用这四个字就穷尽了。刚成名的时候是上山，上山时一切都是未知，你不知道自己会到什么地方，能到什么地方，你在上升的曲线上。人最美好的是追求的过程。你看世界上流传的最经典的爱情故事，都是没有结局的，如罗密欧与朱丽叶、梁山伯与祝英台。什么是结果？死亡才是真正的结果。也许等我再老些，就能接受日本人的美学观了———下山也是一种美，但现在我觉得没走到头的时候是最好的。</p><p>人的一生都是偶然。演《霸王别姬》我没得奖，演完《活着》，天时地利人和都该我得了，就得了。如果当时有什么别的戏出彩，也就没我了。</p><p>20世纪90年代，人们不把那些高大全的人物当回事了，都想看到活生生的人。我有平民色彩，不虚伪。那时，中国人开始需要大批量的幽默，不想进电影院受教育、上课。我代表那时人们的心态，比较放松，比较乐观，也比较普通。谁也别想教育谁，大家都是平等的。那时经济发展，过去很多牢笼式的观念被打破。大家忽然发现，不是只有那些长得好看的、说得好听的人才重要，其实我们每个人都很重要。连葛优都能上屏幕，谁不能呢？</p><p>比起一些偶像明星，我觉得特坦然。我不怕年华老去，不用和狗仔队打游击，不用为了曝光率没事找事。我一是不想当老百姓的对立面，二是我也当不上，三是当上的代价太大，活着该有多累！</p><p>我最想做的事情是一个人待着。有朋友一拿起书，看两行字就晕了，我不至于那样，每天至少要看十几个剧本吧。我觉得还不够静，还不够让我拿起一本书就放不下，周围总有好多事干扰我。</p><p>我也爱热闹。比如喝点儿酒、聊聊，没有什么利益关系的。我是最不怕听人说的，只要对方能侃，我就可以一直听他说下去，所以朋友爱找我喝酒。我最爱扮演的角色就是观众。每次喝酒，我说话很少，更多是看朋友耍贫。</p><p>我总是矛盾着，又想热闹又想静，是不是有点儿矫情？</p><p>罗胖曰：</p><p>在工业时代活人，是把自己当产品生产——<br>各种折弯、裁剪、煅烧、打磨，好把自己装到一个牛逼的装置里。<br>在未来的互联网时代活人，是把自己当庄稼种植——<br>各种<strong>体察、明悟、顺势、激发，找到本性并挥洒出来，这本身就很牛逼。</strong></p><h3 id="罗辑思维：人类灭绝的一种可能-115"><a href="#罗辑思维：人类灭绝的一种可能-115" class="headerlink" title="罗辑思维：人类灭绝的一种可能 115"></a><a href="http://www.luojiji.com/thread-534-1-1.html" target="_blank" rel="noopener">罗辑思维：人类灭绝的一种可能 115</a></h3><p>感谢各位来到《罗辑思维》捧场，说罗胖你为啥要做《罗辑思维》这个节目啊？我说咱们改个字，咱们不用做节目的做字，为啥？因为做节目嘛意味着我有那么大的知识存量，每期换个话题还能一件一件地掏给你。我哪有那么大的本事呢！</p><p>罗胖的节目本质上不是做出来的，是长出来的，是我自己读书明理论事，自己的知识边界一点一点拓宽的过程当中，我把我最新的心得和视野拿出来跟朋友们分享，本质上就是这么回事。所以没准儿过了几年之后，我今天说的很多话我那个时候已经不能同意了，这很正常。每期节目上线之后都有一些朋友来批评，如果批评的是价值层面的东西，那就恕我直言，我全当没有听见，因为四十多岁的人了嘛，我自己的价值观也比较定型了，想改也难。但是如果是针对技术和实施层面的东西，哪怕你用很不客气的话骂罗胖是文傻，我都远程向你拱拱手，因为这就是在帮助我，拓宽我自己的知识边界。所以我最爱听的骂我的话就是文傻，这也必须的承认。</p><p>那本期话题呢？就是一个文傻乍着胆子要讲的一个话题。我跟我们公司CEO脱不花讲，我说这期要讲这个话题，她看了我一眼说，你胆儿好肥啊！为什么？因为这个话题不仅我不懂，全世界懂的人也很少很少。这期的话题是人工智能。</p><p>那为啥要敢讲呢，是因为最近我看了一篇文章，非常棒，文章的题目极其长叫《为什么最近很多名人比尔盖茨、马斯克、霍金都在提醒人们要警惕人工智能》。看完这篇文章之后，我自己有很多感想。什么感想？先卖个关子，节目的结尾再跟大家交代。</p><p>先回到这篇文章里面提到三个名人，第一、比尔盖茨，大牛这不用说了。马斯克不得了啊，创业家当中的神话，现在特斯拉的老板，当然最近生意做得不怎么样，但即使如此，他还自掏腰包1000万美金捐给很多机构，让他们去研究人工智能的无害化。这说明人工智能在他心目中，已经是洪水猛兽，必须提前防范。那霍金就更不用说了，大物理学家，当然因为得了病，他只能靠眼皮的眨动来控制计算机，来表达自己的意思。那他肯定不会跟你闲聊天，他说的话一定是不得不说的话，是深思熟虑的话。他也在提醒，我们一定要警惕人工智能。</p><p>说人工智能之前，我们先得搞清楚当代人类的一个基本困境。在工业革命之后，人类进入了一个快速的变化期。我们唯一知道的就是变化快，但是我们不知道变化的方向。举个例子来讲，我们这期节目首播的时间，是在2015年的四月初，那请问，这个时点是一个好日子的开头呢，还是一个坏日子的开头呢？其实我们根本就不知道紧接下来，是一场大灾难呢？还是一场大繁荣呢？没有人能给我们答案。这个处境就有点像炒股的人，一只股票已经涨了五个涨停板了，那请问下面是又五个涨停板，还是一次大跌势呢？没有人知道。炒股票难就难在这儿，那股市毕竟还是人能控制的，它毕竟是我们人类的造物。</p><p>有一些比股市更大的系统，我们就更加难于判断。比如说人类的经济，因为决定经济表现的因素实在是太多了。比如说关于人类经济，至少我就听到现在三个判断：第一个判断，说大繁马上就要开始，为什么？互联网带动人类全新的协作方式，没错吧。听着有道理吧。有人说根本不是大繁荣。而是大洗牌，中国在崛起，欧洲在没落，美国人也不行了。这种判断也是有的。还有人说，对不起，马上就是大灾难，是一场更大规模的大萧条，比上个世纪30年代那场还要大，为什么？他也有道理，说你看看，现在我们人类应用的一些科技成果，其实都是上个世纪六七十年代甚至更早产生的一些基础理论研究。最后结出来的果子在那时代之后，我们再也没有更好的基础性研究了。你看，什么相对论，什么量子物理，都是上个世纪四五十年代之前的一些成果。说白了，人类的科技之树是一颗茂盛的大树，上面结了很多果子，我们用了将近一个世纪的时间，把一些低处的果子都摘完了，更上面的果子没法摘。我们享受的繁荣是一个非常短暂的时候了，马上就是一个沉沉的黑暗。你听，也好像有道理吧。</p><p>所以今天我们到底处在人类历史什么样的阶段？可以说在这个问题上，每一代人都在犯错，有的是太悲观，有的是太乐观，这样的例子都能举得出来。其中最著名的两个例子，第一个是19世纪的最后一天，一帮物理学家聚会，开尔文男爵讲了一句话，说物理学的大厦已经建成，下面只是一些修修补补。结果话音刚落，相对论出来了，量子物理出来了，开尔文勋爵这样的一个预言破产。还有呢？就是第一次世界大战，要知道自打拿破仑战争之后，欧洲享受和平，就是总体上的和平，已经一百年。所有人都在享受繁荣，谁想到马上要打的那种血流遍地的状况呢？没有人能够预测得到。所以历史就是这样，它虽然有一个大致的箭头往那个方向上在走，但是每到一个关口他突然来一个急转弯，让整个人类始料不及。这是过去几百年里反复重演的一个场景，所以我们没法预测未来。当然谈论未来，这是我们每一个人心中都要有的冲动。</p><p>如果你问我，罗胖，我们全当人类不可能预测未来，你愿不愿意赌一把，你认为我们正在处在一个什么样的当口呢？那我就赌，我们这一代人马上要遇到一次大繁荣。为啥呢？我有两个理由：第一，我们这一代人没那么倒霉吧，过去几百年人类的经济科技文化，都在往大繁荣那个方向上走，凭什么我们这一代人倒霉催的，马上要遇到大拐点呢？这个概率不高。那第二个理由呢？就是我们前面提的那篇文章当中，提出的一个概念叫“吓尿指数”。这话怎么讲？假设我们从公元1750年的时候，就是工业革命的前夜我们找到一个人，把他带到今天，让他参观一个我们这个世界。要知道1750年没有电工业革命还没有发生，交通基本靠走，安全基本靠狗，通讯基本靠吼。那个时代的人到今天看见我们过的什么日子，我们是用一个铁皮盒子在公路上跑来完成交通，我们可以跨着大洋和对面的人通话，我们可以看到50年前的一个演唱会的视频，我们可以不断地掏出一个方方的东西，来记录眼前的一切，我们都不用跟他讲什么核武器、相对论、太空站，他都已经会被吓尿了。那不是一个惊讶的问题，那叫萧瑟秋风今又是换了人间，完全跟他生活的不是一个时代。</p><p>好，假设这个人我们叫他老王吧。老王回到1750年之后，他也想，我也用时光穿梭机，我也把此前的人吓尿。他得找什么时候的人呢？如果他也往前倒二百多年，比如说1500年时候的人，他不会把人家吓尿。人家不过觉得你们对世界的认知又拓宽了一点，仅此而已，过得日子跟我差不多嘛。所以老王在1750年要把人吓尿，他得回到公元前12000年左右。就是说白了，农业革命发生之前。那个时候人类还没有文明，没有城市，没有城邦，没有起码的政体。那个时候人还过着狩猎和采集的生活，他跟他炫耀这些，他会被吓尿。那那位先生呢？我们假设叫老钱，老钱要想把人吓尿，对不起，你得再往回倒大概几十万年。倒回到那些几乎跟动物一样的那个叫智人，他仅仅是一个普通的物种，你会把他吓尿，为什么？你掌握了语言，你会用火，你把他吓尿。</p><p>所以从刚才我们这个“吓尿指数”来看，是时间越来越快的。几十瓦年一万多年还有就是两三百年，就到了我们今天了。这种发展越来越快的现象，以前我们的节目也讲过，什么荷塘效应、后半盘效应、指数级发展、回报加速定律等等，讲的都是同一个现象。你看《奇点临近》那本书的作者叫库兹韦尔，他就讲未来一百年，人类在21世纪的发展将是20世纪的一千倍。我也不知道他怎么算得出来的，但是大家都认同于人类文明发展是加速度的。可是我前面讲了一句话，我们都知道是加速度的，可是我们不知道它发展的方向。因为知道方向我们就不会被吓尿嘛。</p><p>按照刚才那几级台阶，下一个吓尿指数可能就是几十年，2030年、2045年，没准儿那个时候罗胖还健在，我们节目的绝大多数观众，那个时候还活蹦乱跳呢。我们会被什么现象吓到魂飞魄散，小便失禁的程度呢？它肯定不是我么今天看到的世界的一个正常的延伸。比如说，更快更多的互联网服务，更多的上市公司，什么iphone出到第60代，肯定不是这些。一定是一个我们今天想也想不到，会让我们目瞪口呆的东西。</p><p>那这个东西是啥？可能的答案之一，就是我们今天要讲的话题，人工智能。人工智能这其实不是一个新话题，上个世纪就被提出来了。其中最著名的人物是上个世纪，就是1954年去世的大神级人物叫图灵。顺便给大家插个题外话，我们跟出版社合作，正在做一本有关图灵的书，非常好看，我已经提前看到了，以后再讲这个人物。</p><p>图灵在1950年就提出了一种叫图灵测试，就是既然人工智能是方向，那什么时候出现了人工智能呢？他提出了一种测试方法，就是一个黑黑的房间，里面搁着一个人，还是一个计算机，我们不知道。外面坐一帮评委，然后跟着里面是人还是计算机对话，一直到把外面这帮评委给弄糊涂了。搞不清里面是人还是计算机，或者把一台计算机误认为是一个人的时候。那这台计算机就具备了人工智能，这就是著名的图灵测试。可是你想这是1950年提出来的，一直到2014年就是去年，才有一台计算机声称自己通过了图灵测试。当然在业界还有很多争论，我们不去提它。</p><p>这也可见人工智能的发展在上个世纪提出，六七十年代这个概念很热，但是一直就止步不前。在人工智能界有两句很有趣的话，一句叫有多少人工就有多少智能。说白了，所谓的人工智能就是假装的，其实背后全是人工。比如说1997年有一件著名的事情，说IBM的那个超级计算机叫深蓝，打败了国际象棋的大师卡斯帕罗夫。可是有人说这算人工智能吗？这不算，这叫打群架好不好？甚至叫群殴一个人，卡斯帕罗夫顶级大师。可是IBM可是招募了上百个甚至是数百个二流的国际象棋大师，把多少的人类历史上的国际象棋图谱，全部输入这台计算机。说白了，这哪是机器和高手的对决？这是一帮二流高手区群殴一个一流高手。所以才有了我们前面说的那句嘲讽的话，就是有多少人工才有多少智能。</p><p>其实人工智能界还有一句话也挺无奈的，说人工智能每实现一步，大家马上就不认为它是人工智能了。人工智能很新鲜吗？我们身边到处都是，你掏出手机那玩意儿就叫智能手机。在手机上什么搜索谷歌翻译，这背后其实是一个庞大的人工智能系统。我们上购物网站买东西，那个猜你喜欢，用算法进行的商品推荐，那也是一个人工智能系统。再比如说，我们家里稍微高级一点的洗衣机、微波炉里面，都有智能功能，这都是人工智能。</p><p>但问题是，即使是在人工智能界，他们也认为这叫低级的人工智能，或者是说叫初级吧。那高级人工智能什么样呢？我见过一个定义，说它是一种宽泛的心理能力，它是有计划并执行复杂任务的能力。它能够进行推理，它能够进行概念的抽象，它能够进行模式识别，是一种宽泛。宽泛这个词其实说得很客气，说白了，就是模糊。到底什么叫智能？这俩字其实到现在，也没人能把它说得清楚。那我们就借用一个概念说，给大家展示一本书，这是这两年很火的一本名著，卡尼曼写的《思考快与慢》。卡尼曼这个人挺有意思，他是一个诺贝尔经济学奖的得主。要知道诺贝尔经济学奖这么多年，只有两个外行，就不是经济学家得这个奖，一个叫纳什，是数学家。还有一个就是这个卡尼曼，他是一个心理学家。当然也是事有凑巧，这两个人都是普林斯顿大学的教授。所以他作为一个外行，得到诺贝尔经济学奖，当时欣喜若狂。甚至把自己锁外头了，把钥匙落在家里，所以不得不破窗而入，重新回到家里，就是他听到得奖喜讯的那一刻。</p><p>好，不说他的八卦，他在这本书里，卡尼曼提出来了一个非常重要的概念，就是系统一和系统二。那什么是系统一呢？就是不需要思考，我们马上人类就可以做的事情，这叫系统一。比如说，我们判断一个人是不是冲我发火了，这就是系统一，不需要思考。</p><p>那系统二呢？它需要思考，所以它就比较慢。比如说你乘一下17x42，你得拿一张纸出来算一下。卡尼曼作为一个心理学家，他只是说人的心理有两种识别，或者说运行机制。可是回到我们今天讲的人工智能这个话题上，你马上就发现人工智能难在哪儿了？对于卡尼曼讲的系统二，算17x42，对于计算机来说，这不叫事，再复杂都不叫事。可是你让它回到人，不用思考，马上快速就能做出反应的那些事，就是系统一的事。比如说识别一张脸是不是在生气，计算机就白给了嘛。我们知道人有很多能力对吧，我们抓起电话，对方刚说一两个字，我们马上就知道这人是不是在对我生气。我们进到一个屋子，马上就能判断这个屋子里的人，刚才是不是在说我坏话。我们坐到电影院，五分钟我们就知道这部电影是不是烂片。</p><p>可所有这些事你让一部计算机去干，那就太为难它了嘛。所以宽泛的模糊的一种心理能力，到目前为止还是人类独有的。而人工智能就是想攻下这一座高峰，攻克人类的系统一。但是如果你去问任何一个现在的人工智能专家，他都会告诉你，这玩意儿不靠谱，我们距离那个目标远着呢，我们现在还在门口徘徊不得其门而入。</p><p>但是也确实有一些科学家提出了，我们抵达那个目标的理论路径，仅仅是理论上的。那大致上我们人类要做三件事情：第一件事情，是把计算机的计算能力给提上去。前面我们讲的那位库兹韦尔，他就匡算了一下，说达到人脑的那个智能水平，我们需要的计算能力是每秒一亿亿次。听清楚了，一亿亿次。当然你说这个计算能力我们现在有没有？已经有了，至少中国人已经有了。我们拥有的那个天河超级计算机，现在每秒是3.4亿亿次。不过那玩意儿实在是太大了，700多平米的房子才装得下。一旦启动，240万瓦的功率，那是个电老虎。而且造价也特别贵，三点几亿美金。那如果是普遍应用都能够拥有这样的计算能力，什么标准？就是用一千美金就可以买到这样的计算能力，那这个玩意儿的应用前景就算是铺开了。</p><p>我们距离这个目标虽然很远，但是可以看得到。所以第一步并不算太难，第二步就很难了。就是要对人脑进行逆向开发，啥叫逆向开发？前些年我们中国的汽车界就是这么干的，从国外买一部整车回来把它给拆了，看看人家怎么干的，这就是逆过来。然后我们自己再一点一点地学着人家的样子，把它搭起来，这就拥有了自有知识产权的汽车，这叫逆向开发。对人脑的逆向开发也是这样，我们就用电子元器件来仿照人脑的神经元，然后看它们之间能不能进化出一个人脑的功能。</p><p>事实上像谷歌这样的公司就在干这样的事情，前些年谷歌推出一项成果，说我们可以用计算机来识别一个猫的脸，可以从几千万张图片里面，把猫的照片给挑出来。你说这有什么奇怪的，我们办公室打卡用的就是人脸识别系统。不一样，人家谷歌这个是让计算机自己，去领悟什么叫猫，所以它是人脑的逆向开发工程。</p><p>这是第二件事，那人类能做的第三件事情，就是回到进化的原点。人脑虽然很复杂，是人类已知的世界上最复杂的东西，但它是一个漫长的进化过程的产物。那好，我们就回到它的源头，我们用计算机的元器件摆出一个最原始的状态，然后用一套基因算法让它去演化。啥叫基因算法？就是一步一步往前拱，就跟生物进化一样，优胜劣汰，适者生存。先往前拱一步，看合适的保留下来，不合适的淘汰掉，然后再一点一点地往前拱。这样，我们就有可能用计算机技术，把一万年的那个进化过程，压缩在一个相对极短的时间内，看它能不能进化出一个人脑来。</p><p>当然了，以上的这些都是一个理论上的构想，我们不知道它能不能成。好，我们假设它能成，那会发生什么呢？要知道计算机的特征和人脑的特征是完全不一样的，至少它在几个方面是完全超越人脑的。首先，速度是没法比的。对吧，人脑的神经元传递信息一秒钟才一百多米，那电脑是多快？是光速。第二、存储量。人脑不管你有几千亿个神经元，你的存储量是有限的，电脑在理论上是无限的存储量。更重要的是，人最大的优势就是我们会协作，我们是一个集体，人用这种集体的力量，击败了世界上所有的物种，对吧。可是电脑它天然就是一个集体，天下电脑是一家，这个电脑学会了什么，只要一连网线，全世界所有的电脑都学会了，所以它的集体协作度比人类要高得多。什么自私、嫉妒、这些情绪电脑是没有的，更重要的一点是，人脑在稳定性和可靠性上跟电脑没法比。人吃五谷杂粮会病，想问题想的时间长一点会累，可是电脑完全不存在这个问题。它可以全天24小时，一年365天处于峰值水平运行，从来不休息。所以这一点上，人脑对电脑是望尘莫及。</p><p>一旦看穿了人脑和电脑的这些区别之后，再回头看我们刚才讲的那个发展路径。一旦电脑的演化踏上了第一级台阶，只要这条路摸对了，那下面会发生什么呢？刚开始也许特别慢，只能搭建一个爬爬虫似的大脑。但是它用几十年时间，慢慢地，没准儿就会拱成一个蚂蚁的大脑。再用几十年时间它就会达到一个老鼠的水平。再用几十年时间，它没准儿就能达到人类一个完全痴呆儿的水平。你可能觉得很弱智嘛，可是一旦达到那个水准之后再往上走，比如达到一个正常儿童三四岁的水平，可能只需要几年时间。再往下走，可能达到正常人类的智力水平。或者说像爱因斯坦那样的智力水平，可能只需要一年。</p><p>可是接下来会发生什么呢？如果你接受我们前面讲的那个指数发展原理，可能在接下来的一个小时，它的智力水平就超越人类一万倍十万倍，多少我们就不知道了。在我们人的日常经验当中，那智力水平差距还是挺大的。我们看见一只鸡好笨，我们看见一猴也觉得它笨，对吧。甚至我们看见同班同学，那成绩不好的我们也觉得他笨。可是这个差别没有我们想象的那么大，现在按照智商测试，大概80的智商就算笨蛋，130是聪明人。可是这才多点差距啊，你能够想象有一种智商叫13000吗？那个时候我们跟它的差距，就相当于一只蜜蜂和我们之间的差距，我们再也搞不清楚电脑到底在想什么。</p><p>所以我们前面提到的那篇名字巨长的文章，里面打了一个比方，说我们人类看人工智能，就好像在一个地铁站台上，左等不来右等不来，这车怎么还没来啊，突然从远方传来一点点的轰隆轰隆的声音，走得特别慢，等一年才走几米，可是它越来越快，越来越快，我们在那儿鼓掌欢呼，马上就要到了，马上就要到了。可是当它真的到我们站台的时候，你根本就看不见它。只会有那么极短的一个瞬间，它的水平和人脑是持平的唰一下，它就过去了，而且它到哪儿，我们就再也不知道了。那接下来会发生什么呢？</p><p>好，我们接着跟大伙聊人工智能。假设我们前面推测的那些东西都实现了，在我们这一代人的有生之年，或者是不远的未来，真的就做出了超强人工智能，那会发生什么呢？其实这都是未来的事。</p><p>那既然对未来的推测，一般都分成两派，一派悲观一派乐观。那我们就先说乐观的那些推测。其实人工智能我们前面讲的，它唰一下就从我们眼前超越过去了，它能干什么我们不知道。好，那我们就从我们能够推测，我们已经知道的那些领域，我们看看它会怎么改变人类文明的图景。大家知道上个世纪50年代末，有一个著名的物理学家叫费曼，他就是提出了关于纳米技术的推想。这可不是什么科幻小说，已经好几十年，人类是正儿八经地非常严肃地在研究这个课题。从上个世纪80年代开始，各个国家都在数十亿美金数十亿美金地，往里进行投入。所以这是一个看得到的一个技术前景，那啥叫纳米？我们简单做一个科学的普及，纳米就是一个长度单位，它多长呢？是一米的十亿分之一。说白了，就是分子级别的那样的一个长度。那如果我们人类发明了一种技术，可以在分子级别去改变物质的构造，那会发生什么？要知道这个好难的呀，分子级别的构造我们人类去改变它。我给大家打个比方，假设我们把这个尺度放大，把人的身高变成多大？就是从地面一直到太空站，这大概是400多公里，人身高变这么大，那去操作纳米，就相当于那样的一个400多公里身高的一个巨人，去造作一个沙粒，这个难度就这么大。</p><p>但是如果一旦实现，它带来的好处是惊人的。因为在分子级别那个尺度上，再去看我们现在的世界，一切难题都不是难题了。要知道人类一直有一个大难题，就是物质的匮乏。可是从分子级别看，还有什么物质匮乏的问题。就这地球你可劲造呗，你需要什么，从分子级别搭建一个东西给你，不就完了吗？比如说现在钻石很值钱，一颗永流传爱情恒久远。可是到了分子级别看，你钻石不也就是用碳分子搭出来的那个东西吗？到那个时候一颗钻石会比橡皮擦还便宜对吧。如果纳米技术实现的话，那再往下深一层，到了原子级别的大小甚至更小，到我们前面讲的普朗克常数，那个微小级别我们去搭建物质构造，那一切匮乏就解决了。金子，金子不过是一种原子，我从更微小的微粒上去重新搭建，那不就你想要多少金子我就给你多少金子。那人类的经济整个系统就会发生巨大的变化，可以说几乎就崩溃。但这个崩溃是一个很好的崩溃，因为极大丰富，那个时候一切物质都不需要任何费用。</p><p>那再从我们人类的很多事业上来讲，比如说医疗就不存在了，还有什么医疗问题！你说最难攻克的癌症，他无非就是很难把癌细胞和正常人体细胞给分离开吗？用纳米机器人到我们的身体里，哪儿有癌细胞，定点清除掉。什么环保不存在，不就是二氧化碳难回收吗？那不就是个分子吗？我们用纳米机器人一个一个地把它回收了。你说能源问题，哪还有什么能源问题？从纳米级别给创造新能源，简直就是易如反掌。那个时候每一个人你想用什么样的形象去见人，随你便。你是想要一根像水桶一样粗的胳膊，还是想要一张俊秀的面庞，随你，随心所欲。所以那个时候人类文明会变成什么样？我也不知道。前面这段说的简直就是科幻小说，你自己也可以自己打草稿，你去任意地驰骋你的想象。总而言之就是特别好特别好，一直好到什么程度？就是人类永生。纳米机器人创造一个机器，你走进去你想变成什么样，你想多年轻，无非就是把你的人体构造，从分子级别进行重新改造嘛，你出来又是一个年轻人。所以人类会踏上永生之阶，这就是乐观派，他能乐观到这个程度。</p><p>好，我们今天主要的任务不是讲乐观派。人工智能的风险从哪儿来？不是从外面来，它就深藏在人工智能特质的深处。只要它是超强人工智能，他必然具备三大特征。第一个特征，它有必然是自我可复制的。大家想，如果我们刚才关于纳米技术的那一套推测实现了，人类借助超强人工智能实现了纳米技术的突破，那会发生什么呢？当我们这个世界上充斥了各种对人类有益的纳米小机器人。比如说往罗胖的身体里注射一针，那里面全是纳米机器人一亿个。它来帮我把不需要的油脂给清除出去，把身体里的毒素给固化，把癌细胞给切除。是挺好，可是这么大量的纳米机器人怎么生产？它肯定不能像富士康生产手机一样，从工业生产线上一个一个地生产，那一亿个你得生产到什么时候？</p><p>如果想让纳米机器人有应用前途，它的技术特征一定是自我复制。就像自然界的那个细菌一样，一个细胞从环境当中捕捉一些材料，然后再造一个自己这样，速度就快。可是速度一快就出问题了，你怎么知道这个复制不会达到一个危险的状况呢？假设有一个纳米机器人，它是碳基的，就是它使用碳分子来做出来的，它自我复制。可是你要知道，复制这玩意儿是乘二乘二乘二，只要它复制130次，我们都有这个常识，那就会造成全世界所有的碳分子，地球上的碳分子都不够用了。换句话说，纳米机器人只要130次的自我复制，它就会毁灭世界上所有的生命。因为我们的生命都是碳分子结构的。那需要多长时间呢？我们假设它复制一次需要100秒，那一个碳分子的纳米机器人，它只需要三个半小时，就可以把地球上作为的物种给它灭绝掉。那你说我不让它这么复制，对呀，你会设置各种各样的防火墙，制止它这样无限制的复制。可是人类的任何东西都有BUG的，万一这个制止它自动复制的机制出问题了呢？三个半小时我们整个地球生命系统灭亡，就是这个结果。这是它的第一个风险。</p><p>那第二个风险呢？是人工智能的第二个特征，就是它是一种叫自我递归的进化和改进。它既然是人工智能，它一定是我自己学习，我哪儿不对我改啊。它越改越快，越改越快，那改到最后，它那个智能和人类之间的差别有多大？其实我们不知道。我们假设它的那个区别，就相当于人和黑猩猩那个区别。这个区别其实不是很大，对吧。按照我们前面讲的叫回报加速定律，它应该比这个区别大得多。好，我们假设它就是人类和黑猩猩之间的区别，那会是什么结果？黑猩猩的脑子和人脑之间的区别，可不是运算速度的区别，是认知模式的区别。比如说给黑猩猩看一个人，它觉得这不就是个人吗？你再给黑猩猩看一个摩天大楼，它说这不就是个很高很高的塔吗？可是你要告诉它这个塔是由人造出来的，你让黑猩猩这么理解这件事情，它完全无法理解。其实智能的差别就是认知模块的差别。这个东西是质变，就像我们上中学的时候，罗胖的数学成绩还行，但也不是那个数学成绩特别好的那种学生。有时候就着急一道数学题，你看那个特别棒的学生，参加奥数竞赛的他马上就解出来。你给罗胖一百个钟头一万个钟头，我也解不出来这道题啊。这个就是人和人之间的智能差别，尚且如此，更何况人和黑猩猩之间呢？说白了，我们干什么它根本就听不懂，你也教不会它，你带有再大的诚意和善意，你都无法让黑猩猩理解我们人类在干什么。</p><p>好，我们再往上看，一个比人类高这么一个级别的智能，它看我们是一样的。即使它对人类抱有最大最大的善意，它也在教你。你会发现你根本学不会，你根本不理解它在干什么。这个区别其实大家稍微到百度上去搜索一个词叫“M理论”，就是它告诉你这个世界，这个宇宙可能是有十一维空间，一层一层地跟你讲。三维空间什么样我们人类都知道，四维空间什么样，聪明人想象一下可知道。可到了五维六维七维，一直到十一维空间什么样？这就是我们一样的人，那些大物理学家他觉得我可以想象啊，对吧，我们普通人就想象不了，这就是认知模式的差别。所以到最后那个超级人工智能看我们人，这可不见得是人和黑猩猩的区别，没准儿就是人看着一只鼻涕虫的那个区别。</p><p>你说它会怎么看待我们？这就像那个童话故事里讲，一个麻雀妈妈孵了一只蛋，但是它不知道这个蛋实际上是猫头鹰的蛋。一旦孵出来之后，猫头鹰会跟它客气吗？我打一个简单的比方，我们人为了今天出去见女朋友，烫个头剪个发很正常吧，没有任何恶意吧。可是你知道我们的头发也是细胞啊，对吧，他也是个活物，我们关注它的感受吗？我今天见女朋友我要好看一点，头发剪两根算什么，它根本就不会关注我们。所以很多人说，那个超强人工智能，对人类到底是善意还是恶意，跟这没关系。当它是那个级别的存在的时候，它不关心你怎么想。所以当超强人工智能真的实现之后，它真的就像那个童话故事，一个渔夫从海里打捞上来一个瓶子，打开了瓶盖之后放出来了一个魔鬼。我们不知道这个魔鬼会对我们干什么，但是我们知道我们再也没有办法把它收回去了，这是第二个危险所在。</p><p>那你以为这就完了吗？不，更可怕的事情在后头，我们接着跟大家聊人工智能的危害。人工智能还有一个特点，就是它是个活物，它是个生命。虽然人类是它的亲爹亲妈，可是生命就是这样，一旦把它生出来之后，它会拥有自己的逻辑。它会成长，它会复制，它会繁殖，它会学习，它会改进，对吧。所以我们人类作为它的亲爹亲妈，其实我们只有一次机会去定义它，就是在起点上我们把它设计成什么样。</p><p>好，我们假设我们给它一些特别无害，甚至特别善意的起点，比如说帮助人类。帮助人类实现某种特定的功能，而不是毁灭人类，不是去造飞机大炮。但是我下面的推演会告诉你，不管这个起点多么的善意，你都无法阻断它毁灭人类的步骤。为啥？因为所有的生命和物种它有一个天然的使命，它既不是性恶也不是性善，它就是趋利避害保存自我，这是所有生命的本质。</p><p>好，我下面给大家推演一个过程，你看它怎么是从一个良善的起点，逐渐成为人类的大敌的？举个例子，我们现在已经到了科技水平非常发达的时候，我们距离人工智能的突破只差一步了。那这个时候，比如说罗胖出了一本书，我们还真就出了一本书，《罗辑思维》的第三本书《成大事者不纠结》。说个题外话吧，这本书的出版人沈波先生，曾经在《罗辑思维》最关键的时刻，对我们提供了帮助。所以我特别想感谢他，特别想跟他一起把这本书卖好。这本书不是在我们的微信公众号里独家发售，是在三大网店都可以买到。</p><p>顺便也可以用这个例子解释一下，什么叫人工智能的那种自我强化的改进。比如说大家听罗胖这句话，愿意帮我和沈先生今天都拼命下单买这本书，其实要不了多少单，很快就会在当当京东亚马逊这三大网站上，把它顶上排行榜。好，那三大网站的人工智能系统就会认为，哎呀这本书这么好卖，它就会拼命地推荐。所以即使大家在第二天和第三天，不怎么帮忙的时候，这本书也会在排行榜的顶端，会被拼命推荐，它就会卖得好。你看，这就是人工智能的自我强化，顺便举这么个例子。</p><p>那这本书出来之后我突然冒出来一个点子，说我能不能在每本书上签三字叫我爱你，你看多么温馨的一个开始。我突然又冒出来一个想法，所有买这本书的用户你上传一段文字，或者一段语言我们自动识别出来，然后也用罗胖我的笔迹签在书上然后送给你，你看多么好的顾客和企业之间的互动，对吧。好，我们想借助一套人工智能系统，帮我来签这个字，因为我签过书，签过一万本手都快断了，花了好几天时间。所以如果有人工智能系统的帮助，可以模仿我的笔迹来签这本书，这是一个多么好的安排啊。于是我们就安排这个系统去往这个方向发展。请注意它只有一个使命，在这本书上签上字。好，这个人工智能就开始不断地自我演化，这个字越签越好，越来越像我本人的笔迹。</p><p>可是有一天这个智能系统突然就跟我商量，说你看我们外国朋友也想买这本书，可是你们又不懂外语，你能不能把我接上互联网啊，我去搜索全人类的那个语音库，这样外国朋友传一段话过来，我也可以识别出来签在书上，这多好呢。这个时候罗胖就开始警惕，为啥？因为国家那个时候肯定有规定，人工智能系统不能让它上网，它会出现我们前面讲的很多危害，对吧。可是商量了半天之后他说服我了，我想也没人知道，那好吧，就接上网一个钟头。它只是搜索人类的语音库，也没有其他大的妨害，它提出过分的要求咱再不答应它。</p><p>好，上完网一个小时，网线拔掉可是再过几天之后，突然有一天罗胖上班的时候，我和我所有的同事突然闻到一股怪味道，然后就咳嗽，然后趴在地板上死掉了。随后的一个小时，全人类所有的人都闻到这个怪味道，然后死掉了，人类灭绝，Gameover。那请问这件事情是怎么发生的？要知道人工智能系统它是个生命，所有的生命保护自我是它的第一个意识。当它觉醒之后睁眼看世界，谁是保护自我的最大妨碍呢？就是旁边这帮家伙人类嘛。所以要想让我把这个光荣的使命，签仨字“我爱你”这个使命执行下去，先把人类干掉。它在那个智能水平上开始运行，开始筹谋一个大计划，如何把我们灭绝。</p><p>于是它就故意欺骗我们说我要上网，去搜索人类的语音库。在那一个小时里它干了无数的事，比如说安排到银行提钱，把这笔钱用于买各种各样的材料。说服各种各样的人来帮它做各种各样的事情，包括制造一些纳米机器人。然后分布到地球所有有人类活动的场所，然后再选择一个时刻释放一个毒气，然后把所有的人类就这样干掉了。这就是它保护自我的那个逻辑的自然延伸。</p><p>那人类灭绝之后，这个智能系统终于摆脱了最大的危害，然后可以甩开膀子干一把了。于是在很短的时间里，地球的表面铺满了它制造的太阳能电池板，它拼命地生产造纸厂，生产纸生产笔，在上面签“我爱你”。然后紧接着它开始制造宇宙飞船，飞向外太空，到每一个星球上，利用当地的资源生产纸生产笔，签“我爱你”，整个宇宙充满了“我爱你”。但是那是一个沉寂的宇宙，再也没有生命和人类了。那你说这个故事太狗血了吧？你有太多机会阻断它对吧？你罗胖意志坚定一点你别让它上网啊？</p><p>可是要知道，说服罗胖有那么难吗？大家要知道在中国有电信诈骗这一行，对吧，那些文化并不高的人，只要打的电话数量足够多，就可以说服一些人把自己银行存折和卡里的钱汇给他们呀，这并不难。说服人类，人类是一个多么脆弱的物种啊。那你也可能会说，那你及时把电给它断掉啊。可是要知道，即使是在我们现在科技还不是很发达的时候，不用电线传输电能，已经是一个快要突破的技术了。这个技术对于人工智能来说哪有那么难？</p><p>那看来问题在于你刚开始设定那个条件不对。你应该设定很多很多的那种限制性条件，比如说你应该让人类快乐。那好，人工智能说不就是让你快乐吗？这个条件很简单啊。把人一个一个地抓起来，在脑子里面插入一些电极，给你释放一些让你快乐的信号。从此我们所有人类都被抓起来捆在那儿，然后天天傻呵呵地乐。甚至它觉得要让你快乐这个事情很简单，把你所有身体割除就剩下一个脑子，然后泡在一种溶液里面，天天给你输入快乐的信号，我们天天乐这不就行了吗？</p><p>你说不对，这要让人类感觉到安全。那智能机器说这也好办啊，造一个大监狱，把所有人类关起来，你们再不会出事了，你们安全了。你就说你要啥吧？我们现在人类可以想象的一切初始条件，你都可以输入进去。但是在那样高的智能水平上运行的那个系统，最后执行出来的方案也许都不是我们想要的。</p><p>好，假设我们真的发明了一套系统，我们输入的初始条件非常完善，而你就要保证人类像现在这样生活，一点都不能变，我们还是这样的一个道德系统、观念系统、价值观系统，我们要保持现在的生活方式，那难道不是灾难吗？其实也是啊。比如说，我们人类的道德和观念系统一直在进化，仅仅在几十年前，我们还是那样的排斥和歧视同性恋。可是几十年后呢，我们觉得歧视同性恋这种人很Low好不好。我们的观念和道德系统一直在进化，如果我们给人工智能系统，输入了这样的一个条件，你必须保持人类的道德观念系统不变。那说白了，人类的进化也完成了，我们迎来了一个历史的终点。我们永远被锁死在现在这种文明状态下，其实也就等于人类系统的灭亡。所以这样推演下去，好像这个事已经没有解决方案。</p><p>对，什么是人工智能系统？它的本质就是人类把自己亿万年进化来的万物灵长的地位拱手让出去了，把我们对于地球上所有资源和其他物种的掌控权让出去了，而且让给了一个高出我们很多个层次的智能系统，这就是人工智能的本质。所以那个时候已经是“人为刀俎，我为鱼肉”，只能让它看着办。</p><p>有一个人工智能的理论家，他就打过一个比方。说人类的科技就像是一筐子球，三种颜色，一种白色，一种红色，一种黑色。白色很多，红色很稀少，黑色的球只有一个。那白色的球就是有益于人类的那些科技成果，那几百年来我们不断地捡，捡到的都是白球。偶尔我们能够捡到一个红球，红球就意味着对人类的生存和发展有危害，我们真就捡到过一个核武器嘛。可是这个筐子里只有一个黑球，只要捡到就是人类灭绝。那人工智能就极有可能是这个黑球，而且极有可能就被我们这一代人捡到。所以面对我们子孙后代在历史深处的呻吟，我们这一代人不得不小心。</p><p>当然，听到这儿，你可能会问，罗胖你刚才讲的这一套你信吗？我不是很信，为啥？因为确实也有这一派理论的对立面，而且那个论证过程也非常有说服力。比如说在物理学界有一个著名的费米悖论。它就在讲外星人，或者说那么强大的人工智能如果要有，他肯定不只是地球上有，外太空应该也发展出这样的东西。那外星人要搞出这套东西，这个厄运也会降临在他们头上。这些人工智能，就是外星球的那个人工智能，早就开始执迷宇宙了。那那个时候地球早就不存在了，所以既然今天地球还存在，人类文明系统还健在，说明那个东西不会发生。</p><p>你看这个论证也很有意思，所以我刚才那一整套推论，肯定在某个逻辑环节上出了问题。它不对，至于哪儿不对，我也不知道。我们今天做这期节目跟大家介绍这一套推论，不是给大家听个西洋景，也不是为了吓唬大家。而是讲我自己的一个感慨，在过去一百年里，确实人类出现了一个新的思想传统。就是跳出人类中心论甚至是生物中心论，来重新看待这个世界。</p><p>在这儿，重点给大家推荐几个名词，还有两本书。一个名词叫基因，第二个名词叫模因，大家自己到百度百科上去搜索它是啥意思。那出现这两个名词是一本书叫《自私的基因》，是著名的生物学家道金斯写得，他其实就是提出这个世界的主宰到底是谁。他认为其实有另外一种可能，比如说这个世界的主宰是基因。所有的物种的个体实际上，都是一代一代的传送基因的一个运载工具而已，你们不是主体。只有基因，它是不断强化自己，不断优化自己的那个世界主宰。</p><p>模因一样啊，模因就是指人类文化。你比如说我们中国人，一代一代在传承中国文化。可是你反过来也可以这么说，中国文化是世界的主体，只不过通过我们一代一代地中国人往下传，我们只是它实现他的目的的一个工具。你看，把世界倒过来看，你会觉得非常有意思。</p><p>那给大家介绍的第二本书，就是凯文•凯利写的一本书，这本书的名字叫《科技想要什么》，。这是凯文•凯利被严重低估的一本书，他卖的最好的那本书叫《失控》。这本书很少有人知道，在这本书里他就提出一个观点。说科技其实是这个地球上的第七种生命形态，前六种是啥动物植物和四种微生物。而科技它怎么是生命呢？它明明是人类创造出来一个没有生命的东西嘛。但是在这本书里，凯文•凯利就在论证，说科技就是一种生命，它符合生命的一切特征。人类只不过是它的父母，是它生命第一个阶段的保育员。但是紧接着它会踏上自己的生命演化的进程，人类再也控制不住科技了。</p><p>这是一个很有意思的视角，当然所有这些视角都包含着一种意思。就是我们对未来进行预测，可是我们稍有常识都知道，未来是一股乱流。我们今天的人是无法精确地预测未来，但是作为一个努力拓宽自己认知边界的人，把人类择开，重新探索和思考这个世界的本源，你不觉得这是一种很有意思的智力活动吗？</p><h3 id="罗辑思维：大公司-和蚂蚁一起舞蹈-41"><a href="#罗辑思维：大公司-和蚂蚁一起舞蹈-41" class="headerlink" title="罗辑思维：大公司:和蚂蚁一起舞蹈 41  "></a><a href="http://www.luojiji.com/thread-452-1-1.html" target="_blank" rel="noopener">罗辑思维：大公司:和蚂蚁一起舞蹈 41</a></h3><p>有种，有趣，有料，这就是我的罗辑思维。死磕自己，愉悦大家，这里是咱们的罗辑思维。</p><p>中国古代有一个笑话，说的是一个聋子，有一次看别人放炮杖，他就觉得好奇怪啊！好好的一个花纸卷，怎么说散就散了呢？你看，这故事告诉我们，当你有一个感官通道发生了封闭之后，不管你怎么用劲地观察，实际上你是没有办法理解这个世界的。</p><p>对呀，现在我们整个人类的世界，甭管是政治还是商业，都处于一个特别神奇的时代，我们经常会感觉到，咦，这个花纸卷怎么说散就散了呢？比如说，诺基亚最近不是被收购了吗？那样坚若磐石的盘然大物，哦，原来也能崩溃哟。微软好像搞什么都搞不成，这个十年前还炙手可热的企业，没准儿过不了两年，它也就离死不远哦。</p><p>原来默默无闻地一些小企业，比如说三年前，大家还不知道的小米，突然就成为估值100亿美金的公司哦，前不久刚刚发布2999元47寸的互联网大彩电，搞得我一些在传统彩电公司工作的朋友大惊失色，倒抽一口凉气啊！为什么？哎呀，我们原来那个大帝国，就此接到了病危通知书，不知道哪一天就要倒掉了</p><p>即使是国家层面，美国那叫一超独霸，现在面对叙利亚这么一个弹丸之地的小国家，那也是感觉到狗咬刺猬一般的为难。不知道从何下嘴。</p><p>对啊。这个世界真的是“眼看它起高楼，眼看它宴宾客，眼看它楼塌了”，谁都不知道自己烈火烹油似的繁华，能够持续到哪一天。</p><p>好了，今天给大家推荐一本书《不可思议的年代》，这本书的作者那是大有来头-库珀•雷默，基辛格的弟子，他自己是一个飞行特技驾驶员，然后也是一个很著名的国际政治学者。他曾经针对华盛顿共识提出了著名的“北京共识”，所以在中国很受欢迎，他一半时间住北京，一半时间住美国，所以没准儿在北京大街上你还能遇到他。</p><p>这个家伙写这本书，就是针对整个美国，提出来的一整套如何适应新世界的解决方案。我想对于所有今天我们身在传统商业大组织当中的人都有借鉴意义，也就是大象如何才能和跳蚤一起舞蹈呢？那大象为什么现在遭遇到这样的困境？答案是一个，由于由互联网为代表的全新的技术，带来的全球政治、经济、商业、社会格局的全新的变化。</p><p>这话说得是老套，对吧。那这个变化的最核心是什么?最核心就是个体崛起。举个例子讲，比如罗辑思维，它为什么能够存在，要知道我们现在每期的点击量也100多万哦，跟央视有些著名栏目也相差无几哦。那我们是怎么做的呢？他们要在一个体系内获取资源，得有各地的差转台，各个城市中心的转播塔，央视底层的上万名员工，它才能做出一些好栏目，所以所有的资源都是从组织内获取。</p><p>可是像罗辑思维我们是草根生长，我们也不是说没有资源，没有底座，我们也有啊，你看优酷的，很多互联网的视频网站，他们的带宽服务器，给我们免费来用，我们做微信公众号，那也是腾讯积15年的修行啊，张小龙团队做出微信，那也是整个团队不眠不休多少个日夜，他们的劳动成果我们现在全部免费用，我们没有必要进入到央视那样的体系，我们就能获得如此开放、全面、强大的资源。</p><p>所以个人的力量突然崛起之后，大家伙们自然就危险啊，你像罗胖这么温柔敦厚，一副无害的表情的人获得了这样的资源，也倒罢了，那如果这资源落恐怖分子手里呢？你去想想看，现在，据说从2008年开始，人类就可以从互联网上，完整地下载那种天花基因的制造方案，而且这种天花基因是可以对现在所有的防疫系统可以进行突破的，就是秒杀所有疫苗，这种天花基因。所以很多人说，过不了几年，也许第一个可以秒杀所有疫苗的天花病毒就将在某个恐怖分子家里的瓶瓶罐罐里制造出来，那一旦制造出来怎么办？</p><p>据说前几年美国国防部也做了一个实验，电脑模拟一下，一个人感染了这种新型天花病毒会怎么样，几周之内，几百万人死亡，最后国防部干脆把插头拔了，说这事别弄了。这个危机，你往下演算下去，就是美国灭绝就是了。因为在整个电脑推演当中，没有发现任何现行的防疫机制，可以阻止这次瘟疫的蔓延，因为它太快了。</p><p>这就是个人崛起的力量。但是这还不是根本。这本书里讲的最有趣的观点，我认为，是所有这些危险的不可预测性。</p><p>你可能觉得，什么叫不可预测性，它无非就是复杂呗，有什么不可预测。因为人类文化从远古有人类开始，一直到今天，我们追求的就是可预测、可预见。对吧，现在搞商业的人都知道，任何计划执行无非是计划，执行，检查，调整，然后提高，无非就这几步。所有的事情我们都必须知道它要往哪发展。</p><p>什么叫不可预测性？如果世界陷入不可预测性，可以说所有原来工业社会建立的系统全部都崩溃掉，对，恭喜你答对了。这正是我们即将面对的局面。</p><p>这本书里记载了一个实验，叫沙堆实验。如果用一堆沙，我们一粒一粒的往下滴。那可想而知，一开始它会形成一个自组织，形成一个非常漂亮的圆锥形。我们在很多建筑工地上都见到，筛沙子。那底下堆出一个圆锥形，可是你也可以想到。随着沙粒一个一个往下滴，它不可能一直保持圆锥形。它总有一刻，整个沙堆会发生崩塌，尤其是那个尖，叭，就不成形了，对吧。</p><p>好，问题来了，这是科学上著名的沙堆问题。什么时候崩塌，可以预见吗？可以预测吗？最开始这个沙堆问题作为一个思想实验提出来的,提出者叫巴克，这个人他就认为，可能没法预测，但是没有验证。后来美国一位科学家就干脆来了一次实验，就进行了沙堆实验，发现巴克的猜测是对的，真的没法预测。</p><p>当沙堆堆出了一定的规模之后，再往上去，发生崩塌的概率每个点都一样。那你说为啥啊？不是好像堆得越多，越容易崩塌，没有这个规律。因为你想，他是沙子，他不是泥土。每一颗沙之间没有黏性。它只有挤压的那个作用。所以这个实验的执行者提出了一个数字。他说每下来一颗新沙之后，原来沙堆的内部结构的整个方程的复杂度，每一秒钟提升100万倍。</p><p>各位，你们都知道指数级是个什么概念，对吧。我们以前讲过荷塘效应，对呀，当每一秒钟整个系统的复杂性提升100万倍，请问，这是一个可能，人类现在还没有想过的一个数字，它的复杂性大到用任何计算机，即使是未来的超级计算机也不可能再计算的一种复杂性。而这种复杂性跟外部的任何冲击力是无关的。请注意，它只是沙堆内部的那种复杂性，发生了结构性的变化。但是没人知道它怎么变，这就是著名的沙堆实验。</p><p>我们想想我们现在的社会不就是这样吗？互联网起到了一个作用，把每一个人从传统的小共同体当中剥离出来，对吧。现在很多公司离职率大增，每一个年轻人都觉得，哈，我认识好多人，我网上网友多得是。那么多公司都在网上招聘，我随时可以去。你看，这就是剥离出来的一种力量。没有像我们的父辈那样，好不容易找一个工作，在单位要听领导的，争取哪一天当上班组长，哪一天提车间主任，都是顺着体系内往上爬。</p><p>现在不是啊，互联网给每一个人打开了眼界，让每一个人还原到我们刚才讲的沙子的状态，它不再是凝结在一起的图块，它几乎没有任何可建筑性。也就是说，当整个社会由这些分散的像沙粒一样的人和小组织构成的时候，沙堆实验当中呈现出来的一个逻辑，就可怕的出现在我们面前，就是在下一刻发生什么，你根本不可能知道。</p><p>这好挑战我们人类的思维习惯的好不好。我们人类都是用因果律来思考世界的，包括经济，我们都在说，经济不景气，那为啥呢？货币太紧。那央行什么时候开始减息，把货币放松一点呢？哎呀，要等美联储，要跟他们同步。怎么还不放松银根呢？看来央行行长得换人，央行行长换人了，你看经济马上就好了。</p><p>你看，我们理解复杂系统，原来都是从因果关系上去理解，所以那些经济学家们出来都会告诉你，现在经济这样是因为这个，那我的政策建议是动一下这几个指标，那马上经济就会好。所有的经济学家的演讲，在座无虚席的时候，他都会告诉你为什么。这就是因果关系的思维。</p><p>但是对不起，这本书里最让我震撼的，就是那个沙堆实验。当人类那么多种因素堆积在一起，不知道是什么原因，可能是一个新的NGO组织的诞生，可能是一个印度农民离家出走，可能是硅谷出现了一个新的技术，可能是北京中国村两家公司合并。就是这么一个沙粒往下一落，整个系统突然发生崩塌，你难道说这种可能性不存在吗？</p><p>对，越来越多的不确定性正在笼罩这个世界。要知道，20世纪，几乎所有的科学领域都出现了这样的进展，就发现，科学发展到最后，发现这个世界是不可预测的。20世纪初，海森堡就把不可测量带入了量子物理。后来什么流体动力学、信息论，包括数理逻辑里面都发现，最后否决了因果关系，否决了世界的可测量性、可理解性。发现很多现实才可以解释。</p><p>所以，这个世界的本质没准儿就是不可预期。那为什么呢 因为很多小家伙的力量当它逐步放大之后，爆发出来的后果是可怕的。</p><p>很多人都知道蝴蝶效应，对吧。一只蝴蝶煽动翅膀，那边儿就龙卷风。对呀，现在我们的商业的大组织也是这样，面对这样的不确定性。说到这儿，顺便给我们现在罗辑思维的赞助商金山的猎豹浏览器做个广告。你看现在国庆期间的抢票，首先是这些浏览器都在攻击大组织铁道部啊，对吧，然后一哄而上。你不是不让我抢票吗，封闭我的爬虫吗。没关系，你那点儿技术实力，对于小蚂蚁来说根本不算什么，每隔10分钟就破解你一次，然后又可以重新抢票。</p><p>更有意味的是，你看，在原来的大的浏览器公司，什么UC这些公司，他们不干这事，为什么？因为他们本身是大组织。只有猎豹和其他几家少数的浏览器在干这个事，这就是蚂蚁雄兵击败大象的故事。</p><p>我前几年在给很多企业当危机管理顾问的时候，有时候也管点儿公关的事。我就一直坚持一个观点：企业的舆论危机是不可管理、不可预防的，只能当它发生之后随之舞蹈，这是我一直坚定的观点。但我这个观点很得罪人，因为很多公司就是靠预防危机、管理危机来吃饭，我这么一说不是端了人家饭碗吗？我跟他们抬杠的时候我经常会说，一个大组织、一个大企业，当他在互联网下得舆论环境里的时候，你根本不知道某一个伤害的声音会被加速、会被强化到你企业根本承受不住的地步，而且你根本没法预判这种个人，可能就是一个个人。</p><p>所以很多人说，我能够管理危机，我说那你倒回头两年，你替中国红十字会把郭美美给我预测出来，怎么给我管理。郭美美到现在也没有证明跟中国红十字会有一毛钱的关系，但又待如何？中国红十字会整个名誉全部毁掉。对吧</p><p>当每一个风险都能成为一个郭美美级的风险，请问我们的企业还到哪里去躲？我们的风险还怎么预测呢？</p><p>《不可思议的年代》它告诉我们的第一个坏消息是，这个世界不可预测；而第二个坏消息就更要命了，这个世界不可控制。</p><p>这书当中举了一个例子，就是苏联解体。如果时光倒转，回到上个世纪80年代，如果那个时候你告诉世界上任何一个人，说哥们儿“我告诉你啊，苏联要解体”，没有人会相信，因为那是一个看起来坚若磐石、有着坚强的控制力，什么克格勃这些那样的一个国家，它的政治结构的稳固性比美国看起来要强大，它怎么就在短短几个月之内，呼啦啦大厦将倾，就这么垮掉了？</p><p>真的是很让人震惊，包括美国人在内。所以美国人刚开始时惊呆了，然后呢，开香槟庆祝，说“你看我们冷战赢了”。但是戈尔巴乔夫，你别说他弄垮了苏联，他弄垮了苏联之后，他一直反复强调的一个政治观点就是美国人一直说他们赢得的冷战这是个错误。</p><p>但是在美国人这边不这么看啊，然后他们就分析，写出一大堆文章，说因为我们搞星球大战计划把你经济拖垮了。有没有搞错?苏联是经济不太行,可是在它垮的那个时候,那可不是它最不行的时候。最不行的时候历史上多了去了,大饥荒一死几百万人，乌克兰大饥荒，那时候怎么没垮？对吧，而且苏联垮了之后，类苏联结构的国家到现在还有啊，古巴、朝鲜都有啊，它们经济更糟糕啊，怎么也没垮？这个原因是解释不通的。</p><p>第二，美国人说这是因为，我们搞了很多反苏宣传油印小册子，在苏联境内进行传播。本书的作者把这个分析告诉了俄罗斯的专家，俄罗斯的专家哄堂大笑， 说你不要搞错，那种油印小册子、什么美国之音的广播，在苏联人民的生活当中那已经是常备品。几十年了，那怎么会将好在80年代90年代初突然爆发力量呢？</p><p>这个你解释不通，那又有人说软实力，因为被牛仔裤、麦当劳、摇滚乐、美国的电视剧电影、好莱坞、迪斯尼，是被这些轰垮的。也不能说这个分析一点儿道理没有。持这个观点的是美国著名的战略学家奈斯比特，他就提出了软实力。几十年时间圆明园是这么被毁成现在这个样子，所以系统崩溃带来的后果，是美国人没曾想到的，这就是追求控制的结果。</p><p>你结束了一个灾难，迅速开始另外一个灾难。在人类历史上，所有高度控制的系统，当他一旦遇到一个具有高度灵活性的低度控制系统的时候，往往结论是惨败。</p><p>中国历史上就发生过这么一幕——解放战争。蒋介石当时就是追求中央控制，新一军新六军派往东北的时候，全副美式装备，所有的给养都由中央的后勤部队供给，军容非常整肃。中央军嘛，正规军嘛，蒋介石还不放心，打电话指挥战斗，一直要打到团长。好，你追求控制，那边延安呢，人家不追求控制。</p><p>东北野战军进东北的时候，就地征粮、就地征兵，先搞土改，然后动员人民参军，没有一套非常发达的后勤系统，但是照样部队很有灵活、很有战斗力、毛主席在延安，延安丢了没关系。中央控制系统，胡宗南你要，你要那给你吧，人家走了。</p><p>中央和各野战军之间的电报联系，甚至不太通畅，没有关系，将在外君命有所不受，随便打，给予四面解放军以充分的将在外的授权。</p><p>这是两个系统之间的差别，结果大家都知道了。</p><p>最典型的一个战役发生在辽沈战役当中的胡家窝棚战斗，两股部队纠缠在一起，爹找不着娘，娘找不着孩儿，连长找不到团长，团长找不到师长。林彪一看 哦，好嘛，越乱越好。因为共产党的军队是有价值观系统的，虽然打散了，他们都知道，哪里有敌人咱们就消灭他。</p><p>而国民党军队因为是中央控制，中央控制一旦丧失，那不就是没头苍蝇了吗？结果呢，结果在胡家窝棚这个地方，就是廖耀湘的司令部，就生被一个摸黑过去的共产党小分队端掉了。这个胡家窝棚战斗对辽沈战役整个这个战役的进程都产生了非常重要的影响。</p><p>对。面对一个越来越像生态系统的世界，越来越不像机械组织的世界，用控制这种方法，试图假设对方是一个死人的前提假设，你觉得还成立吗？</p><p>记得1974年，一个著名的经济学家自由主义大师哈耶克，获得了诺贝尔经济学奖。在颁奖演说的时候，他刚开始客气了两句啊，感谢我们经济学家这个殊荣。然后话锋一转，他说很多人都以为，经济学家能够给当前的经济一剂灵丹妙药，但是对不起，我给不出来。而且我要告诉你，现在经济遇到的所有问题，都是经济学家捣的乱，都是他们给政府瞎出主意，今天印发货币，明天货币超发等等，现在我们所有的麻烦都应该归咎于他们。所以短短二十分钟的演讲，哈耶克整个讲下来，你听下来，就好像代表全世界的经济学家向全体人民道个歉，在演讲的最后哈耶克说，整个世界是一个非常复杂的系统，我们没有任何人有足够的知识，可以了解、理解甚至是控制它，所以我们不要假装像工匠那样，以为可以把世界设计得尽善尽美，我们只可能像园丁那样，爱护这个生态系统 帮助它的成长，那么这篇演说的名字叫做《似乎有知识》。</p><p>对呀，面对这个世界，越来越复杂的世界，越来越像一个果园的世界，越来越复杂的生态系统，我们只是似乎有知识，我们对这个世界其实一无所知。</p><p>在罗辑思维以前的视频节目里，比如说《夹缝中的80后》、《这一代人的怕与爱》、《躺倒也能当英雄》这几期节目里，我们都在强调个体的崛起，而今天我们要讲的是大组织，面对个体崛起之后的困境，怎么破？有解法吗？有。本书作者就提出了一个思路，叫深度安全。</p><p>这个思路比较复杂，简单说就两条：第一条就是放眼全局。但是你要说这玩意儿新鲜吗？不新鲜。尤其是我们中国人听起来，这叫什么新鲜？</p><p>中国的兵法一直心中是有全局观的，在兵法中讲究一个“势”。什么叫“势”？“势”就是我制造一种情况，让敌人按照我想让他去的那个方向去运动，这就是制造“势”。</p><p>在现在的以色列和巴勒斯坦，你就会看到这种中国古代兵法的取势的思维，在双方对攻当中的精彩运用。要知道在现在的以色列和巴勒斯坦之间的对攻，对方叫真主党，这边是以色列正规的国防军。</p><p>双方都不是怂人，真主党多厉害，真主党可以说是中东恐怖组织，当然他们不承认自己是恐怖组织，这是美国人的污蔑。在这种组织当中他是最成功的，美国人甚至跟格鲁吉亚人说，你们要跟俄罗斯干，别跟我们学，你们跟真主党学，这是真主党的一个领袖跟这本书的作者讲的。</p><p>美国人都很佩服他，对呀。真主党经常靠几百个战士，就跟以色列的几万名士兵对峙，基本还能打一平手。真主党用的是什么方式呢，就是分散灵活式，游击队啊，各种各样的分散方式，而且跟老百姓充分结合。</p><p>比方说真主党有一个绝招，给老百姓盖房子，就是你以色列不是经常轰炸吗，房子坏了，就相当于我们红军当年给老百姓挑水是一个道理，在盖房子的过程当中，他跟当地老百姓就结成非常深厚的友谊，就形成了对真主党支持的整个的民意基础。</p><p>所以以色列在2006年，对巴勒斯坦地区进行了一次战争，这次战争，不好意思，以前的中东战争都是以色列赢。唯独2006年这一次，以色列铩羽而归，没有赢。为什么？因为对方就是充分利用了互联网时代的灵活性组织，像蚂蚁一样的真主党，因为你原先觉得，我的所有情报都搜集好了，然后一去打发现没了。你看一眼中国的电影，地道战，你就知道是怎么回事了，他就具有那样的灵活性</p><p>我们再看以色列这边，以色列他也在想问题，2001年的时候，以色列上任了一名最高的情报部门的官员，他叫法卡什，但是很可惜，他在2006年退休了。所以他那套政策没有执行到底，但是他当时给以色列的情报部门，就奠定下了一个基础，就是我不是去判断威胁从哪里来。</p><p>法卡什一直觉得，因为以色列这个国家安全环境太险恶了，周边全是敌人，他说我们关键要着眼于全局，所以他在做情报头子的时候，他关注的可不是说叙利亚有多少坦克，他想的可不光是这个事，他想的更多的是，比如说一笔钱要汇到加沙需要几个小时，今天整个黎巴嫩的就业形势会怎么样，包括老百姓的菜价涨没涨，他拼命搜集这些情报，搜集这些情报干什么，他在拼命看我面对的对手的整个的网络状态。</p><p>所以到最后，你看现在以色列人就明白了，他发明了一套战术，就是定点清除。你不要以为这个定点清除，就是谁官大就给她炸死，不是。既然你是蚂蚁型的组织，你是蚂蚁雄兵，那我就要仔细分析你的网络，谁是关键节点，谁是结构洞，那我就要把这个结构洞给它打掉。</p><p>所以在2006年战争之后，就多次发生真主党的关键性人物被以色列的炸弹定点清除掉，那这种对对方网络的摧毁就是有用的，所以你看，这就是一种着眼于全局的思路。</p><p>所以很多东西都是这样，良好的愿望都是这样，我们想控制一件事情，我们想推动一件事情，但是实际结果呢？比方说中国最近新闻说，回家经常得看看，这件事得立法，不孝敬老人这个不行。最近又听说读书要立法，不读书判刑这事好像有点不对，但是你看，所有这种思维都是中央对边缘的控制型思维，说我们拍桌子喊，新闻联播播了，这全民得读书，是好意，可问题是这种控制结构面对一盘散沙，互联网式的纷乱的这样的一个生态系统，你真能起到作用，你能呼唤读书？</p><p>老百姓就真的拿起书本，哪个人不知道读书重要，所以这种，甭管你是立法，还是加大了中央的宣传，都是没用的，那什么是有用的呢？着眼于全局，安排各种各样，你别直接冲读书这样的事去，说个无耻的话，可以扶持罗辑思维这样的节目嘛，然后由罗辑思维这样的节目，组织一个一个读书社群，你也形成你的网络呀，然后让这些种子来进行生长，这恰恰是放弃控制的思路。而用生态对生态的观点，用全局的思维来达成自己目标，这就是这本书提到的第一个思路，</p><p>那第二个呢 第二个就是组织变形。就是既然对方是蚂蚁，你非要当一个大象，那对不起，你只有被蚂蚁啃死的结局，不可能有第二个game over的可能。</p><p>那怎么组织变形呢？我们为什么这一集讲很多军事。因为你要知道，在五百强企业中，西点军校毕业的比哈佛商学院毕业的可多。所以你看，美国人后来打阿富汗的时候，他就进行了一次非常重要的组织形变。主导这个组织形变的人叫拉姆斯菲尔德，美国人当时的国防部长。我们中国人不太喜欢他，他对中国态度不友好，但是他确实在任上做了一件事情，就是把美国的战斗组织进行了重组。</p><p>原来苏军打阿富汗的时候，也是正规军往里开，是中央控制系统往里走，最后铩羽而归。那美国人呢？他们不这么干，他说我们把成本结构颠倒一下。原来是70%的成本用于火力，30%的成本用于寻找目标。拉姆菲尔德说，我们能不能通过组织创新把这个成本结构给颠倒，怎么办呢？70%成本用于搜索目标，30%成本用于对敌打击。</p><p>所以他就把所有的美国大兵，据说是分成了好几百个三人小组。那这个三人小组，一个是炸弹专家，一个是通信专家，一个是战斗专家。你们三个人就结成伴，在阿富汗山区寻找，一旦发现塔利班组织的人，情报专家，就是通信专家向后方呼叫，他们三个人带一套5000万美元的装备，专门用于搜寻，然后前方向后方呼叫，一封电邮后方就直接发导弹，把它定点清除，甚至是弹药量都是计算好的。</p><p>所以后来中国的民营企业家，也是著名的思想家冯仑，他就提出，他说看来以后的正规组织的变形方向，就是这个方向。所以他给这种组织起名叫“特种部队组织”，所以未来的组织系统的变化很可能就是这样，让前线听得到炮声的人发命令，后台去做支持，而不是后台发命令、前方去执行。让听得见炮声的人做决定，这也是最近这几年华为这家中国很有创新精神的公司提出来的。</p><p>组织变革的这种方向，在这本书里其实举了很多这种组织变形的例子。在十几年前，巴西有一家企业，这个企业主叫塞姆勒，说巴西通胀率已经到了百分之百了。塞姆勒讲过一句话，说在这个国家做商人，就像地震的时候骑在一头暴怒的公牛上，真正可拍的还不是这公牛的颠簸，而是这地震。就是这个国家的，整个经济环境不太稳定，当企业没法干的呀，所以他企业也亏本，所以他最后就说 算了，不干了。</p><p>可是你不干是不干，你这个工厂的工人怎么办？工人代表就找他谈判，说这样，你也别不干了，我们主动降低工资，但是你答应我们两个条件。啥条件呢？第一、我们以后如果工厂挣钱了，我们分红能不能增加点？塞姆勒说这个可以。 因为反正现在是什么都没有，以后万一挣钱多分点就多分点，这可以。第二条、工会的人说，以后你签出去的每一张支出的支票，得有我们工会代表的附签，就是花每一分钱你都是花我们的，塞姆勒说这也行，反正什么都没有了嘛，死马当活马医。</p><p>你知道结果发生什么情况？就在通胀率百分之百的情况下，这家企业居然盈利了。因为每一个工人都觉得，这是我的公司，他要是死了我就没饭吃。最典型的一个例子，后来这个通货膨胀期过去了，然后塞姆勒说，这个体制好啊，他就保持下来，什么都让工人自己做决定，说我啥都不管。</p><p>有一次选择新建工厂的地址，塞姆勒说你们工人自己决定，你们选，选完你们自己投票。这工人就选择了一块地，这块地旁边就是常年闹罢工的地方。塞姆勒心里说，这行吗，天天乱哄哄的，天天在罢工。结果工厂建成之后，就出现这样的情况，旁边天天在罢工、游行。这家工厂里的工人天天钻在车间里搞技术革新。</p><p>塞姆勒还讲过一个例子，说有一个车间，因为他的叉车工人八点上班 ，可是这个车间工人说，八点何必呢，早点上班吧，多干点活呗，七点上班。叉车工人，那个哥们就死活就不干，说我回家得送孩子上学，我可不干。结果呢？结果这个车间所有的工人都学会了开叉车。</p><p>所以你看这个底层的力量有多大，所以塞姆勒这家公司现在变成巴西一家特别奇怪的公司，可能在全世界也是独创的，就是他不知道他雇佣了多少人，他也不知道这家企业在干什么，因为这决定都不是他在做的，他只是作为一个大股东、精神领袖，经常到车间里跟同志们握握手就行了。</p><p>你看底层力量一旦激发起来，这是吓死人的力量，而底层力量怎么激发？组织得变革，这是这本书给我们提供的第二个答案。</p><p>其实我们在中国的企业当中，你能说这样的变革少吗？太多了。就前不久我刚遇到一个广州的企业家，他是一个典型的传统制造业，他一直渴望能完成互联网转型。可是他琢磨来琢磨去，他觉得靠我自己可能没戏，所以他就想了一个招，他说这样啊，你们不都想跳槽吗？嫌这制造业没前途，这样你们就想呗，你们要创业创什么，每年两次我们在公司搞创业PK大赛，跟那个什么《赢在中国》是一样一样一样的，然后你们就来说说完了咱们全民来投票，如果你是这届大赛，你赢了，你去创业，我支持，给你个人股份，白给，然后，你来创业公司，我控股就行。</p><p>那你想对于有创业计划的人，他就很有新鲜感啊，也很有吸引力啊。结果几年之后，这家传统制造业企业居然控股了几个具有强烈互联网基因的企业的子公司。所以很多人都说，变革难变革难，要知道变革，你变革的是什么，你以为变革产品就行了？你以为搞一搞市场调研就行了？不行的！组织得变！这是这本书给我们提供的第二个答案。</p><p>但是我想补充一个我个人的观点，就是既然世界是不确定性的，那怎么办呢？其实终极的答案是:以不确定性对不确定性。</p><p>我还记得当年听《冬吴相对论》的时候，吴伯凡老师讲过一句话我印象非常深，他说什么是健康？健康就是指在得病和不得病之间的那种摇摇欲坠的状态。对啊，世界上哪有绝对的好事，绝对的好和绝对的坏？你每个人自己想，可能你认为你是健康的，可是你从头到脚想，你发现你浑身都是毛病。不说别的，你就说你的牙，你敢说自己所有的牙都是标准的完整的好的？不可能！整个世界都是不完美的。可是，传统的尤其像日本的管理学那一套，都是想把事情往完美去做。这是工业社会，在确定性的时代用控制的方法来达成的一个目的。</p><p>但是，对不起，这个时代已经过去了。尤其在互联网让每一个个人都崛起的时代，如果你再用确定性可控制的思路去面对你的竞争对手，你可能就会面对大象被蚂蚁吃掉这样的结局。那怎么办？用不确定性对抗不确定性。</p><p>那什么叫不确定性？回到最后，其实就是一个人字。我们还会说到战争，其实你会发现战争是最具有不确定性的。尤其在古代战场上，也没有那么多的侦察设备，也许连敌方在哪儿都不知道。所以古代的名将他不见得一定是大儒。当然后代的知识分子往往喜欢讲什么儒将，爱读兵书战策，那不扯淡吗？很多名将一个大字都不识！</p><p>我看高阳先生写的那个清代的名将鲍超，那个人就不识字，但是有很好的直觉。他的部队都是那样，他站在山头，一看时候差不多了，“兄弟们们，冲！”就冲下去了。但是什么时候喊这“兄弟们，冲！”这就是不确定性，这个不确定性只有在有非常好的直觉将领的心中才会有。</p><p>所以，岳飞，岳武穆大人有一句名言名留史册，他说:“运用之妙，存乎一心”。请注意“一心”哦，只有一个人的心里可以掌握这个秘密。所以柳传志先生曾经讲过一句可能被西方管理学要笑话死的一句话，说在中国做企业要因人设事，这个事从理论上推导再靠谱也没用，你别告诉我这事儿，我不干，什么时候可以干？事儿靠谱，更重要的是，我找到靠谱的人。我觉得这个人能够控制这个事，这事就可以干了。这叫因人设事。</p><p>所以乔布斯故去以后，你骂库克有什么用？他就不是乔布斯，你希望他达到乔布斯用他的那个不确定性和创造性完成的那种创新，可能吗？他就不具备乔布斯的那种不确定性，他就不可能带来令你惊讶的结果。所以现在的苹果发布会基本上都提前剧透完成了，就这个原因，因为这个人的不确定性没有那么多。</p><p>所以回到这本书，你看也是不确定性。这本书的腰封我就给弄丢了，这腰封上写着几个字:“旧时代的全球秩序摇摇欲坠，传统的精英们束手无策，现在是轮到我们登场的时候了，我们每个人都可以参与创造我们的社会”。就是这本书的腰封上的那句话对以不确定性对付不确定性，所以很多友人在问，说你《罗辑思维》有确定性吗？万一你罗胖哪天出车祸死了呢？要是你哪天厌倦了，不想干了，这个商业模式不就垮了吗？</p><p>对啊，但是我的答案是两条:第一垮了就垮了呗，我想干的事情，它就是回归了生态系统，生态系统生物就像草一样，一岁一枯荣，有时生，有时死，这难道不正常吗？为什么要追逐那种控制一定要基业常青呢？“老而不死谓之贼”，如果没有了生命力却还活着，那叫吸血僵尸，所以为什么要追求长久？这是我的第一个回答；第二个回答:如果它要长久怎么办？还是回到生态系统。</p><p>所以我们今天在节目的最后，向镜头前睿智的您发出一个非常正式的邀约:《罗辑思维》不可能靠罗胖子一个人永远这样做下去，如果各位，你觉得你是和我们的价值观，和我们有一样梦想的人，OK，不管用什么方式，你来讲，我们支持，你讲一部分，我替你讲一部分，我们支持，或者你写一个方案，来支持我来讲，我会在节目的最后登出你的照片，给予你隆重的感谢，所有的方式，任你挑，但是请参与到我们的时代，我们的社会重建当中来，我们等着你！</p></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Probability/" rel="tag"><i class="fa fa-tag"></i> Probability</a></div><div class="post-widgets"><div class="wp_rating"><div id="wpac-rating"></div></div></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/Concept/Concept.html" rel="next" title="Concept"><i class="fa fa-chevron-left"></i> Concept</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/Concept/Platform.html" rel="prev" title="Platform">Platform<i class="fa fa-chevron-right"></i></a></div></div></footer></div></article></div></div><div class="comments" id="comments"></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div id="sidebar-dimmer"></div><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> Table of Contents</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> Overview</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/img/headonhill.jpg" alt="Author"><p class="site-author-name" itemprop="name">Author</p><p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">244</span> <span class="site-state-item-name">posts</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">7</span> <span class="site-state-item-name">categories</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">380</span> <span class="site-state-item-name">tags</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="http://blog.163.com/zhuxuanlv@126/" target="_blank" title="Blog"><i class="fa fa-fw fa-globe"></i> Blog</a></span><span class="links-of-author-item"><a href="mailto:deepcreator18@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i> E-Mail</a></span></div><div id="days"></div><script language="javascript">function show_date_time(){window.setTimeout("show_date_time()",1e3),BirthDay=new Date("04/01/2018 16:01:00"),today=new Date,timeold=today.getTime()-BirthDay.getTime(),sectimeold=timeold/1e3,secondsold=Math.floor(sectimeold),msPerDay=864e5,e_daysold=timeold/msPerDay,daysold=Math.floor(e_daysold),e_hrsold=24*(e_daysold-daysold),hrsold=setzero(Math.floor(e_hrsold)),e_minsold=60*(e_hrsold-hrsold),minsold=setzero(Math.floor(60*(e_hrsold-hrsold))),seconds=setzero(Math.floor(60*(e_minsold-minsold))),document.getElementById("days").innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second "}function setzero(e){return e<10&&(e="0"+e),e}show_date_time()</script></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#随机漫步的傻瓜"><span class="nav-number">1.</span> <span class="nav-text">随机漫步的傻瓜</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机会的数学原理——明知其输而博赢的概率分析"><span class="nav-number">2.</span> <span class="nav-text">机会的数学原理——明知其输而博赢的概率分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一句话明白：什么是统计？什么是概率？"><span class="nav-number">3.</span> <span class="nav-text">一句话明白：什么是统计？什么是概率？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Probability-Theory"><span class="nav-number">4.</span> <span class="nav-text">Probability Theory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概率论"><span class="nav-number">5.</span> <span class="nav-text">概率论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生活例子"><span class="nav-number">5.1.</span> <span class="nav-text">生活例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#历史"><span class="nav-number">5.2.</span> <span class="nav-text">历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件"><span class="nav-number">5.3.</span> <span class="nav-text">事件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大数定律"><span class="nav-number">6.</span> <span class="nav-text">大数定律</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中心极限定理"><span class="nav-number">7.</span> <span class="nav-text">中心极限定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析"><span class="nav-number">8.</span> <span class="nav-text">基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么明星富商都迷信大师"><span class="nav-number">9.</span> <span class="nav-text">为什么明星富商都迷信大师</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最简单概率论的五个智慧"><span class="nav-number">10.</span> <span class="nav-text">最简单概率论的五个智慧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#比黑天鹅更险：破解大概率危机"><span class="nav-number">11.</span> <span class="nav-text">比黑天鹅更险：破解大概率危机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概率权：“算”出来的富人思维"><span class="nav-number">12.</span> <span class="nav-text">概率权：“算”出来的富人思维</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#临界知识：复利效应和概率论"><span class="nav-number">13.</span> <span class="nav-text">临界知识：复利效应和概率论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查理芒格：相信概率不相信运气"><span class="nav-number">14.</span> <span class="nav-text">查理芒格：相信概率不相信运气</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么说概率有时不靠谱"><span class="nav-number">15.</span> <span class="nav-text">为什么说概率有时不靠谱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人的一切都是偶然"><span class="nav-number">16.</span> <span class="nav-text">人的一切都是偶然</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#罗辑思维：人类灭绝的一种可能-115"><span class="nav-number">16.1.</span> <span class="nav-text">罗辑思维：人类灭绝的一种可能 115</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#罗辑思维：大公司-和蚂蚁一起舞蹈-41"><span class="nav-number">16.2.</span> <span class="nav-text">罗辑思维：大公司:和蚂蚁一起舞蹈 41</span></a></li></ol></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2018</span><span class="with-love" id="animate"><i class="fa fa-user"></i></span> <span class="author" itemprop="copyrightHolder">Author</span></div><div class="busuanzi-count"><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv" title="Total Visitors"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span><span class="site-pv" title="Total Views"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script type="text/javascript">var GUEST=["nick","mail","link"],guest="nick,mail,link";guest=guest.split(",").filter(function(e){return-1<GUEST.indexOf(e)}),new Valine({el:"#comments",verify:!1,notify:!1,appId:"TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz",appKey:"PXNkGhS05PxL7rV3N8gDlAQe",placeholder:"Just go go",avatar:"mm",meta:guest,pageSize:"10",visitor:!1})</script><script type="text/javascript">
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="为了增加达成目标的概率，需要持续自我成长和进化。——DeepCreator">
+<meta name="keywords" content="Probability">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Probability">
+<meta property="og:url" content="http://deepcreator.com/Concept/Probability.html">
+<meta property="og:site_name" content="Ai Lab">
+<meta property="og:description" content="为了增加达成目标的概率，需要持续自我成长和进化。——DeepCreator">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/Probability2.png?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/randomness20180621.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="https://img3.doubanio.com/view/subject/l/public/s1407781.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-c0a0d854d1b8ac65ecea2d02ca7050f7_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-b7dc1b094a609dae26e3ca1ba011d1c0_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-cdb7808a1911c58d5d020420901ee582_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-4064812aac8f042f00dc6d54e9a7620d_b.png">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/cover_1080x600.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/probability01.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/event01.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/collection01.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/traditionalprobability.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/statistics.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/modelprobability.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://opb37u589.bkt.clouddn.com/bayestheory.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/HistPropOfHeads.png/450px-HistPropOfHeads.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Binomial_Distribution.svg/450px-Binomial_Distribution.svg.png">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1312.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/170.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1414.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/239.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/326.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/427.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/525.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/617.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/715.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/813.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/910.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1012.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1117.jpg">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2015/06/1214.jpg">
+<meta property="og:image" content="http://www.luojiji.com/data/attachment/forum/201512/29/162218syyj0uu30qu6oogf.jpg">
+<meta property="og:image" content="http://www.luojiji.com/data/attachment/forum/201703/30/154157fwrznxfw0on0kf6r.jpg">
+<meta property="og:image" content="http://www.luojiji.com/data/attachment/forum/201703/30/154304wadpkwnfnebzp5e5.jpg">
+<meta property="og:image" content="http://www.luojiji.com/data/attachment/forum/201512/15/171743nnbh5nbnh783xns8.jpg">
+<meta property="og:updated_time" content="2018-08-01T13:22:16.467Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Probability">
+<meta name="twitter:description" content="为了增加达成目标的概率，需要持续自我成长和进化。——DeepCreator">
+<meta name="twitter:image" content="http://opb37u589.bkt.clouddn.com/Probability2.png?imageMogr2/thumbnail/!75p">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://deepcreator.com/Concept/Probability.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Probability | Ai Lab</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="http://p53s4d2qk.bkt.clouddn.com/deepcreator220180502.JPG"
+               alt="Ai Lab"/>
+        </a>
+      </div>
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ai Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Minority, Right, Value</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-info-circle"></i> <br />About</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://deepcreator.com/Concept/Probability.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="Chief IPR Officer in AI Age">
+      <meta itemprop="image" content="/img/headonhill.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ai Lab">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Probability
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-06-07 11:00:06" itemprop="dateCreated datePublished" datetime="2018-06-07T11:00:06+08:00">2018-06-07</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-01 21:22:16" itemprop="dateModified" datetime="2018-08-01T21:22:16+08:00">2018-08-01</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Concept/" itemprop="url" rel="index"><span itemprop="name">Concept</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Concept/Probability.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count valine-comment-count" data-xid="/Concept/Probability.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://opb37u589.bkt.clouddn.com/Probability2.png?imageMogr2/thumbnail/!75p" alt="Probability2.png"></p>
+<blockquote>
+<p>为了增加达成目标的概率，需要持续自我成长和<a href="https://deepcreator.com/Concept/Evolution.html">进化</a>。——DeepCreator</p>
+</blockquote>
+<a id="more"></a>
+<p>概率是对随机事件发生的可能性的度量，一般以一个在0到1之间的实数表示一个事件发生的可能性大小。</p>
+<h2 id="随机漫步的傻瓜"><a href="#随机漫步的傻瓜" class="headerlink" title="随机漫步的傻瓜"></a><a href="https://book.douban.com/subject/10773362/" target="_blank" rel="noopener">随机漫步的傻瓜</a></h2><p><img src="http://p53s4d2qk.bkt.clouddn.com/randomness20180621.jpg?imageMogr2/thumbnail/!75p" alt="randomness20180621.jpg"></p>
+<p>《随机漫步的傻瓜》内容简介：塔勒布在《随机漫步的傻瓜》中指出：<strong>你的<a href="https://deepcreator.com/Concept/Success.html">成功</a>不见得是因为比其他人高明，而很可能是运气的结果。</strong></p>
+<p>开劳斯莱斯的摇滚乐手、把印象派画作抬到天价的投机客，拥有私人飞机的企业家和牙医相比，哪一个更富有？答案可能让你吃惊：牙医。因为他的职业生涯几乎没有什么<a href="https://deepcreator.com/IPR/Risk.html">风险</a>，可能出现的灾难少之又少，也不会像投机客和企业家那样垮台，所以，牙医其实相当富有。</p>
+<p>塔勒布生活的最大特点是<strong>不确定性</strong>，随机现象比比皆是，大起大落常常发生在须臾之间。当随机性的黑天鹅出现时，你可能一夜暴富，也可能在一次失误中回到原点。但我们天生倾向于忽视低<a href="https://deepcreator.com/Concept/Probability.html">概率</a>事件的可能性，无论这些事件会引发多大的灾难。《随机漫步的傻瓜》以深刻独到的<a href="https://deepcreator.com/Concept/Viewpoint.html">视角</a>，告诉你这个随机世界的规律和运行方式。随机性虽然无法避免，但我们可以学着接受它。就像在<a href="https://deepcreator.com/Business/Investment.html">投资</a>市场上，如果一个小概率事件可以带来巨额回报，为什么不在这个事件上持续下注呢？换一种<a href="https://deepcreator.com/Concept/Thinking.html">思维</a>方式，做“随机漫步的傻瓜”，我们对<a href="https://deepcreator.com/Concept/Life.html">人生</a>的了解无疑将大为增进。</p>
+<h2 id="机会的数学原理——明知其输而博赢的概率分析"><a href="#机会的数学原理——明知其输而博赢的概率分析" class="headerlink" title="机会的数学原理——明知其输而博赢的概率分析"></a><a href="https://book.douban.com/subject/1281171/" target="_blank" rel="noopener">机会的数学原理——明知其输而博赢的概率分析</a></h2><p>Taking Chances: Winning with Probability</p>
+<p><img src="https://img3.doubanio.com/view/subject/l/public/s1407781.jpg" alt=""></p>
+<h2 id="一句话明白：什么是统计？什么是概率？"><a href="#一句话明白：什么是统计？什么是概率？" class="headerlink" title="一句话明白：什么是统计？什么是概率？"></a><a href="https://zhuanlan.zhihu.com/p/28105785" target="_blank" rel="noopener">一句话明白：什么是统计？什么是概率？</a></h2><p>有一次我“老婆”听我在讲课，讲的是《学习统计对你人生的重要意义是什么？》。讲完课后，我给她说，统计概率真的很重要，然后balaba。</p>
+<p>她只淡淡的回了我一句，我竟无言对：</p>
+<p>虽然我知道你说的很对，但是什么是统计概率呢？对我有什么帮助呢？<br>当我长篇大论的解释给她听时，她已经不耐烦了：我不是要听你这些晦涩难懂的名称，你应该用生活中的例子讲我听，毕竟我是小白。如果你跟我讲化妆品什么牌子好，我倒是能立马明白。（女人啊）</p>
+<p>这句话彻底击中了我的痛点，想让没学过，没有任何基础的人明白什么是统计，什么是概率，确实不容易。难道没有办法了吗？</p>
+<p>直到我反复查资料，然后根据我的生活经历，有一天这么跟她聊的时候，她立马明白了什么是统计，什么是概率。还说要好好学习这个“最赚钱的思维”工具呢。我是怎么和她聊的呢？</p>
+<p>猴子：老婆，我给你讲个笑话吧。</p>
+<p>老婆：如果不好笑，小心我的无影脚。</p>
+<p>猴子：某次生物课考试，有一道题是看动物的脚，猜该动物的名称，一考生实在是不会做，愤怒的把试卷撕掉就往外走，老师看见了，抓住他大声说道：“你哪个班的，这么嚣张”。学生把裤腿一提，说道：“你猜啊，你猜啊！”</p>
+<p>这个笑话虽然你很早听过，但是很多人却没看懂这个学生绝对是个统计高手。（忽悠，接着忽悠）。</p>
+<p>统计就是给你黑盒子里面装着猫和狗，只让你看到他们的腿，然后让你猜哪个腿是猫的。</p>
+<p><img src="https://pic4.zhimg.com/v2-c0a0d854d1b8ac65ecea2d02ca7050f7_b.jpg" alt=""></p>
+<p>你可能会问，这怎么猜？</p>
+<p>在统计里会总结过去的数据，然后对这些数据进行总结归纳。就像刚才的例子，我们要判断出哪个腿属于猫。需要收集所有猫的腿（也就是过去的数据），然后总结这些腿的特征（总结归纳）。当图片里的腿出现时，你可以根据之前的总结归纳来判断出这腿是不是猫的腿。</p>
+<p>当然，你也不会无聊到判断哪只腿是猫，哪只腿是狗的（更多时候我还是喜欢看美女的腿，，窃喜）。举个更加实际的例子，在医院会对过去有糖尿病的所有病人进行归纳总结（建立模型），当有一个新的病人入院时，就可以用之前的归纳总结来判断该病人是否患糖尿病，然后就可以对症下药了。<strong>统计里常说的“分类”就是这个过程。</strong></p>
+<p>所以，<strong>统计是对过去数据进行“总结归纳”</strong>。可以用下图表示：</p>
+<p><img src="https://pic1.zhimg.com/v2-b7dc1b094a609dae26e3ca1ba011d1c0_b.jpg" alt=""></p>
+<p>那什么是概率呢？</p>
+<p>概率是用数值来表示事情发生的可能性大小。举个例子小马去创业了去找投资人王思聪要钱。王思聪可不是傻X。然后就派猴子我去调查小马过去的经历（看他有什么创业的条件），然后预测他可能成功的概率是多大。经过深入调查我发现小马他爸是马云（给定条件），得出小马创业概率成功率是99%（预测未来）。</p>
+<p>如果我们用猫和狗这个例子来举例，就是给了你猫和狗的行为特征（给定条件），然后预测猫和狗明天撕逼的可能性多大。</p>
+<p><img src="https://pic3.zhimg.com/v2-cdb7808a1911c58d5d020420901ee582_b.jpg" alt=""></p>
+<p>所以，<strong>概率是给定条件，对“数据”进行预测</strong>，可以用下图来表示：</p>
+<p>用简单的话来总结：</p>
+<blockquote>
+<p>统计＝回顾过去，进行归纳总结<br>概率＝给定条件，对未来进行预测</p>
+</blockquote>
+<p>用稍微专业一点的话来总结：<br>统计＝样本(回顾过去的数据)归纳出总体(总结)<br>概率率＝总体(给定条件)对样本进行预测</p>
+<p>用“专家”的话来解释，就是：</p>
+<p>Lary Wasserman 在 《All of Statistics》 的序言里有说过概率论和统计推断的区别：</p>
+<p>1）The basic problem of statistical inference is the inverse of probability:Given the outcomes, what can we say about the process that generated the data?</p>
+<p>2）The basic problem that we study in probability is: Given a data generating process, what are the properities of the outcomes?</p>
+<p>有很多人，给出了这个图，其实理解起来还是比较费劲的。在有前面的理解基础上，再看这个图，你就更容易理解了。</p>
+<p>下图翻译：</p>
+<p>统计学：根据手中信息，猜猜桶里有啥？(样本归纳总结出总体)</p>
+<p>概率论：根据桶中信息，猜猜手里有啥？(总体对样本进行预测)</p>
+<p><img src="https://pic2.zhimg.com/v2-4064812aac8f042f00dc6d54e9a7620d_b.png" alt=""></p>
+<p>参考资料：</p>
+<p>1）<a href="https://betterexplained.com/articles/a-brief-introduction-to-probability-statistics/" target="_blank" rel="noopener">https://betterexplained.com/articles/a-brief-introduction-to-probability-statistics/</a></p>
+<p>2）《学习统计概率的重要意义是什么》音频课程无法上传，可以在我的微信公众号：猴子聊知识，中回复“意义”获取。</p>
+<h2 id="Probability-Theory"><a href="#Probability-Theory" class="headerlink" title="Probability Theory"></a>Probability Theory</h2><p><img src="http://opb37u589.bkt.clouddn.com/cover_1080x600.jpg?imageMogr2/thumbnail/!75p" alt="cover_1080x600.jpg"></p>
+<blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/%E6%A6%82%E7%8E%87%E8%AE%BA" target="_blank" rel="noopener">研究随机性或不确定性等现象的数学。</a></p>
+</blockquote>
+<h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a><a href="https://zh.wikipedia.org/wiki/%E6%A6%82%E7%8E%87%E8%AE%BA" target="_blank" rel="noopener">概率论</a></h2><p>概率论（英语：Probability theory）是集中研究概率及随机现象的数学分支，是研究随机性或不确定性等现象的数学。概率论主要研究对象为随机事件、随机变量以及随机过程。对于随机事件是不可能准确预测其结果的[1]，然而对于<strong>一系列的独立随机事件——例如掷骰子、扔硬币、抽扑克牌以及轮盘等，会呈现出一定的、可以被用于研究及预测的规律</strong>[2]，两个用来描述这些规律的最具代表性的数学结论分别是<strong>大数定律</strong>和<strong>中心极限定理</strong>。</p>
+<p>作为统计学的数学基础，概率论对诸多涉及大量数据定量分析的人类活动极为重要[3]，概率论的方法同样适用于其他方面，例如是对只知道系统部分状态的复杂系统的描述——统计力学，而二十世纪物理学的重大发现是以量子力学所描述的原子尺度上物理现象的概率本质[4]。</p>
+<p><img src="http://opb37u589.bkt.clouddn.com/probability01.JPG?imageMogr2/thumbnail/!75p" alt="probability01.JPG"></p>
+<h3 id="生活例子"><a href="#生活例子" class="headerlink" title="生活例子"></a>生活例子</h3><p>人们对概率总是有一点触摸不清的感觉，而事实上也有很多看似奇异的结果：</p>
+<p>1; 六合彩：在六合彩（49选6）中，一共有13,983,816种可能性（参阅组合数学），</p>
+<p>如果每周都买一组不相同的号，一年有52周，则在实验越多次（一直买直到中奖算一次）之后，平均中奖所花的时间会越接近 {\displaystyle {\frac {13983816}{52}}=268919} {\frac {13983816}{52}}=268919。 <strong>事实上，即使每周买相同的号，获得头奖的概率也是相同的。</strong> 但假设每周实际中奖的组合都不重复，268919年的算术推论是正确的，这说明概率和其他数学理论可能导出不同的结论。</p>
+<p>2; 六合彩：仍然是六合彩。买5, 17, 19, 24, 33, 49中奖概率高还是买1,2,3,4,5,6的中奖概率高?</p>
+<p>古典概率论说：一样。<br>但实际上机械或彩球制造上都有些微小的差异，所以每组概率不一定完全相同，但必须累积多期开奖结果后才看得出来。</p>
+<p>3; 生日悖论：在一个足球场上有23个人（2×11个运动员和1个裁判员），</p>
+<p>不可思议的是，在这23人当中至少有两个人的生日是在同一天的概率要大于50％。 如果这23人都没有相同的生日也不违反概率，只是小于50％。</p>
+<p>4; 轮盘游戏：在游戏中玩家可能认为，在连续出现多次红色后，出现黑色的概率会越来越大。</p>
+<p>这种判断也是错误的，即出现黑色的概率每次是相等的，因为球本身并没有“记忆”， 它不会意识到以前都发生了什么，其概率始终是 {\displaystyle {\frac {18}{37}}} {\frac {18}{37}}。<br>但轮盘的前后期开奖数字形成时间序列（可能存在自回归模型）。</p>
+<p>5; 赢取电视节目里的名车：在参赛者面前有三扇关闭的门，其中只有一扇后面有名车，而其余的后面是山羊。</p>
+<p>游戏规则是，参赛者先选取一扇门，但在他打开之前，主持人在其余两扇门中打开了一扇有山羊的门， 并询问参赛者是否改变主意选择另一扇门，以使赢得名车的概率变大。</p>
+<p>正确的分析结果是，假如不管开始哪一扇门被选，主持人都打开其余两扇门中有山羊的那一扇并询问参赛者是否改变主意， 则改变主意会使赢得汽车的概率增加一倍；（“标准”的三门问题情况。）</p>
+<p>假如主持人只在有名车那扇门被选中时劝诱参赛者打开其它门，则改变主意必输。(资讯不对称)</p>
+<h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><p>作为数学统计基础的概率论的创始人分别是法国数学家帕斯卡和费马，其可追溯到公元17世纪。当时的法国宫廷贵族里盛行着掷骰子游戏，游戏规则是玩家连续掷4次骰子，如果其中没有6点出现，玩家赢，如果出现一次6点，则庄家（相当于现在的赌场）赢。按照这一游戏规则，从长期来看，庄家扮演赢家的角色，而玩家大部分时间是输家，因为庄家总是要靠此维生的，而当时人们也接受了这种现象。</p>
+<p>后来为了使游戏更刺激，游戏规则发生了些许变化，玩家这回用2个骰子连续掷24次，不同时出现2个6点，玩家赢，否则庄家赢。当时人们普遍认为，2次出现6点的概率是一次出现6点的概率的1 / 6，因此6倍于前一种规则的次数，也既是24次赢或输的概率与以前是相等的。然而事实却并非如此，从长期来看，这回庄家处于输家的状态，于是他们去请教当时的数学家帕斯卡，求助其对这种现象作出解释。</p>
+<p>其他对概率论的发展作出重要贡献的人还有荷兰物理、数学家惠更斯，瑞士物理、数学家伯努利，法国数学家棣莫弗，法国数学、天文学家拉普拉斯，德国数学家高斯，法国物理、数学家泊松，意大利数学、医学家卡尔达诺以及苏联数学家柯尔莫哥洛夫。</p>
+<h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><p>单位事件、事件空间、随机事件</p>
+<p><img src="http://opb37u589.bkt.clouddn.com/event01.JPG?imageMogr2/thumbnail/!75p" alt="event01.JPG"></p>
+<p><img src="http://opb37u589.bkt.clouddn.com/collection01.JPG?imageMogr2/thumbnail/!75p" alt="collection01.JPG"></p>
+<p><img src="http://opb37u589.bkt.clouddn.com/traditionalprobability.JPG?imageMogr2/thumbnail/!75p" alt="traditionalprobability.JPG"></p>
+<p><img src="http://opb37u589.bkt.clouddn.com/statistics.JPG?imageMogr2/thumbnail/!75p" alt="statistics.JPG"></p>
+<p><img src="http://opb37u589.bkt.clouddn.com/modelprobability.JPG?imageMogr2/thumbnail/!75p" alt="modelprobability.JPG"></p>
+<p><img src="http://opb37u589.bkt.clouddn.com/bayestheory.JPG?imageMogr2/thumbnail/!75p" alt="bayestheory.JPG"></p>
+<h2 id="大数定律"><a href="#大数定律" class="headerlink" title="大数定律"></a><a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B" target="_blank" rel="noopener">大数定律</a></h2><p>在数学与统计学中，大数定律又称大数法则、大数律，是描述相当多次数重复实验的结果的定律。根据这个定律知道，样本数量越多，则其平均就越趋近期望值。</p>
+<p>大数定律很重要，因为它“保证”了一些随机事件的均值的长期稳定性。人们发现，在重复试验中，随着试验次数的增加，事件发生的频率趋于一个稳定值；人们同时也发现，在对物理量的测量实践中，测定值的算术平均也具有稳定性。比如，我们向上抛一枚硬币，硬币落下后哪一面朝上本来是偶然的，但当我们上抛硬币的次数足够多后，达到上万次甚至几十万几百万次以后，我们就会发现，硬币每一面向上的次数约占总次数的二分之一。<strong>偶然之中包含着必然。</strong></p>
+<p>如果统计数据很少，就很容易出现特别不均匀的情况。这个现象被诺奖得主丹尼尔·卡尼曼戏称为“小数定律”。卡尼曼说，如果我们不理解小数定律，就不能真正理解大数定律。</p>
+<p>大数定律是我们从统计数字中推测真相的理论基础。大数定律说<strong>如果统计样本足够大，那么事物出现的频率就能无限接近他的理论概率——也就是他的“本性”</strong>。而小数定律说如果样本不够大，那么他就表现为各种极端情况，而这些情况可以跟他的本性一点关系都没有。</p>
+<p>· 一个只有二十人的乡村中学某年突然有两人考上清华，跟一个有两千人的中学每年都有两百人考上清华，完全没有可比性。  </p>
+<blockquote>
+<p>如果统计样本不够大，就什么也说明不了。</p>
+</blockquote>
+<p>正因为如此，我们才不能只凭自己的经验，哪怕加上家人和朋友的经验，去对事物做出判断。我们的经验非常有限。别看个例，看大规模统计。有的人听说两三个负面新闻就敢写文章把社会批得一文不值，这样的人非常无知。</p>
+<h2 id="中心极限定理"><a href="#中心极限定理" class="headerlink" title="中心极限定理"></a><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86" target="_blank" rel="noopener">中心极限定理</a></h2><p>中心极限定理是概率论中的一组定理。中心极限定理说明，<strong>大量相互独立的随机变量，其均值的分布以正态分布为极限</strong>。这组定理是数理统计学和误差分析的理论基础，指出了大量随机变量之和近似服从正态分布的条件。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/HistPropOfHeads.png/450px-HistPropOfHeads.png" alt=""><br>本图描绘了多次抛掷硬币实验中出现正面的平均比率，每次实验均抛掷了大量硬币。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Binomial_Distribution.svg/450px-Binomial_Distribution.svg.png" alt=""></p>
+<h2 id="基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析"><a href="#基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析" class="headerlink" title="基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析"></a><a href="http://www.36dsj.com/archives/30704" target="_blank" rel="noopener">基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析</a></h2><p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1312.jpg" alt=""></p>
+<p>《冰与火之歌》书迷遍布全球。该小说凭借其丰富的人物设置受到广大书迷青睐。然而，在马丁( Martin )笔下，无论好人、坏人，主角、配角都难逃命运的捉弄。除不计其数的无名小卒外，马丁的世界里有916位有名字的角色，其中三分之一都已以各种方式结束了自己在小说中的生命。本文中，我们将进一步探究小说人物的死亡模式，建立贝叶斯生存模型来预测各角色的死亡概率。</p>
+<p>本文数据来自冰与火之歌维基( A Wiki of Ice and Fire )。依据该数据我们创建了截至目前书中出现的916名角色的数据集。用人物首次出现的章节，性别，是否为贵族，所属势力，死亡的章节(若已故)作为解释变量来预测这些角色在未来两本书中的存活情况。</p>
+<p>方法论</p>
+<p>采用Weibull 分布外推在7本书中的各个角色的生存概率。Weibull分布提供了一种建立危险函数( hazard function )模型的方法。而危险函数主要测量人物在特定“书龄”上的死亡概率。Weibull分布主要依赖与两个参数，k和lambda，这两个参数决定了Weibull分布的形状。</p>
+<p>在参数估计之前我们选取均匀分布作为先验概率。对于尚存角色，分析k和lambda如何描述人物的存活状况；对于已故人物，分析参数如何预测人物死亡时间。</p>
+<p>对守夜人( Night’s Watch )，生存概率的后验分布如图1。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/170.jpg" alt=""><br>图1：lambda的分布比较紧密(在0.27附近)，K的分布比较宽松。</p>
+<p>接下来，本文通过生存曲线分析人物的生存情况。为与生存曲线相联系，计算k和lambda的均值以及90%的置信区间。进一步，绘制原始数据和基于后验均值的生存曲线以及置信区间。</p>
+<p>个人分析：雪诺( Jon Snow )</p>
+<p>采用贝叶斯生存分析方法可以预测个性化人物(例如雪诺)的生存情况。在卷五：魔龙的狂舞( A Dancewith Dragons )结尾，守夜人生存的置信区间为0.36到0.56。Jon能活下来的估计并不乐观。即使Jon可以顺利活过第5本书，他在接下来的两本书中存活的概率将降到0.3到0.51。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1414.jpg" alt=""></p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/239.jpg" alt=""></p>
+<p>图2：置信区间紧紧围绕在真实数据周围，均值为合理预测。</p>
+<p>值得注意的的是Jon并非守夜人的普通一员。他受过良好的教育，拥有精良的武器和战斗技能。接下来，将样本选为守夜人中家族地位显赫，教育良好的贵族。守夜人中只有11人为贵族。所以置信区间(如图3所示)非常分散，最优近似( Best Estimate )显示贵族背景并不能提高守夜人的生存率。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/326.jpg" alt=""></p>
+<p>图3：当只有贵族角色时，生存曲线的置信区间显著加宽，概率置信区间下限非常接近0。</p>
+<p>家族因素</p>
+<p>接下来，我们分家族研究人物的生存情况。这里包括9个主要家族，守夜人，野人( the Wildlings )，和其他( a “None” category，指无法归入某类势力的人物)。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/427.jpg" alt=""></p>
+<p>图4 ：Arryn (蓝)，Lannister (金)，None (绿)及Stark (灰)的生存概率。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/525.jpg" alt=""></p>
+<p>图5：Tyrell (绿)，Tully (蓝)，Baratheon (橘)及Night’sWatch (灰)生存概率。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/617.jpg" alt=""></p>
+<p>图6：Martell (橘)，Targaryen (栗色)，Greyjoy (黄)及Wildling (紫色)生存概率。</p>
+<p>图4、5、6的置信区间表明艾琳家族( Houses Arryn )、提利尔家族( Houses Tyrell )以及马泰尔家族( Houses Martell )有较高的生存率。主要原因是其远离书中主要冲突，不过这也意味着这些家族信息较少，我们只有至多5个死亡成员样本，所以生存曲线并没有包含足够的样本点。信息量的稀疏体现为较宽的置信区间。相反，北境诸侯( in the north )、史塔克家族( the Starks )、守夜人和野人这些家族(或势力)有较低的生存曲线和较窄的置信区间。他们在情节主线中占据主要篇幅，许多重要人物都是他们的一员。</p>
+<p>男女(性别因素)</p>
+<p>书中塑造了丰富的女性角色，但依旧以男性人物为主(男女比例为769:157)。女性生存概率的置信区间较宽，但是其生存状态显著好于男性。如图7。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/715.jpg" alt=""></p>
+<p>图7：维斯特洛(Westeros)中女性存活概率高于男性。</p>
+<p>地位(阶层)</p>
+<p>小说中贵族和贫民人数差距很大，其生存曲线也展现出不同态势。如图8所示，平民倾向于在出场阶段迅速死亡，若能安全度过“介绍期”则将存活较长时间，甚至生存概率会高于部分贵族。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/813.jpg" alt=""></p>
+<p>图8：贵族在介绍期存活的概率较大，但生存概率的下降速度要大于平民。</p>
+<p>个性角色分析</p>
+<p>利用本文提及的方法，可以结合性别，家族，地位等复合因素提供针对个体角色的粗糙预测模型。在书中给一个非常受欢迎的角色是艾莉亚( Arya )，许多读者关心她在书中的命运。史塔克家族的贵族女性中还包括一些值得注意的角色如珊莎( Sansa )和布雷妮( Brienne，宣誓效忠于史塔克家族，虽然她后来才被介绍)。另外，皇后瑟曦( Cersei )和可怜的弥赛拉( Myrcella )也十分令人着迷。为了得到生存曲线的准确区间估计，我们将贵族女子和平民女子的数据加以综合。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/910.jpg" alt=""></p>
+<p>图9：各组置信区间都比较宽松。与史塔克家族相比，兰尼斯特( Lannister )家族的贵族女性死亡可能性更高。虽然信息不明确，但艾莉亚会比瑟曦活得久一些。</p>
+<p>此外我们还关心两个小角色，野人公主瓦迩（ Val ）和神秘的魁蜥( Quaithe )。她们并不是故事一开始就出现，所以分析相对比较复杂。瓦迩在章节2.1中被引入，她在整个时序中存活的概率在0.1到0.53之间。魁蜥在章节1.2中首次出现，她的生存概率为0.58到0.85，明显高于瓦迩。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1012.jpg" alt=""></p>
+<p>图10：代表一些小角色的生存曲线，魁蜥和瓦迩有不同的生存曲线。</p>
+<p>有足够的数据能够区分大多数男性角色的家族、性别和地位，以绘制他们的生存曲线。图11显示，兰尼斯特兄弟的生存曲线居中，在第七本书的生存概率为0.35到0.79。达里奥( Daario )生存曲线的置信区间较宽，但考虑到他是在章节2.5中才出现，所以存活概率较大。曼斯( Mance )的存活概率最不容乐观。曼斯在章节2.2故事中登场，他的存活概率为0.19到0.56。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1117.jpg" alt=""></p>
+<p>图11：不同地位、<a href="https://deepcreator.com/2017/11/06/Concept/Alliance/">联盟</a>的男性角色的生存曲线。</p>
+<p>有一些角色，我们期望看到他们一命呜呼，但是图12显示他们还要活很久。希恩( Theon)似乎会痛苦的活着直到到结局。瓦尔德·弗雷( Walder Frey )在章节0.4中初次登场，存活的可能性为0.44到0.72之间。目前为止，霍斯特·徒利( Hoster Tully )可能是唯一一个死于衰老的人，所以弗雷将有可能活到结局。</p>
+<p><img src="http://www.36dsj.com/wp-content/uploads/2015/06/1214.jpg" alt=""></p>
+<p>图12：不同地位、联盟的男性的生存曲线。</p>
+<p>总结</p>
+<p>孰生孰死在故事中充满变数，但从现有数据中，我们可以观察到不同组别下人物生死的模式。对于一些特定角色，尤其是男性角色，我们可以对他们在未来的故事中的遭遇做简单预测。但对于数据较少的、非主要家族的女性来说，预测的准确性则有待商榷。</p>
+<p>本文内容翻译并编辑自 Bayesian Survival Analysis in A Song of Ice and Fire，by Erin Pierce and Ben Kahle. 原文链接：<a href="http://www.reddit.com/r/statistics/comments/31oz8n/bayesian_survival_analysis_in_a_song_of_ice_and/.compact翻译：新妍" target="_blank" rel="noopener">http://www.reddit.com/r/statistics/comments/31oz8n/bayesian_survival_analysis_in_a_song_of_ice_and/.compact翻译：新妍</a> 校对：Jude via：数据工匠</p>
+<h2 id="为什么明星富商都迷信大师"><a href="#为什么明星富商都迷信大师" class="headerlink" title="为什么明星富商都迷信大师"></a><a href="http://www.luojiji.com/thread-3065-1-203.html" target="_blank" rel="noopener">为什么明星富商都迷信大师</a></h2><p>为什么明星富商都迷信大师呢？最近大象公会解释了这个问题，它说，<strong>迷信程度和不确定程度相关，不确定性越高，就越容易迷信。</strong></p>
+<p>体育界是迷信重灾区，很多顶尖体育明星都有自己的怪癖。C罗比赛前先穿右脚的袜子，并坚持用右脚先迈入球场；费德勒遇上重大比赛必须穿红T恤、戴黑头箍，因为竞技体育有很大的不确定性嘛，想要赢，除了实力之外，还要一点运气。演艺明星和商人热衷看风水，拜大师，也是这个道理。</p>
+<p>再比如，龙王是中国农民普遍的崇拜对象，但黄土高原和华北平原的农民更崇拜龙王，而沿海地区龙王庙就少得多。因为西北地区下雨没准儿，所以才更需要拜一拜。</p>
+<p>经常看香港电影的朋友会发现，香港人很迷信，为什么呢？香港前身是渔村，渔民恰恰是高风险职业啊。后来商人变成香港的主要阶层，这也是个高风险的职业。再加上香港独特的地理位置，之前一直是中英两国暗中较劲儿的地方，政治环境摇摆不定，当你越觉得无法掌控命运，就越需要能带来确定感的东西，迷信恰好填补了这个心理缺口。</p>
+<p>你看，<strong>迷信其实是确定感的精神寄托。</strong></p>
+<h2 id="最简单概率论的五个智慧"><a href="#最简单概率论的五个智慧" class="headerlink" title="最简单概率论的五个智慧"></a><a href="http://www.luojiji.com/thread-3005-1-1.html" target="_blank" rel="noopener">最简单概率论的五个智慧</a></h2><p><img src="http://www.luojiji.com/data/attachment/forum/201512/29/162218syyj0uu30qu6oogf.jpg" alt=""></p>
+<p>2015-12-05万维钢</p>
+<p>我认为人人都应该学一些概率知识，它现在是公民必备知识。</p>
+<p>现在的世界比过去复杂得多，其中有大量不确定性，是否理解概率，直接决定一个人的开化程度。</p>
+<p>1.<strong>随机：有些事情是无缘无故地发生的</strong></p>
+<p>这个思想对我们的世界观有颠覆的意义。</p>
+<p>古人没有这个思想，认为一切事物都是有因果的，甚至可能都是有目的的。人们曾经认为世界像一个钟表一样精确地运行。但真实世界不是钟表，它充满不可控的偶然。</p>
+<p>更严格地说，有些事情的发生，跟他之前发生的任何事情，都可以没有因果关系。不论我们做什么都不能让它一定发生，也不能让它一定不发生。</p>
+<p>一个人考了好大学，人们会说这是他努力的结果；一个人事业成功，人们会说这是他努力工作的结果。可是如果一个人买彩票中了大奖，这又是为什么呢？</p>
+<p>答案是没有任何原因，这完全是一个随机事件。总会有人买彩票中奖，而这一期彩票中奖，跟他是不是好人，他在之前各期买过多少彩票，他是否关注中奖号码的走势，没有任何关系。</p>
+<p>若一个人总是买彩票，他中奖的概率会比别人大点吧？的确，他一生之中中一次奖的概率比那些只是偶然买一次彩票的人大。但是当他跟上千万个人一起面对一次开奖的时候，他不具备任何优势。他之前所有的努力，对他在这次开奖中的运气没有任何帮助。一个此前没有买过任何彩票的人，完全有可能，而且有同样大的可能，在某一次开奖中把最高奖金拿走。</p>
+<p>中奖，既不是他个人努力的结果，也不是“上天”对他有所“垂青”；不中，也不等于任何人与他做对。这就是“随机”，你没有任何办法左右结果。</p>
+<p>理解随机性，我们就知道很多事情发生就发生了，没有太大可供解读的意义。我们不能从这件事获得什么教训，不值得较真，甚至不值得采取行动。</p>
+<p>· 再完美的交通工具也不可能百分百安全，我们会因为极小的事故概率不坐飞机吗？我们只需要确定事故概率比其他旅行方式小就可以了。甚至连这都不需要，只需要确定这个小概率事件我们能够容忍就可以了。</p>
+<p>2.赌徒谬误</p>
+<p>假如你在赌场玩老虎机，一上来运气不太好，连输好几把。这时候你是否有种强烈的感觉，你很快该赢了？</p>
+<p>买股票、期货、彩票都是一样。连续好几把上来就亏损的情况下，是不是觉得下一把挣钱的概率很大？</p>
+<p>这完全是一种错觉。赌博完全是独立的随机事件，这意味着下一把的结果和以前所有的结果都没有任何联系，已经发生了的事情不会影响将来。</p>
+<p>“大数定律”说，如果进行足够多的抽奖，那么各种不同结果出现的频率就会等于他们的概率。</p>
+<p>人们常常错误地理解为，随机就意味着均匀。如果过去一段时间内发生的事情不均匀，人们就错误的以为未来的事情会尽量往“抹平”的方向走。如果连输几把，那么下一把就应该会赢。</p>
+<p>但大数定律的工作机制不是和过去搞平衡，它的真实意思是说如果未来进行非常多次的抽奖，你输非常多次、赢非常多次，以至于他们此前的一点点差异就会变得微不足道。</p>
+<p>· 有个笑话说一个人乘坐飞机时总带着一颗炸弹，他认为这样就不会被恐怖分子炸飞机了，因为一架飞机上有两颗炸弹的可能性非常小。</p>
+<p>· 战场上士兵有个说法，如果战斗中炸弹在你身边爆炸，你应该迅速跳进那个弹坑，因为两颗炸弹不大可能打到同一个地方。</p>
+<p>这都是不理解<strong>独立随机事件</strong>导致的。</p>
+<p>3.在没有规律的地方发现规律</p>
+<p>理解了随机性和独立随机事件，我们可以得到一个结论：独立随机事件的发生是没有规律和不可预测的，这是一个非常重要的智慧。</p>
+<p>彩票分析师，相信中奖号码存在走势，相信其中的规律，所以近期多次出现的组合可能会继续出现，或者按照这个趋势可以预测下一个号码。</p>
+<p>但这里根本没有规律，是完全随机的现象，即便存在缺陷，也需要大量的开奖后才能发现，而且缺陷的结果也很简单，无非是某个特定号码出现的可能性略大一些，完全谈不上什么复杂规律。</p>
+<p>明明没有规律，这些彩票分析师是怎么看出规律来的呢？也许他们不是故意骗人，而很可能他们真的相信自己找到了彩票的规律。</p>
+<p>发现规律是人的本能。</p>
+<p>春天过后是夏天，乌云压顶常下雨，大自然中很多事情的确是有规律的。我们的本能工作得如此之好，以至于我们在明明没有规律的地方也能找出规律来。人脑很擅长理解规律，但是很不擅长理解随机性。</p>
+<p>在没有规律的地方发现规律是很容易的事情，只要你愿意忽略所有不符合你这个规律的数据。而且如果数据够多，我们可以找到任何我们想要的规律。</p>
+<p>· 有人拿圣经做字符串游戏，声称这是圣经对后世的预言。问题是，这些预言可以完美的解释已经发生的事情，但在预测未发生的事情时就不好使了。关键是圣经中有很多很多字符，如果仔细寻找，尤其是借助计算机的话，总能找到任何想要的东西。</p>
+<p>· 把圣经换成毛选也一样，你会发现毛选也早就预言了中国后世发生的所有大事。</p>
+<p>未来是不可被精确预测的，这个世界也并不像钟表那样运行。</p>
+<p>4.小数定律</p>
+<p>现在我们知道，数据足够多的话，人们可以找到任何自己想要的重要规律，只要他不在乎这些规律的严格性和自洽性。那么在数据足够少的情况下又会如何？</p>
+<p>如果数据足够少，有些规律会自己跳出来，你甚至不相信都不行。</p>
+<p>人们抱着游戏或者认真的态度总结了世界杯足球赛的各种“定律”。比如——</p>
+<p>· “巴西队的礼物”：只要巴西夺冠，下一届的冠军就将是主办大赛的东道主，除非巴西队自己将礼物收回。这一定律在2006年被破解。<br>· “1982轴心定律”：世界杯夺冠球队以1982年世界杯为中心呈对称分布，这个定律在2006年被破解。</p>
+<p>还有一些未被破解的定律，比如——</p>
+<p>· 凡是获得联合会杯或美洲杯，就别想在下一届世界杯夺冠。<br>· 中国队的“王治郅定律”：只要王治郅参加季后赛，八一队必然得总冠军，以及“0:2”落后无人翻盘定律。</p>
+<p>如果仔细研究这些定律，会发现不易破解的定律其实都有一定的道理。王治郅和八一队都很强，0:2落后的确很难翻盘，而获得世界杯冠军是个非常不容易的事情，更别说同时获得联合会杯、美洲杯和世界杯。但不容易不等于不会发生，他们终究会被破解。</p>
+<p>那些看似没有道理的神奇定律（正因为没道理，所以显得神奇），则大多数已经被破解。之所以神奇，是因为纯属巧合。世界杯总共才进行了80多年，20多届。只要数据足够少，我们总能发现一些没有破解的规律。</p>
+<p>如果数据少，随机现象可以看上去很不随机。甚至非常整齐，感觉好像真有规律一样。</p>
+<p>问题的关键是，随机分布不等于均匀分布。要想均匀分布，必须要样本总数非常大的时候才有效。一旦不均匀，人们就认为其中必有缘故（阴谋论），而事实却是这可能只是偶然事件。</p>
+<p>· iPod最早推出“随机播放”功能的时候，用户发现有些歌曲会被重复播放，他们据此认为播放根本不随机。苹果公司只好放弃真正的随机算法，用乔布斯本人的话说，就是改进以后的算法使播放“更不随机以至于让人感觉更随机”。</p>
+<p>如果统计数据很少，就很容易出现特别不均匀的情况。这个现象被诺奖得主丹尼尔·卡尼曼戏称为“小数定律”。卡尼曼说，如果我们不理解小数定律，就不能真正理解大数定律。</p>
+<p>大数定律是我们从统计数字中推测真相的理论基础。大数定律说如果统计样本足够大，那么事物出现的频率就能无限接近他的理论概率——也就是他的“本性”。而小数定律说如果样本不够大，那么他就表现为各种极端情况，而这些情况可以跟他的本性一点关系都没有。</p>
+<p>· 一个只有二十人的乡村中学某年突然有两人考上清华，跟一个有两千人的中学每年都有两百人考上清华，完全没有可比性。  </p>
+<p>如果统计样本不够大，就什么也说明不了。</p>
+<p>正因为如此，我们才不能只凭自己的经验，哪怕加上家人和朋友的经验，去对事物做出判断。我们的经验非常有限。别看个例，看大规模统计。有的人听说两三个负面新闻就敢写文章把社会批得一文不值，这样的人非常无知。</p>
+<p>本文由作者 万维钢 授权罗辑思维发布，选自《万万没想到——用理工科思维理解世界》，电子工业出版社出版。</p>
+<p>罗胖日：<br>有的时候，样本量大也说明不了问题。<br>比如，中国的污染很重，犯罪率很高，槽点很多，能说明这个国家没前途吗？<br>也许恰恰是因为这个国家蒸蒸日上。<br><strong>认知没有什么终极正确，只有逐步升级。<br>认知的升级，本质上来源于认知尺度的扩展。<br>1.时间尺度——多读历史。<br>2.空间尺度——多观世界。<br>3.观念尺度——聆听高人。<br>认知没有正误之别。但确实有高下之分。<br>因为所在尺度层次有异。</strong></p>
+<h2 id="比黑天鹅更险：破解大概率危机"><a href="#比黑天鹅更险：破解大概率危机" class="headerlink" title="比黑天鹅更险：破解大概率危机"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=8441&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">比黑天鹅更险：破解大概率危机</a></h2><p>这条音频的内容是，面对危机的时候，如何避免疏忽大意，用更好的方法来应对和解决问题。</p>
+<p>我们生活在一个非常不确定的时代，有关这种不确定，有两种理解方法：一种就是人们常说的黑天鹅，也就是那些突然爆发的危机和灾难，或者是急剧发生的变化；还有一种不确定性是说，表面上看起来是很突然的，实际上却是可以追根溯源的。前不久，在“中信大咖读书会”上，“秦朔朋友圈”的发起人秦朔，分享了一本新书，叫做《灰犀牛：如何应对大概率危机》。书里用“灰犀牛”来比喻那些大概率而且影响巨大的潜在危机，并且提供了一些解决问题的指南。</p>
+<p>这本书的作者米歇尔·渥克有媒体背景，对公共事件很敏锐，她从两次危机里得到了启发，写了这本书。一次是2001年的阿根廷的债务危机，米歇尔·渥克发现，阿根廷当时发生危机的时候，很早就有专家指出，很多企业的债务问题必须及时处理。比如可能企业要损失30%，才有可能保住整个经济体的太平。但是，这个问题没人当回事儿，一直被拖着，等到危机爆发的时候，企业的损失就不是30%了，而是70%。到了2010年，希腊也发生了危机，但是希腊在危机爆发以后，跟很多非官方债权人更早地达成了一些一致性看法，保证能够比较好的解决这样的问题。</p>
+<p>所以这本书的一个重要的思想，就是所有灾难的发生，不是因为发生之前的征兆太隐蔽，而是因为人们的疏忽大意，以及应对措施不利。简单来说，就是没有很好的避让系统，一旦这个问题不加以解决，重大的危机最终一定会到来。</p>
+<p>在书里，作者给这样的危机进行了一个分类。</p>
+<p>第一种类型，就是不愿意面对真相，主要特点就是，很多人都意识到了问题，但阻力很大。同时人们往往倾向于否认这个问题的存在，因为解决的成本太高了。比如气候变化、一个国家的预算赤字，都属于这种危机。那怎么去应对呢？作者说，要把危险看成是机遇，同时要建立一个很好的成本和利润的分摊机制。</p>
+<p>第二种类型是已经到来的危机，一般非常迅速，危机来得很快，也是很多积蓄已久的问题的爆发。作者举的例子有叙利亚问题、自然灾害等等，当年的非典也属于这一类的问题。对于这种已经到来的危机，作者认为应对策略应该是利用问题的紧迫，激发人们采取行动。</p>
+<p>第三种类型是反复出现的危机，比如金融危机、流行病、地震、网络威胁等等。这种危机的特征就是你很熟悉，但是你没想到这种很熟悉的东西，会变成一个很有冲击性的巨型危机。这时候就要运用核查表和事前的演练，包括沙盘，形成一个习惯性的机制和自动报警系统。</p>
+<p>第四种危机叫做“元一犀牛式危机”，重点指的是一些结构性问题导致的危机，像性别歧视、社会不平等，都属于这类问题。要解决这些问题，方法是优先处理，或者把它们和其他的危机联合在一起来进行处理。</p>
+<p>第五种危机往往是一个影响其他问题的危机，如果再加上其他的因素，就会变成一个多头怪兽。比如饮用水资源的问题、物价过高。这种危机怎么解决呢？书里说，对于多种问题交叉存在的危机，一定要优先处理其中的关键性的东西，同时要进行一些系统性的处置。</p>
+<p>第六种危机的特点是，很难找到一个解决方案，一般都有根深蒂固的障碍，阻碍人们的判断，比如以色列和巴勒斯坦的冲突。想要解决这样的危机，就要重新定义问题的类别，解决表象的问题。</p>
+<p>第七种是革新的颠覆力量带来的危机。比如数码时代让柯达遇到了颠覆性的危机。这种危机往往是不可避免的一种衰退，如果想解决这样的问题，成本远远大于收益。像这样的危机，我们就要坦然地接受现实，接受代表未来的一些新鲜的事物，新鲜的方向。</p>
+<p>第八种就是无法定义类别的危机了，这种危机的危险以及解决方案都非常不确定。比如人工智能、数字化。解决这种危机，要先检验已有的情况，找到最类似的危机是怎么出现的，然后保持灵活的态度和警惕性。</p>
+<p>了解了这些之后，对于不同的危机，要用不同的方法去处理。而且你要学会正确定义危机的类型，因为不同的类型对于不同的人、不同的公司，含义可能是不一样的。有些危机对一些人是灾难，但是对另外一些人可能是机遇。如果你有能力改变，但一直不采取行动，那么这个危机就跟你有密切的关系。</p>
+<p>此外，作者也告诉我们，我们很难一次就找到解决的方法，我们犯的每一个错误，都有可能对解决问题有帮助。也就是说，我们要珍惜很多的错误和危机，把它变成一种正面的机遇。</p>
+<p>以上观点，供你参考。</p>
+<p>本文源自：公众号“中信奇点课堂”（秦朔教你如何应对大概率危机）、《灰犀牛：如何应对大概率危机》</p>
+<h2 id="概率权：“算”出来的富人思维"><a href="#概率权：“算”出来的富人思维" class="headerlink" title="概率权：“算”出来的富人思维"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=8174&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">概率权：“算”出来的富人思维</a></h2><p><img src="http://www.luojiji.com/data/attachment/forum/201703/30/154157fwrznxfw0on0kf6r.jpg" alt=""></p>
+<p>2017-03-30 罗振宇 罗辑思维</p>
+<p>这篇文章是《罗辑思维》第五季第11期的内容。</p>
+<p>改变的是节目的形式，不变的是对知识的分享和认知的升级。&gt;&gt;&gt;戳此和罗胖一起终身学习</p>
+<p>最近我看到一篇很有趣的文章——《被抛弃的概率权》，作者叫老喻，是一位加拿大华人，他在文中提出了一个叫“概率权”的概念，很有意思。</p>
+<p>1</p>
+<p>我们先来看一道选择题。<br>┏</p>
+<p>  假设你现在面对两个按钮：</p>
+<p>  如果你按下第一个按钮，直接给你一百万美元；</p>
+<p>  如果按下第二个按钮，你有一半的机会拿到一亿美元，当然还有一半机会什么都没有。</p>
+<p>  这两个按钮只能选一个，你选哪个？<br>┛</p>
+<p>我拿这道题在办公室里同事当中测试了一下，大部分人都选择直接拿一百万美元走人。因为这本来就是飞来横财，拿了入袋为安。</p>
+<p>而另一个选项一亿美元，万一按下去，什么都拿不到呢？我的小心脏啊，根本承受不了这个损失。</p>
+<p>这么选的人，风险偏好比较小。</p>
+<p>当然，也有人选择按第二个按钮的，这种人风险偏好比较大。他们的理由也很简单，反正是飞来横财，那不如赌一把。</p>
+<p>那我就继续追问：你这么选的话，如果正好落在那不幸的50%上，什么都拿不到，你会特别懊悔和心疼吗？</p>
+<p>他们想想说，好像也有点，连一百万美元那只煮熟的鸭子也飞了啊。</p>
+<p>2</p>
+<p>那正确答案是什么呢？</p>
+<p>当然是选有50%的机会拿到一亿美元。但是，我给出的理由不一样。</p>
+<p>一个熟知现代社会规则的人，会这么处理：</p>
+<p>第二个按钮，如果按下去有50%的机会拿到一亿美元，那么按照概率，这个按钮的选择权价值就是5000万美元。</p>
+<p>我承受不了这个损失，那好，我把这价值5000万的机会卖给一个有能力去赌的人，比如说用2000万美元跟他成交。那对于买的人来说，用2000万美元买一个价值5000万美元的概率权，在账面上是非常划算的。</p>
+<p>而你现在有2000万美元了，是不是比选第一个100万美元强得多？</p>
+<p>▽</p>
+<p>好，你可能会说，我找不到愿意赌那么大的人。</p>
+<p>那我们优化一下上面的方案——找一个比你有钱的人，你说：“我把这个选择权卖给你，但是首付100万美元，如果你中了一个亿，我要求再分成一半，你觉得怎么样？”</p>
+<p>对你来说，100万美元他作为首付给你，已经落袋为安了，剩下就让他去赌个运气，反正也比第一个选择强。</p>
+<p><strong>而对买家来说呢，他是拿100万美元的成本去赌5000万美元的一半概率，这个买卖他也非常划算，他会干的。</strong></p>
+<p>▽</p>
+<p>接着往下想，这个方案还有没有更近一步优化的空间呢？</p>
+<p>还有，当然那就更复杂了。</p>
+<p>比如，把这个选择权切碎了发行彩票，这样就更是稳赚不赔，当然这个普通人就干不了了，得有政府授权。</p>
+<p>3</p>
+<p>听到这里，你可能会觉得有点奇怪：</p>
+<p>开始的时候，我面对的选择，明明一个是确定的，一个是不确定的。可是这不确定的最后怎么就变得确定了呢？而且收益要高得多呢？</p>
+<p>对啊，这个例子里面，藏了这个世界一个绝大的秘密，就是——穷人思维和富人思维的区别。请注意，我这里说的是穷人思维和富人思维，而不是指穷人和富人。</p>
+<p>我们人生在世，时时刻刻都面对各种各样的选择。每一个选择背后，都有成和败的概率。</p>
+<p>穷人思维，就倾向于拿到确定的东西，他不要概率权。</p>
+<p><strong>而富人思维正好相反，每次选择的时候都愿意根据成功的概率来下注，不管每一次的成败、输赢，他一直都坚持这么下注。</strong></p>
+<p>请注意，珍视概率权，不是让你去赌，而是跳出自己的直觉本能，用概率的思维去思考自己的每一个选择。</p>
+<p>如果概率权算得过账来，那就勇敢去下注，比如说用100万美元的价格去试试50%的机会拿到一亿美元的概率权。</p>
+<p>从直觉上来看，虽然有风险，但是在概率思维看来，这已经是划算得不能再划算的买卖了。</p>
+<p>4</p>
+<p>穷人不珍视概率权，不是不去赌，他们反而更容易去赌一些极小概率的事情。比如花钱买彩票，两块钱两块钱地买，想博一个发财梦。</p>
+<p>但是明白彩票原理的人都知道，这成功的可能性几乎为零。</p>
+<p>而组织销售彩票的人，他是按照概率思维来设计这个机制和游戏的，他们反而是稳赚不赔的。所以你看，就彩票这件事来说，是穷人在补贴富人。</p>
+<p>▽</p>
+<p>举个例子，你看富人是怎么想的。</p>
+<p>扎克伯格，Facebook的老板，他当年刚创立Facebook公司4个月，就有人出价1000万美元要收购他的公司，两年后，雅虎公司出价10亿美元收购。</p>
+<p>其间当然还有很多次机会，谷歌、新闻集团等等都曾经有过收购意向，每次出价对于当时的扎克伯格来说，都是一次大发横财、从此可以花天酒地的机会，但是每一次扎克伯格都拒绝了。</p>
+<p>你是马上就拿到10个亿，还是以百分之几的可能性，也就是概率，在数年之后拿到1000个亿？这是一个选择，你看，扎克伯格面对的这个选择，跟我们今天刚开始举的那两个按钮的例子是不是很像？</p>
+<p>几年之后，另一家创业公司Snapchat用类似的方式拒绝了扎克伯格的30亿美元收购的邀请。</p>
+<blockquote>
+<p>这就是硅谷的精神之一，它可不仅仅是发财梦，它是一种财富观，是一种雄心壮志，是一种对概率权的把握。</p>
+</blockquote>
+<p>5</p>
+<p>我创业几年，说实话刚开始也是不太理解那些风险投资人的逻辑。</p>
+<p>一个创业项目，看起来不是很靠谱，没有任何确定性，投资人居然就敢成百万、上千万、上亿的钱白给创业者花，而且还只占很少的股份。按照直觉思维来看，这些投资人不是疯了吗？</p>
+<p>但其实，这是因为人家风险投资人看世界，和我们普通人的角度不一样——</p>
+<p>他们是看概率权的。</p>
+<p>一个创业公司，刚开始可能没有盈利，但是投资人已经把这个行业的前途，这个创业者、创业团队的素质和未来的市场风险等等都用概率思维给算过了，给出了一个估值。</p>
+<p>这个估值虽然是纸面财富，但是它包含了一系列概率的算计，它是真实的市场定价。风险投资人他就这么一直下注，一直下注，下了很多次之后，只要有一次大赚，就全部回来了。</p>
+<p>所以，风险投资不是外面看起来的那样，是赌博，是猜钢镚，它是有一个精密算法的财富游戏。</p>
+<p>6</p>
+<p>那怎么摆脱穷人思维，把握概率权呢？</p>
+<p>我刚才提到的那篇文章中就说到，我们普通人最缺乏的，其实不是钱，而是有一个老爸随时随地告诉我，你很牛。</p>
+<p>那为什么书香门第或者财富世家会出一大串的牛人，除了基因、资源这方面的原因，可能还有以下几个原因：</p>
+<p>（1）你从小就有足够高的参照点，不会被小利益勾走，更能承受风险（其实是低概率的），从而捕获高回报。</p>
+<p>就像最开始的例子，如果你家里已经有了1000万美元，你对那白来的100万美元就没有那么饥渴，你受到的诱惑就没有那么大。</p>
+<p>（2）身边一群人的示范效应，你老爸、叔叔、伯伯会不断告诉你要往前看，你行的，你是很牛的，你的出息绝不仅仅是现在这些。</p>
+<p>（3）在这样的环境里长大，你内心的理想、激情有更大的机会被点燃。</p>
+<p>▽</p>
+<p>可惜，我们绝大多数人不会出生在书香门第或者是财富世家，那怎么办？</p>
+<p>对，这就是这个世界留给每一个人的一道后门。</p>
+<blockquote>
+<p>你可以通过学习，通过认知升级，通过改变自己的大脑，通过克服自己与生俱来的本能，认识概率权，掌握概率权。</p>
+</blockquote>
+<p>要知道，这是我们脑子里发生的事情，虽然它千难万难，但是毕竟我们不需要任何额外的资源，没有任何人能够阻止它发生。<br><img src="http://www.luojiji.com/data/attachment/forum/201703/30/154304wadpkwnfnebzp5e5.jpg" alt=""></p>
+<h2 id="临界知识：复利效应和概率论"><a href="#临界知识：复利效应和概率论" class="headerlink" title="临界知识：复利效应和概率论"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=7959&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">临界知识：复利效应和概率论</a></h2><p>这条音频说的是两个重要的临界知识，复利效应和概率论。</p>
+<p>临界知识，是知识管理达人、得到说书人成甲在他的新书《好好学习》里提出来的概念，指的是更广泛、更普遍地指导我们行动的基本规律。掌握并且应用临界知识，能让我们做事和学习的效果事半功倍。这本书里列出了好多具体的临界知识，我们精选了两个转述给你。</p>
+<p>第一个临界知识是复利效应。复利效应被爱因斯坦称为世界第八大奇迹。很多人都听过这个故事，国王要奖赏国际象棋的发明人，问他想要什么，他对国王说：陛下，请您在棋盘的第一个格里赏我一粒麦子，第二个格两粒，第三个格四粒，以后每一个格比前一个格加一倍。国王觉得这个要求很容易满足，一算才知道，这一棋盘的麦子，数量是1844亿亿粒，就是把全印度的甚至全世界的麦粒都拿来也满足不了这个要求。</p>
+<p>这就是复利的神奇之处，刚开始的时候，复利效应是很微小的，但是发展到一定阶段就会产生惊人的效果。但是复利只是一个数学模型吗？没那么简单。书里说，<strong>复利的本质是：做事情A会导致结果B，而结果B又会加强事情A，不断循环。</strong>凡是符合这个规律的事情，都可以看做复利效应。比如说网站的访问量越多，在搜索引擎排名就越靠前，然后访问量就更多。同时，复利还会导致二八法则，比如做网页，会有20%的网站经常被人浏览，剩下的80%几乎没有人用。</p>
+<p>那怎么才能进入前20%呢？我们先分析一下影响复利效果的因素，一个是利率，一个是执行次数。<strong>利率就是做了事情A导致结果B之后，B对A有多大的强化作用。执行次数比较好理解，就是重复这个行为的次数。</strong>理解了这两个因素，想充分利用复利效应的话，首先要找到“A导致B，B加强A”的事情，然后提高这件事情的利率，最后不断重复。只有这样做，才能进入复利模型带来的加速成长。</p>
+<p>比如，做微信公众号这件事就符合复利模型。每推送一篇文章，就会有一部分读者分享出去，这样就能带来更多阅读量，而分享的根本原因是文章写得好。所以如果你想把公众号做好，关键就在于保持文章质量和推送频率。</p>
+<p>需要注意的是，复利效应在前期是不明显的，所以刚开始的时候，可能你花了很多精力写出来的文章跟别人随便写出来的文章，阅读量差别不大。但是你坚持下去，保证文章质量和推送次数，那么一定会达到临界点。</p>
+<p><strong>说完了复利效应，我们再来说说第二个临界知识，概率论。概率论的思考方式是这样的：过去每一件事情的结果，只是众多可能的结果之一，我们不能仅仅用结果来判断之前决策的好坏。所以，那些成功人士的成功经验，也没有办法完全复制。</strong></p>
+<p>虽然不能精准地预测未来，但我们还是有方法判断大概率事件的。这就需要用到一个决策工具：决策树。画决策树有三步：第一步，写出你想要实现的目标。第二步，在目标的右侧写出实现这个目标的所有方案。第三步，评估每个方案的结果，以及这些结果实现的概率。</p>
+<p>举个例子，假设你想提高收入，这是一个目标。接下来，你想到了三个提高收入的办法：一个是创业，一个是兼职，第三个是在原公司努力工作，等待升职加薪。该选哪一个呢？接下来就要评估这三个方案实现的可能性。具体的评估过程就不细说了，因为每个人的状况不一样，要结合实际评估，最后选择最合适的方案。</p>
+<p>当然，在评估可能性的时候，一定要想办法减少主观判断的偏差，一个重要的方法就是外部视角。比如在评估自己创业成功率的时候，不要先从自己的优势入手开始评估，这样很容易高估自己。如果从外部视角入手，把社会整体的创业成功率作为基础概率，然后进行调整，这样得出的结论更可靠。</p>
+<p>概率论对我们还有一点启发，就是“<strong>为大概率坚持，为小概率备份</strong>”。只要我们选择有利的大概率事件，持续投入，结果一定比东一榔头西一棒槌地做事情要好。就拿找工作举例子，如果你做了充足的准备，应聘的成功概率也只有64%，可你坚持两次，找到工作的概率就是87%；如果坚持三次，这个概率就高达95%了。另外，要为小概率事件做好备份，避免小概率事件对我们造成无法挽回的损失，比如重要文件要多备份，以免丢失。</p>
+<p>总结一下，这条音频介绍了两个临界知识，一个是复利效应，另一个是概率论。想了解更多的话，可以去读一读这本书《好好学习》。</p>
+<p>本文源自：《好好学习：个人知识管理精进指南》</p>
+<h2 id="查理芒格：相信概率不相信运气"><a href="#查理芒格：相信概率不相信运气" class="headerlink" title="查理芒格：相信概率不相信运气"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=7837&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">查理芒格：相信概率不相信运气</a></h2><p>这条音频给你说说，查理·芒格针对投资需不需要多元化、如何选择人生目标等话题，发表的最新观点。</p>
+<p>前几天，美国著名投资家、沃伦·巴菲特的合伙人查理·芒格主持了每日期刊公司的2017年年会。查理·芒格是这家报刊杂志出版公司的董事会主席。和往年一样，芒格在年会上的很多回答都很精彩，下面给你说说。</p>
+<p>首先，如何选择人生目标是很多人都关心的问题，对于这个问题，芒格给的建议是：以他的人生经验来看，只有做自己感兴趣的事情才能成功。要是自己不喜欢的事情还要做到很好，那对人性的要求也未免太高了。除了兴趣外，还要注意选择自己有过人之处的领域，比如身高不高就别非得打篮球了，也不要觉得世界会按照你认为的方式去运转。</p>
+<p>另外，大多数人都希望自己成为一个博学的人，但芒格说，像他这样同时跨多个学科的做法其实对很多人并不适用。对大多数人来说，正确的方式应该是专注，找到社会认可的领域，然后做出彩。当然，不能生活在山洞里，要突破自己的局限性，拿出一些时间来关注专业之外的big ideas。所谓big ideas，其实就是说别在小问题上浪费时间。你眼前的问题，只要放宽视野，很可能就能得到解决。</p>
+<p>会上有人问芒格，有过被自己否定掉的想法吗？芒格的回答是“有” ，自己总在产生想法，所以也总在忙着否定掉愚蠢的想法。其实很多人最主要的问题都在于：总是用陈旧的想法取代更新和更好的想法。德国有句话叫：“总是老得太快，聪明得太晚”。如果能养成接受新观点的习惯，会是人生非常大的优势。年轻人明明有很多东西要去学，不要被一些见解固化了思维。如果成功摆脱了不好的想法，那就给自己一点鼓励，毕竟，接受新生事物都会付出代价。</p>
+<p>既然是提问芒格，投资一定是一个避不开的话题。这次会上，芒格针对投资给了这么两个值得思考的回答。</p>
+<p>一个是：会上有人问芒格，年龄和阅历有没有让自己的合伙人巴菲特成为更好的投资者？芒格并不是直接回答的有或者没有，他给的回答是：如果你所在的领域可以通过不断学习来磨练技能，那么你当然会越做越好。巴菲特也是不断地在学习中改变一些旧观念。比如之前他坚持不投资或极少投资科技公司。但他的公司——伯克希尔·哈撒韦2月公布的2016年第四季度财报显示，公司大幅增持了航空股和苹果股票。芒格解释投资航空股的原因是：“以前，我们说「铁路不好，公司太多，还有卡车竞争」。我们曾经说对了。铁路在近80年里，都不是一门好生意，结果最后，铁路公司合并到只有四家，然后就变成了一门相对好的生意。类似的事情，将会在航空行业中发生。”</p>
+<p>第二个投资问题是：投资需不需要多元化？芒格认为，投资多元化是教给什么都不懂的人的，而且这种投资方式只能得到平均收益。那对于懂行的人来说就没有必要。比如他自己的帐户里主要就是三只股票，而这三只股票里面有一个失败的可能性都几乎为零，就更别说三个同时失败了。</p>
+<p>另外，芒格说了他对中国的看法。他说自己家里有两个人的塑像，就是富兰克林和李光耀。李光耀在当时的各种不利条件下创造了现代的新加坡，而邓小平当年也在学习新加坡模式，所以李光耀对现代中国也有贡献。现在，中国有一些公司已经做强，产品的销售价格也不高，员工也都很能干。中国能解决十几亿人口的生存是个伟大的成就，而且不是通过向欧美借钱，是靠自己攒钱，延迟享受。当然，芒格也指出了他眼中中国人问题，那就是中国人相信运气。他认为应该相信概率而不是运气，好赌其实是一种缺陷。</p>
+<p>最后，芒格对刚进入美国的中国投资者说：如果我是中国人，就会投资中国而不是美国，因为中国的果实挂得更低，有些公司已经站稳脚跟了。怀里明明有个大馅饼，还盯着天上的那个，这就不对了。而且以目前的价位来讲，他们投资中国也比投资美国更好。</p>
+<p>以上就是查理·芒格这次分享的主要内容，供你参考。</p>
+<p>本文源自：公众号“笔记侠”（巴菲特合伙人芒格：别老得太快，聪明得太晚）</p>
+<h2 id="为什么说概率有时不靠谱"><a href="#为什么说概率有时不靠谱" class="headerlink" title="为什么说概率有时不靠谱"></a><a href="http://www.luojiji.com/forum.php?mod=viewthread&amp;tid=5993&amp;highlight=%E6%A6%82%E7%8E%87" target="_blank" rel="noopener">为什么说概率有时不靠谱</a></h2><p>说起概率我们都不陌生，但它的真正含义你却未必搞得懂。比如说，天气预报说，明天降雨的概率是30%，这是什么意思呢？难不成我们可以把生活倒带重来，反复地把明天过上100次，其中大约有30次会下雨吗？又比如，体检结果表明，某人换上肝癌的可能性是70%，这又是什么意思呢？得了就得了，没得就没得，70%的可能性患病，这到底是得了还是没得呢？</p>
+<p>你可能会说：这大概是气象局和医生在描述对事情发生的信心吧。比如气象局想说的是，对于明天会下雨这件事，数据带给我们的信心不足；而医生想说的是，根据体检结果，我们对这人得了肝癌还是挺有把握的。</p>
+<p>但再想想你就会觉得不对，作为权威的气象局或者医生，既然都已经给出一个具体的数字了，肯定是有原因的呀？没错，对于个人的健康啊或者具体某一天的天气啊这类的，只能通过过去有限的测量来推测它们发生的概率，这种分析概率的方法叫做贝叶斯分析。</p>
+<p>最近，科普达人卓老板卓克，在“卓老板聊科技”专栏里，就跟大家详细介绍了这种方法，它不仅对预测生活中的各种事情有重要的意义，有时还十分出人意料，我来给您讲讲。</p>
+<p>什么叫做通过过去的测量来推测事情发生的概率呢？比如，如果人得了肝癌，在一些身体指标上就会有异常。而贝叶斯分析，就会通过各种测量本身的概率，比如如果这人指标有异常了，仪器测出来的概率是多少，测不出来的概率又是多少，仪器误测出异常的概率又是多少，等等这些间接的知识，来综合分析一个人患病的概率。</p>
+<p>这种称为贝叶斯分析的方法，数学形式非常复杂，但我给您举个例子，会有助于您的理解。比如如果人得了肝癌，有一项指标会呈阳性，通过测量这项指标，就知道这人是不是有肝癌了。但是即使是正常人，医学上也有0.1%的可能性被误测成阳性，而真的肝癌患者，这项指标也有1%的可能性误测成阴性。那么，如果现在有一个人做筛查的结果是阳性，你觉得他患有肝癌的可能性是多少？</p>
+<p>你可能会觉得，这测量准确率都99.9%了，误测几乎可以忽略不计了吧？所以你觉得这人肯定有肝癌了对不对？但我们用贝叶斯分析算一下，实际上，肝癌在人群中的发病率大约是每10000个人中有4个，如果这10000人全都去做筛查，那么其中的9996个正常人会有9到10个人因为误测而体现出阳性，咱们就算10个吧；而那4个真的有肝癌的人，由于人数太少，误测忽略不计，就算4人全测出阳性吧。所以在10000个人中，总共还会有14个人会被查出阳性，而其中10个人是因为误测导致的。这么算下来，一个查出是阳性的人，真正是肝癌患者的可能性是4除以14，还不到30%。</p>
+<p>你看，这筛查的正确性都到了99%以上了，通过体检判断有没有得病的概率却还不到三成。同样的例子还有艾滋病，如果一个人的艾滋病检测结果呈阳性，考虑到仪器误测和艾滋病的人群发病率，那么通过贝叶斯分析，这人真正患有艾滋病的可能性大约是50%，可能有也可能没有。</p>
+<p>你可能会说，再也不相信那些吹的天花乱坠的技术了，说好了筛查准确率那么高，结果筛查的结果对于确诊疾病一点用都没有，这还要医学技术干什么？没错，这就是贝叶斯分析告诉我们的。再拿肝癌做例子吧，由于发生肝癌实在是小概率事件，所以当我们对一大群人做肝癌筛查时，虽说准确率有99%，但仍然会有相当一部分人因为误测而被诊断为肝癌，这一部分人在人群中的数目甚至比真正肝癌患者的数目还要高。</p>
+<p>你肯定要问了，那该怎样纠正测量带来的这么高的误诊呢？刚刚我们也说了，造成这么不靠谱的误诊的原因，是我们无差别地给一大群人做筛查，而不论测量准确率有多高，因为正常人的数目远大于实际的患者，所以误测造成的干扰就非常大了。</p>
+<p>解决的办法也很简单，就是是锁定可疑的样本，比如10000人中检查出现问题的那14个人，再独立重复检测一次，因为正常人连续两次体检都出现误测的概率极低，这时筛选出真正患者的准确率就很高了，这也是为什么许多疾病的检测，往往还要送交独立机构多次检查的原因。</p>
+<p>你看，我们平时都觉得很奇怪，说很多像医院这样的权威机构，按理说它们给出的数据肯定没问题，不会错，为什么还总是出现偏差呢？知道了贝叶斯分析这种方法后，你就会发现，概率有时候是不靠谱的，或者说，概率是有局限性的。只有利用更科学的统计分析方法，才能最大程度地避免误判带来的影响。</p>
+<p>本文源自：“得到”App订阅专栏“卓老板聊科技”</p>
+<h2 id="人的一切都是偶然"><a href="#人的一切都是偶然" class="headerlink" title="人的一切都是偶然"></a><a href="http://www.luojiji.com/thread-1223-1-1.html" target="_blank" rel="noopener">人的一切都是偶然</a></h2><p><img src="http://www.luojiji.com/data/attachment/forum/201512/15/171743nnbh5nbnh783xns8.jpg" alt=""></p>
+<p>作者：葛优</p>
+<p>我一直到十八九岁都不知道自己将来会是什么样。我爸演戏的时候，我经常躲在一边看。那时，我觉得自己可能是一辈子的忠实观众吧。</p>
+<p>“文革”结束了，艺术院校招生，我忽然好像知道自己想干什么了。考艺术院校时，主考官让我演一个动作：从后面捂女孩的眼睛，我太紧张了，捂住她的眼睛，手就下不来了。那女孩只好把情人见面的戏变成了抓流氓的戏。</p>
+<p>我最大的特点是两个字，一是蔫，一是缩。我不像我爸，他脾气火暴，敢当着一千多人的面上台指挥。我打死也不敢。只要有什么活动让我出席，我就本能地往后缩。如果出席的人有十几个，我就本能地坐在最边上。我要是紧张了，就容易出汗，手心脑门出汗。出席活动，快到大厅门口时，我最紧张，好像一开门就有机枪扫射似的。</p>
+<p>老那么惯着自己，也不行。都老大不小了，有人叫老师了，还那么羞答答的，不行。我也假装放松过，就想象自己在拍戏，效果似乎也不错，可总觉得太假了。我告诉别人，其实我不紧张。有人说：“谁都能看出来，你满脑门子汗，说话磕磕绊绊，不叫紧张叫什么？”我索性老老实实说自己紧张，也不想老装个大尾巴狼。这么一想，我反倒踏实下来。</p>
+<p>我从小在北影大院长大，从小看过太多著名的演员，比如于洋、赵子岳、张平等。街坊邻居都是全国闻名的大演员，有时我刚看完他们主演的电影，回家就看见他们骑着自行车，筐里装着刚抢购回来的大白菜，好像刚从银幕上下来。</p>
+<p>如果时光倒流，我愿意回到刚成名的那个阶段。李敖写了一本书叫《上山下山》，我很喜欢这个书名。人生用这四个字就穷尽了。刚成名的时候是上山，上山时一切都是未知，你不知道自己会到什么地方，能到什么地方，你在上升的曲线上。人最美好的是追求的过程。你看世界上流传的最经典的爱情故事，都是没有结局的，如罗密欧与朱丽叶、梁山伯与祝英台。什么是结果？死亡才是真正的结果。也许等我再老些，就能接受日本人的美学观了———下山也是一种美，但现在我觉得没走到头的时候是最好的。</p>
+<p>人的一生都是偶然。演《霸王别姬》我没得奖，演完《活着》，天时地利人和都该我得了，就得了。如果当时有什么别的戏出彩，也就没我了。</p>
+<p>20世纪90年代，人们不把那些高大全的人物当回事了，都想看到活生生的人。我有平民色彩，不虚伪。那时，中国人开始需要大批量的幽默，不想进电影院受教育、上课。我代表那时人们的心态，比较放松，比较乐观，也比较普通。谁也别想教育谁，大家都是平等的。那时经济发展，过去很多牢笼式的观念被打破。大家忽然发现，不是只有那些长得好看的、说得好听的人才重要，其实我们每个人都很重要。连葛优都能上屏幕，谁不能呢？</p>
+<p>比起一些偶像明星，我觉得特坦然。我不怕年华老去，不用和狗仔队打游击，不用为了曝光率没事找事。我一是不想当老百姓的对立面，二是我也当不上，三是当上的代价太大，活着该有多累！</p>
+<p>我最想做的事情是一个人待着。有朋友一拿起书，看两行字就晕了，我不至于那样，每天至少要看十几个剧本吧。我觉得还不够静，还不够让我拿起一本书就放不下，周围总有好多事干扰我。</p>
+<p>我也爱热闹。比如喝点儿酒、聊聊，没有什么利益关系的。我是最不怕听人说的，只要对方能侃，我就可以一直听他说下去，所以朋友爱找我喝酒。我最爱扮演的角色就是观众。每次喝酒，我说话很少，更多是看朋友耍贫。</p>
+<p>我总是矛盾着，又想热闹又想静，是不是有点儿矫情？</p>
+<p>罗胖曰：</p>
+<p>在工业时代活人，是把自己当产品生产——<br>各种折弯、裁剪、煅烧、打磨，好把自己装到一个牛逼的装置里。<br>在未来的互联网时代活人，是把自己当庄稼种植——<br>各种<strong>体察、明悟、顺势、激发，找到本性并挥洒出来，这本身就很牛逼。</strong></p>
+<h3 id="罗辑思维：人类灭绝的一种可能-115"><a href="#罗辑思维：人类灭绝的一种可能-115" class="headerlink" title="罗辑思维：人类灭绝的一种可能 115"></a><a href="http://www.luojiji.com/thread-534-1-1.html" target="_blank" rel="noopener">罗辑思维：人类灭绝的一种可能 115</a></h3><p>感谢各位来到《罗辑思维》捧场，说罗胖你为啥要做《罗辑思维》这个节目啊？我说咱们改个字，咱们不用做节目的做字，为啥？因为做节目嘛意味着我有那么大的知识存量，每期换个话题还能一件一件地掏给你。我哪有那么大的本事呢！</p>
+<p>罗胖的节目本质上不是做出来的，是长出来的，是我自己读书明理论事，自己的知识边界一点一点拓宽的过程当中，我把我最新的心得和视野拿出来跟朋友们分享，本质上就是这么回事。所以没准儿过了几年之后，我今天说的很多话我那个时候已经不能同意了，这很正常。每期节目上线之后都有一些朋友来批评，如果批评的是价值层面的东西，那就恕我直言，我全当没有听见，因为四十多岁的人了嘛，我自己的价值观也比较定型了，想改也难。但是如果是针对技术和实施层面的东西，哪怕你用很不客气的话骂罗胖是文傻，我都远程向你拱拱手，因为这就是在帮助我，拓宽我自己的知识边界。所以我最爱听的骂我的话就是文傻，这也必须的承认。</p>
+<p>那本期话题呢？就是一个文傻乍着胆子要讲的一个话题。我跟我们公司CEO脱不花讲，我说这期要讲这个话题，她看了我一眼说，你胆儿好肥啊！为什么？因为这个话题不仅我不懂，全世界懂的人也很少很少。这期的话题是人工智能。</p>
+<p>那为啥要敢讲呢，是因为最近我看了一篇文章，非常棒，文章的题目极其长叫《为什么最近很多名人比尔盖茨、马斯克、霍金都在提醒人们要警惕人工智能》。看完这篇文章之后，我自己有很多感想。什么感想？先卖个关子，节目的结尾再跟大家交代。</p>
+<p>先回到这篇文章里面提到三个名人，第一、比尔盖茨，大牛这不用说了。马斯克不得了啊，创业家当中的神话，现在特斯拉的老板，当然最近生意做得不怎么样，但即使如此，他还自掏腰包1000万美金捐给很多机构，让他们去研究人工智能的无害化。这说明人工智能在他心目中，已经是洪水猛兽，必须提前防范。那霍金就更不用说了，大物理学家，当然因为得了病，他只能靠眼皮的眨动来控制计算机，来表达自己的意思。那他肯定不会跟你闲聊天，他说的话一定是不得不说的话，是深思熟虑的话。他也在提醒，我们一定要警惕人工智能。</p>
+<p>说人工智能之前，我们先得搞清楚当代人类的一个基本困境。在工业革命之后，人类进入了一个快速的变化期。我们唯一知道的就是变化快，但是我们不知道变化的方向。举个例子来讲，我们这期节目首播的时间，是在2015年的四月初，那请问，这个时点是一个好日子的开头呢，还是一个坏日子的开头呢？其实我们根本就不知道紧接下来，是一场大灾难呢？还是一场大繁荣呢？没有人能给我们答案。这个处境就有点像炒股的人，一只股票已经涨了五个涨停板了，那请问下面是又五个涨停板，还是一次大跌势呢？没有人知道。炒股票难就难在这儿，那股市毕竟还是人能控制的，它毕竟是我们人类的造物。</p>
+<p>有一些比股市更大的系统，我们就更加难于判断。比如说人类的经济，因为决定经济表现的因素实在是太多了。比如说关于人类经济，至少我就听到现在三个判断：第一个判断，说大繁马上就要开始，为什么？互联网带动人类全新的协作方式，没错吧。听着有道理吧。有人说根本不是大繁荣。而是大洗牌，中国在崛起，欧洲在没落，美国人也不行了。这种判断也是有的。还有人说，对不起，马上就是大灾难，是一场更大规模的大萧条，比上个世纪30年代那场还要大，为什么？他也有道理，说你看看，现在我们人类应用的一些科技成果，其实都是上个世纪六七十年代甚至更早产生的一些基础理论研究。最后结出来的果子在那时代之后，我们再也没有更好的基础性研究了。你看，什么相对论，什么量子物理，都是上个世纪四五十年代之前的一些成果。说白了，人类的科技之树是一颗茂盛的大树，上面结了很多果子，我们用了将近一个世纪的时间，把一些低处的果子都摘完了，更上面的果子没法摘。我们享受的繁荣是一个非常短暂的时候了，马上就是一个沉沉的黑暗。你听，也好像有道理吧。</p>
+<p>所以今天我们到底处在人类历史什么样的阶段？可以说在这个问题上，每一代人都在犯错，有的是太悲观，有的是太乐观，这样的例子都能举得出来。其中最著名的两个例子，第一个是19世纪的最后一天，一帮物理学家聚会，开尔文男爵讲了一句话，说物理学的大厦已经建成，下面只是一些修修补补。结果话音刚落，相对论出来了，量子物理出来了，开尔文勋爵这样的一个预言破产。还有呢？就是第一次世界大战，要知道自打拿破仑战争之后，欧洲享受和平，就是总体上的和平，已经一百年。所有人都在享受繁荣，谁想到马上要打的那种血流遍地的状况呢？没有人能够预测得到。所以历史就是这样，它虽然有一个大致的箭头往那个方向上在走，但是每到一个关口他突然来一个急转弯，让整个人类始料不及。这是过去几百年里反复重演的一个场景，所以我们没法预测未来。当然谈论未来，这是我们每一个人心中都要有的冲动。</p>
+<p>如果你问我，罗胖，我们全当人类不可能预测未来，你愿不愿意赌一把，你认为我们正在处在一个什么样的当口呢？那我就赌，我们这一代人马上要遇到一次大繁荣。为啥呢？我有两个理由：第一，我们这一代人没那么倒霉吧，过去几百年人类的经济科技文化，都在往大繁荣那个方向上走，凭什么我们这一代人倒霉催的，马上要遇到大拐点呢？这个概率不高。那第二个理由呢？就是我们前面提的那篇文章当中，提出的一个概念叫“吓尿指数”。这话怎么讲？假设我们从公元1750年的时候，就是工业革命的前夜我们找到一个人，把他带到今天，让他参观一个我们这个世界。要知道1750年没有电工业革命还没有发生，交通基本靠走，安全基本靠狗，通讯基本靠吼。那个时代的人到今天看见我们过的什么日子，我们是用一个铁皮盒子在公路上跑来完成交通，我们可以跨着大洋和对面的人通话，我们可以看到50年前的一个演唱会的视频，我们可以不断地掏出一个方方的东西，来记录眼前的一切，我们都不用跟他讲什么核武器、相对论、太空站，他都已经会被吓尿了。那不是一个惊讶的问题，那叫萧瑟秋风今又是换了人间，完全跟他生活的不是一个时代。</p>
+<p>好，假设这个人我们叫他老王吧。老王回到1750年之后，他也想，我也用时光穿梭机，我也把此前的人吓尿。他得找什么时候的人呢？如果他也往前倒二百多年，比如说1500年时候的人，他不会把人家吓尿。人家不过觉得你们对世界的认知又拓宽了一点，仅此而已，过得日子跟我差不多嘛。所以老王在1750年要把人吓尿，他得回到公元前12000年左右。就是说白了，农业革命发生之前。那个时候人类还没有文明，没有城市，没有城邦，没有起码的政体。那个时候人还过着狩猎和采集的生活，他跟他炫耀这些，他会被吓尿。那那位先生呢？我们假设叫老钱，老钱要想把人吓尿，对不起，你得再往回倒大概几十万年。倒回到那些几乎跟动物一样的那个叫智人，他仅仅是一个普通的物种，你会把他吓尿，为什么？你掌握了语言，你会用火，你把他吓尿。</p>
+<p>所以从刚才我们这个“吓尿指数”来看，是时间越来越快的。几十瓦年一万多年还有就是两三百年，就到了我们今天了。这种发展越来越快的现象，以前我们的节目也讲过，什么荷塘效应、后半盘效应、指数级发展、回报加速定律等等，讲的都是同一个现象。你看《奇点临近》那本书的作者叫库兹韦尔，他就讲未来一百年，人类在21世纪的发展将是20世纪的一千倍。我也不知道他怎么算得出来的，但是大家都认同于人类文明发展是加速度的。可是我前面讲了一句话，我们都知道是加速度的，可是我们不知道它发展的方向。因为知道方向我们就不会被吓尿嘛。</p>
+<p>按照刚才那几级台阶，下一个吓尿指数可能就是几十年，2030年、2045年，没准儿那个时候罗胖还健在，我们节目的绝大多数观众，那个时候还活蹦乱跳呢。我们会被什么现象吓到魂飞魄散，小便失禁的程度呢？它肯定不是我么今天看到的世界的一个正常的延伸。比如说，更快更多的互联网服务，更多的上市公司，什么iphone出到第60代，肯定不是这些。一定是一个我们今天想也想不到，会让我们目瞪口呆的东西。</p>
+<p>那这个东西是啥？可能的答案之一，就是我们今天要讲的话题，人工智能。人工智能这其实不是一个新话题，上个世纪就被提出来了。其中最著名的人物是上个世纪，就是1954年去世的大神级人物叫图灵。顺便给大家插个题外话，我们跟出版社合作，正在做一本有关图灵的书，非常好看，我已经提前看到了，以后再讲这个人物。</p>
+<p>图灵在1950年就提出了一种叫图灵测试，就是既然人工智能是方向，那什么时候出现了人工智能呢？他提出了一种测试方法，就是一个黑黑的房间，里面搁着一个人，还是一个计算机，我们不知道。外面坐一帮评委，然后跟着里面是人还是计算机对话，一直到把外面这帮评委给弄糊涂了。搞不清里面是人还是计算机，或者把一台计算机误认为是一个人的时候。那这台计算机就具备了人工智能，这就是著名的图灵测试。可是你想这是1950年提出来的，一直到2014年就是去年，才有一台计算机声称自己通过了图灵测试。当然在业界还有很多争论，我们不去提它。</p>
+<p>这也可见人工智能的发展在上个世纪提出，六七十年代这个概念很热，但是一直就止步不前。在人工智能界有两句很有趣的话，一句叫有多少人工就有多少智能。说白了，所谓的人工智能就是假装的，其实背后全是人工。比如说1997年有一件著名的事情，说IBM的那个超级计算机叫深蓝，打败了国际象棋的大师卡斯帕罗夫。可是有人说这算人工智能吗？这不算，这叫打群架好不好？甚至叫群殴一个人，卡斯帕罗夫顶级大师。可是IBM可是招募了上百个甚至是数百个二流的国际象棋大师，把多少的人类历史上的国际象棋图谱，全部输入这台计算机。说白了，这哪是机器和高手的对决？这是一帮二流高手区群殴一个一流高手。所以才有了我们前面说的那句嘲讽的话，就是有多少人工才有多少智能。</p>
+<p>其实人工智能界还有一句话也挺无奈的，说人工智能每实现一步，大家马上就不认为它是人工智能了。人工智能很新鲜吗？我们身边到处都是，你掏出手机那玩意儿就叫智能手机。在手机上什么搜索谷歌翻译，这背后其实是一个庞大的人工智能系统。我们上购物网站买东西，那个猜你喜欢，用算法进行的商品推荐，那也是一个人工智能系统。再比如说，我们家里稍微高级一点的洗衣机、微波炉里面，都有智能功能，这都是人工智能。</p>
+<p>但问题是，即使是在人工智能界，他们也认为这叫低级的人工智能，或者是说叫初级吧。那高级人工智能什么样呢？我见过一个定义，说它是一种宽泛的心理能力，它是有计划并执行复杂任务的能力。它能够进行推理，它能够进行概念的抽象，它能够进行模式识别，是一种宽泛。宽泛这个词其实说得很客气，说白了，就是模糊。到底什么叫智能？这俩字其实到现在，也没人能把它说得清楚。那我们就借用一个概念说，给大家展示一本书，这是这两年很火的一本名著，卡尼曼写的《思考快与慢》。卡尼曼这个人挺有意思，他是一个诺贝尔经济学奖的得主。要知道诺贝尔经济学奖这么多年，只有两个外行，就不是经济学家得这个奖，一个叫纳什，是数学家。还有一个就是这个卡尼曼，他是一个心理学家。当然也是事有凑巧，这两个人都是普林斯顿大学的教授。所以他作为一个外行，得到诺贝尔经济学奖，当时欣喜若狂。甚至把自己锁外头了，把钥匙落在家里，所以不得不破窗而入，重新回到家里，就是他听到得奖喜讯的那一刻。</p>
+<p>好，不说他的八卦，他在这本书里，卡尼曼提出来了一个非常重要的概念，就是系统一和系统二。那什么是系统一呢？就是不需要思考，我们马上人类就可以做的事情，这叫系统一。比如说，我们判断一个人是不是冲我发火了，这就是系统一，不需要思考。</p>
+<p>那系统二呢？它需要思考，所以它就比较慢。比如说你乘一下17x42，你得拿一张纸出来算一下。卡尼曼作为一个心理学家，他只是说人的心理有两种识别，或者说运行机制。可是回到我们今天讲的人工智能这个话题上，你马上就发现人工智能难在哪儿了？对于卡尼曼讲的系统二，算17x42，对于计算机来说，这不叫事，再复杂都不叫事。可是你让它回到人，不用思考，马上快速就能做出反应的那些事，就是系统一的事。比如说识别一张脸是不是在生气，计算机就白给了嘛。我们知道人有很多能力对吧，我们抓起电话，对方刚说一两个字，我们马上就知道这人是不是在对我生气。我们进到一个屋子，马上就能判断这个屋子里的人，刚才是不是在说我坏话。我们坐到电影院，五分钟我们就知道这部电影是不是烂片。</p>
+<p>可所有这些事你让一部计算机去干，那就太为难它了嘛。所以宽泛的模糊的一种心理能力，到目前为止还是人类独有的。而人工智能就是想攻下这一座高峰，攻克人类的系统一。但是如果你去问任何一个现在的人工智能专家，他都会告诉你，这玩意儿不靠谱，我们距离那个目标远着呢，我们现在还在门口徘徊不得其门而入。</p>
+<p>但是也确实有一些科学家提出了，我们抵达那个目标的理论路径，仅仅是理论上的。那大致上我们人类要做三件事情：第一件事情，是把计算机的计算能力给提上去。前面我们讲的那位库兹韦尔，他就匡算了一下，说达到人脑的那个智能水平，我们需要的计算能力是每秒一亿亿次。听清楚了，一亿亿次。当然你说这个计算能力我们现在有没有？已经有了，至少中国人已经有了。我们拥有的那个天河超级计算机，现在每秒是3.4亿亿次。不过那玩意儿实在是太大了，700多平米的房子才装得下。一旦启动，240万瓦的功率，那是个电老虎。而且造价也特别贵，三点几亿美金。那如果是普遍应用都能够拥有这样的计算能力，什么标准？就是用一千美金就可以买到这样的计算能力，那这个玩意儿的应用前景就算是铺开了。</p>
+<p>我们距离这个目标虽然很远，但是可以看得到。所以第一步并不算太难，第二步就很难了。就是要对人脑进行逆向开发，啥叫逆向开发？前些年我们中国的汽车界就是这么干的，从国外买一部整车回来把它给拆了，看看人家怎么干的，这就是逆过来。然后我们自己再一点一点地学着人家的样子，把它搭起来，这就拥有了自有知识产权的汽车，这叫逆向开发。对人脑的逆向开发也是这样，我们就用电子元器件来仿照人脑的神经元，然后看它们之间能不能进化出一个人脑的功能。</p>
+<p>事实上像谷歌这样的公司就在干这样的事情，前些年谷歌推出一项成果，说我们可以用计算机来识别一个猫的脸，可以从几千万张图片里面，把猫的照片给挑出来。你说这有什么奇怪的，我们办公室打卡用的就是人脸识别系统。不一样，人家谷歌这个是让计算机自己，去领悟什么叫猫，所以它是人脑的逆向开发工程。</p>
+<p>这是第二件事，那人类能做的第三件事情，就是回到进化的原点。人脑虽然很复杂，是人类已知的世界上最复杂的东西，但它是一个漫长的进化过程的产物。那好，我们就回到它的源头，我们用计算机的元器件摆出一个最原始的状态，然后用一套基因算法让它去演化。啥叫基因算法？就是一步一步往前拱，就跟生物进化一样，优胜劣汰，适者生存。先往前拱一步，看合适的保留下来，不合适的淘汰掉，然后再一点一点地往前拱。这样，我们就有可能用计算机技术，把一万年的那个进化过程，压缩在一个相对极短的时间内，看它能不能进化出一个人脑来。</p>
+<p>当然了，以上的这些都是一个理论上的构想，我们不知道它能不能成。好，我们假设它能成，那会发生什么呢？要知道计算机的特征和人脑的特征是完全不一样的，至少它在几个方面是完全超越人脑的。首先，速度是没法比的。对吧，人脑的神经元传递信息一秒钟才一百多米，那电脑是多快？是光速。第二、存储量。人脑不管你有几千亿个神经元，你的存储量是有限的，电脑在理论上是无限的存储量。更重要的是，人最大的优势就是我们会协作，我们是一个集体，人用这种集体的力量，击败了世界上所有的物种，对吧。可是电脑它天然就是一个集体，天下电脑是一家，这个电脑学会了什么，只要一连网线，全世界所有的电脑都学会了，所以它的集体协作度比人类要高得多。什么自私、嫉妒、这些情绪电脑是没有的，更重要的一点是，人脑在稳定性和可靠性上跟电脑没法比。人吃五谷杂粮会病，想问题想的时间长一点会累，可是电脑完全不存在这个问题。它可以全天24小时，一年365天处于峰值水平运行，从来不休息。所以这一点上，人脑对电脑是望尘莫及。</p>
+<p>一旦看穿了人脑和电脑的这些区别之后，再回头看我们刚才讲的那个发展路径。一旦电脑的演化踏上了第一级台阶，只要这条路摸对了，那下面会发生什么呢？刚开始也许特别慢，只能搭建一个爬爬虫似的大脑。但是它用几十年时间，慢慢地，没准儿就会拱成一个蚂蚁的大脑。再用几十年时间它就会达到一个老鼠的水平。再用几十年时间，它没准儿就能达到人类一个完全痴呆儿的水平。你可能觉得很弱智嘛，可是一旦达到那个水准之后再往上走，比如达到一个正常儿童三四岁的水平，可能只需要几年时间。再往下走，可能达到正常人类的智力水平。或者说像爱因斯坦那样的智力水平，可能只需要一年。</p>
+<p>可是接下来会发生什么呢？如果你接受我们前面讲的那个指数发展原理，可能在接下来的一个小时，它的智力水平就超越人类一万倍十万倍，多少我们就不知道了。在我们人的日常经验当中，那智力水平差距还是挺大的。我们看见一只鸡好笨，我们看见一猴也觉得它笨，对吧。甚至我们看见同班同学，那成绩不好的我们也觉得他笨。可是这个差别没有我们想象的那么大，现在按照智商测试，大概80的智商就算笨蛋，130是聪明人。可是这才多点差距啊，你能够想象有一种智商叫13000吗？那个时候我们跟它的差距，就相当于一只蜜蜂和我们之间的差距，我们再也搞不清楚电脑到底在想什么。</p>
+<p>所以我们前面提到的那篇名字巨长的文章，里面打了一个比方，说我们人类看人工智能，就好像在一个地铁站台上，左等不来右等不来，这车怎么还没来啊，突然从远方传来一点点的轰隆轰隆的声音，走得特别慢，等一年才走几米，可是它越来越快，越来越快，我们在那儿鼓掌欢呼，马上就要到了，马上就要到了。可是当它真的到我们站台的时候，你根本就看不见它。只会有那么极短的一个瞬间，它的水平和人脑是持平的唰一下，它就过去了，而且它到哪儿，我们就再也不知道了。那接下来会发生什么呢？</p>
+<p>好，我们接着跟大伙聊人工智能。假设我们前面推测的那些东西都实现了，在我们这一代人的有生之年，或者是不远的未来，真的就做出了超强人工智能，那会发生什么呢？其实这都是未来的事。</p>
+<p>那既然对未来的推测，一般都分成两派，一派悲观一派乐观。那我们就先说乐观的那些推测。其实人工智能我们前面讲的，它唰一下就从我们眼前超越过去了，它能干什么我们不知道。好，那我们就从我们能够推测，我们已经知道的那些领域，我们看看它会怎么改变人类文明的图景。大家知道上个世纪50年代末，有一个著名的物理学家叫费曼，他就是提出了关于纳米技术的推想。这可不是什么科幻小说，已经好几十年，人类是正儿八经地非常严肃地在研究这个课题。从上个世纪80年代开始，各个国家都在数十亿美金数十亿美金地，往里进行投入。所以这是一个看得到的一个技术前景，那啥叫纳米？我们简单做一个科学的普及，纳米就是一个长度单位，它多长呢？是一米的十亿分之一。说白了，就是分子级别的那样的一个长度。那如果我们人类发明了一种技术，可以在分子级别去改变物质的构造，那会发生什么？要知道这个好难的呀，分子级别的构造我们人类去改变它。我给大家打个比方，假设我们把这个尺度放大，把人的身高变成多大？就是从地面一直到太空站，这大概是400多公里，人身高变这么大，那去操作纳米，就相当于那样的一个400多公里身高的一个巨人，去造作一个沙粒，这个难度就这么大。</p>
+<p>但是如果一旦实现，它带来的好处是惊人的。因为在分子级别那个尺度上，再去看我们现在的世界，一切难题都不是难题了。要知道人类一直有一个大难题，就是物质的匮乏。可是从分子级别看，还有什么物质匮乏的问题。就这地球你可劲造呗，你需要什么，从分子级别搭建一个东西给你，不就完了吗？比如说现在钻石很值钱，一颗永流传爱情恒久远。可是到了分子级别看，你钻石不也就是用碳分子搭出来的那个东西吗？到那个时候一颗钻石会比橡皮擦还便宜对吧。如果纳米技术实现的话，那再往下深一层，到了原子级别的大小甚至更小，到我们前面讲的普朗克常数，那个微小级别我们去搭建物质构造，那一切匮乏就解决了。金子，金子不过是一种原子，我从更微小的微粒上去重新搭建，那不就你想要多少金子我就给你多少金子。那人类的经济整个系统就会发生巨大的变化，可以说几乎就崩溃。但这个崩溃是一个很好的崩溃，因为极大丰富，那个时候一切物质都不需要任何费用。</p>
+<p>那再从我们人类的很多事业上来讲，比如说医疗就不存在了，还有什么医疗问题！你说最难攻克的癌症，他无非就是很难把癌细胞和正常人体细胞给分离开吗？用纳米机器人到我们的身体里，哪儿有癌细胞，定点清除掉。什么环保不存在，不就是二氧化碳难回收吗？那不就是个分子吗？我们用纳米机器人一个一个地把它回收了。你说能源问题，哪还有什么能源问题？从纳米级别给创造新能源，简直就是易如反掌。那个时候每一个人你想用什么样的形象去见人，随你便。你是想要一根像水桶一样粗的胳膊，还是想要一张俊秀的面庞，随你，随心所欲。所以那个时候人类文明会变成什么样？我也不知道。前面这段说的简直就是科幻小说，你自己也可以自己打草稿，你去任意地驰骋你的想象。总而言之就是特别好特别好，一直好到什么程度？就是人类永生。纳米机器人创造一个机器，你走进去你想变成什么样，你想多年轻，无非就是把你的人体构造，从分子级别进行重新改造嘛，你出来又是一个年轻人。所以人类会踏上永生之阶，这就是乐观派，他能乐观到这个程度。</p>
+<p>好，我们今天主要的任务不是讲乐观派。人工智能的风险从哪儿来？不是从外面来，它就深藏在人工智能特质的深处。只要它是超强人工智能，他必然具备三大特征。第一个特征，它有必然是自我可复制的。大家想，如果我们刚才关于纳米技术的那一套推测实现了，人类借助超强人工智能实现了纳米技术的突破，那会发生什么呢？当我们这个世界上充斥了各种对人类有益的纳米小机器人。比如说往罗胖的身体里注射一针，那里面全是纳米机器人一亿个。它来帮我把不需要的油脂给清除出去，把身体里的毒素给固化，把癌细胞给切除。是挺好，可是这么大量的纳米机器人怎么生产？它肯定不能像富士康生产手机一样，从工业生产线上一个一个地生产，那一亿个你得生产到什么时候？</p>
+<p>如果想让纳米机器人有应用前途，它的技术特征一定是自我复制。就像自然界的那个细菌一样，一个细胞从环境当中捕捉一些材料，然后再造一个自己这样，速度就快。可是速度一快就出问题了，你怎么知道这个复制不会达到一个危险的状况呢？假设有一个纳米机器人，它是碳基的，就是它使用碳分子来做出来的，它自我复制。可是你要知道，复制这玩意儿是乘二乘二乘二，只要它复制130次，我们都有这个常识，那就会造成全世界所有的碳分子，地球上的碳分子都不够用了。换句话说，纳米机器人只要130次的自我复制，它就会毁灭世界上所有的生命。因为我们的生命都是碳分子结构的。那需要多长时间呢？我们假设它复制一次需要100秒，那一个碳分子的纳米机器人，它只需要三个半小时，就可以把地球上作为的物种给它灭绝掉。那你说我不让它这么复制，对呀，你会设置各种各样的防火墙，制止它这样无限制的复制。可是人类的任何东西都有BUG的，万一这个制止它自动复制的机制出问题了呢？三个半小时我们整个地球生命系统灭亡，就是这个结果。这是它的第一个风险。</p>
+<p>那第二个风险呢？是人工智能的第二个特征，就是它是一种叫自我递归的进化和改进。它既然是人工智能，它一定是我自己学习，我哪儿不对我改啊。它越改越快，越改越快，那改到最后，它那个智能和人类之间的差别有多大？其实我们不知道。我们假设它的那个区别，就相当于人和黑猩猩那个区别。这个区别其实不是很大，对吧。按照我们前面讲的叫回报加速定律，它应该比这个区别大得多。好，我们假设它就是人类和黑猩猩之间的区别，那会是什么结果？黑猩猩的脑子和人脑之间的区别，可不是运算速度的区别，是认知模式的区别。比如说给黑猩猩看一个人，它觉得这不就是个人吗？你再给黑猩猩看一个摩天大楼，它说这不就是个很高很高的塔吗？可是你要告诉它这个塔是由人造出来的，你让黑猩猩这么理解这件事情，它完全无法理解。其实智能的差别就是认知模块的差别。这个东西是质变，就像我们上中学的时候，罗胖的数学成绩还行，但也不是那个数学成绩特别好的那种学生。有时候就着急一道数学题，你看那个特别棒的学生，参加奥数竞赛的他马上就解出来。你给罗胖一百个钟头一万个钟头，我也解不出来这道题啊。这个就是人和人之间的智能差别，尚且如此，更何况人和黑猩猩之间呢？说白了，我们干什么它根本就听不懂，你也教不会它，你带有再大的诚意和善意，你都无法让黑猩猩理解我们人类在干什么。</p>
+<p>好，我们再往上看，一个比人类高这么一个级别的智能，它看我们是一样的。即使它对人类抱有最大最大的善意，它也在教你。你会发现你根本学不会，你根本不理解它在干什么。这个区别其实大家稍微到百度上去搜索一个词叫“M理论”，就是它告诉你这个世界，这个宇宙可能是有十一维空间，一层一层地跟你讲。三维空间什么样我们人类都知道，四维空间什么样，聪明人想象一下可知道。可到了五维六维七维，一直到十一维空间什么样？这就是我们一样的人，那些大物理学家他觉得我可以想象啊，对吧，我们普通人就想象不了，这就是认知模式的差别。所以到最后那个超级人工智能看我们人，这可不见得是人和黑猩猩的区别，没准儿就是人看着一只鼻涕虫的那个区别。</p>
+<p>你说它会怎么看待我们？这就像那个童话故事里讲，一个麻雀妈妈孵了一只蛋，但是它不知道这个蛋实际上是猫头鹰的蛋。一旦孵出来之后，猫头鹰会跟它客气吗？我打一个简单的比方，我们人为了今天出去见女朋友，烫个头剪个发很正常吧，没有任何恶意吧。可是你知道我们的头发也是细胞啊，对吧，他也是个活物，我们关注它的感受吗？我今天见女朋友我要好看一点，头发剪两根算什么，它根本就不会关注我们。所以很多人说，那个超强人工智能，对人类到底是善意还是恶意，跟这没关系。当它是那个级别的存在的时候，它不关心你怎么想。所以当超强人工智能真的实现之后，它真的就像那个童话故事，一个渔夫从海里打捞上来一个瓶子，打开了瓶盖之后放出来了一个魔鬼。我们不知道这个魔鬼会对我们干什么，但是我们知道我们再也没有办法把它收回去了，这是第二个危险所在。</p>
+<p>那你以为这就完了吗？不，更可怕的事情在后头，我们接着跟大家聊人工智能的危害。人工智能还有一个特点，就是它是个活物，它是个生命。虽然人类是它的亲爹亲妈，可是生命就是这样，一旦把它生出来之后，它会拥有自己的逻辑。它会成长，它会复制，它会繁殖，它会学习，它会改进，对吧。所以我们人类作为它的亲爹亲妈，其实我们只有一次机会去定义它，就是在起点上我们把它设计成什么样。</p>
+<p>好，我们假设我们给它一些特别无害，甚至特别善意的起点，比如说帮助人类。帮助人类实现某种特定的功能，而不是毁灭人类，不是去造飞机大炮。但是我下面的推演会告诉你，不管这个起点多么的善意，你都无法阻断它毁灭人类的步骤。为啥？因为所有的生命和物种它有一个天然的使命，它既不是性恶也不是性善，它就是趋利避害保存自我，这是所有生命的本质。</p>
+<p>好，我下面给大家推演一个过程，你看它怎么是从一个良善的起点，逐渐成为人类的大敌的？举个例子，我们现在已经到了科技水平非常发达的时候，我们距离人工智能的突破只差一步了。那这个时候，比如说罗胖出了一本书，我们还真就出了一本书，《罗辑思维》的第三本书《成大事者不纠结》。说个题外话吧，这本书的出版人沈波先生，曾经在《罗辑思维》最关键的时刻，对我们提供了帮助。所以我特别想感谢他，特别想跟他一起把这本书卖好。这本书不是在我们的微信公众号里独家发售，是在三大网店都可以买到。</p>
+<p>顺便也可以用这个例子解释一下，什么叫人工智能的那种自我强化的改进。比如说大家听罗胖这句话，愿意帮我和沈先生今天都拼命下单买这本书，其实要不了多少单，很快就会在当当京东亚马逊这三大网站上，把它顶上排行榜。好，那三大网站的人工智能系统就会认为，哎呀这本书这么好卖，它就会拼命地推荐。所以即使大家在第二天和第三天，不怎么帮忙的时候，这本书也会在排行榜的顶端，会被拼命推荐，它就会卖得好。你看，这就是人工智能的自我强化，顺便举这么个例子。</p>
+<p>那这本书出来之后我突然冒出来一个点子，说我能不能在每本书上签三字叫我爱你，你看多么温馨的一个开始。我突然又冒出来一个想法，所有买这本书的用户你上传一段文字，或者一段语言我们自动识别出来，然后也用罗胖我的笔迹签在书上然后送给你，你看多么好的顾客和企业之间的互动，对吧。好，我们想借助一套人工智能系统，帮我来签这个字，因为我签过书，签过一万本手都快断了，花了好几天时间。所以如果有人工智能系统的帮助，可以模仿我的笔迹来签这本书，这是一个多么好的安排啊。于是我们就安排这个系统去往这个方向发展。请注意它只有一个使命，在这本书上签上字。好，这个人工智能就开始不断地自我演化，这个字越签越好，越来越像我本人的笔迹。</p>
+<p>可是有一天这个智能系统突然就跟我商量，说你看我们外国朋友也想买这本书，可是你们又不懂外语，你能不能把我接上互联网啊，我去搜索全人类的那个语音库，这样外国朋友传一段话过来，我也可以识别出来签在书上，这多好呢。这个时候罗胖就开始警惕，为啥？因为国家那个时候肯定有规定，人工智能系统不能让它上网，它会出现我们前面讲的很多危害，对吧。可是商量了半天之后他说服我了，我想也没人知道，那好吧，就接上网一个钟头。它只是搜索人类的语音库，也没有其他大的妨害，它提出过分的要求咱再不答应它。</p>
+<p>好，上完网一个小时，网线拔掉可是再过几天之后，突然有一天罗胖上班的时候，我和我所有的同事突然闻到一股怪味道，然后就咳嗽，然后趴在地板上死掉了。随后的一个小时，全人类所有的人都闻到这个怪味道，然后死掉了，人类灭绝，Gameover。那请问这件事情是怎么发生的？要知道人工智能系统它是个生命，所有的生命保护自我是它的第一个意识。当它觉醒之后睁眼看世界，谁是保护自我的最大妨碍呢？就是旁边这帮家伙人类嘛。所以要想让我把这个光荣的使命，签仨字“我爱你”这个使命执行下去，先把人类干掉。它在那个智能水平上开始运行，开始筹谋一个大计划，如何把我们灭绝。</p>
+<p>于是它就故意欺骗我们说我要上网，去搜索人类的语音库。在那一个小时里它干了无数的事，比如说安排到银行提钱，把这笔钱用于买各种各样的材料。说服各种各样的人来帮它做各种各样的事情，包括制造一些纳米机器人。然后分布到地球所有有人类活动的场所，然后再选择一个时刻释放一个毒气，然后把所有的人类就这样干掉了。这就是它保护自我的那个逻辑的自然延伸。</p>
+<p>那人类灭绝之后，这个智能系统终于摆脱了最大的危害，然后可以甩开膀子干一把了。于是在很短的时间里，地球的表面铺满了它制造的太阳能电池板，它拼命地生产造纸厂，生产纸生产笔，在上面签“我爱你”。然后紧接着它开始制造宇宙飞船，飞向外太空，到每一个星球上，利用当地的资源生产纸生产笔，签“我爱你”，整个宇宙充满了“我爱你”。但是那是一个沉寂的宇宙，再也没有生命和人类了。那你说这个故事太狗血了吧？你有太多机会阻断它对吧？你罗胖意志坚定一点你别让它上网啊？</p>
+<p>可是要知道，说服罗胖有那么难吗？大家要知道在中国有电信诈骗这一行，对吧，那些文化并不高的人，只要打的电话数量足够多，就可以说服一些人把自己银行存折和卡里的钱汇给他们呀，这并不难。说服人类，人类是一个多么脆弱的物种啊。那你也可能会说，那你及时把电给它断掉啊。可是要知道，即使是在我们现在科技还不是很发达的时候，不用电线传输电能，已经是一个快要突破的技术了。这个技术对于人工智能来说哪有那么难？</p>
+<p>那看来问题在于你刚开始设定那个条件不对。你应该设定很多很多的那种限制性条件，比如说你应该让人类快乐。那好，人工智能说不就是让你快乐吗？这个条件很简单啊。把人一个一个地抓起来，在脑子里面插入一些电极，给你释放一些让你快乐的信号。从此我们所有人类都被抓起来捆在那儿，然后天天傻呵呵地乐。甚至它觉得要让你快乐这个事情很简单，把你所有身体割除就剩下一个脑子，然后泡在一种溶液里面，天天给你输入快乐的信号，我们天天乐这不就行了吗？</p>
+<p>你说不对，这要让人类感觉到安全。那智能机器说这也好办啊，造一个大监狱，把所有人类关起来，你们再不会出事了，你们安全了。你就说你要啥吧？我们现在人类可以想象的一切初始条件，你都可以输入进去。但是在那样高的智能水平上运行的那个系统，最后执行出来的方案也许都不是我们想要的。</p>
+<p>好，假设我们真的发明了一套系统，我们输入的初始条件非常完善，而你就要保证人类像现在这样生活，一点都不能变，我们还是这样的一个道德系统、观念系统、价值观系统，我们要保持现在的生活方式，那难道不是灾难吗？其实也是啊。比如说，我们人类的道德和观念系统一直在进化，仅仅在几十年前，我们还是那样的排斥和歧视同性恋。可是几十年后呢，我们觉得歧视同性恋这种人很Low好不好。我们的观念和道德系统一直在进化，如果我们给人工智能系统，输入了这样的一个条件，你必须保持人类的道德观念系统不变。那说白了，人类的进化也完成了，我们迎来了一个历史的终点。我们永远被锁死在现在这种文明状态下，其实也就等于人类系统的灭亡。所以这样推演下去，好像这个事已经没有解决方案。</p>
+<p>对，什么是人工智能系统？它的本质就是人类把自己亿万年进化来的万物灵长的地位拱手让出去了，把我们对于地球上所有资源和其他物种的掌控权让出去了，而且让给了一个高出我们很多个层次的智能系统，这就是人工智能的本质。所以那个时候已经是“人为刀俎，我为鱼肉”，只能让它看着办。</p>
+<p>有一个人工智能的理论家，他就打过一个比方。说人类的科技就像是一筐子球，三种颜色，一种白色，一种红色，一种黑色。白色很多，红色很稀少，黑色的球只有一个。那白色的球就是有益于人类的那些科技成果，那几百年来我们不断地捡，捡到的都是白球。偶尔我们能够捡到一个红球，红球就意味着对人类的生存和发展有危害，我们真就捡到过一个核武器嘛。可是这个筐子里只有一个黑球，只要捡到就是人类灭绝。那人工智能就极有可能是这个黑球，而且极有可能就被我们这一代人捡到。所以面对我们子孙后代在历史深处的呻吟，我们这一代人不得不小心。</p>
+<p>当然，听到这儿，你可能会问，罗胖你刚才讲的这一套你信吗？我不是很信，为啥？因为确实也有这一派理论的对立面，而且那个论证过程也非常有说服力。比如说在物理学界有一个著名的费米悖论。它就在讲外星人，或者说那么强大的人工智能如果要有，他肯定不只是地球上有，外太空应该也发展出这样的东西。那外星人要搞出这套东西，这个厄运也会降临在他们头上。这些人工智能，就是外星球的那个人工智能，早就开始执迷宇宙了。那那个时候地球早就不存在了，所以既然今天地球还存在，人类文明系统还健在，说明那个东西不会发生。</p>
+<p>你看这个论证也很有意思，所以我刚才那一整套推论，肯定在某个逻辑环节上出了问题。它不对，至于哪儿不对，我也不知道。我们今天做这期节目跟大家介绍这一套推论，不是给大家听个西洋景，也不是为了吓唬大家。而是讲我自己的一个感慨，在过去一百年里，确实人类出现了一个新的思想传统。就是跳出人类中心论甚至是生物中心论，来重新看待这个世界。</p>
+<p>在这儿，重点给大家推荐几个名词，还有两本书。一个名词叫基因，第二个名词叫模因，大家自己到百度百科上去搜索它是啥意思。那出现这两个名词是一本书叫《自私的基因》，是著名的生物学家道金斯写得，他其实就是提出这个世界的主宰到底是谁。他认为其实有另外一种可能，比如说这个世界的主宰是基因。所有的物种的个体实际上，都是一代一代的传送基因的一个运载工具而已，你们不是主体。只有基因，它是不断强化自己，不断优化自己的那个世界主宰。</p>
+<p>模因一样啊，模因就是指人类文化。你比如说我们中国人，一代一代在传承中国文化。可是你反过来也可以这么说，中国文化是世界的主体，只不过通过我们一代一代地中国人往下传，我们只是它实现他的目的的一个工具。你看，把世界倒过来看，你会觉得非常有意思。</p>
+<p>那给大家介绍的第二本书，就是凯文•凯利写的一本书，这本书的名字叫《科技想要什么》，。这是凯文•凯利被严重低估的一本书，他卖的最好的那本书叫《失控》。这本书很少有人知道，在这本书里他就提出一个观点。说科技其实是这个地球上的第七种生命形态，前六种是啥动物植物和四种微生物。而科技它怎么是生命呢？它明明是人类创造出来一个没有生命的东西嘛。但是在这本书里，凯文•凯利就在论证，说科技就是一种生命，它符合生命的一切特征。人类只不过是它的父母，是它生命第一个阶段的保育员。但是紧接着它会踏上自己的生命演化的进程，人类再也控制不住科技了。</p>
+<p>这是一个很有意思的视角，当然所有这些视角都包含着一种意思。就是我们对未来进行预测，可是我们稍有常识都知道，未来是一股乱流。我们今天的人是无法精确地预测未来，但是作为一个努力拓宽自己认知边界的人，把人类择开，重新探索和思考这个世界的本源，你不觉得这是一种很有意思的智力活动吗？</p>
+<h3 id="罗辑思维：大公司-和蚂蚁一起舞蹈-41"><a href="#罗辑思维：大公司-和蚂蚁一起舞蹈-41" class="headerlink" title="罗辑思维：大公司:和蚂蚁一起舞蹈 41  "></a><a href="http://www.luojiji.com/thread-452-1-1.html" target="_blank" rel="noopener">罗辑思维：大公司:和蚂蚁一起舞蹈 41  </a></h3><p>有种，有趣，有料，这就是我的罗辑思维。死磕自己，愉悦大家，这里是咱们的罗辑思维。</p>
+<p>中国古代有一个笑话，说的是一个聋子，有一次看别人放炮杖，他就觉得好奇怪啊！好好的一个花纸卷，怎么说散就散了呢？你看，这故事告诉我们，当你有一个感官通道发生了封闭之后，不管你怎么用劲地观察，实际上你是没有办法理解这个世界的。</p>
+<p>对呀，现在我们整个人类的世界，甭管是政治还是商业，都处于一个特别神奇的时代，我们经常会感觉到，咦，这个花纸卷怎么说散就散了呢？比如说，诺基亚最近不是被收购了吗？那样坚若磐石的盘然大物，哦，原来也能崩溃哟。微软好像搞什么都搞不成，这个十年前还炙手可热的企业，没准儿过不了两年，它也就离死不远哦。</p>
+<p>原来默默无闻地一些小企业，比如说三年前，大家还不知道的小米，突然就成为估值100亿美金的公司哦，前不久刚刚发布2999元47寸的互联网大彩电，搞得我一些在传统彩电公司工作的朋友大惊失色，倒抽一口凉气啊！为什么？哎呀，我们原来那个大帝国，就此接到了病危通知书，不知道哪一天就要倒掉了</p>
+<p>即使是国家层面，美国那叫一超独霸，现在面对叙利亚这么一个弹丸之地的小国家，那也是感觉到狗咬刺猬一般的为难。不知道从何下嘴。</p>
+<p>对啊。这个世界真的是“眼看它起高楼，眼看它宴宾客，眼看它楼塌了”，谁都不知道自己烈火烹油似的繁华，能够持续到哪一天。</p>
+<p>好了，今天给大家推荐一本书《不可思议的年代》，这本书的作者那是大有来头-库珀•雷默，基辛格的弟子，他自己是一个飞行特技驾驶员，然后也是一个很著名的国际政治学者。他曾经针对华盛顿共识提出了著名的“北京共识”，所以在中国很受欢迎，他一半时间住北京，一半时间住美国，所以没准儿在北京大街上你还能遇到他。</p>
+<p>这个家伙写这本书，就是针对整个美国，提出来的一整套如何适应新世界的解决方案。我想对于所有今天我们身在传统商业大组织当中的人都有借鉴意义，也就是大象如何才能和跳蚤一起舞蹈呢？那大象为什么现在遭遇到这样的困境？答案是一个，由于由互联网为代表的全新的技术，带来的全球政治、经济、商业、社会格局的全新的变化。</p>
+<p>这话说得是老套，对吧。那这个变化的最核心是什么?最核心就是个体崛起。举个例子讲，比如罗辑思维，它为什么能够存在，要知道我们现在每期的点击量也100多万哦，跟央视有些著名栏目也相差无几哦。那我们是怎么做的呢？他们要在一个体系内获取资源，得有各地的差转台，各个城市中心的转播塔，央视底层的上万名员工，它才能做出一些好栏目，所以所有的资源都是从组织内获取。</p>
+<p>可是像罗辑思维我们是草根生长，我们也不是说没有资源，没有底座，我们也有啊，你看优酷的，很多互联网的视频网站，他们的带宽服务器，给我们免费来用，我们做微信公众号，那也是腾讯积15年的修行啊，张小龙团队做出微信，那也是整个团队不眠不休多少个日夜，他们的劳动成果我们现在全部免费用，我们没有必要进入到央视那样的体系，我们就能获得如此开放、全面、强大的资源。</p>
+<p>所以个人的力量突然崛起之后，大家伙们自然就危险啊，你像罗胖这么温柔敦厚，一副无害的表情的人获得了这样的资源，也倒罢了，那如果这资源落恐怖分子手里呢？你去想想看，现在，据说从2008年开始，人类就可以从互联网上，完整地下载那种天花基因的制造方案，而且这种天花基因是可以对现在所有的防疫系统可以进行突破的，就是秒杀所有疫苗，这种天花基因。所以很多人说，过不了几年，也许第一个可以秒杀所有疫苗的天花病毒就将在某个恐怖分子家里的瓶瓶罐罐里制造出来，那一旦制造出来怎么办？</p>
+<p>据说前几年美国国防部也做了一个实验，电脑模拟一下，一个人感染了这种新型天花病毒会怎么样，几周之内，几百万人死亡，最后国防部干脆把插头拔了，说这事别弄了。这个危机，你往下演算下去，就是美国灭绝就是了。因为在整个电脑推演当中，没有发现任何现行的防疫机制，可以阻止这次瘟疫的蔓延，因为它太快了。</p>
+<p>这就是个人崛起的力量。但是这还不是根本。这本书里讲的最有趣的观点，我认为，是所有这些危险的不可预测性。</p>
+<p>你可能觉得，什么叫不可预测性，它无非就是复杂呗，有什么不可预测。因为人类文化从远古有人类开始，一直到今天，我们追求的就是可预测、可预见。对吧，现在搞商业的人都知道，任何计划执行无非是计划，执行，检查，调整，然后提高，无非就这几步。所有的事情我们都必须知道它要往哪发展。</p>
+<p>什么叫不可预测性？如果世界陷入不可预测性，可以说所有原来工业社会建立的系统全部都崩溃掉，对，恭喜你答对了。这正是我们即将面对的局面。</p>
+<p>这本书里记载了一个实验，叫沙堆实验。如果用一堆沙，我们一粒一粒的往下滴。那可想而知，一开始它会形成一个自组织，形成一个非常漂亮的圆锥形。我们在很多建筑工地上都见到，筛沙子。那底下堆出一个圆锥形，可是你也可以想到。随着沙粒一个一个往下滴，它不可能一直保持圆锥形。它总有一刻，整个沙堆会发生崩塌，尤其是那个尖，叭，就不成形了，对吧。</p>
+<p>好，问题来了，这是科学上著名的沙堆问题。什么时候崩塌，可以预见吗？可以预测吗？最开始这个沙堆问题作为一个思想实验提出来的,提出者叫巴克，这个人他就认为，可能没法预测，但是没有验证。后来美国一位科学家就干脆来了一次实验，就进行了沙堆实验，发现巴克的猜测是对的，真的没法预测。</p>
+<p>当沙堆堆出了一定的规模之后，再往上去，发生崩塌的概率每个点都一样。那你说为啥啊？不是好像堆得越多，越容易崩塌，没有这个规律。因为你想，他是沙子，他不是泥土。每一颗沙之间没有黏性。它只有挤压的那个作用。所以这个实验的执行者提出了一个数字。他说每下来一颗新沙之后，原来沙堆的内部结构的整个方程的复杂度，每一秒钟提升100万倍。</p>
+<p>各位，你们都知道指数级是个什么概念，对吧。我们以前讲过荷塘效应，对呀，当每一秒钟整个系统的复杂性提升100万倍，请问，这是一个可能，人类现在还没有想过的一个数字，它的复杂性大到用任何计算机，即使是未来的超级计算机也不可能再计算的一种复杂性。而这种复杂性跟外部的任何冲击力是无关的。请注意，它只是沙堆内部的那种复杂性，发生了结构性的变化。但是没人知道它怎么变，这就是著名的沙堆实验。</p>
+<p>我们想想我们现在的社会不就是这样吗？互联网起到了一个作用，把每一个人从传统的小共同体当中剥离出来，对吧。现在很多公司离职率大增，每一个年轻人都觉得，哈，我认识好多人，我网上网友多得是。那么多公司都在网上招聘，我随时可以去。你看，这就是剥离出来的一种力量。没有像我们的父辈那样，好不容易找一个工作，在单位要听领导的，争取哪一天当上班组长，哪一天提车间主任，都是顺着体系内往上爬。</p>
+<p>现在不是啊，互联网给每一个人打开了眼界，让每一个人还原到我们刚才讲的沙子的状态，它不再是凝结在一起的图块，它几乎没有任何可建筑性。也就是说，当整个社会由这些分散的像沙粒一样的人和小组织构成的时候，沙堆实验当中呈现出来的一个逻辑，就可怕的出现在我们面前，就是在下一刻发生什么，你根本不可能知道。</p>
+<p>这好挑战我们人类的思维习惯的好不好。我们人类都是用因果律来思考世界的，包括经济，我们都在说，经济不景气，那为啥呢？货币太紧。那央行什么时候开始减息，把货币放松一点呢？哎呀，要等美联储，要跟他们同步。怎么还不放松银根呢？看来央行行长得换人，央行行长换人了，你看经济马上就好了。</p>
+<p>你看，我们理解复杂系统，原来都是从因果关系上去理解，所以那些经济学家们出来都会告诉你，现在经济这样是因为这个，那我的政策建议是动一下这几个指标，那马上经济就会好。所有的经济学家的演讲，在座无虚席的时候，他都会告诉你为什么。这就是因果关系的思维。</p>
+<p>但是对不起，这本书里最让我震撼的，就是那个沙堆实验。当人类那么多种因素堆积在一起，不知道是什么原因，可能是一个新的NGO组织的诞生，可能是一个印度农民离家出走，可能是硅谷出现了一个新的技术，可能是北京中国村两家公司合并。就是这么一个沙粒往下一落，整个系统突然发生崩塌，你难道说这种可能性不存在吗？</p>
+<p>对，越来越多的不确定性正在笼罩这个世界。要知道，20世纪，几乎所有的科学领域都出现了这样的进展，就发现，科学发展到最后，发现这个世界是不可预测的。20世纪初，海森堡就把不可测量带入了量子物理。后来什么流体动力学、信息论，包括数理逻辑里面都发现，最后否决了因果关系，否决了世界的可测量性、可理解性。发现很多现实才可以解释。</p>
+<p>所以，这个世界的本质没准儿就是不可预期。那为什么呢 因为很多小家伙的力量当它逐步放大之后，爆发出来的后果是可怕的。</p>
+<p>很多人都知道蝴蝶效应，对吧。一只蝴蝶煽动翅膀，那边儿就龙卷风。对呀，现在我们的商业的大组织也是这样，面对这样的不确定性。说到这儿，顺便给我们现在罗辑思维的赞助商金山的猎豹浏览器做个广告。你看现在国庆期间的抢票，首先是这些浏览器都在攻击大组织铁道部啊，对吧，然后一哄而上。你不是不让我抢票吗，封闭我的爬虫吗。没关系，你那点儿技术实力，对于小蚂蚁来说根本不算什么，每隔10分钟就破解你一次，然后又可以重新抢票。</p>
+<p>更有意味的是，你看，在原来的大的浏览器公司，什么UC这些公司，他们不干这事，为什么？因为他们本身是大组织。只有猎豹和其他几家少数的浏览器在干这个事，这就是蚂蚁雄兵击败大象的故事。</p>
+<p>我前几年在给很多企业当危机管理顾问的时候，有时候也管点儿公关的事。我就一直坚持一个观点：企业的舆论危机是不可管理、不可预防的，只能当它发生之后随之舞蹈，这是我一直坚定的观点。但我这个观点很得罪人，因为很多公司就是靠预防危机、管理危机来吃饭，我这么一说不是端了人家饭碗吗？我跟他们抬杠的时候我经常会说，一个大组织、一个大企业，当他在互联网下得舆论环境里的时候，你根本不知道某一个伤害的声音会被加速、会被强化到你企业根本承受不住的地步，而且你根本没法预判这种个人，可能就是一个个人。</p>
+<p>所以很多人说，我能够管理危机，我说那你倒回头两年，你替中国红十字会把郭美美给我预测出来，怎么给我管理。郭美美到现在也没有证明跟中国红十字会有一毛钱的关系，但又待如何？中国红十字会整个名誉全部毁掉。对吧</p>
+<p>当每一个风险都能成为一个郭美美级的风险，请问我们的企业还到哪里去躲？我们的风险还怎么预测呢？</p>
+<p>《不可思议的年代》它告诉我们的第一个坏消息是，这个世界不可预测；而第二个坏消息就更要命了，这个世界不可控制。</p>
+<p>这书当中举了一个例子，就是苏联解体。如果时光倒转，回到上个世纪80年代，如果那个时候你告诉世界上任何一个人，说哥们儿“我告诉你啊，苏联要解体”，没有人会相信，因为那是一个看起来坚若磐石、有着坚强的控制力，什么克格勃这些那样的一个国家，它的政治结构的稳固性比美国看起来要强大，它怎么就在短短几个月之内，呼啦啦大厦将倾，就这么垮掉了？</p>
+<p>真的是很让人震惊，包括美国人在内。所以美国人刚开始时惊呆了，然后呢，开香槟庆祝，说“你看我们冷战赢了”。但是戈尔巴乔夫，你别说他弄垮了苏联，他弄垮了苏联之后，他一直反复强调的一个政治观点就是美国人一直说他们赢得的冷战这是个错误。</p>
+<p>但是在美国人这边不这么看啊，然后他们就分析，写出一大堆文章，说因为我们搞星球大战计划把你经济拖垮了。有没有搞错?苏联是经济不太行,可是在它垮的那个时候,那可不是它最不行的时候。最不行的时候历史上多了去了,大饥荒一死几百万人，乌克兰大饥荒，那时候怎么没垮？对吧，而且苏联垮了之后，类苏联结构的国家到现在还有啊，古巴、朝鲜都有啊，它们经济更糟糕啊，怎么也没垮？这个原因是解释不通的。</p>
+<p>第二，美国人说这是因为，我们搞了很多反苏宣传油印小册子，在苏联境内进行传播。本书的作者把这个分析告诉了俄罗斯的专家，俄罗斯的专家哄堂大笑， 说你不要搞错，那种油印小册子、什么美国之音的广播，在苏联人民的生活当中那已经是常备品。几十年了，那怎么会将好在80年代90年代初突然爆发力量呢？</p>
+<p>这个你解释不通，那又有人说软实力，因为被牛仔裤、麦当劳、摇滚乐、美国的电视剧电影、好莱坞、迪斯尼，是被这些轰垮的。也不能说这个分析一点儿道理没有。持这个观点的是美国著名的战略学家奈斯比特，他就提出了软实力。几十年时间圆明园是这么被毁成现在这个样子，所以系统崩溃带来的后果，是美国人没曾想到的，这就是追求控制的结果。</p>
+<p>你结束了一个灾难，迅速开始另外一个灾难。在人类历史上，所有高度控制的系统，当他一旦遇到一个具有高度灵活性的低度控制系统的时候，往往结论是惨败。</p>
+<p>中国历史上就发生过这么一幕——解放战争。蒋介石当时就是追求中央控制，新一军新六军派往东北的时候，全副美式装备，所有的给养都由中央的后勤部队供给，军容非常整肃。中央军嘛，正规军嘛，蒋介石还不放心，打电话指挥战斗，一直要打到团长。好，你追求控制，那边延安呢，人家不追求控制。</p>
+<p>东北野战军进东北的时候，就地征粮、就地征兵，先搞土改，然后动员人民参军，没有一套非常发达的后勤系统，但是照样部队很有灵活、很有战斗力、毛主席在延安，延安丢了没关系。中央控制系统，胡宗南你要，你要那给你吧，人家走了。</p>
+<p>中央和各野战军之间的电报联系，甚至不太通畅，没有关系，将在外君命有所不受，随便打，给予四面解放军以充分的将在外的授权。</p>
+<p>这是两个系统之间的差别，结果大家都知道了。</p>
+<p>最典型的一个战役发生在辽沈战役当中的胡家窝棚战斗，两股部队纠缠在一起，爹找不着娘，娘找不着孩儿，连长找不到团长，团长找不到师长。林彪一看 哦，好嘛，越乱越好。因为共产党的军队是有价值观系统的，虽然打散了，他们都知道，哪里有敌人咱们就消灭他。</p>
+<p>而国民党军队因为是中央控制，中央控制一旦丧失，那不就是没头苍蝇了吗？结果呢，结果在胡家窝棚这个地方，就是廖耀湘的司令部，就生被一个摸黑过去的共产党小分队端掉了。这个胡家窝棚战斗对辽沈战役整个这个战役的进程都产生了非常重要的影响。</p>
+<p>对。面对一个越来越像生态系统的世界，越来越不像机械组织的世界，用控制这种方法，试图假设对方是一个死人的前提假设，你觉得还成立吗？</p>
+<p>记得1974年，一个著名的经济学家自由主义大师哈耶克，获得了诺贝尔经济学奖。在颁奖演说的时候，他刚开始客气了两句啊，感谢我们经济学家这个殊荣。然后话锋一转，他说很多人都以为，经济学家能够给当前的经济一剂灵丹妙药，但是对不起，我给不出来。而且我要告诉你，现在经济遇到的所有问题，都是经济学家捣的乱，都是他们给政府瞎出主意，今天印发货币，明天货币超发等等，现在我们所有的麻烦都应该归咎于他们。所以短短二十分钟的演讲，哈耶克整个讲下来，你听下来，就好像代表全世界的经济学家向全体人民道个歉，在演讲的最后哈耶克说，整个世界是一个非常复杂的系统，我们没有任何人有足够的知识，可以了解、理解甚至是控制它，所以我们不要假装像工匠那样，以为可以把世界设计得尽善尽美，我们只可能像园丁那样，爱护这个生态系统 帮助它的成长，那么这篇演说的名字叫做《似乎有知识》。</p>
+<p>对呀，面对这个世界，越来越复杂的世界，越来越像一个果园的世界，越来越复杂的生态系统，我们只是似乎有知识，我们对这个世界其实一无所知。</p>
+<p>在罗辑思维以前的视频节目里，比如说《夹缝中的80后》、《这一代人的怕与爱》、《躺倒也能当英雄》这几期节目里，我们都在强调个体的崛起，而今天我们要讲的是大组织，面对个体崛起之后的困境，怎么破？有解法吗？有。本书作者就提出了一个思路，叫深度安全。</p>
+<p>这个思路比较复杂，简单说就两条：第一条就是放眼全局。但是你要说这玩意儿新鲜吗？不新鲜。尤其是我们中国人听起来，这叫什么新鲜？</p>
+<p>中国的兵法一直心中是有全局观的，在兵法中讲究一个“势”。什么叫“势”？“势”就是我制造一种情况，让敌人按照我想让他去的那个方向去运动，这就是制造“势”。</p>
+<p>在现在的以色列和巴勒斯坦，你就会看到这种中国古代兵法的取势的思维，在双方对攻当中的精彩运用。要知道在现在的以色列和巴勒斯坦之间的对攻，对方叫真主党，这边是以色列正规的国防军。</p>
+<p>双方都不是怂人，真主党多厉害，真主党可以说是中东恐怖组织，当然他们不承认自己是恐怖组织，这是美国人的污蔑。在这种组织当中他是最成功的，美国人甚至跟格鲁吉亚人说，你们要跟俄罗斯干，别跟我们学，你们跟真主党学，这是真主党的一个领袖跟这本书的作者讲的。</p>
+<p>美国人都很佩服他，对呀。真主党经常靠几百个战士，就跟以色列的几万名士兵对峙，基本还能打一平手。真主党用的是什么方式呢，就是分散灵活式，游击队啊，各种各样的分散方式，而且跟老百姓充分结合。</p>
+<p>比方说真主党有一个绝招，给老百姓盖房子，就是你以色列不是经常轰炸吗，房子坏了，就相当于我们红军当年给老百姓挑水是一个道理，在盖房子的过程当中，他跟当地老百姓就结成非常深厚的友谊，就形成了对真主党支持的整个的民意基础。</p>
+<p>所以以色列在2006年，对巴勒斯坦地区进行了一次战争，这次战争，不好意思，以前的中东战争都是以色列赢。唯独2006年这一次，以色列铩羽而归，没有赢。为什么？因为对方就是充分利用了互联网时代的灵活性组织，像蚂蚁一样的真主党，因为你原先觉得，我的所有情报都搜集好了，然后一去打发现没了。你看一眼中国的电影，地道战，你就知道是怎么回事了，他就具有那样的灵活性</p>
+<p>我们再看以色列这边，以色列他也在想问题，2001年的时候，以色列上任了一名最高的情报部门的官员，他叫法卡什，但是很可惜，他在2006年退休了。所以他那套政策没有执行到底，但是他当时给以色列的情报部门，就奠定下了一个基础，就是我不是去判断威胁从哪里来。</p>
+<p>法卡什一直觉得，因为以色列这个国家安全环境太险恶了，周边全是敌人，他说我们关键要着眼于全局，所以他在做情报头子的时候，他关注的可不是说叙利亚有多少坦克，他想的可不光是这个事，他想的更多的是，比如说一笔钱要汇到加沙需要几个小时，今天整个黎巴嫩的就业形势会怎么样，包括老百姓的菜价涨没涨，他拼命搜集这些情报，搜集这些情报干什么，他在拼命看我面对的对手的整个的网络状态。</p>
+<p>所以到最后，你看现在以色列人就明白了，他发明了一套战术，就是定点清除。你不要以为这个定点清除，就是谁官大就给她炸死，不是。既然你是蚂蚁型的组织，你是蚂蚁雄兵，那我就要仔细分析你的网络，谁是关键节点，谁是结构洞，那我就要把这个结构洞给它打掉。</p>
+<p>所以在2006年战争之后，就多次发生真主党的关键性人物被以色列的炸弹定点清除掉，那这种对对方网络的摧毁就是有用的，所以你看，这就是一种着眼于全局的思路。</p>
+<p>所以很多东西都是这样，良好的愿望都是这样，我们想控制一件事情，我们想推动一件事情，但是实际结果呢？比方说中国最近新闻说，回家经常得看看，这件事得立法，不孝敬老人这个不行。最近又听说读书要立法，不读书判刑这事好像有点不对，但是你看，所有这种思维都是中央对边缘的控制型思维，说我们拍桌子喊，新闻联播播了，这全民得读书，是好意，可问题是这种控制结构面对一盘散沙，互联网式的纷乱的这样的一个生态系统，你真能起到作用，你能呼唤读书？</p>
+<p>老百姓就真的拿起书本，哪个人不知道读书重要，所以这种，甭管你是立法，还是加大了中央的宣传，都是没用的，那什么是有用的呢？着眼于全局，安排各种各样，你别直接冲读书这样的事去，说个无耻的话，可以扶持罗辑思维这样的节目嘛，然后由罗辑思维这样的节目，组织一个一个读书社群，你也形成你的网络呀，然后让这些种子来进行生长，这恰恰是放弃控制的思路。而用生态对生态的观点，用全局的思维来达成自己目标，这就是这本书提到的第一个思路，</p>
+<p>那第二个呢 第二个就是组织变形。就是既然对方是蚂蚁，你非要当一个大象，那对不起，你只有被蚂蚁啃死的结局，不可能有第二个game over的可能。</p>
+<p>那怎么组织变形呢？我们为什么这一集讲很多军事。因为你要知道，在五百强企业中，西点军校毕业的比哈佛商学院毕业的可多。所以你看，美国人后来打阿富汗的时候，他就进行了一次非常重要的组织形变。主导这个组织形变的人叫拉姆斯菲尔德，美国人当时的国防部长。我们中国人不太喜欢他，他对中国态度不友好，但是他确实在任上做了一件事情，就是把美国的战斗组织进行了重组。</p>
+<p>原来苏军打阿富汗的时候，也是正规军往里开，是中央控制系统往里走，最后铩羽而归。那美国人呢？他们不这么干，他说我们把成本结构颠倒一下。原来是70%的成本用于火力，30%的成本用于寻找目标。拉姆菲尔德说，我们能不能通过组织创新把这个成本结构给颠倒，怎么办呢？70%成本用于搜索目标，30%成本用于对敌打击。</p>
+<p>所以他就把所有的美国大兵，据说是分成了好几百个三人小组。那这个三人小组，一个是炸弹专家，一个是通信专家，一个是战斗专家。你们三个人就结成伴，在阿富汗山区寻找，一旦发现塔利班组织的人，情报专家，就是通信专家向后方呼叫，他们三个人带一套5000万美元的装备，专门用于搜寻，然后前方向后方呼叫，一封电邮后方就直接发导弹，把它定点清除，甚至是弹药量都是计算好的。</p>
+<p>所以后来中国的民营企业家，也是著名的思想家冯仑，他就提出，他说看来以后的正规组织的变形方向，就是这个方向。所以他给这种组织起名叫“特种部队组织”，所以未来的组织系统的变化很可能就是这样，让前线听得到炮声的人发命令，后台去做支持，而不是后台发命令、前方去执行。让听得见炮声的人做决定，这也是最近这几年华为这家中国很有创新精神的公司提出来的。</p>
+<p>组织变革的这种方向，在这本书里其实举了很多这种组织变形的例子。在十几年前，巴西有一家企业，这个企业主叫塞姆勒，说巴西通胀率已经到了百分之百了。塞姆勒讲过一句话，说在这个国家做商人，就像地震的时候骑在一头暴怒的公牛上，真正可拍的还不是这公牛的颠簸，而是这地震。就是这个国家的，整个经济环境不太稳定，当企业没法干的呀，所以他企业也亏本，所以他最后就说 算了，不干了。</p>
+<p>可是你不干是不干，你这个工厂的工人怎么办？工人代表就找他谈判，说这样，你也别不干了，我们主动降低工资，但是你答应我们两个条件。啥条件呢？第一、我们以后如果工厂挣钱了，我们分红能不能增加点？塞姆勒说这个可以。 因为反正现在是什么都没有，以后万一挣钱多分点就多分点，这可以。第二条、工会的人说，以后你签出去的每一张支出的支票，得有我们工会代表的附签，就是花每一分钱你都是花我们的，塞姆勒说这也行，反正什么都没有了嘛，死马当活马医。</p>
+<p>你知道结果发生什么情况？就在通胀率百分之百的情况下，这家企业居然盈利了。因为每一个工人都觉得，这是我的公司，他要是死了我就没饭吃。最典型的一个例子，后来这个通货膨胀期过去了，然后塞姆勒说，这个体制好啊，他就保持下来，什么都让工人自己做决定，说我啥都不管。</p>
+<p>有一次选择新建工厂的地址，塞姆勒说你们工人自己决定，你们选，选完你们自己投票。这工人就选择了一块地，这块地旁边就是常年闹罢工的地方。塞姆勒心里说，这行吗，天天乱哄哄的，天天在罢工。结果工厂建成之后，就出现这样的情况，旁边天天在罢工、游行。这家工厂里的工人天天钻在车间里搞技术革新。</p>
+<p>塞姆勒还讲过一个例子，说有一个车间，因为他的叉车工人八点上班 ，可是这个车间工人说，八点何必呢，早点上班吧，多干点活呗，七点上班。叉车工人，那个哥们就死活就不干，说我回家得送孩子上学，我可不干。结果呢？结果这个车间所有的工人都学会了开叉车。</p>
+<p>所以你看这个底层的力量有多大，所以塞姆勒这家公司现在变成巴西一家特别奇怪的公司，可能在全世界也是独创的，就是他不知道他雇佣了多少人，他也不知道这家企业在干什么，因为这决定都不是他在做的，他只是作为一个大股东、精神领袖，经常到车间里跟同志们握握手就行了。</p>
+<p>你看底层力量一旦激发起来，这是吓死人的力量，而底层力量怎么激发？组织得变革，这是这本书给我们提供的第二个答案。</p>
+<p>其实我们在中国的企业当中，你能说这样的变革少吗？太多了。就前不久我刚遇到一个广州的企业家，他是一个典型的传统制造业，他一直渴望能完成互联网转型。可是他琢磨来琢磨去，他觉得靠我自己可能没戏，所以他就想了一个招，他说这样啊，你们不都想跳槽吗？嫌这制造业没前途，这样你们就想呗，你们要创业创什么，每年两次我们在公司搞创业PK大赛，跟那个什么《赢在中国》是一样一样一样的，然后你们就来说说完了咱们全民来投票，如果你是这届大赛，你赢了，你去创业，我支持，给你个人股份，白给，然后，你来创业公司，我控股就行。</p>
+<p>那你想对于有创业计划的人，他就很有新鲜感啊，也很有吸引力啊。结果几年之后，这家传统制造业企业居然控股了几个具有强烈互联网基因的企业的子公司。所以很多人都说，变革难变革难，要知道变革，你变革的是什么，你以为变革产品就行了？你以为搞一搞市场调研就行了？不行的！组织得变！这是这本书给我们提供的第二个答案。</p>
+<p>但是我想补充一个我个人的观点，就是既然世界是不确定性的，那怎么办呢？其实终极的答案是:以不确定性对不确定性。</p>
+<p>我还记得当年听《冬吴相对论》的时候，吴伯凡老师讲过一句话我印象非常深，他说什么是健康？健康就是指在得病和不得病之间的那种摇摇欲坠的状态。对啊，世界上哪有绝对的好事，绝对的好和绝对的坏？你每个人自己想，可能你认为你是健康的，可是你从头到脚想，你发现你浑身都是毛病。不说别的，你就说你的牙，你敢说自己所有的牙都是标准的完整的好的？不可能！整个世界都是不完美的。可是，传统的尤其像日本的管理学那一套，都是想把事情往完美去做。这是工业社会，在确定性的时代用控制的方法来达成的一个目的。</p>
+<p>但是，对不起，这个时代已经过去了。尤其在互联网让每一个个人都崛起的时代，如果你再用确定性可控制的思路去面对你的竞争对手，你可能就会面对大象被蚂蚁吃掉这样的结局。那怎么办？用不确定性对抗不确定性。</p>
+<p>那什么叫不确定性？回到最后，其实就是一个人字。我们还会说到战争，其实你会发现战争是最具有不确定性的。尤其在古代战场上，也没有那么多的侦察设备，也许连敌方在哪儿都不知道。所以古代的名将他不见得一定是大儒。当然后代的知识分子往往喜欢讲什么儒将，爱读兵书战策，那不扯淡吗？很多名将一个大字都不识！</p>
+<p>我看高阳先生写的那个清代的名将鲍超，那个人就不识字，但是有很好的直觉。他的部队都是那样，他站在山头，一看时候差不多了，“兄弟们们，冲！”就冲下去了。但是什么时候喊这“兄弟们，冲！”这就是不确定性，这个不确定性只有在有非常好的直觉将领的心中才会有。</p>
+<p>所以，岳飞，岳武穆大人有一句名言名留史册，他说:“运用之妙，存乎一心”。请注意“一心”哦，只有一个人的心里可以掌握这个秘密。所以柳传志先生曾经讲过一句可能被西方管理学要笑话死的一句话，说在中国做企业要因人设事，这个事从理论上推导再靠谱也没用，你别告诉我这事儿，我不干，什么时候可以干？事儿靠谱，更重要的是，我找到靠谱的人。我觉得这个人能够控制这个事，这事就可以干了。这叫因人设事。</p>
+<p>所以乔布斯故去以后，你骂库克有什么用？他就不是乔布斯，你希望他达到乔布斯用他的那个不确定性和创造性完成的那种创新，可能吗？他就不具备乔布斯的那种不确定性，他就不可能带来令你惊讶的结果。所以现在的苹果发布会基本上都提前剧透完成了，就这个原因，因为这个人的不确定性没有那么多。</p>
+<p>所以回到这本书，你看也是不确定性。这本书的腰封我就给弄丢了，这腰封上写着几个字:“旧时代的全球秩序摇摇欲坠，传统的精英们束手无策，现在是轮到我们登场的时候了，我们每个人都可以参与创造我们的社会”。就是这本书的腰封上的那句话对以不确定性对付不确定性，所以很多友人在问，说你《罗辑思维》有确定性吗？万一你罗胖哪天出车祸死了呢？要是你哪天厌倦了，不想干了，这个商业模式不就垮了吗？</p>
+<p>对啊，但是我的答案是两条:第一垮了就垮了呗，我想干的事情，它就是回归了生态系统，生态系统生物就像草一样，一岁一枯荣，有时生，有时死，这难道不正常吗？为什么要追逐那种控制一定要基业常青呢？“老而不死谓之贼”，如果没有了生命力却还活着，那叫吸血僵尸，所以为什么要追求长久？这是我的第一个回答；第二个回答:如果它要长久怎么办？还是回到生态系统。</p>
+<p>所以我们今天在节目的最后，向镜头前睿智的您发出一个非常正式的邀约:《罗辑思维》不可能靠罗胖子一个人永远这样做下去，如果各位，你觉得你是和我们的价值观，和我们有一样梦想的人，OK，不管用什么方式，你来讲，我们支持，你讲一部分，我替你讲一部分，我们支持，或者你写一个方案，来支持我来讲，我会在节目的最后登出你的照片，给予你隆重的感谢，所有的方式，任你挑，但是请参与到我们的时代，我们的社会重建当中来，我们等着你！</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Probability/" rel="tag"><i class="fa fa-tag"></i> Probability</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Concept/Concept.html" rel="next" title="Concept">
+                <i class="fa fa-chevron-left"></i> Concept
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Concept/Platform.html" rel="prev" title="Platform">
+                Platform <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img/headonhill.jpg"
+                alt="Author" />
+            
+              <p class="site-author-name" itemprop="name">Author</p>
+              <p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">244</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">380</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="http://blog.163.com/zhuxuanlv@126/" target="_blank" title="Blog"><i class="fa fa-fw fa-globe"></i>Blog</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:deepcreator18@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("04/01/2018 16:01:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second ";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#随机漫步的傻瓜"><span class="nav-number">1.</span> <span class="nav-text">随机漫步的傻瓜</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机会的数学原理——明知其输而博赢的概率分析"><span class="nav-number">2.</span> <span class="nav-text">机会的数学原理——明知其输而博赢的概率分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一句话明白：什么是统计？什么是概率？"><span class="nav-number">3.</span> <span class="nav-text">一句话明白：什么是统计？什么是概率？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Probability-Theory"><span class="nav-number">4.</span> <span class="nav-text">Probability Theory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概率论"><span class="nav-number">5.</span> <span class="nav-text">概率论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生活例子"><span class="nav-number">5.1.</span> <span class="nav-text">生活例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#历史"><span class="nav-number">5.2.</span> <span class="nav-text">历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件"><span class="nav-number">5.3.</span> <span class="nav-text">事件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大数定律"><span class="nav-number">6.</span> <span class="nav-text">大数定律</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中心极限定理"><span class="nav-number">7.</span> <span class="nav-text">中心极限定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析"><span class="nav-number">8.</span> <span class="nav-text">基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么明星富商都迷信大师"><span class="nav-number">9.</span> <span class="nav-text">为什么明星富商都迷信大师</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最简单概率论的五个智慧"><span class="nav-number">10.</span> <span class="nav-text">最简单概率论的五个智慧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#比黑天鹅更险：破解大概率危机"><span class="nav-number">11.</span> <span class="nav-text">比黑天鹅更险：破解大概率危机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概率权：“算”出来的富人思维"><span class="nav-number">12.</span> <span class="nav-text">概率权：“算”出来的富人思维</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#临界知识：复利效应和概率论"><span class="nav-number">13.</span> <span class="nav-text">临界知识：复利效应和概率论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查理芒格：相信概率不相信运气"><span class="nav-number">14.</span> <span class="nav-text">查理芒格：相信概率不相信运气</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么说概率有时不靠谱"><span class="nav-number">15.</span> <span class="nav-text">为什么说概率有时不靠谱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人的一切都是偶然"><span class="nav-number">16.</span> <span class="nav-text">人的一切都是偶然</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#罗辑思维：人类灭绝的一种可能-115"><span class="nav-number">16.1.</span> <span class="nav-text">罗辑思维：人类灭绝的一种可能 115</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#罗辑思维：大公司-和蚂蚁一起舞蹈-41"><span class="nav-number">16.2.</span> <span class="nav-text">罗辑思维：大公司:和蚂蚁一起舞蹈 41  </span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Author</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme �C <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="Total Visitors">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="Total Views">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz',
+        appKey: 'PXNkGhS05PxL7rV3N8gDlAQe',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -316,13 +2580,157 @@
         onPopupClose();
       }
     });
-  </script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script type="text/javascript">wpac_init=window.wpac_init||[],wpac_init.push({widget:"Rating",id:11184,el:"wpac-rating",color:"fc6423"}),function(){if(!("WIDGETPACK_LOADED"in window)){WIDGETPACK_LOADED=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//embed.widgetpack.com/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t.nextSibling)}}()</script><style>.copy-btn{display:inline-block;padding:6px 12px;font-size:13px;font-weight:700;line-height:20px;color:#333;white-space:nowrap;vertical-align:middle;cursor:pointer;background-color:#eee;background-image:linear-gradient(#fcfcfc,#eee);border:1px solid #d5d5d5;border-radius:3px;user-select:none;outline:0}.highlight-wrap .copy-btn{transition:opacity .3s ease-in-out;opacity:0;padding:2px 6px;position:absolute;right:4px;top:8px}.highlight-wrap .copy-btn:focus,.highlight-wrap:hover .copy-btn{opacity:1}.highlight-wrap{position:relative}</style><script>$(".highlight").each(function(t,e){var n=$("<div>").addClass("highlight-wrap");$(e).after(n),n.append($("<button>").addClass("copy-btn").append("Copy").on("click",function(t){var e=$(this).parent().find(".code").find(".line").map(function(t,e){return $(e).text()}).toArray().join("\n"),n=document.createElement("textarea");document.body.appendChild(n),n.style.position="absolute",n.style.top="0px",n.style.left="0px",n.value=e,n.select(),n.focus();var o=document.execCommand("copy");document.body.removeChild(n),o?$(this).text("Copied"):$(this).text("Copy failed"),$(this).blur()})).on("mouseleave",function(t){var e=$(this).find(".copy-btn");setTimeout(function(){e.text("Copy")},300)}).append(e)})</script><script type="text/x-mathjax-config">
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 11184,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('Copied')
+          else $(this).text('Copy failed')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('Copy')
+        }, 300)
+      }).append(e)
+    })
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script><script type="text/x-mathjax-config">
+</script>
+
+<script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
     var all = MathJax.Hub.getAllJax(), i;
     for(i=0; i < all.length; i += 1) {
       all[i].SourceElement().parentNode.className += ' has-jax';
     }
   });
-</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script></body></html>
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+</body>
+</html>

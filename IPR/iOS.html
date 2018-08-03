@@ -1,4 +1,1847 @@
-<!DOCTYPE html><html class="theme-next muse use-motion" lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet"><style>.pace .pace-progress{background:#1e92fb;height:3px}.pace .pace-progress-inner{box-shadow:0 0 10px #1e92fb,0 0 5px #1e92fb}.pace .pace-activity{border-top-color:#1e92fb;border-left-color:#1e92fb}</style><meta name="theme-color" content="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0"><link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Muse",version:"6.3.0",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!0,onmobile:!0},fancybox:!1,fastclick:!1,lazyload:!1,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="iOS（原名iPhone OS，自第四个版本改名为iOS）是苹果公司为移动设备所开发的专有移动操作系统，属于类Unix系统，支持设备包括iPhone、iPod touch和iPad。与Android不同的是iOS不支持任何非苹果公司的硬件设备。"><meta name="keywords" content="IPR,iOS,Apple"><meta property="og:type" content="article"><meta property="og:title" content="iOS"><meta property="og:url" content="http://deepcreator.com/IPR/iOS.html"><meta property="og:site_name" content="Ai Lab"><meta property="og:description" content="iOS（原名iPhone OS，自第四个版本改名为iOS）是苹果公司为移动设备所开发的专有移动操作系统，属于类Unix系统，支持设备包括iPhone、iPod touch和iPad。与Android不同的是iOS不支持任何非苹果公司的硬件设备。"><meta property="og:locale" content="en"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/ios20180801.jpg?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/appledevices20180601.JPG?imageMogr2/thumbnail/!75p"><meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/appletimeline20180601.png?imageMogr2/thumbnail/!75p"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-12.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-13.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-14.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-16.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-18.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-17.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-22.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-23.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-24.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-25.jpg"><meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-88.jpg"><meta property="og:updated_time" content="2018-08-01T08:49:28.453Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="iOS"><meta name="twitter:description" content="iOS（原名iPhone OS，自第四个版本改名为iOS）是苹果公司为移动设备所开发的专有移动操作系统，属于类Unix系统，支持设备包括iPhone、iPod touch和iPad。与Android不同的是iOS不支持任何非苹果公司的硬件设备。"><meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/ios20180801.jpg?imageMogr2/thumbnail/!75p"><link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml"><link rel="canonical" href="http://deepcreator.com/IPR/iOS.html"><script type="text/javascript" id="page.configurations">CONFIG.page={sidebar:""}</script><title>iOS | Ai Lab</title><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}()</script><noscript><style type="text/css">.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.logo-line-after i{right:initial}</style></noscript></head><body itemscope itemtype="http://schema.org/WebPage" lang="en"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta custom-logo"><div class="site-meta-headline"> <a><img class="custom-logo-image" src="http://p53s4d2qk.bkt.clouddn.com/deepcreator220180502.JPG" alt="Ai Lab"></a></div><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Ai Lab</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Minority, Right, Value</p></div><div class="site-nav-toggle"> <button aria-label="Toggle navigation bar"><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>Archives</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>Categories</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>Tags</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-info-circle"></i><br>About</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>Search</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://deepcreator.com/IPR/iOS.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Author"><meta itemprop="description" content="Chief IPR Officer in AI Age"><meta itemprop="image" content="/img/headonhill.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Ai Lab"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">iOS</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">Posted on</span> <time title="Created: 2018-06-01 09:12:08" itemprop="dateCreated datePublished" datetime="2018-06-01T09:12:08+08:00">2018-06-01</time> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i></span> <span class="post-meta-item-text">Edited on</span> <time title="Modified: 2018-08-01 16:49:28" itemprop="dateModified" datetime="2018-08-01T16:49:28+08:00">2018-08-01</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">In</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IPR/" itemprop="url" rel="index"><span itemprop="name">IPR</span></a></span></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span> <a href="/IPR/iOS.html#comments" itemprop="discussionUrl"><span class="post-meta-item-text">Comments:</span><span class="post-comments-count valine-comment-count" data-xid="/IPR/iOS.html" itemprop="commentCount"></span></a></span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i> Views:<span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="http://p53s4d2qk.bkt.clouddn.com/ios20180801.jpg?imageMogr2/thumbnail/!75p" alt="ios20180801.jpg"></p><blockquote><p><a href="https://zh.wikipedia.org/wiki/IOS" target="_blank" rel="noopener">iOS</a>（原名iPhone OS，自第四个版本改名为iOS）是苹果公司为移动设备所开发的专有移动操作系统，属于类Unix系统，支持设备包括iPhone、iPod touch和iPad。与Android不同的是iOS不支持任何非苹果公司的硬件设备。</p></blockquote><a id="more"></a><p><img src="http://p53s4d2qk.bkt.clouddn.com/appledevices20180601.JPG?imageMogr2/thumbnail/!75p" alt="appledevices20180601.JPG"></p><p><img src="http://p53s4d2qk.bkt.clouddn.com/appletimeline20180601.png?imageMogr2/thumbnail/!75p" alt="appletimeline20180601.png"></p><h2 id="批评"><a href="#批评" class="headerlink" title="批评"></a>批评</h2><p>基于iOS的（即iPhone、iPod Touch和iPad），或是其他非基于iOS的（即iPod Classic、iPod Nano和iPod Shuffle），均被批评捆绑iTunes，让iTunes Store垄断这些设备。</p><p>发布应用程序只能使用苹果规定的API，不得使用或调用任何公开或私有的API。应用程序起初必须以Objective-C、C、C++或执行iPhone OS Webkit的JavaScript语言编写，代码仅能用C、C++编写，Objective-C需可编译，直接链入API的文件（禁止应用程序透过中介编译、兼容层和工具链入API）。</p><p>苹果公司在iOS中加入开发限制，使得在iOS开发自有应用显得困难，例如：苹果规定在iOS平台上所有浏览器都必须在自家WebKit渲染引擎上执行，使得非Safari的浏览器如Google Chrome、Mozilla Firefox 、Opera必须修改程序码配合苹果公司牺牲这些浏览器的独有技术及功能，且在iOS中预设的浏览器是Safari，无法使用其他浏览器取代。</p><p>苹果对iOS视频音频编解码器的限制，让iOS设备只支持自家拥有专利的<strong>H.264</strong>及<strong>AAC</strong>，排斥先进的开源编解码器方案，如VP9和Opus。让自家的影音格式在市场上保持优势。</p><p>许多用户表示苹果公司通过iOS版本更新的方式拖慢手机运行速度[19]，以加速用户换机意愿，使iPhone的销量提高，苹果官方更表示每支iPhone默认寿命约三年。</p><h2 id="iOS越狱"><a href="#iOS越狱" class="headerlink" title="iOS越狱"></a>iOS越狱</h2><p>（英语：iOS Jailbreaking）又称JB，是用于获取iOS最高权限（类似Android中的ROOT）的一种技术。越狱完成后设备将运行带有最高权限的iOS系统，一般来说越狱工具会辅助在已获取权限的iOS环境下安装一款名为Cydia的软件。Cydia是一款由开发者Jay Freeman主导开发的iOS第三方插件应用商店，通过此软件可以完成越狱前不可能进行的动作，例如在不连接电脑之下安装App Store以外的软件、更换外观主题、运行Shell程序、甚至可能解开运营商对手机网络的限制（即俗称的“解锁”）。[14]如果进行了“不完美越狱”（Tethered Jailbreak），那么设备将无法在没有电脑辅助启动的环境下重新启动。Jay Freeman在2010年10月估计，全球大概有10%的iPhone曾进行过越狱。</p><h2 id="系统构架"><a href="#系统构架" class="headerlink" title="系统构架"></a>系统构架</h2><p>iOS使用基于与苹果Mac 电脑不同的ARM架构的64位或32位之中央处理器，使用由PowerVR视频卡渲染的Metal以Darwin作为基础。iOS分为核心操作系统层（the Core OS layer）、核心服务层（the Core Services layer）、媒体层（the Media layer）及触控应用层（the Cocoa Touch layer）。</p><h2 id="iOS版本历史"><a href="#iOS版本历史" class="headerlink" title="iOS版本历史"></a><a href="https://zh.wikipedia.org/wiki/IOS%E7%89%88%E6%9C%AC%E5%8E%86%E5%8F%B2" target="_blank" rel="noopener">iOS版本历史</a></h2><h3 id="iOS-6-x"><a href="#iOS-6-x" class="headerlink" title="iOS 6.x"></a>iOS 6.x</h3><p>SiriP4S P5 T5 S3 S4 M1<br>Siri支援iPad（第三代、第四代和iPad mini）和iPod touch（第五代）<br>新增地区和语言支援：加拿大（英语和加拿大法语）、中国（中文）、香港（广东话）、意大利（意大利语）、韩国（韩语）、墨西哥（西班牙语）、西班牙（西班牙语）、瑞士（意大利语、法语、德语）、台湾（中文）、美国（西班牙语）<br>可在世界多国运行的当地搜寻<br>Siri可提供主要运动赛事联盟的资讯，包括NFL、MLB、NBA、NHL、WNBA、NCAA等。可提供的资讯包括球员资料、球队名单、赛事行程和球队表现等<br>Siri可提供更多电影相关资讯，包括影评、演员情报、电影预告、电影时刻表，以及寻找附近的电影院<br>整合Yelp!服务，可提供餐厅等场所的评价，并可透过OpenTable进行餐厅订位<br>餐厅搜寻结果依评价高低与距离排列<br>可透过语音命令开启应用程序（app）<br>Siri可发布Tweets和Facebook的状态更新<br>Siri可读出通知中心的内容<br>“Eyes Free”功能，汽车制造商可建构与Siri整合的系统，驾驶按下方向盘上的麦克风按钮即可启动Siri功能，屏幕在Eyes Free模式中会被关闭。<br>Facebook整合<br>Twitter<br>Twitter商标更新<br>Passbook（限iPhone和iPod touch）<br>可收集并管理使用者的登机证、电影票、折价券、会员卡等。[3]<br>支援商店优待券或储值卡（例如：Apple Store、星巴克、Target 等零售商加入）<br>票卡可即时更新（例如消费后储值卡内的剩余金额、登机证上的班机时间更改等）<br>可根据时间和定位地点自动显示适用的票卡（例如靠近星巴克时自动在主画面上显示星巴克储值卡）<br>通知中心<br>可在通知中心内直接更新Facebook状态或发送Tweet。<br>可关闭收到之讯息的内容预览<br>标题列上可显示正确的今日日期<br>行事历活动中显示结束时间<br>新增“勿打扰”（Do Not Disturb）功能，可暂时关闭所有通知<br>照片<br>共享照片串流（Shared Photo Streams）<br>共享选单的图示和内容更新<br>常时显示建立新相簿的按钮<br>可用“共享”按钮将照片分享至Twitter、Facebook、微博（启用中文键盘时），并可复制照片、播放幻灯片、AirPlay、使用为桌面背景和打印。<br>影片可上传至优酷和土豆网（启用中文键盘时）<br>音乐<br>新的使用者界面，采用黑白布景主题<br>等化器预设组新增深夜模式（Late Night Mode）<br>设定<br>“蓝牙”移至设定页面顶端<br>新增“勿打扰”（Do Not Disturb）模式，使用者可将接听来电功能和各种通知关闭，且可允许接听来自特定清单的来电。开启勿打扰模式后会在状态列上显示一个半月的图示。在屏幕开启的期间勿打扰模式会被暂时关闭<br>新的隐私设定。应用程序要取用使用者的照片、行事历、联络人，和提醒事项前需要征求同意<br>设定图示更新，与OS X的系统偏好设定风格类似<br>当下载系统更新时会显示齿轮动画<br>在使用状况（Usage）选单中，所有装置皆可显示自上次完全充电后的“使用时间”和“待机时间”<br>可在通讯设定选单中开关3G功能（iPhone）<br>地图设定可更改导航音量大小、地图标示语言、地标示尺寸和距离单位<br>iPad中的设定项目以群组分类显示<br>在“关于”设定项目中加入“广告”（Advertising）选项，可自定是否开启要让广告商根据使用资料提供“量身定做”的广告<br>电话<br>来电时可透过锁定画面上的图示来选择更多的拒接选项<br>当拒接来电时，使用者可选择以自定的简讯回复来电者，或是在一段时间后提醒回拨电话<br>来电资讯将不会占满整个锁定画面<br>拨号盘改为白色界面<br>地图<br>将原本由Google提供的地图内容改为由苹果公司自行提供<br>由TomTom提供的转向导航（Turn-by-turn Navigation）服务，并与Siri语音整合（iPhone 4S以上、iPad 2以上、iPod Touch（第五代），语音导航仅限iPhone 4S以上）<br>3D地图模式（iPhone 4S以上、iPad 2以上、iPod Touch（第五代））。<br>卫星地图<br>Flyover（3D卫星地图）P4S P5 T5 S2 S2<br>新的地图应用程序图示<br>转向导航可在锁定画面上显示（iPhone 4S以上、iPad 2以上、iPod Touch（第五代），语音导航仅限iPhone 4S以上）<br>整合商家资讯由Yelp!提供，能显示照片、基本资讯和评价等内容<br>可提供交通资讯<br>点击搜寻列将会自动显示回到住家的路线规划（可修改为预设前往其他地点）<br>FaceTime<br>可透过行动通信网络拨打FaceTime（部分行动通讯业者可能仅限特定费率的用户使用）P4S P5 S3<br>邮件<br>VIP收件夹<br>收件夹可标记<br>可长按后快速插入照片或影片<br>可开启密码保护的微软Office文件档案<br>新增向下滑动可更新收件夹的手势<br>不同电子邮件账号可使用不同的签名<br>长按撰写新邮件按钮可显示草稿列表<br>电子邮件地址可从“最近使用”清单中移除</p><h3 id="iOS-7-x"><a href="#iOS-7-x" class="headerlink" title="iOS 7.x"></a>iOS 7.x</h3><p>使用者界面<br>重新设计的视觉界面，风格变得平面，整体上来说与之前的拟物风格不同。<br>使用Helvetica作为系统字型<br>全屏幕应用程序，使用了系统状态列的空间<br>标签列、导航列、状态列、系统间盘、控制中心与通知中心改为半透明的背景<br>无边框按钮，使用文字取代系统的图示<br>内建应用程序的图是取消反光特效<br>在状态列以圆点代表通讯信号强度<br>左侧边缘向内滑动的返回手势<br>控制中心<br>在系统内的任何地方都可从下侧边缘向上滑动呼叫出控制中心<br>提供常用系统设定和服务的快速取用，并可以控制AirDrop和AirPlay的开关<br>可在锁定画面中使用<br>手电筒（利用相机闪光灯）开关<br>iOS in the Car<br>与汽车厂商合作提供整合式的功能<br>AirDrop<br>在iPhone 5、第四代iPad、iPad mini和第五代iPod touch上提供透过Wi-FI无线网络分享档案媒体的功能<br>可从其他装置发送邀请<br>跨应用程序音讯<br>可与其他应用程序分享音讯串流<br>音讯运算中提供MIDI控制，可遥控启动其他注册的跨程式音讯软件<br>通知中心<br>可从锁定画面中呼出<br>新增“今日”标签，可预览当天的天气、行事历、股市，以及隔天的行程<br>通知可在多个iCloud装置间同步<br>应用程序夹（Folders）<br>不再限制子页面的数量<br>书报摊（Newsstand）可放入程式夹中<br>Spotlight<br>在主画面的任何一页向下滑动都可呼出<br>多任务处理<br>多任务处理的切换界面经过重新设计，采用横向卷动，并可预览所有正在执行的应用程序，在预览画面上向上滑动可关闭该程式<br>智慧背景程式模式可依据网络状况和使用习惯自动接收新资讯<br>桌面背景<br>新的桌面背景<br>动态桌面背景（iPhone 4S、iPhone 5与第五代iPod tocuh）<br>利用陀螺仪制造桌面背景的视差效果（iPhone 4S、iPhone 5与第五代iPod tocuh）<br>天气<br>动态的天气动画背景<br>电话<br>可增加封锁名单<br>FaceTime<br>FaceTime Audio音讯通话功能<br>可增加封锁名单<br>讯息<br>可发送接收更长的SMS.<br>可增加封锁名单<br>Safari<br>全屏幕浏览<br>网址输入框与搜寻框整合<br>网址输入框下出现书签图示<br>输入网址或搜寻字串时会显示常用连结、Google建议字串、书签和浏览历史<br>标签页取消8页的限制，使用3D方式提供标签页预览，长按可重新排列顺序，向左滑动可关闭该标签页<br>阅读清单（Reading List）在右方会显示网页的缩图<br>阅读清单中多篇文章可连续阅读<br>支援iCloud Keychain（iCloud钥匙圈），能记忆网站与Wi-Fi网络密码、信用或签账卡资料，以及其他账户资料<br>增加以向左或向右滑动来前往上/下一页的操作手势<br>私密浏览按钮，可直接在程式内开启“不要追踪我的浏览活动”功能，以往需要另外至系统设定中开启<br>地图<br>夜间模式，将会依照环境光源自动在夜间开启<br>步行导航模式，并会提供预计抵达时间<br>地图书签同步<br>可从OS X Mavericks中的地图接收地点<br>时钟<br>时钟图示能显示即时的时间<br>音乐<br>iTunes Radio服务<br>在水平状态中取消Cover Flow浏览模式<br>App Store<br>应用程序自动更新<br>新增依据年龄分类的儿童专区<br>依据使用者所在位置推荐应用程序<br>大量购买<br>可使用相机扫描App Store点数卡储值<br>iTunes Store<br>自动下载新电视系列剧<br>可使用相机扫描iTunes Store点数卡储值<br>照片<br>照片可以拍摄地点、片刻（Moments）与年份分类<br>可将照片透过iCloud、社群网站和AirDrop分享<br>新增“全景照片”专属相簿<br>相机<br>操作界面重新设计，横向滑动可在照片、影片、正方形照片和全景照片模式间切换<br>照片滤镜与效果即时预览<br>60 FPS录影<br>录影时可数位变焦<br>行事历<br>全年浏览模式<br>一周浏览模式<br>与地图整合，可显示地点的交通资讯<br>与邮件整合<br>罗盘<br>新增测斜器<br>邮件<br>新智能邮箱<br>搜寻功能改善<br>中国专用服务<br>整合腾讯微博社交网络<br>中英双向辞典<br>改善中文输入，包含手写辨识<br>Siri<br>Siri声音更新，加入男性声音（仅限部分语言）<br>Siri可控制部分系统设定，例如开关蓝牙，或调整屏幕亮度<br>可使用维基百科与Bing进行搜寻<br>Passbook<br>可扫描条码/QR码后加入新的Pass<br>Find My iPhone:<br>远端清除装置后若要重新启用需要输入iCloud账号密码<br>企业功能<br>企业整合登入（Enterprise single sign-on）<br>个别应用程序的VPN<br>应用程序设定档（config）管理<br>配件<br>可设定并控制Wi-Fi周边配件，例如AirPlay扬声器<br>当连接未经认证的传输线或配件时将显示警告讯息<br>Location Beacons：一种低功耗、低传输率的装置，将可与附近的装置进行沟通，可应用在公园内的步道记号、博物馆内的展览，以及商店内的产品展示等方面。<br>Bluetooth LE：包括时间、通知、键盘与立体声<br>游戏控制器<br>其他<br>新的首次使用设定选单<br>设定协助过程中加入密码锁定（Passcode Lock，于Beta 2中加入）<br>WiFi Hotspot 2.0<br>Vimeo与Flickr整合<br>可显示PDF中的注解<br>意大利文、德文与韩文字典<br>新版语音备忘录程式（Beta 1中被移除，于Beta 2中加入）<br>充电时锁定画面不显示电池图案，而改在时间下方显示充电进度，数秒后会消失改为显示日期<br>CDMA机型新增1xRTT图示，以“1x”图示取代状态列上的“o”图示。<br>GPRS机型以“GPRS”字样取代状态列上的“o”图示。<br>状态列中改以圆点来表示手机讯号强度</p><p>CarPlay（仅限iPhone 5、iPhone 5S与iPhone 5C）<br>全新的iOS车载系统<br>透过车内麦克风操作Siri<br>透过按钮或车上触控屏幕拨打电话、拨放音乐、传讯简讯或使用其他已支援的第三方程式<br>使用者界面<br>更改了部分视觉元素<br>相机<br>自动启用HDR（仅限iPhone 5S）<br>行事历<br>月份浏览模式<br>Siri<br>Siri现在会在手指离开Home键后停止聆听<br>其他<br>提高了TouchID的识别性<br>修正了一个导致Springboard崩溃的错误<br>提高iPhone 4的反应速度与性能</p><h3 id="iOS-8-x"><a href="#iOS-8-x" class="headerlink" title="iOS 8.x"></a>iOS 8.x</h3><p>此版本包含错误修复，并针对 iPad 2 和 iPhone 4s 提升了稳定性、改进了性能。<br>此版本包含错误修复，并解决了在iTunes Store购买的电话铃声可能从设备移除的问题。<br>此版本包含错误修复，提高了稳定性和性能，其中包括：</p><p>减少了执行软件更新所需的存储空间<br>修正了部分用户无法在“信息”和 FaceTime 中输入其 Apple ID 密码的问题<br>解决了导致 Spotlight 停止显示应用程序结果的问题<br>修正了在 iPad 上无法正常使用多任务手势的问题<br>为教育标准化考试新增了配置选项</p><p>此版本加入对 Apple Watch 的支持，改进了“健康”应用程序，提高了稳定性并包含错误修复。</p><p>Apple Watch 的支持</p><p>新 Apple Watch 应用程序可与 iPhone 配对和同步，并可自定手表设置<br>新“健身活动”应用程序在 Apple Watch 配对成功后，可查看 Apple Watch 上显示的健身数据及成就<br>适用于 iPhone 5 及更新款机型<br>“健康”应用程序改进</p><p>增加了选择距离、体温、身高、体重和血糖测量单位的功能<br>提高了处理大量数据时的稳定性<br>支持添加并可视化第三方应用程序中的健身锻炼数据<br>解决了用户可能无法在医疗急救卡中添加照片的问题<br>修正了维生素和矿物质单位<br>修正了更改数据源顺序后，“健康”数据无法刷新的问题<br>修正了部分图形无法显示数据值的问题<br>增加了一项隐私设置，可关闭对步数、距离以及已爬楼层的跟踪<br>稳定性增强</p><p>提高了“邮件”的稳定性<br>提高了“地图”中Flyover的稳定性<br>提高了“音乐”的稳定性<br>提高了 VoiceOver 的可靠性<br>提高了与 Made for iPhone 助听器的连接性<br>错误修复</p><p>修正了“地图”中无法导航至某些喜爱地点的问题<br>解决了快速回复信息中最后一个字无法自动纠正的问题<br>修正了复制iTunes购买内容可能导致 iCloud 无法完成恢复的问题<br>解决了部分音乐或播放列表无法从 iTunes 同步至“音乐”应用程序的问题<br>修正了已删除的有声读物偶尔仍保留在设备上的问题<br>解决了使用 Siri 免视功能(Siri Eyes Free)时通话音频无法传送至汽车扬声器的问题<br>修正了电话接通前无法听取音频的蓝牙通话问题<br>修正了“日历”事件以 GMT 显示时的时区问题<br>解决了导致自定重复会议中特定事件从 Exchange 日历消失的问题<br>修正了第三方网关下无法配置 Exchange 帐户的证书错误<br>修正了可能导致组织者的 Exchange 会议备忘录被覆盖的问题<br>解决了部分“日历”事件在接受邀请后无法自动显示为“繁忙”的问题</p><p>此版本包含了效能的改进、修正错误，并且重新设计表情符号键盘。更动的项目如下：</p><p>改进以下的效能：</p><p>App 启动<br>App 回应<br>讯息<br>Wi-Fi<br>控制中心<br>Safari 标签页<br>第三方键盘<br>使用者辞典<br>简体中文键盘<br>Wi-Fi 和蓝牙的修正内容</p><p>修正可能持续提示您输入登入凭证的问题<br>解决部分装置间歇性地中断 Wi-Fi 网络的问题<br>修正免持听筒的来电可能中断的问题<br>修正使用部分蓝牙扬声器时音讯可能停止运作的问题<br>方向和旋转的修正内容</p><p>解决转至横向之后有时可能无法再转回直向的问题<br>改进装置在直向和横向之间旋转时的效能和稳定性问题<br>修正 iPhone 6 从口袋取出后，装置的方向会上下颠倒的问题<br>解决在多工处理中切换 App 之后，有时会导致 App 无法转至正确方向的问题<br>讯息的修正内容</p><p>解决可能导致群组讯息有时会被分开的问题<br>修正有时会无法转发或删除单一讯息的问题<br>解决在“讯息”中拍照时，有时无法显示预览的问题<br>加入直接在“讯息”App 中回报垃圾讯息的功能<br>加入功能以过滤不是由您的联络人所传送的 iMessage<br>家人共享的修正内容</p><p>修正部分 App 无法在家庭成员的装置上启动或更新的错误<br>修正家庭成员无法下载部分免费 App 的问题<br>改进“购买前询问”通知的可靠性<br>CarPlay 的修正内容</p><p>修正“地图”可能显示黑色画面的问题<br>修正使用者界面会错误旋转的问题<br>修正键盘可能会错误地显示在 CarPlay 屏幕上的问题<br>企业的修正内容</p><p>改进安装和更新企业级 App 的可靠性<br>更正在 IBM Notes 中所制作的“行事历”事件时区<br>修正在重新启动之后可能导致 web clip 图像变成一般图像的问题<br>改进储存网页代理服务器的可靠性<br>现已可单独编辑 Exchange 的外部邮件答录机讯息<br>改进从暂时的连线问题中回复 Exchange 账号的能力<br>改进 VPN 和网页代理服务器解决方案的相容性<br>允许使用实体键盘来登入 Safari 网页表单，例如加入公用 Wi-Fi 网络<br>修正带有长篇备忘录的 Exchange 会议可能会被截断的问题<br>辅助使用的修正内容</p><p>修正在 Safari 中使用返回按钮时可能导致 VoiceOver 手势没有回应的问题<br>修正 VoiceOver 焦点在“邮件”草稿中变得不可靠的问题<br>修正无法使用“点字屏幕输入”在网页表单中输入文字的问题<br>修正在“点字显示器”中切换“快速导览”时会宣告“快速导览”已关闭的问题<br>修正在 VoiceOver 启用时，会导致 App 图像无法在主画面屏幕上移动的问题<br>修正在“朗读屏幕”中，语音于暂停之后无法再次启动的问题<br>其他改进和错误修正</p><p>重新设计的表情符号键盘，包含超过 300 种新的符号<br>“iCloud 照片图库”已最佳化，可搭配 OS X 10.10.3 中的“照片”App 使用，已不再是 beta 版<br>改进在“地图”中转向导航时的街道名称发音<br>支援 Baum VarioUltra 20 和 VarioUltra 40 点字显示器<br>改进启用了“减少透明度”时，Spotlight 搜寻结果的显示方式<br>在 iPhone 6 Plus 的横向键盘中加入斜体和底线格式选项<br>新增移除用于 Apple Pay 的寄送和账单地址功能<br>其他 Siri 的语言和国家支援：英语（印度、新西兰）、丹麦语（丹麦）、荷兰语（荷兰）、葡萄牙语（巴西）、俄语（俄罗斯）、瑞典语（瑞典）、泰语（泰国）、土耳其语（土耳其）<br>其他听写语言：阿拉伯语（沙特阿拉伯、阿拉伯联合酋长国）和希伯来语（以色列）<br>改进“电话”、“邮件”、蓝牙连线能力、“照片”、Safari 标签页、“设定”、“天气”和“音乐”中“Genius 播放列表”的可靠性<br>解决“滑动来解锁”可能在部分装置上失效的问题<br>解决有时无法在锁定画面上滑动来接听电话的问题<br>解决无法在 Safari PDF 中打开连结的问题<br>修正在“Safari 设定”中选择“清除浏览记录和网站资料”之后无法清除所有资料的问题<br>修正无法自动更正英文“FYI”的问题<br>解决无法在“快速回复”中显示上下文预测的问题<br>修正“地图”无法从混合模式进入夜间模式的问题<br>解决无法从浏览器或使用 FaceTime URL 的第三方 App 中启动 FaceTime 通话的问题<br>修正有时无法将照片输出至 Windows 的数码相机影像档案夹中的问题<br>修正有时无法使用 iTunes 完成 iPad 备份的问题<br>修正从 Wi-Fi 切换至行动数据网络时，可能导致 Podcast 下载项目停滞的问题<br>修正在锁定画面中，计时器剩余时间可能会错误显示为 00:00 的问题<br>修正有时无法调整通话音量的问题<br>修正有时状态列错误显示的问题</p><p>本次更新为您推出 Apple Music — 一款革命性的音乐服务、24/7 全球广播、并为粉丝提供了与喜爱艺人互动交流的途径 — 一切尽在重新设计的“音乐”应用。iOS 8.4 还包含 iBooks 改进与问题修复。</p><p>Apple Music</p><p>成为 Apple Music 会员，播放 Apple Music 音乐目录中的百万歌曲，也可离线音乐供稍后播放<br>为您甄选：会员可以查看播放列表与专辑推荐，由音乐专家为您精挑细选<br>新内容：会员可以查看最新杰出音乐 — 由我们的编辑直接推荐<br>广播：使用 Beats 1 收听音乐、访谈以及独家广播节目，播放由我们的编辑创建的广播电台，当然，您也可以用任意艺人或歌曲创建自己的电台<br>Connect：查看您关注的艺人分享的观点、照片、音乐和视频，并成为对话一员<br>我的音乐：您通过 iTunes 购买的全部音乐、来自 Apple Music 的歌曲、以及您的播放列表，汇聚一处，随心播放<br>全新设计的音乐播放器包含“最近添加”、 迷你播放程序、“接着播放”以及更多功能<br>iTunes Store：仍是您购买喜爱歌曲的最佳去处 — 一次购买一首歌或一张专辑，随您心意<br>以上服务是否可用以及相关功能可能因国家或地区有所差异<br>iBooks 改进与修复</p><p>在 iBooks 内即可浏览、收听及下载有声读物<br>享受全新“正在播放”功能，专为有声读物而设计<br>iBooks 专版书目现在除 iPad 之外，还可以在 iPhone 上阅读<br>在您的资料库即可查找并预购系列图书<br>针对使用 iBooks Author 所制作图书的 widget 小程序的辅助功能服务、词汇表以及章节导航进行了改进<br>全新默认中文字体<br>新设置使您可以在书库中关闭自动启用夜间主题<br>解决了可能导致无法隐藏购买项目的问题<br>解决了可能导致无法从 iCloud 下载图书的问题<br>其他功能改进及问题修复</p><p>修复了接收特定 Unicode 字符组时设备重启的问题<br>修复了造成 GPS 配件无法提供位置数据的问题<br>修复了 Apple Watch 应用删除后又被重新安装的问题</p><h3 id="iOS-9-x"><a href="#iOS-9-x" class="headerlink" title="iOS 9.x"></a>iOS 9.x</h3><p>本更新推出了强大的搜索功能和更完善的 Siri 功能，iPhone、iPad 和 iPod touch 因而更加智能、主动。新增的 iPad 多任务功能让两个应用能并行排列或通过全新的画中画功能同步运行。此外，各种内建应用也更为强大，例如“地图”提供了详细的公交信息，“备忘录”应用已经重新设计，而且推出了全新的 News 应用。操作系统基础得以改善，提高了性能，增强了安全性并增加了最多一个小时的电池寿命。</p><p>智能</p><p>主动协助<br>在您开始键入之前即提供有关信息<br>在您需要动身赴约时发出提醒，同时将交通状况考虑在内<br>了解您在特定地点或时间通常听些什么，可以自动显示首选音乐和视频应用的回放控制选项<br>根据“邮件”中找到的信息，向各种应用建议可增加的事件和联系人资料<br>改进了 Siri<br>基于日期、位置和相簿名称来搜索个人照片和视频<br>要求 Siri 来提醒您在 Safari、“邮件”、“备忘录”和“信息”等应用中看到的有关内容<br>提供大众公交路线<br>增强 Spotlight 搜索功能<br>获取体育比分、天气状况和股票价格<br>执行简单的数学计算和单位换算<br>在联系人的搜索结果中发送信息、拨打电话和 FaceTime 通话<br>新增 iPad 功能</p><p>Slide Over<br>不用离开正在使用的应用即可快速使用另一款应用<br>在 Slide Over 应用之间轻松切换<br>支持 Apple 应用和已启用的第三方应用<br>Split View<br>可同时查看两个应用并与之互动<br>能够调整视图，让两个应用大小相同，或一大一小<br>支持 Apple 应用和已启用的第三方应用<br>画中画<br>一边使用您喜爱的应用一边继续观看视频<br>支持 Safari 视频、FaceTime、视频和播客及已启用的第三方应用<br>改进了 QuickType<br>利用 Multi-Touch 手势，在 iPad 上选择文本更为轻松<br>在 iPad 上利用快捷工具栏来快速访问文本编辑工具<br>支持硬件键盘快捷键<br>支持所有 Unicode 旗帜表情符号<br>内建应用</p><p>改进了“地图”<br>支持特选大城市中的大众公交路线、车站进出站口信息、时刻安排和路线<br>根据诸如食物、饮料、购物和娱乐之类的类别来浏览您附近的地点<br>在加盟零售方的地点卡上显示该处是否支持 Apple Pay<br>地点卡包括维基百科上关于地标和城市的信息<br>重新设计了“备忘录”应用<br>用内建相机或从“照片图库”将照片来添加到您的备忘录中<br>创建实用的核对清单，轻点一下即可勾选已完成的项目<br>仅用单指速绘，即可记下闪现的想法<br>利用其他应用中的“共享”菜单直接将感兴趣的项目存储到“备忘录”中<br>全新的 News 新闻应用<br>阅读喜爱的报纸、杂志、博客，或从一百万多个主题中选读<br>精美的设计排版、布局、图库、视频、动画及更多内容<br>在“为你推荐”中浏览根据您的兴趣爱好挑选出来的文章。在“探索”中查找推荐的频道和主题。您阅读的内容越多，News 新闻就越个性化<br>轻松与朋友共享文章或将文章存储起来稍后阅读－您甚至可以离线阅读<br>改进了“邮件”<br>搜索功能可根据发件人、收件人、主题或选项组合来过滤搜索结果，帮您快速找到要寻找的内容<br>支持“标记”功能，让您无需离开“邮件”即可给图像或 PDF 附件添加文本、形状，甚至签名等注释，并发回邮件<br>轻松存储收到的附件，或者在编写新邮件时添加来自 iCloud Drive 或其他文稿提供者的文件<br>改进了 Apple Pay 和 Wallet<br>支持 Discover 卡<br>支持回馈卡、商店信用卡和借记卡<br>若要加速结账，您可以在锁屏连点两下主屏幕按钮，并将手指放在 Touch ID 上来准备付款<br>新建 iCloud Drive 应用<br>按照日期、名称或您在 Mac 上添加的标记来轻松搜索文件，或者浏览新 iCloud Drive<br>在兼容的应用中打开文件，或者与您选择的对象共享<br>整理文件夹和文件<br>在“设置”&gt; iCloud &gt; iCloud Drive 中获取 iCloud Drive 应用，然后选择“在主屏幕上显示”<br>改进了 CarPlay<br>回放音频留言，听取留言者自己的声音<br>完全支持车内旋钮控制，您可以倾斜或旋转来滚动浏览列表或者平移查看“地图”<br>支持汽车制造商的 CarPlay 应用<br>基础</p><p>延长电池使用寿命<br>在需要充电前增加了最多一小时的可用时间<br>检测屏幕朝下的状态，在不用时关闭显示器<br>低电量模式下最优化设备性能，可将电池电量延长最多三小时<br>下载软件更新项目需要更少空间，并可选择稍后安装<br>iOS 应用和用户界面现在使用 Metal 来实现更快的滚动速度、更流畅的动画效果，和更好的整体性能<br>增强了安全性能，支持双重鉴定并在 Touch ID 设备中默认六位密码<br>其他改进功能</p><p>全新 San Francisco 系统字体<br>拨打 FaceTime 通话时若无人接听，您可以选择留言<br>使用“电话”应用中的共享表单来共享语音留言<br>数据监测器可跟踪航班和包裹<br>“健康”应用新增对生殖健康、紫外线照射、摄水量和久坐状态等数据类型的支持<br>HomeKit 新增对电动窗户和窗帘，动态感应器和家庭安全系统等配件的支持<br>“播客”的设计焕然一新，让您能轻松找到喜爱节目的最新单集，并在新单集可用后及时收到通知<br>支持在 iPad、iPod touch 和 Mac 上通过合作的运营商进行 Wi-Fi 通话，iPhone 无需在附近<br>“Wi-Fi 助理”可在 Wi-Fi 连接较弱时自动使用蜂窝移动数据<br>运用“转移到 iOS”应用来转移安卓设备上的内容，请参阅 <a href="http://www.apple.com/cn/move-to-ios" target="_blank" rel="noopener">http://www.apple.com/cn/move-to-ios</a> 来获取更多详细信息<br>支持更多语言</p><p>新增“苹方”中文系统字体<br>改进了 QuickType 中的中文预测、学习和自动改正功能<br>重新设计了九宫格中文键盘上的标点符号输入<br>为从右向左的语言重新设计了用户界面<br>新增对奥地利、比利时（法语和荷兰语）及挪威 Siri 功能的支持<br>新增对墨西哥的 Spotlight 搜索功能的支持<br>新增下列语言的键盘：法文（比利时）、德文（奥地利）、古吉拉特文、印地文（转写）、印度英文、旁遮普文、西班牙文（墨西哥）和泰卢固文<br>支持下列语言的预测输入：法文（比利时）、德文（奥地利）、韩文、俄文、西班牙文（墨西哥）和土耳其文<br>支持下列语言的听写功能：荷兰文（比利时）、英文（爱尔兰、菲律宾、南非）、法文（比利时）、德文（奥地利）、西班牙文（智利、哥伦比亚）<br>芬兰文和韩文的拼写检查<br>印地文、挪威文和瑞典文的定义字典<br>法文－英文和德文－英文双语字典<br>QuickType 中新增日文自动改正功能，并改进了输入预测和学习功能<br>新增阿拉伯文和印地文中切换数字系统的选项<br>企业与教育</p><p>无需配置 iTunes Store 帐户，即可将应用直接指定给 iOS 设备<br>改进了 Microsoft Exchange ActiveSync v16 用户日历的可靠性<br>扩大了“单应用 VPN”对内建 IPSec 和 IKEv2 VPN 客户端的支持<br>新增对受管理的应用的网络控制，帮助限制国际数据漫游成本<br>新增限制来防止更改密码、设备和墙纸，或在受管理的设备上停用 AirDrop<br>支持 VPN 的第三方应用扩展、高级内容过滤和强制 Wi-Fi 网络<br>辅助功能</p><p>“触摸调节”给那些有肢体动作限制的用户提供更多触摸控制选项<br>“切换控制方案”自定功能或者创建您自己的功能<br>支持 VoiceOver 用户的 Siri 声音<br>其他 AssistiveTouch 的自定选项<br>硬件键盘支持 “按键重复”、“慢速键”和“粘滞键”<br>改进了 MFi 助听器的音频路径，来选择音频播放方式</p><p>本更新修复了下列问题：</p><p>修复了部分用户更新后不能完成设置助理的问题<br>修复了闹钟和计时器有时可能不提示的问题<br>修复了Safari和“照片”中暂停视频可能造成暂停帧显示变形的问题<br>修复了部分通过某描述文件使用自定APN设置的用户会损失蜂窝移动数据的问题</p><p>本更新包含下列问题修复与改进：</p><p>修复了应用开关蜂窝移动数据的问题<br>解决了部分用户无法激活iMessgae的问题<br>解决手动备份开始后, iCloud云备份可能会中断的问题<br>修复了接收通知时, 屏幕可以会错误旋转的问题<br>增进了播客的稳定性</p><p>本更新包含新功能、问题修复与改进：</p><p>Live Photo 现在可以在您举起或放低 iPhone 时自动感应，以自动调整，不记录这些移动<br>新增 150 多种表情符号，全面支持 Unicode 7.0 和 8.0 表情符号<br>增强了 CarPlay、“音乐”、“照片”、Safari 和“搜索”的稳定性<br>提升了多任务界面下的性能表现<br>修复了可能导致月份视图下“日历”不响应的问题<br>修复了部分用户无法启动 Game Center 的问题<br>解决了导致部分应用的内容会缩放的问题<br>解决了可能导致 POP 邮件帐户的未读邮件数不正确的问题<br>修复了造成用户无法将最近联系人从新邮件或信息中移除的问题<br>修复了造成部分邮件在“邮件”的搜索结果中不显示的问题<br>解决了音频信息上残留灰色指示条的问题<br>修复了造成部分运营商激活错误的问题<br>修复了部分应用无法从 App Store 更新的问题</p><p>本更新包含问题修复与改进：</p><p>Apple Music 针对制作播放列表、离线保存歌曲和浏览古典音乐作出改进<br>“邮件”的 Mail Drop 功能可发送大附件</p><p>本更新包含安全性更新和问题修复，包括使用 MDM 服务器时可能造成应用无法完整安装的问题。</p><p>修复了在 Safari 及其他应用中轻点链接会造成应用不响应的问题</p><h3 id="iOS-10"><a href="#iOS-10" class="headerlink" title="iOS 10"></a>iOS 10</h3><p>iOS 10.3 推出了包括使用“查找我的 iPhone”定位 AirPods 在内的全新功能，并提供了使用 Siri 进行支付、叫车以及与车载设备配合使用的更多途径。</p><p>查找我的 iPhone<br>查看您 AirPods 的当前位置或最后已知位置<br>在一侧或左右 AirPods 上同时播放声音，帮助您找到它们.<br>Siri<br>支持配合支付应用进行支付和检查账单状态<br>支持配合叫车应用预约车辆<br>支持配合车载应用检查油量及车锁状态，并可开灯和鸣喇叭<br>支持印度超级板球联赛和国际板球理事会的板球运动比分和统计数据.<br>CarPlay<br>状态栏增加了快捷键，方便访问上次使用的应用<br>在 Apple Music 的“播放中”屏幕上即可访问“接着播放”及在播歌曲的专辑<br>Apple Music 可提供每日精选播放列表和全新音乐类别.<br>其它改进和修复<br>只需租借一次，即可在您所有设备上欣赏 iTunes 电影<br>全新“设置”整合了 Apple ID 帐户信息、设置和设备，集中一处供您查看<br>在“地图”中显示的当前温度上使用 3D Touch 即可查看逐时天气<br>现可支持在“地图”中搜索“停车位置”<br>“日历”新增了删除不必要的邀请并报告为垃圾信息的功能<br>“家庭”应用现支持使用带开关和按钮的配件来触发场景<br>“家庭”应用现支持检查配件电池电量状态<br>“播客”现支持使用 3D Touch 和在“今日” Widget 中访问最近更新的节目<br>“播客”中的节目或单集现可通过“信息”共享，并提供完整的播放支持<br>修复了还原“位置与隐私”后，可能造成“地图”不显示当前位置的问题<br>改进了 VoiceOver 针对“电话”、Safari 和“邮件”的稳定性</p><p>iOS 10.3.1 包含问题修复以及对 iPhone 或 iPad 安全性的改进。</p><p>iOS 10.3.2 包含问题修复以及对 iPhone 或 iPad 安全性的改进。</p><h3 id="苹果-WWDC-2018：最全总结看这里，不错过任何重点"><a href="#苹果-WWDC-2018：最全总结看这里，不错过任何重点" class="headerlink" title="苹果 WWDC 2018：最全总结看这里，不错过任何重点"></a><a href="http://www.ifanr.com/1043270" target="_blank" rel="noopener">苹果 WWDC 2018：最全总结看这里，不错过任何重点</a></h3><p>iOS 12：关键词是 Siri 进化和防沉迷</p><p>相册致敬 Google</p><p>之前，如果要论 Android 党的骄傲组成部分，除了开放精神，就是 Google Photos 这个应用了。毕竟相比于 iOS 的相册功能，Google Photos 还是要智能不少的。</p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-12.jpg" alt=""></p><p>不过在 iOS 12 中，苹果开始加强相册功能了：iOS 12 的相册将大大提升搜索性能，系统不仅会提出搜索建议，还会帮你按主题整理照片，比如根据猫猫狗狗花花草草。只是不知道后面苹果的人工智能会不会说支持类似于“肥宅快乐、菊姐出道”这样的标签。</p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-13.jpg" alt=""></p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-14.jpg" alt=""></p><p>iOS 12 还会自动提醒你将合适的照片分享给你的好友——照片分享全程都是端到端加密的，非常安全。是的，是非常安全，不是绝对安全。</p><p>Siri 聪明了些</p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-16.jpg" alt=""></p><p>作为 iOS 的短板，Siri 的满意度就想 Siri 的回答一样是个谜，为了解谜，苹果再次向 Google 和微软取经，给 Siri 加上了一些看起来有用的新功能：Shortcuts（捷径），它可以自动帮你订咖啡，设置日程，甚至还能在你忘记钥匙的时候提醒你忘在哪儿了，前提是这个钥匙是电子的。</p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-18.jpg" alt=""></p><p>除了苹果给到的 Shortcuts（捷径）之外，用户也可以在 Siri 上自己创建 Shortcuts（捷径）作为快捷口令。</p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-17.jpg" alt=""></p><p>看到这里，相比熟悉苹果的朋友大概明白了，Siri 的本次改进，很可能是源于它收购的效率神器 Workflow，堪称一个用 Siri 唤醒的 Workflow。</p><p>这个 Shortcuts 也支持 HomePod 和 Apple Watch，所以理论上 HomePod 也可以进行智能家居控制，而不仅仅是个大傻子音箱。</p><p>防手机沉迷是重点</p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-22.jpg" alt=""></p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-23.jpg" alt=""></p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-24.jpg" alt=""></p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-25.jpg" alt=""></p><p>接下来就是本次 iOS 12 的重点了：防沉迷。鉴于手机上瘾成为了一个社会议题，今年 Google 和苹果都不约而同地将“防沉迷”加入到了系统更新当中：</p><p>Do Not Disturb（别吵我）功能将关掉手机的视觉通知，在夜深人静想起她或梦见她的时候，来了邮件也不会亮屏刺破夜的静谧和黑暗<br>Deliver Quietly（安静通知）则是将消息推送静默化、不显示在锁屏，也不出声，也不会在 app 右上角标红<br>Grouped Notifications（分组通知）可以将某一类型的通知归组，微信群聊消息不再有轰炸的感觉<br>Reports（应用报告）可以用周报告的形式，告诉用户用什么应用最多，哪个应用通知最多，每天起床第一个打开的是什么应用等等<br>App Limits（应用限制）可以给某个应用规定使用时间，当然这不是强制性的，用户可以突破限制继续“吃鸡”<br>Allowances（零用钱？）是家长限制孩子使用应用的新特性</p><p>iOS 12 的更新基本上差不多了，这个版本的更新，主要是解决了一些过去的遗留问题，然后在很多小的功能点上进行了更新，甚至还对 News 和股市这样的冷门应用动了刀子，一方面可能是因为 iOS 越来越完善，一方面是苹果在求稳吧。</p><p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-88.jpg" alt=""></p><p>当然，小惊喜就是关于防止手机沉迷的几个新特性，实用性和人性化都不错，这大概是很多人选择升级 iOS 12 的第一理由。</p></div><footer class="post-footer"><div class="post-tags"><a href="/tags/IPR/" rel="tag"><i class="fa fa-tag"></i> IPR</a><a href="/tags/iOS/" rel="tag"><i class="fa fa-tag"></i> iOS</a><a href="/tags/Apple/" rel="tag"><i class="fa fa-tag"></i> Apple</a></div><div class="post-widgets"><div class="wp_rating"><div id="wpac-rating"></div></div></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/IPR/Android.html" rel="next" title="Android"><i class="fa fa-chevron-left"></i> Android</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/Company/Ericsson.html" rel="prev" title="Ericsson">Ericsson<i class="fa fa-chevron-right"></i></a></div></div></footer></div></article></div></div><div class="comments" id="comments"></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div id="sidebar-dimmer"></div><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> Table of Contents</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> Overview</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/img/headonhill.jpg" alt="Author"><p class="site-author-name" itemprop="name">Author</p><p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">244</span> <span class="site-state-item-name">posts</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">7</span> <span class="site-state-item-name">categories</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">380</span> <span class="site-state-item-name">tags</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="http://blog.163.com/zhuxuanlv@126/" target="_blank" title="Blog"><i class="fa fa-fw fa-globe"></i> Blog</a></span><span class="links-of-author-item"><a href="mailto:deepcreator18@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i> E-Mail</a></span></div><div id="days"></div><script language="javascript">function show_date_time(){window.setTimeout("show_date_time()",1e3),BirthDay=new Date("04/01/2018 16:01:00"),today=new Date,timeold=today.getTime()-BirthDay.getTime(),sectimeold=timeold/1e3,secondsold=Math.floor(sectimeold),msPerDay=864e5,e_daysold=timeold/msPerDay,daysold=Math.floor(e_daysold),e_hrsold=24*(e_daysold-daysold),hrsold=setzero(Math.floor(e_hrsold)),e_minsold=60*(e_hrsold-hrsold),minsold=setzero(Math.floor(60*(e_hrsold-hrsold))),seconds=setzero(Math.floor(60*(e_minsold-minsold))),document.getElementById("days").innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second "}function setzero(e){return e<10&&(e="0"+e),e}show_date_time()</script></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#批评"><span class="nav-number">1.</span> <span class="nav-text">批评</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS越狱"><span class="nav-number">2.</span> <span class="nav-text">iOS越狱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统构架"><span class="nav-number">3.</span> <span class="nav-text">系统构架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS版本历史"><span class="nav-number">4.</span> <span class="nav-text">iOS版本历史</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-6-x"><span class="nav-number">4.1.</span> <span class="nav-text">iOS 6.x</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-7-x"><span class="nav-number">4.2.</span> <span class="nav-text">iOS 7.x</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-8-x"><span class="nav-number">4.3.</span> <span class="nav-text">iOS 8.x</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-9-x"><span class="nav-number">4.4.</span> <span class="nav-text">iOS 9.x</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-10"><span class="nav-number">4.5.</span> <span class="nav-text">iOS 10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#苹果-WWDC-2018：最全总结看这里，不错过任何重点"><span class="nav-number">4.6.</span> <span class="nav-text">苹果 WWDC 2018：最全总结看这里，不错过任何重点</span></a></li></ol></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2018</span><span class="with-love" id="animate"><i class="fa fa-user"></i></span> <span class="author" itemprop="copyrightHolder">Author</span></div><div class="busuanzi-count"><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv" title="Total Visitors"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span><span class="site-pv" title="Total Views"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script type="text/javascript">var GUEST=["nick","mail","link"],guest="nick,mail,link";guest=guest.split(",").filter(function(e){return-1<GUEST.indexOf(e)}),new Valine({el:"#comments",verify:!1,notify:!1,appId:"TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz",appKey:"PXNkGhS05PxL7rV3N8gDlAQe",placeholder:"Just go go",avatar:"mm",meta:guest,pageSize:"10",visitor:!1})</script><script type="text/javascript">
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="iOS（原名iPhone OS，自第四个版本改名为iOS）是苹果公司为移动设备所开发的专有移动操作系统，属于类Unix系统，支持设备包括iPhone、iPod touch和iPad。与Android不同的是iOS不支持任何非苹果公司的硬件设备。">
+<meta name="keywords" content="IPR,iOS,Apple">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS">
+<meta property="og:url" content="http://deepcreator.com/IPR/iOS.html">
+<meta property="og:site_name" content="Ai Lab">
+<meta property="og:description" content="iOS（原名iPhone OS，自第四个版本改名为iOS）是苹果公司为移动设备所开发的专有移动操作系统，属于类Unix系统，支持设备包括iPhone、iPod touch和iPad。与Android不同的是iOS不支持任何非苹果公司的硬件设备。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/ios20180801.jpg?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/appledevices20180601.JPG?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="http://p53s4d2qk.bkt.clouddn.com/appletimeline20180601.png?imageMogr2/thumbnail/!75p">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-12.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-13.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-14.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-16.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-18.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-17.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-22.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-23.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-24.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-25.jpg">
+<meta property="og:image" content="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-88.jpg">
+<meta property="og:updated_time" content="2018-08-01T08:49:28.453Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iOS">
+<meta name="twitter:description" content="iOS（原名iPhone OS，自第四个版本改名为iOS）是苹果公司为移动设备所开发的专有移动操作系统，属于类Unix系统，支持设备包括iPhone、iPod touch和iPad。与Android不同的是iOS不支持任何非苹果公司的硬件设备。">
+<meta name="twitter:image" content="http://p53s4d2qk.bkt.clouddn.com/ios20180801.jpg?imageMogr2/thumbnail/!75p">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ai Lab" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://deepcreator.com/IPR/iOS.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>iOS | Ai Lab</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5aaaaf5c9bcea80a5c7d7a057b2d36b3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="http://p53s4d2qk.bkt.clouddn.com/deepcreator220180502.JPG"
+               alt="Ai Lab"/>
+        </a>
+      </div>
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ai Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Minority, Right, Value</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-info-circle"></i> <br />About</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://deepcreator.com/IPR/iOS.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="Chief IPR Officer in AI Age">
+      <meta itemprop="image" content="/img/headonhill.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ai Lab">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">iOS
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-06-01 09:12:08" itemprop="dateCreated datePublished" datetime="2018-06-01T09:12:08+08:00">2018-06-01</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-01 16:49:28" itemprop="dateModified" datetime="2018-08-01T16:49:28+08:00">2018-08-01</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IPR/" itemprop="url" rel="index"><span itemprop="name">IPR</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/IPR/iOS.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count valine-comment-count" data-xid="/IPR/iOS.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://p53s4d2qk.bkt.clouddn.com/ios20180801.jpg?imageMogr2/thumbnail/!75p" alt="ios20180801.jpg"></p>
+<blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/IOS" target="_blank" rel="noopener">iOS</a>（原名iPhone OS，自第四个版本改名为iOS）是苹果公司为移动设备所开发的专有移动操作系统，属于类Unix系统，支持设备包括iPhone、iPod touch和iPad。与Android不同的是iOS不支持任何非苹果公司的硬件设备。</p>
+</blockquote>
+<a id="more"></a>
+<p><img src="http://p53s4d2qk.bkt.clouddn.com/appledevices20180601.JPG?imageMogr2/thumbnail/!75p" alt="appledevices20180601.JPG"></p>
+<p><img src="http://p53s4d2qk.bkt.clouddn.com/appletimeline20180601.png?imageMogr2/thumbnail/!75p" alt="appletimeline20180601.png"></p>
+<h2 id="批评"><a href="#批评" class="headerlink" title="批评"></a>批评</h2><p>基于iOS的（即iPhone、iPod Touch和iPad），或是其他非基于iOS的（即iPod Classic、iPod Nano和iPod Shuffle），均被批评捆绑iTunes，让iTunes Store垄断这些设备。</p>
+<p>发布应用程序只能使用苹果规定的API，不得使用或调用任何公开或私有的API。应用程序起初必须以Objective-C、C、C++或执行iPhone OS Webkit的JavaScript语言编写，代码仅能用C、C++编写，Objective-C需可编译，直接链入API的文件（禁止应用程序透过中介编译、兼容层和工具链入API）。</p>
+<p>苹果公司在iOS中加入开发限制，使得在iOS开发自有应用显得困难，例如：苹果规定在iOS平台上所有浏览器都必须在自家WebKit渲染引擎上执行，使得非Safari的浏览器如Google Chrome、Mozilla Firefox 、Opera必须修改程序码配合苹果公司牺牲这些浏览器的独有技术及功能，且在iOS中预设的浏览器是Safari，无法使用其他浏览器取代。</p>
+<p>苹果对iOS视频音频编解码器的限制，让iOS设备只支持自家拥有专利的<strong>H.264</strong>及<strong>AAC</strong>，排斥先进的开源编解码器方案，如VP9和Opus。让自家的影音格式在市场上保持优势。</p>
+<p>许多用户表示苹果公司通过iOS版本更新的方式拖慢手机运行速度[19]，以加速用户换机意愿，使iPhone的销量提高，苹果官方更表示每支iPhone默认寿命约三年。</p>
+<h2 id="iOS越狱"><a href="#iOS越狱" class="headerlink" title="iOS越狱"></a>iOS越狱</h2><p>（英语：iOS Jailbreaking）又称JB，是用于获取iOS最高权限（类似Android中的ROOT）的一种技术。越狱完成后设备将运行带有最高权限的iOS系统，一般来说越狱工具会辅助在已获取权限的iOS环境下安装一款名为Cydia的软件。Cydia是一款由开发者Jay Freeman主导开发的iOS第三方插件应用商店，通过此软件可以完成越狱前不可能进行的动作，例如在不连接电脑之下安装App Store以外的软件、更换外观主题、运行Shell程序、甚至可能解开运营商对手机网络的限制（即俗称的“解锁”）。[14]如果进行了“不完美越狱”（Tethered Jailbreak），那么设备将无法在没有电脑辅助启动的环境下重新启动。Jay Freeman在2010年10月估计，全球大概有10%的iPhone曾进行过越狱。</p>
+<h2 id="系统构架"><a href="#系统构架" class="headerlink" title="系统构架"></a>系统构架</h2><p>iOS使用基于与苹果Mac 电脑不同的ARM架构的64位或32位之中央处理器，使用由PowerVR视频卡渲染的Metal以Darwin作为基础。iOS分为核心操作系统层（the Core OS layer）、核心服务层（the Core Services layer）、媒体层（the Media layer）及触控应用层（the Cocoa Touch layer）。</p>
+<h2 id="iOS版本历史"><a href="#iOS版本历史" class="headerlink" title="iOS版本历史"></a><a href="https://zh.wikipedia.org/wiki/IOS%E7%89%88%E6%9C%AC%E5%8E%86%E5%8F%B2" target="_blank" rel="noopener">iOS版本历史</a></h2><h3 id="iOS-6-x"><a href="#iOS-6-x" class="headerlink" title="iOS 6.x"></a>iOS 6.x</h3><p>SiriP4S P5 T5 S3 S4 M1<br>Siri支援iPad（第三代、第四代和iPad mini）和iPod touch（第五代）<br>新增地区和语言支援：加拿大（英语和加拿大法语）、中国（中文）、香港（广东话）、意大利（意大利语）、韩国（韩语）、墨西哥（西班牙语）、西班牙（西班牙语）、瑞士（意大利语、法语、德语）、台湾（中文）、美国（西班牙语）<br>可在世界多国运行的当地搜寻<br>Siri可提供主要运动赛事联盟的资讯，包括NFL、MLB、NBA、NHL、WNBA、NCAA等。可提供的资讯包括球员资料、球队名单、赛事行程和球队表现等<br>Siri可提供更多电影相关资讯，包括影评、演员情报、电影预告、电影时刻表，以及寻找附近的电影院<br>整合Yelp!服务，可提供餐厅等场所的评价，并可透过OpenTable进行餐厅订位<br>餐厅搜寻结果依评价高低与距离排列<br>可透过语音命令开启应用程序（app）<br>Siri可发布Tweets和Facebook的状态更新<br>Siri可读出通知中心的内容<br>“Eyes Free”功能，汽车制造商可建构与Siri整合的系统，驾驶按下方向盘上的麦克风按钮即可启动Siri功能，屏幕在Eyes Free模式中会被关闭。<br>Facebook整合<br>Twitter<br>Twitter商标更新<br>Passbook（限iPhone和iPod touch）<br>可收集并管理使用者的登机证、电影票、折价券、会员卡等。[3]<br>支援商店优待券或储值卡（例如：Apple Store、星巴克、Target 等零售商加入）<br>票卡可即时更新（例如消费后储值卡内的剩余金额、登机证上的班机时间更改等）<br>可根据时间和定位地点自动显示适用的票卡（例如靠近星巴克时自动在主画面上显示星巴克储值卡）<br>通知中心<br>可在通知中心内直接更新Facebook状态或发送Tweet。<br>可关闭收到之讯息的内容预览<br>标题列上可显示正确的今日日期<br>行事历活动中显示结束时间<br>新增“勿打扰”（Do Not Disturb）功能，可暂时关闭所有通知<br>照片<br>共享照片串流（Shared Photo Streams）<br>共享选单的图示和内容更新<br>常时显示建立新相簿的按钮<br>可用“共享”按钮将照片分享至Twitter、Facebook、微博（启用中文键盘时），并可复制照片、播放幻灯片、AirPlay、使用为桌面背景和打印。<br>影片可上传至优酷和土豆网（启用中文键盘时）<br>音乐<br>新的使用者界面，采用黑白布景主题<br>等化器预设组新增深夜模式（Late Night Mode）<br>设定<br>“蓝牙”移至设定页面顶端<br>新增“勿打扰”（Do Not Disturb）模式，使用者可将接听来电功能和各种通知关闭，且可允许接听来自特定清单的来电。开启勿打扰模式后会在状态列上显示一个半月的图示。在屏幕开启的期间勿打扰模式会被暂时关闭<br>新的隐私设定。应用程序要取用使用者的照片、行事历、联络人，和提醒事项前需要征求同意<br>设定图示更新，与OS X的系统偏好设定风格类似<br>当下载系统更新时会显示齿轮动画<br>在使用状况（Usage）选单中，所有装置皆可显示自上次完全充电后的“使用时间”和“待机时间”<br>可在通讯设定选单中开关3G功能（iPhone）<br>地图设定可更改导航音量大小、地图标示语言、地标示尺寸和距离单位<br>iPad中的设定项目以群组分类显示<br>在“关于”设定项目中加入“广告”（Advertising）选项，可自定是否开启要让广告商根据使用资料提供“量身定做”的广告<br>电话<br>来电时可透过锁定画面上的图示来选择更多的拒接选项<br>当拒接来电时，使用者可选择以自定的简讯回复来电者，或是在一段时间后提醒回拨电话<br>来电资讯将不会占满整个锁定画面<br>拨号盘改为白色界面<br>地图<br>将原本由Google提供的地图内容改为由苹果公司自行提供<br>由TomTom提供的转向导航（Turn-by-turn Navigation）服务，并与Siri语音整合（iPhone 4S以上、iPad 2以上、iPod Touch（第五代），语音导航仅限iPhone 4S以上）<br>3D地图模式（iPhone 4S以上、iPad 2以上、iPod Touch（第五代））。<br>卫星地图<br>Flyover（3D卫星地图）P4S P5 T5 S2 S2<br>新的地图应用程序图示<br>转向导航可在锁定画面上显示（iPhone 4S以上、iPad 2以上、iPod Touch（第五代），语音导航仅限iPhone 4S以上）<br>整合商家资讯由Yelp!提供，能显示照片、基本资讯和评价等内容<br>可提供交通资讯<br>点击搜寻列将会自动显示回到住家的路线规划（可修改为预设前往其他地点）<br>FaceTime<br>可透过行动通信网络拨打FaceTime（部分行动通讯业者可能仅限特定费率的用户使用）P4S P5 S3<br>邮件<br>VIP收件夹<br>收件夹可标记<br>可长按后快速插入照片或影片<br>可开启密码保护的微软Office文件档案<br>新增向下滑动可更新收件夹的手势<br>不同电子邮件账号可使用不同的签名<br>长按撰写新邮件按钮可显示草稿列表<br>电子邮件地址可从“最近使用”清单中移除</p>
+<h3 id="iOS-7-x"><a href="#iOS-7-x" class="headerlink" title="iOS 7.x"></a>iOS 7.x</h3><p>使用者界面<br>重新设计的视觉界面，风格变得平面，整体上来说与之前的拟物风格不同。<br>使用Helvetica作为系统字型<br>全屏幕应用程序，使用了系统状态列的空间<br>标签列、导航列、状态列、系统间盘、控制中心与通知中心改为半透明的背景<br>无边框按钮，使用文字取代系统的图示<br>内建应用程序的图是取消反光特效<br>在状态列以圆点代表通讯信号强度<br>左侧边缘向内滑动的返回手势<br>控制中心<br>在系统内的任何地方都可从下侧边缘向上滑动呼叫出控制中心<br>提供常用系统设定和服务的快速取用，并可以控制AirDrop和AirPlay的开关<br>可在锁定画面中使用<br>手电筒（利用相机闪光灯）开关<br>iOS in the Car<br>与汽车厂商合作提供整合式的功能<br>AirDrop<br>在iPhone 5、第四代iPad、iPad mini和第五代iPod touch上提供透过Wi-FI无线网络分享档案媒体的功能<br>可从其他装置发送邀请<br>跨应用程序音讯<br>可与其他应用程序分享音讯串流<br>音讯运算中提供MIDI控制，可遥控启动其他注册的跨程式音讯软件<br>通知中心<br>可从锁定画面中呼出<br>新增“今日”标签，可预览当天的天气、行事历、股市，以及隔天的行程<br>通知可在多个iCloud装置间同步<br>应用程序夹（Folders）<br>不再限制子页面的数量<br>书报摊（Newsstand）可放入程式夹中<br>Spotlight<br>在主画面的任何一页向下滑动都可呼出<br>多任务处理<br>多任务处理的切换界面经过重新设计，采用横向卷动，并可预览所有正在执行的应用程序，在预览画面上向上滑动可关闭该程式<br>智慧背景程式模式可依据网络状况和使用习惯自动接收新资讯<br>桌面背景<br>新的桌面背景<br>动态桌面背景（iPhone 4S、iPhone 5与第五代iPod tocuh）<br>利用陀螺仪制造桌面背景的视差效果（iPhone 4S、iPhone 5与第五代iPod tocuh）<br>天气<br>动态的天气动画背景<br>电话<br>可增加封锁名单<br>FaceTime<br>FaceTime Audio音讯通话功能<br>可增加封锁名单<br>讯息<br>可发送接收更长的SMS.<br>可增加封锁名单<br>Safari<br>全屏幕浏览<br>网址输入框与搜寻框整合<br>网址输入框下出现书签图示<br>输入网址或搜寻字串时会显示常用连结、Google建议字串、书签和浏览历史<br>标签页取消8页的限制，使用3D方式提供标签页预览，长按可重新排列顺序，向左滑动可关闭该标签页<br>阅读清单（Reading List）在右方会显示网页的缩图<br>阅读清单中多篇文章可连续阅读<br>支援iCloud Keychain（iCloud钥匙圈），能记忆网站与Wi-Fi网络密码、信用或签账卡资料，以及其他账户资料<br>增加以向左或向右滑动来前往上/下一页的操作手势<br>私密浏览按钮，可直接在程式内开启“不要追踪我的浏览活动”功能，以往需要另外至系统设定中开启<br>地图<br>夜间模式，将会依照环境光源自动在夜间开启<br>步行导航模式，并会提供预计抵达时间<br>地图书签同步<br>可从OS X Mavericks中的地图接收地点<br>时钟<br>时钟图示能显示即时的时间<br>音乐<br>iTunes Radio服务<br>在水平状态中取消Cover Flow浏览模式<br>App Store<br>应用程序自动更新<br>新增依据年龄分类的儿童专区<br>依据使用者所在位置推荐应用程序<br>大量购买<br>可使用相机扫描App Store点数卡储值<br>iTunes Store<br>自动下载新电视系列剧<br>可使用相机扫描iTunes Store点数卡储值<br>照片<br>照片可以拍摄地点、片刻（Moments）与年份分类<br>可将照片透过iCloud、社群网站和AirDrop分享<br>新增“全景照片”专属相簿<br>相机<br>操作界面重新设计，横向滑动可在照片、影片、正方形照片和全景照片模式间切换<br>照片滤镜与效果即时预览<br>60 FPS录影<br>录影时可数位变焦<br>行事历<br>全年浏览模式<br>一周浏览模式<br>与地图整合，可显示地点的交通资讯<br>与邮件整合<br>罗盘<br>新增测斜器<br>邮件<br>新智能邮箱<br>搜寻功能改善<br>中国专用服务<br>整合腾讯微博社交网络<br>中英双向辞典<br>改善中文输入，包含手写辨识<br>Siri<br>Siri声音更新，加入男性声音（仅限部分语言）<br>Siri可控制部分系统设定，例如开关蓝牙，或调整屏幕亮度<br>可使用维基百科与Bing进行搜寻<br>Passbook<br>可扫描条码/QR码后加入新的Pass<br>Find My iPhone:<br>远端清除装置后若要重新启用需要输入iCloud账号密码<br>企业功能<br>企业整合登入（Enterprise single sign-on）<br>个别应用程序的VPN<br>应用程序设定档（config）管理<br>配件<br>可设定并控制Wi-Fi周边配件，例如AirPlay扬声器<br>当连接未经认证的传输线或配件时将显示警告讯息<br>Location Beacons：一种低功耗、低传输率的装置，将可与附近的装置进行沟通，可应用在公园内的步道记号、博物馆内的展览，以及商店内的产品展示等方面。<br>Bluetooth LE：包括时间、通知、键盘与立体声<br>游戏控制器<br>其他<br>新的首次使用设定选单<br>设定协助过程中加入密码锁定（Passcode Lock，于Beta 2中加入）<br>WiFi Hotspot 2.0<br>Vimeo与Flickr整合<br>可显示PDF中的注解<br>意大利文、德文与韩文字典<br>新版语音备忘录程式（Beta 1中被移除，于Beta 2中加入）<br>充电时锁定画面不显示电池图案，而改在时间下方显示充电进度，数秒后会消失改为显示日期<br>CDMA机型新增1xRTT图示，以“1x”图示取代状态列上的“o”图示。<br>GPRS机型以“GPRS”字样取代状态列上的“o”图示。<br>状态列中改以圆点来表示手机讯号强度</p>
+<p>CarPlay（仅限iPhone 5、iPhone 5S与iPhone 5C）<br>全新的iOS车载系统<br>透过车内麦克风操作Siri<br>透过按钮或车上触控屏幕拨打电话、拨放音乐、传讯简讯或使用其他已支援的第三方程式<br>使用者界面<br>更改了部分视觉元素<br>相机<br>自动启用HDR（仅限iPhone 5S）<br>行事历<br>月份浏览模式<br>Siri<br>Siri现在会在手指离开Home键后停止聆听<br>其他<br>提高了TouchID的识别性<br>修正了一个导致Springboard崩溃的错误<br>提高iPhone 4的反应速度与性能</p>
+<h3 id="iOS-8-x"><a href="#iOS-8-x" class="headerlink" title="iOS 8.x"></a>iOS 8.x</h3><p>此版本包含错误修复，并针对 iPad 2 和 iPhone 4s 提升了稳定性、改进了性能。<br>此版本包含错误修复，并解决了在iTunes Store购买的电话铃声可能从设备移除的问题。<br>此版本包含错误修复，提高了稳定性和性能，其中包括：</p>
+<p>减少了执行软件更新所需的存储空间<br>修正了部分用户无法在“信息”和 FaceTime 中输入其 Apple ID 密码的问题<br>解决了导致 Spotlight 停止显示应用程序结果的问题<br>修正了在 iPad 上无法正常使用多任务手势的问题<br>为教育标准化考试新增了配置选项</p>
+<p>此版本加入对 Apple Watch 的支持，改进了“健康”应用程序，提高了稳定性并包含错误修复。</p>
+<p>Apple Watch 的支持</p>
+<p>新 Apple Watch 应用程序可与 iPhone 配对和同步，并可自定手表设置<br>新“健身活动”应用程序在 Apple Watch 配对成功后，可查看 Apple Watch 上显示的健身数据及成就<br>适用于 iPhone 5 及更新款机型<br>“健康”应用程序改进</p>
+<p>增加了选择距离、体温、身高、体重和血糖测量单位的功能<br>提高了处理大量数据时的稳定性<br>支持添加并可视化第三方应用程序中的健身锻炼数据<br>解决了用户可能无法在医疗急救卡中添加照片的问题<br>修正了维生素和矿物质单位<br>修正了更改数据源顺序后，“健康”数据无法刷新的问题<br>修正了部分图形无法显示数据值的问题<br>增加了一项隐私设置，可关闭对步数、距离以及已爬楼层的跟踪<br>稳定性增强</p>
+<p>提高了“邮件”的稳定性<br>提高了“地图”中Flyover的稳定性<br>提高了“音乐”的稳定性<br>提高了 VoiceOver 的可靠性<br>提高了与 Made for iPhone 助听器的连接性<br>错误修复</p>
+<p>修正了“地图”中无法导航至某些喜爱地点的问题<br>解决了快速回复信息中最后一个字无法自动纠正的问题<br>修正了复制iTunes购买内容可能导致 iCloud 无法完成恢复的问题<br>解决了部分音乐或播放列表无法从 iTunes 同步至“音乐”应用程序的问题<br>修正了已删除的有声读物偶尔仍保留在设备上的问题<br>解决了使用 Siri 免视功能(Siri Eyes Free)时通话音频无法传送至汽车扬声器的问题<br>修正了电话接通前无法听取音频的蓝牙通话问题<br>修正了“日历”事件以 GMT 显示时的时区问题<br>解决了导致自定重复会议中特定事件从 Exchange 日历消失的问题<br>修正了第三方网关下无法配置 Exchange 帐户的证书错误<br>修正了可能导致组织者的 Exchange 会议备忘录被覆盖的问题<br>解决了部分“日历”事件在接受邀请后无法自动显示为“繁忙”的问题</p>
+<p>此版本包含了效能的改进、修正错误，并且重新设计表情符号键盘。更动的项目如下：</p>
+<p>改进以下的效能：</p>
+<p>App 启动<br>App 回应<br>讯息<br>Wi-Fi<br>控制中心<br>Safari 标签页<br>第三方键盘<br>使用者辞典<br>简体中文键盘<br>Wi-Fi 和蓝牙的修正内容</p>
+<p>修正可能持续提示您输入登入凭证的问题<br>解决部分装置间歇性地中断 Wi-Fi 网络的问题<br>修正免持听筒的来电可能中断的问题<br>修正使用部分蓝牙扬声器时音讯可能停止运作的问题<br>方向和旋转的修正内容</p>
+<p>解决转至横向之后有时可能无法再转回直向的问题<br>改进装置在直向和横向之间旋转时的效能和稳定性问题<br>修正 iPhone 6 从口袋取出后，装置的方向会上下颠倒的问题<br>解决在多工处理中切换 App 之后，有时会导致 App 无法转至正确方向的问题<br>讯息的修正内容</p>
+<p>解决可能导致群组讯息有时会被分开的问题<br>修正有时会无法转发或删除单一讯息的问题<br>解决在“讯息”中拍照时，有时无法显示预览的问题<br>加入直接在“讯息”App 中回报垃圾讯息的功能<br>加入功能以过滤不是由您的联络人所传送的 iMessage<br>家人共享的修正内容</p>
+<p>修正部分 App 无法在家庭成员的装置上启动或更新的错误<br>修正家庭成员无法下载部分免费 App 的问题<br>改进“购买前询问”通知的可靠性<br>CarPlay 的修正内容</p>
+<p>修正“地图”可能显示黑色画面的问题<br>修正使用者界面会错误旋转的问题<br>修正键盘可能会错误地显示在 CarPlay 屏幕上的问题<br>企业的修正内容</p>
+<p>改进安装和更新企业级 App 的可靠性<br>更正在 IBM Notes 中所制作的“行事历”事件时区<br>修正在重新启动之后可能导致 web clip 图像变成一般图像的问题<br>改进储存网页代理服务器的可靠性<br>现已可单独编辑 Exchange 的外部邮件答录机讯息<br>改进从暂时的连线问题中回复 Exchange 账号的能力<br>改进 VPN 和网页代理服务器解决方案的相容性<br>允许使用实体键盘来登入 Safari 网页表单，例如加入公用 Wi-Fi 网络<br>修正带有长篇备忘录的 Exchange 会议可能会被截断的问题<br>辅助使用的修正内容</p>
+<p>修正在 Safari 中使用返回按钮时可能导致 VoiceOver 手势没有回应的问题<br>修正 VoiceOver 焦点在“邮件”草稿中变得不可靠的问题<br>修正无法使用“点字屏幕输入”在网页表单中输入文字的问题<br>修正在“点字显示器”中切换“快速导览”时会宣告“快速导览”已关闭的问题<br>修正在 VoiceOver 启用时，会导致 App 图像无法在主画面屏幕上移动的问题<br>修正在“朗读屏幕”中，语音于暂停之后无法再次启动的问题<br>其他改进和错误修正</p>
+<p>重新设计的表情符号键盘，包含超过 300 种新的符号<br>“iCloud 照片图库”已最佳化，可搭配 OS X 10.10.3 中的“照片”App 使用，已不再是 beta 版<br>改进在“地图”中转向导航时的街道名称发音<br>支援 Baum VarioUltra 20 和 VarioUltra 40 点字显示器<br>改进启用了“减少透明度”时，Spotlight 搜寻结果的显示方式<br>在 iPhone 6 Plus 的横向键盘中加入斜体和底线格式选项<br>新增移除用于 Apple Pay 的寄送和账单地址功能<br>其他 Siri 的语言和国家支援：英语（印度、新西兰）、丹麦语（丹麦）、荷兰语（荷兰）、葡萄牙语（巴西）、俄语（俄罗斯）、瑞典语（瑞典）、泰语（泰国）、土耳其语（土耳其）<br>其他听写语言：阿拉伯语（沙特阿拉伯、阿拉伯联合酋长国）和希伯来语（以色列）<br>改进“电话”、“邮件”、蓝牙连线能力、“照片”、Safari 标签页、“设定”、“天气”和“音乐”中“Genius 播放列表”的可靠性<br>解决“滑动来解锁”可能在部分装置上失效的问题<br>解决有时无法在锁定画面上滑动来接听电话的问题<br>解决无法在 Safari PDF 中打开连结的问题<br>修正在“Safari 设定”中选择“清除浏览记录和网站资料”之后无法清除所有资料的问题<br>修正无法自动更正英文“FYI”的问题<br>解决无法在“快速回复”中显示上下文预测的问题<br>修正“地图”无法从混合模式进入夜间模式的问题<br>解决无法从浏览器或使用 FaceTime URL 的第三方 App 中启动 FaceTime 通话的问题<br>修正有时无法将照片输出至 Windows 的数码相机影像档案夹中的问题<br>修正有时无法使用 iTunes 完成 iPad 备份的问题<br>修正从 Wi-Fi 切换至行动数据网络时，可能导致 Podcast 下载项目停滞的问题<br>修正在锁定画面中，计时器剩余时间可能会错误显示为 00:00 的问题<br>修正有时无法调整通话音量的问题<br>修正有时状态列错误显示的问题</p>
+<p>本次更新为您推出 Apple Music — 一款革命性的音乐服务、24/7 全球广播、并为粉丝提供了与喜爱艺人互动交流的途径 — 一切尽在重新设计的“音乐”应用。iOS 8.4 还包含 iBooks 改进与问题修复。</p>
+<p>Apple Music</p>
+<p>成为 Apple Music 会员，播放 Apple Music 音乐目录中的百万歌曲，也可离线音乐供稍后播放<br>为您甄选：会员可以查看播放列表与专辑推荐，由音乐专家为您精挑细选<br>新内容：会员可以查看最新杰出音乐 — 由我们的编辑直接推荐<br>广播：使用 Beats 1 收听音乐、访谈以及独家广播节目，播放由我们的编辑创建的广播电台，当然，您也可以用任意艺人或歌曲创建自己的电台<br>Connect：查看您关注的艺人分享的观点、照片、音乐和视频，并成为对话一员<br>我的音乐：您通过 iTunes 购买的全部音乐、来自 Apple Music 的歌曲、以及您的播放列表，汇聚一处，随心播放<br>全新设计的音乐播放器包含“最近添加”、 迷你播放程序、“接着播放”以及更多功能<br>iTunes Store：仍是您购买喜爱歌曲的最佳去处 — 一次购买一首歌或一张专辑，随您心意<br>以上服务是否可用以及相关功能可能因国家或地区有所差异<br>iBooks 改进与修复</p>
+<p>在 iBooks 内即可浏览、收听及下载有声读物<br>享受全新“正在播放”功能，专为有声读物而设计<br>iBooks 专版书目现在除 iPad 之外，还可以在 iPhone 上阅读<br>在您的资料库即可查找并预购系列图书<br>针对使用 iBooks Author 所制作图书的 widget 小程序的辅助功能服务、词汇表以及章节导航进行了改进<br>全新默认中文字体<br>新设置使您可以在书库中关闭自动启用夜间主题<br>解决了可能导致无法隐藏购买项目的问题<br>解决了可能导致无法从 iCloud 下载图书的问题<br>其他功能改进及问题修复</p>
+<p>修复了接收特定 Unicode 字符组时设备重启的问题<br>修复了造成 GPS 配件无法提供位置数据的问题<br>修复了 Apple Watch 应用删除后又被重新安装的问题</p>
+<h3 id="iOS-9-x"><a href="#iOS-9-x" class="headerlink" title="iOS 9.x"></a>iOS 9.x</h3><p>本更新推出了强大的搜索功能和更完善的 Siri 功能，iPhone、iPad 和 iPod touch 因而更加智能、主动。新增的 iPad 多任务功能让两个应用能并行排列或通过全新的画中画功能同步运行。此外，各种内建应用也更为强大，例如“地图”提供了详细的公交信息，“备忘录”应用已经重新设计，而且推出了全新的 News 应用。操作系统基础得以改善，提高了性能，增强了安全性并增加了最多一个小时的电池寿命。</p>
+<p>智能</p>
+<p>主动协助<br>在您开始键入之前即提供有关信息<br>在您需要动身赴约时发出提醒，同时将交通状况考虑在内<br>了解您在特定地点或时间通常听些什么，可以自动显示首选音乐和视频应用的回放控制选项<br>根据“邮件”中找到的信息，向各种应用建议可增加的事件和联系人资料<br>改进了 Siri<br>基于日期、位置和相簿名称来搜索个人照片和视频<br>要求 Siri 来提醒您在 Safari、“邮件”、“备忘录”和“信息”等应用中看到的有关内容<br>提供大众公交路线<br>增强 Spotlight 搜索功能<br>获取体育比分、天气状况和股票价格<br>执行简单的数学计算和单位换算<br>在联系人的搜索结果中发送信息、拨打电话和 FaceTime 通话<br>新增 iPad 功能</p>
+<p>Slide Over<br>不用离开正在使用的应用即可快速使用另一款应用<br>在 Slide Over 应用之间轻松切换<br>支持 Apple 应用和已启用的第三方应用<br>Split View<br>可同时查看两个应用并与之互动<br>能够调整视图，让两个应用大小相同，或一大一小<br>支持 Apple 应用和已启用的第三方应用<br>画中画<br>一边使用您喜爱的应用一边继续观看视频<br>支持 Safari 视频、FaceTime、视频和播客及已启用的第三方应用<br>改进了 QuickType<br>利用 Multi-Touch 手势，在 iPad 上选择文本更为轻松<br>在 iPad 上利用快捷工具栏来快速访问文本编辑工具<br>支持硬件键盘快捷键<br>支持所有 Unicode 旗帜表情符号<br>内建应用</p>
+<p>改进了“地图”<br>支持特选大城市中的大众公交路线、车站进出站口信息、时刻安排和路线<br>根据诸如食物、饮料、购物和娱乐之类的类别来浏览您附近的地点<br>在加盟零售方的地点卡上显示该处是否支持 Apple Pay<br>地点卡包括维基百科上关于地标和城市的信息<br>重新设计了“备忘录”应用<br>用内建相机或从“照片图库”将照片来添加到您的备忘录中<br>创建实用的核对清单，轻点一下即可勾选已完成的项目<br>仅用单指速绘，即可记下闪现的想法<br>利用其他应用中的“共享”菜单直接将感兴趣的项目存储到“备忘录”中<br>全新的 News 新闻应用<br>阅读喜爱的报纸、杂志、博客，或从一百万多个主题中选读<br>精美的设计排版、布局、图库、视频、动画及更多内容<br>在“为你推荐”中浏览根据您的兴趣爱好挑选出来的文章。在“探索”中查找推荐的频道和主题。您阅读的内容越多，News 新闻就越个性化<br>轻松与朋友共享文章或将文章存储起来稍后阅读－您甚至可以离线阅读<br>改进了“邮件”<br>搜索功能可根据发件人、收件人、主题或选项组合来过滤搜索结果，帮您快速找到要寻找的内容<br>支持“标记”功能，让您无需离开“邮件”即可给图像或 PDF 附件添加文本、形状，甚至签名等注释，并发回邮件<br>轻松存储收到的附件，或者在编写新邮件时添加来自 iCloud Drive 或其他文稿提供者的文件<br>改进了 Apple Pay 和 Wallet<br>支持 Discover 卡<br>支持回馈卡、商店信用卡和借记卡<br>若要加速结账，您可以在锁屏连点两下主屏幕按钮，并将手指放在 Touch ID 上来准备付款<br>新建 iCloud Drive 应用<br>按照日期、名称或您在 Mac 上添加的标记来轻松搜索文件，或者浏览新 iCloud Drive<br>在兼容的应用中打开文件，或者与您选择的对象共享<br>整理文件夹和文件<br>在“设置”&gt; iCloud &gt; iCloud Drive 中获取 iCloud Drive 应用，然后选择“在主屏幕上显示”<br>改进了 CarPlay<br>回放音频留言，听取留言者自己的声音<br>完全支持车内旋钮控制，您可以倾斜或旋转来滚动浏览列表或者平移查看“地图”<br>支持汽车制造商的 CarPlay 应用<br>基础</p>
+<p>延长电池使用寿命<br>在需要充电前增加了最多一小时的可用时间<br>检测屏幕朝下的状态，在不用时关闭显示器<br>低电量模式下最优化设备性能，可将电池电量延长最多三小时<br>下载软件更新项目需要更少空间，并可选择稍后安装<br>iOS 应用和用户界面现在使用 Metal 来实现更快的滚动速度、更流畅的动画效果，和更好的整体性能<br>增强了安全性能，支持双重鉴定并在 Touch ID 设备中默认六位密码<br>其他改进功能</p>
+<p>全新 San Francisco 系统字体<br>拨打 FaceTime 通话时若无人接听，您可以选择留言<br>使用“电话”应用中的共享表单来共享语音留言<br>数据监测器可跟踪航班和包裹<br>“健康”应用新增对生殖健康、紫外线照射、摄水量和久坐状态等数据类型的支持<br>HomeKit 新增对电动窗户和窗帘，动态感应器和家庭安全系统等配件的支持<br>“播客”的设计焕然一新，让您能轻松找到喜爱节目的最新单集，并在新单集可用后及时收到通知<br>支持在 iPad、iPod touch 和 Mac 上通过合作的运营商进行 Wi-Fi 通话，iPhone 无需在附近<br>“Wi-Fi 助理”可在 Wi-Fi 连接较弱时自动使用蜂窝移动数据<br>运用“转移到 iOS”应用来转移安卓设备上的内容，请参阅 <a href="http://www.apple.com/cn/move-to-ios" target="_blank" rel="noopener">http://www.apple.com/cn/move-to-ios</a> 来获取更多详细信息<br>支持更多语言</p>
+<p>新增“苹方”中文系统字体<br>改进了 QuickType 中的中文预测、学习和自动改正功能<br>重新设计了九宫格中文键盘上的标点符号输入<br>为从右向左的语言重新设计了用户界面<br>新增对奥地利、比利时（法语和荷兰语）及挪威 Siri 功能的支持<br>新增对墨西哥的 Spotlight 搜索功能的支持<br>新增下列语言的键盘：法文（比利时）、德文（奥地利）、古吉拉特文、印地文（转写）、印度英文、旁遮普文、西班牙文（墨西哥）和泰卢固文<br>支持下列语言的预测输入：法文（比利时）、德文（奥地利）、韩文、俄文、西班牙文（墨西哥）和土耳其文<br>支持下列语言的听写功能：荷兰文（比利时）、英文（爱尔兰、菲律宾、南非）、法文（比利时）、德文（奥地利）、西班牙文（智利、哥伦比亚）<br>芬兰文和韩文的拼写检查<br>印地文、挪威文和瑞典文的定义字典<br>法文－英文和德文－英文双语字典<br>QuickType 中新增日文自动改正功能，并改进了输入预测和学习功能<br>新增阿拉伯文和印地文中切换数字系统的选项<br>企业与教育</p>
+<p>无需配置 iTunes Store 帐户，即可将应用直接指定给 iOS 设备<br>改进了 Microsoft Exchange ActiveSync v16 用户日历的可靠性<br>扩大了“单应用 VPN”对内建 IPSec 和 IKEv2 VPN 客户端的支持<br>新增对受管理的应用的网络控制，帮助限制国际数据漫游成本<br>新增限制来防止更改密码、设备和墙纸，或在受管理的设备上停用 AirDrop<br>支持 VPN 的第三方应用扩展、高级内容过滤和强制 Wi-Fi 网络<br>辅助功能</p>
+<p>“触摸调节”给那些有肢体动作限制的用户提供更多触摸控制选项<br>“切换控制方案”自定功能或者创建您自己的功能<br>支持 VoiceOver 用户的 Siri 声音<br>其他 AssistiveTouch 的自定选项<br>硬件键盘支持 “按键重复”、“慢速键”和“粘滞键”<br>改进了 MFi 助听器的音频路径，来选择音频播放方式</p>
+<p>本更新修复了下列问题：</p>
+<p>修复了部分用户更新后不能完成设置助理的问题<br>修复了闹钟和计时器有时可能不提示的问题<br>修复了Safari和“照片”中暂停视频可能造成暂停帧显示变形的问题<br>修复了部分通过某描述文件使用自定APN设置的用户会损失蜂窝移动数据的问题</p>
+<p>本更新包含下列问题修复与改进：</p>
+<p>修复了应用开关蜂窝移动数据的问题<br>解决了部分用户无法激活iMessgae的问题<br>解决手动备份开始后, iCloud云备份可能会中断的问题<br>修复了接收通知时, 屏幕可以会错误旋转的问题<br>增进了播客的稳定性</p>
+<p>本更新包含新功能、问题修复与改进：</p>
+<p>Live Photo 现在可以在您举起或放低 iPhone 时自动感应，以自动调整，不记录这些移动<br>新增 150 多种表情符号，全面支持 Unicode 7.0 和 8.0 表情符号<br>增强了 CarPlay、“音乐”、“照片”、Safari 和“搜索”的稳定性<br>提升了多任务界面下的性能表现<br>修复了可能导致月份视图下“日历”不响应的问题<br>修复了部分用户无法启动 Game Center 的问题<br>解决了导致部分应用的内容会缩放的问题<br>解决了可能导致 POP 邮件帐户的未读邮件数不正确的问题<br>修复了造成用户无法将最近联系人从新邮件或信息中移除的问题<br>修复了造成部分邮件在“邮件”的搜索结果中不显示的问题<br>解决了音频信息上残留灰色指示条的问题<br>修复了造成部分运营商激活错误的问题<br>修复了部分应用无法从 App Store 更新的问题</p>
+<p>本更新包含问题修复与改进：</p>
+<p>Apple Music 针对制作播放列表、离线保存歌曲和浏览古典音乐作出改进<br>“邮件”的 Mail Drop 功能可发送大附件</p>
+<p>本更新包含安全性更新和问题修复，包括使用 MDM 服务器时可能造成应用无法完整安装的问题。</p>
+<p>修复了在 Safari 及其他应用中轻点链接会造成应用不响应的问题</p>
+<h3 id="iOS-10"><a href="#iOS-10" class="headerlink" title="iOS 10"></a>iOS 10</h3><p>iOS 10.3 推出了包括使用“查找我的 iPhone”定位 AirPods 在内的全新功能，并提供了使用 Siri 进行支付、叫车以及与车载设备配合使用的更多途径。</p>
+<p>查找我的 iPhone<br>查看您 AirPods 的当前位置或最后已知位置<br>在一侧或左右 AirPods 上同时播放声音，帮助您找到它们.<br>Siri<br>支持配合支付应用进行支付和检查账单状态<br>支持配合叫车应用预约车辆<br>支持配合车载应用检查油量及车锁状态，并可开灯和鸣喇叭<br>支持印度超级板球联赛和国际板球理事会的板球运动比分和统计数据.<br>CarPlay<br>状态栏增加了快捷键，方便访问上次使用的应用<br>在 Apple Music 的“播放中”屏幕上即可访问“接着播放”及在播歌曲的专辑<br>Apple Music 可提供每日精选播放列表和全新音乐类别.<br>其它改进和修复<br>只需租借一次，即可在您所有设备上欣赏 iTunes 电影<br>全新“设置”整合了 Apple ID 帐户信息、设置和设备，集中一处供您查看<br>在“地图”中显示的当前温度上使用 3D Touch 即可查看逐时天气<br>现可支持在“地图”中搜索“停车位置”<br>“日历”新增了删除不必要的邀请并报告为垃圾信息的功能<br>“家庭”应用现支持使用带开关和按钮的配件来触发场景<br>“家庭”应用现支持检查配件电池电量状态<br>“播客”现支持使用 3D Touch 和在“今日” Widget 中访问最近更新的节目<br>“播客”中的节目或单集现可通过“信息”共享，并提供完整的播放支持<br>修复了还原“位置与隐私”后，可能造成“地图”不显示当前位置的问题<br>改进了 VoiceOver 针对“电话”、Safari 和“邮件”的稳定性</p>
+<p>iOS 10.3.1 包含问题修复以及对 iPhone 或 iPad 安全性的改进。</p>
+<p>iOS 10.3.2 包含问题修复以及对 iPhone 或 iPad 安全性的改进。</p>
+<h3 id="苹果-WWDC-2018：最全总结看这里，不错过任何重点"><a href="#苹果-WWDC-2018：最全总结看这里，不错过任何重点" class="headerlink" title="苹果 WWDC 2018：最全总结看这里，不错过任何重点"></a><a href="http://www.ifanr.com/1043270" target="_blank" rel="noopener">苹果 WWDC 2018：最全总结看这里，不错过任何重点</a></h3><p>iOS 12：关键词是 Siri 进化和防沉迷</p>
+<p>相册致敬 Google</p>
+<p>之前，如果要论 Android 党的骄傲组成部分，除了开放精神，就是 Google Photos 这个应用了。毕竟相比于 iOS 的相册功能，Google Photos 还是要智能不少的。</p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-12.jpg" alt=""></p>
+<p>不过在 iOS 12 中，苹果开始加强相册功能了：iOS 12 的相册将大大提升搜索性能，系统不仅会提出搜索建议，还会帮你按主题整理照片，比如根据猫猫狗狗花花草草。只是不知道后面苹果的人工智能会不会说支持类似于“肥宅快乐、菊姐出道”这样的标签。</p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-13.jpg" alt=""></p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-14.jpg" alt=""></p>
+<p>iOS 12 还会自动提醒你将合适的照片分享给你的好友——照片分享全程都是端到端加密的，非常安全。是的，是非常安全，不是绝对安全。</p>
+<p>Siri 聪明了些</p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-16.jpg" alt=""></p>
+<p>作为 iOS 的短板，Siri 的满意度就想 Siri 的回答一样是个谜，为了解谜，苹果再次向 Google 和微软取经，给 Siri 加上了一些看起来有用的新功能：Shortcuts（捷径），它可以自动帮你订咖啡，设置日程，甚至还能在你忘记钥匙的时候提醒你忘在哪儿了，前提是这个钥匙是电子的。</p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-18.jpg" alt=""></p>
+<p>除了苹果给到的 Shortcuts（捷径）之外，用户也可以在 Siri 上自己创建 Shortcuts（捷径）作为快捷口令。</p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-17.jpg" alt=""></p>
+<p>看到这里，相比熟悉苹果的朋友大概明白了，Siri 的本次改进，很可能是源于它收购的效率神器 Workflow，堪称一个用 Siri 唤醒的 Workflow。</p>
+<p>这个 Shortcuts 也支持 HomePod 和 Apple Watch，所以理论上 HomePod 也可以进行智能家居控制，而不仅仅是个大傻子音箱。</p>
+<p>防手机沉迷是重点</p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-22.jpg" alt=""></p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-23.jpg" alt=""></p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-24.jpg" alt=""></p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-25.jpg" alt=""></p>
+<p>接下来就是本次 iOS 12 的重点了：防沉迷。鉴于手机上瘾成为了一个社会议题，今年 Google 和苹果都不约而同地将“防沉迷”加入到了系统更新当中：</p>
+<p>Do Not Disturb（别吵我）功能将关掉手机的视觉通知，在夜深人静想起她或梦见她的时候，来了邮件也不会亮屏刺破夜的静谧和黑暗<br>Deliver Quietly（安静通知）则是将消息推送静默化、不显示在锁屏，也不出声，也不会在 app 右上角标红<br>Grouped Notifications（分组通知）可以将某一类型的通知归组，微信群聊消息不再有轰炸的感觉<br>Reports（应用报告）可以用周报告的形式，告诉用户用什么应用最多，哪个应用通知最多，每天起床第一个打开的是什么应用等等<br>App Limits（应用限制）可以给某个应用规定使用时间，当然这不是强制性的，用户可以突破限制继续“吃鸡”<br>Allowances（零用钱？）是家长限制孩子使用应用的新特性</p>
+<p>iOS 12 的更新基本上差不多了，这个版本的更新，主要是解决了一些过去的遗留问题，然后在很多小的功能点上进行了更新，甚至还对 News 和股市这样的冷门应用动了刀子，一方面可能是因为 iOS 越来越完善，一方面是苹果在求稳吧。</p>
+<p><img src="https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-88.jpg" alt=""></p>
+<p>当然，小惊喜就是关于防止手机沉迷的几个新特性，实用性和人性化都不错，这大概是很多人选择升级 iOS 12 的第一理由。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/IPR/" rel="tag"><i class="fa fa-tag"></i> IPR</a>
+          
+            <a href="/tags/iOS/" rel="tag"><i class="fa fa-tag"></i> iOS</a>
+          
+            <a href="/tags/Apple/" rel="tag"><i class="fa fa-tag"></i> Apple</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/IPR/Android.html" rel="next" title="Android">
+                <i class="fa fa-chevron-left"></i> Android
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Company/Ericsson.html" rel="prev" title="Ericsson">
+                Ericsson <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img/headonhill.jpg"
+                alt="Author" />
+            
+              <p class="site-author-name" itemprop="name">Author</p>
+              <p class="site-description motion-element" itemprop="description">Chief IPR Officer in AI Age</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">244</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">380</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="http://blog.163.com/zhuxuanlv@126/" target="_blank" title="Blog"><i class="fa fa-fw fa-globe"></i>Blog</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:deepcreator18@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("04/01/2018 16:01:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="Running: "+daysold+" Day     "+hrsold+" Hour     "+minsold+" Minute     "+seconds+" Second ";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#批评"><span class="nav-number">1.</span> <span class="nav-text">批评</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS越狱"><span class="nav-number">2.</span> <span class="nav-text">iOS越狱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统构架"><span class="nav-number">3.</span> <span class="nav-text">系统构架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS版本历史"><span class="nav-number">4.</span> <span class="nav-text">iOS版本历史</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-6-x"><span class="nav-number">4.1.</span> <span class="nav-text">iOS 6.x</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-7-x"><span class="nav-number">4.2.</span> <span class="nav-text">iOS 7.x</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-8-x"><span class="nav-number">4.3.</span> <span class="nav-text">iOS 8.x</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-9-x"><span class="nav-number">4.4.</span> <span class="nav-text">iOS 9.x</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-10"><span class="nav-number">4.5.</span> <span class="nav-text">iOS 10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#苹果-WWDC-2018：最全总结看这里，不错过任何重点"><span class="nav-number">4.6.</span> <span class="nav-text">苹果 WWDC 2018：最全总结看这里，不错过任何重点</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Author</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme �C <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="Total Visitors">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="Total Views">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'TfzAWJSzk2L4jpj4gHaNsMbp-gzGzoHsz',
+        appKey: 'PXNkGhS05PxL7rV3N8gDlAQe',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -316,13 +2159,157 @@
         onPopupClose();
       }
     });
-  </script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script type="text/javascript">wpac_init=window.wpac_init||[],wpac_init.push({widget:"Rating",id:11184,el:"wpac-rating",color:"fc6423"}),function(){if(!("WIDGETPACK_LOADED"in window)){WIDGETPACK_LOADED=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//embed.widgetpack.com/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t.nextSibling)}}()</script><style>.copy-btn{display:inline-block;padding:6px 12px;font-size:13px;font-weight:700;line-height:20px;color:#333;white-space:nowrap;vertical-align:middle;cursor:pointer;background-color:#eee;background-image:linear-gradient(#fcfcfc,#eee);border:1px solid #d5d5d5;border-radius:3px;user-select:none;outline:0}.highlight-wrap .copy-btn{transition:opacity .3s ease-in-out;opacity:0;padding:2px 6px;position:absolute;right:4px;top:8px}.highlight-wrap .copy-btn:focus,.highlight-wrap:hover .copy-btn{opacity:1}.highlight-wrap{position:relative}</style><script>$(".highlight").each(function(t,e){var n=$("<div>").addClass("highlight-wrap");$(e).after(n),n.append($("<button>").addClass("copy-btn").append("Copy").on("click",function(t){var e=$(this).parent().find(".code").find(".line").map(function(t,e){return $(e).text()}).toArray().join("\n"),n=document.createElement("textarea");document.body.appendChild(n),n.style.position="absolute",n.style.top="0px",n.style.left="0px",n.value=e,n.select(),n.focus();var o=document.execCommand("copy");document.body.removeChild(n),o?$(this).text("Copied"):$(this).text("Copy failed"),$(this).blur()})).on("mouseleave",function(t){var e=$(this).find(".copy-btn");setTimeout(function(){e.text("Copy")},300)}).append(e)})</script><script type="text/x-mathjax-config">
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 11184,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('Copied')
+          else $(this).text('Copy failed')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('Copy')
+        }, 300)
+      }).append(e)
+    })
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script><script type="text/x-mathjax-config">
+</script>
+
+<script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
     var all = MathJax.Hub.getAllJax(), i;
     for(i=0; i < all.length; i += 1) {
       all[i].SourceElement().parentNode.className += ' has-jax';
     }
   });
-</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script></body></html>
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+</body>
+</html>
