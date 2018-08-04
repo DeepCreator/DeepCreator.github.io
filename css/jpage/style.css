@@ -1,1 +1,698 @@
-a,a:visited{color:#222}article,aside,details,figcaption,figure,footer,header,hgroup,hr,nav,section{display:block}a,ins{text-decoration:none}ins,mark{color:#000}dfn,mark{font-style:italic}b,mark,strong{font-weight:700}hr,ol,ul{margin:1em 0}fieldset,hr,img,legend{border:0}.hidden,.invisible{visibility:hidden}audio[controls],canvas,video{display:inline-block}html{font-size:100%;overflow-y:scroll;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body,button,input,select,textarea{font-family:sans-serif;color:#222}::-moz-selection{background:#2c1b13;color:#fff;text-shadow:none}::selection{background:#2c1b13;color:#fff;text-shadow:none}a:focus{outline:dotted thin}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}blockquote{margin:1em 40px}hr{height:1px;border-top:1px solid #ccc;padding:0}ins{background:#ff9}mark{background:#ff0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:after,q:before{content:"";content:none}small{font-size:85%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}ol,ul{padding:0 0 0 40px}dd{margin:0 0 0 40px}div#sidebar ul,nav ol,nav ul{list-style:none;margin:0;padding:0}img{-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure,form{margin:0}fieldset{margin:0;padding:0}legend{padding:0}label{cursor:pointer}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button}input[type=checkbox],input[type=radio]{box-sizing:border-box}input[type=search]{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}input:invalid,textarea:invalid{background-color:#f0dddd}table{border-collapse:collapse;border-spacing:0}body{margin:0;line-height:1.231;font:12px 'Helvetica Neue',Helvetica,Arial,Sans-Serif;padding:0 0 200px}h1,h2,h3,h4,h5{margin:0;padding:0;font:italic 700 14px Georgia,serif;color:#2c1b13}p{margin:0 0 5px}div#container{width:900px}div#author{background:#f0f2eb;margin-bottom:20px;padding:10px 20px;font-style:italic;font-size:13px;color:grey;text-shadow:0 1px #fff}div#author a{font-weight:700;margin:0 3px}div#container header{margin-bottom:50px}div#container header h1{font-size:34px;color:#ff4242;letter-spacing:-3px;text-shadow:0 1px 0 #e53b3b}div#container header h1:before{content:"this.is( "}div#container header h1:after{content:" );"}div#container header h1:after,div#container header h1:before{font:400 12px "Courier New",Courier,monospace;color:#4b4647;text-shadow:none;letter-spacing:normal}div#sidebar{float:left;width:200px;font-size:12px;line-height:18px;margin-left:20px}div#sidebar h1{font-size:21px;color:#ff4242;margin-bottom:30px;text-shadow:0 1px 0 #ddd}div#sidebar h2{margin:15px 0 5px;font-size:12px}div#sidebar ul li a{color:grey;line-height:1.8}div#sidebar ul li a:hover{background-color:#222;color:#fff}div#sidebar ul li.selected a{color:#ff4242;font-weight:700}div#sidebar ul li.selected a:hover{background:0 0;color:#ff4242}div#sidebar div.share{margin-top:20px}div#content{float:left;width:680px}div#content h2{font-size:21px;margin-bottom:30px}div#content h3{margin:50px 0 10px}div#content p{line-height:1.5}div#content p a{color:#fff;background:#d4ee5e;font-weight:700}div#content p a:hover{background:#000}div#content p+div{margin-top:50px}div#content h3 span{background-color:#f4fad2;color:#5c826d;padding:2px 3px;margin-left:10px;font-weight:400}div#content div.codeBlocks{margin:20px 0 35px}div#content pre{float:left;margin-right:10px;cursor:pointer}div#content pre:before{content:attr(class);padding:2px 3px;color:#fff}div#content pre.html{background:#f0f2eb;border-bottom:1px solid #d7d9d3}div#content pre.html:before{background:#d7d9d3}div#content pre.javascript{background:#f4fad2;border-bottom:1px solid #dbe0bc}div#content pre.javascript:before{background:#dbe0bc}div#content pre.css{background:#e1edb9;border-bottom:1px solid #cad5a6}div#content pre.css:before{background:#cad5a6}div#content pre.collapse{position:relative;padding:2% 3%;width:94%}div#content pre.collapse:before{position:absolute;right:0;top:0}div#content pre code{display:none;background:0 0;font:11px/16px "Courier New",Courier,monospace}div#content pre.collapse code{display:block}div#content ul#itemContainer{list-style:none;padding:0;margin:20px 0}div#content ul#itemContainer li{display:inline-block;margin:5px;zoom:1}.ir,div#content.index pre code{display:block}div#content ul#itemContainer ll li img{vertical-align:bottom;width:125px;height:125px}div#content.index pre{float:none;cursor:default}div#content.index h2{margin-top:55px}div#content.index dl dd,div#content.index dl dt{float:left;margin-top:10px}div#content.index dl dt{clear:left;width:70px;font-style:italic}div#content.index dl dd{width:450px}div#content.index i+p{margin-top:5px}div#content.documentation h2{margin-top:55px}div#content.documentation dl dd,div#content.documentation dl dt{float:left;margin-top:10px}div#content.documentation dl dt{clear:left;width:70px;font-style:italic}div#content.documentation dl dd{width:450px}div#content.documentation i+p{margin-top:5px}div#content.author img{margin-bottom:50px}div#content.author img+p:before{content:'“';font-size:65px;font-family:Georgia;position:absolute;top:-55px;color:#ccc}div#content.author p{width:590px;position:relative}.ir{text-indent:-999em;overflow:hidden;background-repeat:no-repeat;text-align:left;direction:ltr}.hidden,.ir br{display:none}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}@media print{blockquote,img,pre,tr{page-break-inside:avoid}*{background:0 0!important;color:#000!important;text-shadow:none!important;filter:none!important;-ms-filter:none!important}a,a:visited{color:#444!important;text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}blockquote,pre{border:1px solid #999}thead{display:table-header-group}img{max-width:100%!important}@page{margin:.5cm}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio[controls],
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+/*
+ * These selection declarations have to be separate
+ * No text-shadow: twitter.com/miketaylr/status/12228805301
+ * Also: hot pink!
+ */
+::-moz-selection {
+  background: #2c1b13;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #2c1b13;
+  color: #fff;
+  text-shadow: none;
+}
+/* =============================================================================
+   Links
+   ========================================================================== */
+a {
+  color: #222;
+  text-decoration: none;
+}
+a:visited {
+  color: #222;
+}
+a:focus {
+  outline: thin dotted;
+}
+/* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover,
+a:active {
+  outline: 0;
+}
+/* =============================================================================
+   Typography
+   ========================================================================== */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+/* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+small {
+  font-size: 85%;
+}
+/* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Improve image quality when scaled in IE7
+ * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+/*
+ * Correct overflow displayed oddly in IE9
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0;
+}
+/* =============================================================================
+   Forms
+   ========================================================================== */
+form {
+  margin: 0;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+  cursor: pointer;
+}
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+/*
+ * Consistent box sizing and appearance
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+}
+input[type="search"] {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/*
+ * Remove inner padding and border in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* Remove default vertical scrollbar in IE6/7/8/9 */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* Colors for form validity */
+input:invalid,
+textarea:invalid {
+  background-color: #f0dddd;
+}
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* =============================================================================
+   Primary styles
+   Author:
+   ========================================================================== */
+body {
+  font: 12px 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+  padding: 0 0 200px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font: italic bold 14px Georgia, serif;
+  color: #2c1b13;
+}
+p {
+  margin: 0 0 5px 0;
+}
+/* Container */
+div#container {
+  width: 900px;
+}
+/* Filtrify link*/
+div#author {
+  background: #f0f2eb;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-style: italic;
+  font-size: 13px;
+  color: #808080;
+  text-shadow: 0 1px #fff;
+}
+div#author a {
+  font-weight: bold;
+  margin: 0 3px;
+}
+/* Header */
+div#container header {
+  margin-bottom: 50px;
+}
+div#container header h1 {
+  font-size: 34px;
+  color: #ff4242;
+  letter-spacing: -3px;
+  text-shadow: 0 1px 0 #e53b3b;
+}
+div#container header h1:before {
+  content: "this.is( ";
+}
+div#container header h1:after {
+  content: " );";
+}
+div#container header h1:before,
+div#container header h1:after {
+  font: normal 12px "Courier New", Courier, monospace;
+  color: #4b4647;
+  text-shadow: none;
+  letter-spacing: normal;
+}
+/* Sidebar */
+div#sidebar {
+  float: left;
+  width: 200px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 20px;
+}
+div#sidebar h1 {
+  font-size: 21px;
+  color: #ff4242;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 0 #ddd;
+}
+div#sidebar h2 {
+  margin: 15px 0 5px 0px;
+  font-size: 12px;
+}
+div#sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+div#sidebar ul li a {
+  color: #808080;
+  line-height: 1.8;
+}
+div#sidebar ul li a:hover {
+  background-color: #222;
+  color: #fff;
+}
+div#sidebar ul li.selected a {
+  color: #ff4242;
+  font-weight: bold;
+}
+div#sidebar ul li.selected a:hover {
+  background: none;
+  color: #ff4242;
+}
+div#sidebar div.share {
+  margin-top: 20px;
+}
+/* Content */
+div#content {
+  float: left;
+  width: 680px;
+}
+div#content h2 {
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+div#content h3 {
+  margin: 50px 0px 10px 0px;
+}
+div#content p {
+  line-height: 1.5;
+}
+div#content p a {
+  color: #fff;
+  background: #d4ee5e;
+  font-weight: bold;
+}
+div#content p a:hover {
+  background: #000;
+}
+div#content p + div {
+  margin-top: 50px;
+}
+div#content h3 span {
+  background-color: #f4fad2;
+  color: #5c826d;
+  padding: 2px 3px;
+  margin-left: 10px;
+  font-weight: normal;
+}
+/* Content -> Code */
+div#content div.codeBlocks {
+  margin: 20px 0 35px;
+}
+div#content pre {
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+div#content pre:before {
+  content: attr(class);
+  padding: 2px 3px;
+  color: #fff;
+}
+div#content pre.html {
+  background: #f0f2eb;
+  border-bottom: 1px solid #d7d9d3;
+}
+div#content pre.html:before {
+  background: #d7d9d3;
+}
+div#content pre.javascript {
+  background: #f4fad2;
+  border-bottom: 1px solid #dbe0bc;
+}
+div#content pre.javascript:before {
+  background: #dbe0bc;
+}
+div#content pre.css {
+  background: #e1edb9;
+  border-bottom: 1px solid #cad5a6;
+}
+div#content pre.css:before {
+  background: #cad5a6;
+}
+div#content pre.collapse {
+  position: relative;
+  padding: 2% 3%;
+  width: 94%;
+}
+div#content pre.collapse:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+div#content pre code {
+  display: none;
+  background: none;
+  font: 11px/16px "Courier New", Courier, monospace;
+}
+div#content pre.collapse code {
+  display: block;
+}
+/* Content -> Unordered Lists */
+div#content ul#itemContainer {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+div#content ul#itemContainer li {
+  display: inline-block;
+  margin: 5px;
+  zoom: 1;
+  *display: inline;
+}
+div#content ul#itemContainer ll li img {
+  vertical-align: bottom;
+  width: 125px;
+  height: 125px;
+}
+/* Content -> index */
+div#content.index pre {
+  float: none;
+  cursor: default;
+}
+div#content.index pre code {
+  display: block;
+}
+div#content.index h2 {
+  margin-top: 55px;
+}
+div#content.index dl dt,
+div#content.index dl dd {
+  float: left;
+  margin-top: 10px;
+}
+div#content.index dl dt {
+  clear: left;
+  width: 70px;
+  font-style: italic;
+}
+div#content.index dl dd {
+  width: 450px;
+}
+div#content.index i + p {
+  margin-top: 5px;
+}
+/* Content -> documentation */
+div#content.documentation h2 {
+  margin-top: 55px;
+}
+div#content.documentation dl dt,
+div#content.documentation dl dd {
+  float: left;
+  margin-top: 10px;
+}
+div#content.documentation dl dt {
+  clear: left;
+  width: 70px;
+  font-style: italic;
+}
+div#content.documentation dl dd {
+  width: 450px;
+}
+div#content.documentation i + p {
+  margin-top: 5px;
+}
+/* Content -> author */
+div#content.author img {
+  margin-bottom: 50px;
+}
+div#content.author img + p:before {
+  content: '“';
+  font-size: 65px;
+  font-family: Georgia;
+  position: absolute;
+  top: -55px;
+  color: #ccc;
+}
+div#content.author p {
+  width: 590px;
+  position: relative;
+}
+/* =============================================================================
+   Non-semantic helper classes
+   Please define your styles before this section.
+   ========================================================================== */
+/* For image replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+.ir br {
+  display: none;
+}
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+/* =============================================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+/* =============================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
