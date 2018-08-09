@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/MVP/Diary.html</loc>
+    
+    <lastmod>2018-08-09T03:03:29.736Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Concept.html</loc>
+    
+    <lastmod>2018-08-09T00:19:48.022Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Question.html</loc>
+    
+    <lastmod>2018-08-09T00:19:18.689Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Reading.html</loc>
+    
+    <lastmod>2018-08-09T00:17:40.558Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/Concept/Simplicity.html</loc>
     
     <lastmod>2018-08-08T12:05:31.078Z</lastmod>
@@ -40,13 +68,6 @@
     <loc>http://deepcreator.com/Concept/GTD.html</loc>
     
     <lastmod>2018-08-08T11:36:01.552Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/MVP/Diary.html</loc>
-    
-    <lastmod>2018-08-08T11:32:36.712Z</lastmod>
     
   </url>
   
@@ -401,13 +422,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Question.html</loc>
-    
-    <lastmod>2018-08-06T00:22:03.935Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Concept/Value.html</loc>
     
     <lastmod>2018-08-06T00:20:58.006Z</lastmod>
@@ -492,13 +506,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Reading.html</loc>
-    
-    <lastmod>2018-08-04T05:45:34.198Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Business/Position.html</loc>
     
     <lastmod>2018-08-03T04:33:05.261Z</lastmod>
@@ -569,14 +576,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Creativity.html</loc>
+    <loc>http://deepcreator.com/Business/User%20Thinking.html</loc>
     
     <lastmod>2018-08-02T03:48:58.607Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Business/User%20Thinking.html</loc>
+    <loc>http://deepcreator.com/Concept/Creativity.html</loc>
     
     <lastmod>2018-08-02T03:48:58.607Z</lastmod>
     
@@ -999,13 +1006,6 @@
     <loc>http://deepcreator.com/AI/Math.html</loc>
     
     <lastmod>2018-08-01T02:56:53.879Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Concept/Concept.html</loc>
-    
-    <lastmod>2018-08-01T02:47:15.693Z</lastmod>
     
   </url>
   
