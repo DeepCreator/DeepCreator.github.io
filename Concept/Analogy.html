@@ -162,7 +162,7 @@
 <meta property="og:image" content="https://img3.doubanio.com/lpic/s26743700.jpg">
 <meta property="og:image" content="https://img3.doubanio.com/lpic/s28486040.jpg">
 <meta property="og:image" content="https://img1.doubanio.com/lpic/s1877368.jpg">
-<meta property="og:updated_time" content="2018-08-08T11:11:04.495Z">
+<meta property="og:updated_time" content="2018-08-12T03:19:20.976Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Analogy">
 <meta name="twitter:description" content="类比，举一反三融会贯通。——DeepCreator">
@@ -465,7 +465,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-08-08 19:11:04" itemprop="dateModified" datetime="2018-08-08T19:11:04+08:00">2018-08-08</time>
+                <time title="Modified: 2018-08-12 11:19:20" itemprop="dateModified" datetime="2018-08-12T11:19:20+08:00">2018-08-12</time>
               
             
           </span>
@@ -895,6 +895,34 @@
 <h2 id="到处都是UNIX的胎记"><a href="#到处都是UNIX的胎记" class="headerlink" title="到处都是UNIX的胎记"></a><a href="https://coolshell.cn/articles/1532.html" target="_blank" rel="noopener">到处都是UNIX的胎记</a></h2><p>一说起Unix编程，不必多说，最著名的系统调用就是fork，pipe，exec，kill或是socket了（fork(2), execve(2), pipe(2), socketpair(2), select(2), kill(2), sigaction(2)）这些系统调用都像是Unix编程的胎记或签名一样，表明着它来自于Unix。</p>
 <p>下面这篇文章，将向大家展示Unix下最经典的socket的编程例子——使用fork + socket来创建一个TCP/IP的服务程序。这个编程模式很简单，首先是创建Socket，然后把其绑定在某个IP和Port上上侦听连接，接下来的一般做法是使用一个fork创建一个client服务进程再加上一个死循环用于处理和client的交互。这个模式是Unix下最经典的Socket编程例子。</p>
 <p>下面，让我们看看用C，Ruby，Python，Perl，PHP和Haskell来实现这一例子，你会发现这些例子中的Unix的胎记。如果你想知道这些例子中的技术细节，那么，向你推荐两本经典书——《Unix高级环境编程》和《Unix网络编程》。</p>
+<h2 id="一出好戏，就当喜剧看吧"><a href="#一出好戏，就当喜剧看吧" class="headerlink" title="一出好戏，就当喜剧看吧"></a><a href="https://movie.douban.com/review/9574686/" target="_blank" rel="noopener">一出好戏，就当喜剧看吧</a></h2><p>孤岛求生题材的电影，很容易变成对社会学和人类学的讨论。在人进入极端情境时，隐藏已久的本能会渐次浮出水面。本来充满秩序的一车人，有领导、有员工、有司机、有保安，在刚刚被困的时候还一度保持着社会等级。伴随着他们逐渐从“<strong>社会人</strong>”变成“<strong>孤岛人</strong>”，原有的社会等级被剥除：从原本的张总为核心，到之后的小王为核心。</p>
+<p>这其中，有两个值得注意的点。</p>
+<p>首先，在这样的环境下，没有人提出要组建一个“民选”的小政府，大家下意识地决定寻找英雄来成为带头者。</p>
+<p>其次，究竟谁会成为带头者？</p>
+<blockquote>
+<p>拥有核心资源的人。</p>
+</blockquote>
+<p>小王就是这样一个人，他也是非常有代表性的角色。从“小王”到“王”，称呼一字之变，却代表着他因为拥有低生产力下不可替代的价值，而被授予了君权——尽管一开始，这种“君权”可能只是大家的公推，所拥有的权力也不过是指挥与调派大家觅食。但这种权力因为其背后资源的稀缺性，必然不受节制，也必然让权力的拥有者异化——事实上，小王也未必就想成为王，在大家最终剥夺了他的“王位”之后，他反而高兴地躺在石头上，觉得这下终于舒坦了，不用承担那么多人生存的压力了。</p>
+<p>与之相比，张总代表的则是资本主义——他依靠金融和权术，取得了另一种统治。当然，这种统治来自于物质条件的极大丰富——如果不是发现了那艘船的残骸，他们很难创造这种统治。</p>
+<p>原因很简单，在发现那艘大船之前，整个人群处于马斯洛三角的底部，要满足生存都很艰难，王的野外生存技能是他们唯一的倚仗。而物质条件因为大船而丰富之后（除了大船上能提供的食物和衣物之外，大船上的渔网、发电机能够让生活可持续地变好），原本属于王的独特价值无论是相对上，还是绝对上，都必然会降低。即使从绝对值上来看，在不改变生产方式和使用新工具的情况下，小王能够帮助大家获得的食物和资源是不断消耗、越来越少的，民众的满意度也自然会越来越低。于是，必然有一群人会投奔张总。而这样一来，小王需要养活的人少了，生活水平又会相应提高，也必然会有一群人留在他身边，形成一种动态的平衡。</p>
+<p>说到张总。作为一个奸商，他能拿出通货膨胀来为自己辩解，看上去好像还有点道理。以扑克牌作为纸币，伴随着大家的技能熟练度与开发出的自然资源的增加，的确会出现贬值问题，也的确有增发的必要。但增发也不是这么个增法。别忘了，另两副扑克牌本来就在张总身上，他暗自将它们投放市场之后，他便是最大的甚至唯一的受益人。资本家永远不会放弃赚钱的机会。好了，这问题不能多讨论，讨论多了容易敏感。</p>
+<p>在这两股势力中间，马进和小弟则无处可去。他们俩得罪了两边，于是只能苟延残喘——很简单，经济学上来说，人的分工合作能够提升创造价值的效率，十个人能生产十份口粮的话，一个人可能只能生产半份。他们本来是最早应该被淘汰的两个。</p>
+<p>然而，天降大鱼，给了他们翻身的机会。这是一个非常明确的隐喻——神迹。于是，在部落酋长与资本家之外的第三股势力即将登场。</p>
+<p>马进很聪明地等到了双方的矛盾激化——矛盾激化是不可避免的。如前所述，合作让人强大，而两个五人小团体，最终的效率一定不如一个十人团体。由于双方在生存线上挣扎，最后一定会出现资源短缺——资源短缺的结果就是斗争。</p>
+<p>然后，当大家打得不可开交时，马进抓住了最好的机会，让合并的功劳到了他身上——长发和胡子的造型，配上背后升起的灯光，你觉得眼熟吗？</p>
+<p>眼熟就对了。在这一瞬间，马进成为了圣人，成为了带来福音的使徒。他统治这个岛的方式就是宗教。他抓住了双方必然要合并的历史潮流，与火拼之前的些微空隙，成功地为每个人根植了“原罪”——你们不努力出去，不努力生存，反而互相残杀，这就是原罪。</p>
+<p>然后，由于团队重新合作且拥有了相对充足的资源，团队成员的生活感受势必发生积极的变化——用上了手机，穿上了布袍，吃好的喝好的，鱼也充足。这加剧了大家对于宗教的拥戴——<strong>仿佛正是因为大家有了宗教，才过上了好日子。</strong></p>
+<p>很多细节也可以印证马进的统治是宗教化的。比如，不停歇的狂欢。</p>
+<p>如果这样的生活继续下去的话，他们甚至可以在岛上度过很长的岁月。然而，游船来了，他们有机会离开了。</p>
+<p>看到船之后马进和小弟的表现，是值得二刷的。他们两个人都很惊讶，而且神情古怪，但他们所想的并不相同（这也是要着重表扬张艺兴的地方，这一段他看上去和马进表情相同，但仔细看又能看出差异）。可能在那个瞬间，小弟还没有明确地布局整个阴谋，但他已经敏锐地想到，这是一个只有极少数人掌握的信息，而信息就是利益。他必须把这个信息掌握在自己手里。</p>
+<p>令人不寒而栗的是，他立刻意识到了自己的哥哥心底最深的欲望——这是一个邪恶的天才。他用一句话就让马进放弃了告诉大家的想法——这里的一切，包括珊珊，比回去要美好得多，回去了之后，他们俩还是两个臭屌丝。</p>
+<p>在那个时刻，马进已经沉醉于自己成为宗教领袖的想象。但我们也不能太过责备，毕竟在那样的极端环境中生存了100多天（这比在城市里生活100多天可难熬得多），大家的情绪或多或少会有变化。</p>
+<p>事实上，我猜想，某种程度上，大家已经不是特别想离开这个岛了。岛上的宗教氛围，就如珊珊所言，能够让大家找到失去的平静和快乐。若非如此，大家为什么会在小王带回“有船”的消息时，第一反应便是相信马进呢？除了对宗教领袖的认可之外，我想，只可能是他们下意识地也不见得想要船来吧。如果都真的很想走，那哪怕知道小王是疯了，也多少会去尝试探一探那座山，并且把“12天”和游船航行自然地联系起来，而不是立刻接受了“从此以后晚上别上山”的规则。</p>
+<p>最终，当马进面对珊珊的告白，大喊“一切都是假的”时，他想表达的，不光是说他欺骗了大家，更是说这个美好的“伊甸园”本身便是假的。宗教的麻醉不可能让人永远沉迷其间，任何一个理性人最终都不会放弃逃离——很多资源不可再生，十多个人的团体也不可能有真正的文化传承与保护，如果不离开，他们最终会变成一群野人。这也是马进的痛苦之处——他比别人更加清醒地知道，离开是唯一的选择，他发明的宗教救不了大家。</p>
+<p>关于影片的结局也很耐人寻味。黄渤说曾经构思过很多更加黑暗和疯狂的解决，我其实挺感兴趣的，很想知道这个故事可以变得多黑暗。但哪怕是现在这个结局，在合家欢的红润腮红下面，未必就不是尸体的淤青色。</p>
+<p>小弟意图杀死十多个人、谋夺千万财产的恶行最后可以用“选择性失忆”强行开解一样，马进也获得了美好的结果，落水后自己浮上了岸还有美女相伴——但问题是，你信么？</p>
+<p>如果你不相信小弟的罪过可以被轻轻揭过，那就不要相信马进还活着。他的落水是一次死亡的象征。而他是在信徒们的追赶中，失足坠落的——是的，要打破他人已有的精神世界，是非常危险的，付出生命的代价也不为过。</p>
+<p>想到这里，就实在无法感觉这是一部喜剧片了。所以，不想太多地去看，说不定也挺好。</p>
 
       
     </div>
@@ -1033,7 +1061,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">254</span>
+                    <span class="site-state-item-count">256</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1869,7 +1897,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">398</span>
+                      
+                    
+                    <span class="site-state-item-count">399</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -1952,7 +1982,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#冯仑：大象的“不争哲学”"><span class="nav-number">1.</span> <span class="nav-text">冯仑：大象的“不争哲学”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#棋与人生"><span class="nav-number">2.</span> <span class="nav-text">棋与人生</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内容简介"><span class="nav-number">2.1.</span> <span class="nav-text">内容简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">2.2.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下棋的道理和做人是相通的"><span class="nav-number">2.3.</span> <span class="nav-text">下棋的道理和做人是相通的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#摘抄与整理：棋与人生"><span class="nav-number">2.4.</span> <span class="nav-text">摘抄与整理：棋与人生</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#罗胖60秒：赶紧盖好自己的楼"><span class="nav-number">3.</span> <span class="nav-text">罗胖60秒：赶紧盖好自己的楼</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#《知识大迁移》这本书-够硬-够颠覆"><span class="nav-number">4.</span> <span class="nav-text">《知识大迁移》这本书, 够硬, 够颠覆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#罗胖60秒：莫高窟为什么伟大？"><span class="nav-number">5.</span> <span class="nav-text">罗胖60秒：莫高窟为什么伟大？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#陆奇：我把自己想象成一个软件"><span class="nav-number">6.</span> <span class="nav-text">陆奇：我把自己想象成一个软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-not-try-an-analogy"><span class="nav-number">7.</span> <span class="nav-text">Why not try an analogy?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#做产品经理，先学会泡妹子"><span class="nav-number">8.</span> <span class="nav-text">做产品经理，先学会泡妹子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像与滤波"><span class="nav-number">9.</span> <span class="nav-text">图像与滤波</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数学与猜想（第一卷）"><span class="nav-number">10.</span> <span class="nav-text">数学与猜想（第一卷）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#隐喻的逻辑"><span class="nav-number">11.</span> <span class="nav-text">隐喻的逻辑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化归与归纳·类比·联想"><span class="nav-number">12.</span> <span class="nav-text">化归与归纳·类比·联想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#认知行为治疗"><span class="nav-number">13.</span> <span class="nav-text">认知行为治疗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创新的本能：类比思维的力量"><span class="nav-number">14.</span> <span class="nav-text">创新的本能：类比思维的力量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编程之道"><span class="nav-number">15.</span> <span class="nav-text">编程之道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#到处都是UNIX的胎记"><span class="nav-number">16.</span> <span class="nav-text">到处都是UNIX的胎记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#冯仑：大象的“不争哲学”"><span class="nav-number">1.</span> <span class="nav-text">冯仑：大象的“不争哲学”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#棋与人生"><span class="nav-number">2.</span> <span class="nav-text">棋与人生</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内容简介"><span class="nav-number">2.1.</span> <span class="nav-text">内容简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">2.2.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下棋的道理和做人是相通的"><span class="nav-number">2.3.</span> <span class="nav-text">下棋的道理和做人是相通的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#摘抄与整理：棋与人生"><span class="nav-number">2.4.</span> <span class="nav-text">摘抄与整理：棋与人生</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#罗胖60秒：赶紧盖好自己的楼"><span class="nav-number">3.</span> <span class="nav-text">罗胖60秒：赶紧盖好自己的楼</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#《知识大迁移》这本书-够硬-够颠覆"><span class="nav-number">4.</span> <span class="nav-text">《知识大迁移》这本书, 够硬, 够颠覆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#罗胖60秒：莫高窟为什么伟大？"><span class="nav-number">5.</span> <span class="nav-text">罗胖60秒：莫高窟为什么伟大？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#陆奇：我把自己想象成一个软件"><span class="nav-number">6.</span> <span class="nav-text">陆奇：我把自己想象成一个软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-not-try-an-analogy"><span class="nav-number">7.</span> <span class="nav-text">Why not try an analogy?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#做产品经理，先学会泡妹子"><span class="nav-number">8.</span> <span class="nav-text">做产品经理，先学会泡妹子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像与滤波"><span class="nav-number">9.</span> <span class="nav-text">图像与滤波</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数学与猜想（第一卷）"><span class="nav-number">10.</span> <span class="nav-text">数学与猜想（第一卷）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#隐喻的逻辑"><span class="nav-number">11.</span> <span class="nav-text">隐喻的逻辑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化归与归纳·类比·联想"><span class="nav-number">12.</span> <span class="nav-text">化归与归纳·类比·联想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#认知行为治疗"><span class="nav-number">13.</span> <span class="nav-text">认知行为治疗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创新的本能：类比思维的力量"><span class="nav-number">14.</span> <span class="nav-text">创新的本能：类比思维的力量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编程之道"><span class="nav-number">15.</span> <span class="nav-text">编程之道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#到处都是UNIX的胎记"><span class="nav-number">16.</span> <span class="nav-text">到处都是UNIX的胎记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一出好戏，就当喜剧看吧"><span class="nav-number">17.</span> <span class="nav-text">一出好戏，就当喜剧看吧</span></a></li></ol></div>
             
 
           </div>
