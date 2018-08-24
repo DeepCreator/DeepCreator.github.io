@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deepcreator.com/Concept/Review.html</loc>
+    
+    <lastmod>2018-08-24T00:31:31.355Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://deepcreator.com/MVP/Diary.html</loc>
     
-    <lastmod>2018-08-23T08:38:14.955Z</lastmod>
+    <lastmod>2018-08-24T00:06:56.268Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/VIVO.html</loc>
+    
+    <lastmod>2018-08-23T23:14:02.656Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Qualcomm.html</loc>
+    
+    <lastmod>2018-08-23T23:08:43.327Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Company/Transsion.html</loc>
+    
+    <lastmod>2018-08-23T23:03:20.237Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Domain%20Name.html</loc>
+    
+    <lastmod>2018-08-23T22:21:46.602Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/IPR/Africa.html</loc>
+    
+    <lastmod>2018-08-23T22:14:03.463Z</lastmod>
     
   </url>
   
@@ -471,14 +513,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Foresight.html</loc>
+    <loc>http://deepcreator.com/Concept/Habit.html</loc>
     
     <lastmod>2018-08-16T10:51:58.632Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Habit.html</loc>
+    <loc>http://deepcreator.com/Concept/Foresight.html</loc>
     
     <lastmod>2018-08-16T10:51:58.632Z</lastmod>
     
@@ -541,14 +583,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Minority.html</loc>
+    <loc>http://deepcreator.com/Concept/Opportunity.html</loc>
     
     <lastmod>2018-08-16T10:51:58.583Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Opportunity.html</loc>
+    <loc>http://deepcreator.com/Concept/Minority.html</loc>
     
     <lastmod>2018-08-16T10:51:58.583Z</lastmod>
     
@@ -590,13 +632,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Review.html</loc>
-    
-    <lastmod>2018-08-16T10:30:49.021Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Concept/Stratum.html</loc>
     
     <lastmod>2018-08-16T10:22:46.476Z</lastmod>
@@ -604,14 +639,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/MVP/English.html</loc>
+    <loc>http://deepcreator.com/IPR/Law.html</loc>
     
     <lastmod>2018-08-16T10:22:46.473Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/Law.html</loc>
+    <loc>http://deepcreator.com/MVP/English.html</loc>
     
     <lastmod>2018-08-16T10:22:46.473Z</lastmod>
     
@@ -674,13 +709,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Universe.html</loc>
-    
-    <lastmod>2018-08-16T10:22:46.405Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Travel/Travel.html</loc>
     
     <lastmod>2018-08-16T10:22:46.405Z</lastmod>
@@ -695,14 +723,21 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Travel/Body%20Building.html</loc>
+    <loc>http://deepcreator.com/Concept/Universe.html</loc>
+    
+    <lastmod>2018-08-16T10:22:46.405Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/MVP/Booklist.html</loc>
     
     <lastmod>2018-08-16T10:22:46.390Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/MVP/Booklist.html</loc>
+    <loc>http://deepcreator.com/Travel/Body%20Building.html</loc>
     
     <lastmod>2018-08-16T10:22:46.390Z</lastmod>
     
@@ -1129,13 +1164,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/Domain%20Name.html</loc>
-    
-    <lastmod>2018-08-01T09:45:07.752Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/Intellectual%20Property%20Right.html</loc>
     
     <lastmod>2018-08-01T09:43:52.335Z</lastmod>
@@ -1514,13 +1542,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/Transsion.html</loc>
-    
-    <lastmod>2018-07-10T06:53:28.945Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/NPE.html</loc>
     
     <lastmod>2018-07-10T06:53:28.941Z</lastmod>
@@ -1661,13 +1682,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Company/Qualcomm.html</loc>
-    
-    <lastmod>2018-06-06T09:38:52.813Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/Deployment.html</loc>
     
     <lastmod>2018-06-06T09:17:41.664Z</lastmod>
@@ -1752,13 +1766,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/IPR/Africa.html</loc>
-    
-    <lastmod>2018-06-01T07:58:38.714Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/Southeast%20Asia.html</loc>
     
     <lastmod>2018-06-01T07:00:34.695Z</lastmod>
@@ -1797,13 +1804,6 @@
     <loc>http://deepcreator.com/IPR/Geographical%20Indication.html</loc>
     
     <lastmod>2018-05-31T07:17:21.263Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Company/VIVO.html</loc>
-    
-    <lastmod>2018-05-30T09:01:27.099Z</lastmod>
     
   </url>
   
