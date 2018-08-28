@@ -2,23 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://deepcreator.com/Concept/Viewpoint.html</loc>
+    <loc>http://deepcreator.com/MVP/Diary.html</loc>
     
-    <lastmod>2018-08-27T00:28:21.161Z</lastmod>
+    <lastmod>2018-08-28T01:24:53.059Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/AI/AI.html</loc>
+    
+    <lastmod>2018-08-28T01:21:38.650Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/How.html</loc>
+    
+    <lastmod>2018-08-28T01:19:36.067Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Platform.html</loc>
+    
+    <lastmod>2018-08-28T01:15:22.913Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Why.html</loc>
+    
+    <lastmod>2018-08-28T01:13:50.780Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Business/Startup.html</loc>
+    
+    <lastmod>2018-08-28T01:10:21.419Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Concept/Psychology.html</loc>
+    
+    <lastmod>2018-08-28T01:03:00.976Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://deepcreator.com/Company/iGet.html</loc>
     
-    <lastmod>2018-08-27T00:28:18.740Z</lastmod>
+    <lastmod>2018-08-28T00:21:01.270Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/MVP/Diary.html</loc>
+    <loc>http://deepcreator.com/Concept/Viewpoint.html</loc>
     
-    <lastmod>2018-08-27T00:09:40.980Z</lastmod>
+    <lastmod>2018-08-27T00:28:21.161Z</lastmod>
     
   </url>
   
@@ -86,13 +128,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Business/Startup.html</loc>
-    
-    <lastmod>2018-08-26T13:05:38.674Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Concept/Time.html</loc>
     
     <lastmod>2018-08-26T13:02:18.792Z</lastmod>
@@ -128,13 +163,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Psychology.html</loc>
-    
-    <lastmod>2018-08-26T12:39:55.270Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Travel/ShenZhen.html</loc>
     
     <lastmod>2018-08-26T09:51:29.602Z</lastmod>
@@ -166,20 +194,6 @@
     <loc>http://deepcreator.com/Concept/Character.html</loc>
     
     <lastmod>2018-08-25T00:50:00.594Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Concept/Why.html</loc>
-    
-    <lastmod>2018-08-24T22:50:58.296Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/Concept/Platform.html</loc>
-    
-    <lastmod>2018-08-24T13:49:50.630Z</lastmod>
     
   </url>
   
@@ -506,13 +520,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/How.html</loc>
-    
-    <lastmod>2018-08-20T13:26:50.508Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/Concept/Innovation.html</loc>
     
     <lastmod>2018-08-20T13:23:36.660Z</lastmod>
@@ -530,13 +537,6 @@
     <loc>http://deepcreator.com/Concept/Trust.html</loc>
     
     <lastmod>2018-08-20T13:16:30.692Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://deepcreator.com/AI/AI.html</loc>
-    
-    <lastmod>2018-08-20T13:13:22.445Z</lastmod>
     
   </url>
   
@@ -737,14 +737,14 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Minority.html</loc>
+    <loc>http://deepcreator.com/Concept/Opportunity.html</loc>
     
     <lastmod>2018-08-16T10:51:58.583Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Concept/Opportunity.html</loc>
+    <loc>http://deepcreator.com/Concept/Minority.html</loc>
     
     <lastmod>2018-08-16T10:51:58.583Z</lastmod>
     
@@ -828,13 +828,6 @@
   </url>
   
   <url>
-    <loc>http://deepcreator.com/Travel/Travel.html</loc>
-    
-    <lastmod>2018-08-16T10:22:46.405Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://deepcreator.com/IPR/Madrid%20System.html</loc>
     
     <lastmod>2018-08-16T10:22:46.405Z</lastmod>
@@ -843,6 +836,13 @@
   
   <url>
     <loc>http://deepcreator.com/Concept/Universe.html</loc>
+    
+    <lastmod>2018-08-16T10:22:46.405Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://deepcreator.com/Travel/Travel.html</loc>
     
     <lastmod>2018-08-16T10:22:46.405Z</lastmod>
     
